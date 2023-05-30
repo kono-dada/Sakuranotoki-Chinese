@@ -1,0 +1,3940 @@
+astver = 2.0
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"msg", no = 1},
+        {"bg", zoom = 70, speed = 80000, rule = 139, vague = 40, file = "zev_etc_01_01", path = ":ev/ev_etc_01/", x2 = 380, y2 = 210, x = 40, y = 210, set = "ev_etc_01", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"bgm", file = "bgm149"},
+        {"text"},
+        text = {
+            ja = {
+                {"之后，我向舞厅的工作场所走去。"}
+            }
+        },
+        linknext = "block_00001",
+        line = 11
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"只有瑠璃尾一个人在那里工作。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002",
+        line = 14
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {"恩田君又在屋顶上。"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003",
+        line = 17
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {"天气好的时候他似乎尽可能地希望在自然光下工作。"}
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004",
+        line = 20
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他依然一边闭上一只眼睛，一边确认着什么，继续着工作。"}
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005",
+        line = 23
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {"指出两个人的画需要大约40分钟。"}
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006",
+        line = 26
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他们是有才华的两个人。"}
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007",
+        line = 29
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"教他们也是一项艰巨的任务。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008",
+        line = 32
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {"走到中庭，其他的人都已经聚集在那里。"}
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009",
+        line = 35
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在这里大概闲聊了不到一小时。"}
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010",
+        line = 38
+    },
+    block_00010 = {
+        {"bgm", stop = 1, time = 5000},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "嗯，关于他们，他们并没有什么不好，但是他们的画在这个年纪来",
+                    {"rt2"},
+                    "说只是普通水平。所以教他们并不会感到很辛苦。"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011",
+        line = 44
+    },
+    block_00011 = {
+        {"bg", time = 2000, file = "ev_etc_01_04", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"ex", time = 500, func = "wait"},
+        {"bgm", stop = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"这样那样的，当我回到教师室的时候，太阳已经完全倾斜了。"}
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012",
+        line = 51
+    },
+    block_00012 = {
+        {"bg", file = "ev_com_14_14", path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"bgm", file = "bgm152"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10043", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「草薙老师，你看起来很累啊」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013",
+        line = 62
+    },
+    block_00013 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，夏目老师。你还在这里吗？」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014",
+        line = 65
+    },
+    block_00014 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_16", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"bg", sync = 0, face = 1, file = "ev_com_14_20", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10044", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「嗯，我也是空手道部的顾问。我和草薙老师一样忙碌。",
+                    {"rt2"},
+                    "我本想这么说，但我们的部门并不像你们那样是名门啊」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015",
+        line = 72
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是在讲讽刺吗？确实以前的弓張美术部可能算是名门，但至少去",
+                    {"rt2"},
+                    "年之前这个部门已经几乎消失了」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016",
+        line = 75
+    },
+    block_00016 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_21", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10045", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「即便这样，那里好像聚集了一些有才华的人哦」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017",
+        line = 80
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，确实是这样……」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018",
+        line = 83
+    },
+    block_00018 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_15", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10046", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「部活动，在青春时代是相当重要的」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019",
+        line = 89
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是人的形成之类的吗？如果是这样的话，相比起运动部，我觉得",
+                    {"rt2"},
+                    "美术部并没有那么好」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020",
+        line = 92
+    },
+    block_00020 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_22", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10047", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「并不只是人的形成。部活动在青春时代，也作为重要的记忆存在」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021",
+        line = 97
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「夏目老师也有那种记忆吗？」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022",
+        line = 100
+    },
+    block_00022 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_14", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10048", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「当然，我也有。起初我没能进入空手道部。",
+                    {"rt2"},
+                    "经过一些事情，我才得以加入空手道部」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023",
+        line = 107
+    },
+    block_00023 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_16", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10049", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「虽然没有能去全国比赛，但是那个时候每天都很充实，我感谢那",
+                    {"rt2"},
+                    "些为我创造这种环境的人」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024",
+        line = 113
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10050", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「我选择成为教师，也是出于这样的原因」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025",
+        line = 116
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「原来如此……」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026",
+        line = 119
+    },
+    block_00026 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_17", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10051", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「草薙老师，你有选择成为教师的原因吗？」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027",
+        line = 125
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没有特别的……我的母校大学的学部是一个要么成为艺术家要么",
+                    {"rt2"},
+                    "成为老师的极端选择，所以我选择了成为教师」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028",
+        line = 128
+    },
+    block_00028 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_18", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10052", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「哈哈……虽然我知道。",
+                    {"rt2"},
+                    "在这种地方，你至少要有不说这种话的社会性，直哉」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029",
+        line = 135
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030",
+        line = 138
+    },
+    block_00030 = {
+        {"bg", time = 500, file = "bg026b", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"被这样一说，我回头看去，几位资深的老师正以狠狠的眼神盯着我。"}
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031",
+        line = 144
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {"啊，对了……是这样的吧。"}
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032",
+        line = 147
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "像我这样是凭借藍和校长的关系才能进入这里的……而且，还有许",
+                    {"rt2"},
+                    "多讨厌我的教员……原来如此，从中途开始，藍是在注意其他教师",
+                    {"rt2"},
+                    "的视线，与我交谈的吗……。"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033",
+        line = 150
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {"唔，成人社会真的很艰难！！"}
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034",
+        line = 153
+    },
+    block_00034 = {
+        {"bg", time = 500, file = "ev_com_14_19", path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10053", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「啊，话说回来，草薙老师的手机在亮着。",
+                    {"rt2"},
+                    "已经震动了几次了……」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035",
+        line = 160
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「电话？是谁呢」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036",
+        line = 163
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我拿起电话。"}
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037",
+        line = 166
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {"通话记录里有三次是同一个名字。"}
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038",
+        line = 169
+    },
+    block_00038 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_17", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10054", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「是谁打来的？」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039",
+        line = 175
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「并不是谁」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040",
+        line = 178
+    },
+    block_00040 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_20", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10055", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「是吗？」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041",
+        line = 184
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是的」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042",
+        line = 187
+    },
+    block_00042 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_15", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10056", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「草薙老师。年纪大了之后，你会发现曾经的朋友会越来越少的」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043",
+        line = 193
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，确实是这样。啊，但是，现在有各种社交网络，似乎可以很",
+                    {"rt2"},
+                    "容易地再次遇到过去的熟人哦」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044",
+        line = 196
+    },
+    block_00044 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_20", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10057", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「哦，老师有在使用某些社交网络吗？」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045",
+        line = 202
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046",
+        line = 205
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我无言以对。"}
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047",
+        line = 208
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {"因为，只有Lain这样的人才会做那种事。"}
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048",
+        line = 212
+    },
+    block_00048 = {
+        {"se", vol = 60, loop = 1, id = 1, file = "se0058"},
+        {"text"},
+        text = {
+            ja = {
+                {"手机又震动了。"}
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049",
+        line = 218
+    },
+    block_00049 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_14_21", time = 400, path = ":ev/ev_com_14/", set = "ev_com_14"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10058", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「快接吧，最近没有见过吧？只有你一个人的时候才找你，一旦家",
+                    {"rt2"},
+                    "人回来就忽视他，这太过分了吧」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050",
+        line = 224
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「唔……」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051",
+        line = 227
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {"唔，就这件事，我也无法反驳……。"}
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052",
+        line = 230
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我无奈地接起了电话。"}
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053",
+        line = 233
+    },
+    block_00053 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"se", id = 2, file = "se0029"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg026b", path = ":bg/", sync = 0},
+        {"extrans", time = 500},
+        {"se", stop = 1, id = 2, time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「喂，我是草薙」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054",
+        line = 249
+    },
+    block_00054 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10001", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「别拒接我的电话！」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055",
+        line = 254
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我没有拒接你的电话。只是刚才我在工作，所以没能接电话」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056",
+        line = 257
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10002", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「是这样吗？你还在学校吗？」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057",
+        line = 260
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「社团活动挺繁重的」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058",
+        line = 263
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10003", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「啧，那是什么？听起来像是在向我炫耀。是不是有年轻的孩子在",
+                    {"rt2"},
+                    "说“老师，老师，老师呀”之类的？」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059",
+        line = 266
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「反过来，如果他们敢直呼老师的名字，那才真的可怕」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060",
+        line = 269
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10004", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「嗯，没事，那我在平常的那家店等你，七点开始」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061",
+        line = 272
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我没有说我要去——」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062",
+        line = 275
+    },
+    block_00062 = {
+        {"se", vol = 40, id = 1, file = "se0019"},
+        {"text"},
+        text = {
+            ja = {
+                {"噗通……嘟嘟。"}
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063",
+        line = 280
+    },
+    block_00063 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「——他根本不听人说话」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064",
+        line = 285
+    },
+    block_00064 = {
+        {"fg", mode = -2, sync = 0},
+        {"fg", ch = "藍", size = "z1", mode = 3, resize = 1, path = ":fg/aix/z1/", file = "aix_z1a0100", face = "a0002", head = "aix_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10059", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「你应该去」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065",
+        line = 295
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是，藍，不对，夏目老师的晚餐怎么办」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066",
+        line = 298
+    },
+    block_00066 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1a0100", face = "a0003", head = "aix_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10060", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「我会去我熟识的店里，所以不用担心」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067",
+        line = 303
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「说起来，你之前也说过要去你熟识的店」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068",
+        line = 306
+    },
+    block_00068 = {
+        {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1b0100", face = "b0001", head = "aix_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1b0100", face = "b0002", head = "aix_z1b", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "藍", size = "z1", mode = 3, path = ":fg/aix/z1/", file = "aix_z1b0100", face = "b0004", head = "aix_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10061", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"藍"},
+                    "「嗯，是的。嗯，我也想深化与老朋友的关系。",
+                    {"rt2"},
+                    "所以，草薙老师也不必担心，去和同班同学见面就好」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069",
+        line = 315
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是，老师……」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070",
+        line = 318
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {"话说回来……我其实只是觉得去见面麻烦而已。"}
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071",
+        line = 321
+    },
+    block_00071 = {
+        {"bgm", stop = 1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"bg", rule = 139, vague = 40, file = "ev_etc_01_07", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"bgm", file = "bgm104"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我在大概六点半过后开始准备回家，大约在七点五分钟前离开了办",
+                    {"rt2"},
+                    "公室。"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072",
+        line = 335
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {"从这里到泪川，如果骑摩托车大概要十分钟。"}
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073",
+        line = 338
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但不幸的是，我上学时是走路和坐火车。"}
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074",
+        line = 341
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {"汽油费用不能作为交通费报销，但火车票能作为交通费报销。"}
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075",
+        line = 344
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {"从弓張学园到泪川大概要乘坐公交车等大约30分钟吧？"}
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076",
+        line = 347
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "嗯，可能会稍微迟到一些，但无论我早到还是晚到，",
+                    {"rt2"},
+                    "总有人会自顾自的开始。我和他就是这种关系。"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077",
+        line = 352
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "这样这样，在公交车上颠簸了大约20分钟（从学园走到公交站以及",
+                    {"rt2"},
+                    "等车大概需要10分钟），我到达了泪川。"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078",
+        line = 355
+    },
+    block_00078 = {
+        {"se", id = 1, file = "se0039"},
+        {"text"},
+        text = {
+            ja = {
+                {"公交车停在了国道旁，从那里可以直接看到泪川繁华街的入口。"}
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079",
+        line = 361
+    },
+    block_00079 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我走进了那个入口。"}
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080",
+        line = 366
+    },
+    block_00080 = {
+        {"bg", file = "zbg059c", path = ":bg/", ax = 1920, ay = 1126, bx = -960, by = -586},
+        {"text"},
+        text = {
+            ja = {
+                {"虽然现在是一天中白天最长的时期，但果然过了7点还是会变暗。"}
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081",
+        line = 372
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我走向常去的那家店的时候，",
+                    {"rt2"},
+                    "看到了一个出乎意料的面孔。"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082",
+        line = 376
+    },
+    block_00082 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg059c", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noc0400", face = "c0001", head = "kan_noc", lv = 3, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「长山！？」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083",
+        line = 388
+    },
+    block_00083 = {
+        {"fg", ch = "香奈", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0012", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "香奈", act = "びっくり", lv = 3, id = 9},
+                {"fg", ch = "香奈", size = "no", sync = 1, mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0013", head = "kan_noa", lv = 3, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10001", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「呜，草薙先生！？」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084",
+        line = 395
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你怎么会在这种地方……」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085",
+        line = 398
+    },
+    block_00085 = {
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0011", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10002", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「呜，草薙先生你才是……」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086",
+        line = 403
+    },
+    block_00086 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，我是正常地来喝酒的，毕竟在弓張喝酒的话，一般不就是在",
+                    {"rt2"},
+                    "桜ヶ原或者",
+                    {"rt2"},
+                    "这个泪川吗？」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087",
+        line = 407
+    },
+    block_00087 = {
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0016", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10003", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「是，是的呢」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088",
+        line = 412
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是的呢？不是这个问题，你为什么会在这里？」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089",
+        line = 415
+    },
+    block_00089 = {
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0003", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0011", head = "kan_noa", lv = 3, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10004", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「哈哈哈哈……那个去吃饭……」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090",
+        line = 421
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「特地从东京来？」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091",
+        line = 424
+    },
+    block_00091 = {
+        {"fg", ch = "香奈", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0004", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10005", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「嗯，呃……」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092",
+        line = 429
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，这不可能吧……」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093",
+        line = 432
+    },
+    block_00093 = {
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0013", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0002", head = "kan_noa", lv = 3, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10006", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「那，那种事情没有的。我也是出生在弓張市的」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094",
+        line = 438
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就算是出生在弓張市，为什么要在这种地方吃饭呢」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095",
+        line = 441
+    },
+    block_00095 = {
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0410", face = "a0006", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10007", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「不，不管我在哪里吃饭，那是我的自由吧！」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096",
+        line = 446
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，确实，你这么一说，也是……」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097",
+        line = 449
+    },
+    block_00097 = {
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0002", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10008", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「就是这样。我有点事，顺便吃个饭，现在正在考虑是不是该回家",
+                    {"rt2"},
+                    "了",
+                    {"rt2"},
+                    "……」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098",
+        line = 455
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {"确实，她也是出生在弓張的，和老朋友之类的吃个饭也不奇怪……。"}
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099",
+        line = 458
+    },
+    block_00099 = {
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0003", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10009", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「所以，我就是～」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100",
+        line = 463
+    },
+    block_00100 = {
+        {"se", id = 1, file = "se0040"},
+        {"ex", time = 1000, func = "wait"},
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0013", head = "kan_noa", lv = 3, id = 9},
+        {"fgact", ch = "香奈", act = "びっくり", lv = 3, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10010", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「！？」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101",
+        line = 472
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「？」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102",
+        line = 475
+    },
+    block_00102 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"那是一个相当大的声音。"}
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103",
+        line = 480
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "在这样的繁华街都可以听到。",
+                    {"rt2"},
+                    "是大肚子的声音。"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104",
+        line = 484
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你刚刚，肚子饿了？」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105",
+        line = 487
+    },
+    block_00105 = {
+        {"fg", ch = "香奈", size = "no", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0011", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0004", head = "kan_noa", lv = 3, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10011", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「是，是你的错觉。真是对女孩子很失礼的言辞呢」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106",
+        line = 493
+    },
+    block_00106 = {
+        {"se", id = 1, file = "se0040"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10012", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107",
+        line = 501
+    },
+    block_00107 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"fg", ch = "香奈", mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0011", head = "kan_noa", lv = 3, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「喂……」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108",
+        line = 507
+    },
+    block_00108 = {
+        {"fg", ch = "香奈", size = "no", sync = 1, mode = 3, path = ":fg/kan/no/", file = "kan_noa0400", face = "a0005", head = "kan_noa", lv = 3, id = 9},
+        {"fg", ch = "香奈", mx = -40, mode = -1, lv = 3, id = 9},
+        {"se", id = 1, file = "se0178"},
+        {"text"},
+        text = {
+            ja = {
+                {"长山突然冲走了。"}
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109",
+        line = 515
+    },
+    block_00109 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，终究是女性的步伐，无法从我这样的脚步中逃脱。"}
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110",
+        line = 518
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            ja = {
+                {"下一瞬间，我已经紧紧抓住了长山的手臂。"}
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111",
+        line = 521
+    },
+    block_00111 = {
+        {"msgoff"},
+        {"se", id = 1, file = "se0142"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = -600, speed = 500, zoom = 120, file = "zbg059c", path = ":bg/", x2 = -500, ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"fg", ch = "香奈", size = "z2", speed = 500, mode = 3, resize = 1, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0006", head = "kan_z2a", x2 = 100, x = 0, lv = 5, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10013", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「疼，好疼。请不要抓那么紧我的手臂」"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112",
+        line = 535
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，抱，抱歉」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113",
+        line = 538
+    },
+    block_00113 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我松开了长山的手臂。"}
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114",
+        line = 543
+    },
+    block_00114 = {
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0005", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10014", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「为什么突然抓住我的手臂啊」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115",
+        line = 548
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，是因为你，突然想逃跑，对吧？」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116",
+        line = 551
+    },
+    block_00116 = {
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0006", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0017", head = "kan_z2a", x = 0, lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10015", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「我并没有想逃跑。真是过度自我意识了呢」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117",
+        line = 557
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那么，为什么突然就开始跑了？」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118",
+        line = 560
+    },
+    block_00118 = {
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0003", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0002", head = "kan_z2a", x = 0, lv = 5, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0004", head = "kan_z2a", x = 0, lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10016", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「是为了减肥。我经常需要出现在媒体前",
+                    {"rt2"},
+                    "不是吗。所以就做了点轻量级的慢跑」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119",
+        line = 568
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你打算穿着那么长的裙子慢跑吗？」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120",
+        line = 571
+    },
+    block_00120 = {
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0012", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0016", head = "kan_z2a", x = 0, lv = 5, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0003", head = "kan_z2a", x = 0, lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10017", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「难道不可以吗？草薙先生是男性所以不明白。如果是女性的话，",
+                    {"rt2"},
+                    "偶尔会这样穿着做慢跑的」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121",
+        line = 578
+    },
+    block_00121 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「绝对是在撒谎吧。如果街上有很多女性穿着这么长的裙子跑步，",
+                    {"rt2"},
+                    "人们会误以为是口裂女或什么的」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122",
+        line = 581
+    },
+    block_00122 = {
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0004", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10018", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「所以才会有口裂女这种传闻出现的呢」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123",
+        line = 586
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你，这个传闻是在我们出生的很久之前就已经有了，你以为是什",
+                    {"rt2"},
+                    "么时候的？」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124",
+        line = 589
+    },
+    block_00124 = {
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0012", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0011", head = "kan_z2a", x = 0, lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10019", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「是这样吗？我对这种事情不太了解呢」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125",
+        line = 595
+    },
+    block_00125 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你这……这个态度，又在谋划什么？」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126",
+        line = 598
+    },
+    block_00126 = {
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2b0400", face = "b0008", head = "kan_z2b", x = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10020", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「真是冤枉。为什么我会被说出这样的话呢？」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127",
+        line = 604
+    },
+    block_00127 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你自己做出让人说这种话的事了吧……」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128",
+        line = 607
+    },
+    block_00128 = {
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0005", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10021", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「你有什么资格说这个……」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129",
+        line = 615
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你刚刚说什么？」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130",
+        line = 618
+    },
+    block_00130 = {
+        {"fg", ch = "香奈", size = "z2", sync = 1, mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0002", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0005", head = "kan_z2a", x = 0, lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10022", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「我并没有说什么。",
+                    {"rt2"},
+                    "话说回来，是时候解放我了吗？」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131",
+        line = 625
+    },
+    block_00131 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「等我搞清楚你的阴谋再说！」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132",
+        line = 628
+    },
+    block_00132 = {
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0017", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10023", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「你是默认我肯定会做什么不好的事情呢……」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133",
+        line = 633
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是理所当然的」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134",
+        line = 636
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10005", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝", "？？？"},
+                    "「都是你的错！」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135",
+        line = 640
+    },
+    block_00135 = {
+        {"se", id = 1, file = "se0047"},
+        {"quake"},
+        {"fg", ch = "香奈", size = "z2", mode = 3, path = ":fg/kan/z2/", file = "kan_z2a0400", face = "a0012", head = "kan_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃哦！？」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136",
+        line = 650
+    },
+    block_00136 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10006", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝", "？？？"},
+                    "「嗯嘎」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137",
+        line = 658
+    },
+    block_00137 = {
+        {"text"},
+        text = {
+            ja = {
+                {"后脑被什么东西攻击了。"}
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138",
+        line = 661
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什，什么！？ 谁，谁是！」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139",
+        line = 664
+    },
+    block_00139 = {
+        {"fg", mode = -2},
+        {"bg", x = 760, time = 300, sync = 0, file = "zbg059c", path = ":bg/", x2 = 600, y2 = 0, y = 0, ax = 1920, ay = 1126, bx = -960, by = -586},
+        {"fg", ch = "片貝", size = "z2", time = 300, mode = 3, resize = 1, path = ":fg/kat/z2/", file = "kat_z2a0000", face = "a0009", head = "kat_z2a", x2 = -160, x = 0, y = 0, lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "片貝", act = "おじぎ", time = 600, size = 50, lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10007", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「你，你的头真硬……」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140",
+        line = 680
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那里有个熟悉的男人的身影。"}
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141",
+        line = 683
+    },
+    block_00141 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "那个男人也在揉着头。看来是他用头撞过来的。",
+                    {"rt2"},
+                    "怎么了？已经喝醉了吗？这个笨蛋。"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142",
+        line = 687
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你为什么突然攻击我！」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143",
+        line = 690
+    },
+    block_00143 = {
+        {"fg", ch = "片貝", size = "z2", mode = 3, path = ":fg/kat/z2/", file = "kat_z2a0000", face = "a0006", head = "kat_z2a", x = 0, y = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10008", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「这是理所当然的！你怎么能这样说话对待这么可爱的小姐！」"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144",
+        line = 695
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「可爱？」"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145",
+        line = 698
+    },
+    block_00145 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg059c", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "香奈", size = "z1", mode = 3, resize = 1, path = ":fg/kan/z1/", file = "kan_z1b0400", face = "b0003", head = "kan_z1b", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1b0410", face = "b0004", head = "kan_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10024", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「嘿嘿。香奈其实是挺可爱的呢」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146",
+        line = 711
+    },
+    block_00146 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「像你这种自称可爱的人才不会可爱呢！」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147",
+        line = 714
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10009", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「她很可爱吧！无论怎么看都很可爱吧！很美吧！」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148",
+        line = 719
+    },
+    block_00148 = {
+        {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1a0400", face = "a0003", head = "kan_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1a0400", face = "a0016", head = "kan_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10025", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「就是这样。草薙先生。草薙先生你可能并不清楚，其实我是个相",
+                    {"rt2"},
+                    "当美丽的女性呢」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149",
+        line = 726
+    },
+    block_00149 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「烦死了，即使是这样，你的性格还是有问题！」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150",
+        line = 729
+    },
+    block_00150 = {
+        {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1a0400", face = "a0001", head = "kan_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1b0400", face = "b0004", head = "kan_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10026", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「哪有那样的事啊～我的性格也超级可爱的～」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151",
+        line = 736
+    },
+    block_00151 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「喂！我对“樱的足迹”那件事恼火得很哦！我原本不觉得你是会为",
+                    {"rt2"},
+                    "了名气而做那种事情的人！」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152",
+        line = 739
+    },
+    block_00152 = {
+        {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1a0400", face = "a0015", head = "kan_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1a0400", face = "a0002", head = "kan_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10027", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「那真是太遗憾了。我就是那种为了名气毫不在意做出那种事的女",
+                    {"rt2"},
+                    "人」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153",
+        line = 745
+    },
+    block_00153 = {
+        {"fg", mode = -2, sync = 0},
+        {"fg", ch = "片貝", size = "z1", mode = 3, resize = 1, path = ":fg/kat/z1/", file = "kat_z1a0000", face = "a0006", head = "kat_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10010", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「那不对！」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154",
+        line = 754
+    },
+    block_00154 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你为什么要插嘴！！」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155",
+        line = 757
+    },
+    block_00155 = {
+        {"fg", ch = "片貝", size = "z1", sync = 1, mode = 3, path = ":fg/kat/z1/", file = "kat_z1a0000", face = "a0005", head = "kat_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl03 = {
+                {"fg", ch = "片貝", size = "z1", mode = 3, path = ":fg/kat/z1/", file = "kat_z1a0000", face = "a0006", head = "kat_z1a", lv = 4, id = 9}
+            },
+            vl01 = {
+                {"fg", ch = "片貝", size = "z1", mode = 3, path = ":fg/kat/z1/", file = "kat_z1a0000", face = "a0002", head = "kat_z1a", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "片貝", size = "z1", mode = 3, path = ":fg/kat/z1/", file = "kat_z1a0000", face = "a0003", head = "kat_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10011", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「我猜那件事一定有原因。一定是这样的。",
+                    {"rt2"},
+                    "我能理解。对吧，香奈小姐」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156",
+        line = 766
+    },
+    block_00156 = {
+        {"fg", mode = -2, sync = 0},
+        {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1b0400", face = "b0017", head = "kan_z1b", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        delay = {
+            vl02 = {
+                {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1b0400", face = "b0004", head = "kan_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10028", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「其实并没有什么原因，而且能不能不要用我的名字呼唤我？你可",
+                    {"rt2"},
+                    "以叫我长山小姐吗？」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157",
+        line = 777
+    },
+    block_00157 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10012", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「好的，长山小姐」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158",
+        line = 782
+    },
+    block_00158 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在这个对话中，哪里看得出这个女人的性格好呢……。"}
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159",
+        line = 785
+    },
+    block_00159 = {
+        {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1a0400", face = "a0015", head = "kan_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1a0400", face = "a0011", head = "kan_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10029", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「唉，累死了。",
+                    {"rt2"},
+                    "一直喊得声音都哑了」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160",
+        line = 792
+    },
+    block_00160 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10013", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「我们不去那边的店里休息一下吗？那里有很多饮料」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161",
+        line = 795
+    },
+    block_00161 = {
+        {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1a0400", face = "a0001", head = "kan_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "香奈", size = "z1", mode = 3, path = ":fg/kan/z1/", file = "kan_z1a0400", face = "a0016", head = "kan_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10030", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「这样啊。草薙先生，你拖住我这么久，当然应该请我喝个东西了",
+                    {"rt2"},
+                    "吧」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162",
+        line = 801
+    },
+    block_00162 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊啊！！」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163",
+        line = 806
+    },
+    block_00163 = {
+        {"fg", mode = -2, sync = 0},
+        {"fg", ch = "片貝", size = "z1", mode = 3, path = ":fg/kat/z1/", file = "kat_z1a0000", face = "a0003", head = "kat_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10014", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「请放心，长山小姐。我和这个家伙会支付你的饮料费的」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164",
+        line = 814
+    },
+    block_00164 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你为什么要随便做决定！」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165",
+        line = 819
+    },
+    block_00165 = {
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "片貝", size = "z1", mode = 3, path = ":fg/kat/z1/", file = "kat_z1a0000", face = "a0002", head = "kat_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10015", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「没关系，没关系，走吧，去店里！」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166",
+        line = 824
+    },
+    block_00166 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么是没关系啊！」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167",
+        line = 827
+    },
+    block_00167 = {
+        {"bgm", stop = 1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"bg", rule = "083r", vague = 40, file = "ev_com_30_01", path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"bgm", file = "bgm161"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_non_10007", ch = "non"}
+            },
+            ja = {
+                {
+                    name = {"ノノ未"},
+                    "「啊？哇哇哇！！ 是长山香奈老师吗！」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168",
+        line = 840
+    },
+    block_00168 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_06", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10031", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「是的，就是我」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169",
+        line = 845
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_non_10008", ch = "non"}
+            },
+            ja = {
+                {
+                    name = {"ノノ未"},
+                    "「请、请给我签名！」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170",
+        line = 848
+    },
+    block_00170 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_33", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10032", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「好的好的，这点小事一点问题都没有。",
+                    {"rt2"},
+                    "你也是草薙先生的学生对吧？」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171",
+        line = 854
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_non_10009", ch = "non"}
+            },
+            ja = {
+                {
+                    name = {"ノノ未"},
+                    "「学生……只是在美术部接受他的指导而已……」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172",
+        line = 857
+    },
+    block_00172 = {
+        {"text"},
+        delay = {
+            vl01 = {
+                {"bg", sync = 0, face = 1, file = "ev_com_30_34", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10033", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「弓張美术部是名校，而且你是接受草薙直哉这个美术老师的教导，",
+                    {"rt2"},
+                    "完全可以称之为门下生。对吧，草薙先生」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173",
+        line = 862
+    },
+    block_00173 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊啊。有讨厌的人在就喝不下酒了」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174",
+        line = 865
+    },
+    block_00174 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_02", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_non_10010", ch = "non"}
+            },
+            ja = {
+                {
+                    name = {"ノノ未"},
+                    "「老师！无论如何那样对长山老师也太失礼了！」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175",
+        line = 872
+    },
+    block_00175 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，你可能不知道，但是这个家伙总是搞不必要的恶作剧。",
+                    {"rt2"},
+                    "这次也一定在筹划什么」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176",
+        line = 876
+    },
+    block_00176 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_03", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10034", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「唉，你不知道“推定无罪”这个词吗？我什么也没做啊」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177",
+        line = 883
+    },
+    block_00177 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是因为你想要做什么才逃跑的吧」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178",
+        line = 886
+    },
+    block_00178 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10035", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「烦人……，为什么要这么断定呢」"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179",
+        line = 889
+    },
+    block_00179 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10016", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「就是啊。断定不是好事！」"
+                }
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180",
+        line = 892
+    },
+    block_00180 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_04", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_non_10011", ch = "non"}
+            },
+            ja = {
+                {
+                    name = {"ノノ未"},
+                    "「可能是老师因为“樱的足迹”事件生气了……。",
+                    {"rt2"},
+                    "但无论如何，那样太失礼了」"
+                }
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181",
+        line = 900
+    },
+    block_00181 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呜……」"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182",
+        line = 903
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            ja = {
+                {"感觉我变成了反派……"}
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183",
+        line = 906
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "如果咲崎君或者ルリヲ或者鈴菜或者栗山君在这，他们应该会支持",
+                    {"rt2"},
+                    "我的",
+                    {"rt2"},
+                    "……"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184",
+        line = 910
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10036", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「因为让你知道很麻烦，所以我才逃跑的」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185",
+        line = 913
+    },
+    block_00185 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「让我知道就麻烦……你在计划什么」"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186",
+        line = 916
+    },
+    block_00186 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10037", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「我说了我并没有计划什么」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187",
+        line = 919
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那为什么要逃跑」"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188",
+        line = 922
+    },
+    block_00188 = {
+        {"bgm", vol = 30, time = 2000, file = "bgm161"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10038", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「有点因为……」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189",
+        line = 927
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            ja = {
+                {"长山看着座位后面的情况。"}
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190",
+        line = 930
+    },
+    block_00190 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10039", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「被跟踪的人太烦人了……」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191",
+        line = 933
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「跟踪者？」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192",
+        line = 936
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            ja = {
+                {"当我说出这个词的时候，我看到一个人影像是在逃跑一样离开了店。"}
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193",
+        line = 939
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你被跟踪了？」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194",
+        line = 942
+    },
+    block_00194 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_05", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10040", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「呵，我是名人，所以也许吧」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195",
+        line = 947
+    },
+    block_00195 = {
+        {"select", label = "label01", text = "select"},
+        {"select", label = "label02", text = "select"},
+        {"select", mode = "sys", name = "03_04_7"},
+        {"text"},
+        select = {
+            ja = {"不，不是这样的。", "原来是这样……。"}
+        },
+        linkback = "block_00194",
+        linknext = "block_00196",
+        line = 958
+    },
+    block_00196 = {
+        {"eval", exp = "f.mak=f.mak+1"},
+        {"bg", sync = 0, face = 1, file = "ev_com_30_05", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，不是那样的……」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197",
+        line = 968
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你所做的事，有人在追寻吗？」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198",
+        line = 971
+    },
+    block_00198 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_04", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10041", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「嗯，你真是敏锐啊……」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199",
+        line = 976
+    },
+    block_00199 = {
+        {"excall", label = "join"},
+        {"bg", sync = 0, face = 1, file = "ev_com_30_05", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            ja = {
+                {"原来是这样……。"}
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200",
+        line = 990
+    },
+    block_00200 = {
+        {"text"},
+        text = {
+            ja = {
+                {"……。"}
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201",
+        line = 993
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这家伙真的是名人到这个地步吗？"}
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202",
+        line = 996
+    },
+    block_00202 = {
+        {"excall", label = "join"},
+        {"text"},
+        text = {
+            ja = {
+                {"长山思考了一会儿后继续说道。"}
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203",
+        line = 1007
+    },
+    block_00203 = {
+        {"bgm", vol = 100, time = 2000, file = "bgm161"},
+        {"bg", sync = 0, face = 1, file = "ev_com_30_05", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10042", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「可能因为这事微妙地牵扯到你，我不想卷入你，是有这样的想法",
+                    {"rt2"},
+                    "吧……」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204",
+        line = 1016
+    },
+    block_00204 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不想卷入？是有什么涉及案件的事吗？」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205",
+        line = 1019
+    },
+    block_00205 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_04", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10043", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「一点也没有，只是我不希望你回到我们的行业，所以希望你不要",
+                    {"rt2"},
+                    "涉及这个，这个意思啦」"
+                }
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206",
+        line = 1026
+    },
+    block_00206 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，那样啊！但，这只是多虑。无论发生什么，我都不会回到你",
+                    {"rt2"},
+                    "们",
+                    {"rt2"},
+                    "的世界」"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207",
+        line = 1030
+    },
+    block_00207 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_05", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10044", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「但是，你不是完成了“樱们的色彩足迹”吗」"
+                }
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208",
+        line = 1037
+    },
+    block_00208 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「名义是你们的吧」"
+                }
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209",
+        line = 1040
+    },
+    block_00209 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_04", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10045", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「名义是那样，但是这种事在几年内就会暴露的。",
+                    {"rt2"},
+                    "在这个信息社会，只要有一次疑虑就无法挽回了」"
+                }
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210",
+        line = 1048
+    },
+    block_00210 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_05", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10046", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「可能，到那时你会成为焦点」"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211",
+        line = 1053
+    },
+    block_00211 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没问题的。即使有那种疑惑，我也会全盘否定的」"
+                }
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212",
+        line = 1056
+    },
+    block_00212 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10047", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「会这样吧」"
+                }
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213",
+        line = 1059
+    },
+    block_00213 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那你到底在做什么？」"
+                }
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214",
+        line = 1062
+    },
+    block_00214 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_36", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10048", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「啊，比那个重要的，是叫做野乃未吗？",
+                    {"rt2"},
+                    "先来个中生啤酒，你们两个也是啤酒好了？」"
+                }
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215",
+        line = 1069
+    },
+    block_00215 = {
+        {"quake", mode = "mw"},
+        {"bg", sync = 0, face = 1, file = "ev_com_30_06", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，取消啤酒！！因为没钱，所以是哈皮酒！」"
+                }
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216",
+        line = 1075
+    },
+    block_00216 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10017", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「你在说什么！没关系的！既然有这么漂亮的小姐在，就别吝啬！",
+                    {"rt2"},
+                    "来啤酒！野乃未！三杯啤酒！！」"
+                }
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217",
+        line = 1078
+    },
+    block_00217 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_07", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_non_10012", ch = "non"}
+            },
+            ja = {
+                {
+                    name = {"ノノ未"},
+                    "「好的！」"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218",
+        line = 1085
+    },
+    block_00218 = {
+        {"bg", time = 500, file = "ev_com_30_08", path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10049", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「然后，点什么菜好呢。",
+                    {"rt2"},
+                    "这里有这种水果。留着和日本酒一起吃，首先是啤酒所以……」"
+                }
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219",
+        line = 1093
+    },
+    block_00219 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10018", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「啤酒的话，油炸的食物会搭吧」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220",
+        line = 1096
+    },
+    block_00220 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10050", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「唔。我一般都会避免油腻的食物。因为要注意身材……」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221",
+        line = 1099
+    },
+    block_00221 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如此注重健康的家伙竟然要用这个和日本酒一起吃。"}
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222",
+        line = 1102
+    },
+    block_00222 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_32", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_non_10013", ch = "non"}
+            },
+            ja = {
+                {
+                    name = {"ノノ未"},
+                    "「这是您的三杯生啤，等待了一段时间」"
+                }
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223",
+        line = 1107
+    },
+    block_00223 = {
+        {"se", vol = 20, id = 1, file = "se0171"},
+        {"bg", file = "ev_com_30_30", path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10051", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「烤豌豆荚、鳍鱼炸物、鳗鱼炸物，还有这个河豚刺身配上肝，应",
+                    {"rt2"},
+                    "该就这样了吧？」"
+                }
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224",
+        line = 1115
+    },
+    block_00224 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「明明说要控制油脂，你点的全是油炸的啊。啊，还有我要飞鱼的",
+                    {"rt2"},
+                    "天妇罗！」"
+                }
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225",
+        line = 1118
+    },
+    block_00225 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_30_31", time = 400, path = ":ev/ev_com_30/", set = "ev_com_30"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10052", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「全都变成鱼的天妇罗了！」"
+                }
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226",
+        line = 1125
+    },
+    block_00226 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「别烦我啊。我最喜欢的就是飞鱼的天妇罗。还有什么鳗鱼天妇罗，",
+                    {"rt2"},
+                    "鳗鱼不是应该做成汤吗？」"
+                }
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227",
+        line = 1128
+    },
+    block_00227 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10053", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「哈，你在说什么啊？只是草薙先生你无知，鳗鱼天妇罗是最好的，",
+                    {"rt2"},
+                    "这是定律！总有人装作懂事，说起鳗鱼就说要做成汤！！」"
+                }
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228",
+        line = 1131
+    },
+    block_00228 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「天妇罗最好的应该是飞鱼吧」"
+                }
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229",
+        line = 1134
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10054", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「我从来没有吃过飞鱼的天妇罗」"
+                }
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230",
+        line = 1137
+    },
+    block_00230 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「没吃过的人别说话！」"
+                }
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231",
+        line = 1140
+    },
+    block_00231 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10055", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「那草薙先生你在哪个店吃过鳗鱼天妇罗？」"
+                }
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232",
+        line = 1143
+    },
+    block_00232 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，我也没吃过……」"
+                }
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233",
+        line = 1146
+    },
+    block_00233 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10056", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「你自己都没吃过，就别定论什么最好了好吗ー？」"
+                }
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234",
+        line = 1149
+    },
+    block_00234 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你不也是这么说的！」"
+                }
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235",
+        line = 1152
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10057", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「我是说在鳗鱼料理中，鳗鱼天妇罗是最好的」"
+                }
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236",
+        line = 1155
+    },
+    block_00236 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_non_10014", ch = "non"}
+            },
+            ja = {
+                {
+                    name = {"ノノ未"},
+                    "「鳗鱼天妇罗真的很好吃。我们店的鳗鱼天妇罗里有夹着紫苏叶，",
+                    {"rt2"},
+                    "很美味的。",
+                    {"rt2"},
+                    "还有飞鱼的天妇罗也是最棒的。只是不知道这个的人很多而已」"
+                }
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237",
+        line = 1160
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_kat_10019", ch = "kat"}
+            },
+            ja = {
+                {
+                    name = {"片貝"},
+                    "「好啦。不就是点三个天妇罗吗，我们三个人呢。",
+                    {"rt2"},
+                    "你们两个别为了这种事争吵了」"
+                }
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238",
+        line = 1164
+    },
+    block_00238 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_kan_10058", ch = "kan"}
+            },
+            ja = {
+                {
+                    name = {"香奈"},
+                    "「知道了。",
+                    {"rt2"},
+                    "那么黄花鱼就用普通的油炸的好了」"
+                }
+            }
+        },
+        linkback = "block_00237",
+        linknext = "block_00239",
+        line = 1168
+    },
+    block_00239 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_non_10015", ch = "non"}
+            },
+            ja = {
+                {
+                    name = {"ノノ未"},
+                    "「素炸也很好吃的。那我就确认一下订单了」"
+                }
+            }
+        },
+        linkback = "block_00238",
+        linknext = "block_00240",
+        line = 1171
+    },
+    block_00240 = {
+        {"bgm", stop = 1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"excall", file = "03_04_8"},
+        {"text"},
+        linkback = "block_00239",
+        line = 1176
+    },
+    label = {
+        top = {block = "block_00000", label = 1},
+        label01 = {block = "block_00196", label = 1},
+        label02 = {block = "block_00199", label = 2},
+        join = {block = "block_00202", label = 2}
+    }
+}

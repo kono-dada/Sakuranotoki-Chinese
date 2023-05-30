@@ -1,0 +1,4033 @@
+astver = 2.0
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"msg", no = 1},
+        {"bg", file = "アイキャッチ03", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"se", file = "se0109", vol = 10, id = 9, loop = 1},
+        {"bg", time = 2000, file = "ev_etc_01_30", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"bgm", file = "bgm152"},
+        {"text"},
+        text = {
+            ja = {
+                {"那是一个雨天。"}
+            }
+        },
+        linknext = "block_00001",
+        line = 27
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "结束了全体职员的早会后，被校长叫住，被告知要在午休时到校长",
+                    {"rt2"},
+                    "室来。"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002",
+        line = 31
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {"诶？我应该没有做出让校长生气的事情……。"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003",
+        line = 34
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {"是什么呢？"}
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004",
+        line = 37
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不会是要被炒鱿鱼吧……。"}
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005",
+        line = 40
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {"怀着这样的惶恐，结束了上午的课程。"}
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006",
+        line = 43
+    },
+    block_00006 = {
+        {"se", stop = 1, time = 3000, id = 9},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"se", file = "se0109", id = 8, vol = 4, time = 9000, loop = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"午休时间，外面依旧是雨天。"}
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007",
+        line = 50
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"在走廊上走着，透过窗户眺望着那样郁闷的雨天。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008",
+        line = 53
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "真的想不到有什么地方做错了。",
+                    {"rt2"},
+                    "为什么会被叫去呢？"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009",
+        line = 57
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {"站在校长室门前，整理好领带，然后敲门。"}
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010",
+        line = 60
+    },
+    block_00010 = {
+        {"msgoff"},
+        {"se", id = 1, file = "se0038"},
+        {"ex", time = 500, func = "wait"},
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我是草薙」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011",
+        line = 69
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10001", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「啊，进来吧……」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012",
+        line = 72
+    },
+    block_00012 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"se", stop = 1, time = 1000, id = 8},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg025e", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "紗希", size = "z1", mode = 3, resize = 1, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", rule = "083r", vague = 40},
+        {"se", id = 1, file = "se0132"},
+        {"se", stop = 1, time = 500, id = 2},
+        {"text"},
+        text = {
+            ja = {
+                {"打开校长室的门，校长正在站着望着窗外。"}
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013",
+        line = 94
+    },
+    block_00013 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10002", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「抱歉了。占用了你宝贵的午休时间」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014",
+        line = 99
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她这么说着，然后转向我。"}
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015",
+        line = 102
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，比起这个，您有什么事情吗？」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016",
+        line = 105
+    },
+    block_00016 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0012", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10003", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「别做那种表情……。",
+                    {"rt2"},
+                    "话虽如此，你肯定很在意吧。毕竟突然被叫来了——」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017",
+        line = 113
+    },
+    block_00017 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10004", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，坐在沙发上，吃点茶点，不要紧张怎么样？」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018",
+        line = 119
+    },
+    block_00018 = {
+        {"select", label = "label01", text = "select"},
+        {"select", label = "label02", text = "select"},
+        {"select", mode = "sys", name = "03_03_1_1"},
+        {"text"},
+        select = {
+            ja = {"哈……。", "啊，不，现在马上要吃饭……"}
+        },
+        linkback = "block_00017",
+        linknext = "block_00019",
+        line = 130
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈……」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020",
+        line = 139
+    },
+    block_00020 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我考虑了一下要不要坐在沙发上，但还是觉得不安。"}
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021",
+        line = 144
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {"先听听她要说什么不是更好吗？"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022",
+        line = 147
+    },
+    block_00022 = {
+        {"excall", label = "join1"},
+        {"eval", exp = "f.mak=f.mak+1"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，不，现在马上要吃饭……」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023",
+        line = 161
+    },
+    block_00023 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10005", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「是啊。对不起对不起。我考虑不周」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024",
+        line = 167
+    },
+    block_00024 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0004", head = "sak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "紗希", act = "うんうん", size = 5, time = 150, lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"说完，校长摸了摸自己的头。"}
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025",
+        line = 173
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {"很少看到她这样。"}
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026",
+        line = 176
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            ja = {
+                {"果然不会是什么小事吧。"}
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027",
+        line = 179
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我应该确认一下校长的真意。"}
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028",
+        line = 182
+    },
+    block_00028 = {
+        {"excall", label = "join1"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那个……」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029",
+        line = 193
+    },
+    block_00029 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0008", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10006", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「不，这并不是什么警告或责备之类的事情。",
+                    {"rt2"},
+                    "如果说的话，倒是我需要向你道歉的事情」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030",
+        line = 200
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么？」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031",
+        line = 203
+    },
+    block_00031 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0005", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10007", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，这是你在我们学校负责的课程时间表……」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032",
+        line = 209
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说完，她递过来一张纸。"}
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033",
+        line = 212
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈……」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034",
+        line = 215
+    },
+    block_00034 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10008", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「周二一整天。",
+                    {"rt2"},
+                    "周三上午没有课」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035",
+        line = 221
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是的」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036",
+        line = 224
+    },
+    block_00036 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10009", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「即使如此，你还有除了上课之外的工作，所以即使那天没有课也",
+                    {"rt2"},
+                    "并不意味着你可以休息，你明白这点」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037",
+        line = 231
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈……」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038",
+        line = 234
+    },
+    block_00038 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0009", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10010", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「你也有负责的社团活动，应该挺忙的。",
+                    {"rt2"},
+                    "话虽这么说，你还是新来的一年级老师，还没有担任班主任」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039",
+        line = 242
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「本来，正式聘用的命令就已经相当晚了……」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040",
+        line = 245
+    },
+    block_00040 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "紗希", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10011", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「是啊。嗯，那些事情先不说。",
+                    {"rt2"},
+                    "总之，你现在并没有担任班主任」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041",
+        line = 256
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是的」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042",
+        line = 259
+    },
+    block_00042 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0010", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10012", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「如果担任班主任，工作会相当繁重，你知道的吧」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043",
+        line = 264
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是当然的」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044",
+        line = 267
+    },
+    block_00044 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10013", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「相比之下，我理解你的情况还算轻松」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045",
+        line = 272
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，你可以这么说」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046",
+        line = 275
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {"怎么了？是不是有什么麻烦的工作需要完成呢？"}
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047",
+        line = 278
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "如果是的话，明确告诉我就好了。实际上，从前辈教师那里，我被",
+                    {"rt2"},
+                    "分配了很多",
+                    {"rt2"},
+                    "琐碎的工作。"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048",
+        line = 282
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，我是新任教师，而且没有班级负责，所以这是理所当然的。"}
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049",
+        line = 286
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「需要我做些什么工作吗？如果在我能力范围内，我很乐意接手」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050",
+        line = 289
+    },
+    block_00050 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0009", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0008", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10014", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，嗯……我相信你能做到……」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051",
+        line = 297
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这种说法有点拐弯抹角的。"}
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052",
+        line = 300
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我会被要求做什么呢？"}
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053",
+        line = 303
+    },
+    block_00053 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10015", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「非常抱歉，你能不能在火曜全天和水曜上午去圣罗安女学院帮忙",
+                    {"rt2"},
+                    "教画画？」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054",
+        line = 310
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「帮忙？」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055",
+        line = 313
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "去其他学校帮忙。",
+                    {"rt2"},
+                    "也就是说？ 外派！？"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056",
+        line = 317
+    },
+    block_00056 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈！？」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057",
+        line = 322
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「等、等一下。你刚才说的是圣罗安女学院吧？」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058",
+        line = 325
+    },
+    block_00058 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "紗希", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10016", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「啊，对，我说过」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059",
+        line = 331
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是其他学校吧。那不就成了兼职了吗",
+                    {"rt2"},
+                    "正式教师的兼职是被禁止的，对吧！？」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060",
+        line = 335
+    },
+    block_00060 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0003", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10017", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「如果那样就没有问题。我们不会支付薪水！」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061",
+        line = 341
+    },
+    block_00061 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那！！ 这太有问题了吧！！」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062",
+        line = 346
+    },
+    block_00062 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0009", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10018", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「哎呀，我说过我会向你道歉的，不是吗？」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063",
+        line = 353
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「即便如此，这还是太奇怪了吧？",
+                    {"rt2"},
+                    "不论是私立学校，正式教员在其他学校授课",
+                    {"rt2"},
+                    "这种事情……」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064",
+        line = 358
+    },
+    block_00064 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0007", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0008", head = "sak_z1b", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fgact", ch = "紗希", act = "おじぎ", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10019", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「我知道我说的是些不合常理的话……",
+                    {"rt2"},
+                    "所以我觉得非常抱歉」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065",
+        line = 367
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说完，校长低下了头。"}
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066",
+        line = 372
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "校长向新任教师低头。",
+                    {"rt2"},
+                    "这种事情在平常是难以想象的。",
+                    {"rt2"},
+                    "那么——"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067",
+        line = 377
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「发生了什么事情？」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068",
+        line = 380
+    },
+    block_00068 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0008", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10020", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，说起来，圣罗安的美术教师生病住院了」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069",
+        line = 385
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是，就算这样也太奇怪了吧？",
+                    {"rt2"},
+                    "圣罗安如果发布招聘，肯定会很快有人报名。有美术教师资格并且",
+                    {"rt2"},
+                    "正在找工作的人应该有很多」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070",
+        line = 389
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「要不然，我介绍一些我认识的人吧。我们大学有很多同学都没有",
+                    {"rt2"},
+                    "找到工作」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071",
+        line = 393
+    },
+    block_00071 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0007", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10021", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「问题不是这样的……」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072",
+        line = 398
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，问题就是这样。如果普通地找人帮忙，发布招聘，雇佣讲师",
+                    {"rt2"},
+                    "就好了。",
+                    {"rt2"},
+                    "即使只是在那个美术教师住院的期间，也有很多人想找工作」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073",
+        line = 404
+    },
+    block_00073 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0008", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10022", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「唔。该怎么说呢。",
+                    {"rt2"},
+                    "你知道我们是多重所有者制的学校法人，对吧。",
+                    {"rt2"},
+                    "由多位理事共同运营」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074",
+        line = 412
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「大概了解……」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075",
+        line = 415
+    },
+    block_00075 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10023", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「弓張学园的一位理事，实际上也是圣罗安女学院法人的理事长」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076",
+        line = 420
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哦，是吗。这是我第一次听说。",
+                    {"rt2"},
+                    "但是，这和现在的事情有什么关系？」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077",
+        line = 424
+    },
+    block_00077 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10024", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「这位理事长指名要你去的」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078",
+        line = 429
+    },
+    block_00078 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈？ 为什么！？」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079",
+        line = 434
+    },
+    block_00079 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0011", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10025", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「我也不太清楚。",
+                    {"rt2"},
+                    "不过，我有些猜测……」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080",
+        line = 443
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「猜测是什么！？」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081",
+        line = 446
+    },
+    block_00081 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0009", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10026", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，我无法清楚地解释……这位理事长其实并不是弓張的正式理",
+                    {"rt2"},
+                    "事」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082",
+        line = 452
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是正式理事？」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083",
+        line = 455
+    },
+    block_00083 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0004", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0005", head = "sak_z1a", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0004", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10027", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，这事有些复杂。",
+                    {"rt2"},
+                    "原来是东泽物产的总裁担任弓張的理事，然后有一次换了别的人，",
+                    {"rt2"},
+                    "后来又是东泽物产的总裁以理事代理的身份担任」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084",
+        line = 467
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「理事代理？原来的理事现在担任理事代理？」"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085",
+        line = 470
+    },
+    block_00085 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0009", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10028", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，东泽物产的总裁原来就是弓張的理事。后来有一次变动，现",
+                    {"rt2"},
+                    "在他是以代理的身份担任理事职务」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086",
+        line = 477
+    },
+    block_00086 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我明白了……但是这又怎样呢？」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087",
+        line = 480
+    },
+    block_00087 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0009", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10029", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「你问这又怎样？如果你这么问的话……我也很困惑」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088",
+        line = 486
+    },
+    block_00088 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"说完，校长有些迷惑地环顾了一下房间。"}
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089",
+        line = 490
+    },
+    block_00089 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10030", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那个东泽物产其实是某个集团企业的子公司。东泽的大股东就是",
+                    {"rt2"},
+                    "这个集团的副总裁」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090",
+        line = 495
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「原来如此，所以东泽物产的老板是那位有钱人」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091",
+        line = 498
+    },
+    block_00091 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10031", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那个人是个相当有名的富豪。他从大正时代开始在南关东一带进",
+                    {"rt2"},
+                    "行土地开发，像泡沫经济时期就被称为铁路王的一族」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092",
+        line = 504
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「铁路王……」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093",
+        line = 507
+    },
+    block_00093 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10032", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「说南部集团你应该知道」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094",
+        line = 511
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那当然，南部铁路在弓張市都有运营」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095",
+        line = 514
+    },
+    block_00095 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0009", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10033", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「南部铁路是一家在南关东，也就是首都圈中心运营的私营铁路公",
+                    {"rt2"},
+                    "司」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096",
+        line = 518
+    },
+    block_00096 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10034", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「以铁路业务为中心，开展了住宅业、流通业、休闲业等业务，这",
+                    {"rt2"},
+                    "个集团下面的子公司大概有一百家左右」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097",
+        line = 524
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真是有钱人啊」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098",
+        line = 527
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即使是这样，突然被告知这样的有钱人的事情也会让人困扰……。"}
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099",
+        line = 530
+    },
+    block_00099 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10035", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「这个家族在镰仓有一个主家。他们的血缘关系中，不仅有经济界",
+                    {"rt2"},
+                    "的人，还有政治、艺术、文学等各种领域的名人」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100",
+        line = 538
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「既然是那么大的家族，那一定有很多各种领域的名人吧」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101",
+        line = 541
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {"据说如果你收集有名人的家谱，你会发现大部分都是有名人。"}
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102",
+        line = 544
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "遗传问题，因为有钱而拥有的优良环境，以及名门之间的婚姻关系",
+                    {"rt2"},
+                    "等，",
+                    {"rt2"},
+                    "这些各种因素都可能是原因。"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103",
+        line = 548
+    },
+    block_00103 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10036", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「在这个华丽的家族中有一个叫做恩田家的」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104",
+        line = 559
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「恩田家……」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105",
+        line = 562
+    },
+    block_00105 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10037", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「如果我说恩田放哉，你可能会有些了解吧？」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106",
+        line = 569
+    },
+    block_00106 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「恩田放哉」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107",
+        line = 572
+    },
+    block_00107 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"我稍微思考了一下。"}
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108",
+        line = 577
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，是那个艺术家吗？虽然最近好像没有什么活动，但十几年前",
+                    {"rt2"},
+                    "他活跃得很。他应该在法国的路·沙龙展览会上获过奖」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109",
+        line = 580
+    },
+    block_00109 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl02 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0011", head = "sak_z1a", lv = 4, id = 9}
+            },
+            vl03 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10038", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「是的。恩田放哉的名字很容易理解。",
+                    {"rt2"},
+                    "但在这个家族中最有名的人物的艺名并没有恩田这个姓。",
+                    {"rt2"},
+                    "你知道是谁吗？」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110",
+        line = 594
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那不是很有名吗？",
+                    {"rt2"},
+                    "恩田放哉的父亲，宫崎破戒。」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111",
+        line = 598
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "宫崎破戒只是艺名。",
+                    {"rt2"},
+                    "他的真名好像是恩田长三郎这样的名字。"
+                }
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112",
+        line = 602
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            ja = {
+                {"艺名的由来。"}
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113",
+        line = 605
+    },
+    block_00113 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "他在六十岁的时候，据说在日本的第一代天皇神武天皇的神社“宫崎",
+                    {"rt2"},
+                    "大社”里隐居，并得到了灵验。"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114",
+        line = 609
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "他的心境是“打破所有艺术界的束缚”，这个“破戒”。",
+                    {"rt2"},
+                    "然后从大社的名字“宫崎”中取名为“宫崎破戒”。"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115",
+        line = 613
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我记得在杂志上读过这样的故事。"}
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116",
+        line = 616
+    },
+    block_00116 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0009", head = "sak_z1b", lv = 4, id = 9},
+        {"fgact", ch = "紗希", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10039", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，对。宫崎破戒。日本画坛的重要人物」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117",
+        line = 630
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然是日本画坛的重鎮，但他活动的很活跃。",
+                    {"rt2"},
+                    "他获得了穆尔公开选拔赛最高奖之一的阿尔詹·多凡奖」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118",
+        line = 634
+    },
+    block_00118 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10040", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「是的，宫崎破戒从十几年前就开始在伦敦活跃。",
+                    {"rt2"},
+                    "与草薙健一郎以纽约为活动中心不同，他以伦敦为基地",
+                    {"rt2"},
+                    "进行活动」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119",
+        line = 644
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以，草薙健一郎得到的是纽约的最高奖项——铂金屋鹊。",
+                    {"rt2"},
+                    "而宫崎破戒则获得了伦敦的最高奖项——银豹子奖。」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120",
+        line = 648
+    },
+    block_00120 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0002", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10041", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「你真的很了解呢」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121",
+        line = 654
+    },
+    block_00121 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，是啊。",
+                    {"rt2"},
+                    "但是，这和我在圣路安工作有什么关系呢？」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122",
+        line = 658
+    },
+    block_00122 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0005", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10042", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「虽然我不太清楚，但是据说恩田放哉教授给南部集团的副总裁提",
+                    {"rt2"},
+                    "了建议」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123",
+        line = 664
+    },
+    block_00123 = {
+        {"bgm", stop = 1},
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0009", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10043", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「如果要找短期的教师的话，我推荐弓張的草薙直哉。」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124",
+        line = 672
+    },
+    block_00124 = {
+        {"bgm", file = "bgm149"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「等等等等，我只在杂志上看过恩田放哉，而且我已经是弓張的正",
+                    {"rt2"},
+                    "式教员了，我不明白，为什么我会被这么有名的画家突然提名！」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125",
+        line = 678
+    },
+    block_00125 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0010", head = "sak_z1b", lv = 4, id = 9},
+        {"fgact", ch = "紗希", act = "うなづく", time = 200, lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10044", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126",
+        line = 686
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？什么嗯！校长！」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127",
+        line = 689
+    },
+    block_00127 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0009", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10045", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「所以我说啊。我是应该向你道歉的人，对吧？",
+                    {"rt2"},
+                    "我非常抱歉，但是请你替我保住面子」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128",
+        line = 699
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我不愿意。无论如何我也不愿意白白地工作」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129",
+        line = 702
+    },
+    block_00129 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0002", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0003", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10046", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「但是圣路安是女子学校哦？都是活泼的年轻女孩子」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130",
+        line = 708
+    },
+    block_00130 = {
+        {"select", label = "label03", text = "select"},
+        {"select", label = "label04", text = "select"},
+        {"select", mode = "sys", name = "03_03_1_2"},
+        {"text"},
+        select = {
+            ja = {"这确实有点吸引人。", "校长……我真的会生气的哦？"}
+        },
+        linkback = "block_00129",
+        linknext = "block_00131",
+        line = 719
+    },
+    block_00131 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0003", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这确实有点吸引人」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132",
+        line = 728
+    },
+    block_00132 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0002", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10047", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那么！」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133",
+        line = 734
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就那么一点！这样的程度是无法动摇我的心的」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134",
+        line = 737
+    },
+    block_00134 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10048", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「呜……」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135",
+        line = 742
+    },
+    block_00135 = {
+        {"excall", label = "join2"},
+        {"eval", exp = "f.mak=f.mak+1"},
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0003", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「校长……我真的会生气的哦？」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136",
+        line = 756
+    },
+    block_00136 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10049", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「抱、抱歉……」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137",
+        line = 761
+    },
+    block_00137 = {
+        {"excall", label = "join2"},
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0009", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0008", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10050", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「我也很为难啊。为什么突然指名你，再者到底为什么那么",
+                    {"rt2"},
+                    "坚决，我完全无法理解……」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138",
+        line = 776
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「坚决吗？」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139",
+        line = 779
+    },
+    block_00139 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "紗希", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0010", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10051", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，如果不把你借给他，东泽物产的社长说要从弓张学园的理事",
+                    {"rt2"},
+                    "代理的位置上下来」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140",
+        line = 787
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果理事代理下台，那原本的理事，也就是大富翁不就会成为弓",
+                    {"rt2"},
+                    "张学园的理事吗？」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141",
+        line = 790
+    },
+    block_00141 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10052", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「不，如果东泽物产的理事下台，资本也会全部从弓张学园撤出",
+                    {"rt2"},
+                    "他这么说的」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142",
+        line = 796
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真的吗？ 为什么对于我这样的人来说那么重要！？」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143",
+        line = 799
+    },
+    block_00143 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10053", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，对于东泽物产的社长来说，副总裁说的事，为了遵守他的命",
+                    {"rt2"},
+                    "令而变得坚决，这是可以理解的……」"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144",
+        line = 804
+    },
+    block_00144 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0008", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0007", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10054", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「但是，为什么要说到把资本全部撤出，这一点我实在是无法理解。",
+                    {"rt2"},
+                    "毕竟这种决定不是东泽物产的社长可以单独做出的」"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145",
+        line = 813
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也就是说，那么坚决是南部集团的副总裁的意志」"
+                }
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146",
+        line = 816
+    },
+    block_00146 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0004", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10055", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「可能……」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147",
+        line = 823
+    },
+    block_00147 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0008", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10056", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「因为那个人在搅和，应该是有什么意义的事情，",
+                    {"rt2"},
+                    "但是我无法抓住他的意图」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148",
+        line = 830
+    },
+    block_00148 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那个人是谁？」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149",
+        line = 841
+    },
+    block_00149 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl02 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0005", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10057", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「哎，是南部集团的副总裁……。",
+                    {"rt2"},
+                    "因为情况很复杂，向你解释也没什么用」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150",
+        line = 850
+    },
+    block_00150 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈……」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151",
+        line = 853
+    },
+    block_00151 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0008", head = "sak_z1b", lv = 4, id = 9},
+        {"fgact", ch = "紗希", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10058", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「但是，我真的看不出他的意图。唔唔……」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152",
+        line = 860
+    },
+    block_00152 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我还是第一次见到这样的校长。这是怎么回事？"}
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153",
+        line = 863
+    },
+    block_00153 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0008", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「难道校长，你正在动摇吗？」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154",
+        line = 873
+    },
+    block_00154 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0010", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10059", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「啊，就像你看到的，我现在非常动摇」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155",
+        line = 878
+    },
+    block_00155 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「校长也会动摇的事情原来也有啊」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156",
+        line = 881
+    },
+    block_00156 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0005", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10060", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「当然有。这完全是不合理的要求」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157",
+        line = 887
+    },
+    block_00157 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0007", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0009", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10061", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「正因为是这样不合理的要求，我才拒绝了，但对方却像火一样生",
+                    {"rt2"},
+                    "气。",
+                    {"rt2"},
+                    "当这样的反应返回来，我也会动摇」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158",
+        line = 894
+    },
+    block_00158 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159",
+        line = 897
+    },
+    block_00159 = {
+        {"text"},
+        text = {
+            ja = {
+                {"确实，听到这样的话，我也可以理解他为什么会动摇。"}
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160",
+        line = 900
+    },
+    block_00160 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10062", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「如果说要从弓张学园的理事的位置上下来，我已经无法再做什么",
+                    {"rt2"},
+                    "了",
+                    {"rt2"},
+                    "……」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161",
+        line = 906
+    },
+    block_00161 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真的不知道原因吗？」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162",
+        line = 909
+    },
+    block_00162 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果是像你这样的厉害的校长，应该能够理解的吧」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163",
+        line = 912
+    },
+    block_00163 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0009", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10063", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「唔。如果考虑到或许是的可能性，那就没完没了了……」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164",
+        line = 918
+    },
+    block_00164 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0011", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10064", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「如果把可能性写在笔记本上，光是原因一项就超过30个，",
+                    {"rt2"},
+                    "而且如果从那里继续考虑可能性，甚至能达到数百个……",
+                    {"rt2"},
+                    "想到这只是浪费时间，我就停下来了」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165",
+        line = 926
+    },
+    block_00165 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即使是厉害的校长，也会做这种傻事……。"}
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166",
+        line = 929
+    },
+    block_00166 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10065", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「反过来我想问，草薙老师这段时间有没有发生什么改变的事情？」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167",
+        line = 934
+    },
+    block_00167 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「发生了什么改变吗？",
+                    {"rt2"},
+                    "没有，没有……」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168",
+        line = 938
+    },
+    block_00168 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0005", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10066", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「你和恩田放哉先生接触了吗？」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169",
+        line = 943
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就说了，我根本没见过他」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170",
+        line = 946
+    },
+    block_00170 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10067", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，是这样吗」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171",
+        line = 951
+    },
+    block_00171 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10068", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「你有没有和宫崎破戒见过？」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172",
+        line = 956
+    },
+    block_00172 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么可能呢？ 那个人不是在伦敦居住吗？」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173",
+        line = 959
+    },
+    block_00173 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10069", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「不，最近几年他似乎已经回到了他在镰仓的故乡」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174",
+        line = 964
+    },
+    block_00174 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是这样吗？」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175",
+        line = 967
+    },
+    block_00175 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0011", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10070", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「我也只是听到一些传闻……据说他复活了宫崎画学校」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176",
+        line = 975
+    },
+    block_00176 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「复活了宫崎画学校？」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177",
+        line = 978
+    },
+    block_00177 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0009", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10071", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那也只是传闻，我不知道是不是事实。",
+                    {"rt2"},
+                    "毕竟那是一所传奇的学校」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178",
+        line = 985
+    },
+    block_00178 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "宫崎画学校。",
+                    {"rt2"},
+                    "这原本是由宫崎破戒为了培养天才而创立的学校。"
+                }
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179",
+        line = 989
+    },
+    block_00179 = {
+        {"text"},
+        text = {
+            ja = {
+                {"从历史角度看，其成就堪称日本顶尖的实践性绘画学校。"}
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180",
+        line = 992
+    },
+    block_00180 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然只是短暂的一段时间，但我的父亲曾在那里就读。"}
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181",
+        line = 995
+    },
+    block_00181 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "后来，宫崎破戒的儿子恩田放哉接管了学校，",
+                    {"rt2"},
+                    "但我听说大约十几年前就已经关闭了。"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182",
+        line = 999
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么现在又要重开？」"
+                }
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183",
+        line = 1002
+    },
+    block_00183 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0009", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10072", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「我不知道」"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184",
+        line = 1008
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「说起来，被称为宫崎破戒最后的弟子的宫崎美洲，",
+                    {"rt2"},
+                    "她不是宫崎画学校的学生吗？」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185",
+        line = 1012
+    },
+    block_00185 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0002", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10073", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「不，据说宫崎美洲是被直接召唤到伦敦，由宫崎破戒亲自教导的，",
+                    {"rt2"},
+                    "所以似乎并不属于宫崎画学校」"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186",
+        line = 1018
+    },
+    block_00186 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10074", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「所以，实际上直到最近它都是关闭的状态」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187",
+        line = 1023
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是这样吗……原来如此」"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188",
+        line = 1026
+    },
+    block_00188 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0005", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10075", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「为什么会再次开设呢？」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189",
+        line = 1031
+    },
+    block_00189 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然这样说，但这也只是传闻对吧？」"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190",
+        line = 1034
+    },
+    block_00190 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"fgact", ch = "紗希", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10076", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「是的。我也不清楚具体的事情。或许，你这个在艺术界的人可能",
+                    {"rt2"},
+                    "知道些什么？」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191",
+        line = 1043
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不不，像我这样的普通美术老师怎么可能知道这些事情」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192",
+        line = 1046
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我退后了一步。"}
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193",
+        line = 1050
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我可以告辞了吗？」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194",
+        line = 1053
+    },
+    block_00194 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0012", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10077", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「我们的谈话还没结束吧？」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195",
+        line = 1060
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，已经结束了。",
+                    {"rt2"},
+                    "这并非一个普通教师应该涉足的问题」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196",
+        line = 1064
+    },
+    block_00196 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0005", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"我正准备转身离开。"}
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197",
+        line = 1071
+    },
+    block_00197 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0011", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10078", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「原来如此，你这种态度。",
+                    {"rt2"},
+                    "也就是说，你并不愿意吗」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198",
+        line = 1079
+    },
+    block_00198 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是当然的。",
+                    {"rt2"},
+                    "为什么我要被我不认识的人指名，按照我不认识的富人的心血来潮，",
+                    {"rt2"},
+                    "在我不认识的学校里教书呢？」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199",
+        line = 1083
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「即使在弓張学园，我也需要一段时间来适应作为一名教师，更不",
+                    {"rt2"},
+                    "用说在一所女子学校担任教师了」"
+                }
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200",
+        line = 1088
+    },
+    block_00200 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以我不会去的」"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201",
+        line = 1091
+    },
+    block_00201 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0003", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "紗希", act = "うんうん", time = "360,240,360,240", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10079", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「是啊。老师你说得有道理。嗯嗯」"
+                }
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202",
+        line = 1097
+    },
+    block_00202 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"校长边点头边在桌子上展开一张纸。"}
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203",
+        line = 1102
+    },
+    block_00203 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0003", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0002", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10080", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那么，草薙，你怎么看这个？」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204",
+        line = 1108
+    },
+    block_00204 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是什么？」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205",
+        line = 1111
+    },
+    block_00205 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "zbg025e", path = ":bg/", ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"fg", ch = "紗希", size = "z2", mode = 3, resize = 1, path = ":fg/sak/z2/", file = "sak_z2a0000", face = "a0001", head = "sak_z2a", lv = 5, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"我接过那张纸看。"}
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206",
+        line = 1124
+    },
+    block_00206 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……！？」"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207",
+        line = 1127
+    },
+    block_00207 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这、这是内容证明！？」"
+                }
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208",
+        line = 1133
+    },
+    block_00208 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "虽然不怎么有缘，但确实是邮政公司之类的证人成为了发送文件的",
+                    {"rt2"},
+                    "事实。"
+                }
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209",
+        line = 1139
+    },
+    block_00209 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然不太清楚，但我记得好像是在开庭之类的场合出现的家伙。"}
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210",
+        line = 1142
+    },
+    block_00210 = {
+        {"fg", ch = "紗希", size = "z2", mode = 3, path = ":fg/sak/z2/", file = "sak_z2b0000", face = "b0008", head = "sak_z2b", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z2", mode = 3, path = ":fg/sak/z2/", file = "sak_z2b0000", face = "b0001", head = "sak_z2b", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10081", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「唔，真是麻烦。村山理事还在生气。",
+                    {"rt2"},
+                    "他正想尽一切方法，想要从这个学园中消除你的存在」"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211",
+        line = 1153
+    },
+    block_00211 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈哈哈……，是、是那样吗」"
+                }
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212",
+        line = 1156
+    },
+    block_00212 = {
+        {"fg", ch = "紗希", size = "z2", mode = 3, path = ":fg/sak/z2/", file = "sak_z2b0000", face = "b0009", head = "sak_z2b", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z2", mode = 3, path = ":fg/sak/z2/", file = "sak_z2b0000", face = "b0002", head = "sak_z2b", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10082", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「这个内容，不过是一份单纯的恶意指责的内容证明，但他因为这",
+                    {"rt2"},
+                    "么愤怒才会寄来这样的东西」"
+                }
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213",
+        line = 1165
+    },
+    block_00213 = {
+        {"fg", ch = "紗希", size = "z2", mode = 3, path = ":fg/sak/z2/", file = "sak_z2a0010", face = "a0008", head = "sak_z2a", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z2", mode = 3, path = ":fg/sak/z2/", file = "sak_z2a0010", face = "a0002", head = "sak_z2a", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10083", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「我也不想闹大事，所以我也在努力，但最糟的情况，可能会发展",
+                    {"rt2"},
+                    "到要上法庭」"
+                }
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214",
+        line = 1174
+    },
+    block_00214 = {
+        {"text"},
+        text = {
+            ja = {
+                {"村山理事是弓张学园有多位理事之一，主要经营土木相关公司。"}
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215",
+        line = 1178
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            ja = {
+                {"关于作品“樱花们的足迹”，各种问题相继出现。"}
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216",
+        line = 1181
+    },
+    block_00216 = {
+        {"fg", ch = "紗希", size = "z2", mode = 3, path = ":fg/sak/z2/", file = "sak_z2a0000", face = "a0010", head = "sak_z2a", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z2", mode = 3, path = ":fg/sak/z2/", file = "sak_z2a0000", face = "a0001", head = "sak_z2a", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10084", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，我有自信可以平稳地解决这个问题。",
+                    {"rt2"},
+                    "但是，如果现在的东沢物产的问题也牵扯进来，真的就无计可施了」"
+                }
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217",
+        line = 1192
+    },
+    block_00217 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「无计可施是什么意思？」"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218",
+        line = 1195
+    },
+    block_00218 = {
+        {"fg", ch = "紗希", size = "z2", mode = 3, path = ":fg/sak/z2/", file = "sak_z2a0000", face = "a0003", head = "sak_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10085", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「简单来说，可能你我都会失去工作？」"
+                }
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219",
+        line = 1201
+    },
+    block_00219 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「唔………」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220",
+        line = 1204
+    },
+    block_00220 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg025e", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "紗希", size = "z1", mode = 3, resize = 1, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0003", head = "sak_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10086", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「只要你能接手聖罗安的事情，我想我和你都会暂时安全",
+                    {"rt2"},
+                    "的」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221",
+        line = 1217
+    },
+    block_00221 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「暂时安全？」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222",
+        line = 1220
+    },
+    block_00222 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0002", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0002", head = "sak_z1a", lv = 4, id = 9}
+            },
+            vl02 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10087", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那当然。像我这样，做了几十年的风险活动，就任了弓张学园的",
+                    {"rt2"},
+                    "校长。即使瘦也干瘪也是弓张市的统治者中村家的敌人。随时可能",
+                    {"rt2"},
+                    "会被炒鱿鱼」"
+                }
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223",
+        line = 1227
+    },
+    block_00223 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哈……」"
+                }
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224",
+        line = 1230
+    },
+    block_00224 = {
+        {"text"},
+        text = {
+            ja = {
+                {"实际上，确实给校长造成了麻烦……。"}
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225",
+        line = 1233
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            ja = {
+                {"可能，这个人所说的并非虚张声势，而是真的。"}
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226",
+        line = 1236
+    },
+    block_00226 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这个人从没这么殷切地劝说过我。"}
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227",
+        line = 1239
+    },
+    block_00227 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我明白了……。",
+                    {"rt2"},
+                    "我接受你的建议」"
+                }
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228",
+        line = 1243
+    },
+    block_00228 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0002", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0003", head = "sak_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10088", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「是吗。真是帮大忙了。草薙直哉老师！」"
+                }
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229",
+        line = 1250
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是，就请不要随便将我从弓张学园调到圣罗安",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230",
+        line = 1254
+    },
+    block_00230 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0001", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10089", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「别说那些令人伤心的话。这只是他们的美术老师回来之前的临时",
+                    {"rt2"},
+                    "办法」"
+                }
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231",
+        line = 1261
+    },
+    block_00231 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「拜托了。因为我真的喜欢这所学校」"
+                }
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232",
+        line = 1264
+    },
+    block_00232 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0003", head = "sak_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_10090", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「如果你这么说，我也是一样。",
+                    {"rt2"},
+                    "我们不都是教师同事吗」"
+                }
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233",
+        line = 1270
+    },
+    block_00233 = {
+        {"fg", ch = "紗希", size = "z1", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"校长微笑着递过来一份文件。"}
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234",
+        line = 1275
+    },
+    block_00234 = {
+        {"text"},
+        text = {
+            ja = {
+                {"真是的，什么叫做教师同事啊。"}
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235",
+        line = 1278
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            ja = {
+                {"明明就是上下级的关系。"}
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236",
+        line = 1281
+    },
+    block_00236 = {
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"尽管这么想着。"}
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237",
+        line = 1287
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我还是签上了名。"}
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238",
+        line = 1290
+    },
+    block_00238 = {
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"excall", file = "03_03_2"},
+        {"text"},
+        linkback = "block_00237",
+        line = 1294
+    },
+    label = {
+        top = {block = "block_00000", label = 1},
+        label01 = {block = "block_00019", label = 1},
+        label02 = {block = "block_00022", label = 2},
+        join1 = {block = "block_00028", label = 2},
+        label03 = {block = "block_00131", label = 1},
+        label04 = {block = "block_00135", label = 2},
+        join2 = {block = "block_00137", label = 2}
+    }
+}

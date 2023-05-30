@@ -1,0 +1,1040 @@
+astver = 2.0
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"msg", no = 1},
+        {"bg", file = "アイキャッチ03", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", time = 2000, file = "ev_etc_01_01", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"text"},
+        text = {
+            ja = {
+                {"清晨。"}
+            }
+        },
+        linknext = "block_00001",
+        line = 27
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10427", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「老师！」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002",
+        line = 30
+    },
+    block_00002 = {
+        {"msgoff"},
+        {"bg", file = "bg023a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "寧", size = "z1", mode = 3, resize = 1, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0005", head = "nei_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans"},
+        {"bgm", file = "bgm167"},
+        {"text"},
+        text = {
+            ja = {
+                {"由于被强硬的口气叫到，我转过头，恩田君就站在那里。"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003",
+        line = 42
+    },
+    block_00003 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0005", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10428", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「我有点事想跟你谈谈，可以吗？」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004",
+        line = 49
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "尽管她的锐利表情让我有些疑惑，但实际上，恩田君主动来找我谈",
+                    {"rt2"},
+                    "话正好是个好时机。"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005",
+        line = 53
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，我也有事想跟你谈。」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006",
+        line = 56
+    },
+    block_00006 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0007", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10429", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「哎？是老师找我吗？」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007",
+        line = 61
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她显得有些惊讶。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008",
+        line = 64
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，昨天我去了宫崎画学校。」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009",
+        line = 67
+    },
+    block_00009 = {
+        {"fg", ch = "寧", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0001", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0009", head = "nei_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10430", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「啊，是，是的……」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010",
+        line = 73
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她没有表现出惊讶，只是看起来有点困扰地回答。"}
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011",
+        line = 76
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么了？为什么会有这种反应？」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012",
+        line = 79
+    },
+    block_00012 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0001", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fgact", ch = "寧", act = "いいえ", size = 3, time = 90, lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10431", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「啊，不，其实昨天，恩田放哉老师给我妈妈发了邮件」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013",
+        line = 85
+    },
+    block_00013 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「从放哉那里？」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014",
+        line = 88
+    },
+    block_00014 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0011", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10432", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「“寧的老师来到了恩田的宅子。看起来可以有一次愉快的交谈”就",
+                    {"rt2"},
+                    "是这样的内容」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015",
+        line = 93
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016",
+        line = 96
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那个男人，在确认我来过之后，竟然联系了恩田君的母亲。"}
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017",
+        line = 99
+    },
+    block_00017 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0001", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0009", head = "nei_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10433", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「我想确认一下为什么老师会去宫崎绘画学校，所以我立刻去了那",
+                    {"rt2"},
+                    "里，",
+                    {"rt2"},
+                    "但是管家告诉我，老师刚好在我之前就回去了」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018",
+        line = 106
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「原来如此」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019",
+        line = 109
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如果我当时待的久一点，我们可能就能遇见恩田君了。"}
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020",
+        line = 112
+    },
+    block_00020 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0010", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0001", head = "nei_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10434", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「我想让放哉老师帮我转告，但他告诉我说，“我没有什么要跟你说",
+                    {"rt2"},
+                    "的”，",
+                    {"rt2"},
+                    "所以我被赶出门外。",
+                    {"rt2"},
+                    "所以，我在想老师是不是在背着我做些什么」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021",
+        line = 120
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，如果你说我在策划什么，那我确实在策划」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022",
+        line = 123
+    },
+    block_00022 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0001", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10435", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「但是，看来并不是什么秘密……我有点惊讶」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023",
+        line = 128
+    },
+    block_00023 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，这不是什么秘密。",
+                    {"rt2"},
+                    "不过，我想问你一件事」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024",
+        line = 132
+    },
+    block_00024 = {
+        {"fg", ch = "寧", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0001", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10436", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「什么事呢？」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025",
+        line = 137
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你想跟宫崎美铃一决高下吗？」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026",
+        line = 140
+    },
+    block_00026 = {
+        {"fg", ch = "寧", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0008", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10437", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「啊！？」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027",
+        line = 145
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {"恩田君的表情瞬间变了。"}
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028",
+        line = 148
+    },
+    block_00028 = {
+        {"fg", ch = "寧", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0005", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0008", head = "nei_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10438", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「这不是理所当然的吗。",
+                    {"rt2"},
+                    "但是，能跟她竞争的机会不是那么容易就能得到的」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029",
+        line = 155
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「的确，我们并不知道宫崎美铃会参加哪个公开征稿」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030",
+        line = 158
+    },
+    block_00030 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0005", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0010", head = "nei_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10439", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「是的，我觉得她不太可能参加FIRST展览。今年有可能的是Mooa",
+                    {"rt2"},
+                    "展览」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031",
+        line = 164
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但那也不能确定，更何况，这并不是直接的对决」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032",
+        line = 167
+    },
+    block_00032 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0005", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0011", head = "nei_z1b", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10440", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「是的，我一直都想与宫崎美铃竞争。",
+                    {"rt2"},
+                    "但是，由于我们在画坛的地位差距太大，根本不能站在同一竞争平",
+                    {"rt2"},
+                    "台上」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033",
+        line = 175
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，所以我们要进行直接的对决」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034",
+        line = 178
+    },
+    block_00034 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0001", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10441", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「直接对决？ 是吗？」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035",
+        line = 183
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你几年前就这么做了吧？你与宫崎美铃竞争过并输了。",
+                    {"rt2"},
+                    "从那以后，你一直在付出艰苦的努力。不是吗？」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036",
+        line = 187
+    },
+    block_00036 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0005", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10442", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「没有错。正是如此」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037",
+        line = 192
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「现在，你对于与她再次竞争有什么恐惧吗？」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038",
+        line = 195
+    },
+    block_00038 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0004", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0005", head = "nei_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10443", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「如果说我没有恐惧那就是谎言。",
+                    {"rt2"},
+                    "但是，我真心想要与她竞争的心情更强烈」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039",
+        line = 202
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我明白了，那么，我们真正地来一场比赛吧」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040",
+        line = 205
+    },
+    block_00040 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0007", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10444", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「啊？那你的意思是」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041",
+        line = 210
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，我们设定一个日期，在宫崎绘画学校，由心铃和恩田来进行",
+                    {"rt2"},
+                    "比赛。",
+                    {"rt2"},
+                    "比赛的内容是，谁更适合那个学校」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042",
+        line = 214
+    },
+    block_00042 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0001", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10445", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「难道说，老师你去宫崎绘画学校是为了获取这个比赛的许可？」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043",
+        line = 219
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，其实并不是这样。我只是想让恩田和心铃和解罢了」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044",
+        line = 223
+    },
+    block_00044 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0006", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10446", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「那是不可能的！」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045",
+        line = 228
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我完全理解你的立场。",
+                    {"rt2"},
+                    "即便如此，我仍然认为你们两人的关系只不过是因为一些误会」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046",
+        line = 232
+    },
+    block_00046 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0005", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0006", head = "nei_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10447", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「为什么你会这么说！她本来就是――」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047",
+        line = 238
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「听我说完，如果要进行比赛，我有一个要求你必须同意」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048",
+        line = 248
+    },
+    block_00048 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0005", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10448", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「老师的要求是什么？」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049",
+        line = 253
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我现在还不能具体说明」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050",
+        line = 256
+    },
+    block_00050 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0004", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10449", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「如果你要我和她和解，那是不可能的」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051",
+        line = 262
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我并没有说这种事。",
+                    {"rt2"},
+                    "只是，现在我可以告诉你的是，如果你假设败给了宫崎美铃，我希",
+                    {"rt2"},
+                    "望你能按照我的指示去绘画，并在FIRST展览上展出作品」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052",
+        line = 266
+    },
+    block_00052 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1b0000", face = "b0001", head = "nei_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10450", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「按照老师的指示去绘画？这我可以接受」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053",
+        line = 272
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「无论这个指示的内容是什么，你都要遵守」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054",
+        line = 275
+    },
+    block_00054 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0005", head = "nei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10451", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「是的，无论指示的内容是什么，我都会遵守老师的指示」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055",
+        line = 280
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，一定要遵守。",
+                    {"rt2"},
+                    "绘画是没有终点的。",
+                    {"rt2"},
+                    "只要记住这一点就好了」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056",
+        line = 285
+    },
+    block_00056 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0005", head = "nei_z1a", lv = 4, id = 9},
+        {"fgact", ch = "寧", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10452", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「是的！」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057",
+        line = 291
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果你能保证这一点，那就没问题了。那么让我们开始比赛吧。",
+                    {"rt2"},
+                    "在确定比赛日期之前，请你保持最佳状态」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058",
+        line = 295
+    },
+    block_00058 = {
+        {"fg", ch = "寧", size = "z1", mode = 3, path = ":fg/nei/z1/", file = "nei_z1a0000", face = "a0002", head = "nei_z1a", lv = 4, id = 9},
+        {"fgact", ch = "寧", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_nei_10453", ch = "nei"}
+            },
+            ja = {
+                {
+                    name = {"寧"},
+                    "「是的！」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059",
+        line = 301
+    },
+    block_00059 = {
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"excall", file = "03_11_2"},
+        {"text"},
+        linkback = "block_00058",
+        line = 305
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

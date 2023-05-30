@@ -1,0 +1,7580 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅳ章"},
+		{"msg", no=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg007a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="藍", size="z1", mode=3, resize=1, path=":fg/aix/z1/", file="aix_z1a1100", face="a0002", head="aix_z1a", lv=4, id=9, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10724", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ここは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 15,
+	},
+	block_00001 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b1100", face="b0002", head="aix_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10340", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「過去には",
+					{"ruby", text="うもれぎのや"},
+					"埋木舎",
+					{"/ruby"},
+					"と呼ばれていた場所だが、今では夏目屋敷と呼ばれている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 21,
+	},
+	block_00002 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b1100", face="b0004", head="aix_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10341", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「さぁ、入ってくれ。会わせたい人物がいる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 27,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10725", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「会わせたい人物？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 30,
+	},
+	block_00004 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1a1100", face="a0002", head="aix_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10342", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ああ、そうだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 35,
+	},
+	block_00005 = {
+		{"se", id=1, file="se0003"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は、藍のあとに続き屋敷の門をくぐった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 42,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そこには――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 45,
+	},
+	block_00007 = {
+		{"se", stop=1, time=500, id=1},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg011a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="健一郎", size="z1", mode=3, resize=1, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"bgm", file="bgm144"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10082", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎", "？？？"},
+					"「よう。はじめましてだな。圭」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 63,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10726", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あ、あんたは」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 68,
+	},
+	block_00009 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10083", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎", "？？？"},
+					"「俺が誰だか分かるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 74,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10727", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あ、当たり前だ。",
+					{"rt2"},
+					"あんたの作品は何度も見た」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 78,
+	},
+	block_00011 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0009", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10084", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎", "？？？"},
+					"「作品見たからって、俺の顔は分からないだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 84,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10728", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いや、写真だって見た。あんたは、草薙健一郎先生だよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 87,
+	},
+	block_00013 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"fgact", ch="健一郎", act="うなづく", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10085", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そうだ。正解だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 93,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その場にはたしかにあの偉大な芸術家草薙健一郎がいた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 96,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10729", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いつ帰国した？",
+					{"rt2"},
+					"あ、いや帰国をされたのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 100,
+	},
+	block_00016 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10086", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いいよ。そんなかしこまらなくてもさ。少し大作を手がけていてな、今年のはじめぐらいからちょくちょく日本に帰ってきていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 106,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10730", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「大作？　日本でしか描けない作品なのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 109,
+	},
+	block_00018 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10087", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そうだな。この土地の桜を題材にしたもんだ。",
+					{"rt2"},
+					"実際は、かれこれ十年ぐらいかけて下準備をしてきたのだけどな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 116,
+	},
+	block_00019 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10088", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それが、ついこの間、完成した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 121,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10731", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「十年ごしの大作が完成したのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 124,
+	},
+	block_00021 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0003", head="ken_z1b", lv=4, id=9},
+		{"fgact", ch="健一郎", act="うなづく", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10089", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああそうだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 130,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10732", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「それは発表されるのですか？　いつ見られるのでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 133,
+	},
+	block_00023 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10090", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「まぁ、今年の終わりか来年の初めかに見られるんじゃないのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 138,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10733", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「年末から年始にかけての発表って、それって？　ムーア公募展という事ですね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 141,
+	},
+	block_00025 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10091", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、そうなるな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 146,
+	},
+	block_00026 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0011", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10092", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そういえば、宮崎先生もムーア公募展に作品送ったみたいだなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 151,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10734", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「宮崎先生？　宮崎破戒先生ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 154,
+	},
+	block_00028 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"fgact", ch="健一郎", act="うなづく", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10093", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そうそう破戒先生も出していた。偶然なのか、わざわざ俺に合わせてきたのか知らないけれども」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 161,
+	},
+	block_00029 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0009", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10094", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「まあ、あっちはあっちで政治やら何やらでごたついているようだがな。",
+					{"rt2"},
+					"審査に時間がかかるだろうから、発表は年明けになるんじゃないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 168,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10735", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「草薙健一郎先生は、どんな作品を描かれたのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 171,
+	},
+	block_00031 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0011", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10095", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ？　まぁ俺の話はどうでもいいじゃんかよ。",
+					{"rt2"},
+					"それよりも、ヤツの作品を見たか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 179,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10736", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ヤツって？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 182,
+	},
+	block_00033 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10096", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「直哉だよ。草薙直哉」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 187,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10737", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あぁ、あの絵画ですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 190,
+	},
+	block_00035 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10097", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、『櫻日狂想』と名付けられたものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 195,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10738", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「はい、見ました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 198,
+	},
+	block_00037 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10098", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「どう思った？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 203,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10739", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「不思議な感覚に襲われました。",
+					{"rt2"},
+					"無限に続くやさしき抱擁、それが虚無に変わる様な――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 207,
+	},
+	block_00039 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"fgact", ch="健一郎", act="うなづく", time=400, lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10099", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「なるほどね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 213,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10740", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「草薙健一郎先生はあの絵を見たのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 216,
+	},
+	block_00041 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"fgact", ch="健一郎", act="いいえ", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10100", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いいや、見てない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 222,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10741", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そうですか……。",
+					{"rt2"},
+					"今は他の人の手に渡ってしまったので簡単に見られないかもしれません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 226,
+	},
+	block_00043 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10101", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いいや、そのまま、市に寄付されるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 231,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10742", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「はぁ？　なんでその事を知ってるのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 234,
+	},
+	block_00045 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10102", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そいつから俺が買い取った。",
+					{"rt2"},
+					"んで、みんなが見られる様に弓張市に寄付しておいた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 241,
+	},
+	block_00046 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0009", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0011", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10103", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「結構な金額ふっかけられたけどな。",
+					{"rt2"},
+					"元々一万円で買ったくせに」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 248,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10743", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「でも、草薙健一郎先生が買い取ったら、それだけでさらに価値が上がると思いますが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 251,
+	},
+	block_00048 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0004", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10104", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「買い取ったのは俺名義じゃない。",
+					{"rt2"},
+					"そんな事したら直哉にバレてめんどくさい事になる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 258,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10744", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「めんどくさい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 261,
+	},
+	block_00050 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0009", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10105", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「あいつの事だから、市役所に飾られてるなんて恥ずかしいから剥がしに行くとか言いかねない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 266,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10745", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「たしかに、あいつはそういうところありますね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 269,
+	},
+	block_00052 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10106", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「代理人にすべて任せたから『櫻日狂想』はまだ見てないんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 274,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10746", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「でも、今なら見られるのではないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 277,
+	},
+	block_00054 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10107", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「まぁ、俺の大作をあいつが見る頃に、俺もあいつの作品を見てやろうかと思っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 282,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10747", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「何故ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 285,
+	},
+	block_00056 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0003", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10108", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「どっちが上か確かめるためだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 290,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10748", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？　だ、だって、草薙健一郎先生と直哉は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 293,
+	},
+	block_00058 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10109", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ親子だ。親子だが、画家としてはライバルでもある。",
+					{"rt2"},
+					"なにやら俺がいない間に、こっちでブイブイ言わせてたらしいじゃねぇかよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 301,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10749", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ブイブイ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 304,
+	},
+	block_00060 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0003", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10110", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「あぁ、古い言葉だったか？",
+					{"rt2"},
+					"なんか直哉のヤツこっちでは有名人らしいじゃん。",
+					{"rt2"},
+					"国内では俺より知名度があるって聞いているよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 312,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10750", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「それは草薙健一郎先生があまり日本に向けて作品を発表されないからだと思いますけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 315,
+	},
+	block_00062 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0004", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10111", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だって、日本画壇とか大っ嫌いだもの。糞食らえだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 320,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は苦笑してしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 323,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10751", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そうやって破戒先生を怒らせたのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 326,
+	},
+	block_00065 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10112", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「まぁ、そんなところだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 331,
+	},
+	block_00066 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10113", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「あ、文展会員賞をとった圭の絵見たぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 336,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10752", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あ、ありがとうございます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 339,
+	},
+	block_00068 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0003", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10114", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「すげぇなぁ。俺の見込んだとおりだった。ぶっちゃけ直哉より上手いんじゃないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 345,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10753", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いいえ、そんな事ありません。",
+					{"rt2"},
+					"あいつの方が遙かに上です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 349,
+	},
+	block_00070 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0008", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0004", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10115", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そうか？　あいつの絵は少し冷たい！",
+					{"rt2"},
+					"なんかさ、印象派を擁護したエミール・ゾラの小説みたいな冷酷さがあるじゃん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 356,
+	},
+	block_00071 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10754", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いや、それは以前の画風ですよ。",
+					{"rt2"},
+					"『櫻日狂想』はその地点から遙か先にあります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 360,
+	},
+	block_00072 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0007", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10116", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「マジで？　そうなんだ。どんな絵描いたんだろうなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 366,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10755", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「直哉はある目的のために絵を描いていたと言ってました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 369,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10756", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そして、それは草薙健一郎先生も同じであると」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 372,
+	},
+	block_00075 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0011", head="ken_z1a", lv=4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10117", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「水菜。あ、いや、俺の奥さんで、あいつにとっては母親。",
+					{"rt2"},
+					"そいつのために俺たちは絵を描き続けてきたんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 380,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10757", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「母親のために？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 383,
+	},
+	block_00077 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10118", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「まぁ、複雑な事情があってだな。そいつを救うには大金が必要だった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 389,
+	},
+	block_00078 = {
+		{"bgm", stop=1},
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10119", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、それも終わった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 396,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10758", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「お金が出来たのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 399,
+	},
+	block_00080 = {
+		{"bgm", file="bgm136", time=3000},
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10120", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いいや、水菜が死んだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 406,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10759", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 409,
+	},
+	block_00082 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0008", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10121", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「長い闘病生活だったしなぁ――。",
+					{"rt2"},
+					"まぁ、俺たちもそれなりに覚悟はしていたのだが、実際死なれると、なかなか",
+					{"rt2"},
+					"堪えるもんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 417,
+	},
+	block_00083 = {
+		{"bgm", file="bgm136"},
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10122", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「俺は、彼女の死に対して、どう了解していいか分からずに、ただ絵を描いた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 424,
+	},
+	block_00084 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10123", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「描く事でしか、自分を救う事が出来なかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 429,
+	},
+	block_00085 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0005", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10124", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それはさぁ。",
+					{"rt2"},
+					"ずっと描こうと思っていた絵だったんだ。",
+					{"rt2"},
+					"それでも、いつまでも完成しない絵だった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 436,
+	},
+	block_00086 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0009", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10125", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「皮肉なものだよ。",
+					{"rt2"},
+					"自分が救おうとした女のために描くべき絵だったのに。",
+					{"rt2"},
+					"彼女の死によって、はじめて絵が完成した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 443,
+	},
+	block_00087 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10126", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「逆説的すぎる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 448,
+	},
+	block_00088 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10127", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だから、たぶん直哉もそうなんだろうなぁと思った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 453,
+	},
+	block_00089 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10128", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「あいつも桜の絵を描いたと聞いて、なんとなく腑に落ちたよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 458,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10760", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「なぜ、桜なのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 461,
+	},
+	block_00091 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10129", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「あいつと出会ったのが桜の季節だった――",
+					{"rt2"},
+					"そのぐらいに俺は考えていたが、どうやら違うらしいな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 467,
+	},
+	block_00092 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10130", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「俺だけじゃなくて、あいつもそれを題材にしたのだから……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 472,
+	},
+	block_00093 = {
+		{"bgm", stop=1},
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10131", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「まぁ、今回、一つだけ分かった事がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 479,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10761", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「なんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 482,
+	},
+	block_00095 = {
+		{"bgm", file="bgm152"},
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10132", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「まぁ、身体は大事にってことかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 489,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10762", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「なんですか？　それ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 492,
+	},
+	block_00097 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0009", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10133", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「水菜もいろいろ無理して生きてきたからなぁ。それが祟ったのだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 497,
+	},
+	block_00098 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10134", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だから、若いと言ってもあまり無理するのは良くない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 502,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10763", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そうですか、それは残念な事でしたね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 505,
+	},
+	block_00100 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0006", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10135", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「バカ！　今はお前に言ってるんだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 510,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10764", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？　み、水菜さんの話じゃないんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 513,
+	},
+	block_00102 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0004", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10136", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「水菜が死ぬ直前よりもガリガリだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 518,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10765", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あ、これですか？　単なる体質ですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 521,
+	},
+	block_00104 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10137", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「んなわけねぇだろうが。",
+					{"rt2"},
+					"飯はちゃんと食えよ。あと寝ろ！　絶対両方やってないだろ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 527,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10766", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いや、最低限は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 530,
+	},
+	block_00106 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0006", head="ken_z1a", lv=4, id=9},
+		{"fgact", ch="健一郎", act="いいえ", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10138", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「最低限もやってない！",
+					{"rt2"},
+					"お前は精神だけで絵を描いている！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 537,
+	},
+	block_00107 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0009", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10139", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「たしかに、それは鬼気迫る感じがあっていいのだけどな。",
+					{"rt2"},
+					"だが精神だけに頼ってはだめだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 544,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10767", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「お言葉ですが、絵は精神で描くものだと思います」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 547,
+	},
+	block_00109 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10140", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いいや、絵は身体で描くものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 552,
+	},
+	block_00110 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10141", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「パレットに絵の具をのせ、うまく溶かしながら、筆でキャンバスに色を置いていく。すべて身体がやっている事だろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 558,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10768", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いいえ、絵は精神で描くものです。身体は精神の奴隷にしかすぎません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 561,
+	},
+	block_00112 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0011", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10142", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そうなの？　お前は、精神の奴隷が身体だと考えているのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 566,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10769", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「少なくとも、俺は精神こそが絵画の本質だと思っています。",
+					{"rt2"},
+					"身体がどんな状況だろうと、精神が健康ならば、絵は描けます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 570,
+	},
+	block_00114 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10143", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「仏陀が悟りを開いた時に、身体はめっちゃ疲弊していたというしなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 575,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10770", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そんな昔の人間の事は知りません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 578,
+	},
+	block_00116 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10144", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「でも、どうなんだろ？　人間って精神で出来ているもんかねぇ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 583,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10771", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「精神があるから、人は存在するのだと思います」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 586,
+	},
+	block_00118 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10145", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そうか？　少なくとも俺の推理では、人間っていうのはタンパク質ってもんから出来てるんじゃないかと思っているぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 591,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10772", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「違います。それは人間の身体であって、精神ではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 594,
+	},
+	block_00120 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0011", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10146", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「なるほど、ちなみに圭が言う精神って心の事か？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 599,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10773", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「はい、精神とは俺の心の事です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 602,
+	},
+	block_00122 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10147", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それはなんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 607,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10774", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「心は心です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 610,
+	},
+	block_00124 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10148", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だったら心ってどこにあるんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 615,
+	},
+	block_00125 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10775", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 618,
+	},
+	block_00126 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10149", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「What is mind？",
+					{"rt2"},
+					"No matter.」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 624,
+	},
+	block_00127 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10150", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「What is matter？",
+					{"rt2"},
+					"Never mind.」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 630,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10776", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「なんですかそれ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 633,
+	},
+	block_00129 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10151", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「What is mind？　心とは何か？",
+					{"rt2"},
+					"No matter.　物質ではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 639,
+	},
+	block_00130 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10152", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「What is matter？　 物質とは何か？",
+					{"rt2"},
+					"Never mind. 決して心ではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 645,
+	},
+	block_00131 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10777", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そうです。その通りだと思います！",
+					{"rt2"},
+					"精神は肉体ではない！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 649,
+	},
+	block_00132 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10153", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いや、これって言葉遊びでだな。",
+					{"rt2"},
+					"本当は、こうやって訳すんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 655,
+	},
+	block_00133 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10154", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「What is mind？　心って何だよ？",
+					{"rt2"},
+					"No matter.　どうでもいいだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 661,
+	},
+	block_00134 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0003", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10155", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「What is matter？　物質って何だよ？",
+					{"rt2"},
+					"Never mind.　まぁ、気にするなよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 668,
+	},
+	block_00135 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10156", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「俺は“心”のありかを圭に聞いた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 673,
+	},
+	block_00136 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10157", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それに対して圭は、“身体ではない”“何か”だ、と答えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 678,
+	},
+	block_00137 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10158", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、どうだろうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 683,
+	},
+	block_00138 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10159", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「たとえば、夏目圭という人物の精神のありかを知りたいとする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 688,
+	},
+	block_00139 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10160", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「圭の脳を五〇ナノメートルに超薄スライスしてみよう。",
+					{"rt2"},
+					"そしてその画像をコンピューターに送り込み続ける」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 694,
+	},
+	block_00140 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10161", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「途方も無い情報量となるが、圭のニューロンの配置図を完全にスキャン出来るだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 699,
+	},
+	block_00141 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10162", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そして正しく夏目圭という人物はコンピューター上で完全に復元される」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 704,
+	},
+	block_00142 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10163", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「どの発火パターンでどの様な事を考えどの様な事を感じるかすべてが分かる様に",
+					{"rt2"},
+					"なるとする。そして実際にコンピューター上では意識としか言い様がない振る舞",
+					{"rt2"},
+					"いがみられる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 711,
+	},
+	block_00143 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10164", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「この時に夏目圭という人物は、あたかも肉体を離れて、コンピューター上にその精神が移動した様に見えるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 716,
+	},
+	block_00144 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10165", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だとしたら、もう夏目圭は永遠の命を手に入れたも同然だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 721,
+	},
+	block_00145 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10166", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「さて、これについて、圭はどう思う？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 726,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10778", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そんなもの俺じゃありません。",
+					{"rt2"},
+					"そもそも脳を切り刻まれたら、俺は死にます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 730,
+	},
+	block_00147 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10167", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、そうだな。だったらお前さんの死後ならどうだろうか？　死体ならいいだろう？　これってお前さんが生き返ったって事になるかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 736,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10779", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「同じですよ。そんなものは俺じゃ無い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 739,
+	},
+	block_00149 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0011", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10168", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そうだな。オリジナルの夏目圭にとってはその通りだろう。",
+					{"rt2"},
+					"だが、コンピューター上の夏目圭はどう思うだろうな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 746,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10780", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そいつは俺に似せたデータでしかありません。",
+					{"rt2"},
+					"だいたい人間じゃない。そもそもコンピューターじゃないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 750,
+	},
+	block_00151 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10169", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だったらそのデータを出力してみたらどうだ？",
+					{"rt2"},
+					"たとえば３Ｄプリンターでタンパク質の身体を作ってみたら？",
+					{"rt2"},
+					"コンピューター上の夏目圭は精神のみならず、肉体までも完全に複製される」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 758,
+	},
+	block_00152 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10170", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それまでコンピューター上でしか存在しなかった意識が、今や肉体を持ってあらわれる。当然、姿も思考もすべて夏目圭だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 763,
+	},
+	block_00153 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10781", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「だとしても俺じゃありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 766,
+	},
+	block_00154 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10171", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、オリジナルはそう言うよな。",
+					{"rt2"},
+					"でも本当にそうだろうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 773,
+	},
+	block_00155 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10172", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「先ほどはスライスすると言ったが、たぶん物理的にスライスしなくても設計図は取り出せる時代も来るだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 778,
+	},
+	block_00156 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10173", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だとしたら、その時は、オリジナルの夏目圭もいて、さらにコピーの夏目圭を作る事も可能になる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 783,
+	},
+	block_00157 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10174", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「コピーが出来る直前までの記憶が、ちゃんとコピーされているわけだ。",
+					{"rt2"},
+					"だとするならばコピーされた夏目圭も自分がオリジナルだと主張するだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 789,
+	},
+	block_00158 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0011", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10175", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「オリジナルも“自分こそが連続した夏目圭だ”と言うが、コピーも嘘ではなく、“自分こそが連続した夏目圭だ”と言うだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 794,
+	},
+	block_00159 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10176", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だって、共に、同じ瞬間までの記憶を持っているのだから、それぞれが、それ以前の“連続性”と“統合性”を持っていると感じるハズだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 799,
+	},
+	block_00160 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10177", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それほど同じだとしたら、それを見ている俺たちには、皆目見当もつかない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 804,
+	},
+	block_00161 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10782", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そ、それは……、たぶん偽物なんだから、すぐに分かりますよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 807,
+	},
+	block_00162 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10178", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「偽物じゃないよ。",
+					{"rt2"},
+					"そいつも夏目圭だ。",
+					{"rt2"},
+					"すべてにおいて完全な夏目圭だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 814,
+	},
+	block_00163 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10179", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「姿も、思考も、それ以前の記憶すらも、すべてが完全な夏目圭だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 819,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10783", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そ、そんなものあり得ないです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 822,
+	},
+	block_00165 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10180", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いいや、可能だろう。",
+					{"rt2"},
+					"遠い将来だろうが、必ず技術的に可能となる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 828,
+	},
+	block_00166 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10181", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「さて、圭の主張に照らし合わせて考えようか？",
+					{"rt2"},
+					"身体は精神ではない。だったら、肉体をコピーして出来上がった精神も、やっぱりコピー？　肉体をコピーすると精神までコピーが出来るのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 834,
+	},
+	block_00167 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10182", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「精神はいくらでも複製可能なものなのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 839,
+	},
+	block_00168 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10784", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そんなの詭弁です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 842,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10785", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「だいたい、複製は複製だ！",
+					{"rt2"},
+					"そんなヤツは俺じゃない！",
+					{"rt2"},
+					"俺は、俺以外の何者でもなく、俺でしかない！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 847,
+	},
+	block_00170 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0003", head="ken_z1a", lv=4, id=9},
+		{"fgact", ch="健一郎", act="うなづく", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10183", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、そうだ。正解だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 853,
+	},
+	block_00171 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10184", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「圭は今、真理を言った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 858,
+	},
+	block_00172 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10786", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？　俺の言ってる事否定してませんでしたか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 861,
+	},
+	block_00173 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10185", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いいや、全然。",
+					{"rt2"},
+					"お前は正しい事を言った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 867,
+	},
+	block_00174 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10186", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「“俺は、俺以外の何者でもなく、俺でしかない”。",
+					{"rt2"},
+					"これが絶対の真理だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 873,
+	},
+	block_00175 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10187", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「どんなに完全な夏目圭が居たとしても、それがその時にお前でない以上は、",
+					{"rt2"},
+					"絶対にお前じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 879,
+	},
+	block_00176 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0011", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10188", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「当然、コピーも同じく言うだろうな。“お前なんて夏目圭じゃない”と」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 884,
+	},
+	block_00177 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10189", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、それも間違いなく正しい。二つの魂は、決して交差しないし、決して同じでは無いが、互いに自らが夏目圭という名の“俺”だと主張するだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 889,
+	},
+	block_00178 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10190", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「こんな技術が出来上がっている時代だとしたら、",
+					{"rt2"},
+					"人間の“精神”とやらを、科学的に完全に解明しているだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 895,
+	},
+	block_00179 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0011", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10191", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「どの様な発火パターンがどの様な意識を生み出すか。",
+					{"rt2"},
+					"あらゆる感情、痛みそのもの、さらに痛そうな画像を見ている時にこちらまで痛そうに感じる事など、ありとあらゆる“感覚”が解明される」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 902,
+	},
+	block_00180 = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10787", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そんなもので精神が分かったなんて言えません！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 907,
+	},
+	block_00181 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10192", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、圭の言う通りだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 912,
+	},
+	block_00182 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10788", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？　どういう意味ですか？　今、完全に解明していると言ったじゃないですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 915,
+	},
+	block_00183 = {
+		{"bgm", file="bgm130"},
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10193", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、科学的に“心”と呼ばれるものを完全に解明したと言った。",
+					{"rt2"},
+					"だが、それでも、終ぞ、圭が言っている“精神”とやらに到達はしない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 924,
+	},
+	block_00184 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10194", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「圭がいう“精神”と、科学が扱った“精神”は別物だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 929,
+	},
+	block_00185 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10789", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「どういう事だ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 932,
+	},
+	block_00186 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0003", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10195", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ごちゃまぜ禁止って事だ。",
+					{"rt2"},
+					"精神のありかを調べるのなら、科学的知見を極めればいい。",
+					{"rt2"},
+					"たぶんいつの日にか、すべて解明されるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 940,
+	},
+	block_00187 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0011", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10196", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、すべて解明された時にはじめて多くの人間が実感するだろうな。",
+					{"rt2"},
+					"んじゃここにいる“俺”らしい何か、“今”と“ここ”って何だよ？　ってな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 947,
+	},
+	block_00188 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10197", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「その時に、実感を持ってすべての人がこう言うだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 952,
+	},
+	block_00189 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10198", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「What is mind？　心って何だよ？",
+					{"rt2"},
+					"No matter.　どうでもいいだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 958,
+	},
+	block_00190 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10199", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「What is matter？　物質って何だよ？",
+					{"rt2"},
+					"Never mind.　まぁ、気にするなよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 964,
+	},
+	block_00191 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10200", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ついつい、人は心やら精神やらを考える時に、脳みそに起きる現象と、自分自身でしかない“俺”という現象を混同してしまう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 969,
+	},
+	block_00192 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10201", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、他人の脳みそをノコギリで切開して分かるのは、他人の脳みそと同じ意味での現象としての心であり精神だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 974,
+	},
+	block_00193 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10202", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「たしかに、神経細胞の発火の仕方によって感情やら体感やらを特定する事が可能かもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 979,
+	},
+	block_00194 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10203", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だとしても、“俺”というものの不可思議さは、そういうものとは無縁だ。",
+					{"rt2"},
+					"一切関係ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 985,
+	},
+	block_00195 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10204", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「科学的な見方、その一部の知見を取り入れたら“俺”という本来的な不可解さを語る事は出来ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 990,
+	},
+	block_00196 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0009", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10205", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「本来的な意味で“俺”のありかを探るのに、合理的な説明は無効だ。",
+					{"rt2"},
+					"言うだけ無駄。",
+					{"rt2"},
+					"言葉が煙になってしまうだけ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 998,
+	},
+	block_00197 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10206", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「少なくとも、“私の心”と言った場合に世界は大きな二つの断絶を起こす」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 1003,
+	},
+	block_00198 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10207", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「お前には意地悪な質問をした。",
+					{"rt2"},
+					"夏目圭が言う“精神”のありかなど問う事自体が間違いだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 1010,
+	},
+	block_00199 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10208", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それは語ってはいけないものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00198",
+		linknext = "block_00200",
+		line = 1015,
+	},
+	block_00200 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10209", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「夏目圭が言おうとしたものは“今”と“ここ”を保有する事によって成り立つものでしかない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00199",
+		linknext = "block_00201",
+		line = 1020,
+	},
+	block_00201 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10210", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「逆に言えば、その二つの独自性以外はなんら語る事も出来ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00200",
+		linknext = "block_00202",
+		line = 1025,
+	},
+	block_00202 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10211", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それでも、その二つの独自性こそが“私という世界”そのものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00201",
+		linknext = "block_00203",
+		line = 1030,
+	},
+	block_00203 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10212", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「単純に、我々がそれを連続した自分だと思っているに過ぎない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00202",
+		linknext = "block_00204",
+		line = 1035,
+	},
+	block_00204 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10790", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「自分が自分であるっていうのが、まるで思い込みだと言わんばかりですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00203",
+		linknext = "block_00205",
+		line = 1038,
+	},
+	block_00205 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10213", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、理屈上ならば、極論。いますぐに圭と俺の心が完全に入れ替わったとしても、それが感覚として“今　ここ”であるかぎり、この独自性なる“俺”であるとみ",
+					{"rt2"},
+					"なせる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00204",
+		linknext = "block_00206",
+		line = 1045,
+	},
+	block_00206 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10791", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「それって、俺と先生が入れ替わっても、気が付かないけど、先生になった俺は俺という事でしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00205",
+		linknext = "block_00207",
+		line = 1048,
+	},
+	block_00207 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10214", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「論理的には何ら不自然ではない。考えられる事すべてに可能性があるならば十分あり得る事態だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00206",
+		linknext = "block_00208",
+		line = 1054,
+	},
+	block_00208 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10792", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そんな事、認められません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00207",
+		linknext = "block_00209",
+		line = 1057,
+	},
+	block_00209 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10215", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「うん、それを認めるか認めないかは好き好きだ。ただ理屈上としては、完全な",
+					{"rt2"},
+					"入れ替わりを体験したとしたら、入れ替わった事に気が付くわけがない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00208",
+		linknext = "block_00210",
+		line = 1064,
+	},
+	block_00210 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10216", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「なぜならば、完全な肉体の入れ替わりとは、身体が持つあらゆる事、それこそ脳が生み出すすべてが入れ替わる事だからな。もちろん記憶の入れ替わりも意味する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00209",
+		linknext = "block_00211",
+		line = 1070,
+	},
+	block_00211 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10793", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「だとしても、それはおかしい。俺じゃなくなる。",
+					{"rt2"},
+					"それは俺じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00210",
+		linknext = "block_00212",
+		line = 1074,
+	},
+	block_00212 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10217", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「なるほど、だったらその通りなのだろう。",
+					{"rt2"},
+					"圭が言う事が正しい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00211",
+		linknext = "block_00213",
+		line = 1080,
+	},
+	block_00213 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10794", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？　そうなの？？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00212",
+		linknext = "block_00214",
+		line = 1083,
+	},
+	block_00214 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10218", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「さっきの話に戻るが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00213",
+		linknext = "block_00215",
+		line = 1088,
+	},
+	block_00215 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0011", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10219", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「自分の脳をスライスして、完全な自分の心をコピーした情報体が、自分であるかどうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00214",
+		linknext = "block_00216",
+		line = 1093,
+	},
+	block_00216 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10220", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「アメリカの有名な大学でアンケートを採ったところ、多くの学生が、それを",
+					{"rt2"},
+					"“自分の心”であるとみなしたらしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00215",
+		linknext = "block_00217",
+		line = 1099,
+	},
+	block_00217 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10795", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？　スライスされたら死ぬじゃないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00216",
+		linknext = "block_00218",
+		line = 1102,
+	},
+	block_00218 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10221", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そう思う人間も少しはいる。だが大半はそう思わない。俺が読んだ著名な物理学者の科学読本でも、情報体としてコピーされた自分によって不老不死になれると書いてたな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00217",
+		linknext = "block_00219",
+		line = 1107,
+	},
+	block_00219 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10796", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「その感覚が普通？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00218",
+		linknext = "block_00220",
+		line = 1110,
+	},
+	block_00220 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10222", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、もっと面白いデータもある。",
+					{"rt2"},
+					"たとえば、圭がこれから拷問を受けるとする。",
+					{"rt2"},
+					"それは嫌だよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00219",
+		linknext = "block_00221",
+		line = 1119,
+	},
+	block_00221 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10797", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あ、当たり前だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00220",
+		linknext = "block_00222",
+		line = 1122,
+	},
+	block_00222 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10223", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「普通の人間すべてがそう思う。",
+					{"rt2"},
+					"だが次の言葉が付け加えられると違う反応になる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00221",
+		linknext = "block_00223",
+		line = 1128,
+	},
+	block_00223 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10798", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「どんな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00222",
+		linknext = "block_00224",
+		line = 1131,
+	},
+	block_00224 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10224", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「あなたは拷問を受けた。だが、その記憶は完全に消されている。",
+					{"rt2"},
+					"それは嫌か？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00223",
+		linknext = "block_00225",
+		line = 1137,
+	},
+	block_00225 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10799", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「それだったら……少しはゆるせるのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00224",
+		linknext = "block_00226",
+		line = 1140,
+	},
+	block_00226 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10225", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「少しどころじゃない。記憶にないのならば全然問題ないと答えた人間が大多数だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00225",
+		linknext = "block_00227",
+		line = 1145,
+	},
+	block_00227 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0011", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10226", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「問題は次だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00226",
+		linknext = "block_00228",
+		line = 1150,
+	},
+	block_00228 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10227", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「これから拷問を受けるが、その記憶は一切無い。",
+					{"rt2"},
+					"目覚めた時に、あなたは綺麗さっぱり忘れている。",
+					{"rt2"},
+					"まるでそんな事実など無かったかの様に」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00227",
+		linknext = "block_00229",
+		line = 1157,
+	},
+	block_00229 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10228", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「あなたは、それを受け入れられるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00228",
+		linknext = "block_00230",
+		line = 1162,
+	},
+	block_00230 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10800", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「それは無理だろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00229",
+		linknext = "block_00231",
+		line = 1165,
+	},
+	block_00231 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10229", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いや、それが大多数の人間が“記憶に残らないのならば問題無い”と答えたそうだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00230",
+		linknext = "block_00232",
+		line = 1170,
+	},
+	block_00232 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10801", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そ、そうなのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00231",
+		linknext = "block_00233",
+		line = 1173,
+	},
+	block_00233 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10230", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「経験する自己と記憶する自己、実は、多くの人間が記憶にある自分を重要視する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00232",
+		linknext = "block_00234",
+		line = 1178,
+	},
+	block_00234 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10231", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「つまり、多くの人間が本能的に、記憶こそが自分そのものであると考える」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00233",
+		linknext = "block_00235",
+		line = 1183,
+	},
+	block_00235 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10232", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「俺はランダムで、自分の世界が、あらゆる肉体に瞬時転生しても、やはりその瞬間においては、自分は自分であると考える」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00234",
+		linknext = "block_00236",
+		line = 1188,
+	},
+	block_00236 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10233", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、大昔の大哲学者からして、そもそも自分が自分であるという事、時間という謎に対してもその同一性を担保するものを“記憶”と考える方が多数派だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00235",
+		linknext = "block_00237",
+		line = 1193,
+	},
+	block_00237 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10802", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「自分とは……記憶でしかない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00236",
+		linknext = "block_00238",
+		line = 1196,
+	},
+	block_00238 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10234", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そう見なしている人間が大多数って事だ。",
+					{"rt2"},
+					"あとは、そのラインが微妙に違ってくるだけだ。圭は、自分の精神が違う肉体に転生したら、その記憶すらもないのなら別人だと言った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00237",
+		linknext = "block_00239",
+		line = 1203,
+	},
+	block_00239 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10235", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、多くの人間が、そもそも記憶になければ過去の自分など、他人と変わらないという風に思っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00238",
+		linknext = "block_00240",
+		line = 1208,
+	},
+	block_00240 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10236", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「これってけっこう凄いよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00239",
+		linknext = "block_00241",
+		line = 1213,
+	},
+	block_00241 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10237", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「俺の感覚だと、記憶の有無にかかわらず、自分の肉体がどこかの誰かになっていたとしてそれはやはり“俺”だと思っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00240",
+		linknext = "block_00242",
+		line = 1218,
+	},
+	block_00242 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10238", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、ほとんどの人間は、記憶にないのならば、同一の有機体である過去の自分自身ですら、赤の他人同然とみなしている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00241",
+		linknext = "block_00243",
+		line = 1223,
+	},
+	block_00243 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10239", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「これは正反対みたいに見えるが、言ってる事は同じだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00242",
+		linknext = "block_00244",
+		line = 1228,
+	},
+	block_00244 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10240", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「自分という存在は、瞬間瞬間で明滅する現象であり、",
+					{"rt2"},
+					"それは記憶によって同一性を保っているだけである。",
+					{"rt2"},
+					"だから、自分であるという記憶がなければ自己の同一性は崩れ去る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00243",
+		linknext = "block_00245",
+		line = 1236,
+	},
+	block_00245 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10241", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「つまり、過去の自分は他人だし、未来の自分も他人だ。",
+					{"rt2"},
+					"ほぼ、違う肉体の他人と同じ扱いだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00244",
+		linknext = "block_00246",
+		line = 1242,
+	},
+	block_00246 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10242", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「その差を埋めるのは、“記憶”ってわけだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00245",
+		linknext = "block_00247",
+		line = 1247,
+	},
+	block_00247 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10803", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「記憶に連続性がなければ……過去の自分は他人と同じ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00246",
+		linknext = "block_00248",
+		line = 1250,
+	},
+	block_00248 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10243", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そういう事、ここで、ある種の独我論は消え去る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00247",
+		linknext = "block_00249",
+		line = 1256,
+	},
+	block_00249 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10804", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「独我論？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00248",
+		linknext = "block_00250",
+		line = 1259,
+	},
+	block_00250 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10244", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、自分の世界こそがすべてであり、世界は自分でしかないという考えだな。聞いた事ない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00249",
+		linknext = "block_00251",
+		line = 1264,
+	},
+	block_00251 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10805", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「世界に自分しかいないってヤツですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00250",
+		linknext = "block_00252",
+		line = 1267,
+	},
+	block_00252 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10245", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そんな感じだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00251",
+		linknext = "block_00253",
+		line = 1272,
+	},
+	block_00253 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10246", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「けどさ、自分が自分であるという事を突き詰めると。",
+					{"rt2"},
+					"実は独我論は自然に消滅してしまう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00252",
+		linknext = "block_00254",
+		line = 1278,
+	},
+	block_00254 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10247", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だって、知らない肉体が自分であった事すら否定出来ないからな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00253",
+		linknext = "block_00255",
+		line = 1283,
+	},
+	block_00255 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10248", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「また、独我論に無縁な人、大半の人間がそうだが――。",
+					{"rt2"},
+					"これらの人々は、記憶にない自分など自分ではなく他人であると思える」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00254",
+		linknext = "block_00256",
+		line = 1290,
+	},
+	block_00256 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10249", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「つまり、自分が自分である事、自分が他人でない事、それらは案外あやふやだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00255",
+		linknext = "block_00257",
+		line = 1295,
+	},
+	block_00257 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10250", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「哲学者が問題にし続けていた『自他問題』という難問は、そもそもその前提である“自分”という感覚からして個々人によってその境界線が違う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00256",
+		linknext = "block_00258",
+		line = 1300,
+	},
+	block_00258 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10251", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「でも、それも当たり前といえば当たり前なんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00257",
+		linknext = "block_00259",
+		line = 1305,
+	},
+	block_00259 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0011", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10252", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「どう考えても、生まれた瞬間から“自分”なんて概念を持っている赤ん坊なんていないだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00258",
+		linknext = "block_00260",
+		line = 1310,
+	},
+	block_00260 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10253", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だいたい、他人……たぶん母親との対比から初めて生まれるのだろうな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00259",
+		linknext = "block_00261",
+		line = 1316,
+	},
+	block_00261 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10806", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「自分というのは、他人を発見する事で、はじめて生まれる概念……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00260",
+		linknext = "block_00262",
+		line = 1319,
+	},
+	block_00262 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0003", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10254", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そうそう。たとえば、“ここ”なんて概念だって、“あっち”という場所的な差から生まれたものにすぎない。仮に“ここ”しか存在しないとしたら、それに対しては名すら与えられないだろう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00261",
+		linknext = "block_00263",
+		line = 1325,
+	},
+	block_00263 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10255", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ちなみに“今”という概念は、空間的な差を獲得してから得られるもので、発育過程では比較的遅く獲得するものらしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00262",
+		linknext = "block_00264",
+		line = 1330,
+	},
+	block_00264 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10256", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そうすると、“今”や“ここ”も“私”と同じ様に、それ以外のものとの対比で生まれたものにすぎない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00263",
+		linknext = "block_00265",
+		line = 1335,
+	},
+	block_00265 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0011", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10257", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「たぶん人が初源的に持っている“私”的な感覚というものは、そもそも名が与えられない様なものなんだと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00264",
+		linknext = "block_00266",
+		line = 1340,
+	},
+	block_00266 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10258", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「独我論は語り得ないなんて言うらしいが、それと同じ様に自他問題も語り得ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00265",
+		linknext = "block_00267",
+		line = 1345,
+	},
+	block_00267 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10807", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「俺が“俺”であるという意識など、そもそも俺が“俺”でない誰か“他者”を意識したから生まれた幻想かもしれないのか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00266",
+		linknext = "block_00268",
+		line = 1348,
+	},
+	block_00268 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10259", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、だからさ。高邁な精神に頼りすぎると、それは我執となってしまう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00267",
+		linknext = "block_00269",
+		line = 1354,
+	},
+	block_00269 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10808", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「我執？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00268",
+		linknext = "block_00270",
+		line = 1357,
+	},
+	block_00270 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10260", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「仏教の言葉だな。仏教だと自分が実体の様に考えてしまう事を諫めるんだよ。",
+					{"rt2"},
+					"比類無き自分と思えてしまう“我”ですら、実体のないぼんやりしたもんだと",
+					{"rt2"},
+					"指摘する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00269",
+		linknext = "block_00271",
+		line = 1365,
+	},
+	block_00271 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10261", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「実際、俺は人間がタンパク質で出来ていると言ったが、その細胞や血液ですら、ほぼ数年で入れ替わってしまう。つまりこの肉体すら同一性なんてかなり危うい",
+					{"rt2"},
+					"もんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00270",
+		linknext = "block_00272",
+		line = 1372,
+	},
+	block_00272 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10809", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「肉体の同一性が危ういのなら、やはり精神の方が信用出来る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00271",
+		linknext = "block_00273",
+		line = 1375,
+	},
+	block_00273 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0009", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10262", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いやいや、やはりそれは我執だよ。",
+					{"rt2"},
+					"もっと気楽に考えて見ろよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00272",
+		linknext = "block_00274",
+		line = 1382,
+	},
+	block_00274 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10263", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「たとえばさ。さっきまでの話ってさ。",
+					{"rt2"},
+					"記憶の構成が自分の同一性を保証するって事だよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00273",
+		linknext = "block_00275",
+		line = 1388,
+	},
+	block_00275 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10264", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「すべての自分的なるものは“記憶”によってその同一性が担保されている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00274",
+		linknext = "block_00276",
+		line = 1393,
+	},
+	block_00276 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10265", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「質問だが、記憶ってそもそも何から生まれるんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00275",
+		linknext = "block_00277",
+		line = 1398,
+	},
+	block_00277 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10810", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？　記憶が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00276",
+		linknext = "block_00278",
+		line = 1401,
+	},
+	block_00278 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10266", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「たとえば、今の会話を圭がこの後も覚えているとしたら、何が記憶を生んでいる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00277",
+		linknext = "block_00279",
+		line = 1406,
+	},
+	block_00279 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10811", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「経験って事かな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00278",
+		linknext = "block_00280",
+		line = 1409,
+	},
+	block_00280 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10267", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「俺もそう思う。記憶とは経験が生み出すものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00279",
+		linknext = "block_00281",
+		line = 1414,
+	},
+	block_00281 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10268", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だとしたらさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00280",
+		linknext = "block_00282",
+		line = 1419,
+	},
+	block_00282 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10269", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「仮に、自分の経験を、そのまま、他の誰かに経験させる事が出来たとしたら、",
+					{"rt2"},
+					"どうかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00281",
+		linknext = "block_00283",
+		line = 1426,
+	},
+	block_00283 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10812", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「自分の経験を、他の誰かに？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00282",
+		linknext = "block_00284",
+		line = 1429,
+	},
+	block_00284 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10270", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「比類無き素晴らしき一瞬。そういう経験を、他の誰かにも与えられたとしたら。",
+					{"rt2"},
+					"そいつは自分になるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00283",
+		linknext = "block_00285",
+		line = 1436,
+	},
+	block_00285 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10813", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「さすがに自分にはならないですけど……ですが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00284",
+		linknext = "block_00286",
+		line = 1439,
+	},
+	block_00286 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0009", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10271", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「微妙に心がざわつくよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00285",
+		linknext = "block_00287",
+		line = 1444,
+	},
+	block_00287 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10272", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「今までの思索をずっと巡っていった後だと、自分の感覚、自分の経験、自分の感情、それらがブレンドされたものが、もし仮に他の人間にも与えられたとしたら、なんかすげぇ不思議な感じがする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00286",
+		linknext = "block_00288",
+		line = 1450,
+	},
+	block_00288 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10814", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「何故か分からないけど……それは同感だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00287",
+		linknext = "block_00289",
+		line = 1453,
+	},
+	block_00289 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10273", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「一枚の絵画に画家のすべてが塗り込まれているとする。",
+					{"rt2"},
+					"見る者の中で、もしこの絵画が完全に開花するとしたら――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00288",
+		linknext = "block_00290",
+		line = 1460,
+	},
+	block_00290 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10274", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「比類無き一瞬の美。画家がキャンバスに塗り込んだ記憶が他の人間の中で花開く。",
+					{"rt2"},
+					"その時に、どこか他の誰かは画家自身になる瞬間がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00289",
+		linknext = "block_00291",
+		line = 1466,
+	},
+	block_00291 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10275", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「少なくとも、俺はいつでも絵画をそう見ている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00290",
+		linknext = "block_00292",
+		line = 1471,
+	},
+	block_00292 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10276", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「夏目圭の絵を最初に見た時に、夏目圭という精神そのものを感じた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00291",
+		linknext = "block_00293",
+		line = 1476,
+	},
+	block_00293 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10815", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「っ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00292",
+		linknext = "block_00294",
+		line = 1479,
+	},
+	block_00294 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10277", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そして、多くの観衆はその時に、この絵画は、他ならぬ自分が描かれていると思うものさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00293",
+		linknext = "block_00295",
+		line = 1484,
+	},
+	block_00295 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10816", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「作者は自分であり、そして自分は作者である……そういう感覚が芸術の根っこにはある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00294",
+		linknext = "block_00296",
+		line = 1487,
+	},
+	block_00296 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10278", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「これは絵画だけじゃない。文学なんかもっと分かりやすくそういう性質がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00295",
+		linknext = "block_00297",
+		line = 1492,
+	},
+	block_00297 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10279", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「太宰でも芥川でも谷崎でも漱石でも百閒でもなんでもいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00296",
+		linknext = "block_00298",
+		line = 1497,
+	},
+	block_00298 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10280", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが名作と言われる文学は得てして読者に、これは自分のために書かれた、",
+					{"rt2"},
+					"自分だけの作品であると思わせる力がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00297",
+		linknext = "block_00299",
+		line = 1503,
+	},
+	block_00299 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10281", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「“我”なんて実体はない。同じ様に“他”なんて実体もないわけだ。",
+					{"rt2"},
+					"あっても鏡みたいに、映し合う関係だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00298",
+		linknext = "block_00300",
+		line = 1509,
+	},
+	block_00300 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10282", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だからそれらは簡単に入れ替わる。",
+					{"rt2"},
+					"故に芸術には価値がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00299",
+		linknext = "block_00301",
+		line = 1515,
+	},
+	block_00301 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10817", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「自分という実体は、鏡みたいなものか……なんか、そう考えると空しい感じがしますね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00300",
+		linknext = "block_00302",
+		line = 1518,
+	},
+	block_00302 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0003", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10283", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いや、全然違うよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00301",
+		linknext = "block_00303",
+		line = 1523,
+	},
+	block_00303 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10284", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「重々帝網なるを即身と名づく」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00302",
+		linknext = "block_00304",
+		line = 1528,
+	},
+	block_00304 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10818", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「なんですか？　それ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00303",
+		linknext = "block_00305",
+		line = 1531,
+	},
+	block_00305 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10285", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「無限に続く神の天井は輝く網で飾られている。その網の結び目の一つ一つには",
+					{"rt2"},
+					"球体の鏡が吊るされている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00304",
+		linknext = "block_00306",
+		line = 1537,
+	},
+	block_00306 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10286", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それぞれの球鏡は、それぞれ反射しあい、それぞれを映し合う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00305",
+		linknext = "block_00307",
+		line = 1542,
+	},
+	block_00307 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10287", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「この一つ一つがそれぞれの世界だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00306",
+		linknext = "block_00308",
+		line = 1547,
+	},
+	block_00308 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10288", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「世界は一つの閉じた形をしている様でありながら、実際は無限の反射によって",
+					{"rt2"},
+					"現象が生まれ続ける」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00307",
+		linknext = "block_00309",
+		line = 1553,
+	},
+	block_00309 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10819", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「それが自我という事ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00308",
+		linknext = "block_00310",
+		line = 1556,
+	},
+	block_00310 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10289", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そういう事だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00309",
+		linknext = "block_00311",
+		line = 1561,
+	},
+	block_00311 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10820", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「即身の意味は？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00310",
+		linknext = "block_00312",
+		line = 1564,
+	},
+	block_00312 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10290", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「世界をその様にみる事が出来たら、無限の先で、仏が持つ真理すらも、自らの鏡の中にあると気が付く」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00311",
+		linknext = "block_00313",
+		line = 1569,
+	},
+	block_00313 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10291", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「鏡の世界。その無限の先には、必ず世界の真理がある。その事を真の意味で識れば、その時には悟りを開けるってわけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00312",
+		linknext = "block_00314",
+		line = 1575,
+	},
+	block_00314 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10821", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「無限の先にある真理が……自分の中で映る……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00313",
+		linknext = "block_00315",
+		line = 1578,
+	},
+	block_00315 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10292", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「この事実のどこが空しいんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00314",
+		linknext = "block_00316",
+		line = 1583,
+	},
+	block_00316 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10822", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「なんか……すげぇ、希望が持てる話に聞こえますが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00315",
+		linknext = "block_00317",
+		line = 1586,
+	},
+	block_00317 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10823", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「俺はあまり頭が良くないので、整理しきれません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00316",
+		linknext = "block_00318",
+		line = 1589,
+	},
+	block_00318 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0003", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10293", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「よし、んじゃ質問の仕方を変えるかな。",
+					{"rt2"},
+					"お前の絵の中に精神はあるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00317",
+		linknext = "block_00319",
+		line = 1596,
+	},
+	block_00319 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10824", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00318",
+		linknext = "block_00320",
+		line = 1599,
+	},
+	block_00320 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10294", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「絵は単なる絵の具の集まりだ。",
+					{"rt2"},
+					"そこにニューロンの束もなければシナプスの発火もない。",
+					{"rt2"},
+					"だとしたら、絵には魂がない事になるし、精神もないことになる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00319",
+		linknext = "block_00321",
+		line = 1607,
+	},
+	block_00321 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10295", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「絵の具には神経細胞が含まれていない。故に絵画には心がない。精神はない。",
+					{"rt2"},
+					"何もない。それでOKか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00320",
+		linknext = "block_00322",
+		line = 1614,
+	},
+	block_00322 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10825", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いや、違う。絵には精神が宿るし、心が宿ります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00321",
+		linknext = "block_00323",
+		line = 1617,
+	},
+	block_00323 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0008", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10296", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「何？　絵の具にはニューロンが詰まってて、それを正しく塗りつぶすと、シナプスが美しい発火プロセスを発生させるのか？　だから絵には心が詰まっているとでも思うか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00322",
+		linknext = "block_00324",
+		line = 1623,
+	},
+	block_00324 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10826", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いや、絵の具にそんなものは詰まってない。絵の具は絵の具です。だが絵には魂があるのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00323",
+		linknext = "block_00325",
+		line = 1626,
+	},
+	block_00325 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0003", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10297", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、そうだ。その通りだ。",
+					{"rt2"},
+					"そう理解しておけばいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00324",
+		linknext = "block_00326",
+		line = 1632,
+	},
+	block_00326 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10827", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え？　でも――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00325",
+		linknext = "block_00327",
+		line = 1635,
+	},
+	block_00327 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0007", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10298", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「何が不服なんだ？　お前は正しい事しか言ってないんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00326",
+		linknext = "block_00328",
+		line = 1641,
+	},
+	block_00328 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10299", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「絵画にニューロンなんてない。キャンバスの上でシナプスが発火などしていない。",
+					{"rt2"},
+					"そもそもしているとかしていないとか、そんなことは“心”の所在に関係ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00327",
+		linknext = "block_00329",
+		line = 1647,
+	},
+	block_00329 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10300", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「絵画には“心”があり“精神”が宿る。",
+					{"rt2"},
+					"これは比喩ではない。",
+					{"rt2"},
+					"事実として、絵画には魂が宿るんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00328",
+		linknext = "block_00330",
+		line = 1655,
+	},
+	block_00330 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10301", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「なぜならば、芸術とは真実を宿しているからだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00329",
+		linknext = "block_00331",
+		line = 1660,
+	},
+	block_00331 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0009", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10302", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「真実を宿さない絵画など糞だ。",
+					{"rt2"},
+					"そこには、魂も精神も宿らない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00330",
+		linknext = "block_00332",
+		line = 1666,
+	},
+	block_00332 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10828", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00331",
+		linknext = "block_00333",
+		line = 1669,
+	},
+	block_00333 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10303", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、それと同時に、それは描く者と見る者の神経細胞の発火でもある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00332",
+		linknext = "block_00334",
+		line = 1674,
+	},
+	block_00334 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10304", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「絵画は絵の具でしかないし、それを見た人間が感じるものは、単なる脳で起きる現象にしかすぎない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00333",
+		linknext = "block_00335",
+		line = 1679,
+	},
+	block_00335 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10829", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「で、でも」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00334",
+		linknext = "block_00336",
+		line = 1682,
+	},
+	block_00336 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10305", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「いいや、芸術作品には精神が宿り。",
+					{"rt2"},
+					"かつ、芸術作品は、見る者に独特な神経細胞の発火を促すだけにすぎない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00335",
+		linknext = "block_00337",
+		line = 1688,
+	},
+	block_00337 = {
+		{"bgm", stop=1, time=5000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10830", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「全然逆な事を言っている様に聞こえます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00336",
+		linknext = "block_00338",
+		line = 1693,
+	},
+	block_00338 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10306", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ああ、そうだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00337",
+		linknext = "block_00339",
+		line = 1698,
+	},
+	block_00339 = {
+		{"bgm", stop=1},
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10307", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「お前はショーヴェ洞窟って知ってるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00338",
+		linknext = "block_00340",
+		line = 1705,
+	},
+	block_00340 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10831", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ショーヴェ洞窟？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00339",
+		linknext = "block_00341",
+		line = 1708,
+	},
+	block_00341 = {
+		{"bg", speed=200000, zoom=70, file="zev_etc_01_80", path=":ev/ev_etc_01/", x2=384, y2=-140, x=-384, y=-140, set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"bgm", file="bgm145"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10308", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「現在知られる最古の洞窟壁画だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00340",
+		linknext = "block_00342",
+		line = 1715,
+	},
+	block_00342 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10309", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「岩肌の陰影やその立体性を利用して描かれた非常に美しい壁画だ。",
+					{"rt2"},
+					"写実的でありながら、非常に幻影的かつ、観念的だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00341",
+		linknext = "block_00343",
+		line = 1721,
+	},
+	block_00343 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10310", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「多重に重なる雌のライオン、これは三六頭のライオンとも言われるが、神秘的な残像がその様に見えるだけとも感じられる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00342",
+		linknext = "block_00344",
+		line = 1727,
+	},
+	block_00344 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10311", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「その先には、彼らが追い求めるマンモスやバイソンやサイの姿。彼らの姿も残像の様にいくつにも重なっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00343",
+		linknext = "block_00345",
+		line = 1732,
+	},
+	block_00345 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10312", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「場所は南フランス。今から三万年前に、その薄暗い洞窟の中で、見事な鍾乳洞に",
+					{"rt2"},
+					"囲まれた凹凸がたいまつに揺られる姿を見ながら、その画家は想起したものを描",
+					{"rt2"},
+					"いた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00344",
+		linknext = "block_00346",
+		line = 1740,
+	},
+	block_00346 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10313", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「その時、画家の中で一つの、そしてたしかな観念が作られた。",
+					{"rt2"},
+					"その観念は、間違いなく真実を宿している」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00345",
+		linknext = "block_00347",
+		line = 1744,
+	},
+	block_00347 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10314", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「観念は、おそらく脳の電磁場の変動として表れただろう。",
+					{"rt2"},
+					"それが無数の、それこそ数え切れないほどの神経細胞にイオンチャンネルを開かせる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00346",
+		linknext = "block_00348",
+		line = 1751,
+	},
+	block_00348 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10315", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、生まれた観念だけでは絵は描けない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00347",
+		linknext = "block_00349",
+		line = 1756,
+	},
+	block_00349 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10316", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「発火する神経細胞、さらに同調して発火しつづけ脳全体にわたって活動電位を生じさせ、シナプス結合を介して一連の信号列が発生する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00348",
+		linknext = "block_00350",
+		line = 1761,
+	},
+	block_00350 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10317", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「それが神経間接合を通じて脊髄に伝わる。",
+					{"rt2"},
+					"その信号は運動神経から、腕の筋肉につながった神経筋接合部に神経伝達物質を放出する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00349",
+		linknext = "block_00351",
+		line = 1767,
+	},
+	block_00351 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10318", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「はじまる筋肉収縮。",
+					{"rt2"},
+					"動き出す腕」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00350",
+		linknext = "block_00352",
+		line = 1773,
+	},
+	block_00352 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10319", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「画家の脳に浮かんだ観念は、動物たちを生み出す。",
+					{"rt2"},
+					"洞窟の凹凸にまるで生きているかの様な動物を浮き上がらせる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00351",
+		linknext = "block_00353",
+		line = 1779,
+	},
+	block_00353 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10320", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ゆらめくたいまつの中、光と岩がゆらめき動き、それらが彼が描こうとする動物たちのイメージと重なる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00352",
+		linknext = "block_00354",
+		line = 1784,
+	},
+	block_00354 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10321", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「鍾乳洞の中に、画家の中で生まれた425体もの動物の観念が描かれる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00353",
+		linknext = "block_00355",
+		line = 1789,
+	},
+	block_00355 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10322", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そして時が過ぎ――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00354",
+		linknext = "block_00356",
+		line = 1799,
+	},
+	block_00356 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10323", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「三万年後、洞窟探険家ジャン＝マリ・ショーヴェがその同じ洞窟の中に入った時」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00355",
+		linknext = "block_00357",
+		line = 1804,
+	},
+	block_00357 = {
+		{"bg", file="ev_etc_01_80", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10324", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「大昔、たいまつの炎に揺らめく動物たちが、今度は懐中電灯によって蘇った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00356",
+		linknext = "block_00358",
+		line = 1811,
+	},
+	block_00358 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10325", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「その時、間違いなく、遙か昔、すでに死んだ画家の脳の中にあった観念が再び、",
+					{"rt2"},
+					"探険家の中でよみがえる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00357",
+		linknext = "block_00359",
+		line = 1817,
+	},
+	block_00359 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10326", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「遙か彼方の画家の“心”が生み出した、神経細胞の美しき発火を、彼もまた体験した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00358",
+		linknext = "block_00360",
+		line = 1822,
+	},
+	block_00360 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10327", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、画家も、そしてそれを発見した彼も、その神秘的な美しさを、神経細胞の発火などとは思わないだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00359",
+		linknext = "block_00361",
+		line = 1827,
+	},
+	block_00361 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10328", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「ただ単にこう思うハズだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00360",
+		linknext = "block_00362",
+		line = 1832,
+	},
+	block_00362 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg011a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0003", head="ken_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10329", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「恐ろしくも美しい。と」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00361",
+		linknext = "block_00363",
+		line = 1842,
+	},
+	block_00363 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0001", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10330", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「芸術には二つの見方がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00362",
+		linknext = "block_00364",
+		line = 1847,
+	},
+	block_00364 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10331", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「神経細胞の発火と見るか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00363",
+		linknext = "block_00365",
+		line = 1852,
+	},
+	block_00365 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0010", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10332", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「芸術の真実を見るか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00364",
+		linknext = "block_00366",
+		line = 1857,
+	},
+	block_00366 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0005", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10333", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「この二つは互いに正しくあり、そして互いに相容れない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00365",
+		linknext = "block_00367",
+		line = 1862,
+	},
+	block_00367 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0005", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10334", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「世界には二つの見方がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00366",
+		linknext = "block_00368",
+		line = 1867,
+	},
+	block_00368 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0002", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10335", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そして、自分に対しても、二つの見方がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00367",
+		linknext = "block_00369",
+		line = 1872,
+	},
+	block_00369 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1b0000", face="b0004", head="ken_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10336", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「どちらも軽視してはダメだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00368",
+		linknext = "block_00370",
+		line = 1877,
+	},
+	block_00370 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0005", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10337", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「圭、肉体は精神の奴隷などではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00369",
+		linknext = "block_00371",
+		line = 1882,
+	},
+	block_00371 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0001", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10338", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「また逆も然り、精神は肉体の奴隷などではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00370",
+		linknext = "block_00372",
+		line = 1887,
+	},
+	block_00372 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10339", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「絵は精神で描かれる。",
+					{"rt2"},
+					"これは正解だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00371",
+		linknext = "block_00373",
+		line = 1893,
+	},
+	block_00373 = {
+		{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0010", head="ken_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z1", mode=3, path=":fg/ken/z1/", file="ken_z1a0000", face="a0002", head="ken_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10340", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「だが、絵は肉体で描かれる。",
+					{"rt2"},
+					"これも事実なんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00372",
+		linknext = "block_00374",
+		line = 1900,
+	},
+	block_00374 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10832", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「えっと……やはり難しくて頭では分かりません。",
+					{"rt2"},
+					"なんとなく分かる様な気もするのですが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00373",
+		linknext = "block_00375",
+		line = 1906,
+	},
+	block_00375 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="zbg011a", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"extrans", time=500},
+		{"bgm", stop=1},
+		{"se", vol=50, id=1, file="se0043"},
+		{"fg", ch="健一郎", size="z2", my=40, mode=3, resize=1, path=":fg/ken/z2/", file="ken_z2a0000", face="a0003", head="ken_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10341", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「よし！　そうか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00374",
+		linknext = "block_00376",
+		line = 1922,
+	},
+	block_00376 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何故か俺の答えを聞いて、うれしそうに立ち上がる草薙健一郎先生。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00375",
+		linknext = "block_00377",
+		line = 1925,
+	},
+	block_00377 = {
+		{"se", stop=1, time=500, id=1},
+		{"fg", ch="健一郎", size="z2", mode=3, path=":fg/ken/z2/", file="ken_z2b0000", face="b0003", head="ken_z2b", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="健一郎", size="z2", mode=3, path=":fg/ken/z2/", file="ken_z2b0000", face="b0002", head="ken_z2b", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_ken_10342", ch="ken"},
+			},
+			ja = {
+				{
+					name = {"健一郎"},
+					"「そういう答えを待っていたんだ！",
+					{"rt2"},
+					"さて、圭。共に芸術を楽しまないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00376",
+		linknext = "block_00378",
+		line = 1934,
+	},
+	block_00378 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10833", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「はぁ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00377",
+		linknext = "block_00379",
+		line = 1937,
+	},
+	block_00379 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"excall", file="04_kei18"},
+		{"text"},
+		linkback = "block_00378",
+		line = 1941,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

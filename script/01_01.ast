@@ -1,0 +1,2844 @@
+astver = 2.0
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅰ章"},
+        {"msg", no = 1},
+        {"bg", time = 2000, file = "black", path = ":bg/"},
+        {"bgm", file = "bgm154", time = 2000},
+        {"bg", file = "文字スチル01_1", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 1500},
+        {"ex", time = 2000, func = "wait"},
+        {"bg", file = "文字スチル01_2", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 1500},
+        {"ex", time = 2000, func = "wait"},
+        {"bg", file = "文字スチル01_3", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 1500},
+        {"ex", time = 2000, func = "wait"},
+        {"bg", file = "文字スチル01_4", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 1500},
+        {"ex", time = 6000, func = "wait"},
+        {"bg", file = "文字スチル01_5", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 1500},
+        {"ex", time = 6000, func = "wait"},
+        {"bg", file = "文字スチル01_6", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 1500},
+        {"ex", time = 6000, func = "wait"},
+        {"bg", file = "文字スチル01_7", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 1500},
+        {"ex", time = 6000, func = "wait"},
+        {"bg", file = "アイキャッチ01", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 2000},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 2000},
+        {"bgm", stop = 1, time = 2000},
+        {"se", stop = 1, id = -1, time = 2000},
+        {"vostop", stop = 1, time = 2000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 2000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"ex", time = 500, func = "wait"},
+        {"se", id = 1, file = "se0001"},
+        {"bg", time = 2000, file = "ev_etc_01_01", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"user", mode = "conf", ch = "静流"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00001", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「欢迎光临」"
+                }
+            }
+        },
+        linknext = "block_00001",
+        line = 96
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"？？？"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002",
+        line = 99
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一位男性顾客一进店就静静地站在那里不动。"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003",
+        line = 102
+    },
+    block_00003 = {
+        {"msgoff"},
+        {"bg", file = "bg018a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "静流", size = "z1", mode = 3, resize = 1, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0001", head = "shi_z1b", x = -345, lv = 4, id = 5, sync = 0},
+        {"fg", ch = "直哉", size = "z1", mode = 3, resize = 1, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0001", head = "nao_z1b", x = 345, lv = 4, id = 6, sync = 0},
+        {"extrans"},
+        {"bgm", file = "bgm104"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00002", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「嗯？ 有什么问题吗？」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004",
+        line = 120
+    },
+    block_00004 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0007", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"？？？"},
+                    "「啊，不，我听说奇美拉的店主回来了……」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005",
+        line = 125
+    },
+    block_00005 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0007", head = "shi_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0002", head = "shi_z1b", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00003", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那个？ 你是，那个吗？我不在的时候常来吃的客人？」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006",
+        line = 131
+    },
+    block_00006 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0001", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"？？？"},
+                    "「啊，嗯，大概就是那样吧」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007",
+        line = 136
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"真是一位高大帅气的男士。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008",
+        line = 141
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这是我们的首次见面，但感觉好像在哪里见过他一样。"}
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009",
+        line = 144
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00004", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「是吗。你是",
+                    {"ruby", text = "つぶらぎ"},
+                    "圆木",
+                    {"/ruby"},
+                    "店长时期的老客户吗？」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010",
+        line = 150
+    },
+    block_00010 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0001", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"？？？"},
+                    "「啊，不，是之前，鸟谷真琴那个",
+                    {"ruby", text = "こ"},
+                    "女孩",
+                    {"/ruby"},
+                    "在管理的时候」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011",
+        line = 156
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "鸟谷真琴？ 那可是很久以前的事了。",
+                    {"rt2"},
+                    "大概是10年前吧？"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012",
+        line = 160
+    },
+    block_00012 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0003", head = "shi_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0002", head = "shi_z1b", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00005", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那真是个老客户了。",
+                    {"rt2"},
+                    "那就请坐下吧」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013",
+        line = 167
+    },
+    block_00013 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0001", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"？？？"},
+                    "「那我就不客气了」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014",
+        line = 172
+    },
+    block_00014 = {
+        {"fgact", ch = "直哉", act = "おじぎ", lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {"男性顾客坐在了吧台上。"}
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015",
+        line = 177
+    },
+    block_00015 = {
+        {"bg", file = "ev_com_01_01", path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {"他像谁呢？"}
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016",
+        line = 185
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我在心里这样想。"}
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017",
+        line = 188
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00006", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那么老客户，可以告诉我你的名字吗？」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018",
+        line = 191
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，我叫草薙直哉」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019",
+        line = 194
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我当场屏住了呼吸。"}
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020",
+        line = 197
+    },
+    block_00020 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00007", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「草薙！？直哉？！」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021",
+        line = 202
+    },
+    block_00021 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_01_02", time = 400, path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊？」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022",
+        line = 209
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00008", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊？」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023",
+        line = 212
+    },
+    block_00023 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_01_03", time = 400, path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「难道，你听到过我什么不好的传闻？」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024",
+        line = 219
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00009", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊？怎么会这样？」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025",
+        line = 222
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，不，因为你的惊讶表情太过分了……」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026",
+        line = 225
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "确实，如果对待第一次见面的人，这样的反应可能是不合常理的",
+                    {"rt2"},
+                    "但是，对我来说，那个名字正好引起了我这样的反应。"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027",
+        line = 229
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00010", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那个，真琴是我表亲。",
+                    {"rt2"},
+                    "嗯，我也听说过你的事……」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028",
+        line = 233
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029",
+        line = 236
+    },
+    block_00029 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_01_01", time = 400, path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "他虽然显得有点不明所以，",
+                    {"rt2"},
+                    "但是他没有进一步追问。"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030",
+        line = 244
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "虽然说这样，也没什么需要隐藏的，但是要说出我惊讶的原因，就",
+                    {"rt2"},
+                    "有点长了，还有很多事情。"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031",
+        line = 247
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {"嘛，人生就是充满各种各样的事情嘛！"}
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032",
+        line = 250
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00011", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那么，你要点什么？」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033",
+        line = 253
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我要一份牛肉饭」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034",
+        line = 256
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00012", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「牛肉饭，好的，稍等一下」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035",
+        line = 259
+    },
+    block_00035 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"bg", speed = 240000, rule = "083r", vague = 40, file = "zbg018a", path = ":bg/", x2 = -960, y2 = 100, x = 960, y = 100, ax = 1920, ay = 1126, bx = -960, by = -586},
+        {"text"},
+        text = {
+            ja = {
+                {"我返回了厨房。"}
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036",
+        line = 269
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我从冰箱中取出一个锅，放在火上，然后我开始思考。"}
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037",
+        line = 272
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00013", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「草薙直哉……」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038",
+        line = 275
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00014", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「原来是这样啊，原来是这样……」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039",
+        line = 278
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            ja = {
+                {"草薙健一郎的儿子。"}
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040",
+        line = 281
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他们很像。"}
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041",
+        line = 284
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            ja = {
+                {"更确切地说，如果他有孩子的话，可能就会是这个样子吧。"}
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042",
+        line = 287
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我一边这样想着，一边——"}
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043",
+        line = 290
+    },
+    block_00043 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00015", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「嗯，煮沸了」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044",
+        line = 295
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我赶紧调小火力，用漏网挑出肉。",
+                    {"rt2"},
+                    "稍微多放了一些。"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045",
+        line = 299
+    },
+    block_00045 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"text"},
+        text = {
+            ja = {
+                {"我快速擦拭碗，然后拿到吧台上。"}
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046",
+        line = 305
+    },
+    block_00046 = {
+        {"bg", rule = "083r", vague = 40, file = "ev_com_01_01", path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00016", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「你等的牛肉饭」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047",
+        line = 312
+    },
+    block_00047 = {
+        {"bg", time = 500, file = "ev_com_01_04", path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这！ 太大份了！」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048",
+        line = 321
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00017", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我给你多放了点」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049",
+        line = 324
+    },
+    block_00049 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_01_05", time = 400, path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「“多放了点”？这不是肉堆吗……」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050",
+        line = 331
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00018", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「嘛，如果份量多的话，吃的时间就会长一些，对吧？」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051",
+        line = 334
+    },
+    block_00051 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_01_04", time = 400, path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是什么问题！？」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052",
+        line = 343
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00019", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「对，所以我们就可以多聊聊」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053",
+        line = 346
+    },
+    block_00053 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_01_05", time = 400, path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「可是好吃的东西会冷掉的」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054",
+        line = 353
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00020", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「你只需要对我提出的问题点头就好了」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055",
+        line = 356
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「问题……难道你对我有什么不好的印象吗？」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056",
+        line = 359
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            ja = {
+                {"草薙直哉抬起头看着我。"}
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057",
+        line = 362
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00021", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「不是，不是，不是那种审问，只是吃饭的时候聊聊，所以先吃饭",
+                    {"rt2"},
+                    "吧」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058",
+        line = 365
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「好、好吧……」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059",
+        line = 368
+    },
+    block_00059 = {
+        {"bg", time = 500, file = "ev_com_01_06", path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {"虽然他看起来并不满意，但他还是开始吃牛肉饭了。"}
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060",
+        line = 375
+    },
+    block_00060 = {
+        {"bg", x = -950, y = -300, time = 500, file = "zev_com_01_06", path = ":ev/ev_com_01/", set = "ev_com_01", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "他的手真大。我心里这么想。",
+                    {"rt2"},
+                    "我似乎也在那个时候这么想过……"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061",
+        line = 383
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我不会忘记那只手的触感。"}
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062",
+        line = 386
+    },
+    block_00062 = {
+        {"bg", time = 500, file = "ev_com_01_06", path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00022", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「真奇妙啊。能用那么大的手画出那么精致的画」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063",
+        line = 391
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊？您知道我的画？」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064",
+        line = 397
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00023", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那是当然，你可是我们弓張市的一位骄傲」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065",
+        line = 400
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只是我父亲很有名罢了」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066",
+        line = 403
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00024", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「可不全是这样哦。你也很了不起，“梦见蝴蝶”可是一部相当棒的",
+                    {"rt2"},
+                    "作品呢」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067",
+        line = 406
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「您还知道那部作品啊，那已经是十年前的作品了」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068",
+        line = 409
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00025", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那年的摩尔展览真是热闹极了。我当时在哥斯达黎加的圣何塞，",
+                    {"rt2"},
+                    "即使如此，新闻还是报道了日本有三个人获奖」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069",
+        line = 412
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00026", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「而且，其中两个人都是弓張学园的学生」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070",
+        line = 415
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是啊，那可能是国内唯一引起这么大轰动的艺术活动了。",
+                    {"rt2"},
+                    "但是静流，您那时候在国外对吧？您怎么会知道只是被提名的我那",
+                    {"rt2"},
+                    "个作品呢？」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071",
+        line = 422
+    },
+    block_00071 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00027", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「因为摩尔展览每年都会在纽约举办包含提名作品在内的展览会，",
+                    {"rt2"},
+                    "我离得近就去看了呀」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072",
+        line = 426
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「离得近？哥斯达黎加不是在非洲吗？」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073",
+        line = 429
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00028", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「哇，我虽然是方向白痴，但你也太过分了吧。",
+                    {"rt2"},
+                    "哥斯达黎加是在南美的哦」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074",
+        line = 433
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00028_1", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「话说回来，我原本期待的是",
+                    {"rt2"},
+                    "“只是在同一个大陆，离得并不近吧”",
+                    {"rt2"},
+                    "这样的吐槽呢」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075",
+        line = 438
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，我听说静流您已经环游世界了，",
+                    {"rt2"},
+                    "对于您来说，从非洲到纽约可能也算近吧……」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076",
+        line = 442
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00029", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「怎么可能呢。",
+                    {"rt2"},
+                    "等等，我怎么成了吐槽的一方！」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077",
+        line = 446
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对不起，我真的对地理知识一窍不通，完全是认真的误解」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078",
+        line = 449
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            ja = {
+                {"对地理一窍不通。"}
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079",
+        line = 452
+    },
+    block_00079 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说起来，我确实听说过这样的事。"}
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080",
+        line = 455
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "也就是说，有很多人（无自觉地）对这孩子抱有好感。",
+                    {"rt2"},
+                    "我对这些细节都了如指掌。"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081",
+        line = 459
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00030", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「虽然今天是重新开张的第一天，但你还是经常来店里呢」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082",
+        line = 462
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「门口的告示上写着重新开张的日期，而且我听从円木さん那里听",
+                    {"rt2"},
+                    "说店主静流小姐会回来，所以想来打个招呼」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083",
+        line = 466
+    },
+    block_00083 = {
+        {"msgoff"},
+        {"bg", file = "bg018a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"bg", file = "reco", id = 9, lv = 9, path = ":sys/", sync = 0},
+        {"extrans"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "円木つぐみ。",
+                    {"rt2"},
+                    "一直担任这家“基美拉”的店长的女孩。"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084",
+        line = 478
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "她是和真琴同时开始做兼职的女孩，",
+                    {"rt2"},
+                    "即使真琴离开了弓张之后，她也一直在这家店里工作。"
+                }
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085",
+        line = 482
+    },
+    block_00085 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我听说円木小姐已经结婚了，还有了孩子」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086",
+        line = 486
+    },
+    block_00086 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00031", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「她虽然结婚了，但还是在这家店工作。",
+                    {"rt2"},
+                    "但是不能让一个孕妇工作，是吧」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087",
+        line = 490
+    },
+    block_00087 = {
+        {"msgoff"},
+        {"bg", file = "ev_com_01_06", path = ":ev/ev_com_01/", set = "ev_com_01", sync = 0},
+        {"extrans"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以这就是你最后答应回国的原因吗？」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088",
+        line = 500
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00032", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「你真了解我。其实我在海外还有很多想做的事情」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089",
+        line = 503
+    },
+    block_00089 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我知道静流小姐是这家店的老板，但你是完全依赖这家店维持生",
+                    {"rt2"},
+                    "活的吗？」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090",
+        line = 506
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00033", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「当然不是。我自己还有自己的工作」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091",
+        line = 509
+    },
+    block_00091 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「除了咖啡？」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092",
+        line = 512
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00034", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「不，是咖啡」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093",
+        line = 515
+    },
+    block_00093 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「咖啡？这是个老词了」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094",
+        line = 518
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00035", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「“基美拉”的原来的店长是战前在东京出生的。他总是称呼咖啡为",
+                    {"rt2"},
+                    "“コーシー”」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095",
+        line = 522
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00035_2", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「所以对我来说，“基美拉”的咖啡就是“コーシー”。",
+                    {"rt2"},
+                    "但是在菜单上还是写的“咖啡”」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096",
+        line = 526
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「咖啡的工作主要是什么？」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097",
+        line = 529
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00036", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「其实很少有人知道，咖啡的价格几乎全部都是运输费。",
+                    {"rt2"},
+                    "所以现地的原价和这里的原价是完全不同的。",
+                    {"rt2"},
+                    "如果能控制物流路径，减少运输成本，咖啡的价格就会大大降低」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098",
+        line = 534
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哦，是这样啊」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099",
+        line = 537
+    },
+    block_00099 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00037", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「所以你在做那种咨询工作吗。",
+                    {"rt2"},
+                    "我在这家店里使用了各种不同的豆子，嗯，就像是市场调研一样。",
+                    {"rt2"},
+                    "所以你可以喝到一些非常便宜且罕见的咖啡」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100",
+        line = 541
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你不只是这家店的店主吗？」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101",
+        line = 544
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00038", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「对，光靠这家店的收入，我是无法周游世界的。",
+                    {"rt2"},
+                    "其实，我的主要收入来源是咨询业务」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102",
+        line = 548
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「听说你在海外做咨询工作，感觉像是非常优秀的精英」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103",
+        line = 551
+    },
+    block_00103 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00039", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「完全不是，我最后的学历只是勉强毕业，还落后了两年」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104",
+        line = 554
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「真的吗？」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105",
+        line = 557
+    },
+    block_00105 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00040", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「嗯，因为我太沉迷于海外旅行，所以没有达到足够的出勤天数。",
+                    {"rt2"},
+                    "不知道为什么我还是连续落后了两年」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106",
+        line = 561
+    },
+    block_00106 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那时候你就在海外了吗？」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107",
+        line = 564
+    },
+    block_00107 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00041", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「是的，不过那时候我不是为了咖啡」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108",
+        line = 567
+    },
+    block_00108 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109",
+        line = 571
+    },
+    block_00109 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他似乎想问我到底是为了什么。"}
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110",
+        line = 574
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00042", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那你现在在做什么工作呢？」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111",
+        line = 577
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            ja = {
+                {"于是，我马上转移了话题。"}
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112",
+        line = 580
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我现在在弓張学园做教师。虽然说并不是正式雇员」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113",
+        line = 583
+    },
+    block_00113 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00043", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊，说起来，我好像听说过你在那里工作。",
+                    {"rt2"},
+                    "真是够苦的。明明紗希阿姨可以对你更好一点的」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114",
+        line = 587
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「紗希阿姨？说起来，静流你是校长的侄女对吧？」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115",
+        line = 590
+    },
+    block_00115 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00044", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「嗯，对的。真琴告诉你的吧？」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116",
+        line = 593
+    },
+    block_00116 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，鸟谷没有告诉我这么多，是校长曾经跟我提过」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117",
+        line = 596
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00045", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「嗯。你和紗希阿姨关系好吗？」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118",
+        line = 599
+    },
+    block_00118 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我和她的关系……毕竟是雇佣关系啊」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119",
+        line = 602
+    },
+    block_00119 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00046", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「也是呢……」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120",
+        line = 605
+    },
+    block_00120 = {
+        {"se", vol = 20, id = 1, file = "se0016"},
+        {"bg", time = 500, file = "ev_com_01_06", path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {"窗外传来了弓張钟声。"}
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121",
+        line = 612
+    },
+    block_00121 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00047", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「听起来午休时间要结束了，你没问题吗？」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122",
+        line = 615
+    },
+    block_00122 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是静流您为了能聊长点时间才给我做的大份牛肉饭的吧」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123",
+        line = 618
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00048", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊哈哈，是的呢」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124",
+        line = 621
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果是上课的话，我下午没什么问题。因为下午都是美术课，不",
+                    {"rt2"},
+                    "用急着赶回去」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125",
+        line = 624
+    },
+    block_00125 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00049", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「原来如此」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126",
+        line = 627
+    },
+    block_00126 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"草薙直哉慢悠悠地吃着牛肉饭。"}
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127",
+        line = 634
+    },
+    block_00127 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "是弓張的教师吗。",
+                    {"rt2"},
+                    "那么他以后也会成为这个店的常客吧。"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128",
+        line = 638
+    },
+    block_00128 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_01_07", time = 400, path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「您在海外的生活怎么样？」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129",
+        line = 643
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00050", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我已经习惯了流浪的生活，",
+                    {"rt2"},
+                    "反倒是现在这种生活还需要一些时间来适应」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130",
+        line = 647
+    },
+    block_00130 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我的父亲也一直在海外」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131",
+        line = 650
+    },
+    block_00131 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00051", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「对，草薙健一郎先生好像确实很少在日本待着」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132",
+        line = 653
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是的，大家都离开这个地方了」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133",
+        line = 656
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "草薙直哉这么说着，望着钟声传来的方向。",
+                    {"rt2"},
+                    "现在那里已经听不到钟声了。"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134",
+        line = 660
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00052", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「但是，像我这样会回来的人也还是有的」"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135",
+        line = 663
+    },
+    block_00135 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「也有像我这样，从来不离开弓張的人呢」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136",
+        line = 666
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00053", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那是出于对家乡的热爱吗？」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137",
+        line = 669
+    },
+    block_00137 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「可能吧。或者只是我胆小怕事罢了」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138",
+        line = 675
+    },
+    block_00138 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00054", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「胆小？」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139",
+        line = 678
+    },
+    block_00139 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「很多人都离开了这里。",
+                    {"rt2"},
+                    "可能我只是害怕孤独罢了」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140",
+        line = 682
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00055", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「原来如此，你的表达方式真有趣」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141",
+        line = 685
+    },
+    block_00141 = {
+        {"bg", file = "ev_etc_01_01", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"text"},
+        text = {
+            ja = {
+                {"我和草薙直哉聊了大概三十分钟。"}
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142",
+        line = 692
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我只是随便问问，",
+                    {"rt2"},
+                    "并没有想要刻意探查他的私事。",
+                    {"rt2"},
+                    "我只提出了一些不会让他心生疑惑的问题。"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143",
+        line = 697
+    },
+    block_00143 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "毕竟，这是我和他的第一次见面，",
+                    {"rt2"},
+                    "而我已经听说了他的很多事情。"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144",
+        line = 701
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我可能知道他所不知道的，和他有关的事情。"}
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145",
+        line = 704
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他比我们两个人想象的要与夏目有更深的关系。"}
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146",
+        line = 707
+    },
+    block_00146 = {
+        {"bg", file = "ev_com_01_01", path = ":ev/ev_com_01/", set = "ev_com_01"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那我差不多要走了」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147",
+        line = 714
+    },
+    block_00147 = {
+        {"text"},
+        text = {
+            ja = {
+                {"说完，草薙直哉站起来，手伸向钱包。"}
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148",
+        line = 717
+    },
+    block_00148 = {
+        {"bg", file = "bg018a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "当他要结账时，",
+                    {"rt2"},
+                    "他被放在收银机旁边的东西吸引住了。"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149",
+        line = 726
+    },
+    block_00149 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「说起来……这个」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150",
+        line = 729
+    },
+    block_00150 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = 0, y = 0, zoom = 120, file = "zbg018a", path = ":bg/", ax = 1920, ay = 1126, bx = -960, by = -586, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"那儿有一个花瓶。"}
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151",
+        line = 740
+    },
+    block_00151 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「以前这里没有这个」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152",
+        line = 743
+    },
+    block_00152 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00056", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊，是的」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153",
+        line = 746
+    },
+    block_00153 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「这是非常出色的",
+                    {"ruby", text = "さいゆう"},
+                    "彩釉",
+                    {"/ruby"},
+                    "。",
+                    {"rt2"},
+                    "非常罕见。",
+                    {"rt2"},
+                    "难道说，这是从国外带回来的？」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154",
+        line = 752
+    },
+    block_00154 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00057", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「看起来像吗？」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155",
+        line = 755
+    },
+    block_00155 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg018a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "直哉", size = "z1", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0010", head = "nao_z1b", x = 345, lv = 4, id = 6, sync = 0},
+        {"fg", ch = "静流", size = "z1", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0001", head = "shi_z1b", x = -345, lv = 4, id = 5, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"他稍微思考了一下，然后摇了摇头。"}
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156",
+        line = 769
+    },
+    block_00156 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0001", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我在这家店里待了很长时间，但我从没见过这个花瓶，所以我以",
+                    {"rt2"},
+                    "为这是静流从国外带回来的」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157",
+        line = 774
+    },
+    block_00157 = {
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0002", head = "shi_z1b", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00058", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「不，这是日本的东西。",
+                    {"rt2"},
+                    "其实我一直把它藏起来的」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158",
+        line = 780
+    },
+    block_00158 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0007", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159",
+        line = 785
+    },
+    block_00159 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0009", head = "shi_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00059", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「如果被人知道了，那遗产税可能会变得很麻烦」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160",
+        line = 790
+    },
+    block_00160 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0002", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是什么意思？",
+                    {"rt2"},
+                    "听起来像是值得被列为文化财产的珍品一样」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161",
+        line = 796
+    },
+    block_00161 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0002", head = "shi_z1b", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "静流", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00060", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊，是的，也许它可以成为文化财产」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162",
+        line = 802
+    },
+    block_00162 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0001", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {"草薙直哉仔细地看着那个花瓶。"}
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163",
+        line = 807
+    },
+    block_00163 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0002", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {"然后他微微苦笑，"}
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164",
+        line = 812
+    },
+    block_00164 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0001", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然做得非常好，但这是现代艺术家的作品。",
+                    {"rt2"},
+                    "可能作者是陶艺家",
+                    {"ruby", text = "よしざわりょくじ"},
+                    "吉泽绿寺",
+                    {"/ruby"},
+                    "吧」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165",
+        line = 818
+    },
+    block_00165 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0001", head = "shi_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00061", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「为什么这么想？」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166",
+        line = 823
+    },
+    block_00166 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0010", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「描绘海洋的独特技法叫做巴尔波提努。",
+                    {"rt2"},
+                    "它不仅仅在表面上表现出波纹和波浪，而是在整个作品中都有体现」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167",
+        line = 829
+    },
+    block_00167 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0001", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但最重要的是这种彩釉。这是一种叫做",
+                    {"ruby", text = "へきひ"},
+                    "碧緋",
+                    {"/ruby"},
+                    "的特殊颜色」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168",
+        line = 836
+    },
+    block_00168 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0010", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「世界上只有他能创造出这种特殊的彩釉，碧緋。",
+                    {"rt2"},
+                    "反过来说，除他之外，还没有人成功做出这个」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169",
+        line = 843
+    },
+    block_00169 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0003", head = "shi_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            ja = {
+                {"听到他的观察，我不禁笑出声来。"}
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170",
+        line = 848
+    },
+    block_00170 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然后，草薙直哉感叹地说，"}
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171",
+        line = 851
+    },
+    block_00171 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0008", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，如果静流你相信吉泽绿寺，我就不会否认。",
+                    {"rt2"},
+                    "他确实是一位杰出的陶艺家，可能有一天他会被尊为人类国宝，成",
+                    {"rt2"},
+                    "为世界级的陶艺家，这个花瓶也可能被指定为文化财产」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172",
+        line = 858
+    },
+    block_00172 = {
+        {"bgm", stop = 1, time = 10000},
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0700", face = "b0002", head = "shi_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00062", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「是的，吉泽绿寺确实是一位了不起的人」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173",
+        line = 865
+    },
+    block_00173 = {
+        {"fg", ch = "直哉", mode = 3, path = ":fg/nao/z1/", file = "nao_z1b0000", face = "b0007", head = "nao_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {"听到我的话，他露出了稍微有些困惑的表情。"}
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174",
+        line = 872
+    },
+    block_00174 = {
+        {"bgm", stop = 1},
+        {"se", id = 1, file = "se0001"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"然后他就这样离开了基马拉。"}
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175",
+        line = 882
+    },
+    block_00175 = {
+        {"se", count = 2, id = 1, file = "se0025"},
+        {"text"},
+        text = {
+            ja = {
+                {"那天晚上，我打了一个电话。"}
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176",
+        line = 887
+    },
+    block_00176 = {
+        {"se", stop = 1, time = 0, id = 1},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00063", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「嗨，久违了，我是鸟谷静流。",
+                    {"rt2"},
+                    "那边怎么样？蓝？」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177",
+        line = 896
+    },
+    block_00177 = {
+        {"text"},
+        text = {
+            ja = {
+                {"打给我的好朋友――"}
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178",
+        line = 899
+    },
+    block_00178 = {
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"excall", file = "01_02_1"},
+        {"text"},
+        linkback = "block_00177",
+        line = 904
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

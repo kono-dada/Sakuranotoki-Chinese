@@ -1,0 +1,1216 @@
+astver = 2.0
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"msg", no = 1},
+        {"bgm", stop = 1},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg020a", path = ":bg/", sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"静寂的世界。"}
+            }
+        },
+        linknext = "block_00001",
+        line = 23
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"自唱片停止后，我们便只剩下言语的静寂世界。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002",
+        line = 26
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {"像铅一样的空气涌了进来。"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003",
+        line = 29
+    },
+    block_00003 = {
+        {"text"},
+        text = {
+            ja = {
+                {"从窒息感中，额头上的冷汗开始滑落。"}
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004",
+        line = 32
+    },
+    block_00004 = {
+        {"bg", time = 500, file = "ev_com_36_04", path = ":ev/ev_com_36/", set = "ev_com_36"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10521", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「你的表情冻住了呢」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005",
+        line = 37
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10522", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「刚刚的气势到哪去了？」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006",
+        line = 40
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊！」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007",
+        line = 43
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我无言以对。"}
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008",
+        line = 46
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {"恩田君和本间君的比赛根本没有可比性。"}
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009",
+        line = 49
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "如果恩田君这次再次败北的话，两人之间的关系恢复起来将是不可",
+                    {"rt2"},
+                    "能的，甚至会给她留下无法想象的伤痕。"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010",
+        line = 52
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "从那次的失败后，每当有什么提醒他那件事的时候，那个和善的恩",
+                    {"rt2"},
+                    "田君就会彻底变了样。"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011",
+        line = 56
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如果她再次遭受失败的话。"}
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012",
+        line = 59
+    },
+    block_00012 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_36_05", time = 400, path = ":ev/ev_com_36/", set = "ev_com_36"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10523", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「让他们两个再比一次怎么样！草薙老师！！」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013",
+        line = 64
+    },
+    block_00013 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那、那个……不可以……」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014",
+        line = 67
+    },
+    block_00014 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_36_07", time = 400, path = ":ev/ev_com_36/", set = "ev_com_36"},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"bg", sync = 0, face = 1, file = "ev_com_36_06", time = 400, path = ":ev/ev_com_36/", set = "ev_com_36"}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10524", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「那是？不能？为什么？」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015",
+        line = 73
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是……」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016",
+        line = 76
+    },
+    block_00016 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_36_10", time = 400, path = ":ev/ev_com_36/", set = "ev_com_36"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10525", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017",
+        line = 81
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {"恩田放哉盯着我看。"}
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018",
+        line = 84
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            ja = {
+                {"只是静静地盯着。"}
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019",
+        line = 87
+    },
+    block_00019 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_36_11", time = 400, path = ":ev/ev_com_36/", set = "ev_com_36"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10526", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「啊啊啊——！？」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020",
+        line = 92
+    },
+    block_00020 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_36_06", time = 400, path = ":ev/ev_com_36/", set = "ev_com_36"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10527", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「这是……什么？」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021",
+        line = 97
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {"看到我的脸，放哉的眼睛开始充满了愤怒。"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022",
+        line = 100
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「咦？」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023",
+        line = 103
+    },
+    block_00023 = {
+        {"msgoff"},
+        {"se", id = 1, file = "se0015"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", y = -100, zoom = 100, speed = 250, file = "zbg020a", path = ":bg/", z2 = 80, ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "放哉", size = "z2", zoom = 100, speed = 250, mode = 3, resize = 1, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0006", head = "hos_z2a", z2 = 80, lv = 5, id = 9, sync = 0},
+        {"quake", size = 8},
+        {"extrans", rule = 105, time = 250},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10528", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「你在说什么！回答我！草薙直哉！！」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024",
+        line = 115
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「什么？什么意思？？」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025",
+        line = 118
+    },
+    block_00025 = {
+        {"fg", ch = "放哉", size = "z2", mode = 3, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0005", head = "hos_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10529", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「别开玩笑了……什么？那是什么？？」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026",
+        line = 123
+    },
+    block_00026 = {
+        {"fg", ch = "放哉", size = "z2", mode = 3, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0011", head = "hos_z2a", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "放哉", size = "z2", mode = 3, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0006", head = "hos_z2a", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10530", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「恐惧？颤抖？你这眼神像个胆小鬼！草薙直哉！！」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027",
+        line = 129
+    },
+    block_00027 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我只是想尽量保持本间君和恩田君的关系」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028",
+        line = 132
+    },
+    block_00028 = {
+        {"fg", ch = "放哉", size = "z2", mode = 3, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0011", head = "hos_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是，如果让他们两个进行比赛的话……」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029",
+        line = 137
+    },
+    block_00029 = {
+        {"fg", ch = "放哉", size = "z2", mode = 3, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0007", head = "hos_z2a", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "放哉", size = "z2", mode = 3, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0006", head = "hos_z2a", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10531", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「你在说什么！你之前的威势哪去了！？」"
+                }
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030",
+        line = 143
+    },
+    block_00030 = {
+        {"fg", ch = "放哉", size = "z2", mode = 3, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0011", head = "hos_z2a", lv = 5, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "放哉", size = "z2", mode = 3, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0005", head = "hos_z2a", lv = 5, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10532", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「你，难道是想在这里说完那么多大话后，什么都不做就回去吗！！",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031",
+        line = 149
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「非常抱歉。我有点过于激动了……」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032",
+        line = 152
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「首先，我并不是来这里吵架的」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033",
+        line = 155
+    },
+    block_00033 = {
+        {"fg", ch = "放哉", size = "z2", mode = 3, path = ":fg/hos/z2/", file = "hos_z2a0000", face = "a0004", head = "hos_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10533", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「啊啊啊——」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034",
+        line = 160
+    },
+    block_00034 = {
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"text"},
+        text = {
+            ja = {
+                {"于是我试图说服放哉。"}
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035",
+        line = 167
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我只是为了修复两人的关系而来。"}
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036",
+        line = 170
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我不想再让事情激化。"}
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037",
+        line = 173
+    },
+    block_00037 = {
+        {"text"},
+        text = {
+            ja = {
+                {"放哉看着我，说道――"}
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038",
+        line = 176
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10534", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「请回去……」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039",
+        line = 179
+    },
+    block_00039 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10535", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「关于圣路安的事，我也会作罢」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040",
+        line = 182
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10536", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「看来，你和我们已经处在完全不同的世界了」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041",
+        line = 185
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_hos_10537", ch = "hos"}
+            },
+            ja = {
+                {
+                    name = {"放哉"},
+                    "「和你在一起……让空气都变得阴沉」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042",
+        line = 188
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他这么说着就离开了。"}
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043",
+        line = 191
+    },
+    block_00043 = {
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", time = 2000, file = "ev_etc_01_02", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"text"},
+        text = {
+            ja = {
+                {"第二天，我在圣路安的派遣就结束了。"}
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044",
+        line = 199
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {"从那以后，我再也没有见到本间君。"}
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045",
+        line = 202
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "也许还有机会再见到她。",
+                    {"rt2"},
+                    "但每想到那时她可能会露出的表情，我就感到恐惧，没有勇气去见",
+                    {"rt2"},
+                    "她。"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046",
+        line = 206
+    },
+    block_00046 = {
+        {"msgoff"},
+        {"se", id = 1, file = "se0007"},
+        {"ex", time = 1200, func = "wait"},
+        {"bg", time = 1800, file = "ev_con_40_01", path = ":ev/ev_con_40/", set = "ev_con_40"},
+        {"bgm", file = "bgm136"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呼―」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047",
+        line = 217
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我像往常一样在屋顶抽着烟。"}
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048",
+        line = 220
+    },
+    block_00048 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"至今我仍能清晰地回忆起那一天的事情。"}
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049",
+        line = 226
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            ja = {
+                {"放哉轻蔑的眼神。"}
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050",
+        line = 229
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我那可怜的声音。"}
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051",
+        line = 232
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {"为什么我在那时会有那么懦弱的态度。"}
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052",
+        line = 235
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {"也许――"}
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053",
+        line = 238
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「直觉上……我是害怕的吧」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054",
+        line = 241
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我感觉到的不只是恩田放哉，而是他背后有什么在动。"}
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055",
+        line = 244
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {"如果我继续下去，我可能会面对一些可怕的东西。"}
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056",
+        line = 247
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我的直觉让我急刹车，停止了我的行动。"}
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057",
+        line = 250
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「即便如此……那样做是对的」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058",
+        line = 253
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「虽然那时的我显得非常懦弱」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059",
+        line = 256
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「但是，我已经不再是一个艺术家了」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060",
+        line = 259
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "即便如此――",
+                    {"rt2"},
+                    "我作为一名教师又是怎样的呢？"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061",
+        line = 263
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，……」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062",
+        line = 266
+    },
+    block_00062 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即便是教师，也只是受雇的人。"}
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063",
+        line = 269
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不应该过度干涉他人的生活。"}
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064",
+        line = 272
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065",
+        line = 275
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我似乎听到有人在走廊里叫我。"}
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066",
+        line = 278
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            ja = {
+                {"是咲崎君吗？"}
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067",
+        line = 281
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哎呀呀，又要被责备了」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068",
+        line = 284
+    },
+    block_00068 = {
+        {"msgoff"},
+        {"bg", file = "bg022a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"我熄灭了烟。"}
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069",
+        line = 293
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {"寒冷的风吹走了最后的痕迹。"}
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070",
+        line = 296
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071",
+        line = 299
+    },
+    block_00071 = {
+        {"text"},
+        text = {
+            ja = {
+                {"「我变得多么无趣啊」"}
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072",
+        line = 302
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我感觉我听到了这样的话――",
+                    {"rt2"},
+                    "但也许最终我不再听到这样的话了……。"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073",
+        line = 306
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {"持续憧憬英雄是孩子的特权。"}
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074",
+        line = 309
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {"成年人不应该抱有对英雄的憧憬。"}
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075",
+        line = 312
+    },
+    block_00075 = {
+        {"bg", time = 500, file = "ev_etc_01_02", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"text"},
+        text = {
+            ja = {
+                {"实际上――。"}
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076",
+        line = 317
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我，为何要去那个地方呢……」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077",
+        line = 321
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是觉得自己能做些什么吗？」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078",
+        line = 324
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，――」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079",
+        line = 327
+    },
+    block_00079 = {
+        {"text"},
+        text = {
+            ja = {
+                {"咲崎君的声音渐渐接近。"}
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080",
+        line = 330
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我想，那时候，我第一次真正体验到了“不自量力”这个词的含义。"}
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081",
+        line = 333
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我有我自己的生活方式。"}
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082",
+        line = 336
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即使那是一种微小而狭隘的生活方式。"}
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083",
+        line = 339
+    },
+    block_00083 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那么，回美术室去吧。"}
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084",
+        line = 342
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我在这里有我应该做的事。"}
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085",
+        line = 345
+    },
+    block_00085 = {
+        {"bgm", stop = 1, time = 3000},
+        {"se", stop = 1, id = -1, time = 3000},
+        {"vostop", stop = 1, time = 3000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 3000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"タイトル"},
+        {"text"},
+        linkback = "block_00084",
+        line = 350
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

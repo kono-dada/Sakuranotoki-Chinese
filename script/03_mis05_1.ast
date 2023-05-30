@@ -1,0 +1,3165 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"msg", no=1},
+		{"bg", file="アイキャッチ03mis", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans"},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"bg", time=2000, file="ev_etc_01_03", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"意外な顔がそこにはあった。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 24,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"というには、俺があまりに不注意であったのかもしれない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 27,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、この顔はあの屋敷でしか見る事がない様な――そんな錯覚をしていたのも",
+					{"rt2"},
+					"たしかだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 31,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"荘厳な芸術の館。喧しいほどのクラシック音楽。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 34,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この男は、そんな場所でしか生息していないかと思い込んでいた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 37,
+	},
+	block_00005 = {
+		{"msgoff"},
+		{"bg", file="bg046e", path=":bg/", sync=0},
+		{"fg", ch="放哉", size="z1", mode=3, resize=1, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9, sync=0},
+		{"extrans"},
+		{"bgm", file="bgm167"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10556", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「やぁ、草薙先生」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 52,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どうも、放哉先生」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 55,
+	},
+	block_00007 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10557", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「こんな場所で、とでも言いたげだねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 59,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いいえ、元々はこの学校の講師に推薦したのは放哉先生なわけですからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 62,
+	},
+	block_00009 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10558", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「私がここにいても不思議では無かったと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 67,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それも言い過ぎですね。実際、あなたから見た時の俺の顔は驚いていたでしょうから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 70,
+	},
+	block_00011 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10559", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「そうだねぇ。それにしても何故、私がここにいると君は思うかね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 76,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「さぁ、分かりませんよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 79,
+	},
+	block_00013 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10560", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「負債は支払われるべきだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 84,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 87,
+	},
+	block_00015 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10561", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「そんな怖い顔をしないでくれたまえ。ただの事実を言っただけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 93,
+	},
+	block_00016 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10562", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「君は負わなければならない負債を持っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 98,
+	},
+	block_00017 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10563", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ペテンという名の負債だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 103,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ペテンという名の負債。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 106,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"芸術家恩田放哉がそう言うのは一つしかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 109,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「六相図についてですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 112,
+	},
+	block_00021 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10564", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ああ、そうだ。六相図だよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 117,
+	},
+	block_00022 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10565", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「テレビで見た時は分からなかった。",
+					{"rt2"},
+					"この私ですら完全に草薙健一郎のものだと思ってしまった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 123,
+	},
+	block_00023 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10566", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「だが、実物を見てすぐに理解したよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 128,
+	},
+	block_00024 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10567", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ああ、なるほど、言われてみればたしかにこれは墓碑銘だなと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 133,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「言われてみれば？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 136,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その部分がやたらと引っかかった。",
+					{"rt2"},
+					"墓碑銘という名前。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 140,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"六相図をその様に呼んだ男など一人しかいない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 143,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして、それは秘密にされるべき事だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 146,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何故、放哉がその呼び方を知っている？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 149,
+	},
+	block_00030 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10568", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「これこそが草薙健一郎という芸術家に刻まれるべき、美であると」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 154,
+	},
+	block_00031 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0004", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0011", head="hos_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10569", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「贋作、否、ペテンという名の美であると」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 161,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ペテン師のための墓碑銘ってところですかね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 164,
+	},
+	block_00033 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10570", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ほう、ペテン師のための墓碑銘か……なるほどね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 170,
+	},
+	block_00034 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10571", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「希代のペテン師草薙健一郎、そこに刻まれた墓碑銘か……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 175,
+	},
+	block_00035 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0010", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10572", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「あれを思い出すな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 180,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あれ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 183,
+	},
+	block_00037 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10573", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「嘘を真実の様に売りつけるのは三流のペテン師である」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 188,
+	},
+	block_00038 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10574", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「嘘を真実に変えてしまい売りつけるのは二流のペテン師である」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 193,
+	},
+	block_00039 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10575", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「嘘を真実に変えて、世界すらも変えてしまうのが一流のペテン師である」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 198,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「誰の言葉ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 201,
+	},
+	block_00041 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10576", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「さぁね。",
+					{"rt2"},
+					"私も知人から聞いた言葉だから、誰が言ったかは知らない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 207,
+	},
+	block_00042 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10577", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ただ、六相図について考える時は、いつでもこの言葉がよぎる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 212,
+	},
+	block_00043 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0004", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10578", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「果たして、この墓碑銘は、世界を変えるほどのペテンであったのだろうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 217,
+	},
+	block_00044 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10579", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「希代のペテン師草薙健一郎。彼の死にふさわしい美は、あれだったのだろうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 222,
+	},
+	block_00045 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10580", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「草薙先生、君はどう思うかね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 227,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「さぁ、世界を変える様な大層な事が出来ない人間に聞かれましても、分かりませんよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 230,
+	},
+	block_00047 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0011", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"放哉が舌打ちした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 235,
+	},
+	block_00048 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10581", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「つまらない。本当に、煙の様な言葉だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 240,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんなつまらない人間が俺ですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 243,
+	},
+	block_00050 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10582", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「なるほど、それであの六相図に関してだが――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 248,
+	},
+	block_00051 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10583", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「あの絵画の持ち主は中村家である事を知っているね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 253,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そりゃ知っているでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 256,
+	},
+	block_00053 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10584", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「あの絵画のおかげで、中村家がいまだ存続出来ているという事を君は知っているのかい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 261,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「六相図によって存続出来ている？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 264,
+	},
+	block_00055 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10585", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「あの六枚の絵画は七十億円の担保となっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 269,
+	},
+	block_00056 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なぁ、七十億ぅぅ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 274,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"な、なんだ、その意味不明な額は……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 277,
+	},
+	block_00058 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10586", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ムーアが所蔵している『横たわる櫻』は最低でも6000万ドルの価値があると",
+					{"rt2"},
+					"言われている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 283,
+	},
+	block_00059 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10587", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「もし仮に六相図が真作ならば、七十億円は決して高くはない。市場に出回れば",
+					{"rt2"},
+					"その倍の値段がついてもおかしくはない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 289,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いやいや、おかしいだろ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 292,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"つーか、親父の『横たわる櫻』ってそんな値段になってたのか？",
+					{"rt2"},
+					"ヤツが生きていた時は700万ドルが相場だと言われていた……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 302,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ヤツから渡された通帳には９億円近くの金が入っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 305,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その大部分が『横たわる櫻』をムーアに売却した金額だと聞いている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 308,
+	},
+	block_00064 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10588", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「人は、美そのものよりも物語を愛するのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 317,
+	},
+	block_00065 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10589", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「君も知る通り、草薙健一郎の死ぬ直前は、そこまでの値段では無かった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 322,
+	},
+	block_00066 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10590", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「だが、死後に値段は跳ね上がった。なぜだか分かるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 327,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「もしかして、六相図が発表されたからなのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 330,
+	},
+	block_00068 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10591", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「その通りだよ。プラティヌ・エポラールをとっている時点で300万ドルの価値は",
+					{"rt2"},
+					"約束されている。それが倍以上つくなど当然の事だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 337,
+	},
+	block_00069 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10592", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「だが、そんなプラティヌ・エポラールでも、数千万ドルを超える絵画となると",
+					{"rt2"},
+					"数が限られてくる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 343,
+	},
+	block_00070 = {
+		{"fg", ch="放哉", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10593", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「その限られた絵画が『横たわる櫻』なのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 348,
+	},
+	block_00071 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0004", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10594", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「生前、あえて未発表にされた絵画に対して市場はいろいろな予測を立てた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 353,
+	},
+	block_00072 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0004", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10595", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ある資産家は、それは未完故、であったと考えた。",
+					{"rt2"},
+					"またある資産家は、愛する妻への鎮魂のための絵画であったからこそ隠された、と考えた……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 359,
+	},
+	block_00073 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10596", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「資産家達は、六相図によってふたたび『横たわる櫻』に注目したわけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 364,
+	},
+	block_00074 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0011", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10597", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「それほど、六相図と『横たわる櫻』の関係はセンセーショナルだったのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 369,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だとして、一桁変わるって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 372,
+	},
+	block_00076 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10598", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「君は、芸術界の市場変動をまったく知らない様だね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 377,
+	},
+	block_00077 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10599", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「アメリカは十年も景気後退を経験せずにいた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 382,
+	},
+	block_00078 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10600", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「格差がさらに広がり、金持ちはさらなる金持ちに、価値ある商品はさらに高額な商品へと変わっていった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 387,
+	},
+	block_00079 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0004", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10601", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「実際のところ『横たわる櫻』だけの話ではないよ。",
+					{"rt2"},
+					"この十年間であらゆる芸術的価値の値段が跳ね上がっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 393,
+	},
+	block_00080 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10602", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「当然、あの六相図とて同じ事だ。",
+					{"rt2"},
+					"最初っから七十億円であったわけではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 399,
+	},
+	block_00081 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10603", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「この十年間で、あの絵を担保にそれだけの金が貸し付けられたというわけだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 404,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 407,
+	},
+	block_00083 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10604", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「だんだん分かってきたんじゃないかい？",
+					{"rt2"},
+					"六枚の絵画、それを担保にそんな法外な額を出せる人物などそうそういない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 414,
+	},
+	block_00084 = {
+		{"fg", ch="放哉", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10605", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「誰が、いやどの組織が、その絵に金を出しているか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 419,
+	},
+	block_00085 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="zbg046e", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"fg", ch="放哉", size="z2", mode=3, resize=1, path=":fg/hos/z2/", file="hos_z2a0000", face="a0001", head="hos_z2a", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「南部グループ……本間礼次郎氏というわけですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 429,
+	},
+	block_00086 = {
+		{"fg", ch="放哉", size="z2", mode=3, path=":fg/hos/z2/", file="hos_z2a0000", face="a0002", head="hos_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10606", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「そういう事だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 434,
+	},
+	block_00087 = {
+		{"fg", ch="放哉", size="z2", mode=3, path=":fg/hos/z2/", file="hos_z2a0000", face="a0005", head="hos_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10607", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「本間礼次郎氏はあの絵を見た時にただ黙ったという。",
+					{"rt2"},
+					"その日、一切の言葉を発せずに帰路についたと聞いているよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 442,
+	},
+	block_00088 = {
+		{"fg", ch="放哉", size="z2", mode=3, path=":fg/hos/z2/", file="hos_z2a0000", face="a0001", head="hos_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10608", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「だが、その翌日に突如、中村家に十数億円振り込まれた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 447,
+	},
+	block_00089 = {
+		{"fg", ch="放哉", size="z2", mode=3, path=":fg/hos/z2/", file="hos_z2a0000", face="a0002", head="hos_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10609", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「あの絵を担保にして金を貸し付けたというわけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 452,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 457,
+	},
+	block_00091 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg046e", path=":bg/", sync=0},
+		{"fg", ch="放哉", size="z1", mode=3, resize=1, path=":fg/hos/z1/", file="hos_z1a0000", face="a0004", head="hos_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10610", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「なぜ、礼次郎氏はその場では黙して語らず。",
+					{"rt2"},
+					"一晩明けてから、決断したのだろうねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 470,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「さぁ、私には良く分かりませんよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 473,
+	},
+	block_00093 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0006", head="hos_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10611", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「そうかい？　でも不思議ではないか、その場ではなく！　ましてや、一週間後、一ヶ月後、半年後ではなく！　なぜ氏は一晩経ってから決断したのだろうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 481,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから、分かりませんよ。そんな事は……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 484,
+	},
+	block_00095 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10612", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ああそうだ！　私も分からないさ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 489,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こいつ……ほんと、人と会話する気あるのか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 492,
+	},
+	block_00097 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10613", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「だから！　私はね、一度、この話を本間礼次郎氏としたいと考えているのだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 497,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……なるほど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 500,
+	},
+	block_00099 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「六相図の真相を話そうってわけですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 505,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったら放哉先生が言っていた、俺を奔らせる、という意味も少しは分かる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 508,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「礼次郎氏にあれが贋作である事を話す。",
+					{"rt2"},
+					"そうすれば俺はただじゃすまない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 512,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それこそ、奔って、この世の果てまで逃げなければならないかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 515,
+	},
+	block_00103 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10614", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「逃げる？　逃げてどうにかなるものでもないだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 521,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったら、俺に何をさせたいのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 524,
+	},
+	block_00105 = {
+		{"bgm", stop=1},
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10615", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「さぁね。想像に任せるさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 531,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はただ放哉をにらみつける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 534,
+	},
+	block_00107 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"放哉はそんな俺を愉快そうに眺めている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 539,
+	},
+	block_00108 = {
+		{"se", id=1, file="se0134"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10616", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「さて、そろそろ時間だよ。",
+					{"rt2"},
+					"草薙先生！　授業に出なければいけないっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 548,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうですね。それでは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 551,
+	},
+	block_00110 = {
+		{"se", stop=1, time=500, id=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はその場をすぐに後にした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 558,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、その俺のすぐ後を、あの足音がついてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 563,
+	},
+	block_00112 = {
+		{"bg", file="bg046e", path=":bg/", sync=0},
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"bgm", file="bgm149"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「放哉先生もこちらの方向に用事が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 574,
+	},
+	block_00113 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10617", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ああ、奇遇だねぇ。私もそちらの方向に用事があるのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 579,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どんな用事ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 582,
+	},
+	block_00115 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0009", head="hos_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10618", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「そうそう、それがだね。",
+					{"rt2"},
+					"非常勤として雇われた教師が、実は弓張学園の正規雇用の先生だったらしいのだよ。",
+					{"rt2"},
+					"いや、だがこれは手違いでなってしまっただけなのだがね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 591,
+	},
+	block_00116 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ちっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 594,
+	},
+	block_00117 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は大きな音で舌打ちをする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 599,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、まったく動じることもなく放哉は話を続ける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 602,
+	},
+	block_00119 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10619", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「手違いなものだから、臨時で私が非常勤をやる事になったのだが……、なんでもその教員は手違いのまま、ここでの授業を続けるというのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 608,
+	},
+	block_00120 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10620", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「いやはや、教育熱心な方ではないか。",
+					{"rt2"},
+					"そんな教員に少し興味が出てね。",
+					{"rt2"},
+					"その授業の様子を見学させてもらう様にここの理事に頼んだのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 616,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「白々しいお話ですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 619,
+	},
+	block_00122 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そもそも、すべてあなたが仕組んだ事だと聞いてますが？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 622,
+	},
+	block_00123 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10621", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「誰にだい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 627,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 630,
+	},
+	block_00125 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いいえ、気のせいでした」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 633,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まったく、どこまでもウザいヤツだ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 636,
+	},
+	block_00127 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「私の授業を見て、何が楽しいというのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 639,
+	},
+	block_00128 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0004", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10622", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「そうだねぇ。私は過去にこんな事を言われたのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 644,
+	},
+	block_00129 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10623", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「恩田放哉先生は人を教えるのは上手いかもしれませんね。そんな絵をしてますよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 649,
+	},
+	block_00130 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 652,
+	},
+	block_00131 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10624", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ははは、こんな私でも人に絵を教えるのだけは上手いらしいのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 657,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この男、その言葉を根に持っているのだろうか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 660,
+	},
+	block_00133 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10625", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「だからね。その教育熱心な教員の授業は是非見ておきたいと思った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 665,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「分かりました。どちらにしても俺に拒否権などないのでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 668,
+	},
+	block_00135 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0009", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10626", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「いやいや、草薙先生がどうしても嫌だというのであれば、私は無理は言わないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 673,
+	},
+	block_00136 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どうでもいいです。見たければ見ればいいでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 676,
+	},
+	block_00137 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10627", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「それはうれしい！　是非、草薙先生が生徒に教えている姿を見たい！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 681,
+	},
+	block_00138 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「分かりました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 684,
+	},
+	block_00139 = {
+		{"se", id=1, file="se0003"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、俺と放哉は聖ルーアンの美術室に入った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 691,
+	},
+	block_00140 = {
+		{"se", stop=1, time=500, id=1},
+		{"msgoff"},
+		{"ex", time=2000, func="wait"},
+		{"bg", time=2000, file="ev_etc_01_03", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"疲れた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 708,
+	},
+	block_00141 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"マジで疲れた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 711,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺の授業を、ずっと半笑いで見続ける放哉。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 716,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"無性に殴りたくなるあの笑顔の前でいつも通りに進める授業。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 719,
+	},
+	block_00144 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ストレスマックス。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 722,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"マジむかつくあの笑顔！",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 725,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だいたい、本間礼次郎氏に話すならとっととやればいいのに、なんでいちいち俺に言ってくるんだ？　そもそもあの一件からかなりの時間が経ったぞ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 728,
+	},
+	block_00147 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ったく！　なんなんだよ！　あの男は！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 733,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11165", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「どうされたのでしょうか？　大声を出されて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 736,
+	},
+	block_00149 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「おっ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 739,
+	},
+	block_00150 = {
+		{"msgoff"},
+		{"bg", file="bg046a", path=":bg/", sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=9, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「み、心鈴くん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 750,
+	},
+	block_00151 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0002", head="mis_z1a", lv=4, id=9},
+		{"fgact", ch="心鈴", act="うなづく", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11166", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「はい、心鈴です。本間心鈴ですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 756,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ど、どうしたのこんなところで？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 759,
+	},
+	block_00153 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11167", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「どうしたも何もここの生徒ですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 764,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、そ、そうだよね……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 767,
+	},
+	block_00155 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11168", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「それより、どうされたのですか？　何か憤っていた様ですけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 772,
+	},
+	block_00156 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、何でも無い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 775,
+	},
+	block_00157 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0013", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11169", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「ふーん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 780,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あまり心配させたくないと思って、放哉の事は伏せたが、勘の良い心鈴くんは俺が何かを隠している事をすぐに察した様だった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 783,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんを不機嫌にさせるのは不本意だが……、だがいらぬ心配はかけたくない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 786,
+	},
+	block_00160 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"特に六相図に、心鈴くんのお父さんが関わっているとなればなおさらだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 789,
+	},
+	block_00161 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11170", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 794,
+	},
+	block_00162 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0800", face="a0002", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11171", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「何でも無いのでしたら、これをどうぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 805,
+	},
+	block_00163 = {
+		{"bg", zoom=50, time=150, file="zbg046a", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540},
+		{"fg", ch="心鈴", size="z2", mode=3, resize=1, path=":fg/mis/z2/", file="mis_z2a0800", face="a0002", head="mis_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、なんかバッグを渡された。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 814,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なに、これ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 817,
+	},
+	block_00165 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0001", head="mis_z2b", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11172", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「昼食はさすがにまだですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 822,
+	},
+	block_00166 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 825,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はバッグをよく見てみる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 828,
+	},
+	block_00168 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ランチバッグってヤツじゃないか？　これ？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 831,
+	},
+	block_00169 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「まさか！？　これってお弁当？？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 836,
+	},
+	block_00170 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0001", head="mis_z2b", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0002", head="mis_z2b", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11173", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「キマイラの静流さんほどとはいきませんが、私が出来る範囲で",
+					{"rt2"},
+					"がんばってみました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 843,
+	},
+	block_00171 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お弁当一緒に食べるフラグ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 846,
+	},
+	block_00172 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0010", head="mis_z2b", lv=5, id=9},
+		{"fgact", ch="心鈴", act="いいえ", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11174", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「いいえ、先生は午後から弓張学園の授業があるハズです。ここで昼食を食べている時間はないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 852,
+	},
+	block_00173 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「う゛っ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 855,
+	},
+	block_00174 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0008h", head="mis_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11175", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「それに……、少しハードル高すぎです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 861,
+	},
+	block_00175 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ハードルが高すぎ？？　なにが？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 864,
+	},
+	block_00176 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0005h", head="mis_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11176", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「いいではないですか、さぁ、これを持ってとっとと弓張学園に帰ってください！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 869,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんか、すごく冷たい！　なんで！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 872,
+	},
+	block_00178 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0004h", head="mis_z2b", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2c0800", face="c0001", head="mis_z2c", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11177", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「うるさいですね。私も次の授業がありますので、これで！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 878,
+	},
+	block_00179 = {
+		{"bg", time=500, file="bg046a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、心鈴くんは踵を返した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 883,
+	},
+	block_00180 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"excall", file="03_mis05_2"},
+		{"text"},
+		linkback = "block_00179",
+		line = 888,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

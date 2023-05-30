@@ -1,0 +1,4322 @@
+astver = 2.0
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅰ章"},
+        {"msg", no = 1},
+        {"bg", file = "アイキャッチ01", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"text"},
+        text = {
+            ja = {
+                {"新的一周开始了，这是星期一。"}
+            }
+        },
+        linknext = "block_00001",
+        line = 26
+    },
+    block_00001 = {
+        {"se", id = 1, file = "se0003"},
+        {"text"},
+        text = {
+            ja = {
+                {"像往常一样，一打开教室的门，教室里就显得异常喧闹。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002",
+        line = 35
+    },
+    block_00002 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "这是怎么了？虽然我这么想，但我并没有特别在意，只是朝着自己",
+                    {"rt2"},
+                    "的座位走去。"
+                }
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003",
+        line = 40
+    },
+    block_00003 = {
+        {"bg", file = "bg024a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"bg", alpha = 255, lv = 5, id = 5, rule = "cinema", file = "cinema01", time = 400, path = ":sys/", vague = 40, sync = 0},
+        {"extrans", time = 500},
+        {"bgm", file = "bgm025"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒A", "女子生徒"},
+                    "「听说校长被炒鱿鱼了，现在的副校长将接任校长呢」"
+                }
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004",
+        line = 52
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00266", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「什么？」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005",
+        line = 55
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {"校长被炒了？"}
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006",
+        line = 58
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我以为校长也是中村家的一员呢？"}
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007",
+        line = 61
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒B", "女子生徒"},
+                    "「所以，这不是那种问题，看来是管理层有所变动。",
+                    {"rt2"},
+                    "好像是理事长被赶走了，新的管理团队接手了」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008",
+        line = 67
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒C", "女子生徒"},
+                    "「到目前为止的理事长是中村先生对吧？那个大地主」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009",
+        line = 72
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒A", "女子生徒"},
+                    "「但听说，事实上并不是这样。",
+                    {"rt2"},
+                    "他好像有很多债务，而且还发生了一些丑闻」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010",
+        line = 78
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒C", "女子生徒"},
+                    "「丑闻是什么？」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011",
+        line = 83
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒B", "女子生徒"},
+                    "「听说他利用黑帮做了各种事，警察已经介入了」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012",
+        line = 88
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"男子生徒A", "男子生徒"},
+                    "「虽然不清楚他是否会被起诉，但是这样的行为不适合继续管理学",
+                    {"rt2"},
+                    "校……」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013",
+        line = 93
+    },
+    block_00013 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒C", "女子生徒"},
+                    "「虽然这是个大事，但不知道会怎样处理？」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014",
+        line = 98
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"男子生徒B", "男子生徒"},
+                    "「听说会向家长们做进一步解释，不过不知道会不会向我们这些学",
+                    {"rt2"},
+                    "生解释？」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015",
+        line = 103
+    },
+    block_00015 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒B", "女子生徒"},
+                    "「说起中村，理事长的妹妹就在我们班级里对吧」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016",
+        line = 108
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒A", "女子生徒"},
+                    "「啊，你是说中村丽华吧」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017",
+        line = 113
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒B", "女子生徒"},
+                    "「那个人会怎么样呢？我们班级不同，所以接触不多，",
+                    {"rt2"},
+                    "但在这个学校里她总是受到特殊待遇的」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018",
+        line = 119
+    },
+    block_00018 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒C", "女子生徒"},
+                    "「嗯，总是有一些看上去很可怕的人围着她。但是，如果理事长被",
+                    {"rt2"},
+                    "解雇了的话，",
+                    {"rt2"},
+                    "她应该无法像以前那样表现出那种态度了吧？」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019",
+        line = 125
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒A", "女子生徒"},
+                    "「我听说有很多人对她持有怨恨。",
+                    {"rt2"},
+                    "就连到现在为止，都没有人敢说出来」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020",
+        line = 131
+    },
+    block_00020 = {
+        {"bg", rule = "083r", vague = 40, file = "bg035a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"text"},
+        text = {
+            ja = {
+                {"我立即去了丽华的班级。"}
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021",
+        line = 137
+    },
+    block_00021 = {
+        {"se", id = 1, file = "se0003"},
+        {"bg", file = "bg024a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", rule = "083r", vague = 40},
+        {"text"},
+        text = {
+            ja = {
+                {"一打开教室的门，班级的同学们就盯着我看。"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022",
+        line = 154
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这个班级特别多是丽华的朋友，也有很多中村家的人。"}
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023",
+        line = 157
+    },
+    block_00023 = {
+        {"text"},
+        text = {
+            ja = {
+                {"因此，我在这里也被当作是中村家的一员来看待。"}
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024",
+        line = 160
+    },
+    block_00024 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我走向丽华的座位。"}
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025",
+        line = 165
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {"看到我，教室里传来了窃窃私语。"}
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026",
+        line = 168
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            ja = {
+                {"丽华的座位上空无一人。"}
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027",
+        line = 179
+    },
+    block_00027 = {
+        {"fg", ch = "静流", size = "z1", mode = 3, resize = 1, path = ":fg/shi/z1/", file = "shi_z1b0000", face = "b0009", head = "shi_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00267", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「丽华……」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028",
+        line = 184
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「如果你在找中村的话，她不在这里」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029",
+        line = 189
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一个女生走过来和我说话。"}
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030",
+        line = 193
+    },
+    block_00030 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「你是鸟谷静流吧？中村家的亲戚」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031",
+        line = 198
+    },
+    block_00031 = {
+        {"fg", ch = "静流", size = "z1", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0000", face = "b0008", head = "shi_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00268", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「是的」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032",
+        line = 203
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「啊，不，或许现在已经不是了。",
+                    {"rt2"},
+                    "听说副校长和理事长已经离婚了」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033",
+        line = 209
+    },
+    block_00033 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0007", head = "shi_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00269", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「什么？阿姨离婚了！？」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034",
+        line = 214
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「你虽然是亲戚，但还没听说过吗。",
+                    {"rt2"},
+                    "关于这次的事，听说是副校长为了把中村家从这个学校中驱逐出去，",
+                    {"rt2"},
+                    "发动了一场政变」"
+                }
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035",
+        line = 221
+    },
+    block_00035 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0007", head = "shi_z1a", lv = 4, id = 9},
+        {"fgact", ch = "静流", act = "びっくり", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00270", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「政变！？」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036",
+        line = 227
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「中村家被判断为无法偿还债务，学校的所有权将由债权人持有，",
+                    {"rt2"},
+                    "但是，据说是副校长首先揭发了引发这一切的丑闻」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037",
+        line = 232
+    },
+    block_00037 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0008", head = "shi_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00271", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「真的吗？」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038",
+        line = 237
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「你真的不知道吗？",
+                    {"rt2"},
+                    "我还以为，以前中村是这个学校的公主，",
+                    {"rt2"},
+                    "从今天开始，你将成为这个学校的公主」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039",
+        line = 244
+    },
+    block_00039 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0005", head = "shi_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00272", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我成为公主？太荒唐了，怎么可能」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040",
+        line = 249
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「是啊。",
+                    {"rt2"},
+                    "我也看过你很多次，但你的感觉和她并不一样」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041",
+        line = 255
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「我猜你是她的阿姨吧？",
+                    {"rt2"},
+                    "但是，那个副校长，不，应该说是鸟谷校长，怎么样呢？」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042",
+        line = 261
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「她陷害自己的丈夫，坐上了权力的宝座，对于这样的教育机构的",
+                    {"rt2"},
+                    "领导者，肯定是合格的人格者吧」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043",
+        line = 266
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「因为你也是那个家族的一员，所以在我们看来，你也是一个可怕",
+                    {"rt2"},
+                    "的存在」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044",
+        line = 271
+    },
+    block_00044 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0008", head = "shi_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00273", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我和阿姨没有关系……」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045",
+        line = 276
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「也许是这样，但大家又会怎么想呢？」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046",
+        line = 281
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「无论如何，中村麗華已经是过去时了。",
+                    {"rt2"},
+                    "如果她过去的生活很普通的话，可能还可以，但她一直都在装公主，",
+                    {"rt2"},
+                    "谁都不会像以前那样待她了」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047",
+        line = 288
+    },
+    block_00047 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0001", head = "shi_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00274", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「麗華是！？」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048",
+        line = 293
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"女子生徒D", "女子生徒"},
+                    "「嗯，恐怕她已经不会再来学校了吧？",
+                    {"rt2"},
+                    "她被很多人憎恨，也许她就这样退出学校了」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049",
+        line = 299
+    },
+    block_00049 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0008", head = "shi_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00275", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050",
+        line = 304
+    },
+    block_00050 = {
+        {"bg", file = "white", path = ":bg/"},
+        {"bg", file = "ev_com_03_04", path = ":ev/ev_com_03/", set = "ev_com_03", sync = 0},
+        {"bg", file = "reco", id = 9, lv = 9, path = ":sys/", sync = 0},
+        {"extrans"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "从那天我和阿姨谈话的日子开始，",
+                    {"rt2"},
+                    "我就有种预感，这样的日子会到来。"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051",
+        line = 316
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "如果不是这样，那个人就不会让蓝这样的异类在这个学校入学。",
+                    {"rt2"},
+                    "她肯定无法在这里待上三年。"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052",
+        line = 320
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那个人让蓝入学，是因为她觉得蓝可以在这个学校待下去。"}
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053",
+        line = 323
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "那时，",
+                    {"rt2"},
+                    "她说比蓝更让她担心的是我，是在说我和麗華的关系。"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054",
+        line = 327
+    },
+    block_00054 = {
+        {"bg", file = "white", path = ":bg/"},
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg024a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "静流", size = "z1", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0000", face = "b0008", head = "shi_z1b", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00276", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「麗華……」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055",
+        line = 339
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我喃喃地说出她的名字。"}
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056",
+        line = 342
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            ja = {
+                {"当然，没有回应。"}
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057",
+        line = 345
+    },
+    block_00057 = {
+        {"bg", speed = 180000, file = "zev_etc_01_02", path = ":ev/ev_etc_01/", x2 = 0, y2 = -540, x = 0, y = 540, set = "ev_etc_01", ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"text"},
+        text = {
+            ja = {
+                {"那一天，课程正常进行。"}
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058",
+        line = 353
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "管理者更换，对学生来说无关紧要。",
+                    {"rt2"},
+                    "所以老师们可能完全没有提到这个事实。"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059",
+        line = 357
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "不，可能不是这样。",
+                    {"rt2"},
+                    "可能，老师们还不想触及这个问题吧。"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060",
+        line = 361
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "在麗華成为弓張学园一年级生的时候，许多反抗中村家的教师失去",
+                    {"rt2"},
+                    "了工作。"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061",
+        line = 364
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {"对他们来说，中村家是绝对的，是无法反抗的存在。"}
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062",
+        line = 367
+    },
+    block_00062 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "然而，偏偏是理事长的妻子，中村紗希教头，通过政变，驱逐了中",
+                    {"rt2"},
+                    "村家，",
+                    {"rt2"},
+                    "并且坐上了弓張学园的校长位置。"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063",
+        line = 372
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "驱逐了那么强大的中村家，甚至站在了学院的顶端，",
+                    {"rt2"},
+                    "这不是普通人能做到的。"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064",
+        line = 376
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这一定涉及到了教师们无法想象的政治力量。"}
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065",
+        line = 379
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {"中村紗希拥有这样强大的力量。"}
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066",
+        line = 382
+    },
+    block_00066 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这对教师们来说可能是非常可怕的。"}
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067",
+        line = 385
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {"此外，据说她已经离婚了，姓氏已经变成了鸟谷。"}
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068",
+        line = 388
+    },
+    block_00068 = {
+        {"text"},
+        text = {
+            ja = {
+                {"现在还不知道鸟谷校长在想什么。"}
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069",
+        line = 391
+    },
+    block_00069 = {
+        {"bg", file = "ev_etc_01_02", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"text"},
+        text = {
+            ja = {
+                {"而且，不能确定中村家未来是否会反击。"}
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070",
+        line = 396
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "可能会像揺摇的摇篮一样，中村家的统治再次开始，",
+                    {"rt2"},
+                    "或者，鳥谷校长为了对抗这一点，获得更多的权力，",
+                    {"rt2"},
+                    "比中村章一更为无情地控制这个学园。"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071",
+        line = 401
+    },
+    block_00071 = {
+        {"bgm", stop = 1, time = 20000},
+        {"text"},
+        text = {
+            ja = {
+                {"据说教师的年薪比一般人想象的要高得多。"}
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072",
+        line = 406
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {"特别是名门弓張的教师，听说年薪是一大笔钱。"}
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073",
+        line = 409
+    },
+    block_00073 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这样的东西，谁也不会轻易放弃。"}
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074",
+        line = 412
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {"所以，教师们不愿触及这个话题。"}
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075",
+        line = 415
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            ja = {
+                {"只有这样的人，才能留在这所学校。"}
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076",
+        line = 418
+    },
+    block_00076 = {
+        {"bgm", stop = 1},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"bg", rule = 139, vague = 40, file = "bg023a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23},
+        {"text"},
+        text = {
+            ja = {
+                {"午休时间。"}
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077",
+        line = 427
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我正朝艺术室走去。"}
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078",
+        line = 433
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            ja = {
+                {"因为我想去看看从昨天就开始烧的气体炉的情况。"}
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079",
+        line = 436
+    },
+    block_00079 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"bg", file = "bg031e", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"extrans", rule = "083r", vague = 40},
+        {"bgm", file = "bgm026"},
+        {"text"},
+        text = {
+            ja = {
+                {"但是，艺术室的情况并不像我所想象的那样。"}
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080",
+        line = 447
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {"地面上散布着破碎的片段。"}
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081",
+        line = 454
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            ja = {
+                {"瓦斯炉的火已经熄灭，里面的陶器甚至都被破坏了。"}
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082",
+        line = 457
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {"而且，所有这些都只是我的作品。"}
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083",
+        line = 460
+    },
+    block_00083 = {
+        {"bg", file = "ev_com_02_03", path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00277", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「麗華……」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084",
+        line = 470
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {"麗華坐在桌子上。"}
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085",
+        line = 473
+    },
+    block_00085 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_04", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00091", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「这个也是吗……」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086",
+        line = 478
+    },
+    block_00086 = {
+        {"se", id = 1, file = "se0009"},
+        {"bg", sync = 0, face = 1, file = "ev_com_02_05", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {"麗華拿起一个盘子，然后将其砸向墙壁。"}
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087",
+        line = 490
+    },
+    block_00087 = {
+        {"text"},
+        text = {
+            ja = {
+                {"盘子破裂的声音回荡在空气中，粉碎成无数碎片。"}
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088",
+        line = 493
+    },
+    block_00088 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_03", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00092", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「真是假货一堆……静流」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089",
+        line = 498
+    },
+    block_00089 = {
+        {"text"},
+        text = {
+            ja = {
+                {"麗華并没有看我，而是从摆在那里的陶器中，再次拿起我的作品。"}
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090",
+        line = 501
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00278", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「你这是何意？」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091",
+        line = 504
+    },
+    block_00091 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_06", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00093", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「你有资格对我说这个吗？静流？」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092",
+        line = 512
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {"麗華的眼睛瞪着我。"}
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093",
+        line = 515
+    },
+    block_00093 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我想，她真的是那个会发出这么可怕眼神的女孩吗？"}
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094",
+        line = 518
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00094", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「你能在这所学校做陶瓷，全都是我们的恩惠」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095",
+        line = 521
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00095", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「中村家对你很好，所以你才能创作这些作品」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096",
+        line = 524
+    },
+    block_00096 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00096", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「但你终究只是鸟谷，一个粗野、不懂感恩的家族的人」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097",
+        line = 527
+    },
+    block_00097 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_04", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00097", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「这些作品，全都是假的，仿制的」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098",
+        line = 532
+    },
+    block_00098 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00098", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「被污秽的血统污染的人是无法创作出真实的作品的」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099",
+        line = 535
+    },
+    block_00099 = {
+        {"se", id = 1, file = "se0010"},
+        {"bg", sync = 0, face = 1, file = "ev_com_02_05", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {"她将手中的我的作品砸向墙壁。"}
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100",
+        line = 546
+    },
+    block_00100 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_03", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00099", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「我哥哥真是个傻瓜，竟然要和那样的人结婚」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101",
+        line = 551
+    },
+    block_00101 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_06", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00100", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「冷血的女人，权力欲望的化身，我一直都讨厌她」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102",
+        line = 558
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00101", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「鸟谷沙希」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103",
+        line = 561
+    },
+    block_00103 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_07", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00102", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「你也有和她一样的血液流淌在体内吧！鸟谷静流！」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104",
+        line = 566
+    },
+    block_00104 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我无言以对。"}
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105",
+        line = 569
+    },
+    block_00105 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00279", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我应该说……对不起吗？」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106",
+        line = 572
+    },
+    block_00106 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00280", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「还是我应该说，谢谢你呢？」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107",
+        line = 575
+    },
+    block_00107 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00281", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「因为麗華一直对我很好」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108",
+        line = 578
+    },
+    block_00108 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_07", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00103", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「你客气了。",
+                    {"rt2"},
+                    "不过，我会破坏所有由我们的力量创造出的你的作品。",
+                    {"rt2"},
+                    "一并消除那些污秽的过去！」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109",
+        line = 587
+    },
+    block_00109 = {
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00104", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「我会破坏这里所有的一切！」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110",
+        line = 596
+    },
+    block_00110 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00282", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「麗華！我尽管如此仍然——」"
+                }
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111",
+        line = 599
+    },
+    block_00111 = {
+        {"text"},
+        text = {
+            ja = {
+                {"麗華用强硬的口气打断了我想要说的话。"}
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112",
+        line = 602
+    },
+    block_00112 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00105", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「我恨你！我恨得想杀了你」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113",
+        line = 607
+    },
+    block_00113 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_06", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00106", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「每一个都是用恩将仇报的方式对待我们……」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114",
+        line = 612
+    },
+    block_00114 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00283", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「麗華，从小学开始我们就一直在一起……」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115",
+        line = 615
+    },
+    block_00115 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_07", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00107", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「就是这样，你花了这么多时间，让我们放松警惕！",
+                    {"rt2"},
+                    "为了达到你的目的，你一直在耐心地等待！！」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116",
+        line = 622
+    },
+    block_00116 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00284", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「不，不是这样的」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117",
+        line = 625
+    },
+    block_00117 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00108", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「不是？哪里不一样？",
+                    {"rt2"},
+                    "你知道你们鸟谷家对我们做了什么吗！？」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118",
+        line = 629
+    },
+    block_00118 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00285", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我觉得我对麗華的哥哥做得很对不起……」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119",
+        line = 632
+    },
+    block_00119 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_06", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00109", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「就是这样，从高处俯视我们，这样的道歉一定很让你自得其乐吧！",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120",
+        line = 637
+    },
+    block_00120 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00110", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「你从我们手中夺走了这个学园，你还真有脸说这些话。",
+                    {"rt2"},
+                    "真是无耻……」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121",
+        line = 641
+    },
+    block_00121 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00286", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我会去找我姑姑商量，",
+                    {"rt2"},
+                    "尽量让麗華能像以前那样在这个学园生活」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122",
+        line = 645
+    },
+    block_00122 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_02_07", time = 400, path = ":ev/ev_com_02/", set = "ev_com_02"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00111", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「为什么我必须要接受背叛者的帮助！！」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123",
+        line = 650
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00112", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「鳥谷静流。你到底要戏弄我到何时才甘心呢！？」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124",
+        line = 653
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00287", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「麗華……」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125",
+        line = 656
+    },
+    block_00125 = {
+        {"msgoff"},
+        {"bg", file = "bg031e", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "麗華", size = "z1", mode = 3, resize = 1, path = ":fg/rei/z1/", file = "rei_z1a0000", face = "a0005", head = "rei_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans"},
+        {"se", id = 1, file = "se0009"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "手中的盘子被扔出，",
+                    {"rt2"},
+                    "麗華从桌子上下来。"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126",
+        line = 675
+    },
+    block_00126 = {
+        {"text"},
+        text = {
+            ja = {
+                {"碎片崩裂的声音在干燥的空气中回响。"}
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127",
+        line = 681
+    },
+    block_00127 = {
+        {"fg", ch = "麗華", mode = 3, path = ":fg/rei/z1/", file = "rei_z1a0000", face = "a0004", head = "rei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00113", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「你就在这个学园里当个公主好了」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128",
+        line = 686
+    },
+    block_00128 = {
+        {"fg", ch = "麗華", mode = 3, path = ":fg/rei/z1/", file = "rei_z1a0000", face = "a0005", head = "rei_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00114", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「找那个叫夏目藍的",
+                    {"ruby", text = "小"},
+                    "丫头",
+                    {"/ruby"},
+                    "当你的跟班也不错吧？」"
+                }
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129",
+        line = 691
+    },
+    block_00129 = {
+        {"fg", ch = "麗華", mode = 3, path = ":fg/rei/z1/", file = "rei_z1a0000", face = "a0005", head = "rei_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "麗華", mode = 3, path = ":fg/rei/z1/", file = "rei_z1a0000", face = "a0006", head = "rei_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_rei_00115", ch = "rei"}
+            },
+            ja = {
+                {
+                    name = {"麗華"},
+                    "「你们就是一对骗子！！」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130",
+        line = 697
+    },
+    block_00130 = {
+        {"fg", ch = "麗華", mx = 40, mode = -1, lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"麗華留下这些话离开了美术室。"}
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131",
+        line = 702
+    },
+    block_00131 = {
+        {"se", vol = 40, id = 1, file = "se0016"},
+        {"text"},
+        text = {
+            ja = {
+                {"远处传来了下课铃声。"}
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132",
+        line = 707
+    },
+    block_00132 = {
+        {"bgm", stop = 1, time = 2000},
+        {"se", stop = 1, id = -1, time = 2000},
+        {"vostop", stop = 1, time = 2000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 2000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", time = 2000, file = "ev_etc_01_02", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"text"},
+        text = {
+            ja = {
+                {"没过几天，我姑姑他们就搬进了鳥谷家的本家。"}
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133",
+        line = 719
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "去年祖父去世，祖母一个人住在大房子里，",
+                    {"rt2"},
+                    "所以祖母对孙子们的到来还算是欢迎——"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134",
+        line = 723
+    },
+    block_00134 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "如果事情就这么结束就好了，但实际上，鳥谷家在中村家的帮助下",
+                    {"rt2"},
+                    "才能维持事业，祖母对姑姑的行为感到困扰。"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135",
+        line = 726
+    },
+    block_00135 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "因此，",
+                    {"rt2"},
+                    "祖母对于如何面对自己的孙子们也显得不知所措。"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136",
+        line = 730
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我在搬家的第一天去了本家帮忙。"}
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137",
+        line = 733
+    },
+    block_00137 = {
+        {"msgoff"},
+        {"bg", file = "bg051a", path = ":bg/", ax = 960, ay = 563, bx = 0, by = -23, sync = 0},
+        {"fg", ch = "紗希", size = "z1", mode = 3, resize = 1, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", x = -345, lv = 4, id = 5, sync = 0},
+        {"fg", ch = "静流", size = "z1", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0002", head = "shi_z1a", x = 345, lv = 4, id = 6, sync = 0},
+        {"extrans"},
+        {"bgm", file = "bgm149"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00035", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「静流，真不好意思。让你来帮这个忙」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138",
+        line = 751
+    },
+    block_00138 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0003", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00288", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「没关系的，我反正有空」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139",
+        line = 756
+    },
+    block_00139 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0013", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00036", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「你在说什么。明年你就三年级了。应该开始考虑升学的事情」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140",
+        line = 761
+    },
+    block_00140 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0000", face = "b0013", head = "shi_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00289", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「姑姑，你知道我的成绩吗？」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141",
+        line = 766
+    },
+    block_00141 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00037", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「大致上知道」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142",
+        line = 771
+    },
+    block_00142 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0000", face = "b0009", head = "shi_z1b", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "静流", act = "いいえ", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00290", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「以那成绩，我是无法升学的」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143",
+        line = 777
+    },
+    block_00143 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0011", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00038", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「今年才刚开始。你的头脑绝对还来得及」"
+                }
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144",
+        line = 782
+    },
+    block_00144 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0009", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0002", head = "shi_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00291", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「你过度高估我了。",
+                    {"rt2"},
+                    "我脑袋里是空的。我都觉得里面可能塞满了黏土」"
+                }
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145",
+        line = 789
+    },
+    block_00145 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            ja = {
+                {"姑姑苦笑。"}
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146",
+        line = 794
+    },
+    block_00146 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00039", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那就去考我母校怎么样」"
+                }
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147",
+        line = 799
+    },
+    block_00147 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0009", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0001", head = "shi_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00292", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「艺术大学的工艺学科的第一次考试不是素描吗。",
+                    {"rt2"},
+                    "我从来没学过画美术学校需要的素描」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148",
+        line = 806
+    },
+    block_00148 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00040", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「是吗。那我介绍你去一个很有名的绘画教室吧」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149",
+        line = 811
+    },
+    block_00149 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0007", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00293", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「绘画教室？　不是应该去预备学校吗？」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150",
+        line = 816
+    },
+    block_00150 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0002", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "紗希", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00041", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「一般情况下是这样。但我想你去我推荐的地方会更好」"
+                }
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151",
+        line = 822
+    },
+    block_00151 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0001", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0003", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0002", head = "sak_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00042", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那是一个名门中的名门。除非有推荐信，否则无法进入。",
+                    {"rt2"},
+                    "如果是静流你的才华的话，也许会被允许成为陶艺家入门」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152",
+        line = 831
+    },
+    block_00152 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0003", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0009", head = "shi_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00294", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我觉得门槛太高了，还是算了。",
+                    {"rt2"},
+                    "名门中的名门听起来太吓人了」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153",
+        line = 838
+    },
+    block_00153 = {
+        {"text"},
+        text = {
+            ja = {
+                {"基本上是被允许入门。这是哪个道场啊。"}
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154",
+        line = 841
+    },
+    block_00154 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0010", head = "sak_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00043", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「真遗憾。如果静流你能去那里，我也会觉得很方便」"
+                }
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155",
+        line = 846
+    },
+    block_00155 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0001", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "静流", act = "びっくり", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00295", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那是什么意思？　你是说？」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156",
+        line = 852
+    },
+    block_00156 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1b0000", face = "b0009", head = "sak_z1b", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00044", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「现在有个人在那里。我也有点担心」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157",
+        line = 858
+    },
+    block_00157 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0010", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"fgact", ch = "静流", act = "うなづく", lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00296", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「原来如此，你想让我去那里侦查」"
+                }
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158",
+        line = 864
+    },
+    block_00158 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0002", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00045", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「我也担心静流你的升学问题」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159",
+        line = 869
+    },
+    block_00159 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0003", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00297", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那就别担心了，我现在甚至连毕业都不一定能做到」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160",
+        line = 874
+    },
+    block_00160 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0013", head = "sak_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00046", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那就请你更认真地上课，",
+                    {"rt2"},
+                    "我常常被老师们找麻烦」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161",
+        line = 881
+    },
+    block_00161 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0001", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00298", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「哦，原来还有敢对姑姑你抱怨的老师」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162",
+        line = 886
+    },
+    block_00162 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0011", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00047", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「那是当然的」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163",
+        line = 891
+    },
+    block_00163 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0001", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "原来是这样。",
+                    {"rt2"},
+                    "我原以为所有人都因为怕姑姑而不敢表达意见。"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164",
+        line = 897
+    },
+    block_00164 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0000", face = "b0002", head = "shi_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00299", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「这个纸箱我可以打开吗？」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165",
+        line = 902
+    },
+    block_00165 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "紗希", act = "いいえ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00048", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「不，那已经没关系了。",
+                    {"rt2"},
+                    "这里已经整理好了，你能不能去帮帮真琴的房间？」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166",
+        line = 909
+    },
+    block_00166 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0000", face = "b0001", head = "shi_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00300", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我听说真琴的房间基本上已经由专业人士完成了？艺术品不能由",
+                    {"rt2"},
+                    "搬家公司处理，",
+                    {"rt2"},
+                    "我以为是因为这个被叫来的？」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167",
+        line = 915
+    },
+    block_00167 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0010", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "紗希", act = "おじぎ", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00049", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，确实也有那个原因」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168",
+        line = 929
+    },
+    block_00168 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0008", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00050", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「因为这次的事，真琴有点紧张。",
+                    {"rt2"},
+                    "我希望你能成为她的谈话对象」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169",
+        line = 936
+    },
+    block_00169 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0000", face = "b0008", head = "shi_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00301", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那个女孩也会紧张吗。我还以为她是个很坚强的女孩」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170",
+        line = 941
+    },
+    block_00170 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0008", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00051", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「出现了一些稍微麻烦的问题」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171",
+        line = 946
+    },
+    block_00171 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1b0000", face = "b0001", head = "shi_z1b", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00302", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「麻烦的问题？」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172",
+        line = 950
+    },
+    block_00172 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0010", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00052", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「嗯，所以我希望你能稍微安慰一下真琴，她对你有些依赖，对吧？",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173",
+        line = 955
+    },
+    block_00173 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0008", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00303", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「依赖我？我只是几天前见过她一次」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174",
+        line = 960
+    },
+    block_00174 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0003", head = "sak_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00053", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「是的。那是在我们刚搬到这个房子之后。",
+                    {"rt2"},
+                    "但真琴马上就和你打成了一片，不是吗？」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175",
+        line = 967
+    },
+    block_00175 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0008", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00054", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「在我和女儿之间，最近几天发生了很多事。",
+                    {"rt2"},
+                    "真琴现在连和我说话都不愿意」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176",
+        line = 973
+    },
+    block_00176 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0007", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0008", head = "shi_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00304", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊！？她因为离婚的事情生那么大的气吗！？她真的那么喜欢她",
+                    {"rt2"},
+                    "父亲吗？",
+                    {"rt2"},
+                    "我感觉她对他几乎是像对待陌生人一样」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177",
+        line = 981
+    },
+    block_00177 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"fgact", ch = "紗希", act = "うなづく", lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00055", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「她讨厌中村。她从记事起就讨厌那个家」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178",
+        line = 987
+    },
+    block_00178 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0001", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            ja = {
+                {"我很困惑。"}
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179",
+        line = 992
+    },
+    block_00179 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那么，真琴为什么会那么生姑姑的气呢。"}
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180",
+        line = 995
+    },
+    block_00180 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0000", face = "a0001", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0013", head = "shi_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00305", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「嗯，我不是很清楚……。我不知道」"
+                }
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181",
+        line = 1001
+    },
+    block_00181 = {
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0009", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00306", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我非常不擅长安慰别人，可能会让人更沮丧」"
+                }
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182",
+        line = 1006
+    },
+    block_00182 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0002", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0003", head = "sak_z1a", x = -345, lv = 4, id = 5}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00056", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「没有那种事。静流你很温柔，而且擅长说话和倾听。",
+                    {"rt2"},
+                    "应该没有比你更适合的人了」"
+                }
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183",
+        line = 1013
+    },
+    block_00183 = {
+        {"bgm", stop = 1, time = 15000},
+        {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0011", head = "shi_z1a", x = 345, lv = 4, id = 6},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "静流", mode = 3, path = ":fg/shi/z1/", file = "shi_z1a0010", face = "a0002", head = "shi_z1a", x = 345, lv = 4, id = 6}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00307", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「这种奉承方式感觉有点微妙啊。",
+                    {"rt2"},
+                    "嗯，没关系。我也想和真琴多聊聊。",
+                    {"rt2"},
+                    "我稍微去看看她的情况」"
+                }
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184",
+        line = 1023
+    },
+    block_00184 = {
+        {"fg", ch = "紗希", mode = 3, path = ":fg/sak/z1/", file = "sak_z1a0000", face = "a0001", head = "sak_z1a", x = -345, lv = 4, id = 5},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_sak_00057", ch = "sak"}
+            },
+            ja = {
+                {
+                    name = {"紗希"},
+                    "「你这么做真是帮了大忙」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185",
+        line = 1028
+    },
+    block_00185 = {
+        {"bgm", stop = 1},
+        {"bg", file = "reco", id = 9, lv = 9, path = ":sys/"},
+        {"text"},
+        text = {
+            ja = {
+                {"她有点紧张。"}
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186",
+        line = 1049
+    },
+    block_00186 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "我就是这样理解的。",
+                    {"rt2"},
+                    "所以在我看到真琴之前，我并没有想到情况已经恶化到这种程度。"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187",
+        line = 1053
+    },
+    block_00187 = {
+        {"text"},
+        text = {
+            ja = {
+                {"坦白说，这件事对于姑姑来说，她可能已经无法处理了。"}
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188",
+        line = 1056
+    },
+    block_00188 = {
+        {"text"},
+        text = {
+            ja = {
+                {"实际上，这场纷争后来一直持续下去。"}
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189",
+        line = 1059
+    },
+    block_00189 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = "083r", wait = 250, file = "black", path = ":bg/", vague = 40},
+        {"bg", speed = 180000, rule = "083r", vague = 40, file = "zbg060a", path = ":bg/", x2 = 960, y2 = 500, x = -960, y = 500, ax = 1920, ay = 1440, bx = -960, by = -900},
+        {"bgm", file = "bgm153"},
+        {"text"},
+        text = {
+            ja = {
+                {"当我进入房间时，她在房间的一角哭泣。"}
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190",
+        line = 1070
+    },
+    block_00190 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00308", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191",
+        line = 1075
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {"看到她的样子，我慢慢走近她，然后说道。"}
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192",
+        line = 1078
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00309", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「你的肚子痛吗？」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193",
+        line = 1081
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我从后面轻轻地抚摸了摸真琴的头。"}
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194",
+        line = 1084
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            ja = {
+                {"真琴大大地摇了摇头。"}
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195",
+        line = 1087
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00310", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「你还有其他地方疼吗？」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196",
+        line = 1090
+    },
+    block_00196 = {
+        {"user", mode = "conf", ch = "真琴"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00001", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我哪儿也不疼……」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197",
+        line = 1095
+    },
+    block_00197 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00311", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「那你为什么在哭？」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198",
+        line = 1098
+    },
+    block_00198 = {
+        {"bg", file = "ev_com_09_01", path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00002", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「圭！圭被留下了！」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199",
+        line = 1106
+    },
+    block_00199 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00312", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊？」"
+                }
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200",
+        line = 1109
+    },
+    block_00200 = {
+        {"text"},
+        text = {
+            ja = {
+                {"圭。"}
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201",
+        line = 1112
+    },
+    block_00201 = {
+        {"text"},
+        text = {
+            ja = {
+                {"和真琴同龄的孩子，是她的弟弟。"}
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202",
+        line = 1115
+    },
+    block_00202 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他在中村的家里，作为中村的孩子被抚养长大。"}
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203",
+        line = 1118
+    },
+    block_00203 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00003", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我没听说这件事！我以为圭也会来这个家，所以我听话了！妈妈",
+                    {"rt2"},
+                    "骗了我！」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204",
+        line = 1123
+    },
+    block_00204 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00004", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「妈妈骗了我，才把我带到这里！静流，为什么妈妈会做出这样的",
+                    {"rt2"},
+                    "事呢！？」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205",
+        line = 1127
+    },
+    block_00205 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_02", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            ja = {
+                {"我觉得这确实是个麻烦事。"}
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206",
+        line = 1135
+    },
+    block_00206 = {
+        {"text"},
+        text = {
+            ja = {
+                {"确实，圭是中村的孩子，也是真琴的弟弟。"}
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207",
+        line = 1138
+    },
+    block_00207 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，圭不是姑姑的孩子。"}
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208",
+        line = 1141
+    },
+    block_00208 = {
+        {"text"},
+        text = {
+            ja = {
+                {"那个孩子，是父亲和情妇之间的孩子。"}
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209",
+        line = 1144
+    },
+    block_00209 = {
+        {"text"},
+        text = {
+            ja = {
+                {"所以，他与鳥谷家没有血缘关系。"}
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210",
+        line = 1147
+    },
+    block_00210 = {
+        {"text"},
+        text = {
+            ja = {
+                {"真琴坚决地拒绝离开，除非圭和她一起，所以姑姑可能对她撒了谎。"}
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211",
+        line = 1151
+    },
+    block_00211 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这也没办法。"}
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212",
+        line = 1154
+    },
+    block_00212 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "毕竟是发动了这样的政变。",
+                    {"rt2"},
+                    "离婚事宜也不可能进行得那么顺利。"
+                }
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213",
+        line = 1158
+    },
+    block_00213 = {
+        {"text"},
+        text = {
+            ja = {
+                {"或许，姑姑就像从那个家逃出来一样，搬到了这个鳥谷的老宅。"}
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214",
+        line = 1161
+    },
+    block_00214 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即使真琴在这里撒泼，也不能满足她的愿望。"}
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215",
+        line = 1164
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00005", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「那个家很糟糕。他们都欺负圭，说他是妾的孩子！本来就不应该",
+                    {"rt2"},
+                    "在这个家里生活！」"
+                }
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216",
+        line = 1170
+    },
+    block_00216 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00006", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「所以，他一直被关在别的地方。」"
+                }
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217",
+        line = 1173
+    },
+    block_00217 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_01", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00313", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「被关在别的地方？」"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218",
+        line = 1178
+    },
+    block_00218 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我记得听过这样的故事。"}
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219",
+        line = 1181
+    },
+    block_00219 = {
+        {"text"},
+        text = {
+            ja = {
+                {"中村的府邸非常大，据说里面有几栋别墅。"}
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220",
+        line = 1184
+    },
+    block_00220 = {
+        {"text"},
+        text = {
+            ja = {
+                {"圭似乎是在那些别墅中的一栋里住着。"}
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221",
+        line = 1187
+    },
+    block_00221 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00007", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我不能接受只有我和妈妈逃到这个家，而把圭一个人留在那个糟",
+                    {"rt2"},
+                    "糕的家！」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222",
+        line = 1190
+    },
+    block_00222 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00008", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「所以，我回到中村的家，想要把圭接回来！但是那些佣人们甚至",
+                    {"rt2"},
+                    "不让我进门，我什么都做不了！！」"
+                }
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223",
+        line = 1194
+    },
+    block_00223 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00009", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我向妈妈质问这个问题时，她只是沉默不语……」"
+                }
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224",
+        line = 1197
+    },
+    block_00224 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_02", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00314", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊，嗯……」"
+                }
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225",
+        line = 1202
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            ja = {
+                {"姑姑真是随便，就把这种麻烦事扔给我。"}
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226",
+        line = 1205
+    },
+    block_00226 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这种事情应该怎么去安慰才好呢。"}
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227",
+        line = 1208
+    },
+    block_00227 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00010", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「所以，我不再和妈妈说话……",
+                    {"rt2"},
+                    "直到她把圭带回这个家为止！我绝对不会！」"
+                }
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228",
+        line = 1212
+    },
+    block_00228 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "啊。",
+                    {"rt2"},
+                    "真是不知道怎么办才好。"
+                }
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229",
+        line = 1216
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            ja = {
+                {"连姑姑都无法做到的事情，我也无法做到。"}
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230",
+        line = 1219
+    },
+    block_00230 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，如果说些无用的安慰话，我也不认为真琴会接受。"}
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231",
+        line = 1222
+    },
+    block_00231 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_03", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00315", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「话说回来。我和中村的麗華是朋友。",
+                    {"rt2"},
+                    "你知道麗華吧」"
+                }
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232",
+        line = 1231
+    },
+    block_00232 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00011", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「嗯。那个人特别恶毒……」"
+                }
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233",
+        line = 1234
+    },
+    block_00233 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_04", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            ja = {
+                {"麗華……。被孩子讨厌了啊！"}
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234",
+        line = 1241
+    },
+    block_00234 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_03", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00316", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「不，那个女孩其实并没有那么坏。",
+                    {"rt2"},
+                    "就是有点，强硬或者说固执……」"
+                }
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235",
+        line = 1250
+    },
+    block_00235 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00012", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「但是，就是她最讨厌圭」"
+                }
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236",
+        line = 1253
+    },
+    block_00236 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_02", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00317", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「嗯。是吗」"
+                }
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237",
+        line = 1261
+    },
+    block_00237 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00013", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「她说了很多难听的话，比如杂种什么的」"
+                }
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238",
+        line = 1264
+    },
+    block_00238 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_04", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            ja = {
+                {"不要说那种话。麗華啊。"}
+            }
+        },
+        linkback = "block_00237",
+        linknext = "block_00239",
+        line = 1272
+    },
+    block_00239 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_03", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00318", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「但是，她是真琴的父亲的妹妹。",
+                    {"rt2"},
+                    "如果请求她的帮助，或许能有所改变」"
+                }
+            }
+        },
+        linkback = "block_00238",
+        linknext = "block_00240",
+        line = 1281
+    },
+    block_00240 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00014", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我觉得比起依赖爸爸，找麗華阿姨更绝望」"
+                }
+            }
+        },
+        linkback = "block_00239",
+        linknext = "block_00241",
+        line = 1284
+    },
+    block_00241 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_05", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            ja = {
+                {"尖锐啊。"}
+            }
+        },
+        linkback = "block_00240",
+        linknext = "block_00242",
+        line = 1292
+    },
+    block_00242 = {
+        {"text"},
+        text = {
+            ja = {
+                {"嗯，确实是这样。"}
+            }
+        },
+        linkback = "block_00241",
+        linknext = "block_00243",
+        line = 1295
+    },
+    block_00243 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00015", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「不只是爸爸，麗華阿姨也特别恶劣」"
+                }
+            }
+        },
+        linkback = "block_00242",
+        linknext = "block_00244",
+        line = 1298
+    },
+    block_00244 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_03", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00319", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「但是，请求她一下也不用花钱吧？我认为值得一试」"
+                }
+            }
+        },
+        linkback = "block_00243",
+        linknext = "block_00245",
+        line = 1306
+    },
+    block_00245 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00016", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「真的没问题吗？」"
+                }
+            }
+        },
+        linkback = "block_00244",
+        linknext = "block_00246",
+        line = 1309
+    },
+    block_00246 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_02", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00320", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「什么没问题？」"
+                }
+            }
+        },
+        linkback = "block_00245",
+        linknext = "block_00247",
+        line = 1314
+    },
+    block_00247 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00017", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「麗華阿姨，她可以毫不在乎地说出很恶劣的话，",
+                    {"rt2"},
+                    "如果静流你去找她，我怕她会说些难听的话」"
+                }
+            }
+        },
+        linkback = "block_00246",
+        linknext = "block_00248",
+        line = 1318
+    },
+    block_00248 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_03", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00321", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「没事的。麗華其实是个很善良的人」"
+                }
+            }
+        },
+        linkback = "block_00247",
+        linknext = "block_00249",
+        line = 1323
+    },
+    block_00249 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_05", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            ja = {
+                {"嗯，虽然她已经说了很多难听的话。"}
+            }
+        },
+        linkback = "block_00248",
+        linknext = "block_00250",
+        line = 1328
+    },
+    block_00250 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00018", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「但是，她可能会动粗哦！」"
+                }
+            }
+        },
+        linkback = "block_00249",
+        linknext = "block_00251",
+        line = 1331
+    },
+    block_00251 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_03", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00322", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「不会的，至少她不至于到那种地步吧？」"
+                }
+            }
+        },
+        linkback = "block_00250",
+        linknext = "block_00252",
+        line = 1336
+    },
+    block_00252 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00019", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「是有的！ 圭就被她打过好几次！」"
+                }
+            }
+        },
+        linkback = "block_00251",
+        linknext = "block_00253",
+        line = 1339
+    },
+    block_00253 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_01", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00323", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「啊？」"
+                }
+            }
+        },
+        linkback = "block_00252",
+        linknext = "block_00254",
+        line = 1347
+    },
+    block_00254 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00020", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「决定离家的时候，她一言不发就打了我」"
+                }
+            }
+        },
+        linkback = "block_00253",
+        linknext = "block_00255",
+        line = 1350
+    },
+    block_00255 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_05", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00324", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「是，是吗……」"
+                }
+            }
+        },
+        linkback = "block_00254",
+        linknext = "block_00256",
+        line = 1358
+    },
+    block_00256 = {
+        {"text"},
+        text = {
+            ja = {
+                {"麗華那家伙，居然在家里对孩子动手……。"}
+            }
+        },
+        linkback = "block_00255",
+        linknext = "block_00257",
+        line = 1361
+    },
+    block_00257 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这点是无法辩解的。"}
+            }
+        },
+        linkback = "block_00256",
+        linknext = "block_00258",
+        line = 1364
+    },
+    block_00258 = {
+        {"bg", sync = 0, face = 1, file = "ev_com_09_03", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00325", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「不过，没关系。我比她更强。她只是个小丫头」"
+                }
+            }
+        },
+        linkback = "block_00257",
+        linknext = "block_00259",
+        line = 1372
+    },
+    block_00259 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00021", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「真的吗？",
+                    {"rt2"},
+                    "静流你虽然比她高，但我听说你的运动神经并不太好」"
+                }
+            }
+        },
+        linkback = "block_00258",
+        linknext = "block_00260",
+        line = 1376
+    },
+    block_00260 = {
+        {"text"},
+        text = {
+            ja = {
+                {"嗯，确实是这样。"}
+            }
+        },
+        linkback = "block_00259",
+        linknext = "block_00261",
+        line = 1379
+    },
+    block_00261 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00022", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「我喜欢静流，我不希望看到静流陷入危险」"
+                }
+            }
+        },
+        linkback = "block_00260",
+        linknext = "block_00262",
+        line = 1382
+    },
+    block_00262 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00326", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「没事的，不会有那么糟糕的事发生的」"
+                }
+            }
+        },
+        linkback = "block_00261",
+        linknext = "block_00263",
+        line = 1385
+    },
+    block_00263 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00023", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「那个家很可怕的。那里的仆人也都很恐怖，而且还有很多穿黑色",
+                    {"rt2"},
+                    "衣服的",
+                    {"rt2"},
+                    "大个子男人」"
+                }
+            }
+        },
+        linkback = "block_00262",
+        linknext = "block_00264",
+        line = 1389
+    },
+    block_00264 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "啊，对了，他们是跟黑帮有关的。",
+                    {"rt2"},
+                    "虽然这是这次骚乱的原因，但是这种人似乎仍然在那里出入。"
+                }
+            }
+        },
+        linkback = "block_00263",
+        linknext = "block_00265",
+        line = 1393
+    },
+    block_00265 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shi_00327", ch = "shi"}
+            },
+            ja = {
+                {
+                    name = {"静流"},
+                    "「我知道了。我知道了。我不会去做危险的事的，所以你放心好了。",
+                    {"rt2"},
+                    "说起来，你觉得我像勇敢的人吗？",
+                    {"rt2"},
+                    "如果真的危险了，我是会马上逃跑的那种人」"
+                }
+            }
+        },
+        linkback = "block_00264",
+        linknext = "block_00266",
+        line = 1398
+    },
+    block_00266 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mak_00024", ch = "mak"}
+            },
+            ja = {
+                {
+                    name = {"真琴"},
+                    "「嗯，可能……静流你确实是那种人……」"
+                }
+            }
+        },
+        linkback = "block_00265",
+        linknext = "block_00267",
+        line = 1401
+    },
+    block_00267 = {
+        {"bgm", stop = 1, time = 10000},
+        {"bg", sync = 0, face = 1, file = "ev_com_09_05", time = 400, path = ":ev/ev_com_09/", set = "ev_com_09"},
+        {"text"},
+        text = {
+            ja = {
+                {"她这么确认，感觉也挺不好的。嘿！"}
+            }
+        },
+        linkback = "block_00266",
+        linknext = "block_00268",
+        line = 1410
+    },
+    block_00268 = {
+        {"bg", file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"我紧紧地抱住了真琴。"}
+            }
+        },
+        linkback = "block_00267",
+        linknext = "block_00269",
+        line = 1418
+    },
+    block_00269 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然后，我向圣露安女子学院出发。"}
+            }
+        },
+        linkback = "block_00268",
+        linknext = "block_00270",
+        line = 1425
+    },
+    block_00270 = {
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"excall", file = "01_03_2"},
+        {"text"},
+        linkback = "block_00269",
+        line = 1429
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}

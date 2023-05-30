@@ -1,0 +1,4914 @@
+astver = 2.0
+ast = {
+    block_00000 = {
+        {"savetitle", text = "第Ⅲ章"},
+        {"msg", no = 1},
+        {"bg", file = "アイキャッチ03mis", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"bg", time = 2000, file = "ev_etc_01_03", path = ":ev/ev_etc_01/", set = "ev_etc_01"},
+        {"se", id = 1, file = "se0008"},
+        {"text"},
+        text = {
+            ja = {
+                {"门打开了，那个人站在那里。"}
+            }
+        },
+        linknext = "block_00001",
+        line = 29
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {"一股完全不带紧张感的和善气氛。"}
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002",
+        line = 32
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然而，这个人被以恶名昭彰的鳥谷校长所恐惧。"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003",
+        line = 35
+    },
+    block_00003 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"msgoff"},
+        {"bg", file = "bg001e", path = ":bg/", sync = 0},
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, resize = 1, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", x = 0, lv = 4, id = 10, sync = 0},
+        {"extrans"},
+        {"bgm", file = "bgm136"},
+        {"text"},
+        text = {
+            ja = {
+                {"本间礼次郎先生。"}
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004",
+        line = 52
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他是心铃的亲生父亲，一个大富翁，也是弓張学园的所有者之一。"}
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005",
+        line = 56
+    },
+    block_00005 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10035", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「唉，看来我让你们久等了」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006",
+        line = 62
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但他完全没有展示这样的气氛。"}
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007",
+        line = 65
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，没有这回事。",
+                    {"rt2"},
+                    "只是我们稍微早到了一点」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008",
+        line = 72
+    },
+    block_00008 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0003", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10036", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「不管怎么说，最近草薙老师经常照顾心铃，我真是感激不尽」"
+                }
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009",
+        line = 77
+    },
+    block_00009 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「啊，不，我并没有做什么」"
+                }
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010",
+        line = 80
+    },
+    block_00010 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", x = 0, lv = 4, id = 10}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10037", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我听恩田放哉老师说了很多。据说是草薙老师的建议，让心铃指",
+                    {"rt2"},
+                    "导了弓張的学生们，使他们在有历史的绘画比赛中获得了胜利……」"
+                }
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011",
+        line = 88
+    },
+    block_00011 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那完全是心铃小姐的力量」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012",
+        line = 93
+    },
+    block_00012 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0009", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10038", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「不，这个孩子。她从来没有试图缩小和任何人的关系距离。所以",
+                    {"rt2"},
+                    "她完全没有交到朋友」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013",
+        line = 98
+    },
+    block_00013 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0008", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10039", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我一直很担心这件事」"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014",
+        line = 103
+    },
+    block_00014 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10040", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「所以，听到这次的事情，我感到非常放心」"
+                }
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015",
+        line = 108
+    },
+    block_00015 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0003", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10041", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「真的，让心铃和草薙老师相遇是个正确的选择」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016",
+        line = 113
+    },
+    block_00016 = {
+        {"bgm", stop = 1},
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10042", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「能这样安排真是太好了」"
+                }
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017",
+        line = 120
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「哦？」"
+                }
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018",
+        line = 123
+    },
+    block_00018 = {
+        {"bg", lv = 1, id = 5, rule = "cinema", file = "cinema01", alpha = 255, time = 400, path = ":sys/", vague = 40},
+        {"text"},
+        text = {
+            ja = {
+                {"他刚刚确实说了「安排」这个词。"}
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019",
+        line = 128
+    },
+    block_00019 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "关于我在圣鲁安的调动，我听校长说，本间礼次郎先生并不知道这",
+                    {"rt2"},
+                    "件事，这件事在公开场合是被误解为东泽物产的胡闹。"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020",
+        line = 131
+    },
+    block_00020 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他是忘记了这件事吗？"}
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021",
+        line = 134
+    },
+    block_00021 = {
+        {"text"},
+        text = {
+            ja = {
+                {"还是他认为我并不知道这件事？"}
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022",
+        line = 137
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {"不，等等――。"}
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023",
+        line = 140
+    },
+    block_00023 = {
+        {"text"},
+        text = {
+            ja = {
+                {"稍微考虑一下，我觉得这个想法太浅薄了。"}
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024",
+        line = 143
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "他不可能不知道。",
+                    {"rt2"},
+                    "他知道所有的事情，并且现在正在这样说话。"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025",
+        line = 147
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {"果然，像校长所说，对这个人不能采取普通的方式。"}
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026",
+        line = 150
+    },
+    block_00026 = {
+        {"cgdel", lv = 1, id = 5, rule = "cinema", time = 400},
+        {"bgm", file = "bgm167"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11737", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「难道说」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027",
+        line = 157
+    },
+    block_00027 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10043", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我想你们都听说了，草薙老师被选为圣鲁安的兼职是因为恩田老",
+                    {"rt2"},
+                    "师的关照」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028",
+        line = 162
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是这样的吗？」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029",
+        line = 165
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我微微翘起了嘴角。"}
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030",
+        line = 168
+    },
+    block_00030 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0010", head = "rej_z1a", x = 0, lv = 4, id = 10}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10044", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「没错。",
+                    {"rt2"},
+                    "的确是从他那里听到这个提议的，但真正实施的是我」"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031",
+        line = 175
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以说」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032",
+        line = 178
+    },
+    block_00032 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10045", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「圣鲁安学校是我们南部学园集团的一部分。",
+                    {"rt2"},
+                    "虽然所有者名字不同，但实际上是由本间家经营的」"
+                }
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033",
+        line = 184
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是这样吗」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034",
+        line = 187
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            ja = {
+                {"东泽物产是所有者，这是理所当然的，但现在也要承认这一点吗？"}
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035",
+        line = 190
+    },
+    block_00035 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", x = 0, lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10046", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「是的，因为这个孩子非要留在弓张，所以我让她去了我可以监督",
+                    {"rt2"},
+                    "的学校」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036",
+        line = 195
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「原来如此」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037",
+        line = 198
+    },
+    block_00037 = {
+        {"fg", mode = -2, sync = 0},
+        {"fg", ch = "心鈴", size = "z1", mode = 3, resize = 1, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0014", head = "mis_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11738", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「所以您能够全程监视。",
+                    {"rt2"},
+                    "您就是这么想说的吧，父亲」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038",
+        line = 210
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10047", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「监视这种说法。",
+                    {"rt2"},
+                    "关心孩子的事情，作为父亲，这不是理所当然的吗？」"
+                }
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039",
+        line = 214
+    },
+    block_00039 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0004", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11739", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「谢谢您。",
+                    {"rt2"},
+                    "但是――」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040",
+        line = 221
+    },
+    block_00040 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0014", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11740", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「我知道与本间有关的人在运营圣鲁安，但没想到父亲是在指示关",
+                    {"rt2"},
+                    "于草薙老师协助美术教师的事情」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041",
+        line = 227
+    },
+    block_00041 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0014", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11741", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「为什么要这么做呢？」"
+                }
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042",
+        line = 232
+    },
+    block_00042 = {
+        {"fg", mode = -2, sync = 0},
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0010", head = "rej_z1a", lv = 4, id = 10, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0011", head = "rej_z1a", lv = 4, id = 10}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10048", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「为什么呢。",
+                    {"rt2"},
+                    "只是，我对草薙直哉这个人物很长时间以来一直很感兴趣」"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043",
+        line = 245
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「很长时间？」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044",
+        line = 248
+    },
+    block_00044 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这真是出乎意料的话。"}
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045",
+        line = 251
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我和这个人之前并无交集。"}
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046",
+        line = 254
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {"尽管如此，「很长时间」是何种含义呢？"}
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047",
+        line = 257
+    },
+    block_00047 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10049", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「啊，的确是很长时间」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048",
+        line = 262
+    },
+    block_00048 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10050", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「此外――」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049",
+        line = 267
+    },
+    block_00049 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0008", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10051", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我女儿走上艺术之路的原因――。",
+                    {"rt2"},
+                    "不，错了」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050",
+        line = 274
+    },
+    block_00050 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0010", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10052", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「只是我个人的胡思乱想吧……」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051",
+        line = 279
+    },
+    block_00051 = {
+        {"text"},
+        text = {
+            ja = {
+                {"心铃走上艺术之路的原因？"}
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052",
+        line = 282
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {"胡思乱想？"}
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053",
+        line = 285
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他在说什么，我完全不明白。"}
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054",
+        line = 288
+    },
+    block_00054 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10053", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「但是，我觉得让你们两人相见是正确的。",
+                    {"rt2"},
+                    "曾经如此不愿与人打交道的我的女儿，现在和各种人建立了深厚的",
+                    {"rt2"},
+                    "关系」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055",
+        line = 296
+    },
+    block_00055 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0003", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10054", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「作为父亲，没有比这更让人开心的事了」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056",
+        line = 301
+    },
+    block_00056 = {
+        {"fg", mode = -2, sync = 0},
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0010", head = "mis_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11742", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「原来如此，一切都是父亲的安排」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057",
+        line = 311
+    },
+    block_00057 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0014", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11743", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「那么，我有些话想告诉全知全能的父亲」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058",
+        line = 318
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，那是我――」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059",
+        line = 321
+    },
+    block_00059 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0001", head = "mis_z1a", lv = 4, id = 9},
+        {"fgact", ch = "心鈴", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11744", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「不，让我说出来」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060",
+        line = 327
+    },
+    block_00060 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0014", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11745", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「我将和草薙直哉先生以婚姻为前提进行交往」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061",
+        line = 332
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我并没有不敬的想法。请允许我以婚姻为前提和大小姐交往」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062",
+        line = 335
+    },
+    block_00062 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = -400, file = "zbg001e", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, resize = 1, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0010", head = "rej_z2a", lv = 5, id = 10, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10055", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063",
+        line = 348
+    },
+    block_00063 = {
+        {"text"},
+        text = {
+            ja = {
+                {"礼次郎先生的脸上的表情消失了。"}
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064",
+        line = 351
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            ja = {
+                {"然后，他那双细长的眼睛里露出了那样的视线。"}
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065",
+        line = 354
+    },
+    block_00065 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10056", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「以婚姻为前提，没有不敬的想法。原来如此」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066",
+        line = 359
+    },
+    block_00066 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0005", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10057", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「那么？草薙直哉先生，你明白我是什么样的人就说出这些话吗？」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067",
+        line = 364
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我并不了解详细情况」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068",
+        line = 367
+    },
+    block_00068 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0011", head = "rej_z2a", lv = 5, id = 10}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10058", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「哦，你甚至不清楚我是什么样的人，",
+                    {"rt2"},
+                    "你就想向我的女儿伸出手？」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069",
+        line = 374
+    },
+    block_00069 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「无论对方是谁都与我无关。",
+                    {"rt2"},
+                    "我只是喜欢上了心鈴，这是唯一的事实」"
+                }
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070",
+        line = 378
+    },
+    block_00070 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「无论您作为父母是何种存在，我的这种感情也不会改变」"
+                }
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071",
+        line = 381
+    },
+    block_00071 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0002", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10059", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「的确是“真诚的话语”呢」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072",
+        line = 386
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {"礼次郎先生嘴角微扬，笑了起来。"}
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073",
+        line = 391
+    },
+    block_00073 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0003", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10060", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我最讨厌这世上的这种话了」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074",
+        line = 396
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他笑着，冷冰冰地吐出了这句话。"}
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075",
+        line = 399
+    },
+    block_00075 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0005", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10061", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「真诚的誓言。",
+                    {"rt2"},
+                    "即使是刚懂事的孩子也能说出的廉价词汇」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076",
+        line = 405
+    },
+    block_00076 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10062", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「在商业中最需要警惕的就是这种话语」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077",
+        line = 410
+    },
+    block_00077 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10063", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「借款者。那些陷入无法偿还债务的人都有一种共通的话语」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078",
+        line = 415
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以你是说那是诚实的话语」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079",
+        line = 418
+    },
+    block_00079 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10064", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「正是如此。在商业中，没有比堆砌诚实的话语更危险的事了」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080",
+        line = 424
+    },
+    block_00080 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0005", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10065", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「正因为内在内容无法与之相符，空洞的话语才会被挥舞出来」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081",
+        line = 429
+    },
+    block_00081 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0005", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10066", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「被空洞的话语引导踏出一步，前方往往是虚无的大地」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082",
+        line = 434
+    },
+    block_00082 = {
+        {"text"},
+        text = {
+            ja = {
+                {"本间礼次郎先生看着我，就像看着脚下的虫一样。"}
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083",
+        line = 437
+    },
+    block_00083 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，我没有动摇。"}
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084",
+        line = 440
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {"他的眼神仿佛在冷冰冰地俯视我。"}
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085",
+        line = 443
+    },
+    block_00085 = {
+        {"text"},
+        text = {
+            ja = {
+                {"面对这样的眼神，我感到了某种不适。"}
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086",
+        line = 446
+    },
+    block_00086 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这种不适感随着礼次郎先生接下来的话语慢慢转化为确信。"}
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087",
+        line = 449
+    },
+    block_00087 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10067", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我们这个家族在大正时代开始兴盛」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088",
+        line = 454
+    },
+    block_00088 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0010", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10068", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「家族的创始人呢。他买下了一大片没有任何价值的土地，开发这",
+                    {"rt2"},
+                    "些土地，创造出了价值」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089",
+        line = 459
+    },
+    block_00089 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10069", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「即使是连道路都没有的灌木林、沼泽、山地。",
+                    {"rt2"},
+                    "但现在，那些被称为首都圈的土地，他都一口气买下来了」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090",
+        line = 466
+    },
+    block_00090 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10070", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「引入了铁路，向国家施压建设道路，自己也开始进行基础设施开",
+                    {"rt2"},
+                    "发」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091",
+        line = 471
+    },
+    block_00091 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10071", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「然后，给无价值的东西赋予了价值」"
+                }
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092",
+        line = 476
+    },
+    block_00092 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0011", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10072", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「最大的财富增长来源于关东大地震。",
+                    {"rt2"},
+                    "我们因为这场夺取了许多生命的自然灾害而繁荣」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093",
+        line = 482
+    },
+    block_00093 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10073", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「地震后，人口从东京东部集中的地区一下子涌向了西部地区」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094",
+        line = 487
+    },
+    block_00094 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10074", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「东京东部原本就是像湾口一样的地方，地基不稳。",
+                    {"rt2"},
+                    "灾害主要集中在东部」"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095",
+        line = 493
+    },
+    block_00095 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0010", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10075", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「地震过后，许多人搬到了原本是别墅区的杉並区和世田谷区等地」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096",
+        line = 498
+    },
+    block_00096 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0008", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10076", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我们正好在那个时候开发了杉並、世田谷、練馬等地」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097",
+        line = 503
+    },
+    block_00097 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10077", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「原本几乎没有价值的土地，一下子就涨价了」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098",
+        line = 508
+    },
+    block_00098 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10078", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「据说我们因为在关东大地震中获得了巨大的财富，被人称为火灾",
+                    {"rt2"},
+                    "现场的小偷」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099",
+        line = 513
+    },
+    block_00099 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10079", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「在关东大地震的时候，我们甚至在焚烧的空地上立起自己公司的",
+                    {"rt2"},
+                    "牌子，宣称拥有那片土地",
+                    {"rt2"},
+                    "的所有权」"
+                }
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100",
+        line = 519
+    },
+    block_00100 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10080", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「铁路事业和土地开发，创始人建立了一个巨大的帝国」"
+                }
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101",
+        line = 524
+    },
+    block_00101 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0008", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10081", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「然而，他同时过于深入政治。",
+                    {"rt2"},
+                    "在上一场大战中，创始人作为战犯被审判」"
+                }
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102",
+        line = 531
+    },
+    block_00102 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10082", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「接替如此创始人的是我的祖父。",
+                    {"rt2"},
+                    "战后，他接管了创始人的事业，进一步涉足了更多的业务」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103",
+        line = 537
+    },
+    block_00103 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10083", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「祖父成为了世界级的富翁」"
+                }
+            }
+        },
+        linkback = "block_00102",
+        linknext = "block_00104",
+        line = 542
+    },
+    block_00104 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10084", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「然而，这也并没有持续很长时间」"
+                }
+            }
+        },
+        linkback = "block_00103",
+        linknext = "block_00105",
+        line = 547
+    },
+    block_00105 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10085", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「日本经济的泡沫破裂，随着泡沫的崩溃，我们一族失去了大量的",
+                    {"rt2"},
+                    "财产」"
+                }
+            }
+        },
+        linkback = "block_00104",
+        linknext = "block_00106",
+        line = 552
+    },
+    block_00106 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0008", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10086", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「从祖父到伯父那一代，我们一族开始渐渐从日本经济界的中心边",
+                    {"rt2"},
+                    "缘化」"
+                }
+            }
+        },
+        linkback = "block_00105",
+        linknext = "block_00107",
+        line = 557
+    },
+    block_00107 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0008", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10087", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「许多业务也被收购了」"
+                }
+            }
+        },
+        linkback = "block_00106",
+        linknext = "block_00108",
+        line = 562
+    },
+    block_00108 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0009", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10088", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「铁路业务也几乎都失去了」"
+                }
+            }
+        },
+        linkback = "block_00107",
+        linknext = "block_00109",
+        line = 567
+    },
+    block_00109 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10089", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「这就是我们的家族」"
+                }
+            }
+        },
+        linkback = "block_00108",
+        linknext = "block_00110",
+        line = 572
+    },
+    block_00110 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg001e", path = ":bg/", sync = 0},
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, resize = 1, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"短暂的沉默，"}
+            }
+        },
+        linkback = "block_00109",
+        linknext = "block_00111",
+        line = 582
+    },
+    block_00111 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0003", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            ja = {
+                {"然后，礼次郎先生似乎很高兴地笑了起来。"}
+            }
+        },
+        linkback = "block_00110",
+        linknext = "block_00112",
+        line = 587
+    },
+    block_00112 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10090", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我这个人，非常尊敬我们的创始人」"
+                }
+            }
+        },
+        linkback = "block_00111",
+        linknext = "block_00113",
+        line = 592
+    },
+    block_00113 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10091", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「他从地震失去房屋的人们手中强行夺取土地，开发土地，创造价",
+                    {"rt2"},
+                    "值，获得财富的创始人」"
+                }
+            }
+        },
+        linkback = "block_00112",
+        linknext = "block_00114",
+        line = 597
+    },
+    block_00114 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10092", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「他可以将人们的生活基础都转化为金钱，我向往这样的人」"
+                }
+            }
+        },
+        linkback = "block_00113",
+        linknext = "block_00115",
+        line = 603
+    },
+    block_00115 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0005", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10093", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「本间家并不是创始家族的本家。",
+                    {"rt2"},
+                    "即使说是末端家族也不为过」"
+                }
+            }
+        },
+        linkback = "block_00114",
+        linknext = "block_00116",
+        line = 609
+    },
+    block_00116 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0004", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10094", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「但仍然是战后领导家族的祖父的血统」"
+                }
+            }
+        },
+        linkback = "block_00115",
+        linknext = "block_00117",
+        line = 614
+    },
+    block_00117 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10095", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「从我父亲那一代开始，一部分家族事业由我哥哥继承，",
+                    {"rt2"},
+                    "我接手了所有与家族背后的工作有关的事情」"
+                }
+            }
+        },
+        linkback = "block_00116",
+        linknext = "block_00118",
+        line = 620
+    },
+    block_00118 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10096", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「然后，在被称为失去的二十年的时代，我们扩大了业务，而其他",
+                    {"rt2"},
+                    "大企业却在没落」"
+                }
+            }
+        },
+        linkback = "block_00117",
+        linknext = "block_00119",
+        line = 625
+    },
+    block_00119 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0011", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10097", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我哥哥负责表面，我负责背后，各自承担起责任――」"
+                }
+            }
+        },
+        linkback = "block_00118",
+        linknext = "block_00120",
+        line = 630
+    },
+    block_00120 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10098", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「与本间有关的事物，在这个弓张市，不仅仅限于弓张学园和圣罗",
+                    {"rt2"},
+                    "安。",
+                    {"rt2"},
+                    "在你们所不知道的各种事物上，我们的力量都在起作用」"
+                }
+            }
+        },
+        linkback = "block_00119",
+        linknext = "block_00121",
+        line = 636
+    },
+    block_00121 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0010", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10099", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「即使是那位聪明的鸟谷校长，也不知道东泽物产是我们集团企业",
+                    {"rt2"},
+                    "的一部分」"
+                }
+            }
+        },
+        linkback = "block_00120",
+        linknext = "block_00122",
+        line = 642
+    },
+    block_00122 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0005", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10100", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我们正在无人察觉的情况下扩大影响力」"
+                }
+            }
+        },
+        linkback = "block_00121",
+        linknext = "block_00123",
+        line = 647
+    },
+    block_00123 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「中村家已经没落，在背后的世界里，他们的对抗力量夏目一家也",
+                    {"rt2"},
+                    "已解散」"
+                }
+            }
+        },
+        linkback = "block_00122",
+        linknext = "block_00124",
+        line = 650
+    },
+    block_00124 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果你是背后的人，就不可能忽视这个」"
+                }
+            }
+        },
+        linkback = "block_00123",
+        linknext = "block_00125",
+        line = 653
+    },
+    block_00125 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「弓张市是一只待捕的猎物」"
+                }
+            }
+        },
+        linkback = "block_00124",
+        linknext = "block_00126",
+        line = 656
+    },
+    block_00126 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10101", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「你说的正是，草薙直哉老师」"
+                }
+            }
+        },
+        linkback = "block_00125",
+        linknext = "block_00127",
+        line = 661
+    },
+    block_00127 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0004", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0005", head = "rej_z1a", lv = 4, id = 10}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10102", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「那么，你认为我会把我的独生女心铃交给你这样的普通教师吗？」"
+                }
+            }
+        },
+        linkback = "block_00126",
+        linknext = "block_00128",
+        line = 667
+    },
+    block_00128 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然口气谦和，但话语却冷淡无情。"}
+            }
+        },
+        linkback = "block_00127",
+        linknext = "block_00129",
+        line = 670
+    },
+    block_00129 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我不知道」"
+                }
+            }
+        },
+        linkback = "block_00128",
+        linknext = "block_00130",
+        line = 673
+    },
+    block_00130 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0011", head = "rej_z1a", lv = 4, id = 10}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10103", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「不知道？",
+                    {"rt2"},
+                    "这个答案有点出乎我的意料」"
+                }
+            }
+        },
+        linkback = "block_00129",
+        linknext = "block_00131",
+        line = 680
+    },
+    block_00131 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0004", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10104", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「稍微想一想就应该能理解的事，不是吗？」"
+                }
+            }
+        },
+        linkback = "block_00130",
+        linknext = "block_00132",
+        line = 685
+    },
+    block_00132 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是的」"
+                }
+            }
+        },
+        linkback = "block_00131",
+        linknext = "block_00133",
+        line = 688
+    },
+    block_00133 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我的上司，鸟谷纱希校长，是个非常聪明的人」"
+                }
+            }
+        },
+        linkback = "block_00132",
+        linknext = "block_00134",
+        line = 691
+    },
+    block_00134 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0005", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "面对如此含糊其辞的回答，礼次郎先生一点也没有动摇，仍旧注视",
+                    {"rt2"},
+                    "着我。"
+                }
+            }
+        },
+        linkback = "block_00133",
+        linknext = "block_00135",
+        line = 696
+    },
+    block_00135 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0005", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10105", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00134",
+        linknext = "block_00136",
+        line = 702
+    },
+    block_00136 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「据我所知，我认为她是最狡猾，最理智的人」"
+                }
+            }
+        },
+        linkback = "block_00135",
+        linknext = "block_00137",
+        line = 705
+    },
+    block_00137 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「即使是她，也曾说过，本间礼次郎先生深不可测，是个令人恐惧",
+                    {"rt2"},
+                    "的人」"
+                }
+            }
+        },
+        linkback = "block_00136",
+        linknext = "block_00138",
+        line = 708
+    },
+    block_00138 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10106", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00137",
+        linknext = "block_00139",
+        line = 714
+    },
+    block_00139 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果是这样的话，那就无法理解了」"
+                }
+            }
+        },
+        linkback = "block_00138",
+        linknext = "block_00140",
+        line = 717
+    },
+    block_00140 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「为什么那位连校长都探不透，让人恐惧的人，会向我这样的普通",
+                    {"rt2"},
+                    "教师，揭示自己的真面目，并做出三流人会做的威胁行为呢」"
+                }
+            }
+        },
+        linkback = "block_00139",
+        linknext = "block_00141",
+        line = 721
+    },
+    block_00141 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我无法理解他的真意」"
+                }
+            }
+        },
+        linkback = "block_00140",
+        linknext = "block_00142",
+        line = 724
+    },
+    block_00142 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我无法理解这个意义」"
+                }
+            }
+        },
+        linkback = "block_00141",
+        linknext = "block_00143",
+        line = 727
+    },
+    block_00143 = {
+        {"text"},
+        text = {
+            ja = {
+                {"坐在旁边的心铃瞬间紧张了起来，这是无法忽视的。"}
+            }
+        },
+        linkback = "block_00142",
+        linknext = "block_00144",
+        line = 737
+    },
+    block_00144 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她明白那个事实——"}
+            }
+        },
+        linkback = "block_00143",
+        linknext = "block_00145",
+        line = 740
+    },
+    block_00145 = {
+        {"text"},
+        text = {
+            ja = {
+                {"而那个事实，正是折磨她的原因。"}
+            }
+        },
+        linkback = "block_00144",
+        linknext = "block_00146",
+        line = 743
+    },
+    block_00146 = {
+        {"text"},
+        text = {
+            ja = {
+                {"唯一让她憎恨自己的父亲的动力。"}
+            }
+        },
+        linkback = "block_00145",
+        linknext = "block_00147",
+        line = 746
+    },
+    block_00147 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = -400, file = "zbg001e", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, resize = 1, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10, sync = 0},
+        {"extrans", time = 500},
+        {"bgm", stop = 1, time = 3000},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，其实有一个可能」"
+                }
+            }
+        },
+        linkback = "block_00146",
+        linknext = "block_00148",
+        line = 758
+    },
+    block_00148 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果他真的有一个目的的话——」"
+                }
+            }
+        },
+        linkback = "block_00147",
+        linknext = "block_00149",
+        line = 761
+    },
+    block_00149 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10107", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我明白了，原来是这样」"
+                }
+            }
+        },
+        linkback = "block_00148",
+        linknext = "block_00150",
+        line = 767
+    },
+    block_00150 = {
+        {"text"},
+        text = {
+            ja = {
+                {"礼次郎先生打断了我的话。"}
+            }
+        },
+        linkback = "block_00149",
+        linknext = "block_00151",
+        line = 770
+    },
+    block_00151 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0005", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10108", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「草薙直哉先生，我理解了你想表达的意思」"
+                }
+            }
+        },
+        linkback = "block_00150",
+        linknext = "block_00152",
+        line = 775
+    },
+    block_00152 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0011", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10109", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「那么我想问」"
+                }
+            }
+        },
+        linkback = "block_00151",
+        linknext = "block_00153",
+        line = 780
+    },
+    block_00153 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0008", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10110", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「心铃——」"
+                }
+            }
+        },
+        linkback = "block_00152",
+        linknext = "block_00154",
+        line = 785
+    },
+    block_00154 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg001e", path = ":bg/", sync = 0},
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0008", head = "mis_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"礼次郎先生的目光从我身上转移到了心铃身上。"}
+            }
+        },
+        linkback = "block_00153",
+        linknext = "block_00155",
+        line = 798
+    },
+    block_00155 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10111", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「心铃，你有什么要对我说的吗？」"
+                }
+            }
+        },
+        linkback = "block_00154",
+        linknext = "block_00156",
+        line = 801
+    },
+    block_00156 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1b0800", face = "b0009", head = "mis_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11746", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00155",
+        linknext = "block_00157",
+        line = 806
+    },
+    block_00157 = {
+        {"text"},
+        text = {
+            ja = {
+                {"心铃低下头，紧紧地握住了拳头。"}
+            }
+        },
+        linkback = "block_00156",
+        linknext = "block_00158",
+        line = 810
+    },
+    block_00158 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1b0800", face = "b0009", head = "mis_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11747", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「我……」"
+                }
+            }
+        },
+        linkback = "block_00157",
+        linknext = "block_00159",
+        line = 815
+    },
+    block_00159 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "zbg001e", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "心鈴", size = "z2", mode = 3, resize = 1, path = ":fg/mis/z2/", file = "mis_z2a0800", face = "a0014", head = "mis_z2a", lv = 5, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"bgm", file = "bgm148"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11748", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「我讨厌抛弃了哥哥和妈妈的你！」"
+                }
+            }
+        },
+        linkback = "block_00158",
+        linknext = "block_00160",
+        line = 827
+    },
+    block_00160 = {
+        {"fg", ch = "心鈴", size = "z2", mode = 3, path = ":fg/mis/z2/", file = "mis_z2a0800", face = "a0004", head = "mis_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11749", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「哥哥对我施暴，你视而不见，他在学校被欺负，你也视而不见，",
+                    {"rt2"},
+                    "我讨厌这样的你！」"
+                }
+            }
+        },
+        linkback = "block_00159",
+        linknext = "block_00161",
+        line = 832
+    },
+    block_00161 = {
+        {"fg", ch = "心鈴", size = "z2", mode = 3, path = ":fg/mis/z2/", file = "mis_z2a0800", face = "a0006", head = "mis_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11750", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「为什么，你只留下我在本间家呢？」"
+                }
+            }
+        },
+        linkback = "block_00160",
+        linknext = "block_00162",
+        line = 837
+    },
+    block_00162 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11751", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「为什么，你就是不舍得抛弃我呢？」"
+                }
+            }
+        },
+        linkback = "block_00161",
+        linknext = "block_00163",
+        line = 842
+    },
+    block_00163 = {
+        {"fg", ch = "心鈴", size = "z2", mode = 3, path = ":fg/mis/z2/", file = "mis_z2a0800", face = "a0009", head = "mis_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11752", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「我希望你抛弃我！」"
+                }
+            }
+        },
+        linkback = "block_00162",
+        linknext = "block_00164",
+        line = 847
+    },
+    block_00164 = {
+        {"fg", ch = "心鈴", size = "z2", mode = 3, path = ":fg/mis/z2/", file = "mis_z2b0800", face = "b0006", head = "mis_z2b", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11753", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「我希望你能像对待其他家人那样，把我当作无关紧要的存在！」"
+                }
+            }
+        },
+        linkback = "block_00163",
+        linknext = "block_00165",
+        line = 852
+    },
+    block_00165 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10112", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00164",
+        linknext = "block_00166",
+        line = 856
+    },
+    block_00166 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = -400, file = "zbg001e", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0009", head = "rej_z2a", lv = 5, id = 10, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10113", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「草薙君，你怎么看？」"
+                }
+            }
+        },
+        linkback = "block_00165",
+        linknext = "block_00167",
+        line = 866
+    },
+    block_00167 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么看什么呢？」"
+                }
+            }
+        },
+        linkback = "block_00166",
+        linknext = "block_00168",
+        line = 869
+    },
+    block_00168 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10114", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「就是字面意思，你如何看待现在心铃与我的关系？」"
+                }
+            }
+        },
+        linkback = "block_00167",
+        linknext = "block_00169",
+        line = 874
+    },
+    block_00169 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「确切地说我不清楚。",
+                    {"rt2"},
+                    "但是，我可以说一件事」"
+                }
+            }
+        },
+        linkback = "block_00168",
+        linknext = "block_00170",
+        line = 878
+    },
+    block_00170 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我和心铃从小就因为独特的视线而被他人恐惧」"
+                }
+            }
+        },
+        linkback = "block_00169",
+        linknext = "block_00171",
+        line = 881
+    },
+    block_00171 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我认为那是因为我们的眼睛试图看透事物的表面，探寻其深处」"
+                }
+            }
+        },
+        linkback = "block_00170",
+        linknext = "block_00172",
+        line = 884
+    },
+    block_00172 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「本间礼次郎先生的眼神和我们艺术家不同，但我也感觉到了它试",
+                    {"rt2"},
+                    "图洞察事实底层的意味」"
+                }
+            }
+        },
+        linkback = "block_00171",
+        linknext = "block_00173",
+        line = 888
+    },
+    block_00173 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0011", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10115", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「眼睛是很重要的。",
+                    {"rt2"},
+                    "我就是凭借这双眼睛赚得财富」"
+                }
+            }
+        },
+        linkback = "block_00172",
+        linknext = "block_00174",
+        line = 894
+    },
+    block_00174 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10116", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我认为，正是因为这双眼睛让我看透了世界的本质，我才能获得",
+                    {"rt2"},
+                    "现在的成就」"
+                }
+            }
+        },
+        linkback = "block_00173",
+        linknext = "block_00175",
+        line = 899
+    },
+    block_00175 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0005", head = "rej_z2a", lv = 5, id = 10}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10117", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「这样的眼神被人们恐惧。",
+                    {"rt2"},
+                    "不，正确来说，是怕被看穿阴谋诡计的人害怕这样的眼神」"
+                }
+            }
+        },
+        linkback = "block_00174",
+        linknext = "block_00176",
+        line = 906
+    },
+    block_00176 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0005", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10118", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「草薙直哉先生，你也有过各种各样的阴谋诡计的痕迹」"
+                }
+            }
+        },
+        linkback = "block_00175",
+        linknext = "block_00177",
+        line = 911
+    },
+    block_00177 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0011", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10119", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「比如，中村家所收藏的六幅画作」"
+                }
+            }
+        },
+        linkback = "block_00176",
+        linknext = "block_00178",
+        line = 916
+    },
+    block_00178 = {
+        {"text"},
+        text = {
+            ja = {
+                {"礼次郎先生的眼睛闪烁着锐利的光芒。"}
+            }
+        },
+        linkback = "block_00177",
+        linknext = "block_00179",
+        line = 919
+    },
+    block_00179 = {
+        {"text"},
+        text = {
+            ja = {
+                {"进入了主题。"}
+            }
+        },
+        linkback = "block_00178",
+        linknext = "block_00180",
+        line = 922
+    },
+    block_00180 = {
+        {"text"},
+        text = {
+            ja = {
+                {"让我冲动起来的方法，是放哉所提出的。"}
+            }
+        },
+        linkback = "block_00179",
+        linknext = "block_00181",
+        line = 925
+    },
+    block_00181 = {
+        {"text"},
+        text = {
+            ja = {
+                {"关于墓碑铭的秘密——。"}
+            }
+        },
+        linkback = "block_00180",
+        linknext = "block_00182",
+        line = 928
+    },
+    block_00182 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，我却出奇的冷静。"}
+            }
+        },
+        linkback = "block_00181",
+        linknext = "block_00183",
+        line = 931
+    },
+    block_00183 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我质问着他的眼睛。"}
+            }
+        },
+        linkback = "block_00182",
+        linknext = "block_00184",
+        line = 934
+    },
+    block_00184 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「遗憾的是……」"
+                }
+            }
+        },
+        linkback = "block_00183",
+        linknext = "block_00185",
+        line = 937
+    },
+    block_00185 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我并未感到你的眼神有任何可怕之处」"
+                }
+            }
+        },
+        linkback = "block_00184",
+        linknext = "block_00186",
+        line = 940
+    },
+    block_00186 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「特别是现在，你的眼中一点恐怖的痕迹都没有」"
+                }
+            }
+        },
+        linkback = "block_00185",
+        linknext = "block_00187",
+        line = 943
+    },
+    block_00187 = {
+        {"bg", speed = 300, time = 300, sync = 0, file = "zbg001e", path = ":bg/", x2 = 600, y2 = 0, x = 800, y = 0, ax = 1920, ay = 1080, bx = -960, by = -540},
+        {"fg", ch = "心鈴", size = "z2", speed = 300, time = 300, mode = 3, path = ":fg/mis/z2/", file = "mis_z2a0810", face = "a0014", head = "mis_z2a", x2 = -200, x = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11754", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「我讨厌爸爸的眼睛！」"
+                }
+            }
+        },
+        linkback = "block_00186",
+        linknext = "block_00188",
+        line = 958
+    },
+    block_00188 = {
+        {"fg", ch = "心鈴", size = "z2", mode = 3, path = ":fg/mis/z2/", file = "mis_z2a0810", face = "a0008", head = "mis_z2a", x = 0, lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11755", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「因为，爸爸的眼睛是——」"
+                }
+            }
+        },
+        linkback = "block_00187",
+        linknext = "block_00189",
+        line = 963
+    },
+    block_00189 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = -400, file = "zbg001e", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0, y = 0},
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0011", head = "rej_z2a", lv = 5, id = 10, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10120", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「你们觉得我的眼睛是怎样的呢？」"
+                }
+            }
+        },
+        linkback = "block_00188",
+        linknext = "block_00190",
+        line = 976
+    },
+    block_00190 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只有当你看向心铃时，我才看到了普通的父亲的视线」"
+                }
+            }
+        },
+        linkback = "block_00189",
+        linknext = "block_00191",
+        line = 979
+    },
+    block_00191 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「即使对我进行类似恐吓的行为，不，尤其是那时，一旦涉及到心",
+                    {"rt2"},
+                    "铃，本间礼次郎先生的眼神立刻充满了温柔」"
+                }
+            }
+        },
+        linkback = "block_00190",
+        linknext = "block_00192",
+        line = 982
+    },
+    block_00192 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我只看到了一个只是在担心自己女儿的父亲的视线」"
+                }
+            }
+        },
+        linkback = "block_00191",
+        linknext = "block_00193",
+        line = 985
+    },
+    block_00193 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以，您才会做出那种低级的戏剧化动作吗？」"
+                }
+            }
+        },
+        linkback = "block_00192",
+        linknext = "block_00194",
+        line = 988
+    },
+    block_00194 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果是平时的您，这样的举动可能会被视为愚蠢之举」"
+                }
+            }
+        },
+        linkback = "block_00193",
+        linknext = "block_00195",
+        line = 991
+    },
+    block_00195 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「正是因为不露手底，不让人察觉，本间礼次郎先生才被大家视为",
+                    {"rt2"},
+                    "可怕的经营者」"
+                }
+            }
+        },
+        linkback = "block_00194",
+        linknext = "block_00196",
+        line = 994
+    },
+    block_00196 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「面对现在的本间礼次郎，应该没有多少人会感到恐惧」"
+                }
+            }
+        },
+        linkback = "block_00195",
+        linknext = "block_00197",
+        line = 997
+    },
+    block_00197 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10121", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00196",
+        linknext = "block_00198",
+        line = 1003
+    },
+    block_00198 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10122", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「原来如此……」"
+                }
+            }
+        },
+        linkback = "block_00197",
+        linknext = "block_00199",
+        line = 1008
+    },
+    block_00199 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0004", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10123", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「看来我无需再多言了」"
+                }
+            }
+        },
+        linkback = "block_00198",
+        linknext = "block_00200",
+        line = 1013
+    },
+    block_00200 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0005", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10124", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「草薙直哉先生对我怎么想，那是您的自由」"
+                }
+            }
+        },
+        linkback = "block_00199",
+        linknext = "block_00201",
+        line = 1018
+    },
+    block_00201 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0005", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10125", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「当然，您也清楚，我随时可以让您在社会上消声匿迹，甚至可以",
+                    {"rt2"},
+                    "夺走心铃的自由」"
+                }
+            }
+        },
+        linkback = "block_00200",
+        linknext = "block_00202",
+        line = 1023
+    },
+    block_00202 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是的」"
+                }
+            }
+        },
+        linkback = "block_00201",
+        linknext = "block_00203",
+        line = 1026
+    },
+    block_00203 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我认为这些都是事实」"
+                }
+            }
+        },
+        linkback = "block_00202",
+        linknext = "block_00204",
+        line = 1029
+    },
+    block_00204 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「您可以随意处置我们」"
+                }
+            }
+        },
+        linkback = "block_00203",
+        linknext = "block_00205",
+        line = 1032
+    },
+    block_00205 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「即便如此，我依然无法从本间礼次郎先生身上感受到恐怖」"
+                }
+            }
+        },
+        linkback = "block_00204",
+        linknext = "block_00206",
+        line = 1035
+    },
+    block_00206 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10126", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00205",
+        linknext = "block_00207",
+        line = 1041
+    },
+    block_00207 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10127", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「因为我只活在商业世界中，我并不了解，",
+                    {"rt2"},
+                    "我以前并不知道在艺术家中也有这样的人存在」"
+                }
+            }
+        },
+        linkback = "block_00206",
+        linknext = "block_00208",
+        line = 1047
+    },
+    block_00208 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0008", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10128", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「如果不是那个时候」"
+                }
+            }
+        },
+        linkback = "block_00207",
+        linknext = "block_00209",
+        line = 1052
+    },
+    block_00209 = {
+        {"text"},
+        text = {
+            ja = {
+                {"礼次郎先生似乎在凝视着远方，他这样说道。"}
+            }
+        },
+        linkback = "block_00208",
+        linknext = "block_00210",
+        line = 1055
+    },
+    block_00210 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0001", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "或许是注意到了我疑惑的表情，礼次郎先生将视线回到了我身上，",
+                    {"rt2"},
+                    "继续说道。"
+                }
+            }
+        },
+        linkback = "block_00209",
+        linknext = "block_00211",
+        line = 1060
+    },
+    block_00211 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0003", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10129", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「呵呵呵，恩田放哉先生曾说过你和心铃都是怪物，我现在很理解",
+                    {"rt2"},
+                    "他的感受」"
+                }
+            }
+        },
+        linkback = "block_00210",
+        linknext = "block_00212",
+        line = 1065
+    },
+    block_00212 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0002", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10130", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「因为我自己也常常被人这样称呼」"
+                }
+            }
+        },
+        linkback = "block_00211",
+        linknext = "block_00213",
+        line = 1071
+    },
+    block_00213 = {
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0010", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10131", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「那么——」"
+                }
+            }
+        },
+        linkback = "block_00212",
+        linknext = "block_00214",
+        line = 1076
+    },
+    block_00214 = {
+        {"msgoff"},
+        {"se", id = 1, file = "se0017"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg001e", path = ":bg/", sync = 0},
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, resize = 1, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0010", head = "rej_z1a", lv = 4, id = 10, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"礼次郎先生站了起来。"}
+            }
+        },
+        linkback = "block_00213",
+        linknext = "block_00215",
+        line = 1087
+    },
+    block_00215 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我们的谈话还没——」"
+                }
+            }
+        },
+        linkback = "block_00214",
+        linknext = "block_00216",
+        line = 1090
+    },
+    block_00216 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10132", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「不，就到这里吧」"
+                }
+            }
+        },
+        linkback = "block_00215",
+        linknext = "block_00217",
+        line = 1095
+    },
+    block_00217 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10133", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「商业谈话的一个要点就是简洁地传达真相」"
+                }
+            }
+        },
+        linkback = "block_00216",
+        linknext = "block_00218",
+        line = 1100
+    },
+    block_00218 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0005", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10134", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「你和心铃正在以结婚为前提交往」"
+                }
+            }
+        },
+        linkback = "block_00217",
+        linknext = "block_00219",
+        line = 1105
+    },
+    block_00219 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0004", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10135", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我只是听到了这个事实」"
+                }
+            }
+        },
+        linkback = "block_00218",
+        linknext = "block_00220",
+        line = 1110
+    },
+    block_00220 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10136", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「仅仅这个就足够了，不是吗？」"
+                }
+            }
+        },
+        linkback = "block_00219",
+        linknext = "block_00221",
+        line = 1115
+    },
+    block_00221 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0011", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10137", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「我说错了吗？草薙直哉君」"
+                }
+            }
+        },
+        linkback = "block_00220",
+        linknext = "block_00222",
+        line = 1121
+    },
+    block_00222 = {
+        {"text"},
+        text = {
+            ja = {
+                {"本间礼次郎先生最后看着我。"}
+            }
+        },
+        linkback = "block_00221",
+        linknext = "block_00223",
+        line = 1124
+    },
+    block_00223 = {
+        {"text"},
+        text = {
+            ja = {
+                {"仿佛可以吸收一切的漆黑眼瞳。"}
+            }
+        },
+        linkback = "block_00222",
+        linknext = "block_00224",
+        line = 1127
+    },
+    block_00224 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这与他看向心铃时的目光完全不同。"}
+            }
+        },
+        linkback = "block_00223",
+        linknext = "block_00225",
+        line = 1130
+    },
+    block_00225 = {
+        {"text"},
+        text = {
+            ja = {
+                {"确实，这与窥视艺术家深渊的眼睛不同。"}
+            }
+        },
+        linkback = "block_00224",
+        linknext = "block_00226",
+        line = 1133
+    },
+    block_00226 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这是一种凝视着更深业界的目光。"}
+            }
+        },
+        linkback = "block_00225",
+        linknext = "block_00227",
+        line = 1136
+    },
+    block_00227 = {
+        {"text"},
+        text = {
+            ja = {
+                {"就像是通往恐怖世界的洞口。"}
+            }
+        },
+        linkback = "block_00226",
+        linknext = "block_00228",
+        line = 1139
+    },
+    block_00228 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，我——"}
+            }
+        },
+        linkback = "block_00227",
+        linknext = "block_00229",
+        line = 1142
+    },
+    block_00229 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「正如您所说。",
+                    {"rt2"},
+                    "多余的闲聊会令人浑浊」"
+                }
+            }
+        },
+        linkback = "block_00228",
+        linknext = "block_00230",
+        line = 1146
+    },
+    block_00230 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0001", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「从浑浊的身体里只能产生烟雾般的言语」"
+                }
+            }
+        },
+        linkback = "block_00229",
+        linknext = "block_00231",
+        line = 1151
+    },
+    block_00231 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诚实，诚意，与这些词语无关的地方」"
+                }
+            }
+        },
+        linkback = "block_00230",
+        linknext = "block_00232",
+        line = 1154
+    },
+    block_00232 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果双方都是真诚的，那么言语就越少越好」"
+                }
+            }
+        },
+        linkback = "block_00231",
+        linknext = "block_00233",
+        line = 1157
+    },
+    block_00233 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果是被磨练过的，那么越被磨练越好」"
+                }
+            }
+        },
+        linkback = "block_00232",
+        linknext = "block_00234",
+        line = 1160
+    },
+    block_00234 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我认为这就是言语的真理」"
+                }
+            }
+        },
+        linkback = "block_00233",
+        linknext = "block_00235",
+        line = 1163
+    },
+    block_00235 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0002", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10138", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「呵呵……，说的好」"
+                }
+            }
+        },
+        linkback = "block_00234",
+        linknext = "block_00236",
+        line = 1168
+    },
+    block_00236 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0011", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "man_rej_10139", ch = "rej"}
+            },
+            ja = {
+                {
+                    name = {"礼次郎"},
+                    "「那么，我期待着下次的相遇，不论是何时何地」"
+                }
+            }
+        },
+        linkback = "block_00235",
+        linknext = "block_00237",
+        line = 1173
+    },
+    block_00237 = {
+        {"fg", ch = "礼次郎", size = "z1", ex03 = "a0097", mode = 3, path = ":fg/rej/z1/", file = "rej_z1a0000", face = "a0011", head = "rej_z1a", lv = 4, id = 10},
+        {"text"},
+        text = {
+            ja = {
+                {"在最后瞥了我一眼那恐怖的眼睛之后，"}
+            }
+        },
+        linkback = "block_00236",
+        linknext = "block_00238",
+        line = 1178
+    },
+    block_00238 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", x = -600, file = "zbg001e", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "礼次郎", size = "z2", ex03 = "a0097", mode = 3, resize = 1, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0008", head = "rej_z2a", lv = 5, id = 10, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            ja = {
+                {"他转过身的那一瞬间。"}
+            }
+        },
+        linkback = "block_00237",
+        linknext = "block_00239",
+        line = 1188
+    },
+    block_00239 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我不会忘记他看到心铃进入视线那一瞬的眼神。"}
+            }
+        },
+        linkback = "block_00238",
+        linknext = "block_00240",
+        line = 1191
+    },
+    block_00240 = {
+        {"fg", ch = "礼次郎", mode = 3, path = ":fg/rej/z2/", file = "rej_z2a0000", face = "a0010", ex03 = "a0097", head = "rej_z2a", lv = 5, id = 10},
+        {"text"},
+        text = {
+            ja = {
+                {"那是演技，还是真实，我无从知晓。"}
+            }
+        },
+        linkback = "block_00239",
+        linknext = "block_00241",
+        line = 1198
+    },
+    block_00241 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，我的眼睛却从他的情绪中读取出了一种含义。"}
+            }
+        },
+        linkback = "block_00240",
+        linknext = "block_00242",
+        line = 1201
+    },
+    block_00242 = {
+        {"fg", ch = "礼次郎", mx = 40, mode = -1, lv = 5, id = 10},
+        {"bgm", stop = 1, time = 10000},
+        {"se", id = 1, file = "se0008"},
+        {"text"},
+        text = {
+            ja = {
+                {"本间礼次郎先生离开了咖啡店。"}
+            }
+        },
+        linkback = "block_00241",
+        linknext = "block_00243",
+        line = 1211
+    },
+    block_00243 = {
+        {"bg", time = 500, file = "bg001e", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"他的身影消失后，我才注意到自己的眼球已经干涸。"}
+            }
+        },
+        linkback = "block_00242",
+        linknext = "block_00244",
+        line = 1216
+    },
+    block_00244 = {
+        {"se", stop = 1, time = 500, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"面对他的时候，我似乎几乎没有眨眼。"}
+            }
+        },
+        linkback = "block_00243",
+        linknext = "block_00245",
+        line = 1221
+    },
+    block_00245 = {
+        {"text"},
+        text = {
+            ja = {
+                {"即使是一瞬间也无法移开视线的紧张。"}
+            }
+        },
+        linkback = "block_00244",
+        linknext = "block_00246",
+        line = 1224
+    },
+    block_00246 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这正是本间礼次郎先生的存在。"}
+            }
+        },
+        linkback = "block_00245",
+        linknext = "block_00247",
+        line = 1227
+    },
+    block_00247 = {
+        {"bgm", stop = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我深深地坐在咖啡店的椅子上。"}
+            }
+        },
+        linkback = "block_00246",
+        linknext = "block_00248",
+        line = 1243
+    },
+    block_00248 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我的身体感到疼痛。"}
+            }
+        },
+        linkback = "block_00247",
+        linknext = "block_00249",
+        line = 1246
+    },
+    block_00249 = {
+        {"text"},
+        text = {
+            ja = {
+                {"身体像是要崩裂开来。"}
+            }
+        },
+        linkback = "block_00248",
+        linknext = "block_00250",
+        line = 1249
+    },
+    block_00250 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我用手按住眼睛。"}
+            }
+        },
+        linkback = "block_00249",
+        linknext = "block_00251",
+        line = 1252
+    },
+    block_00251 = {
+        {"text"},
+        text = {
+            ja = {
+                {"头痛欲裂。"}
+            }
+        },
+        linkback = "block_00250",
+        linknext = "block_00252",
+        line = 1255
+    },
+    block_00252 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我从未对一个人感到如此强烈的压力。"}
+            }
+        },
+        linkback = "block_00251",
+        linknext = "block_00253",
+        line = 1258
+    },
+    block_00253 = {
+        {"text"},
+        text = {
+            ja = {
+                {"本间礼次郎。"}
+            }
+        },
+        linkback = "block_00252",
+        linknext = "block_00254",
+        line = 1261
+    },
+    block_00254 = {
+        {"text"},
+        text = {
+            ja = {
+                {"让鸟谷沙希都觉得是底不可测的恐怖人物的男人。"}
+            }
+        },
+        linkback = "block_00253",
+        linknext = "block_00255",
+        line = 1264
+    },
+    block_00255 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，面对面的时候，我真心觉得他是一个只能形容为怪人的人物。"}
+            }
+        },
+        linkback = "block_00254",
+        linknext = "block_00256",
+        line = 1267
+    },
+    block_00256 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「……」"
+                }
+            }
+        },
+        linkback = "block_00255",
+        linknext = "block_00257",
+        line = 1270
+    },
+    block_00257 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃……」"
+                }
+            }
+        },
+        linkback = "block_00256",
+        linknext = "block_00258",
+        line = 1273
+    },
+    block_00258 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11756", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「？」"
+                }
+            }
+        },
+        linkback = "block_00257",
+        linknext = "block_00259",
+        line = 1278
+    },
+    block_00259 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我发出的奇怪声音也让心铃吃了一惊。"}
+            }
+        },
+        linkback = "block_00258",
+        linknext = "block_00260",
+        line = 1281
+    },
+    block_00260 = {
+        {"text"},
+        text = {
+            ja = {
+                {"但是，我无法止住那个声音。"}
+            }
+        },
+        linkback = "block_00259",
+        linknext = "block_00261",
+        line = 1286
+    },
+    block_00261 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, resize = 1, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0007", head = "mis_z1a", lv = 4, id = 9},
+        {"bgm", file = "bgm144"},
+        {"quake", mode = "mw"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「呃呃呃呃哦哦哦哦哦，好可怕啊啊啊啊啊！！」"
+                }
+            }
+        },
+        linkback = "block_00260",
+        linknext = "block_00262",
+        line = 1299
+    },
+    block_00262 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11757", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「诶？　你害怕了吗？」"
+                }
+            }
+        },
+        linkback = "block_00261",
+        linknext = "block_00263",
+        line = 1302
+    },
+    block_00263 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不是吗，这么恐怖」"
+                }
+            }
+        },
+        linkback = "block_00262",
+        linknext = "block_00264",
+        line = 1305
+    },
+    block_00264 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0002", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11758", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「但是直哉，你一点也没表现出害怕」"
+                }
+            }
+        },
+        linkback = "block_00263",
+        linknext = "block_00265",
+        line = 1310
+    },
+    block_00265 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是因为我忍住了」"
+                }
+            }
+        },
+        linkback = "block_00264",
+        linknext = "block_00266",
+        line = 1313
+    },
+    block_00266 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0008", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0001", head = "mis_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11759", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「但是，我觉得爸爸对直哉你也有同样的恐怖感觉」"
+                }
+            }
+        },
+        linkback = "block_00265",
+        linknext = "block_00267",
+        line = 1320
+    },
+    block_00267 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，那不可能吧。",
+                    {"rt2"},
+                    "他是有绝大权力的人，我只是一个普通的教师」"
+                }
+            }
+        },
+        linkback = "block_00266",
+        linknext = "block_00268",
+        line = 1324
+    },
+    block_00268 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「他怎么可能会对我感到害怕」"
+                }
+            }
+        },
+        linkback = "block_00267",
+        linknext = "block_00269",
+        line = 1327
+    },
+    block_00269 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0010", head = "mis_z1a", lv = 4, id = 9},
+        {"fgact", ch = "心鈴", act = "いいえ", lv = 4, id = 9},
+        {"text"},
+        delay = {
+            vl01 = {
+                {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0001", head = "mis_z1a", lv = 4, id = 9}
+            }
+        },
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11760", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「不，直哉，你看向爸爸的眼神非常可怕」"
+                }
+            }
+        },
+        linkback = "block_00268",
+        linknext = "block_00270",
+        line = 1334
+    },
+    block_00270 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「诶？什么？有这样的瞬间吗？」"
+                }
+            }
+        },
+        linkback = "block_00269",
+        linknext = "block_00271",
+        line = 1337
+    },
+    block_00271 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1b0800", face = "b0001", head = "mis_z1b", lv = 4, id = 9},
+        {"fgact", ch = "心鈴", act = "うなづく", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11761", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「是的，我也是第一次见到草薙直哉那样特别的目光。",
+                    {"rt2"},
+                    "那样锐利的眼神，就连爸爸也无法做到」"
+                }
+            }
+        },
+        linkback = "block_00270",
+        linknext = "block_00272",
+        line = 1345
+    },
+    block_00272 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1b0800", face = "b0010", head = "mis_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11762", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「而且，任何权力者都会对伟大的表现者感到恐惧」"
+                }
+            }
+        },
+        linkback = "block_00271",
+        linknext = "block_00273",
+        line = 1350
+    },
+    block_00273 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1b0800", face = "b0014", head = "mis_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11763", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「这就是为什么历史上有很多次，表现者被权力者投入监狱」"
+                }
+            }
+        },
+        linkback = "block_00272",
+        linknext = "block_00274",
+        line = 1355
+    },
+    block_00274 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1b0800", face = "b0001", head = "mis_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11764", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「我认为艺术家就是这样的存在」"
+                }
+            }
+        },
+        linkback = "block_00273",
+        linknext = "block_00275",
+        line = 1360
+    },
+    block_00275 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我不清楚艺术家的情况，但我只是一个普通的教师。",
+                    {"rt2"},
+                    "而且，我是在他经营的众多学校之一工作的人」"
+                }
+            }
+        },
+        linkback = "block_00274",
+        linknext = "block_00276",
+        line = 1364
+    },
+    block_00276 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「礼次郎先生对我没有任何需要害怕的」"
+                }
+            }
+        },
+        linkback = "block_00275",
+        linknext = "block_00277",
+        line = 1367
+    },
+    block_00277 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0001", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11765", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「是这样吗？",
+                    {"rt2"},
+                    "至少，你看穿了父亲的本质」"
+                }
+            }
+        },
+        linkback = "block_00276",
+        linknext = "block_00278",
+        line = 1373
+    },
+    block_00278 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0010", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11766", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「在你看穿他的那一刻，我看到了他眼中的动摇」"
+                }
+            }
+        },
+        linkback = "block_00277",
+        linknext = "block_00279",
+        line = 1378
+    },
+    block_00279 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我不知道他是否动摇了。我只是说出了我所想的」"
+                }
+            }
+        },
+        linkback = "block_00278",
+        linknext = "block_00280",
+        line = 1381
+    },
+    block_00280 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「只是我说完之后，自己很后悔，因为我受到了很大的惊吓」"
+                }
+            }
+        },
+        linkback = "block_00279",
+        linknext = "block_00281",
+        line = 1384
+    },
+    block_00281 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0001", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11767", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「惊吓？」"
+                }
+            }
+        },
+        linkback = "block_00280",
+        linknext = "block_00282",
+        line = 1389
+    },
+    block_00282 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「因为，真的，他对你的目光和最后展示的目光完全不一样",
+                    {"rt2"},
+                    "」"
+                }
+            }
+        },
+        linkback = "block_00281",
+        linknext = "block_00283",
+        line = 1393
+    },
+    block_00283 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那样的目光，得经历多少苦难才能有的」"
+                }
+            }
+        },
+        linkback = "block_00282",
+        linknext = "block_00284",
+        line = 1396
+    },
+    block_00284 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0008", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11768", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「不过直哉，你很好地指出了我和父亲的关系」"
+                }
+            }
+        },
+        linkback = "block_00283",
+        linknext = "block_00285",
+        line = 1401
+    },
+    block_00285 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那是可以理解的。",
+                    {"rt2"},
+                    "无论他是本间礼次郎，对你来说，他的目光只是普通父亲的目光而",
+                    {"rt2"},
+                    "已」"
+                }
+            }
+        },
+        linkback = "block_00284",
+        linknext = "block_00286",
+        line = 1405
+    },
+    block_00286 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0010", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11769", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「但是没有人注意到这一点」"
+                }
+            }
+        },
+        linkback = "block_00285",
+        linknext = "block_00287",
+        line = 1410
+    },
+    block_00287 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「难道不是因为他很少展示这样的眼神吗？」"
+                }
+            }
+        },
+        linkback = "block_00286",
+        linknext = "block_00288",
+        line = 1413
+    },
+    block_00288 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0001", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11770", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「真的是这样吗？」"
+                }
+            }
+        },
+        linkback = "block_00287",
+        linknext = "block_00289",
+        line = 1418
+    },
+    block_00289 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0007", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            ja = {
+                {"我把手轻轻地放在心鈴的头上。"}
+            }
+        },
+        linkback = "block_00288",
+        linknext = "block_00290",
+        line = 1423
+    },
+    block_00290 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，不管怎样，你做得很好」"
+                }
+            }
+        },
+        linkback = "block_00289",
+        linknext = "block_00291",
+        line = 1426
+    },
+    block_00291 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0800", face = "a0001", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11771", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「做得很好？」"
+                }
+            }
+        },
+        linkback = "block_00290",
+        linknext = "block_00292",
+        line = 1431
+    },
+    block_00292 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你确实向你的父亲表达了“讨厌”这个情感」"
+                }
+            }
+        },
+        linkback = "block_00291",
+        linknext = "block_00293",
+        line = 1434
+    },
+    block_00293 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1b0800", face = "b0007", head = "mis_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11772", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「啊……」"
+                }
+            }
+        },
+        linkback = "block_00292",
+        linknext = "block_00294",
+        line = 1439
+    },
+    block_00294 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「你可能会对父亲有些反感，但是你应该从来没有那么直接地表达",
+                    {"rt2"},
+                    "过自己的情绪吧」"
+                }
+            }
+        },
+        linkback = "block_00293",
+        linknext = "block_00295",
+        line = 1443
+    },
+    block_00295 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1b0800", face = "b0001", head = "mis_z1b", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11773", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「难道是我刚才说的那些话吗」"
+                }
+            }
+        },
+        linkback = "block_00294",
+        linknext = "block_00296",
+        line = 1448
+    },
+    block_00296 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对，就是静流说的那个“真正的讨厌”。就是情绪化地向对方传达",
+                    {"rt2"},
+                    "自己的想法」"
+                }
+            }
+        },
+        linkback = "block_00295",
+        linknext = "block_00297",
+        line = 1452
+    },
+    block_00297 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「静流可能不知道你憎恨你的父亲。但是，她应该认为你并不真正",
+                    {"rt2"},
+                    "讨厌他」"
+                }
+            }
+        },
+        linkback = "block_00296",
+        linknext = "block_00298",
+        line = 1456
+    },
+    block_00298 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「所以，她说你必须真正地讨厌你的父亲」"
+                }
+            }
+        },
+        linkback = "block_00297",
+        linknext = "block_00299",
+        line = 1459
+    },
+    block_00299 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0800", face = "a0001", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11774", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「在你这么说之前我都没注意到」"
+                }
+            }
+        },
+        linkback = "block_00298",
+        linknext = "block_00300",
+        line = 1464
+    },
+    block_00300 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "即便是一向聪明的心鈴，当事情涉及到自己的时候，也会有所不明",
+                    {"rt2"},
+                    "白。"
+                }
+            }
+        },
+        linkback = "block_00299",
+        linknext = "block_00301",
+        line = 1467
+    },
+    block_00301 = {
+        {"text"},
+        text = {
+            ja = {
+                {"她终于理解了刚才的对话就是静流所说的那件事。"}
+            }
+        },
+        linkback = "block_00300",
+        linknext = "block_00302",
+        line = 1470
+    },
+    block_00302 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「总之，我们的谈话结束了。",
+                    {"rt2"},
+                    "我不知道你的父亲是否满意」"
+                }
+            }
+        },
+        linkback = "block_00301",
+        linknext = "block_00303",
+        line = 1474
+    },
+    block_00303 = {
+        {"fg", ch = "心鈴", size = "z1", mode = 3, path = ":fg/mis/z1/", file = "mis_z1a0810", face = "a0002", head = "mis_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_mis_11775", ch = "mis"}
+            },
+            ja = {
+                {
+                    name = {"心鈴"},
+                    "「至少我完成了汇报」"
+                }
+            }
+        },
+        linkback = "block_00302",
+        linknext = "block_00304",
+        line = 1479
+    },
+    block_00304 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「然后，我们得到了承认」"
+                }
+            }
+        },
+        linkback = "block_00303",
+        linknext = "block_00305",
+        line = 1482
+    },
+    block_00305 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「现在只要这些就足够了」"
+                }
+            }
+        },
+        linkback = "block_00304",
+        linknext = "block_00306",
+        line = 1485
+    },
+    block_00306 = {
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"excall", file = "03_mis07_2"},
+        {"text"},
+        linkback = "block_00305",
+        line = 1489
+    },
+    label = {
+        top = {block = "block_00000", label = 1}
+    }
+}
