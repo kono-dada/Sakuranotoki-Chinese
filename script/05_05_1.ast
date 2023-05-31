@@ -1,1749 +1,1636 @@
 astver = 2.0
 ast = {
-	block_00000 = {
-		{"savetitle", text="第Ⅴ章"},
-		{"msg", no=1},
-		{"bg", file="アイキャッチ05", id=1, lv=5, path=":cg/", sync=0},
-		{"extrans"},
-		{"ex", time=5000, func="wait"},
-		{"bgm", stop=1, time=1000},
-		{"se", stop=1, id=-1, time=1000},
-		{"vostop", stop=1, time=1000},
-		{"ntclear"},
-		{"cgdel", id=-1},
-		{"bg", time=1000, file="black", path=":bg/"},
-		{"cacheclear"},
-		{"ex", time=1000, func="wait"},
-		{"excall", label="flagon", cond="g.countdown5==1"},
-		{"skipstop"},
-		{"autoplay", speed=500, wait=500, auto=500},
-		{"bg", file="カウントダウン05_1", id=1, lv=5, path=":cg/"},
-		{"ex", time=1500, func="wait"},
-		{"se", id=1, file="se0147"},
-		{"bg", file="カウントダウン05_2", id=1, lv=5, path=":cg/", sync=0},
-		{"extrans", time=500},
-		{"ex", time=3000, func="wait"},
-		{"bgm", stop=1, time=1000},
-		{"se", stop=1, id=-1, time=1000},
-		{"vostop", stop=1, time=1000},
-		{"ntclear"},
-		{"cgdel", id=-1},
-		{"bg", time=1000, file="black", path=":bg/"},
-		{"cacheclear"},
-		{"ex", time=1000, func="wait"},
-		{"autoplay", mode="stop"},
-		{"excall", label="join"},
-		{"bg", file="カウントダウン05_1", id=1, lv=5, path=":cg/"},
-		{"ex", time=1500, func="wait"},
-		{"se", id=1, file="se0147"},
-		{"bg", file="カウントダウン05_2", id=1, lv=5, path=":cg/", sync=0},
-		{"extrans", time=500},
-		{"ex", time=3000, func="wait"},
-		{"bgm", stop=1, time=1000},
-		{"se", stop=1, id=-1, time=1000},
-		{"vostop", stop=1, time=1000},
-		{"ntclear"},
-		{"cgdel", id=-1},
-		{"bg", time=1000, file="black", path=":bg/"},
-		{"cacheclear"},
-		{"ex", time=1000, func="wait"},
-		{"eval", exp="g.countdown5=1"},
-		{"se", vol=30, loop=1, id=1, file="se0045"},
-		{"bg", file="black", path=":bg/"},
-		{"text"},
-		text = {
-			ja = {
-				{
-					"アラームが聞こえる。",
-					{"rt2"},
-				},
-			},
-		},
-		linknext = "block_00001",
-		line = 61,
-	},
-	block_00001 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「んっ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00000",
-		linknext = "block_00002",
-		line = 64,
-	},
-	block_00002 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"まだまぶたが重い。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00001",
-		linknext = "block_00003",
-		line = 67,
-	},
-	block_00003 = {
-		{"se", stop=1, time=100, id=1},
-		{"text"},
-		text = {
-			ja = {
-				{
-					"俺はアラームを消す。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00002",
-		linknext = "block_00004",
-		line = 72,
-	},
-	block_00004 = {
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10677", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「起きなくていいのか？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00003",
-		linknext = "block_00005",
-		line = 75,
-	},
-	block_00005 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「起きるよ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00004",
-		linknext = "block_00006",
-		line = 78,
-	},
-	block_00006 = {
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10678", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「そうか、だったら顔洗ってきたらどうだ？　料理出来ているぞ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00005",
-		linknext = "block_00007",
-		line = 81,
-	},
-	block_00007 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「そうだな」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00006",
-		linknext = "block_00008",
-		line = 84,
-	},
-	block_00008 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"俺は起き上がる。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00007",
-		linknext = "block_00009",
-		line = 90,
-	},
-	block_00009 = {
-		{"msgoff"},
-		{"bg", y=-100, file="zbg020i", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
-		{"fg", ch="藍", size="z2", mode=3, resize=1, path=":fg/aix/z2/", file="aix_z2a0100", face="a0002", head="aix_z2a", lv=5, id=9, sync=0},
-		{"extrans", rule="008b"},
-		{"bgm", file="bgm152"},
-		{"text"},
-		text = {
-			ja = {
-				{
-					"目覚めると、そこは夏目家ではない。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00008",
-		linknext = "block_00010",
-		line = 101,
-	},
-	block_00010 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"もうどのぐらい夏目の屋敷に帰ってないのだろう。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00009",
-		linknext = "block_00011",
-		line = 104,
-	},
-	block_00011 = {
-		{"fg", ch="藍", size="z2", mode=3, path=":fg/aix/z2/", file="aix_z2a0100", face="a0001", head="aix_z2a", lv=5, id=9},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10679", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「今日はだいぶ寒いみたいだぞ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00010",
-		linknext = "block_00012",
-		line = 109,
-	},
-	block_00012 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「ここにいるとまったく分からないな」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00011",
-		linknext = "block_00013",
-		line = 112,
-	},
-	block_00013 = {
-		{"bg", time=500, file="bg020i", path=":bg/"},
-		{"text"},
-		text = {
-			ja = {
-				{
-					"アトリエは外気温などに左右される事なく、完全に一定の温度に保たれている。",
-					{"rt2"},
-					"芸術作品を保管する意味もあるのだろう。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00012",
-		linknext = "block_00014",
-		line = 118,
-	},
-	block_00014 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"俺はアトリエの流し場で顔を洗う。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00013",
-		linknext = "block_00015",
-		line = 121,
-	},
-	block_00015 = {
-		{"cgdel", id=-1},
-		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
-		{"bg", rule=139, vague=40, file="bg020i", path=":bg/"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10680", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「さぁ、料理が出来ているぞ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00014",
-		linknext = "block_00016",
-		line = 128,
-	},
-	block_00016 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"そう言って、藍が料理をちゃぶ台に並べた。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00015",
-		linknext = "block_00017",
-		line = 131,
-	},
-	block_00017 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"俺はそのちゃぶ台の前に座る。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00016",
-		linknext = "block_00018",
-		line = 134,
-	},
-	block_00018 = {
-		{"bg", file="ev_con_25_03", path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「しかしなぁ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00017",
-		linknext = "block_00019",
-		line = 140,
-	},
-	block_00019 = {
-		{"bg", sync=0, face=1, file="ev_con_25_01", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10681", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「どうした？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00018",
-		linknext = "block_00020",
-		line = 145,
-	},
-	block_00020 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「いやさ、アトリエに畳敷いて、さらにちゃぶ台とテレビまで用意するとは思わなかったよ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00019",
-		linknext = "block_00021",
-		line = 148,
-	},
-	block_00021 = {
-		{"bg", sync=0, face=1, file="ev_con_25_03", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10682", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「だって、直哉がずっとアトリエで絵を描くって言うからさ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00020",
-		linknext = "block_00022",
-		line = 153,
-	},
-	block_00022 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「だとしても、こんなだだっ広いアトリエに四畳半とちゃぶ台置くと思わなかったよ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00021",
-		linknext = "block_00023",
-		line = 156,
-	},
-	block_00023 = {
-		{"bg", sync=0, face=1, file="ev_con_25_02", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10683", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「まぁ、放哉先生もお前が絵を描く事に対して協力的だったからな。",
-					{"rt2"},
-					"畳は夏目家の使っていない部屋のものを拝借した」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00022",
-		linknext = "block_00024",
-		line = 164,
-	},
-	block_00024 = {
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10684", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「そろそろ、あの部屋も畳を張り替えようと思っていたからな。",
-					{"rt2"},
-					"良い機会だ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00023",
-		linknext = "block_00025",
-		line = 168,
-	},
-	block_00025 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「あの部屋か……」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00024",
-		linknext = "block_00026",
-		line = 171,
-	},
-	block_00026 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「それにしても、いくら協力的と言ってもさ。こんな芸術のおもちゃ箱みたいな屋敷に、使い古した四畳半とちゃぶ台を置く事を許すもんかねぇ。",
-					{"rt2"},
-					"もうムーア展で俺が受賞なんて絶対に無いのになぁ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00025",
-		linknext = "block_00027",
-		line = 175,
-	},
-	block_00027 = {
-		{"bg", sync=0, face=1, file="ev_con_25_03", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10685", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「そうなのか？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00026",
-		linknext = "block_00028",
-		line = 182,
-	},
-	block_00028 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「そっか、藍はニュース見てないのか。まぁニューヨークと東京だと13時間も時差があるからな」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00027",
-		linknext = "block_00029",
-		line = 185,
-	},
-	block_00029 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"俺はそう言ってテレビをつける。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00028",
-		linknext = "block_00030",
-		line = 188,
-	},
-	block_00030 = {
-		{"bg", sync=0, face=1, file="ev_con_25_07", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			ja = {
-				{
-					"広いアトリエの中で、四畳半にちゃぶ台と料理と藍と俺、そこにあるテレビはまるでコントのセットの様であった。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00029",
-		linknext = "block_00031",
-		line = 195,
-	},
-	block_00031 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「朝のニュースで少しは触れるんじゃないか？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00030",
-		linknext = "block_00032",
-		line = 198,
-	},
-	block_00032 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"そんな話をしていると、ニュースから「ムーア公募展」の名が聞こえた。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00031",
-		linknext = "block_00033",
-		line = 201,
-	},
-	block_00033 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"「今年のプラティヌ・エポラールはニューヨークで活躍するルオ・ジー氏に決定",
-					{"rt2"},
-					"いたしましたねぇ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00032",
-		linknext = "block_00034",
-		line = 205,
-	},
-	block_00034 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"「この方は――」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00033",
-		linknext = "block_00035",
-		line = 208,
-	},
-	block_00035 = {
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10686", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「アメリカの最高賞が決まったのか」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00034",
-		linknext = "block_00036",
-		line = 211,
-	},
-	block_00036 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「ああ、中国の芸術家だ。かなり影響力がある現代芸術家だな」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00035",
-		linknext = "block_00037",
-		line = 214,
-	},
-	block_00037 = {
-		{"bg", sync=0, face=1, file="ev_con_25_01", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10687", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「そうなんだ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00036",
-		linknext = "block_00038",
-		line = 221,
-	},
-	block_00038 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"「さて、次は今日の天気です――」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00037",
-		linknext = "block_00039",
-		line = 224,
-	},
-	block_00039 = {
-		{"bg", sync=0, face=1, file="ev_con_25_07", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10688", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「もう、終わり？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00038",
-		linknext = "block_00040",
-		line = 231,
-	},
-	block_00040 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「そんなもんだよ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00039",
-		linknext = "block_00041",
-		line = 234,
-	},
-	block_00041 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"ムーア展については、番組でほんの少し触れる程度であった。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00040",
-		linknext = "block_00042",
-		line = 237,
-	},
-	block_00042 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"あれから新しい話題を日本画壇は提供出来ていない。",
-					{"rt2"},
-					"日々新しいニュースが飛び交う世の中だ。日本国民がムーア公募展に対する興味が薄れるのも当然だろう。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00041",
-		linknext = "block_00043",
-		line = 241,
-	},
-	block_00043 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「最高賞のアルジャン・ドファンもイギリスの画家に決まった。",
-					{"rt2"},
-					"この二個に並ぶ最高賞のオール・バレヌは該当者なしだった」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00042",
-		linknext = "block_00044",
-		line = 245,
-	},
-	block_00044 = {
-		{"bg", sync=0, face=1, file="ev_con_25_01", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10689", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「該当者なしとかあるのか？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00043",
-		linknext = "block_00045",
-		line = 252,
-	},
-	block_00045 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「オール・バレヌはフランス系の財団が中心だが、ここ数年はずっと該当者なしになっている」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00044",
-		linknext = "block_00046",
-		line = 255,
-	},
-	block_00046 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「ニューヨーク系のプラティヌ・エポラールとロンドン系のアルジャン・ドファンも、金融都市という意味合いが強い。実際この二つの賞は大きな金が動く」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00045",
-		linknext = "block_00047",
-		line = 258,
-	},
-	block_00047 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「パリ系はどうあっても権威的なものが強いのだろうな。だからオール・バレヌはなかなか受賞者が出ない」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00046",
-		linknext = "block_00048",
-		line = 261,
-	},
-	block_00048 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「日本人で誰も取ってない賞だしな」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00047",
-		linknext = "block_00049",
-		line = 264,
-	},
-	block_00049 = {
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10690", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「だったら一番凄い賞という事なのか？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00048",
-		linknext = "block_00050",
-		line = 267,
-	},
-	block_00050 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「いや、そんな事ない。実際オール・バレヌを受賞しても他の賞に比べてダントツでお金にならない」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00049",
-		linknext = "block_00051",
-		line = 270,
-	},
-	block_00051 = {
-		{"bg", sync=0, face=1, file="ev_con_25_03", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10691", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「え？　最高賞なのだから他の最高賞と同じ値段ではないのか？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00050",
-		linknext = "block_00052",
-		line = 275,
-	},
-	block_00052 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「賞金は同じだが、その後の作品の価格にあまり反映されない」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00051",
-		linknext = "block_00053",
-		line = 278,
-	},
-	block_00053 = {
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10692", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「そうなのか？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00052",
-		linknext = "block_00054",
-		line = 283,
-	},
-	block_00054 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「ムーア展というのはこれまで歴史上にあった、いかなる展覧会とも違う。",
-					{"rt2"},
-					"絵画の権威のためではなく、アートを投機の対象とするために始まった世界的な賞だ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00053",
-		linknext = "block_00055",
-		line = 287,
-	},
-	block_00055 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「他の世界的な賞に比べれば歴史も浅い。それでも注目を浴びるのは桁違いの金が動くからだ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00054",
-		linknext = "block_00056",
-		line = 290,
-	},
-	block_00056 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「ニューヨークとロンドン、共に株式市場として有名な都市だ。その二都市がプラティヌ・エポラールとアルジャン・ドファンという2つの賞を持っている意味は、そのまま絵画市場をコントロールしているからに他ならない」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00055",
-		linknext = "block_00057",
-		line = 293,
-	},
-	block_00057 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「それに比べてパリはそもそもが芸術と歴史の街だ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00056",
-		linknext = "block_00058",
-		line = 296,
-	},
-	block_00058 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「世界都市と言えば、ニューヨークとロンドン、そして東京、パリ……ここ最近では香港やシンガポールなんかも入るな」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00057",
-		linknext = "block_00059",
-		line = 299,
-	},
-	block_00059 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「世界都市というのは巨大という意味じゃない。それぞれが持つ世界的な影響力で計られる」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00058",
-		linknext = "block_00060",
-		line = 302,
-	},
-	block_00060 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「だとしたら、パリはやはり歴史的な芸術の街としての影響力が強い。",
-					{"rt2"},
-					"そんな都市の賞がオール・バレヌだ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00059",
-		linknext = "block_00061",
-		line = 306,
-	},
-	block_00061 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「だからこそ、権威はあるが、金になりづらいという感じになる。",
-					{"rt2"},
-					"そもそもフランスには古くて権威がある賞が多数あるが、別段これも金に直結はしない」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00060",
-		linknext = "block_00062",
-		line = 310,
-	},
-	block_00062 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「ムーア財団って言うのは複数の企業が協賛しているからな。実際裏では世間なんかが思いも寄らない様な力関係と思惑で動いているんだよ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00061",
-		linknext = "block_00063",
-		line = 313,
-	},
-	block_00063 = {
-		{"bg", sync=0, face=1, file="ev_con_25_01", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10693", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「そんなもんなんだなぁ。健一郎とかそんな世界で最高賞取っていたのか、なんだか凄いなぁ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00062",
-		linknext = "block_00064",
-		line = 318,
-	},
-	block_00064 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「親父は、下手なベンチャーのCEOよりもよっぽど金に汚ねぇからな」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00063",
-		linknext = "block_00065",
-		line = 321,
-	},
-	block_00065 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「それよりもごはんのおかわりくれない？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00064",
-		linknext = "block_00066",
-		line = 324,
-	},
-	block_00066 = {
-		{"bg", sync=0, face=1, file="ev_con_25_02", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10694", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「ああ、普通盛りでいいか」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00065",
-		linknext = "block_00067",
-		line = 331,
-	},
-	block_00067 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「ああ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00066",
-		linknext = "block_00068",
-		line = 334,
-	},
-	block_00068 = {
-		{"bg", sync=0, face=1, file="ev_con_25_03", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10695", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「ん？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00067",
-		linknext = "block_00069",
-		line = 341,
-	},
-	block_00069 = {
-		{"bgm", stop=1},
-		{"se", id=1, vol=50, file="se0150"},
-		{"text"},
-		text = {
-			ja = {
-				{
-					"アトリエの重い扉が開く。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00068",
-		linknext = "block_00070",
-		line = 349,
-	},
-	block_00070 = {
-		{"se", file="se0151", id=2, vol=75},
-		{"text"},
-		text = {
-			ja = {
-				{
-					"大理石の床を硬い靴の音が響く。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00069",
-		linknext = "block_00071",
-		line = 354,
-	},
-	block_00071 = {
-		{"se", stop=1, id=2, time=500},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10696", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「え？　お、お前は」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00070",
-		linknext = "block_00072",
-		line = 359,
-	},
-	block_00072 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「ひさしぶりだな」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00071",
-		linknext = "block_00073",
-		line = 362,
-	},
-	block_00073 = {
-		{"bg", time=500, file="ev_con_25_08", path=":ev/ev_con_25/", set="ev_con_25"},
-		{"bgm", file="bgm156"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_shz_10001", ch="shz"},
-			},
-			ja = {
-				{
-					name = {"雫", "？？？"},
-					"「見なくても誰だか分かるのですか」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00072",
-		linknext = "block_00074",
-		line = 371,
-	},
-	block_00074 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「そうだな。雫は独特な雰囲気があるし」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00073",
-		linknext = "block_00075",
-		line = 374,
-	},
-	block_00075 = {
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_shz_10002", ch="shz"},
-			},
-			ja = {
-				{
-					name = {"雫"},
-					"「研ぎ澄まされてますね」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00074",
-		linknext = "block_00076",
-		line = 377,
-	},
-	block_00076 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「そうなのかなぁ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00075",
-		linknext = "block_00077",
-		line = 380,
-	},
-	block_00077 = {
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_shz_10003", ch="shz"},
-			},
-			ja = {
-				{
-					name = {"雫"},
-					"「長らく会ってもいないのに声も聞かずに誰だか分かるのですから……」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00076",
-		linknext = "block_00078",
-		line = 383,
-	},
-	block_00078 = {
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10697", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「雫！　ひさしぶりじゃないか。かれこれ――」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00077",
-		linknext = "block_00079",
-		line = 386,
-	},
-	block_00079 = {
-		{"msgoff"},
-		{"fg", mode=-2, sync=0},
-		{"bg", file="bg020i", path=":bg/", sync=0},
-		{"fg", ch="雫", size="z1", mode=3, resize=1, path=":fg/shz/z1/", file="shz_z1a0110", face="a0010", head="shz_z1a", lv=4, id=9, sync=0},
-		{"extrans", time=500},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_shz_10004", ch="shz"},
-			},
-			ja = {
-				{
-					name = {"雫"},
-					"「あれから10年経ちました」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00078",
-		linknext = "block_00080",
-		line = 396,
-	},
-	block_00080 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「ああ、経ったな」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00079",
-		linknext = "block_00081",
-		line = 399,
-	},
-	block_00081 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「それで？　なぜ今帰国したんだ？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00080",
-		linknext = "block_00082",
-		line = 402,
-	},
-	block_00082 = {
-		{"fg", ch="雫", size="z1", mode=3, path=":fg/shz/z1/", file="shz_z1a0100", face="a0005", head="shz_z1a", lv=4, id=9},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_shz_10005", ch="shz"},
-			},
-			ja = {
-				{
-					name = {"雫"},
-					"「こんな物騒なものを描いてれば、帰国せざるを得ないでしょう」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00081",
-		linknext = "block_00083",
-		line = 407,
-	},
-	block_00083 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「物騒か……」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00082",
-		linknext = "block_00084",
-		line = 410,
-	},
-	block_00084 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"俺は喉の奥で小さく笑った。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00083",
-		linknext = "block_00085",
-		line = 413,
-	},
-	block_00085 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「やはりこれは物騒なもんなのかねぇ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00084",
-		linknext = "block_00086",
-		line = 416,
-	},
-	block_00086 = {
-		{"fg", ch="雫", size="z1", mode=3, path=":fg/shz/z1/", file="shz_z1a0100", face="a0010", head="shz_z1a", lv=4, id=9},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_shz_10006", ch="shz"},
-			},
-			ja = {
-				{
-					name = {"雫"},
-					"「本当のところを言えば――",
-					{"rt2"},
-					"分からない」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00085",
-		linknext = "block_00087",
-		line = 422,
-	},
-	block_00087 = {
-		{"fg", ch="雫", size="z1", mode=3, path=":fg/shz/z1/", file="shz_z1a0100", face="a0010", head="shz_z1a", lv=4, id=9},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_shz_10007", ch="shz"},
-			},
-			ja = {
-				{
-					name = {"雫"},
-					"「ただ、普通ではない事は私達には分かる」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00086",
-		linknext = "block_00088",
-		line = 427,
-	},
-	block_00088 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「私達……か」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00087",
-		linknext = "block_00089",
-		line = 430,
-	},
-	block_00089 = {
-		{"fg", ch="雫", size="z1", mode=3, path=":fg/shz/z1/", file="shz_z1a0110", face="a0001", head="shz_z1a", lv=4, id=9},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_shz_10008", ch="shz"},
-			},
-			ja = {
-				{
-					name = {"雫"},
-					"「稟が呼んでいます」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00088",
-		linknext = "block_00090",
-		line = 435,
-	},
-	block_00090 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「そっか」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00089",
-		linknext = "block_00091",
-		line = 438,
-	},
-	block_00091 = {
-		{"bg", time=500, file="ev_con_25_03", path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			ja = {
-				{
-					"俺は茶碗を置く。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00090",
-		linknext = "block_00092",
-		line = 443,
-	},
-	block_00092 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「んじゃ、ちょっくら出かけてくるか」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00091",
-		linknext = "block_00093",
-		line = 448,
-	},
-	block_00093 = {
-		{"bg", sync=0, face=1, file="ev_con_25_04", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10698", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「あ、あの――」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00092",
-		linknext = "block_00094",
-		line = 453,
-	},
-	block_00094 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"藍が俺の袖を掴む。",
-					{"rt2"},
-					"だが、すぐに手放した。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00093",
-		linknext = "block_00095",
-		line = 457,
-	},
-	block_00095 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「どうしたんだ？　藍？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00094",
-		linknext = "block_00096",
-		line = 460,
-	},
-	block_00096 = {
-		{"bg", sync=0, face=1, file="ev_con_25_05", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10699", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「あ、あのさ。",
-					{"rt2"},
-					"いや、大した事じゃないんだけど……、またここに戻ってくるのか？」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00095",
-		linknext = "block_00097",
-		line = 468,
-	},
-	block_00097 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「当たり前だよ。",
-					{"rt2"},
-					"今はこの四畳半が俺の居場所なんだからさ」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00096",
-		linknext = "block_00098",
-		line = 472,
-	},
-	block_00098 = {
-		{"bg", sync=0, face=1, file="ev_con_25_06", time=400, path=":ev/ev_con_25/", set="ev_con_25"},
-		{"text"},
-		text = {
-			vo = {
-				{"vo", file="fem_aix_10700", ch="aix"},
-			},
-			ja = {
-				{
-					name = {"藍"},
-					"「そ、そうか」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00097",
-		linknext = "block_00099",
-		line = 479,
-	},
-	block_00099 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"藍は複雑な笑みを浮かべた。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00098",
-		linknext = "block_00100",
-		line = 482,
-	},
-	block_00100 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"宮崎絵画学校のアトリエに作られた四畳半の小さな空間。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00099",
-		linknext = "block_00101",
-		line = 485,
-	},
-	block_00101 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					"ここは夏目家ではないが、それでも俺達の居場所だ。",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00100",
-		linknext = "block_00102",
-		line = 488,
-	},
-	block_00102 = {
-		{"text"},
-		text = {
-			ja = {
-				{
-					name = {"直哉"},
-					"「さて行こうか」",
-					{"rt2"},
-				},
-			},
-		},
-		linkback = "block_00101",
-		linknext = "block_00103",
-		line = 491,
-	},
-	block_00103 = {
-		{"bg", time=1000, file="black", path=":bg/"},
-		{"excall", file="05_05_2"},
-		{"text"},
-		linkback = "block_00102",
-		line = 496,
-	},
-	label = {
-		flagon = { block="block_00000", label=33 },
-		join = { block="block_00000", label=47 },
-		top = { block="block_00000", label=1 },
-	},
+    block_00000 = {
+        {"savetitle", text = "第Ⅴ章"},
+        {"msg", no = 1},
+        {"bg", file = "アイキャッチ05", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans"},
+        {"ex", time = 5000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"excall", label = "flagon", cond = "g.countdown5==1"},
+        {"skipstop"},
+        {"autoplay", speed = 500, wait = 500, auto = 500},
+        {"bg", file = "カウントダウン05_1", id = 1, lv = 5, path = ":cg/"},
+        {"ex", time = 1500, func = "wait"},
+        {"se", id = 1, file = "se0147"},
+        {"bg", file = "カウントダウン05_2", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 500},
+        {"ex", time = 3000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"autoplay", mode = "stop"},
+        {"excall", label = "join"},
+        {"bg", file = "カウントダウン05_1", id = 1, lv = 5, path = ":cg/"},
+        {"ex", time = 1500, func = "wait"},
+        {"se", id = 1, file = "se0147"},
+        {"bg", file = "カウントダウン05_2", id = 1, lv = 5, path = ":cg/", sync = 0},
+        {"extrans", time = 500},
+        {"ex", time = 3000, func = "wait"},
+        {"bgm", stop = 1, time = 1000},
+        {"se", stop = 1, id = -1, time = 1000},
+        {"vostop", stop = 1, time = 1000},
+        {"ntclear"},
+        {"cgdel", id = -1},
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"cacheclear"},
+        {"ex", time = 1000, func = "wait"},
+        {"eval", exp = "g.countdown5=1"},
+        {"se", vol = 30, loop = 1, id = 1, file = "se0045"},
+        {"bg", file = "black", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {"听到闹钟声。"}
+            }
+        },
+        linknext = "block_00001",
+        line = 61
+    },
+    block_00001 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00000",
+        linknext = "block_00002",
+        line = 64
+    },
+    block_00002 = {
+        {"text"},
+        text = {
+            ja = {
+                {"眼皮还很重。"}
+            }
+        },
+        linkback = "block_00001",
+        linknext = "block_00003",
+        line = 67
+    },
+    block_00003 = {
+        {"se", stop = 1, time = 100, id = 1},
+        {"text"},
+        text = {
+            ja = {
+                {"我关闭了闹钟。"}
+            }
+        },
+        linkback = "block_00002",
+        linknext = "block_00004",
+        line = 72
+    },
+    block_00004 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10677", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「不用起床吗？」"
+                }
+            }
+        },
+        linkback = "block_00003",
+        linknext = "block_00005",
+        line = 75
+    },
+    block_00005 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我会起的」"
+                }
+            }
+        },
+        linkback = "block_00004",
+        linknext = "block_00006",
+        line = 78
+    },
+    block_00006 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10678", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「是吗，那你洗个脸再来吧？早饭已经准备好了」"
+                }
+            }
+        },
+        linkback = "block_00005",
+        linknext = "block_00007",
+        line = 81
+    },
+    block_00007 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯」"
+                }
+            }
+        },
+        linkback = "block_00006",
+        linknext = "block_00008",
+        line = 84
+    },
+    block_00008 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我坐起身。"}
+            }
+        },
+        linkback = "block_00007",
+        linknext = "block_00009",
+        line = 90
+    },
+    block_00009 = {
+        {"msgoff"},
+        {"bg", y = -100, file = "zbg020i", path = ":bg/", ax = 1920, ay = 1080, bx = -960, by = -540, sync = 0},
+        {"fg", ch = "藍", size = "z2", mode = 3, resize = 1, path = ":fg/aix/z2/", file = "aix_z2a0100", face = "a0002", head = "aix_z2a", lv = 5, id = 9, sync = 0},
+        {"extrans", rule = "008b"},
+        {"bgm", file = "bgm152"},
+        {"text"},
+        text = {
+            ja = {
+                {"睁开眼，这里不再是夏目家。"}
+            }
+        },
+        linkback = "block_00008",
+        linknext = "block_00010",
+        line = 101
+    },
+    block_00010 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我已经多久没有回到夏目宅了呢？"}
+            }
+        },
+        linkback = "block_00009",
+        linknext = "block_00011",
+        line = 104
+    },
+    block_00011 = {
+        {"fg", ch = "藍", size = "z2", mode = 3, path = ":fg/aix/z2/", file = "aix_z2a0100", face = "a0001", head = "aix_z2a", lv = 5, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10679", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「今天好像相当冷呢」"
+                }
+            }
+        },
+        linkback = "block_00010",
+        linknext = "block_00012",
+        line = 109
+    },
+    block_00012 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「在这里完全感觉不到」"
+                }
+            }
+        },
+        linkback = "block_00011",
+        linknext = "block_00013",
+        line = 112
+    },
+    block_00013 = {
+        {"bg", time = 500, file = "bg020i", path = ":bg/"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "工作室的温度完全不受外界温度的影响，保持着恒定的温度。",
+                    {"rt2"},
+                    "这也是为了保存艺术作品吧。"
+                }
+            }
+        },
+        linkback = "block_00012",
+        linknext = "block_00014",
+        line = 118
+    },
+    block_00014 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我在工作室的水池边洗了脸。"}
+            }
+        },
+        linkback = "block_00013",
+        linknext = "block_00015",
+        line = 121
+    },
+    block_00015 = {
+        {"cgdel", id = -1},
+        {"bg", time = 1000, rule = 139, wait = 500, file = "black", path = ":bg/", vague = 40},
+        {"bg", rule = 139, vague = 40, file = "bg020i", path = ":bg/"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10680", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「好了，料理准备好了」"
+                }
+            }
+        },
+        linkback = "block_00014",
+        linknext = "block_00016",
+        line = 128
+    },
+    block_00016 = {
+        {"text"},
+        text = {
+            ja = {
+                {"蓝这样说着，将料理摆放在小桌上。"}
+            }
+        },
+        linkback = "block_00015",
+        linknext = "block_00017",
+        line = 131
+    },
+    block_00017 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我坐在小桌前。"}
+            }
+        },
+        linkback = "block_00016",
+        linknext = "block_00018",
+        line = 134
+    },
+    block_00018 = {
+        {"bg", file = "ev_con_25_03", path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过啊」"
+                }
+            }
+        },
+        linkback = "block_00017",
+        linknext = "block_00019",
+        line = 140
+    },
+    block_00019 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_01", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10681", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「怎么了？」"
+                }
+            }
+        },
+        linkback = "block_00018",
+        linknext = "block_00020",
+        line = 145
+    },
+    block_00020 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嘛，我没想到你会在工作室铺上榻榻米，还准备了小桌和电视」"
+                }
+            }
+        },
+        linkback = "block_00019",
+        linknext = "block_00021",
+        line = 148
+    },
+    block_00021 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_03", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10682", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「因为直哉你一直说要在工作室画画嘛」"
+                }
+            }
+        },
+        linkback = "block_00020",
+        linknext = "block_00022",
+        line = 153
+    },
+    block_00022 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就算是这样，我也没想到会在这么大的工作室里铺上四畳半和摆",
+                    {"rt2"},
+                    "上小桌」"
+                }
+            }
+        },
+        linkback = "block_00021",
+        linknext = "block_00023",
+        line = 156
+    },
+    block_00023 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_02", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10683", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「嗯，毕竟放哉先生对你画画的事很支持。",
+                    {"rt2"},
+                    "榻榻米是借用夏目家没使用的房间的」"
+                }
+            }
+        },
+        linkback = "block_00022",
+        linknext = "block_00024",
+        line = 164
+    },
+    block_00024 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10684", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「我本来就计划要把那个房间的榻榻米换一下了。",
+                    {"rt2"},
+                    "正好是个好机会」"
+                }
+            }
+        },
+        linkback = "block_00023",
+        linknext = "block_00025",
+        line = 168
+    },
+    block_00025 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那个房间啊……」"
+                }
+            }
+        },
+        linkback = "block_00024",
+        linknext = "block_00026",
+        line = 171
+    },
+    block_00026 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不过话说回来，就算再怎么支持，也不会允许在这个像是艺术的",
+                    {"rt2"},
+                    "玩具箱一样的宅邸里放上用过的四畳半和小桌吧。",
+                    {"rt2"},
+                    "我在摩尔展上得奖的可能性已经完全没有了」"
+                }
+            }
+        },
+        linkback = "block_00025",
+        linknext = "block_00027",
+        line = 175
+    },
+    block_00027 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_03", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10685", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「是吗？」"
+                }
+            }
+        },
+        linkback = "block_00026",
+        linknext = "block_00028",
+        line = 182
+    },
+    block_00028 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「对了，蓝没看新闻吗？嘛，纽约和东京差了13个小时呢」"
+                }
+            }
+        },
+        linkback = "block_00027",
+        linknext = "block_00029",
+        line = 185
+    },
+    block_00029 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我一边说着，一边打开电视。"}
+            }
+        },
+        linkback = "block_00028",
+        linknext = "block_00030",
+        line = 188
+    },
+    block_00030 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_07", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "在宽敞的工作室里，四畳半、小桌、料理、蓝和我一起，电视机看",
+                    {"rt2"},
+                    "上去就像是喜剧节目的布景一样。"
+                }
+            }
+        },
+        linkback = "block_00029",
+        linknext = "block_00031",
+        line = 195
+    },
+    block_00031 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「早间新闻会提到一点吧？」"
+                }
+            }
+        },
+        linkback = "block_00030",
+        linknext = "block_00032",
+        line = 198
+    },
+    block_00032 = {
+        {"text"},
+        text = {
+            ja = {
+                {"正说着这话时，从新闻中传来了「摩尔公开选拔展」的名字。"}
+            }
+        },
+        linkback = "block_00031",
+        linknext = "block_00033",
+        line = 201
+    },
+    block_00033 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "「今年的布拉提努·埃波拉尔奖授予了在纽约活跃的罗志先生。",
+                    {"rt2"},
+                    "对吧」"
+                }
+            }
+        },
+        linkback = "block_00032",
+        linknext = "block_00034",
+        line = 205
+    },
+    block_00034 = {
+        {"text"},
+        text = {
+            ja = {
+                {"「这位是——」"}
+            }
+        },
+        linkback = "block_00033",
+        linknext = "block_00035",
+        line = 208
+    },
+    block_00035 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10686", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「美国的最高奖确定了啊」"
+                }
+            }
+        },
+        linkback = "block_00034",
+        linknext = "block_00036",
+        line = 211
+    },
+    block_00036 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「嗯，这是中国的艺术家。是位非常有影响力的现代艺术家」"
+                }
+            }
+        },
+        linkback = "block_00035",
+        linknext = "block_00037",
+        line = 214
+    },
+    block_00037 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_01", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10687", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「是吗」"
+                }
+            }
+        },
+        linkback = "block_00036",
+        linknext = "block_00038",
+        line = 221
+    },
+    block_00038 = {
+        {"text"},
+        text = {
+            ja = {
+                {"「接下来是今天的天气预报——」"}
+            }
+        },
+        linkback = "block_00037",
+        linknext = "block_00039",
+        line = 224
+    },
+    block_00039 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_07", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10688", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「结束了吗？」"
+                }
+            }
+        },
+        linkback = "block_00038",
+        linknext = "block_00040",
+        line = 231
+    },
+    block_00040 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「就这样了」"
+                }
+            }
+        },
+        linkback = "block_00039",
+        linknext = "block_00041",
+        line = 234
+    },
+    block_00041 = {
+        {"text"},
+        text = {
+            ja = {
+                {"有关摩尔展的报道只是在节目中稍作提及。"}
+            }
+        },
+        linkback = "block_00040",
+        linknext = "block_00042",
+        line = 237
+    },
+    block_00042 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "自那之后，日本绘画界没有提供新的话题。",
+                    {"rt2"},
+                    "如今新闻日新月异，日本民众对摩尔公开选拔展的兴趣自然会淡化。"
+                }
+            }
+        },
+        linkback = "block_00041",
+        linknext = "block_00043",
+        line = 241
+    },
+    block_00043 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「最高奖的阿尔让·多凡也授予了英国的画家。",
+                    {"rt2"},
+                    "而与之并列的奥尔·巴莱努奖则是空缺」"
+                }
+            }
+        },
+        linkback = "block_00042",
+        linknext = "block_00044",
+        line = 245
+    },
+    block_00044 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_01", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10689", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「会有空缺奖项吗？」"
+                }
+            }
+        },
+        linkback = "block_00043",
+        linknext = "block_00045",
+        line = 252
+    },
+    block_00045 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「奥尔·巴莱努奖是以法国系基金会为主，但过去几年一直没有合适",
+                    {"rt2"},
+                    "的获奖者」"
+                }
+            }
+        },
+        linkback = "block_00044",
+        linknext = "block_00046",
+        line = 255
+    },
+    block_00046 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「纽约系的布拉提努·埃波拉尔奖和伦敦系的阿尔让·多凡奖，都带有",
+                    {"rt2"},
+                    "金融城市的意味。实际上这两个奖项的金额都非常可观」"
+                }
+            }
+        },
+        linkback = "block_00045",
+        linknext = "block_00047",
+        line = 258
+    },
+    block_00047 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「巴黎系无论如何都具有权威性，所以奥尔·巴莱努奖很难产生获奖",
+                    {"rt2"},
+                    "者」"
+                }
+            }
+        },
+        linkback = "block_00046",
+        linknext = "block_00048",
+        line = 261
+    },
+    block_00048 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「毕竟没有日本人得过这个奖」"
+                }
+            }
+        },
+        linkback = "block_00047",
+        linknext = "block_00049",
+        line = 264
+    },
+    block_00049 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10690", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「那这应该是最厉害的奖项了吧？」"
+                }
+            }
+        },
+        linkback = "block_00048",
+        linknext = "block_00050",
+        line = 267
+    },
+    block_00050 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「不，不是那样。实际上即使获得奥尔·巴莱努奖，相比其他奖项，",
+                    {"rt2"},
+                    "收益也并不突出」"
+                }
+            }
+        },
+        linkback = "block_00049",
+        linknext = "block_00051",
+        line = 270
+    },
+    block_00051 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_03", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10691", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「诶？虽然是最高奖，难道和其他最高奖的金额不一样吗？」"
+                }
+            }
+        },
+        linkback = "block_00050",
+        linknext = "block_00052",
+        line = 275
+    },
+    block_00052 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「奖金是一样的，但是之后作品的价格并没有得到很好的反映」"
+                }
+            }
+        },
+        linkback = "block_00051",
+        linknext = "block_00053",
+        line = 278
+    },
+    block_00053 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10692", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「是吗？」"
+                }
+            }
+        },
+        linkback = "block_00052",
+        linknext = "block_00054",
+        line = 283
+    },
+    block_00054 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「摩尔展与历史上的任何一场展览都不一样。",
+                    {"rt2"},
+                    "它是一个全球性的奖项，不是为了绘画的权威而设立的，而是为了",
+                    {"rt2"},
+                    "将艺术作为投机的对象而开始的」"
+                }
+            }
+        },
+        linkback = "block_00053",
+        linknext = "block_00055",
+        line = 287
+    },
+    block_00055 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「与其他全球性奖项相比，它的历史相对较短。然而它引起了极大",
+                    {"rt2"},
+                    "的关注，因为其中涉及了巨额资金的流动」"
+                }
+            }
+        },
+        linkback = "block_00054",
+        linknext = "block_00056",
+        line = 290
+    },
+    block_00056 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「纽约和伦敦都是以股票市场著名的城市。这两个城市拥有布拉提",
+                    {"rt2"},
+                    "努·埃波拉尔奖和阿尔让·多凡奖的意义，就是它们直接控制了绘画市",
+                    {"rt2"},
+                    "场」"
+                }
+            }
+        },
+        linkback = "block_00055",
+        linknext = "block_00057",
+        line = 293
+    },
+    block_00057 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「相比之下，巴黎本身就是艺术和历史之城」"
+                }
+            }
+        },
+        linkback = "block_00056",
+        linknext = "block_00058",
+        line = 296
+    },
+    block_00058 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「说到世界城市，有纽约、伦敦、东京、巴黎……最近还包括香港",
+                    {"rt2"},
+                    "和新加坡」"
+                }
+            }
+        },
+        linkback = "block_00057",
+        linknext = "block_00059",
+        line = 299
+    },
+    block_00059 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「世界城市并不是指规模巨大，而是根据各自具备的全球影响力来",
+                    {"rt2"},
+                    "衡量」"
+                }
+            }
+        },
+        linkback = "block_00058",
+        linknext = "block_00060",
+        line = 302
+    },
+    block_00060 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「如果是这样，巴黎作为历史悠久的艺术之城，影响力是很大的。",
+                    {"rt2"},
+                    "这样一个城市的奖项就是奥尔·巴莱努奖」"
+                }
+            }
+        },
+        linkback = "block_00059",
+        linknext = "block_00061",
+        line = 306
+    },
+    block_00061 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「正因为如此，虽然有威望，但很难有经济上的回报。",
+                    {"rt2"},
+                    "事实上，法国有很多历史悠久且威望很高的奖项，但并不会直接带",
+                    {"rt2"},
+                    "来财富」"
+                }
+            }
+        },
+        linkback = "block_00060",
+        linknext = "block_00062",
+        line = 310
+    },
+    block_00062 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「摩尔基金会是由多家企业赞助的。实际上，其中涉及的权力关系",
+                    {"rt2"},
+                    "和谋划是超乎世人想象的」"
+                }
+            }
+        },
+        linkback = "block_00061",
+        linknext = "block_00063",
+        line = 313
+    },
+    block_00063 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_01", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10693", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「原来如此。健一郎在那样的世界中获得了最高奖，真厉害」"
+                }
+            }
+        },
+        linkback = "block_00062",
+        linknext = "block_00064",
+        line = 318
+    },
+    block_00064 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「老爸比起那些拙劣的创业公司的首席执行官，更不会弄脏手，不",
+                    {"rt2"},
+                    "是吗？」"
+                }
+            }
+        },
+        linkback = "block_00063",
+        linknext = "block_00065",
+        line = 321
+    },
+    block_00065 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「比起这个，给我再来一碗饭怎么样？」"
+                }
+            }
+        },
+        linkback = "block_00064",
+        linknext = "block_00066",
+        line = 324
+    },
+    block_00066 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_02", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10694", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「啊，一般盛就行」"
+                }
+            }
+        },
+        linkback = "block_00065",
+        linknext = "block_00067",
+        line = 331
+    },
+    block_00067 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「好的」"
+                }
+            }
+        },
+        linkback = "block_00066",
+        linknext = "block_00068",
+        line = 334
+    },
+    block_00068 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_03", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10695", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「嗯？」"
+                }
+            }
+        },
+        linkback = "block_00067",
+        linknext = "block_00069",
+        line = 341
+    },
+    block_00069 = {
+        {"bgm", stop = 1},
+        {"se", id = 1, vol = 50, file = "se0150"},
+        {"text"},
+        text = {
+            ja = {
+                {"重门敞开，进入了工作室。"}
+            }
+        },
+        linkback = "block_00068",
+        linknext = "block_00070",
+        line = 349
+    },
+    block_00070 = {
+        {"se", file = "se0151", id = 2, vol = 75},
+        {"text"},
+        text = {
+            ja = {
+                {"硬底鞋的脚步声在大理石地板上回响。"}
+            }
+        },
+        linkback = "block_00069",
+        linknext = "block_00071",
+        line = 354
+    },
+    block_00071 = {
+        {"se", stop = 1, id = 2, time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10696", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「咦？你，你是」"
+                }
+            }
+        },
+        linkback = "block_00070",
+        linknext = "block_00072",
+        line = 359
+    },
+    block_00072 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「好久不见」"
+                }
+            }
+        },
+        linkback = "block_00071",
+        linknext = "block_00073",
+        line = 362
+    },
+    block_00073 = {
+        {"bg", time = 500, file = "ev_con_25_08", path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"bgm", file = "bgm156"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shz_10001", ch = "shz"}
+            },
+            ja = {
+                {
+                    name = {"雫", "？？？"},
+                    "「连看都不用看就知道是我吗」"
+                }
+            }
+        },
+        linkback = "block_00072",
+        linknext = "block_00074",
+        line = 371
+    },
+    block_00074 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是的。雫有独特的氛围」"
+                }
+            }
+        },
+        linkback = "block_00073",
+        linknext = "block_00075",
+        line = 374
+    },
+    block_00075 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shz_10002", ch = "shz"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「你的感觉敏锐啊」"
+                }
+            }
+        },
+        linkback = "block_00074",
+        linknext = "block_00076",
+        line = 377
+    },
+    block_00076 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗？」"
+                }
+            }
+        },
+        linkback = "block_00075",
+        linknext = "block_00077",
+        line = 380
+    },
+    block_00077 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shz_10003", ch = "shz"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「虽然很久没见面，声音一听就知道是谁……」"
+                }
+            }
+        },
+        linkback = "block_00076",
+        linknext = "block_00078",
+        line = 383
+    },
+    block_00078 = {
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10697", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「雫！好久不见啊。都已经……」"
+                }
+            }
+        },
+        linkback = "block_00077",
+        linknext = "block_00079",
+        line = 386
+    },
+    block_00079 = {
+        {"msgoff"},
+        {"fg", mode = -2, sync = 0},
+        {"bg", file = "bg020i", path = ":bg/", sync = 0},
+        {"fg", ch = "雫", size = "z1", mode = 3, resize = 1, path = ":fg/shz/z1/", file = "shz_z1a0110", face = "a0010", head = "shz_z1a", lv = 4, id = 9, sync = 0},
+        {"extrans", time = 500},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shz_10004", ch = "shz"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「那已经过去十年了」"
+                }
+            }
+        },
+        linkback = "block_00078",
+        linknext = "block_00080",
+        line = 396
+    },
+    block_00080 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是啊，时间过得真快」"
+                }
+            }
+        },
+        linkback = "block_00079",
+        linknext = "block_00081",
+        line = 399
+    },
+    block_00081 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么了？你为什么回国了？」"
+                }
+            }
+        },
+        linkback = "block_00080",
+        linknext = "block_00082",
+        line = 402
+    },
+    block_00082 = {
+        {"fg", ch = "雫", size = "z1", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a0100", face = "a0005", head = "shz_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shz_10005", ch = "shz"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「如果你一直画这种危险的东西，回国也是没办法的吧」"
+                }
+            }
+        },
+        linkback = "block_00081",
+        linknext = "block_00083",
+        line = 407
+    },
+    block_00083 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「危险吗……」"
+                }
+            }
+        },
+        linkback = "block_00082",
+        linknext = "block_00084",
+        line = 410
+    },
+    block_00084 = {
+        {"text"},
+        text = {
+            ja = {
+                {"我在喉咙里轻笑了一声。"}
+            }
+        },
+        linkback = "block_00083",
+        linknext = "block_00085",
+        line = 413
+    },
+    block_00085 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「果然这算是危险的东西吗」"
+                }
+            }
+        },
+        linkback = "block_00084",
+        linknext = "block_00086",
+        line = 416
+    },
+    block_00086 = {
+        {"fg", ch = "雫", size = "z1", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a0100", face = "a0010", head = "shz_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shz_10006", ch = "shz"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「说实话——",
+                    {"rt2"},
+                    "我也不懂」"
+                }
+            }
+        },
+        linkback = "block_00085",
+        linknext = "block_00087",
+        line = 422
+    },
+    block_00087 = {
+        {"fg", ch = "雫", size = "z1", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a0100", face = "a0010", head = "shz_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shz_10007", ch = "shz"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「只是，我们可以感觉到这并不寻常」"
+                }
+            }
+        },
+        linkback = "block_00086",
+        linknext = "block_00088",
+        line = 427
+    },
+    block_00088 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「我们……吗」"
+                }
+            }
+        },
+        linkback = "block_00087",
+        linknext = "block_00089",
+        line = 430
+    },
+    block_00089 = {
+        {"fg", ch = "雫", size = "z1", mode = 3, path = ":fg/shz/z1/", file = "shz_z1a0110", face = "a0001", head = "shz_z1a", lv = 4, id = 9},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_shz_10008", ch = "shz"}
+            },
+            ja = {
+                {
+                    name = {"雫"},
+                    "「稟在召唤你」"
+                }
+            }
+        },
+        linkback = "block_00088",
+        linknext = "block_00090",
+        line = 435
+    },
+    block_00090 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「是吗」"
+                }
+            }
+        },
+        linkback = "block_00089",
+        linknext = "block_00091",
+        line = 438
+    },
+    block_00091 = {
+        {"bg", time = 500, file = "ev_con_25_03", path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            ja = {
+                {"我把茶碗放下。"}
+            }
+        },
+        linkback = "block_00090",
+        linknext = "block_00092",
+        line = 443
+    },
+    block_00092 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那么，我出去一下」"
+                }
+            }
+        },
+        linkback = "block_00091",
+        linknext = "block_00093",
+        line = 448
+    },
+    block_00093 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_04", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10698", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「那、那个——」"
+                }
+            }
+        },
+        linkback = "block_00092",
+        linknext = "block_00094",
+        line = 453
+    },
+    block_00094 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    "蓝抓住了我的袖子。",
+                    {"rt2"},
+                    "但很快又松开了手。"
+                }
+            }
+        },
+        linkback = "block_00093",
+        linknext = "block_00095",
+        line = 457
+    },
+    block_00095 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「怎么了？蓝？」"
+                }
+            }
+        },
+        linkback = "block_00094",
+        linknext = "block_00096",
+        line = 460
+    },
+    block_00096 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_05", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10699", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「那、那个。",
+                    {"rt2"},
+                    "其实没什么大不了的……你会回到这里来吗？」"
+                }
+            }
+        },
+        linkback = "block_00095",
+        linknext = "block_00097",
+        line = 468
+    },
+    block_00097 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「当然啦。",
+                    {"rt2"},
+                    "现在这四畳半是我的地方嘛」"
+                }
+            }
+        },
+        linkback = "block_00096",
+        linknext = "block_00098",
+        line = 472
+    },
+    block_00098 = {
+        {"bg", sync = 0, face = 1, file = "ev_con_25_06", time = 400, path = ":ev/ev_con_25/", set = "ev_con_25"},
+        {"text"},
+        text = {
+            vo = {
+                {"vo", file = "fem_aix_10700", ch = "aix"}
+            },
+            ja = {
+                {
+                    name = {"蓝"},
+                    "「是、是吗」"
+                }
+            }
+        },
+        linkback = "block_00097",
+        linknext = "block_00099",
+        line = 479
+    },
+    block_00099 = {
+        {"text"},
+        text = {
+            ja = {
+                {"蓝露出了复杂的笑容。"}
+            }
+        },
+        linkback = "block_00098",
+        linknext = "block_00100",
+        line = 482
+    },
+    block_00100 = {
+        {"text"},
+        text = {
+            ja = {
+                {"这是在宫崎绘画学校工作室里建造的四畳半小空间。"}
+            }
+        },
+        linkback = "block_00099",
+        linknext = "block_00101",
+        line = 485
+    },
+    block_00101 = {
+        {"text"},
+        text = {
+            ja = {
+                {"虽然不是夏目家，但对我们来说，这就是我们的据点。"}
+            }
+        },
+        linkback = "block_00100",
+        linknext = "block_00102",
+        line = 488
+    },
+    block_00102 = {
+        {"text"},
+        text = {
+            ja = {
+                {
+                    name = {"直哉"},
+                    "「那么，我们走吧」"
+                }
+            }
+        },
+        linkback = "block_00101",
+        linknext = "block_00103",
+        line = 491
+    },
+    block_00103 = {
+        {"bg", time = 1000, file = "black", path = ":bg/"},
+        {"excall", file = "05_05_2"},
+        {"text"},
+        linkback = "block_00102",
+        line = 496
+    },
+    label = {
+        flagon = {block = "block_00000", label = 33},
+        join = {block = "block_00000", label = 47},
+        top = {block = "block_00000", label = 1}
+    }
 }
