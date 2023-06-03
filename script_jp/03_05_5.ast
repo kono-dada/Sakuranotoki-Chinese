@@ -1,0 +1,4028 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"msg", no=1},
+		{"bgm", file="bgm130"},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg018a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1b0800", face="b0004", head="mis_z1b", x=-345, lv=4, id=5, sync=0},
+		{"fg", ch="静流", size="z1", mode=3, resize=1, path=":fg/shi/z1/", file="shi_z1a0700", face="a0002", head="shi_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans", rule=139, vague=40},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0800", face="a0014", head="mis_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_10577", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「静流！　またそんな汚して！",
+					{"rt2"},
+					"あなたは我々の一族なのですから、いつでもパリっとノリの効いた制服を着て頂かないとなりません！」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 21,
+	},
+	block_00001 = {
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1a0700", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="うんうん", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_10211", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「すばらしい！　可愛かった昔の麗華＋可愛さ１００ぐらいそっくり！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 27,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そっくりなのか？　それは？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 30,
+	},
+	block_00003 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0008", head="mis_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_10578", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「母親が昔こんなしゃべり方をしてたなんて信じられませんね。",
+					{"rt2"},
+					"今じゃ、出る言葉すべてが悪態みたいな人なのに」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 37,
+	},
+	block_00004 = {
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1a0700", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ふむ、本間くんは良い娘だが、その母親である麗華さんには心底会いたくないな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 42,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"どんだけ、問題人物なんだよ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 44,
+	},
+	block_00006 = {
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1b0700", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_10212", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「さてさて、そろそろ先生も時間じゃないの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 49,
+	},
+	block_00007 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、やべ！　普通に昼休みなんて終わってるし！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 54,
+	},
+	block_00008 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0003", head="mis_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_10579", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「静流さんありがとうございます。いろいろ楽しかったです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 59,
+	},
+	block_00009 = {
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1b0700", face="b0003", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1b0700", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_10213", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「いやいや、こちらこそ楽しかったよ。",
+					{"rt2"},
+					"また、おなかが減ったら食べに来なよ。次回からは、さすがにおごりは無しだけどサービスするよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 66,
+	},
+	block_00010 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0002", head="mis_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fgact", ch="心鈴", act="おじぎ", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_10580", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「はい、ありがとうございます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 72,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"本間くんはペコリとお辞儀をする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 76,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"本当に、本間くんはいい子だよなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 79,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こんな子の母親が大問題人間なんて信じられない。",
+					{"rt2"},
+					"しかも、顔が似ているらしい……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 83,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ふむ、この俺の想像力を以てしても、埋められない現実の溝というのもあるのだなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 86,
+	},
+	block_00015 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0800", face="a0002", head="mis_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_10581", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「それでは、今日は本当にありがとうございました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 91,
+	},
+	block_00016 = {
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1b0700", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl02 = {
+				{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1b0700", face="b0003", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_10214", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「あ、いやいや、どういたしまして……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 99,
+	},
+	block_00017 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その日は、キマイラの前で本間くんとは別れた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 107,
+	},
+	block_00018 = {
+		{"bg", rule="083r", vague=40, file="bg039b", path=":bg/", ax=960, ay=563, bx=0, by=-23},
+		{"se", id=1, file="se0143"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんなこんなで俺は自宅に帰ろうとキマイラから道を歩き出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 113,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 118,
+	},
+	block_00020 = {
+		{"se", stop=1, time=1000, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"人気がない坂道で、俺は立ち止まる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 125,
+	},
+	block_00021 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「尾行してるヤツいるだろ。歩数がいちいち不自然だぞ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 130,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は大声で叫ぶ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 133,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"昨日の長山の件もあったのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 136,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だから気になったのかもしれない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 139,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺の速度に合わせて、歩数が早くなったり遅くなったり不自然な足音があった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 142,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"誰もいない坂道。",
+					{"rt2"},
+					"姿が見えない相手。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 146,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大声を出しても、誰もいなければ問題ないし、いるとしたら、隠れている、以外にあり得ない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 149,
+	},
+	block_00028 = {
+		{"msgoff"},
+		{"bg", speed=1000, file="zev_com_31_22", path=":ev/ev_com_31/", x2=-400, y2=-140, x=-400, y=40, set="ev_com_31", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"extrans"},
+		{"bgm", file="bgm152"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10001", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴", "？？？"},
+					"「長山香奈ですら、こんな早く尾行に気が付かなかった。",
+					{"rt2"},
+					"彼女以上の感覚とは……やっぱり違うわね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 164,
+	},
+	block_00029 = {
+		{"bg", time=500, file="ev_com_31_22", path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"帽子を深々とかぶった女性が姿をあらわす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 169,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「誰だ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 172,
+	},
+	block_00031 = {
+		{"bg", sync=0, face=1, file="ev_com_31_28", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10002", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴", "？？？"},
+					"「あのねぇ。不審な事にはすぐに気がつくのに、私だって事はすぐに気がつかないのって、少し失礼じゃないかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 178,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんだそりゃ？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 181,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「不審者だと分かったのは歩行速度が不自然だったからだが、失礼とはなんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 184,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10003", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴", "？？？"},
+					"「声で分かりなさいよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 188,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、その言い方」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 191,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"声では全然分からなかったが、横柄な態度で誰か分かった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 194,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あぁ、鳥谷か」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 197,
+	},
+	block_00038 = {
+		{"bg", time=500, file="ev_com_31_21", path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"女性が帽子を取る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 202,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10004", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そうよ。鳥谷真琴よ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 207,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何、微妙に不機嫌になってるんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 210,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10005", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「知らないわよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 213,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんだ？　すぐ気がつかなかったから不機嫌とかじゃあるまい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 216,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10006", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「当たり前じゃない。なんでそんな事でいちいち不機嫌になるのよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 219,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんか、さっきよりも不機嫌になってるし……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 222,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それで？　俺の後なんか付けて、また弓張に取材なのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 225,
+	},
+	block_00046 = {
+		{"bg", sync=0, face=1, file="ev_com_31_24", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10007", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「当たり前じゃない。ストーカーじゃあるまいし、仕事じゃなければあなたの後なんて付けないわよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 230,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんで俺の後を付けるんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 233,
+	},
+	block_00048 = {
+		{"bg", sync=0, face=1, file="ev_com_31_23", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_com_31_10", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10008", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「いろいろとね。",
+					{"rt2"},
+					"まぁいいわ。とりあえず、これ名刺だから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 241,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、鳥谷は名刺を取り出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 244,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、お前の名刺はこの前もらったばかりだが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 247,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10009", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「まぁいいから持っておきなさい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 250,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鳥谷は名刺を俺に押しつけてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 253,
+	},
+	block_00053 = {
+		{"bg", sync=0, face=1, file="ev_com_31_24", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10010", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そういえば、あんた弓張の正社員になったんでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 258,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、正規雇用の教員になった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 261,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10011", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「名刺は？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 264,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんなもの持ってないが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 267,
+	},
+	block_00057 = {
+		{"bg", sync=0, face=1, file="ev_com_31_03", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10012", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「はぁ、何故か教師って名刺持ってないわよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 272,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10013", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「いろいろな業種があるけれども、あんたらの職業ぐらいよ。名刺が無いのが当たり前みたいなの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 275,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなのか？　他の職業は名刺ってあるの？　肉体労働業とか持っているイメージないけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 278,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10014", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「大工さんだってとび職人さんだって持ってるわよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 281,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 284,
+	},
+	block_00062 = {
+		{"bg", sync=0, face=1, file="ev_com_31_24", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10015", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そういう事、だから、とりあえず差し出された名刺は受け取る。",
+					{"rt2"},
+					"それが社会人ってものなの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 290,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なるほど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 293,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"考えてみれば、大学を卒業した後にすぐに非常勤として弓張で働き始めたので、",
+					{"rt2"},
+					"他の業種の事はまったく知らなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 297,
+	},
+	block_00065 = {
+		{"bg", sync=0, face=1, file="ev_com_31_01", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は受け取ったものを見る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 302,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"美術雑誌月刊誌アートスクール編集者、それが彼女の肩書きだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 307,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その名刺は前回『櫻達の色彩の足跡』制作時にもらっている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 310,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、そこには……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 313,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「このデスクって文字何？　机？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 316,
+	},
+	block_00070 = {
+		{"bg", sync=0, face=1, file="ev_com_31_03", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10016", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「どんだけ世間知らずなのよ！　デスクって役職の事、平の編集からこの前の四月人事で少し偉くなったのよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 322,
+	},
+	block_00071 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「へぇ、すごいじゃん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 325,
+	},
+	block_00072 = {
+		{"bg", sync=0, face=1, file="ev_com_31_02", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10017", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「すごいでしょ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 331,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それで？　弓張はあれからまったく平穏な街だけど、何しに来たんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 334,
+	},
+	block_00074 = {
+		{"bg", sync=0, face=1, file="ev_com_31_23", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10018", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「平穏な街ねぇ。良く言うわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 340,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 343,
+	},
+	block_00076 = {
+		{"bg", sync=0, face=1, file="ev_com_31_27", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10019", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「この鳥谷真琴を舐めてもらっては困るという話よ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 349,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10020", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「村田清彦がこの街に良く来ているという噂は前から聞いていたんだけど、最近では長山香奈までここをうろついているって情報を入手したのよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 352,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「へ、へぇ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 355,
+	},
+	block_00079 = {
+		{"bg", sync=0, face=1, file="ev_com_31_21", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10021", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「相変わらず隠し事が下手ね。何が平穏な街よ。",
+					{"rt2"},
+					"いろいろと騒がしい事が、起きてそうな感じしか受けないのだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 361,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"う゛……鋭い。",
+					{"rt2"},
+					"たしかに、先日、俺は長山から四色型色覚と三色型色覚を使い分ける人間の可能性、そしてその人間と村田清彦が接触している可能性を聞いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 365,
+	},
+	block_00081 = {
+		{"bg", sync=0, face=1, file="ev_com_31_23", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_com_31_24", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10022", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「私の弓張時代から培ったネットワークを舐めない事ね。",
+					{"rt2"},
+					"この前、あなたと長山香奈が接触していた事も知っているわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 373,
+	},
+	block_00082 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どんなネットワークだよ！！　なんでこの間の事をすでに知っているんだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 378,
+	},
+	block_00083 = {
+		{"bg", sync=0, face=1, file="ev_com_31_19", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10023", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「気がついてなかったでしょうねぇ……。私、斜め向かいの席に座って監視してたのよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 384,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え！？　そうなの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 387,
+	},
+	block_00085 = {
+		{"bg", sync=0, face=1, file="ev_com_31_24", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10024", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「長山香奈の後を付けてたらあんたらを見たのだけど、やっぱり店まで入ったのはマズかったわね。長山香奈に感づかれたんで、すぐにお店から出たわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 393,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「長山が言ってた尾行者ってお前だったのか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 396,
+	},
+	block_00087 = {
+		{"bg", sync=0, face=1, file="ev_com_31_23", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10025", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「彼女は、かなり勘がいい人間だから、尾行のみならず、聞き取り調査とかも厄介よ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 402,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10026", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「聞き取りしているつもりが、逆に私の情報が長山香奈に流されていたりするから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 405,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんでスパイ○作戦みたいな事やっているんだよ。お前ら」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 408,
+	},
+	block_00090 = {
+		{"bg", sync=0, face=1, file="ev_com_31_24", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10027", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「美術の雑誌編集者は本来ならばこんな聞屋みたいな事しないのだけど、どうも気になってね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 413,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「気になって尾行するのかよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 416,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10028", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そうよ。実際、前回もそんな感じでいち早くあんた達と接触して、他が持っていない『櫻達の色彩の足跡』に関わる情報を手に入れられた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 419,
+	},
+	block_00093 = {
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_com_31_19", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10029", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「だから、あの絵画の仕組みや構造なんかも細かく雑誌で説明する事が出来た。",
+					{"rt2"},
+					"それが、世界的芸術家であり故人である草薙健一郎氏のアイディアだとしたら、",
+					{"rt2"},
+					"読者が喜ぶのは当然じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 427,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あの件で昇格したの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 430,
+	},
+	block_00095 = {
+		{"bg", sync=0, face=1, file="ev_com_31_01", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10030", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「実際その号は在庫切れしたわ。",
+					{"rt2"},
+					"美術雑誌がそんな売れる事なんてないから、快挙中の快挙だって社内で大騒ぎになったもの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 437,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 440,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10031", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「それ以前にも上からの信頼度は高かったんだけど、しょせんは美術雑誌だからわかりやすく実績作るのは難しいのよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 443,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 446,
+	},
+	block_00099 = {
+		{"bg", sync=0, face=1, file="ev_com_31_23", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10032", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「まぁ、ああいう古い体質の雑誌は年功序列だから実績で昇進って難しいのよ。",
+					{"rt2"},
+					"そもそも美術雑誌で実績作るのが相当難しいし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 453,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「雑誌の実績って？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 456,
+	},
+	block_00101 = {
+		{"bg", sync=0, face=1, file="ev_com_31_24", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10033", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「ゴシップが売りの雑誌ならスクープね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 462,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10034", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「ファッション誌なら、海外で流行っている概念とか取り入れたファッション特集とか組めるのよ。たとえば少し前だとヒュッゲ特集みたいに、そうすれば実績もわかりやすくつめるけどね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 465,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ファンション誌でユッケ特集？　生肉とファッションって関係あるのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 468,
+	},
+	block_00104 = {
+		{"bg", sync=0, face=1, file="ev_com_31_23", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_com_31_24", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10035", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「はいはい、あんたみたいに世相に疎そうな人間は知らなくていい概念よ。",
+					{"rt2"},
+					"ともかく、前回の件で、私みたいに、足で稼ぐやり方が認められたって",
+					{"rt2"},
+					"感じなのよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 477,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なるほど、足で稼ぐか……刑事みたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 480,
+	},
+	block_00106 = {
+		{"bg", sync=0, face=1, file="ev_com_31_19", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10036", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「刑事というか、フリーの聞屋みたいな生活だけどね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 486,
+	},
+	block_00107 = {
+		{"bgm", stop=1, time=15000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 491,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こんな会話をしながらも――、",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 494,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんかさっきから微妙に気になっている事があった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 497,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんかさ、鳥谷、お前、さっきから距離感おかしくない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 500,
+	},
+	block_00111 = {
+		{"bgm", stop=1},
+		{"bg", sync=0, face=1, file="ev_com_31_25", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10037", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「え？　な、何の事！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 508,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「やたら距離が遠いよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 511,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10038", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そ、そんな事ないわよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 514,
+	},
+	block_00114 = {
+		{"se", id=1, file="se0159"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺が一歩近づくと、鳥谷は一歩退く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 519,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんで避ける？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 522,
+	},
+	block_00116 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10039", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「さ、避けてなんかいないわよ。な、何言っているのよ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 525,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は鳥谷の背後を見る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 528,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして目を細める。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 531,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あれ……、誰かいる。",
+					{"rt2"},
+					"お前、長山に逆尾行されてないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 537,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10040", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「え！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 540,
+	},
+	block_00121 = {
+		{"cgdel", id=-1},
+		{"bg", time=250, rule=280, file="black", path=":bg/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鳥谷は後ろを振り返る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 545,
+	},
+	block_00122 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その瞬間。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 548,
+	},
+	block_00123 = {
+		{"se", id=1, file="se0086"},
+		{"bg", rule=280, time=250, vague=40, file="ev_com_31_07", path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10041", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 555,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は鳥谷の手を掴む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 561,
+	},
+	block_00125 = {
+		{"se", stop=1, time=500, id=1},
+		{"bgm", file="bgm131"},
+		{"bg", sync=0, face=1, file="ev_com_31_09", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10042", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「な、何手とか握っているのよ！　せ、セクハラよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 571,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何を隠している。鳥谷」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 574,
+	},
+	block_00127 = {
+		{"bg", sync=0, face=1, file="ev_com_31_11", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10043", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「隠してないわよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 580,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いいや、行動が奇妙だ。なんかやたら距離取るし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 583,
+	},
+	block_00129 = {
+		{"bg", sync=0, face=1, file="ev_com_31_09", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10044", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「どこの世界に隠し事があるからって、物理的に距離取る人間がいるのよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 589,
+	},
+	block_00130 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何か不審なものを隠し持っているとか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 592,
+	},
+	block_00131 = {
+		{"bg", sync=0, face=1, file="ev_com_31_13", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10045", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「も、持ってないわよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 597,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あやしいなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 600,
+	},
+	block_00133 = {
+		{"bg", sync=0, face=1, file="ev_com_31_14", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10046", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「だ、だめ顔近づけないで！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 606,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんだよ。やっぱり何か隠し持ってるのか？　カメラとか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 609,
+	},
+	block_00135 = {
+		{"bg", sync=0, face=1, file="ev_com_31_06", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10047", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「バカじゃないの！　なんでカメラ隠し持ってて、距離取るのよぉ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 615,
+	},
+	block_00136 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「カメラのピントの問題とかで距離を保つとか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 618,
+	},
+	block_00137 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10048", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「ピントなんて自動で合わせてくれるに決まってるでしょ！　対象者に合わせて距離取らないといけない隠しカメラなんて使い物にならないじゃないのよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 621,
+	},
+	block_00138 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなんだ。なんか隠しカメラの事くわしいのがあやしいぞ。使っているのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 624,
+	},
+	block_00139 = {
+		{"bg", sync=0, face=1, file="ev_com_31_04", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10049", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そんなの考えれば分かるでしょうが！　ファインダー覗けないのが隠しカメラなんだから、ピントぐらい自動で合わせるわよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 630,
+	},
+	block_00140 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうか、なるほど。んで？　だったら何故、やたら距離を取る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 633,
+	},
+	block_00141 = {
+		{"bg", sync=0, face=1, file="ev_com_31_15", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10050", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「し、知らないわよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 639,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鳥谷は手を掴まれたまま身体を反らして俺から離れようとする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 642,
+	},
+	block_00143 = {
+		{"bg", sync=0, face=1, file="ev_com_31_13", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10051", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「とりあえず、顔を近づけるのやめて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 647,
+	},
+	block_00144 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「失礼な言い方だな。そんな近づけてないだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 650,
+	},
+	block_00145 = {
+		{"bg", sync=0, face=1, file="ev_com_31_15", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10052", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「だとしても、ダメなのぉ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 655,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんか心なしか鳥谷が泣き顔になっている様な気がする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 658,
+	},
+	block_00147 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それと、奇妙にも、嗜虐心がそそられる。何故？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 661,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鳥谷は顔を真っ赤にしている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 664,
+	},
+	block_00149 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"悪巧みの隠し事をしている感じではない。",
+					{"rt2"},
+					"だが、何か隠し事をしている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 668,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何がダメなんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 673,
+	},
+	block_00151 = {
+		{"bg", sync=0, face=1, file="ev_com_31_09", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10054", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「ごにょごにょごにょ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 688,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何？　聞こえないぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 691,
+	},
+	block_00153 = {
+		{"bg", sync=0, face=1, file="ev_com_31_13", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10055", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「っッッ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 697,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんか凄く睨まれた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 700,
+	},
+	block_00155 = {
+		{"bg", sync=0, face=1, file="ev_com_31_06", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10056", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「わ、私だって！　まだそこまで捨ててるわけじゃないもん！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 706,
+	},
+	block_00156 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんだよ。それ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 709,
+	},
+	block_00157 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10057", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「尾行がバレるんだったら、ちゃんとしてたもん！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 712,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何言ってるんだお前！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 715,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10058", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「うるさいわね！　いろいろあるのよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 718,
+	},
+	block_00160 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ん？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 721,
+	},
+	block_00161 = {
+		{"bg", sync=0, face=1, file="ev_com_31_15", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10059", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「な、何！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 727,
+	},
+	block_00162 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前、髪の毛にワックスかけているの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 730,
+	},
+	block_00163 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鳥谷は焦って頭を押さえる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 733,
+	},
+	block_00164 = {
+		{"bg", time=500, file="ev_com_31_12", path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そしてふたたび帽子をかぶる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 738,
+	},
+	block_00165 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10060", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「き、気のせいよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 743,
+	},
+	block_00166 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いや、ワックスじゃない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 746,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの髪の毛の状態を俺は知っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 749,
+	},
+	block_00168 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"連日徹夜で作業とかしているとなるヤツだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 752,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"などと俺が考えていると、鳥谷の顔がみるみる赤くなる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 755,
+	},
+	block_00170 = {
+		{"bg", sync=0, face=1, file="ev_com_31_05", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10061", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「もう分かっているでしょ！　お風呂入ってないの！　だから髪の毛もべたべた",
+					{"rt2"},
+					"なの！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 762,
+	},
+	block_00171 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなんだ。",
+					{"rt2"},
+					"まぁ、俺も連日の作業だと良くなるけど、女でも髪の毛ってべたべたになるんだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 766,
+	},
+	block_00172 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「でも、そんな事気にする事か？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 769,
+	},
+	block_00173 = {
+		{"bg", sync=0, face=1, file="ev_com_31_12", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10062", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「気にするわよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 774,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そう？　女だから風呂入らなくても体臭とかあまりしないだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 777,
+	},
+	block_00175 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って鼻をヒクヒクさせた瞬間。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 780,
+	},
+	block_00176 = {
+		{"quake"},
+		{"se", id=1, file="se0041"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「うぎゃっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 788,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"顔面をグーで殴られた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 791,
+	},
+	block_00178 = {
+		{"se", stop=1, time=500, id=1},
+		{"bg", sync=0, face=1, file="ev_com_31_08", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10063", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「におい嗅いだら殺すわよ！！　本当に殺すからね！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 799,
+	},
+	block_00179 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"すごい剣幕だ。しかもめっちゃ涙目だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 802,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そ、そうだったのか……、こいつ距離取ってたの、自分の体臭が気になっていたのか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 805,
+	},
+	block_00181 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"でも、昔からのよしみだし、それこそ若かりし頃は、みんなで汗だくになったものだし、いまさら気にするか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 808,
+	},
+	block_00182 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「わ、分かった。においは嗅がない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 811,
+	},
+	block_00183 = {
+		{"bg", sync=0, face=1, file="ev_com_31_12", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10064", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「いつもこんなんじゃないのよ！　２時間くれたら、いくらでも嗅がせてあげるぐらいいつも綺麗にしてるんだから！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 816,
+	},
+	block_00184 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、なんで、俺がそんな匂いフェチみたいな事になっている？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 819,
+	},
+	block_00185 = {
+		{"bg", sync=0, face=1, file="ev_com_31_17", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10065", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「い、いや、そうじゃなくてっッッ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 825,
+	},
+	block_00186 = {
+		{"bgm", stop=1},
+		{"bg", sync=0, face=1, file="ev_com_31_26", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"se", id=1, file="se0120"},
+		{"flash", alpha=255, time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"パチンッ、パチンッ、と強い音が響く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 836,
+	},
+	block_00187 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鳥谷は頬を強く叩いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 841,
+	},
+	block_00188 = {
+		{"bgm", file="bgm157"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10066", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「ごめん！　いろいろごめんだった！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 849,
+	},
+	block_00189 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 852,
+	},
+	block_00190 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10067", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「私が、甘えてたかもしれない！",
+					{"rt2"},
+					"いいえ、甘えてました！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 856,
+	},
+	block_00191 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"突然の態度の豹変に俺は驚く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 859,
+	},
+	block_00192 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「な、何？",
+					{"rt2"},
+					"何に甘えてたの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 863,
+	},
+	block_00193 = {
+		{"bg", sync=0, face=1, file="ev_com_31_18", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10068", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そもそも尾行がバレたのは私の不手際だし、普通なら尾行で怒鳴られてもおか",
+					{"rt2"},
+					"しくないし、お風呂入ってないのは私の責任だし、草薙を叩いてイイ理由なん",
+					{"rt2"},
+					"て無かった！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 870,
+	},
+	block_00194 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10069", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そういうのも含めて自己責任でしかないし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 873,
+	},
+	block_00195 = {
+		{"bg", sync=0, face=1, file="ev_com_31_26", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10070", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「だから、今のごめん！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 878,
+	},
+	block_00196 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"頭を下げる鳥谷。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 881,
+	},
+	block_00197 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんか拍子抜けするな、昔の鳥谷だったら考えられない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 884,
+	},
+	block_00198 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、嫌な事されたら手ぐらい出るだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 887,
+	},
+	block_00199 = {
+		{"bg", sync=0, face=1, file="ev_com_31_18", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10071", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そんな言い訳が通用するのは学生までよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00198",
+		linknext = "block_00200",
+		line = 893,
+	},
+	block_00200 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんなもんだろうか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00199",
+		linknext = "block_00201",
+		line = 896,
+	},
+	block_00201 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まぁ社会人で手出すのはたしかにアウトだが……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00200",
+		linknext = "block_00202",
+		line = 899,
+	},
+	block_00202 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうかもしれんが、昔なじみの俺に対してまで、そんな事言うと、少し他人行儀な感じがして悲しいのだが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00201",
+		linknext = "block_00203",
+		line = 902,
+	},
+	block_00203 = {
+		{"bg", sync=0, face=1, file="ev_com_31_16", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_com_31_18", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10072", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そ、そういう意味じゃないの。",
+					{"rt2"},
+					"ただ、上司からは、取材対象とトラブルは絶対に起こすなって言われてて、こういうやり方ってウチでは前例がないから、細心の注意を払えと言われてて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00202",
+		linknext = "block_00204",
+		line = 910,
+	},
+	block_00204 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「会社として責任が取れないって事を上司は言いたいわけか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00203",
+		linknext = "block_00205",
+		line = 913,
+	},
+	block_00205 = {
+		{"bg", sync=0, face=1, file="ev_com_31_18", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10073", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「有り体に言えばそうなんだけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00204",
+		linknext = "block_00206",
+		line = 919,
+	},
+	block_00206 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"よく見ると服もしわしわだし、目元にも疲れが見える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00205",
+		linknext = "block_00207",
+		line = 922,
+	},
+	block_00207 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「家帰らなかった？　実家あるだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00206",
+		linknext = "block_00208",
+		line = 925,
+	},
+	block_00208 = {
+		{"bg", sync=0, face=1, file="ev_com_31_20", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10074", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「鳥谷の家なんか帰らないわよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00207",
+		linknext = "block_00209",
+		line = 931,
+	},
+	block_00209 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ビジネスホテルは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00208",
+		linknext = "block_00210",
+		line = 934,
+	},
+	block_00210 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10075", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「今雑誌もきびしいのよ。確約されたスクープでもないかぎりそんなお金出ない感じなの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00209",
+		linknext = "block_00211",
+		line = 937,
+	},
+	block_00211 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったら今日までどうしてたんだよ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00210",
+		linknext = "block_00212",
+		line = 940,
+	},
+	block_00212 = {
+		{"bg", sync=0, face=1, file="ev_com_31_18", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10076", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「ネカフェとか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00211",
+		linknext = "block_00213",
+		line = 946,
+	},
+	block_00213 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どのぐらい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00212",
+		linknext = "block_00214",
+		line = 949,
+	},
+	block_00214 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10077", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「一週間ぐらいかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00213",
+		linknext = "block_00215",
+		line = 952,
+	},
+	block_00215 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前なぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00214",
+		linknext = "block_00216",
+		line = 955,
+	},
+	block_00216 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"どんだけ前のめりなんだよ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00215",
+		linknext = "block_00217",
+		line = 958,
+	},
+	block_00217 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前、昔っから、突っ走ると一直線だったけど、本当に変わらないなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00216",
+		linknext = "block_00218",
+		line = 961,
+	},
+	block_00218 = {
+		{"bg", sync=0, face=1, file="ev_com_31_12", time=400, path=":ev/ev_com_31/", set="ev_com_31"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10078", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「う、うるさいわね。だって東京の家に帰る暇なんてなくて……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00217",
+		linknext = "block_00219",
+		line = 967,
+	},
+	block_00219 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は鳥谷の手を掴んだまま歩き出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00218",
+		linknext = "block_00220",
+		line = 970,
+	},
+	block_00220 = {
+		{"msgoff"},
+		{"bg", file="bg039b", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="真琴", size="z1", mode=3, resize=1, path=":fg/mak/z1/", file="mak_z1b0000", face="b0013", head="mak_z1b", lv=4, id=9, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10079", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「え？　な、何？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00219",
+		linknext = "block_00221",
+		line = 983,
+	},
+	block_00221 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「夏目の屋敷だったら部屋も多いし、とりあえず一日そこで休め」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00220",
+		linknext = "block_00222",
+		line = 986,
+	},
+	block_00222 = {
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真琴", size="z1", mode=3, path=":fg/mak/z1/", file="mak_z1b0000", face="b0005", head="mak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10080", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「え？　そんな事出来ないわよ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00221",
+		linknext = "block_00223",
+		line = 991,
+	},
+	block_00223 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「取材対象だからか？　そういうの普通にむかつくから言うな。",
+					{"rt2"},
+					"お前は俺の同級生で、しかも同じ部活でがんばった仲だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00222",
+		linknext = "block_00224",
+		line = 995,
+	},
+	block_00224 = {
+		{"fg", ch="真琴", size="z1", mode=3, path=":fg/mak/z1/", file="mak_z1b0000", face="b0017", head="mak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10081", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「美術部じゃなかったくせに……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00223",
+		linknext = "block_00225",
+		line = 1000,
+	},
+	block_00225 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それはそれ、これはこれ、がんばったのは事実だろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00224",
+		linknext = "block_00226",
+		line = 1003,
+	},
+	block_00226 = {
+		{"fg", ch="真琴", size="z1", mode=3, path=":fg/mak/z1/", file="mak_z1b0000", face="b0009", head="mak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10082", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「それは事実だけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00225",
+		linknext = "block_00227",
+		line = 1008,
+	},
+	block_00227 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったら同級生の実家に泊まらせてもらうだけなんだから問題ないだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00226",
+		linknext = "block_00228",
+		line = 1011,
+	},
+	block_00228 = {
+		{"fg", ch="真琴", size="z1", mode=3, path=":fg/mak/z1/", file="mak_z1b0000", face="b0008", head="mak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10083", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「で、でも、着替えとか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00227",
+		linknext = "block_00229",
+		line = 1016,
+	},
+	block_00229 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「最近小音羽にファッションランドしわむらが出来たからそこで買え」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00228",
+		linknext = "block_00230",
+		line = 1019,
+	},
+	block_00230 = {
+		{"fg", ch="真琴", size="z1", mode=3, path=":fg/mak/z1/", file="mak_z1b0000", face="b0011", head="mak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10084", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「で、でも、でも、でも」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00229",
+		linknext = "block_00231",
+		line = 1024,
+	},
+	block_00231 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんで、“でも”を連発している」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00230",
+		linknext = "block_00232",
+		line = 1027,
+	},
+	block_00232 = {
+		{"fg", ch="真琴", size="z1", mode=3, path=":fg/mak/z1/", file="mak_z1b0000", face="b0008", head="mak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10085", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「たしか藍先生って単身赴任してなかった？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00231",
+		linknext = "block_00233",
+		line = 1032,
+	},
+	block_00233 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前の取材が終わった数日後に帰ってきてるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00232",
+		linknext = "block_00234",
+		line = 1035,
+	},
+	block_00234 = {
+		{"fg", ch="真琴", size="z1", mode=3, path=":fg/mak/z1/", file="mak_z1b0000", face="b0011", head="mak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="真琴", size="z1", mode=3, path=":fg/mak/z1/", file="mak_z1b0000", face="b0002", head="mak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_10086", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そ、そっか……そうなんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00233",
+		linknext = "block_00235",
+		line = 1041,
+	},
+	block_00235 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何故か、めちゃくちゃ安堵の表情を見せる鳥谷。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00234",
+		linknext = "block_00236",
+		line = 1044,
+	},
+	block_00236 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんかいろいろと訳が分からない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00235",
+		linknext = "block_00237",
+		line = 1047,
+	},
+	block_00237 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな事を考えながら俺は鳥谷を夏目の屋敷に連れて行った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00236",
+		linknext = "block_00238",
+		line = 1050,
+	},
+	block_00238 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"excall", file="03_05_6"},
+		{"text"},
+		linkback = "block_00237",
+		line = 1056,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

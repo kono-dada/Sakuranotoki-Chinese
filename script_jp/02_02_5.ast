@@ -1,0 +1,3397 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅱ章"},
+		{"msg", no=1},
+		{"bg", time=2000, file="ev_etc_01_04", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"ex", time=1000, func="wait"},
+		{"bg", time=2000, file="ev_etc_01_07", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"se", time=1000, count=2, id=1, file="se0002"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「電話？」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 19,
+	},
+	block_00001 = {
+		{"se", stop=1, time=500, id=1},
+		{"se", id=2, file="se0019"},
+		{"bg", file="bg009c", path=":bg/", ax=960, ay=563, bx=0, by=-23},
+		{"bgm", file="bgm152"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00001", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝", "？？？"},
+					"「最近付き合い悪いなー。草薙ぃ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 34,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ちっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 37,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00002", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝", "？？？"},
+					"「あ！　お前、今、舌打ちしただろ！　思わず電話に出てしまって、しまった！　とか思っただろ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 43,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「気のせいだ。ひさしぶりだな片貝かー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 46,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00003", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「ああ、片貝だよ。最近付き合い悪すぎだろ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 49,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"片貝からの電話。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 52,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こいつからの電話はだいたい、飲みに行こう。というものだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 55,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺がこの家で一人で暮らしていた頃、互いに友達がいなかったので、月に二三回",
+					{"rt2"},
+					"ぐらい飲みに行っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 59,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それが一ヶ月ぐらい前に藍が帰ってきてから、ことごとくこいつの誘いを断っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 62,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00004", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「メール出しても無視ばっかり。",
+					{"ruby", text="レイン"},
+					"Lain",
+					{"/ruby"},
+					"も既読なしとかどういう事だよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 66,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「すまん。すまん。俺はスマホとか持ってないから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 70,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00005", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「お前この前ガラケーからスマホに変えてただろ！　スマホの方が安いから！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 73,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あー、そうそう。そうなんだけどさぁ。",
+					{"rt2"},
+					"スマホの使い方分からないからほとんどアプリ入れてないんだよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 77,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00006", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「めっちゃ、スーパーとかドラッグストアの会員アプリ入れてたじゃんか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 80,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え？　なんでそんな俺の事詳しいの？　気持ち悪いんだけど？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 83,
+	},
+	block_00016 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00007", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「うるせぇ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 88,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00008", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「ったく、藍先生が帰ってきたからって、極端だろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 91,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だって、１年ぶりに家族が帰ってきたんだから、仕方がないだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 94,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00009", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「だとしても、付き合いが悪すぎる。今日は付き合え。",
+					{"rt2"},
+					"いつもの店にいるからな！　絶対に来いよ！　分かったな！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 98,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「でもなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 101,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00010", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「待ってるからな！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 104,
+	},
+	block_00022 = {
+		{"se", id=1, file="se0019"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「っ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 110,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「一方的に切りやがった……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 113,
+	},
+	block_00024 = {
+		{"fg", ch="藍", size="z1", mx=40, mode=3, resize=1, path=":fg/aix/z1/", file="aix_z1b0100", face="b0001", head="aix_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00448", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「どうした？　直哉？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 119,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、いや、片貝から電話があって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 122,
+	},
+	block_00026 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0012", head="aix_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0002", head="aix_z1b", lv=4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0001", head="aix_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00449", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「片貝？　ああ、弓張時代の同級生だな。どんな用件だ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 129,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「飲みに付き合えって、一方的に電話切られた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 132,
+	},
+	block_00028 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0110", face="b0004", head="aix_z1b", lv=4, id=9},
+		{"fgact", ch="藍", act="うなづく", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0110", face="b0002", head="aix_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00450", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ははは、だったら行ってやればいいさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 139,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、それだと藍はどうするんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 142,
+	},
+	block_00030 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0002", head="aix_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0003", head="aix_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00451", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「私だったら大丈夫だ。私もひさしぶりに行きたいところがあるんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 148,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「行きたいところ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 151,
+	},
+	block_00032 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1a0100", face="a0002", head="aix_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00452", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「昔の知り合いがやっているお店があるんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 156,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 159,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"初耳だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 162,
+	},
+	block_00035 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1a0100", face="a0015", head="aix_z1a", lv=4, id=9},
+		{"fgact", ch="藍", act="おじぎ", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1a0100", face="a0002", head="aix_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00453", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ずっと店主が不在でな。まぁ、あの人は昔からそんなだったんだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 169,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"藍が懐かしむように苦笑いしていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 172,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「友人とか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 175,
+	},
+	block_00038 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1a0100", face="a0002", head="aix_z1a", lv=4, id=9},
+		{"fgact", ch="藍", act="うなづく", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00454", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ああ、弓張学生時代の先輩だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 181,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「藍の弓張学生時代って結構前だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 184,
+	},
+	block_00040 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0002", head="aix_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0008", head="aix_z1b", lv=4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1a0100", face="a0002", head="aix_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00455", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「うん、彼女とは長い付き合いだよ。会う機会はすくないのだけどな。",
+					{"rt2"},
+					"だから直哉、友人は大事にした方がいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 193,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それって片貝の事か？",
+					{"rt2"},
+					"あいつとはそんな関係でもないんだけどなぁ。腐れ縁というか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 197,
+	},
+	block_00042 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0110", face="b0003", head="aix_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0002", head="aix_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00456", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「だとしても、数少ない友人だろ。今日は外で友人と食べてくるがいいさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 203,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうかなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 206,
+	},
+	block_00044 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1a0100", face="a0004", head="aix_z1a", lv=4, id=9},
+		{"fgact", ch="藍", act="うなづく", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_00457", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ああ、行ってこい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 212,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「うーん。分かった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 215,
+	},
+	block_00046 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1a0100", face="a0002", head="aix_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たしかに、最近付き合い悪すぎだしなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 220,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一人身の時だけ付き合うとか、少し感じ悪いもんな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 223,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今晩はヤツに付き合うか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 226,
+	},
+	block_00049 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", rule=139, vague=40, file="ev_com_17_01", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"quake", mode="mw"},
+		{"bgm", file="bgm104"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00011", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「どういう事だよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 240,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"席につくなり、片貝に怒鳴られる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 243,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あぁ？　付き合いが悪いって事なら、今日来てやっただろうがっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 246,
+	},
+	block_00052 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00012", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「違げぇよ！　なんで藍先生連れてこないんだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 251,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 254,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00013", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「藍先生久しぶりに帰ってきたんだろ。だったら俺だって会いたいじゃんっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 257,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったら、電話で言えよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 260,
+	},
+	block_00056 = {
+		{"bg", sync=0, face=1, file="ev_com_17_02", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00014", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「いやさぁ、そこは、なんつーか、俺が連れてきてよ。とか言うと下心があるかなぁ。とか思われちゃうかもじゃん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 265,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あぁ？　かもじゃん。じゃねーよ。知らねぇーよそんな事ぁ。",
+					{"rt2"},
+					"だいたい藍も用事だよ。昔の友人に会いに行った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 269,
+	},
+	block_00058 = {
+		{"bg", sync=0, face=1, file="ev_com_17_01", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00015", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「藍先生の友人！？　それってもしかして男！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 274,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「女みたいだぞ。良く知らんが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 277,
+	},
+	block_00060 = {
+		{"bg", sync=0, face=1, file="ev_com_17_02", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00016", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「そうかー。よかったー。",
+					{"rt2"},
+					"藍先生って変わらないよなぁ。ずっと若いじゃん。",
+					{"rt2"},
+					"俺、学生時代からずっと好きだったんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 287,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「下心ありまくりじゃねぇかよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 290,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しかも、お前ら当時は、御桜稟が大好きだったじゃねぇかよ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 293,
+	},
+	block_00063 = {
+		{"bg", sync=0, face=1, file="ev_com_17_01", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00017", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「下心じゃない！　本気の愛だ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 301,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00001", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未", "？？？"},
+					"「そうなんですかー。それじゃ、ノノを口説いてたのは、冗談だったんですねー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 305,
+	},
+	block_00065 = {
+		{"bg", sync=0, face=1, file="ev_com_17_23", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00018", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「えっ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 312,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、ひさしぶり」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 315,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00019", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「って、ノノちゃんっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 318,
+	},
+	block_00068 = {
+		{"bg", time=500, file="ev_com_17_03", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"user", mode="conf", ch="ノノ未"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00002", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「ノノ未でーす。おひさです。お二人とも」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 327,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「おひさも何も、学校でたまに顔合わせてるじゃないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 330,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00003", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「でも、草薙さんと私は学校だと、ただの生徒と教師の関係じゃないですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 333,
+	},
+	block_00071 = {
+		{"bg", sync=0, face=1, file="ev_com_17_08", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったらここだと、単なる客と店員だろうが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 338,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00004", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「なに言ってるんですか、ここじゃ、草薙さんとノノの仲じゃないですかぁ。",
+					{"rt2"},
+					"はい、これサービスですよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 342,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お、赤ウインナーとホッピー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 345,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00005", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「草薙さん一杯目はホッピーですよねぇ。一杯目はノノ権限でタダにしてあげます。こっちの赤ウインナーはお通しでーす。ゆっくりしていってくださいねぇ。",
+					{"rt2"},
+					"私まだ仕事があるんで、お客さんはけたらまた来ますー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 349,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、柊くんは配膳のため厨房に戻っていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 352,
+	},
+	block_00076 = {
+		{"bg", time=500, file="ev_com_17_01", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00020", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「どういう事だってばさ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 362,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 365,
+	},
+	block_00078 = {
+		{"bg", sync=0, face=1, file="ev_com_17_04", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00021", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「草薙さんとノノの仲って、なんだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 373,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ、知るかよ。",
+					{"rt2"},
+					"ほら、お通しの赤ウインナーだぞ。文句ばっかり言ってると全部食うぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 377,
+	},
+	block_00080 = {
+		{"bg", sync=0, face=1, file="ev_com_17_01", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00022", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「あと、なんでお前の一杯目はタダなんだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 382,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「さぁ、人徳じゃねぇの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 385,
+	},
+	block_00082 = {
+		{"msgoff"},
+		{"bg", x=960, y=400, file="zev_com_17_03", path=":ev/ev_com_17/", set="ev_com_17", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今、ホッピーと赤ウインナーを持って来てくれたのは柊ノノ未くん。",
+					{"rt2"},
+					"弓張学園の生徒だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 396,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この泪川ドヤ街の育ちで、俺がこの店に通う前から働いているらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 399,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"当然、飲み屋でバイトなど弓張学園的にはアウトなのだが、",
+					{"rt2"},
+					"諸事情で、ここで俺達が顔見知りなのは学校には内緒だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 403,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まぁ、諸事情と言えば聞こえがよいが、単に俺が酒覚えたのがこの店なので、粗相をいろいろしてしまったというだけなのだが。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 406,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それもひっくるめて、二人の秘密という感じなのだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 409,
+	},
+	block_00087 = {
+		{"msgoff"},
+		{"cgdel", id=-1, sync=0},
+		{"bg", file="ev_com_17_04", path=":ev/ev_com_17/", set="ev_com_17", sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00023", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「ったく、草薙ばっかりモテるんだなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 419,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どこがだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 422,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00024", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「なんか、今日はさー、女の匂いがするしー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 425,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「しねぇよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 428,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00025", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「そう？　俺が会ってない間に、草薙って女子に囲まれてるんじゃないの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 431,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「囲まれてねぇよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 434,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00006", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未", "？？？"},
+					"「そうですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 438,
+	},
+	block_00094 = {
+		{"bg", time=500, file="ev_com_17_08", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「柊くん、厨房に戻ったんじゃないの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 446,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00007", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「まだご注文を聞いてませんでした」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 449,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「注文か、オススメは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 452,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00008", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「春野菜系がオススメです。その中だと春野菜のフリットが特にオススメですかねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 455,
+	},
+	block_00098 = {
+		{"bg", sync=0, face=1, file="ev_com_17_05", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00026", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「フリットって何？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 463,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「天ぷらの事だよ。",
+					{"rt2"},
+					"なんでこの店は赤提灯の居酒屋のくせに、横文字使いたがるんだか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 467,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00009", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「フリットと天ぷらは少し違いますよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 470,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなの？　同じだと思ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 473,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00010", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「衣の作り方が違うんですよ。ウチのフリットはおいしいですよ。どうします？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 476,
+	},
+	block_00103 = {
+		{"bg", sync=0, face=1, file="ev_com_17_06", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00027", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「んじゃ、フリットとしらすおろし、あと牡蠣食べたいかなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 484,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そういえば真牡蠣が旬だよな。んじゃ、牡蠣は二つ。",
+					{"rt2"},
+					"あとあれだ、厚揚げとあじのなめろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 488,
+	},
+	block_00105 = {
+		{"bg", sync=0, face=1, file="ev_com_17_07", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00028", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「またあじのなめろうかよ！　お前いつもそれ食ってるなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 496,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いつもなんて食ってねぇよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 499,
+	},
+	block_00107 = {
+		{"bg", sync=0, face=1, file="ev_com_17_08", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00029", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「俺、あれ、生臭くて好きくないんだよなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 507,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったら食うなよ。うるせぇなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 510,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00011", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「以上ですねぇ。少々お待ちください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 513,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00012", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「あ、そうそう、片貝さん。片貝さんの勘は当たってますよ。",
+					{"rt2"},
+					"先生、今、放課後に沢山の女生徒に囲まれてますよッ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 517,
+	},
+	block_00111 = {
+		{"bg", sync=0, face=1, file="ev_com_17_07", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00030", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「なんだって！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 527,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00013", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「それでは失礼しまーす」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 530,
+	},
+	block_00113 = {
+		{"bg", time=500, file="ev_com_17_01", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「柊くんさぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 535,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まためんどくさい事を言う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 538,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それにしても昨日、復活した美術部の事なんて良く知ってるなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 541,
+	},
+	block_00116 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", rule=139, vague=40, file="ev_com_17_04", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00031", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「なんでお前ばっかりー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 552,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから言ってるだろ。単に部活だよ。部活。",
+					{"rt2"},
+					"美術部が復活したんで、その顧問になっただけだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 556,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00032", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「女子率は？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 559,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 562,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00033", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「はぁ？　じゃない。俺は女子率を聞いている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 565,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「まぁ、そうだなぁ。女子率は高いけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 568,
+	},
+	block_00122 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00034", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「高いけど、じゃねぇよ。率を正しく言えよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 571,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「今のところは100％ではあるか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 574,
+	},
+	block_00124 = {
+		{"bg", sync=0, face=1, file="ev_com_17_01", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"quake"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00035", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「がっッっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 582,
+	},
+	block_00125 = {
+		{"bg", sync=0, face=1, file="ev_com_17_09", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"片貝はホッピーのグラスを持ち上げ、一気に飲み干す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 592,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00036", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「ぐびぐびぐびぐび、ぐび、ぐびッ…………ぷはぁぁっっ。",
+					{"rt2"},
+					"かー、やるセねぇー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 596,
+	},
+	block_00127 = {
+		{"bg", time=500, file="ev_com_17_10", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00037", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「最近、俺と顔合わせないと思ったら、そんな事になってるなんてヨー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 604,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前と会ってないのと、部活は関係ねぇよっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 607,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00038", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「でも女子率100％の部活なんだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 610,
+	},
+	block_00130 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それはそうだが、",
+					{"rt2"},
+					"その部活自体はごく最近に出来たもんだし、お前の件とは関係無い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 614,
+	},
+	block_00131 = {
+		{"bg", sync=0, face=1, file="ev_com_17_11", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00039", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「家には藍ちゃんだろ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 619,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「藍は家族だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 622,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00040", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「でも藍ちゃん可愛いし！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 625,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ったく見境無いなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 628,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00041", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「そんな事ねぇよ。俺は俺が好きになった子しか好きじゃねェよッ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 631,
+	},
+	block_00136 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったら、俺が、お前の知らない生徒達に囲まれてもうらやましくないだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 634,
+	},
+	block_00137 = {
+		{"bg", sync=0, face=1, file="ev_com_17_11", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"quake", size=10},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00042", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「うらやましいに決まッてるだろ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 644,
+	},
+	block_00138 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どんなやねん！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 647,
+	},
+	block_00139 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", rule=139, vague=40, file="ev_com_17_12", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「んで、お前の方はどう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 658,
+	},
+	block_00140 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00043", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「前に言わなかったっけー？　期間工の俺に何かしらの変化があると思うかー？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 661,
+	},
+	block_00141 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「知らないよ。俺は期間工なんてやった事ないし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 664,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00044", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「まぁー、今の俺に変化なんてないよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 667,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00045", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「変化って言うのは、積み重ねの現れなんだからさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 670,
+	},
+	block_00144 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「積み重ねてこなかったって事か？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 673,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00046", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「そう思われても仕方がない人生だからな。つーても人生はじまったばかりさ。",
+					{"rt2"},
+					"これから変化だってあるだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 677,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「アラサーだぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 680,
+	},
+	block_00147 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00047", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「これからは100年ライフの時代だぜ。",
+					{"rt2"},
+					"アラサーなんてスタート地点にも立ってねぇよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 684,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、スタート地点はだいぶ過ぎているだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 687,
+	},
+	block_00149 = {
+		{"bg", sync=0, face=1, file="ev_com_17_13", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00048", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「だから巻き返すんだよ！",
+					{"rt2"},
+					"俺はさァ。来年には美女に囲まれているんだぜ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 696,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そこにいたる積み重ねって何？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 699,
+	},
+	block_00151 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00049", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「愛かな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 702,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「アホゥかよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 705,
+	},
+	block_00153 = {
+		{"bg", time=500, file="ev_com_17_14", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00014", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「だったら、",
+					{"rt2"},
+					"美少女に囲まれるための積み重ねって具体的にはどんなものなんでしょうねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 714,
+	},
+	block_00154 = {
+		{"bg", sync=0, face=1, file="ev_com_17_20", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00050", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「あ、ノノちゃん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 719,
+	},
+	block_00155 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00015", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「草薙さんは今、美女に囲まれてるじゃないですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 725,
+	},
+	block_00156 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「美女？　あぁ？　美女ねぇ。あー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 728,
+	},
+	block_00157 = {
+		{"bg", sync=0, face=1, file="ev_com_17_15", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00051", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「なにぃ！　そんな美少女に囲まれてるのか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 733,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ガキだよガキ。生徒の中の二人なんてめちゃくちゃちっさい頃から知ってるんだぜ。そういう目なんかで見れないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 736,
+	},
+	block_00159 = {
+		{"bg", sync=0, face=1, file="ev_com_17_16", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00052", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「他は見られるんだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 744,
+	},
+	block_00160 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「他も同じだよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 747,
+	},
+	block_00161 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00016", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「そうなんですかぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 750,
+	},
+	block_00162 = {
+		{"bg", time=500, file="ev_com_17_17", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うと柊くんは片貝の後ろに立つ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 758,
+	},
+	block_00163 = {
+		{"bg", sync=0, face=1, file="ev_com_17_18", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00017", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「ちらっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 767,
+	},
+	block_00164 = {
+		{"msgoff"},
+		{"bg", x=960, y=-150, time=500, file="zev_com_17_18", path=":ev/ev_com_17/", set="ev_com_17", ax=1920, ay=1080, bx=-960, by=-540},
+		{"quake", size=20, mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「っカ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 776,
+	},
+	block_00165 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"柊くんは胸をちらりとはだけさせる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 779,
+	},
+	block_00166 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"瞬時、俺は心眼までが開花した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 782,
+	},
+	block_00167 = {
+		{"bg", time=500, file="ev_com_17_19", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00053", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「な、何！？　今、草薙がすげぇ反応したんだけどっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 791,
+	},
+	block_00168 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「っ、そ、そんな反応してねェよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 794,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00018", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「反応してないですかァ。すごい顔でしたよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 797,
+	},
+	block_00170 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00054", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「なんで？　なんで？　なんで草薙がそんな反応に？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 800,
+	},
+	block_00171 = {
+		{"bg", time=500, file="ev_com_17_14", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00019", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「さて、何故でしょうかねぇ。草薙さんはご自分の学校の生徒さんをそういう目で",
+					{"rt2"},
+					"見ないはずなのに、なんでなんだかなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 809,
+	},
+	block_00172 = {
+		{"bg", sync=0, face=1, file="ev_com_17_15", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00055", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「な、なんか、お前今得しただろ！　なんか見たんだろ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 814,
+	},
+	block_00173 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ほ、ほら、熱々のフリット冷めちゃうぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 817,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00056", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「だいぶ前に冷めてるわ！　何があったんだ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 823,
+	},
+	block_00175 = {
+		{"quake"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「や、やめ、首絞めるなっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 828,
+	},
+	block_00176 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00020", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「ほらほら暴れないでください。片貝さんにも何かしちゃいますよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 831,
+	},
+	block_00177 = {
+		{"bg", sync=0, face=1, file="ev_com_17_20", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00057", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「何！？　俺には何してくれるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 839,
+	},
+	block_00178 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00021", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「これ以上暴れるのなら通報しちゃいます♪」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 842,
+	},
+	block_00179 = {
+		{"bg", sync=0, face=1, file="ev_com_17_21", time=400, path=":ev/ev_com_17/", set="ev_com_17"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00058", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「なんで俺ばかりっッ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 851,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00022", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「それよりも、草薙さん、美術部ってやっぱり入部試験とかあるんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 854,
+	},
+	block_00181 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「無いよ。そんなもん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 857,
+	},
+	block_00182 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00023", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「そうなんですか？　弓張の美術部は入部試験があるって聞いた事ありますけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 860,
+	},
+	block_00183 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「大昔だよ。そんなのあったのは弓張の美術部が名門だった時期だよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 863,
+	},
+	block_00184 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00024", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「だったら、入部は大歓迎な感じですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 866,
+	},
+	block_00185 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、今、そのために、勧誘のチラシを作ってるぐらいだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 869,
+	},
+	block_00186 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00025", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「なるほど、なるほど、了解しました。",
+					{"rt2"},
+					"それではこれから柊ノノ未は現場に戻りたいと思います」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 873,
+	},
+	block_00187 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_non_00026", ch="non"},
+			},
+			ja = {
+				{
+					name = {"ノノ未"},
+					"「おじゃましましたー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 876,
+	},
+	block_00188 = {
+		{"bg", time=500, file="ev_com_17_22", path=":ev/ev_com_17/", set="ev_com_17"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"柊くんはまた厨房に帰っていった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 884,
+	},
+	block_00189 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00059", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「うう……草薙ばっかり……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 887,
+	},
+	block_00190 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「うるせぇなぁ。",
+					{"rt2"},
+					"ほら、残り飲んで、とっとと帰るぞ。お前も明日があるんだろうが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 891,
+	},
+	block_00191 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00060", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「生きてるかぎり誰でも明日はあるわい！！　明日があったら何だって言うんだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 894,
+	},
+	block_00192 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんな話してねぇだろ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 897,
+	},
+	block_00193 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kat_00061", ch="kat"},
+			},
+			ja = {
+				{
+					name = {"片貝"},
+					"「俺は美少女達に囲まれた明日が欲しい！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 902,
+	},
+	block_00194 = {
+		{"bgm", stop=1, time=3000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"片貝と俺は夜の10時を過ぎる辺りまで飲んで、お店で解散した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 907,
+	},
+	block_00195 = {
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="02_03_1"},
+		{"text"},
+		linkback = "block_00194",
+		line = 912,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

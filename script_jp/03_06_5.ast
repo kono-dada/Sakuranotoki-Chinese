@@ -1,0 +1,1275 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"msg", no=1},
+		{"bg", file="ev_etc_01_02", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その日、すぐに俺は電車に乗り鎌倉に向かった。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 12,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鎌倉に着くとタクシーを使い、恩田の屋敷に赴く事にした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 15,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"地域では有名らしく、地図や住所など言わなくても、運転手はその屋敷に俺を運んでくれた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 18,
+	},
+	block_00003 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"bg", rule="083r", vague=40, file="ev_etc_01_31", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"se", vol=10, loop=1, id=1, file="se0107"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"丘の上にその屋敷は建っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 26,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"デカイ家だなぁ。",
+					{"rt2"},
+					"そんな感想しかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 32,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"夏目屋敷でも十分大きな家だと思っていたが、上には上があるものだと思い知らされる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 35,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「こういう家は掃除とかどうするんだろうか……。",
+					{"rt2"},
+					"あ、いや、こういう大きな家に住む人間は、そもそも自分で掃除などしないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 39,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"夏目屋敷ですら、手を余らせるぐらいの広さで、日々の掃除で大変な思いをしている我々は、すぐにそんな事を考えてしまうが、そもそもこういう屋敷に住む人間は",
+					{"rt2"},
+					"自分で掃除などしないのだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 43,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「金持ちすげぇなぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 46,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"などと、まったくどうでも良い事を考えていると――。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 49,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10025", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉", "？？？"},
+					"「やぁ、久しぶりだね！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 53,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 56,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"宮崎絵画学校の前に立っていると、屋敷の窓から男が手を振っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 59,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"誰だろう？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 62,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10026", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉", "？？？"},
+					"「そろそろ、君がここに来る頃だろうと思ってね。",
+					{"rt2"},
+					"いつも、こうやって窓から外を眺めていたんだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 67,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大きな声で男は叫ぶ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 70,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あの……あなたは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 73,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10027", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「恩田放哉さ！",
+					{"rt2"},
+					"覚えてないのかい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 77,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、ああ、放哉先生ですか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 80,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"覚えているも何も、子供の時に少し喋ったぐらいでほとんど面識などない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 83,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10028", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「ちょっと待っていてくれたまえ、使用人に案内をさせるから！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 86,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うと放哉先生は窓から姿を消した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 89,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺が来る頃だと思っていた？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 92,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何故そう思ったのであろう？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 95,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺がここに来る必然性などない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 98,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ここに来たのは初めてだし、自分自身、この屋敷に近づくことがあるなんて思ってもいなかった……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 101,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"などと考えていると、巨大な門が自動で開く。",
+					{"rt2"},
+					"もはや自宅などではなく、何かの施設の様だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 105,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"門が開くと、初老の男が立っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 110,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"「ご案内致します……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 113,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その様に言われたので、俺はその人についていった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 116,
+	},
+	block_00030 = {
+		{"bg", zoom=80, speed=180000, file="zbg021a", path=":bg/", x2=576, y2=-120, x=-576, y=-120, ax=1920, ay=1080, bx=-960, by=-540},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"門をくぐるとすぐに、広大な敷地が目に入る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 121,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まさに贅を尽くした庭園という趣だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 124,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"美しく刈り取られた木々の間に、数多くの彫刻が並んでいる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 127,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"美術雑誌で見たことがあるものも多数。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 130,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"宮崎破戒の作品もあるが、そのほか戦前の歴史的な芸術家のものや、海外の著名な芸術家のものも多い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 133,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"金だけで手に入るものではない、破戒の交友関係の広さ。",
+					{"rt2"},
+					"いや、画壇における影響力の強さをあらわしている様だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 137,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"庭園はかなり奥まで続いている様であったが、そのすべてをうかがい知る事は出来なかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 140,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"奥にある屋敷ではなく、門からすぐそばにある建物に通された。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 143,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"恩田放哉が手を振っていた建物だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 146,
+	},
+	block_00039 = {
+		{"bg", file="bg021a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"入り口には『宮崎絵画学校』と書かれている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 151,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"「桁違いの金持ちだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 154,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな事を思った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 157,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"家の一角を使った絵画教室などというかわいらしいものではなく、明治期の初期大学となる私塾を思わせる造りだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 160,
+	},
+	block_00043 = {
+		{"se", stop=1, time=500, id=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"中に入ると長い廊下が続いている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 167,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"設計だけでなく装飾品なども凝っており、ランプなどもアール・ヌーヴォー期の名工達の仕事とおぼしきものが多い。調度品なども贅の限りを尽くしたものだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 170,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まるで旧○○宮邸などと紹介されそうなたたずまいだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 173,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は恩田くんが言っていたことを思い出した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 176,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「芸術のおもちゃ箱か……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 179,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"赤色の絨毯を進むと、巨大なアトリエが姿をあらわした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 182,
+	},
+	block_00049 = {
+		{"bg", rule="083r", vague=40, file="bg020a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"弓張の美術室はかなり大きい方だが、それよりも遙かに大きい。",
+					{"rt2"},
+					"何かのホールの様な巨大さだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 190,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その教室の一番奥まで行くと、「こちらでお待ちいただけますか？」と俺は老人にソファで待つようにうながされた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 193,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ソファも年代ものだろう。",
+					{"rt2"},
+					"すべてがアンティーク家具で囲まれている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 197,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"目の前のテーブル。",
+					{"rt2"},
+					"少なく見積もっても100年以上前のものだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 201,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「スウィーテン・マホガニー？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 204,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"材質はおそらく、スウィーテン・マホガニーだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 207,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"諸外国の植民地時代、南米などを中心に輸入された超高級木材だ。",
+					{"rt2"},
+					"現在ではほぼ伐採する事が出来ず、この様な見事なテーブルなど作る事は出来ない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 211,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そもそもある程度年数が経たなければ、この様な見事な色にはならない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 214,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"子供の頃にニューヨークで、150年もののスパニッシュ・マホガニーを見たことがあるが、赤銅色の宝石ともいえる美しい色をしていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 217,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それに匹敵するか、それ以上の代物だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 220,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「このデザインはチッペンデールのものか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 223,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"チッペンデールは18世紀のイギリスで活躍した家具デザイナーだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 226,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"もし本物であれば、200年以上の年代物で、歴史的な価値を持つ逸品となる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 229,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は宮崎絵画学校のアトリエを見渡すが、ため息が出る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 232,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「良くこれだけの品をそろえられるものだ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 235,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10029", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉", "？？？"},
+					"「家具に興味がおありかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 241,
+	},
+	block_00065 = {
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg020a", path=":bg/", sync=0},
+		{"fg", ch="放哉", size="z1", mode=3, resize=1, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 251,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"恩田放哉氏が立っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 254,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はそちらにむき直し、起立して。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 264,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「私は弓張学園の教員で――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 267,
+	},
+	block_00069 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10030", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「かつ、芸術家の草薙直哉先生だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 272,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、ボクは芸術家などというのもおこがましく、一教員でしかありませんから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 275,
+	},
+	block_00071 = {
+		{"fg", ch="放哉", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"恩田放哉は、アトリエの端にあるオーディオセットに手をかける。",
+					{"rt2"},
+					"レコードが回り始める。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 287,
+	},
+	block_00072 = {
+		{"bgm", file="bgm162", time=1000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"静寂が非常に激しいクラシック音楽によって裂かれる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 294,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ムソルグスキーの有名な交響詩。",
+					{"rt2"},
+					"とてもじゃないが、客をもてなす時にかける様な音楽ではない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 298,
+	},
+	block_00074 = {
+		{"fg", ch="放哉", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10031", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「その割に教養深いじゃないか、一目でチッペンデールの真作を見極めたの",
+					{"rt2"},
+					"だからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 304,
+	},
+	block_00075 = {
+		{"fg", ch="放哉", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0003", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10032", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「君が言った様にスウィーテン・マホガニーだ。キューバでとられたものだから、キューバン・マホガニーとなるわけだが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 309,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"日常会話と音楽のアンバランスさが引き立つ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 312,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「生活品として使用する様な金額のものじゃありませんね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 315,
+	},
+	block_00078 = {
+		{"fg", ch="放哉", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="放哉", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10033", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「家具は使うためにあるのだよ。",
+					{"rt2"},
+					"どんなに高級であろうとね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 322,
+	},
+	block_00079 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そういうと恩田放哉はソファに座った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 332,
+	},
+	block_00080 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10034", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「まぁ、立ち話もなんだ。",
+					{"rt2"},
+					"ちゃんと座って語ろうではないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 338,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は急いで対面するソファに腰掛けた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 341,
+	},
+	block_00082 = {
+		{"excall", file="03_06_6"},
+		{"text"},
+		linkback = "block_00081",
+		line = 343,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

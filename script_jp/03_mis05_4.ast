@@ -1,0 +1,3340 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"msg", no=1},
+		{"bg", file="ev_etc_01_01", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"ex", time=1500, func="wait"},
+		{"bg", file="ev_etc_01_05", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"ex", time=1000, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その後も少しだけ部員に教えて、その日の部活は終わった。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 15,
+	},
+	block_00001 = {
+		{"msgoff"},
+		{"bg", file="bg034f", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", lv=4, id=9, sync=0},
+		{"extrans"},
+		{"bgm", file="bgm152"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11224", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「珍しく、今日はバイクなのですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 26,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、たまにはバイクも動かしてやらないと、後のメンテナンスが大変だからな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 29,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ごく普通の日常に混ざり始めた心鈴くん。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 32,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そのまま何もなく終わると思っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 35,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが――。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 38,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10674", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧", "？？？"},
+					"「師匠！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 42,
+	},
+	block_00007 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0007", head="mis_z1b", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=300},
+		{"fg", ch="寧", size="z1", mx=-40, mode=3, resize=1, path=":fg/nei/z1/", file="nei_z1a0000", face="a0001", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11225", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「寧さん？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 58,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺達は夢浮坂で恩田くんに呼び止められる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 61,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺がヴェスバを手で押して、坂を下りている時であった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 64,
+	},
+	block_00010 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「恩田くん、今日はもう弓張学園には来ないと聞いていたが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 69,
+	},
+	block_00011 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0008", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10675", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「そのつもりだったのですが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 74,
+	},
+	block_00012 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0001", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"恩田くんは誰かの視線でも気にする様にあたりを見回す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 79,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どうしたんだ？　そんなに慌てて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 82,
+	},
+	block_00014 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0007", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0002", head="nei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10676", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「あ、そうだ。その前に、お二人にお礼を」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 88,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お礼？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 91,
+	},
+	block_00016 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0003", head="nei_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="寧", act="おじぎ", time=400, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0002", head="nei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10677", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「ありがとうございました。お二人のおかげで私も宮崎絵画学校に入門が許され",
+					{"rt2"},
+					"ました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 99,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 102,
+	},
+	block_00018 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0003", head="nei_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="寧", act="うなづく", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10678", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 108,
+	},
+	block_00019 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0002", head="mis_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0010", head="mis_z1b", x=345, lv=4, id=6},
+			},
+			vl02 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11226", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「それは良かったですね。ですがFIRST展のあの作品を目にして、いまだその域に達していないと判断するのであれば、こちらから宮崎絵画学校など願い下げした方が良いでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 115,
+	},
+	block_00020 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0002", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10679", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「あはは、さ、さすがにそこまで言えませんよ。",
+					{"rt2"},
+					"私の憧れた宮崎絵画学校ですし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 121,
+	},
+	block_00021 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0002", head="mis_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11227", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「破戒先生も遅まきながら寧さんの絵を直に見られたのでしょうね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 126,
+	},
+	block_00022 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0001", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0004", head="nei_z1a", x=-345, lv=4, id=5},
+			},
+			vl02 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0002", head="nei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10680", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「そんな事を放哉先生に言われました。私の絵を見て“こんな下手くそな絵がFIRST展最高賞として今後の画壇を象徴する若手となるのは耐えられん、放哉、お前がこいつをどうにかしろ”って言われたそうです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 133,
+	},
+	block_00023 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0002", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11228", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「破戒先生らしい言い方ですね。先生とは直にお会いに？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 139,
+	},
+	block_00024 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0001", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10681", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「お会いする事は出来ませんでした。まだまだという事でしょうね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 144,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それで、こんな急いで弓張学園まで戻ってきたのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 147,
+	},
+	block_00026 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0001", head="nei_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="寧", act="いいえ", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10682", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「いいえその事だけでしたら、放哉先生に宮崎絵画学校に呼ばれた時からなんとなく予感はしていましたので、後日お二人にお伝えすればいいと思ってました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 153,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「つまり、それ以外に何かあったと……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 156,
+	},
+	block_00028 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1b0000", face="b0001", head="nei_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1b0000", face="b0012", head="nei_z1b", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10683", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「私と放哉先生が話している途中で来客があったのです。",
+					{"rt2"},
+					"突然の来訪との事で、私との話は打ち切りになりました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 163,
+	},
+	block_00029 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11229", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「それで？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 168,
+	},
+	block_00030 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0008", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10684", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「宮崎絵画学校のメイドさんが、そのお客さまの事を“本間礼次郎”と言っていたので、少し気になって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 173,
+	},
+	block_00031 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「本間礼次郎氏か……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 178,
+	},
+	block_00032 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0008", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0009", head="nei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10685", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「その方の姿を見たのですが、一瞬だけ向けられたまなざしが忘れられず……。",
+					{"rt2"},
+					"まるでそのまなざしは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 185,
+	},
+	block_00033 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11230", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私に似ていたと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 190,
+	},
+	block_00034 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0008", head="nei_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="寧", act="うなづく", lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0001", head="nei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10686", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「はい、姓も同じで、あの独特な視線を持つ人などあまりいないので、帰り際に",
+					{"rt2"},
+					"すぐに帰らずに、耳を澄ませたのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 198,
+	},
+	block_00035 = {
+		{"bgm", stop=1},
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0001", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0008", head="nei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10687", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「そしたら放哉先生の声で、草薙一族における墓碑銘の秘密についてこれから話し合うと聞こえたので……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 206,
+	},
+	block_00036 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11231", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「墓碑銘……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 211,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"驚きはしなかった。",
+					{"rt2"},
+					"たしかに、その様に放哉は宣言したのだから。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 223,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの秘密を本間礼次郎氏に話したのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 226,
+	},
+	block_00039 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0008", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10688", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「私には良く分かりませんでしたが、なにやら良からぬ事の様な気がして、すぐに戻ってきました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 239,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そっか、どちらにしても宮崎絵画学校に入門が許されたのは良かったな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 242,
+	},
+	block_00041 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0007", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0001", head="nei_z1a", x=-345, lv=4, id=5},
+			},
+			vl02 = {
+				{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0008", head="nei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10689", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「え？　は、はい、ですがそれよりも、草薙先生に関わる事を放哉先生達は話して",
+					{"rt2"},
+					"いたのですよね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 250,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうだな。だが、その件については了承している」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 253,
+	},
+	block_00043 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0007", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10690", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「そ、そうなんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 258,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 261,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はできる限り明るく返事をする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 264,
+	},
+	block_00046 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0001", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、そんな俺の言葉と裏腹に心鈴くんが険しい顔をしていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 269,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たぶん、放哉先生が本間礼次郎氏に六相図の秘密を話す事を察したのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 272,
+	},
+	block_00048 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11232", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 277,
+	},
+	block_00049 = {
+		{"fg", mode=-2},
+		{"bg", time=300, sync=0, file="zbg034f", path=":bg/", x2=-800, y2=0, x=-960, y=0, ax=1920, ay=1126, bx=-960, by=-586},
+		{"fg", ch="心鈴", size="z2", time=300, mode=3, resize=1, path=":fg/mis/z2/", file="mis_z2b0800", face="b0004", head="mis_z2b", x2=160, x=0, y=0, lv=5, id=6},
+		{"bgm", file="bgm167"},
+		{"se", vol=30, id=1, file="se0146"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"無言のまま歩きだそうとした心鈴くんを止める。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 294,
+	},
+	block_00050 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何処に行く気だ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 299,
+	},
+	block_00051 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0014", head="mis_z2b", x=0, y=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11233", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「父親のところに行きます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 304,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何しに行くんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 307,
+	},
+	block_00053 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0014", head="mis_z2a", x=0, y=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11234", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「あの人が何を考えているのか確かめにいきます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 312,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あの人？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 315,
+	},
+	block_00055 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0004", head="mis_z2b", x=0, y=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11235", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私の父です。本間礼次郎が何を考えているのか問いただすのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 320,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、企んでいるのは恩田放哉先生だろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 323,
+	},
+	block_00057 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0008", head="mis_z2b", x=0, y=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11236", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「先生は認識が甘すぎですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 328,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺の認識が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 331,
+	},
+	block_00059 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"早足で心鈴くんが弓張の丘を下っていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 336,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その後を俺と恩田くんは追いかける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 339,
+	},
+	block_00061 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg041c", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1b0000", face="b0002", head="nei_z1b", lv=4, id=5, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10691", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「では、私はここからバスですので、失礼いたします」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 351,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、お疲れ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 354,
+	},
+	block_00063 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0003", head="nei_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10692", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 359,
+	},
+	block_00064 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=0, zoom=50, file="zbg041c", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"extrans", time=500},
+		{"fg", ch="寧", size="z2", mode=3, resize=1, path=":fg/nei/z2/", file="nei_z2a0000", face="a0003", head="nei_z2a", lv=5, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何故か笑顔で恩田くんが俺に近づいてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 371,
+	},
+	block_00065 = {
+		{"fg", ch="寧", size="z2", mode=3, path=":fg/nei/z2/", file="nei_z2b0000", face="b0003", head="nei_z2b", lv=5, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どうした？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 381,
+	},
+	block_00066 = {
+		{"quake", mode="mw"},
+		{"quake"},
+		{"se", id=1, file="se0131"},
+		{"fg", ch="寧", size="z2", mode=3, path=":fg/nei/z2/", file="nei_z2b0000", face="b0005", head="nei_z2b", lv=5, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「――うぼっッッ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 390,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんかレバーにブロウを喰らった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 395,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"痛みで思わずかがんだ俺の耳元に、寧くんがささやきかける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 400,
+	},
+	block_00069 = {
+		{"fg", ch="寧", size="z2", mode=3, path=":fg/nei/z2/", file="nei_z2b0000", face="b0005", head="nei_z2b", lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10693", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「私を導いてくださったのは心鈴師匠です。そして悔しい事に、そんな師が迷っている時に弟子である私が出来る事などほとんどありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 406,
+	},
+	block_00070 = {
+		{"fg", ch="寧", size="z2", mode=3, path=":fg/nei/z2/", file="nei_z2a0000", face="a0004", head="nei_z2a", lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10694", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「師匠の迷いを断ち切る事が出来るのは草薙先生だけです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 411,
+	},
+	block_00071 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 414,
+	},
+	block_00072 = {
+		{"fg", ch="寧", size="z2", mode=3, path=":fg/nei/z2/", file="nei_z2b0000", face="b0009", head="nei_z2b", lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="寧", size="z2", mode=3, path=":fg/nei/z2/", file="nei_z2a0000", face="a0001", head="nei_z2a", lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10695", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「何も出来ない口惜しさはありますが……それでも師匠には草薙先生がいます。",
+					{"rt2"},
+					"だから信じています」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 421,
+	},
+	block_00073 = {
+		{"fg", ch="寧", size="z2", mode=3, path=":fg/nei/z2/", file="nei_z2a0000", face="a0003", head="nei_z2a", lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10696", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「師匠を幸せにしてくださいっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 426,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ん？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 429,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「って、今の言い方おかしくないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 432,
+	},
+	block_00076 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg041c", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="寧", size="z1", mode=3, resize=1, path=":fg/nei/z1/", file="nei_z1a0000", face="a0002", head="nei_z1a", x=-345, lv=4, id=5, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10697", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「それではお二人とも失礼いたします！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 443,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"恩田くんはすぐに俺のそばから離れる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 446,
+	},
+	block_00078 = {
+		{"fg", ch="寧", size="z1", mode=3, path=":fg/nei/z1/", file="nei_z1a0000", face="a0003", head="nei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_nei_10698", ch="nei"},
+			},
+			ja = {
+				{
+					name = {"寧"},
+					"「お疲れ様でした！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 451,
+	},
+	block_00079 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0002", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11237", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「お疲れ様です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 456,
+	},
+	block_00080 = {
+		{"fg", ch="寧", mx=-40, mode=-1, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"恩田くんは脱兎のごとくその場から走り去った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 461,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんだよ、最後の一言は……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 464,
+	},
+	block_00082 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11238", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「それでは、私もここで失礼いたします」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 469,
+	},
+	block_00083 = {
+		{"bg", y=0, speed=500, time=500, sync=0, file="zbg041c", path=":bg/", x2=-200, y2=0, x=-500, ax=1920, ay=1126, bx=-960, by=-586},
+		{"fg", ch="心鈴", size="z2", speed=500, time=500, mode=3, resize=1, path=":fg/mis/z2/", file="mis_z2a0810", face="a0010", head="mis_z2a", x2=300, x=0, lv=5, id=6},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから、少し待てって！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 479,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"再び心鈴くんを静止させる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 482,
+	},
+	block_00085 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0014", head="mis_z2a", x=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11239", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「止めないでください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 487,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「止めもするだろう。なんで君が本間礼次郎氏に何か言いに行くとかいう流れになっているんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 490,
+	},
+	block_00087 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0014", head="mis_z2b", x=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11240", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「問題になっているのは、六相図に関わる事ですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 495,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いきなり核心だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 498,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、宮崎みすゞだったら、あれが草薙健一郎の作品でない事など当に分かっていただろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 501,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、そうだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 504,
+	},
+	block_00091 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0004", head="mis_z2a", x=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11241", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「だから父が何を考えているか、問いただしに行くのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 509,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だからそれはおかしいだろ。放哉先生は君の父親にその真相を話しただけなん",
+					{"rt2"},
+					"だからさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 513,
+	},
+	block_00093 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0009", head="mis_z2a", x=0, lv=5, id=6},
+		{"fgact", ch="心鈴", act="おじぎ", lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0014", head="mis_z2a", x=0, lv=5, id=6},
+			},
+			vl02 = {
+				{"fgact", ch="心鈴", act="停止", lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11242", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「はぁ、草薙先生はどこまで父をあなどっているのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 521,
+	},
+	block_00094 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0800", face="a0014", head="mis_z2a", x=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11243", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「父が、あの絵画、六相図を見て、あれが贋作であると見抜けなかったと思うの",
+					{"rt2"},
+					"ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 527,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 530,
+	},
+	block_00096 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0010", head="mis_z2a", x=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11244", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「父はすべてを知っているのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 535,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あれが贋作だって知っているの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 538,
+	},
+	block_00098 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0014", head="mis_z2a", x=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11245", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「はい、それでも、何か思うところがあって六相図を担保にお金を貸している」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 543,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 546,
+	},
+	block_00100 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0004", head="mis_z2b", x=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11246", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「当たり前です。父の眼は放哉先生よりも遙かに鋭い。",
+					{"rt2"},
+					"放哉先生が気が付くよりも早く、その事実に気が付いたでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 552,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 555,
+	},
+	block_00102 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0014", head="mis_z2b", x=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11247", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「放哉先生が父に真実を言う言わない、あるいは企む云々なんて話ではないのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 560,
+	},
+	block_00103 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0005", head="mis_z2b", x=0, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11248", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「何故、父がいまさら動き始めたか？　それが問題なのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 565,
+	},
+	block_00104 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg041c", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なるほど……言われてみれば……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 583,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの時、俺を見た本間礼次郎氏の視線。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 586,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの鋭いまなざしであるならば、あるいは墓碑銘の秘密などつぶさに見抜くかも",
+					{"rt2"},
+					"しれない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 590,
+	},
+	block_00107 = {
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11249", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「だから、私は本間礼次郎が何を考えているかを確かめようと思ったのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 600,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だとしても待ってくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 603,
+	},
+	block_00109 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11250", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「何がですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 608,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、そもそもなのだが、贋作制作したのは他でもない俺だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 611,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「贋作なんて生み出したヤツが一番悪い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 614,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「もし仮に、本間礼次郎氏があれを贋作だと知っているとしても、悪いのは俺だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 617,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「本間礼次郎氏が今、何を思って今動こうとしても、俺達がとやかく言う事じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 620,
+	},
+	block_00114 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11251", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「ですが！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 625,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「待ってくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 628,
+	},
+	block_00116 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうじゃないんだ。俺が言いたい事は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 631,
+	},
+	block_00117 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0014", head="mis_z1b", lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その言葉に心鈴くんは少し怪訝な顔をした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 636,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんでだ？　なんでそんな君は父親の事を嫌う？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 639,
+	},
+	block_00119 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「君は全てにおいて冷静で合理的な判断を下す」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 644,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そして、そこには優しさすら垣間見せる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 647,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「君は、校長や恩田親子が嫌う君の母親すら憎んでいない。",
+					{"rt2"},
+					"さらに、君に暴力を振るったという兄も憎んでいない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 651,
+	},
+	block_00122 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「にもかかわらず、何故だ？　何故君は、父親である本間礼次郎さんだけは許さないんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 654,
+	},
+	block_00123 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「不可解なんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 659,
+	},
+	block_00124 = {
+		{"bgm", stop=1, time=6000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「すべてにおいて、人格者である君が、何故、父親の事になると感情的になる",
+					{"rt2"},
+					"のか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 665,
+	},
+	block_00125 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"怪訝な顔をしていた心鈴くんの表情が徐々に強ばっていった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 668,
+	},
+	block_00126 = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そしてぽつりと言葉を発した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 673,
+	},
+	block_00127 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=-275, file="zbg041c", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="心鈴", size="z2", mode=3, resize=1, path=":fg/mis/z2/", file="mis_z2a0810", face="a0009", head="mis_z2a", lv=5, id=6, sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm175"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11252", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「心外です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 687,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、言い過ぎたかもしれない。感情的というほどではないのだが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 690,
+	},
+	block_00129 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0008", head="mis_z2a", lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11253", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「そちらではありません。私は草薙先生が思うほど人格者ではありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 696,
+	},
+	block_00130 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0004", head="mis_z2a", lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11254", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私だって、ムカつく時はムカつきますし、嫌な時は嫌ですし、嫌いな人は",
+					{"rt2"},
+					"嫌いです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 702,
+	},
+	block_00131 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0014", head="mis_z2a", lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11255", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「母親の事だって、兄の事だって、心から許しているわけではないのです。",
+					{"rt2"},
+					"ですが――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 709,
+	},
+	block_00132 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0008", head="mis_z2a", lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11256", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「憎しみというのは、必ずしも悪意からだけ出るものではないのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 714,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんの言葉をただ黙って俺は聞いていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 717,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"憎しみは悪意だけではない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 720,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だとしたら、その憎しみはどこから生まれたものなのか――。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 723,
+	},
+	block_00136 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg041c", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1a0810", face="a0008", head="mis_z1a", lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11257", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「……少し取り乱しました。今日のところは一旦帰ることにします」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 733,
+	},
+	block_00137 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 736,
+	},
+	block_00138 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0008", head="mis_z1b", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11258", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「それでは、私はアパートまで歩きですので……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 741,
+	},
+	block_00139 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あのさぁ。心鈴くん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 744,
+	},
+	block_00140 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11259", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 749,
+	},
+	block_00141 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「今日のお弁当のお礼がしたいのだが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 752,
+	},
+	block_00142 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんが黙って俺の方を向く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 757,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ウチで夕ご飯を食べていかないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 760,
+	},
+	block_00144 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0008", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11260", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「先生と私の家は逆方向です。さらに言えば私が住んでいるアパートは駅から",
+					{"rt2"},
+					"歩いてすぐですが、先生の家は電車に乗って隣駅です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 767,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それなら大丈夫。行きも帰りもバイクで送っていくから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 770,
+	},
+	block_00146 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0011", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11261", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「バイクの二人乗りは危険だったのではないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 775,
+	},
+	block_00147 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「まぁ、そうなんだけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 778,
+	},
+	block_00148 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0008", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11262", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「ふぅ……、分かりました。泊まらせて頂きます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 784,
+	},
+	block_00149 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え？　泊まるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 787,
+	},
+	block_00150 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=6},
+		{"fgact", ch="心鈴", act="うなづく", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11263", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「はい、藍さんはご在宅ですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 793,
+	},
+	block_00151 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、もちろん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 796,
+	},
+	block_00152 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11264", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「だったら問題はないでしょう。寧さんの合宿の時と同じです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 801,
+	},
+	block_00153 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなるけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 804,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その通りではあるのだが――、",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 807,
+	},
+	block_00155 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"合宿は突然俺が決めたものだから、その対応に大わらわだったので、客が来る時は事前に連絡しろと藍に釘を刺されている……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 810,
+	},
+	block_00156 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11265", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「そもそも、お礼など方便ですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 820,
+	},
+	block_00157 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11266", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「先生は、私の父と私の事が聞きたい。",
+					{"rt2"},
+					"何故、私達はこんな奇妙な関係性なのか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 826,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ご明察だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 829,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まったく隠す気など無いと言った感じで答えた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 832,
+	},
+	block_00160 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0008", head="mis_z1a", lv=4, id=6},
+		{"fgact", ch="心鈴", act="おじぎ", lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"すると心鈴くんは嘆息してから答える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 838,
+	},
+	block_00161 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0008", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11267", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「たぶん………その話をすると長くなります。",
+					{"rt2"},
+					"なので、着替えを持ってきたいので、少し待ってください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 845,
+	},
+	block_00162 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それだったら、俺が君の家までバイクで送っていくよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 848,
+	},
+	block_00163 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0013", head="mis_z1b", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11268", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「バイクの二人乗りは危険だって言ったくせに……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 853,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったら辞める？　君は電車で行って俺は――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 856,
+	},
+	block_00165 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0800", face="a0005", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11269", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「むぅっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 861,
+	},
+	block_00166 = {
+		{"bg", y=0, zoom=50, time=150, file="zbg041c", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586},
+		{"fg", ch="心鈴", size="z2", mode=3, resize=1, path=":fg/mis/z2/", file="mis_z2a0800", face="a0005", head="mis_z2a", lv=5, id=6},
+		{"se", vol=30, id=1, file="se0144"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ツカツカと心鈴くんが俺の方向に歩いてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 879,
+	},
+	block_00167 = {
+		{"se", stop=1, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え、あの……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 884,
+	},
+	block_00168 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんか表情が少し怖い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 887,
+	},
+	block_00169 = {
+		{"se", vol=10, id=1, file="se0054"},
+		{"bg", y=-0, zoom=50, time=200, sync=0, file="zbg041c", path=":bg/", y2="0,-10", ax=1920, ay=1126, bx=-960, by=-586},
+		{"fg", ch="心鈴", time=200, mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0005", head="mis_z2a", y2="0,10", y=0, lv=5, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ドスッ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 896,
+	},
+	block_00170 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"バイクのサスが沈む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 901,
+	},
+	block_00171 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"バイクの上にまたがった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 904,
+	},
+	block_00172 = {
+		{"fg", ch="心鈴", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0004", head="mis_z2a", lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11270", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私の家は、ここから国道に出た交差点を直進して、三つ目の角を左に曲がった場所にあります。アパートが近づいたら指示しますので、発進してください！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 909,
+	},
+	block_00173 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"バイクにまたがりながら、指さした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 912,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いやさ、心鈴くん。",
+					{"rt2"},
+					"リアに先に乗られると、運転するシートに座れないんだよ。",
+					{"rt2"},
+					"人が乗っていたら不安定になるからさ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 917,
+	},
+	block_00175 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんはそのままの姿勢で固まる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 920,
+	},
+	block_00176 = {
+		{"msgoff"},
+		{"colortone", style="reset"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg041c", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"extrans", time=250},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"表情も変えずに、いそいそと心鈴くんがバイクから降りる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 936,
+	},
+	block_00177 = {
+		{"fg", ch="心鈴", size="z1", my=40, mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1a0810", face="a0004h", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして仁王立ちになり、再び指さす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 947,
+	},
+	block_00178 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0800", face="a0005h", head="mis_z1a", lv=4, id=6},
+		{"fgact", ch="心鈴", act="びっくり", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11271", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「あちらの方向なのです！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 953,
+	},
+	block_00179 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心なしか、心鈴くんが恥ずかしがっている様にみえた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 956,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"彼女みたいな人間でも、恥ずかしがったりするのだな。",
+					{"rt2"},
+					"などと思っていると――、",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 960,
+	},
+	block_00181 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0014h", head="mis_z1b", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11272", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「ぎろり」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 965,
+	},
+	block_00182 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんかすごい目つきで睨まれた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 968,
+	},
+	block_00183 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんのこういうところは、鋭いというか、ほとんど読心術みたいな能力だよな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 971,
+	},
+	block_00184 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんて事を考えながら心鈴くんを見ていたら、さらに顔を赤くさせる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 974,
+	},
+	block_00185 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0004h", head="mis_z1b", lv=4, id=6},
+		{"fgact", ch="心鈴", act="いいえ", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11273", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「い、いらない事を考えないでください！　行きますよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 980,
+	},
+	block_00186 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"動揺する心鈴くん、少し可愛い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 983,
+	},
+	block_00187 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"などと考えていると、",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 986,
+	},
+	block_00188 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0005h", head="mis_z1b", lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0006h", head="mis_z1b", lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11274", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「行きますよ！　もう、歩いて行きますからね！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 992,
+	},
+	block_00189 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"と怒らせてしまった様だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 995,
+	},
+	block_00190 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"excall", file="03_mis05_5"},
+		{"text"},
+		linkback = "block_00189",
+		line = 1000,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

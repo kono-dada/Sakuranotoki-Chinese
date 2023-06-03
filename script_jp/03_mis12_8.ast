@@ -1,0 +1,131 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"bg", file="ev_etc_01_06", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"bgm", file="bgm136"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんなこんなでこの日は終わった。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 12,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"聖ルーアンともこれでお別れだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 15,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ここに通った数ヶ月は、なんかいろいろあった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 18,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この学園そのものは悪くないのだけどな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 21,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13220", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「直哉さん、いつまで学校を見ているのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 24,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、なんでもない、んじゃかえろうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 27,
+	},
+	block_00006 = {
+		{"bg", file="black", path=":bg/"},
+		{"se", id=1, file="se0033"},
+		{"se", stop=1, time=5000, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はバイクのエンジンをかける。",
+					{"rt2"},
+					"心鈴くんと共に家路につく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 37,
+	},
+	block_00007 = {
+		{"scene", file="scene04"},
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="03_mis13"},
+		{"text"},
+		linkback = "block_00006",
+		line = 45,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

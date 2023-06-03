@@ -1,0 +1,3766 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"msg", no=1},
+		{"se", vol=50, time=1000, loop=1, id=1, file="se0026"},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg054a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1a0810", face="a0009", head="mis_z1a", lv=4, id=9, sync=0},
+		{"extrans", rule=139, vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ふぅ、なんとか間に合ったな」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 19,
+	},
+	block_00001 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0008", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12217", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「はい、なんとか間に合いました……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 24,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"我々はギリギリ遅刻しない時間に電車に乗る事が出来た。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 27,
+	},
+	block_00003 = {
+		{"se", stop=1, time=500, id=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", rule=139, vague=40, file="ev_etc_01_01", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁはぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 38,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は桜ヶ原駅で心鈴くんと別れた後、ふたたび走って弓張学園を目指していた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 41,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「結構ギリギリだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 44,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんは間に合ったかな？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 47,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"腕時計を見る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 50,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"桜ヶ原の一つ先だが、聖ルーアンは駅の目の前にある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 53,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺よりは早く着くだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 56,
+	},
+	block_00010 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg034e", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"やっとの事で俺は夢浮坂までたどり着いた。",
+					{"rt2"},
+					"あとはここを登り切るだけだ――。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 66,
+	},
+	block_00011 = {
+		{"bg", file="黒服", zoom=58, x=-347, y=770, speed=250, time=250, id=1, lv=5, path=":cg/", ax=975, ay=2634, bx=-15, by=-2094, mx=-40},
+		{"fg", ch="黒服Ａ", size="z1", speed=250, time=250, mx=40, mode=3, resize=1, path=":fg/bca/z1/", file="bca_z1a0000", face="a0001", head="bca_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「っ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 76,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"道を塞ぐように立ちはだかる男二人。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 81,
+	},
+	block_00013 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", speed=250, file="zbg034e", path=":bg/", x2=300, y2=0, x=400, y=0, ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="黒服Ａ", size="z2", time=250, speed=250, mode=3, resize=1, path=":fg/bca/z2/", file="bca_z2a0000", face="a0001", head="bca_z2a", x2=-100, x=0, lv=5, id=6, sync=0},
+		{"extrans", rule=280, time=250, vague=40},
+		{"bgm", file="bgm168"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"後ろを振り返ると同じような格好をした男が一人立っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 93,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"囲まれた……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 96,
+	},
+	block_00015 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg034e", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"bg", file="黒服", zoom=58, x=-347, y=770, id=1, lv=5, path=":cg/", ax=975, ay=2634, bx=-15, by=-2094, sync=0},
+		{"fg", ch="黒服Ａ", size="z1", mode=3, resize=1, path=":fg/bca/z1/", file="bca_z1a0000", face="a0001", head="bca_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この独特な雰囲気の連中なんて、この街で奴らの手下以外考えられない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 107,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"黒服B", "黒服"},
+					"「草薙直哉だな。ついてきてもらおう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 112,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いやいや、ついてくるも何も、これから授業だし、そもそもあんたら何者だよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 115,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"できる限り何も知らないかの様に振る舞う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 118,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"黒服B", "黒服"},
+					"「そちらに選択権はない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 123,
+	},
+	block_00020 = {
+		{"se", file="se0090", vol=30, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「っ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 128,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"背後にいた男が、背中に何か硬いものを押しつけている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 131,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"男が耳元で小さく呟く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 134,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"黒服C", "黒服"},
+					"「黙ってついてきてもらおうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 140,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この金属的な感触は拳銃？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 143,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こいつら、街中で拳銃を押しつけているのか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 146,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いくらなんでもデタラメすぎる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 149,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「今さら、中村家が俺になんの用だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 152,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とぼけても仕方が無い、奴らの目的を直接聞き出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 155,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"黒服B", "黒服"},
+					"「今さらではない。今だから貴様に用がある。",
+					{"rt2"},
+					"こう言えばどんな鈍い頭でも分かるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 161,
+	},
+	block_00030 = {
+		{"bg", file="black", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"「今だから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 166,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その言葉に、ぞわりと肌が粟立つ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 169,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"中村家がこんな強硬手段を使ってまで俺を呼び出す理由など一つしかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 172,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"六相図を担保に貸し付けられている額が頭をかすめる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 175,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"人一人の命で済むような値段ではない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 178,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺程度の命ならば屍の束となっても対価に見合わない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 181,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"黒服C", "黒服"},
+					"「さぁ、歩け……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 186,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					{"ruby", text="マズル"},
+					"銃口",
+					{"/ruby"},
+					"とおぼしき硬い金属が背中を強く押す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 190,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"抵抗など出来る状況ではない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 193,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は黙って、黒服の言う通りにする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 196,
+	},
+	block_00040 = {
+		{"bg", file="ev_etc_01_01", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"夢浮坂を下った道で黒いバンが待っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 202,
+	},
+	block_00041 = {
+		{"se", file="se0092", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"最初に後部座席に俺は押し込まれる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 207,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"拉致だな……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 210,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"布袋を被されて、ガムテープを巻かれる事すら覚悟していたが、",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 213,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"目隠しなどもされる事もなく、そのまま車が発進した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 216,
+	},
+	block_00045 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", file="black", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"車は山奥に入っていく――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 224,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな事を思っていたが、住宅街を数分も走った場所で車が一旦停止する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 227,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「これは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 230,
+	},
+	block_00048 = {
+		{"bg", file="bg048a", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"巨大な屋敷の門であった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 235,
+	},
+	block_00049 = {
+		{"se", file="se0094", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"車が止まると同時に、自動で門が鉄音を立てて開いていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 240,
+	},
+	block_00050 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"音が完全に止むと、車が再び動き出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 245,
+	},
+	block_00051 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"se", stop=1, time=500, id=2},
+		{"se", stop=1, time=500, id=3},
+		{"bg", rule="083r", speed=120000, vague=40, file="zev_etc_01_01", path=":ev/ev_etc_01/", x2=290, y2=-310, x=-290, y=-310, set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"門をくぐると美しい庭園が広がっていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 256,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「宮崎絵画学校も相当だったけどな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 259,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"豪邸という名称以外に思いつかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 262,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"弓張が首都圏の外れといえどもこの豪邸は凄まじい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 265,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は「金があるところには金があるんだなぁ」とくだらない事を考えていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 268,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とはいえ、この屋敷も担保になっているのだろうけれども。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 271,
+	},
+	block_00057 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"bg", rule="083r", vague=40, file="bg047a", path=":bg/"},
+		{"bgm", file="bgm167", time=4000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は屋敷の居間らしき場所に通された。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 281,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ゴッツい甲冑とにらめっこしながら、俺は屋敷を見渡した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 284,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"落ちぶれたといえども千年続く名家といったところか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 287,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"宮崎絵画学校で使われていたものもかなりの高級品が多かったが、この屋敷の",
+					{"rt2"},
+					"装飾品も決して劣っていなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 291,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それにしても……凄まじい暖炉だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 294,
+	},
+	block_00062 = {
+		{"bgm", file="bgm167"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"すべてが規格外の屋敷の中でも、それがやたら目についた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 299,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"相当古いものだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 302,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"国産ではない。",
+					{"rt2"},
+					"海外で古くから使われていたものだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 306,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"屋敷を解体した時にそれを買い取り、そのまま船で運んできたという感じだろうか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 309,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"屋敷の内装などを考えている場合でもないのだが。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 312,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「さてと……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 315,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"六相図がバレる可能性は考えていたが、こんな形で呼び出されるとは思っていなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 318,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"拉致された形ではあるが、その後が不可解だ、今の状況は監禁とは言いがたい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 321,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「とは言っても……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 324,
+	},
+	block_00071 = {
+		{"bg", lv=5, id=5, rule="cinema", file="cinema01", alpha=255, time=400, path=":sys/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"廊下に二人の黒服が立っている姿が見える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 333,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"監禁とは言えないまでも、軟禁状態なのは間違いないな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 336,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それにしてもどうしたものか――。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 339,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"実際、六相図が贋作であるとバレた時の対応はいくつか考えている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 342,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その中には当然、今よりも酷い拉致監禁の可能性も考えていたのだが……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 345,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「微妙に奇妙なんだよな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 348,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"背中に拳銃を押しつけられて連行。",
+					{"rt2"},
+					"そのわりに目隠しもされずにそのまま屋敷に連れてこられる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 352,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"連れられた場所も中村家。",
+					{"rt2"},
+					"防音ありの地下室の様な場所でなく、客を呼ぶような洋間。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 356,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"実際、スマホを確認したが、アンテナは十分立っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 359,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"囲まれた瞬間にアプリは起動しておいた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 362,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"自宅で同期させているパソコンがすでに俺のいる場所を表示しているハズだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 365,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"自動的に藍のスマホに、俺の所在が表示される様になっているのだが……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 368,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"監禁する気ゼロとしか言い様がない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 371,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「強硬手段なんだかそうじゃないんだか、まったく分からんな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 374,
+	},
+	block_00085 = {
+		{"cgdel", lv=5, id=5, rule="cinema", time=400},
+		{"se", file="se0051", vol=20, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな事を考えているとドアが開いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 389,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10001", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華", "？？？"},
+					"「思った以上に間抜け面ね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 393,
+	},
+	block_00087 = {
+		{"se", stop=1, time=500, id=1},
+		{"fg", ch="麗華", size="z1", mx=-40, mode=3, resize=1, path=":fg/rei/z1/", file="rei_z1a0100", face="a0001", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一人の妙齢の女性が立っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 406,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"さすがの俺も、その顔を見て驚いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 409,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なるほど、静流さんの言う通りだな……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 412,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"女性の後に誰かが続くと思ったが、どうやら室内には俺と彼女だけらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 415,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"中村章一が出てくると思ったが……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 418,
+	},
+	block_00092 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0011", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10002", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華", "？？？"},
+					"「あなたには一生、牢獄で暮らしてもらうわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 429,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「牢獄？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 432,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"想定していたものとまったく違った言葉に俺は少し困惑した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 435,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"牢獄？　この屋敷の地下にその様なものでもあるのだろうか？",
+					{"rt2"},
+					"だとして、自宅の屋敷に監禁するのはリスク高くないか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 439,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まったく状況が掴めない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 442,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「失礼ですが、どなたでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 445,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"顔を見てそれが誰かすぐに分かったが、それでも相手の出方を見るためにとりあえず名前を聞いてみる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 448,
+	},
+	block_00099 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0001", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0010", head="rei_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10003", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「中村麗華よ。まぁ、今後あなたと直接言葉を交わす機会なんてないから、どうでもいい事だけれども」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 454,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"中村麗華。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 457,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"やはり、この人が心鈴くんのお母さんか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 460,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"似ているなんてもんじゃない、そっくりとしか言い様がない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 463,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とてもじゃないがあんな年齢の娘がいる歳には見えない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 466,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「状況が良く分からないのですが？　どういったご用件で私は呼ばれたのでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 469,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"さらに探ってみる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 472,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"果たして六相図に関わる事だろうか？",
+					{"rt2"},
+					"だとして、こいつは俺になにをする気なのか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 476,
+	},
+	block_00107 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0005", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10004", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「とぼけても無駄よ。すでに私はすべてを知っているのだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 481,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「とぼけるも何も、あなたが何を知っているかそもそも分かりませんし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 484,
+	},
+	block_00109 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0005", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10005", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「心鈴は私の娘よ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 489,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"突拍子もない言葉だった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 492,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんがこの人の娘？",
+					{"rt2"},
+					"いや、そんな事は分かりきっている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 496,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「存じ上げてますが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 499,
+	},
+	block_00113 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0011", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10006", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「何故？　私とあんたは面識なんぞないハズだけど？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 504,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「端的にそっくりですから……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 507,
+	},
+	block_00115 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0002", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺の言葉を聞いて彼女は鼻で笑った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 512,
+	},
+	block_00116 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0003", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10007", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「そう、だったらあなたが牢獄に入る理由も分かるわよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 517,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"不可解な問いが再び返ってくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 520,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は動揺を悟られないように慎重に答える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 523,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「分かりませんが？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 526,
+	},
+	block_00120 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0006", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10008", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「淫行罪に決まっているでしょ！　あんた教師の分際でなに女生徒に手出しているのよ！　有罪、超有罪に決まっているでしょ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 531,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 534,
+	},
+	block_00122 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0005", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はかなり間抜けな声を漏らしてしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 539,
+	},
+	block_00123 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0010", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10009", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「たまに心鈴の様子を見にいってたのだけど、ここ最近は自宅にいない事が多かった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 544,
+	},
+	block_00124 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0011", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10010", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「不審に思った私は下の者に心鈴の動向を探らせていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 549,
+	},
+	block_00125 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0006", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10011", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「そこで浮上したのがあんたの存在よ！　草薙直哉！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 554,
+	},
+	block_00126 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0009", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0005", head="rei_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10012", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「心鈴がよもや憎っくき夏目家に入り浸っているなんて……、絶対に許さない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 560,
+	},
+	block_00127 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それだけですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 563,
+	},
+	block_00128 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0006", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10013", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「はぁ？　なにがそれだけよ！？　大問題よ！　あんたは犯罪者なんだから！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 568,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「犯罪者とは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 571,
+	},
+	block_00130 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0004", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0005", head="rei_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10014", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「淫行罪ぐらい知っているでしょ？",
+					{"rt2"},
+					"あんたは淫行罪で実刑判決を言い渡されるのよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 578,
+	},
+	block_00131 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"マジか……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 581,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「つーか、そんな理由で拉致までしてここに連れてきたのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 584,
+	},
+	block_00133 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0004", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0005", head="rei_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10015", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「そんな理由って何よ！　十分でしょ！　あんたは憎っくき夏目家に巣くう草薙直哉よ！　そんな輩を私の娘に近づけてなるものですか！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 590,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なるほど……だいたい話がみえてきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 593,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"現状思っていたほど、最悪な状況ではない様だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 596,
+	},
+	block_00136 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「淫行罪なら警察に届ければいいのではないでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 599,
+	},
+	block_00137 = {
+		{"fg", ch="麗華", size="z1", ex01="a0099", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0004", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10016", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「う゛っ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 604,
+	},
+	block_00138 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「にもかかわらず、俺を拉致して中村の屋敷に連れてくる理由とは何でしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 607,
+	},
+	block_00139 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0005", ex01="a0099", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10017", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「さっきから、あんた拉致拉致って人聞き悪いわねぇ！　いつ私があんたを拉致したって言うのよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 612,
+	},
+	block_00140 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「私は勤務先に向かう途中だった、それを無理矢理連れてこられた。おかげで無断欠勤扱いですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 615,
+	},
+	block_00141 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0011", ex01="a0099", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0002", ex01="a0099", head="rei_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10018", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「無理矢理って何よ？　そんな証拠でもあるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 621,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"「背中に銃口を向けただろ――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 624,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言いかけた瞬間に、俺はその言葉の意味を反芻した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 627,
+	},
+	block_00144 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg034e", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"bg", file="黒服", zoom=58, x=-347, y=770, id=1, lv=5, path=":cg/", ax=975, ay=2634, bx=-15, by=-2094, sync=0},
+		{"fg", ch="黒服Ａ", size="z1", mode=3, path=":fg/bca/z1/", file="bca_z1a0000", face="a0001", head="bca_z1a", x=345, lv=4, id=6, sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"「背中に銃口？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 639,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"「何故、俺はそう思い込んだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 642,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"六相図が贋作であれば、七十億円というとてつもない金を中村家が失う事を意味する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 645,
+	},
+	block_00147 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その様な金額の前ならば、いくら人が死んだとしても不思議では無い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 648,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その認識そのものは間違っていない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 651,
+	},
+	block_00149 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが事実は違った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 654,
+	},
+	block_00150 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg047a", path=":bg/", sync=0},
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0011", head="rei_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この女は、単に娘を俺に取られたのでこの屋敷まで連れてきたにすぎない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 664,
+	},
+	block_00151 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だとしたら、あんな場所で拳銃などちらつかせるわけがない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 667,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たぶん特殊警棒の様なもの――、",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 670,
+	},
+	block_00153 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"拳銃のバレルと先端のマズル、これと警棒の感触を勘違いした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 673,
+	},
+	block_00154 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0002", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0003", head="rei_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10019", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「何故黙っているのかしら？　事の重大性がやっと理解出来たという感じかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 679,
+	},
+	block_00155 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いいえ、少しばかり考え事をしていただけです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 682,
+	},
+	block_00156 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0003", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10020", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「考え事？　バカが考えても無駄よ。バカはバカなんだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 687,
+	},
+	block_00157 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"口が悪い女だなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 690,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"顔は似ているが、中身はまったく似ても似つかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 693,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「淫行罪だと思うのでしたら、私など呼び出さずにそのまま警察に連絡すれば身柄が拘束されると思います」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 696,
+	},
+	block_00160 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0011", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「日本の警察は優秀ですから、私が証拠隠滅をはかる前に身柄を拘束して、証拠を押収し、しかるべき手段で起訴するでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 701,
+	},
+	block_00161 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それが一番、合理的で手っ取り早い方法だと考えますが？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 704,
+	},
+	block_00162 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0004", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10021", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「そうよ！　本来ならばそうなるべきよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 709,
+	},
+	block_00163 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だが事実はそうではなかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 712,
+	},
+	block_00164 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0006", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0004", head="rei_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10022", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「通報したわよ！　通報したら警察のやつらは、とりあえず親権者に確認すると言ったっきり音沙汰なしなの！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 718,
+	},
+	block_00165 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"親権者に確認。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 721,
+	},
+	block_00166 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんの親権は本間家が持っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 724,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"親権者は本間礼次郎氏だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 727,
+	},
+	block_00168 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なるほど……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 730,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「でしたら、親権者側が私と心鈴くんの件に関して問題ないと答えたのじゃないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 733,
+	},
+	block_00170 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0012", head="rei_z1a", lv=4, id=9},
+		{"fgact", ch="麗華", act="びっくり", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10023", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「ぎくっ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 739,
+	},
+	block_00171 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「心鈴さんとは真剣にお付き合いさせて頂いております。",
+					{"rt2"},
+					"その事はすでに親御さんである本間礼次郎さんに報告させていただいております」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 743,
+	},
+	block_00172 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0007", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", ex01="a0099", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0001", head="rei_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10024", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「え？　あ、あの男に会って、報告したの！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 749,
+	},
+	block_00173 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺が本間礼次郎氏に報告を済ませている。",
+					{"rt2"},
+					"その事実にかなり動揺した様だった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 753,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"本間礼次郎氏は、俺と心鈴くんが報告した事をこの人には言ってないのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 756,
+	},
+	block_00175 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"これも当たり前と言えば当たり前だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 759,
+	},
+	block_00176 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"すべての状況を把握した俺は肩の力を抜いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 762,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんの問題はない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 765,
+	},
+	block_00178 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう思った刹那――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 768,
+	},
+	block_00179 = {
+		{"bgm", vol=20, file="bgm167"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12218", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴", "？？？"},
+					"「その通りです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 774,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"聞き覚えのある声が聞こえた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 777,
+	},
+	block_00181 = {
+		{"se", file="se0051", vol=20, id=1},
+		{"msgoff"},
+		{"bg", x=-600, y=260, time=500, file="zbg047a", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540},
+		{"fg", ch="心鈴", size="z2", mx=40, mode=3, resize=1, path=":fg/mis/z2/", file="mis_z2b0800", face="b0001", head="mis_z2b", lv=5, id=9},
+		{"bgm", vol=100, time=1000, file="bgm167"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"扉がゆっくりと開くと、見慣れた姿があらわれた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 788,
+	},
+	block_00182 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg047a", path=":bg/", sync=0},
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0007", head="rei_z1a", x=-345, lv=4, id=5, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10025", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「み、心鈴！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 799,
+	},
+	block_00183 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0004", head="mis_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0014", head="mis_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12219", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「何を考えているんでしょうかお母様？",
+					{"rt2"},
+					"この様な行為をしても、中村家になんら有益でないのは明白ではないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 806,
+	},
+	block_00184 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0006", head="rei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0005", head="rei_z1a", x=-345, lv=4, id=5},
+			},
+			vl02 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0008", head="rei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10026", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「有益とかそういう問題じゃないのよ！　だいたいあなたがこんなクズみたいな男――っッッ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 814,
+	},
+	block_00185 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0008", head="rei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"彼女は言葉を止めた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 819,
+	},
+	block_00186 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いや止めたというよりも、発せられないのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 822,
+	},
+	block_00187 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんの鋭い視線が母親に向けられている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 825,
+	},
+	block_00188 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その眼光は父親譲りで恐ろしいものだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 828,
+	},
+	block_00189 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12220", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「母親と言えども、私が愛した人をクズ呼ばわりする事は許しません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 833,
+	},
+	block_00190 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0004", head="rei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0005", head="rei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10027", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「ゆ、許すとか許さないとか、だいたいアンタは親に向かってどんな口の利き方をしているのよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 839,
+	},
+	block_00191 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12221", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「親権はあなたにはありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 844,
+	},
+	block_00192 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0004", head="rei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0005", head="rei_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10028", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「親権の問題じゃないわよ！　アンタは私が腹を痛めて産んだ子だ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 850,
+	},
+	block_00193 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0014", head="mis_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12222", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「そうですね。だとして、それがどうしたのでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 856,
+	},
+	block_00194 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0008", head="rei_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ゆっくりと目をつぶった後に、じろりと母親を見つめる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 861,
+	},
+	block_00195 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0004", head="mis_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12223", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私は草薙直哉を傷つける者だとしたら、親権があろうがなかろうが関係",
+					{"rt2"},
+					"ありません。",
+					{"rt2"},
+					"それが実の母だろうが父だろうが、私は絶対に許しません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 868,
+	},
+	block_00196 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0014", head="mis_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12224", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「草薙直哉には指一本触れさせません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 873,
+	},
+	block_00197 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんの言葉は始終静かであったが、底知れぬ凄みがあった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 876,
+	},
+	block_00198 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"母親はそのまま言葉を発せ無くなる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 879,
+	},
+	block_00199 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=-600, y=260, file="zbg047a", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"fg", ch="心鈴", size="z2", mode=3, resize=1, path=":fg/mis/z2/", file="mis_z2a0810", face="a0002", head="mis_z2a", lv=5, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12225", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「さぁ、帰りましょう。直哉さん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00198",
+		linknext = "block_00200",
+		line = 889,
+	},
+	block_00200 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、俺の手を取る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00199",
+		linknext = "block_00201",
+		line = 892,
+	},
+	block_00201 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg047a", path=":bg/", sync=0},
+		{"bg", file="黒服", zoom=58, x=-347, y=770, id=1, lv=5, path=":cg/", ax=975, ay=2634, bx=-15, by=-2094, sync=0},
+		{"fg", ch="黒服Ａ", size="z1", mode=3, path=":fg/bca/z1/", file="bca_z1a0000", face="a0001", head="bca_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺が立ち上がると、心鈴くんの前に黒服が二人立ち塞がる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00200",
+		linknext = "block_00202",
+		line = 903,
+	},
+	block_00202 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"本間くんのお母さんがその事で我に返った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00201",
+		linknext = "block_00203",
+		line = 906,
+	},
+	block_00203 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10029", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「捕まえなさい！　その娘もろとも！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00202",
+		linknext = "block_00204",
+		line = 911,
+	},
+	block_00204 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんの母親が叫ぶ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00203",
+		linknext = "block_00205",
+		line = 914,
+	},
+	block_00205 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=-600, y=260, file="zbg047a", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0014", head="mis_z2b", lv=5, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、心鈴くんはまったく動じる事なく、声をあげた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00204",
+		linknext = "block_00206",
+		line = 924,
+	},
+	block_00206 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0006", head="mis_z2b", lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0014", head="mis_z2a", lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12226", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「わきまえなさい！　お前達は誰の前に立っていると思っているのですか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00205",
+		linknext = "block_00207",
+		line = 930,
+	},
+	block_00207 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg047a", path=":bg/", sync=0},
+		{"bg", file="黒服", zoom=58, x=-347, y=770, id=1, lv=5, path=":cg/", ax=975, ay=2634, bx=-15, by=-2094, sync=0},
+		{"fg", ch="黒服Ａ", size="z1", mode=3, path=":fg/bca/z1/", file="bca_z1a0000", face="a0001", head="bca_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その言葉に黒服のあからさまに困惑し、互いに顔を見合わせる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00206",
+		linknext = "block_00208",
+		line = 941,
+	},
+	block_00208 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10030", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「何やっているの！　捕まえなさい！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00207",
+		linknext = "block_00209",
+		line = 944,
+	},
+	block_00209 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"発破をかける心鈴くんの母親。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00208",
+		linknext = "block_00210",
+		line = 947,
+	},
+	block_00210 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが二人の黒服は動くことが出来ない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00209",
+		linknext = "block_00211",
+		line = 950,
+	},
+	block_00211 = {
+		{"fg", mode=-2, sync=0},
+		{"cgdel", id=-1, sync=0},
+		{"bg", x=-600, y=260, file="zbg047a", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0001", head="mis_z2b", lv=5, id=6, sync=0},
+		{"extrans", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そうこうしているウチにまったく別の場所から、一人の黒服が心鈴くんに近づいてきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00210",
+		linknext = "block_00212",
+		line = 963,
+	},
+	block_00212 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ser_10001", ch="ser"},
+			},
+			ja = {
+				{
+					name = {"使用人"},
+					"「お嬢様、車をまわしました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00211",
+		linknext = "block_00213",
+		line = 966,
+	},
+	block_00213 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0004", head="mis_z2b", lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2b0800", face="b0014", head="mis_z2b", lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12227", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「車はいりません。とりあえず、あの重苦しい門だけ開いておいてください。",
+					{"rt2"},
+					"私達は徒歩で帰宅します」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00212",
+		linknext = "block_00214",
+		line = 973,
+	},
+	block_00214 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ser_10002", ch="ser"},
+			},
+			ja = {
+				{
+					name = {"使用人"},
+					"「仰せのままに……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00213",
+		linknext = "block_00215",
+		line = 976,
+	},
+	block_00215 = {
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg047a", path=":bg/", sync=0},
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0005", head="rei_z1a", lv=4, id=5, sync=0},
+		{"extrans", time=300},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10031", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「あ、あんたは誰の味方なのよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00214",
+		linknext = "block_00216",
+		line = 986,
+	},
+	block_00216 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ser_10003", ch="ser"},
+			},
+			ja = {
+				{
+					name = {"使用人"},
+					"「私は本間家から派遣されてここに仕えているだけです。",
+					{"rt2"},
+					"心鈴お嬢様の命令が絶対です。お嬢様の命令の前ではあなたの命令など、",
+					{"rt2"},
+					"ただの言葉でしかありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00215",
+		linknext = "block_00217",
+		line = 991,
+	},
+	block_00217 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0011", head="rei_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10032", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「ど、どういう事よ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00216",
+		linknext = "block_00218",
+		line = 996,
+	},
+	block_00218 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ser_10004", ch="ser"},
+			},
+			ja = {
+				{
+					name = {"使用人"},
+					"「説明する必要もないでしょう。私はあなた方に対する監視役としてここにいます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00217",
+		linknext = "block_00219",
+		line = 999,
+	},
+	block_00219 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0006", head="rei_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10033", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「礼次郎っっ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00218",
+		linknext = "block_00220",
+		line = 1004,
+	},
+	block_00220 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0100", face="a0004", head="rei_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10034", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「何故心鈴がこんなに早くここにこられた？　これもあいつが仕組んだ事なのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00219",
+		linknext = "block_00221",
+		line = 1009,
+	},
+	block_00221 = {
+		{"se", file="se0051", vol=20, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"黒服の男は何も言わずに扉を開ける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00220",
+		linknext = "block_00222",
+		line = 1014,
+	},
+	block_00222 = {
+		{"fg", ch="麗華", size="z1", mode=3, path=":fg/rei/z1/", file="rei_z1a0110", face="a0006", head="rei_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_10035", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「お、お前そんな事してただで済むと思っているのか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00221",
+		linknext = "block_00223",
+		line = 1019,
+	},
+	block_00223 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ser_10005", ch="ser"},
+			},
+			ja = {
+				{
+					name = {"使用人"},
+					"「さぁ、お嬢様、門までお見送りします」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00222",
+		linknext = "block_00224",
+		line = 1029,
+	},
+	block_00224 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_12228", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「ありがとうございます。ですが私の事より、直哉さんに誰か危害を加えないか",
+					{"rt2"},
+					"注意してください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00223",
+		linknext = "block_00225",
+		line = 1036,
+	},
+	block_00225 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_ser_10006", ch="ser"},
+			},
+			ja = {
+				{
+					name = {"使用人"},
+					"「仰せのままに」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00224",
+		linknext = "block_00226",
+		line = 1039,
+	},
+	block_00226 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まったく婦人の話など聞かずに黒服は俺達を門まで連れて行ってくれた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00225",
+		linknext = "block_00227",
+		line = 1045,
+	},
+	block_00227 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たぶん、本間家直轄の人間なのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00226",
+		linknext = "block_00228",
+		line = 1048,
+	},
+	block_00228 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの婦人が何を言おうが、本間に莫大な借金がある中村は彼のクビを切れないだろうし、仮に切ったところで、他の本間の人間があの屋敷に入るだけだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00227",
+		linknext = "block_00229",
+		line = 1051,
+	},
+	block_00229 = {
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="03_mis08_3"},
+		{"text"},
+		linkback = "block_00228",
+		line = 1055,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

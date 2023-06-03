@@ -1,0 +1,1828 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅴ章"},
+		{"msg", no=1},
+		{"bg", file="アイキャッチ05", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans"},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", label="flagon", cond="g.countdown3==1"},
+		{"skipstop"},
+		{"autoplay", speed=500, wait=500, auto=500},
+		{"bg", file="カウントダウン03_1", id=1, lv=5, path=":cg/"},
+		{"ex", time=1500, func="wait"},
+		{"se", id=1, file="se0147"},
+		{"bg", file="カウントダウン03_2", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=500},
+		{"ex", time=3000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"autoplay", mode="stop"},
+		{"excall", label="join"},
+		{"bg", file="カウントダウン03_1", id=1, lv=5, path=":cg/"},
+		{"ex", time=1500, func="wait"},
+		{"se", id=1, file="se0147"},
+		{"bg", file="カウントダウン03_2", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=500},
+		{"ex", time=3000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"eval", exp="g.countdown3=1"},
+		{"bg", file="ev_etc_01_02", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はスマホで地図を確認しながら歩いていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 58,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"氷川の連絡先をルリヲに聞いたところ、何故か住所と時間が指定された。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 61,
+	},
+	block_00002 = {
+		{"bg", speed=150000, file="zbg068e", path=":bg/", x2=520, y2=-80, x=160, y=-80, ax=1920, ay=1080, bx=-960, by=-540},
+		{"bgm", file="bgm136"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「都会は地下鉄が複雑だな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 69,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"乗り換えのホームを探していたら地上に出てしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 72,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それにしてもここは本当に人だらけだな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 75,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"東京に出てくるたびに毎度驚くのは人の多さだ。",
+					{"rt2"},
+					"次に電車の長さ。そしてダンジョンの様に入り組んだ駅。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 79,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"長らく弓張から出ていないと、この場所の異様さが際立って感じられる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 82,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺が生まれる前から、現在も、そして二十年後すら日本最大の人口を抱える都市",
+					{"rt2"},
+					"である大東京。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 86,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あまり俺はこの都市に思い入れが無い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 89,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「新宿も渋谷も池袋もまったく分からん。まだ東京駅の方が分かりやすい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 92,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"東京と一言で言っても、あらゆる街がある。新宿渋谷池袋の他にも、六本木やら",
+					{"rt2"},
+					"銀座やら原宿やら代官山やら上野やら浅草やら……少し外れて中野やら吉祥寺や",
+					{"rt2"},
+					"ら立川やら、さらに中央線の奥地にある八王子も東京だ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 97,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"東京の街の名前を出したらキリがない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 100,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"地方の人間が、東京に出ると言うが、実際には東京と言っても巨大な街の集合体だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 103,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"数え切れない街が集まっている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 106,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"弓張学園の同級生もその多くが東京に移り住んだと聞いている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 109,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、俺が東京の街を歩いていたとしても、そんなやつらとすれ違う事などまずない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 112,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"みんなが東京へ出て行くが、だが、東京のどこにも知り合いを見つける事は出来ない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 115,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「この街は、大きすぎて……なにもかもが良く見えなくなるんだよな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 118,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな想いはニューヨークにいた頃もあった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 121,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"巨大な街は、大きすぎて、いろいろなものを見えなくする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 124,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それでも多くの人間が巨大な街を目指す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 127,
+	},
+	block_00021 = {
+		{"bg", file="bg068e", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「理解は出来るよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 132,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"親父だって拠点をニューヨークにしたのはそういう理由だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 135,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"巨大な街にはチャンスが多く隠されている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 138,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"地方では考えられないぐらい大きなチャンスだってある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 141,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"親父が日本に残り続けたら、たぶんプラティヌ・エポラールを獲る事も出来なかっただろう……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 144,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"人種のるつぼと言われるニューヨークを親父が拠点にしたのは、芸術家としてのチャンスが段違いだからだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 147,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この国は芸術においては東京ですらローカルに過ぎない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 150,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それでもやはり東京は大きい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 153,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大きすぎる街は、人を迷子にさせる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 156,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何故ならば、巨大なものは、すべてを見えづらくする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 159,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大きなものは、小さなものを見えなくする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 162,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この日の帰り道に、俺はその言葉をもう一度かみしめた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 165,
+	},
+	block_00033 = {
+		{"se", stop=1, time=1000, id=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", rule=139, vague=40, file="ev_etc_01_02", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"オートロックのマンションで部屋番号を押す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 175,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"インターフォンからすぐに声が返ってきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 178,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10001", vol=80, ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あ？　お前か」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 182,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、俺だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 185,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10002", vol=80, ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「相変わらずの間抜け面だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 189,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、そうかい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 192,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10003", vol=80, ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ヨシ！　そのアホ面を拝めたからもう満足した、帰っていいぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 196,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前に、俺のアホ面を見せるために来たんじゃねぇよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 199,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10004", vol=80, ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あ゛ん？　だったら、てめぇはここに何しに来たんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 203,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「説明した通りだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 206,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10005", vol=80, ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「説明？　なんだっけ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 210,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そもそも俺は氷川里奈に会いに来た」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 213,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10006", vol=80, ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「里奈ならいないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 217,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だろうな。だからお前に氷川の絵画について聞きに来たんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 220,
+	},
+	block_00047 = {
+		{"bg", file="black", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"無音――。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 225,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺の言葉の後、インターフォンは数十秒ほど無音になった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 228,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"静かに入口のガラス扉が開いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 231,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そのガラス扉をくぐると――",
+					{"rt2"},
+					"マンションのエントランスフロアの大きさに驚かされた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 235,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ホテルみたいだな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 238,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"管理人というよりもコンシェルジェみたいな人が立っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 241,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「こんなマンションっていくらぐらいで住めるんだ？？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 244,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は軽くコンシェルジェみたいな人に会釈してエントランスを横切ろうとすると、",
+					{"rt2"},
+					"コンシェルジェみたいな人に引き留められて署名を促された。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 248,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"署名をしてカードキーの様なものをもらうとエントランスの先の巨大なドアが開いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 251,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何重のセキュリティなんだよ……このマンションは……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 254,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"高層ビルにある様なエレべーターをあがると気圧で耳がおかしくなった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 257,
+	},
+	block_00058 = {
+		{"msgoff"},
+		{"ex", time=1500, func="wait"},
+		{"bg", rule=139, vague=40, file="ev_etc_01_02", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10007", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「てめぇ、遅せぇんだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 266,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「指定の時間通りだと思ったが？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 269,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10008", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そういう意味じゃねぇよ。クソバカ草薙、寒みぃからはやく入れ！　クソ野郎」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 272,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一言で二回もクソと言われた……。",
+					{"rt2"},
+					"俺が懐かしい罵倒に苦笑していると。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 276,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10009", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「なにニヤニヤしてるんだよ。キモイ……。ホント草薙ってキモイなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 279,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"嫌そうな顔を川内野にされた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 282,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"川内野に通され玄関を上がる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 285,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"絨毯が敷き詰められた幅広なマンションの廊下とはうってかわり、室内の廊下は",
+					{"rt2"},
+					"かなり散らかっていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 289,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10010", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あ、そこ踏み場気をつけろよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 292,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"玄関から続く廊下からしてすでにカオス……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 295,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"段ボールの空箱が積み上がっている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 298,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"引っ越ししたて……というわけじゃなさそうだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 301,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10011", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「まぁ、いい、とりあえずこっちだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 304,
+	},
+	block_00071 = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って手招きされてリビングらしき場所に通される。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 309,
+	},
+	block_00072 = {
+		{"bg", speed=220000, file="zbg061e", path=":bg/", x2=510, y2=300, x=-550, y=300, ax=1920, ay=1126, bx=-960, by=-586},
+		{"bgm", file="bgm149", vol=50},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は思わず天井を見た。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 316,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"かなり広いな……と思った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 319,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"夏目の屋敷でもこれほど広い部屋はない。",
+					{"rt2"},
+					"たぶん三十畳を軽く超えている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 323,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"広い部屋もまた段ボールが積み重なっていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 326,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"部屋はかなり散らかっていたが、真ん中の炬燵まわりだけはかろうじて足の踏み場がある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 329,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だいたいの生活が想像出来る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 332,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まだ外は明るいのにカーテンが閉められていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 335,
+	},
+	block_00079 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg061e", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="優美", size="z1", mode=3, resize=1, path=":fg/yum/z1/", file="yum_z1a1400", face="a0011", head="yum_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10012", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「入れよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 345,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"川内野に促されて炬燵に足を入れた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 348,
+	},
+	block_00081 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0001", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんか部屋広くねぇか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 358,
+	},
+	block_00082 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0010", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10013", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「最初に言うことはそうじゃないだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 363,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、久しぶりだな川内野」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 366,
+	},
+	block_00084 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0008", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10014", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そうだなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 371,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"川内野は遠くのキッチンを見ていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 380,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"キッチンではグツグツとケトルが煮え立っている音が聞こえる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 383,
+	},
+	block_00087 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0001", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10015", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「寒かったか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 393,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、まだそうでもないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 396,
+	},
+	block_00089 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0001", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10016", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ふーん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 401,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"炬燵は電気のコードが抜けていた。",
+					{"rt2"},
+					"それでも炬燵は十分に暖かい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 405,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"床暖というヤツだろうか？",
+					{"rt2"},
+					"リビングの床もまんべんなく暖かい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 409,
+	},
+	block_00092 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0011", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10017", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「東京と弓張の気温差って感じるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 414,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どうだろうな、あまり分からない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 417,
+	},
+	block_00094 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0001", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10018", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「スマホなんかで気温差みていると、結構温度差あるんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 422,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 425,
+	},
+	block_00096 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0010", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10019", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「けど、それだって昼夜の寒暖差に比べればたいしたもんじゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 430,
+	},
+	block_00097 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0001", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10020", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「移動時間で寒くなったのか、場所が変わったから寒くなったのか。そのどちらか判別なんてつかないんだろうと思うよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 435,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうだろうな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 438,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"川内野は焦点の合わない瞳でぽつりと言った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 441,
+	},
+	block_00100 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1410", face="a0008", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10021", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「もう私は弓張がどんな気候だったのかよく覚えていない……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 446,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんな帰ってないのかよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 449,
+	},
+	block_00102 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0010", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10022", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「まぁな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 454,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「でも、そんな東京と変わらないだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 457,
+	},
+	block_00104 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0011", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0001", head="yum_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10023", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「いろいろと違うよ。",
+					{"rt2"},
+					"東京はドブのにおいがする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 464,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ドブの匂いって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 467,
+	},
+	block_00106 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0008", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10024", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「この街にいると、潮の香りってこんな臭かったかなぁとか思うよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 472,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「潮の香りか――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 475,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この街にも潮の香りがある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 478,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ただそれは、弓張で感じられる様な潮の香りとは違う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 481,
+	},
+	block_00110 = {
+		{"se", id=1, file="se0139"},
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a1400", face="a0001", head="yum_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"カチンと電気ケトルから音がする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 491,
+	},
+	block_00111 = {
+		{"se", stop=1, time=500, id=1},
+		{"bg", time=500, file="black", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"川内野が急いでキッチンに向かう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 499,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"数分すると戻ってきてコップを俺の元に置いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 502,
+	},
+	block_00113 = {
+		{"excall", file="05_03_2"},
+		{"text"},
+		linkback = "block_00112",
+		line = 504,
+	},
+	label = {
+		flagon = { block="block_00000", label=33 },
+		join = { block="block_00000", label=47 },
+		top = { block="block_00000", label=1 },
+	},
+}

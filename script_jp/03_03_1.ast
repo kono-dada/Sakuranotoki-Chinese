@@ -1,0 +1,4326 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"msg", no=1},
+		{"bg", file="アイキャッチ03", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans"},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"se", file="se0109", vol=10, id=9, loop=1},
+		{"bg", time=2000, file="ev_etc_01_30", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"bgm", file="bgm152"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それは雨の日だった。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 27,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"職員朝会を終えると、校長に呼び止められ、昼休みに校長室まで来る様に言われた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 31,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"はて？　校長に怒られる様な事はやっていないハズなのだが……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 34,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんだろう？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 37,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まさか、クビとかないよな……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 40,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"などと怯えつつ、午前の授業を終える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 43,
+	},
+	block_00006 = {
+		{"se", stop=1, time=3000, id=9},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"se", file="se0109", id=8, vol=4, time=9000, loop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"昼休み、相変わらず外は雨模様だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 50,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな憂鬱な雨空を窓越しに眺めながら廊下を歩く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 53,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"本当に思い当たる節がない。",
+					{"rt2"},
+					"なぜ、呼び出しなどくらったのだろう？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 57,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"校長室の前に立つと、ネクタイを直して、ドアをノックする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 60,
+	},
+	block_00010 = {
+		{"msgoff"},
+		{"se", id=1, file="se0038"},
+		{"ex", time=500, func="wait"},
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「草薙です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 69,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10001", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、入りたまえ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 72,
+	},
+	block_00012 = {
+		{"se", stop=1, time=500, id=1},
+		{"se", stop=1, time=1000, id=8},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg025e", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, resize=1, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"se", id=1, file="se0132"},
+		{"se", stop=1, time=500, id=2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"校長室のドアを開けると、校長が窓の外を見ながら立っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 94,
+	},
+	block_00013 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10002", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「すまないね。せっかくの昼休み」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 99,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って俺の方を振り返る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 102,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いいえ、それよりもご用件はなんでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 105,
+	},
+	block_00016 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0012", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10003", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そんな顔をするな……。",
+					{"rt2"},
+					"とは言っても気になるだろうな。いきなり呼び出しをされたのだから――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 113,
+	},
+	block_00017 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10004", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まぁ、ソファに座って茶菓子でも食べて落ち着かないかい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 119,
+	},
+	block_00018 = {
+		{"select", label="label01", text="select"},
+		{"select", label="label02", text="select"},
+		{"select", mode="sys", name="03_03_1_1"},
+		{"text"},
+		select = {
+			ja = {
+				"はぁ……。",
+				"あ、いえ、食事前ですし……",
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 130,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 139,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一瞬ソファに腰掛けようとも考えたが、やはり落ち着かない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 144,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とりあえず話を先に聞いた方がいいんじゃないか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 147,
+	},
+	block_00022 = {
+		{"excall", label="join1"},
+		{"eval", exp="f.mak=f.mak+1"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、いえ、食事前ですし……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 161,
+	},
+	block_00023 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10005", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだね。すまんすまん。気が利かない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 167,
+	},
+	block_00024 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0004", head="sak_z1a", lv=4, id=9},
+		{"fgact", ch="紗希", act="うんうん", size=5, time=150, lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うと校長は頭をぽりぽりとかく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 173,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あまり見ない姿だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 176,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"やはりただ事ではないのだろうか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 179,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"校長の真意を確かめよう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 182,
+	},
+	block_00028 = {
+		{"excall", label="join1"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あの……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 193,
+	},
+	block_00029 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10006", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いいや、注意とか叱咤とかそういう類のものではないんだ。",
+					{"rt2"},
+					"どちらかと言えば、私が頭を下げなければならない話でね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 200,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 203,
+	},
+	block_00031 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0005", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10007", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「えっとだな。これが君が我が校で受け持つ授業のスケジュールだが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 209,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、一枚の紙を渡される。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 212,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 215,
+	},
+	block_00034 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10008", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「火曜日は丸一日。",
+					{"rt2"},
+					"水曜日には午前の授業がない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 221,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 224,
+	},
+	block_00036 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10009", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それでも、授業以外の仕事などもあり、別に授業がないからといって、その日は休みというわけではない事は理解している」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 231,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 234,
+	},
+	block_00038 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10010", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「君は部活も受け持っているし、それなりに忙しい。",
+					{"rt2"},
+					"とは言っても、まだ新任一年目という事でクラス担当などはしていない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 242,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そもそも、正規雇用の辞令がかなり遅かったですし……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 245,
+	},
+	block_00040 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10011", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだね。まぁ、その経緯はおいておくとしてもだ。",
+					{"rt2"},
+					"とりあえず、君はクラス担当はしていない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 256,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 259,
+	},
+	block_00042 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0010", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10012", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「クラス担当をすれば相当大変なのは分かるね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 264,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それはもちろん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 267,
+	},
+	block_00044 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10013", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それに比べれば、君には余裕がある事も理解出来るね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 272,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「まぁ、そうですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 275,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんだろ、なんかめんどい仕事でも出来たのだろうか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 278,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だったら、普通に言ってもらってかまわないのに。実際先輩教諭からは、かなり",
+					{"rt2"},
+					"いろいろな細かい仕事を押しつけられる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 282,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、それも新任教師だし、さらにいえばクラス担当も無いので、当然と言えば",
+					{"rt2"},
+					"当然だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 286,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お仕事ですか？　私で出来る範囲であればやらせていただきます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 289,
+	},
+	block_00050 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0009", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10014", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「う、うむ……君が出来る事なのは間違いないのだが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 297,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんだか、持って回った言い方だな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 300,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何を頼まれるのだろうか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 303,
+	},
+	block_00053 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10015", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「申し訳ないのだが、火曜日全日と水曜日の午前に聖ルーアン女学院の美術のヘルプに入ってくれないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 310,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ヘルプ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 313,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"他の学校にヘルプ。",
+					{"rt2"},
+					"つまり？　出向！？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 317,
+	},
+	block_00056 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 322,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ちょ、ちょっと待ってください。今、聖ルーアン女学院って言いましたよね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 325,
+	},
+	block_00058 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10016", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、そう言った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 331,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それって他の学校ですよね。だったらそれってめちゃくちゃ副業じゃない",
+					{"rt2"},
+					"ですか！　正規雇用の教師の副業は禁止されていますよね！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 335,
+	},
+	block_00060 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10017", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それなら問題ない。給料は出ん！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 341,
+	},
+	block_00061 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それ！！　問題すぎでしょ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 346,
+	},
+	block_00062 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0009", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10018", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いやぁ、だから、頭を下げるのは私だと言ったであろう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 353,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だとしても、だとしてもですよ。おかしいでしょ？",
+					{"rt2"},
+					"いくら私立と言っても、正規雇用されている教員が他の学校で授業",
+					{"rt2"},
+					"するなんて……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 358,
+	},
+	block_00064 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0007", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+			},
+			vl02 = {
+				{"fgact", ch="紗希", act="おじぎ", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10019", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「非常識な事を言っているのは分かっているよ……。",
+					{"rt2"},
+					"だから大変申し訳ないと思っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 367,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うと校長は頭を下げる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 372,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"校長が新任教師に頭を下げる。",
+					{"rt2"},
+					"こんな事普通では考えられない。",
+					{"rt2"},
+					"だとするならば――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 377,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「何があったのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 380,
+	},
+	block_00068 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10020", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まぁ、何があったかと言えば、聖ルーアンの美術教師が倒れて入院したのだがね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 385,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いやいや、だからっておかしいですよね？",
+					{"rt2"},
+					"聖ルーアンなら募集かければすぐに集まるでしょう。美術の教員資格を持って、仕事探している人間なんてそれこそ山ほどいますし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 389,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんだったら、俺の知り合いとか紹介しますよ。ウチの大学なんて就職してない",
+					{"rt2"},
+					"同級生ばかりですし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 393,
+	},
+	block_00071 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0007", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10021", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そういう事じゃないのだよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 398,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、そういう事でしょ。普通にヘルプを頼むのであれば、募集かけて講師を",
+					{"rt2"},
+					"雇えばいい。その美術教員の入院中だけだとしても、仕事が欲しい連中は",
+					{"ruby", text="ごまん"},
+					"巨万",
+					{"/ruby"},
+					{"rt2"},
+					"といますよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 404,
+	},
+	block_00073 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10022", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「うーん。なんと言えばいいかなぁ。",
+					{"rt2"},
+					"そもそも、ウチが多重オーナー制の学校法人である事は知っているな。",
+					{"rt2"},
+					"複数の理事によって運営されている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 412,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だいたいは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 415,
+	},
+	block_00075 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10023", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「弓張学園の理事の一人が、実は聖ルーアン女学院学校法人の理事長さんも兼ねているんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 420,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「へぇ、そうなんですか。それは初めて知りました。",
+					{"rt2"},
+					"ですが、それと今回の件にどんな関係が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 424,
+	},
+	block_00077 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10024", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「その理事長さんからの指名が君なんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 429,
+	},
+	block_00078 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ？　なんで！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 434,
+	},
+	block_00079 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0011", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10025", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私も良く分からないのだが。",
+					{"rt2"},
+					"いや、思い当たる節はあるのだが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 443,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「思い当たる節って何ですか！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 446,
+	},
+	block_00081 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0009", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10026", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いや、説明はうまく出来ないのだが……、その理事長さんというのは、そもそも弓張の正式な理事で無いんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 452,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「正式な理事ではない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 455,
+	},
+	block_00083 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0004", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0005", head="sak_z1a", lv=4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0004", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10027", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「うむ、ややこしい話なのだが。",
+					{"rt2"},
+					"元々は東沢物産という会社の社長が弓張の理事をやっていてだな、そこから一度違う人間に変わった後に、再び東沢物産の社長が理事代理という形でやっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 467,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「理事代理？　元々理事だった方が理事代理をやられているわけですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 470,
+	},
+	block_00085 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10028", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、東沢物産の社長が元々弓張の理事をやっていた。そして一度だけ変更して、今は代理として理事職についている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 477,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なるほど……、ですがそれが何か？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 480,
+	},
+	block_00087 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0009", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10029", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それが何か？　と聞かれると……困るのだが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 486,
+	},
+	block_00088 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うと、校長はなぜか室内を見渡す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 490,
+	},
+	block_00089 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10030", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「その東沢物産はとあるグループ企業の子会社でな。東沢の大株主はこのグループを束ねている副総裁なんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 495,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なるほど、東沢物産はその大金持ちがオーナーというわけですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 498,
+	},
+	block_00091 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10031", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「その人はかなり有名な資産家なんだ。大正期から南関東一帯の土地開発を行い、バブル時代などは鉄道王とも言われた一族だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 504,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「鉄道王ですか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 507,
+	},
+	block_00093 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10032", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「南部グループと言えば分かるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 511,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そりゃ、南部鉄道って弓張市にも走っていますから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 514,
+	},
+	block_00095 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10033", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「南部鉄道は、南関東、つまり首都圏を中心に走っている私鉄だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 518,
+	},
+	block_00096 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10034", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「鉄道部門を含む交通産業を中心に、住宅産業、流通産業、レジャー産業、などの事業を展開しており、このグループに関わる子会社はおよそ百社だと言われる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 524,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「まさに大金持ちですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 527,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"つーても、そんな大金持ちの話をいきなりされても困るが……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 530,
+	},
+	block_00099 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10035", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「この一族は鎌倉に本家があってな。その血縁関係は、経済界のみならず、政治、芸術、文学、あらゆるジャンルの名士が名を連ねている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 538,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんな巨大な一族ならば、いろいろなジャンルの有名人がいるのでしょうね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 541,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"有名人の家系図を集めたりすると、その血縁関係のほとんどは有名人だったりするらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 544,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"遺伝的問題や、金持ち故の良い環境や、名家は名家同士で婚姻関係になる事や、",
+					{"rt2"},
+					"それらすべてのいろいろな要因が重なってではあるが。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 548,
+	},
+	block_00103 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10036", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「その華麗な一族の中に恩田家というのがある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 559,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「恩田家ですか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 562,
+	},
+	block_00105 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10037", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「恩田放哉と言えば少し分かるだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 569,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「恩田放哉」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 572,
+	},
+	block_00107 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は一瞬だけ考える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 577,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、芸術家のですか？　ここ最近は全然活動してないみたいですけど、十数年前は結構精力的に活動してましたよね。フランスのル･サロン展で一度何か賞をもらっているハズですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 580,
+	},
+	block_00109 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl02 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", lv=4, id=9},
+			},
+			vl03 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10038", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだな。恩田放哉はその名字のまんまなのでわかりやすい。",
+					{"rt2"},
+					"だがその一族でもっとも有名な人物は雅号に恩田姓は入ってない。",
+					{"rt2"},
+					"誰だか分かるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 594,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、有名でしょ？",
+					{"rt2"},
+					"恩田放哉の父親、宮崎破戒ですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 598,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"宮崎破戒は雅号でしかない。",
+					{"rt2"},
+					"本名は恩田長三郎とかそんな名前だった様な気がする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 602,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"雅号の由来。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 605,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんでも、六十を迎えた時に日本の初代天皇である神武天皇をまつる神社「宮崎大社」で",
+					{"ruby", text="こも"},
+					"隠",
+					{"/ruby"},
+					"り、霊験を得たという。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 609,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その心境「あらゆる芸術界の戒めを破る」という「破戒」。",
+					{"rt2"},
+					"そして大社の名「宮崎」から「宮崎破戒」とした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 613,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな話を雑誌で読んだ記憶がある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 616,
+	},
+	block_00116 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10039", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「うむ、そうだね。宮崎破戒。日本画壇の重鎮だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 630,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「日本画壇の重鎮でありながら、精力的な活動をしている。",
+					{"rt2"},
+					"ムーア公募最高賞の一つアルジャン・ドファンを受賞している」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 634,
+	},
+	block_00118 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10040", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああそうだ。宮崎破戒は十数年前からロンドンで活躍している。",
+					{"rt2"},
+					"草薙健一郎の活動の中心がニューヨークだったのに対して、ロンドンを拠点に",
+					{"rt2"},
+					"している形だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 644,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから、草薙健一郎はニューヨーク系の最高賞であるプラティヌ・エポラール。",
+					{"rt2"},
+					"宮崎破戒はロンドン系の最高賞であるアルジャン・ドファンを受賞したと言われてますね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 648,
+	},
+	block_00120 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10041", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「さすがに良く知っているな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 654,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そりゃ、まぁ。",
+					{"rt2"},
+					"それよりも、それと俺が聖ルーアンで働くのに何の関係があるのでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 658,
+	},
+	block_00122 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0005", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10042", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「良く分からんのだが、恩田放哉先生が、南部グループの副総裁に進言したらしいのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 664,
+	},
+	block_00123 = {
+		{"bgm", stop=1},
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10043", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「短期間の講師を入れるのならば弓張の草薙直哉が講師なので是非推薦します。とね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 672,
+	},
+	block_00124 = {
+		{"bgm", file="bgm149"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「待て待て待て、恩田放哉なんて雑誌でしか知りませんし、そもそもすでに俺は弓張の正規教員だし、なんで、そんな有名画家にいきなり指名されるのか意味分からないし！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 678,
+	},
+	block_00125 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0010", head="sak_z1b", lv=4, id=9},
+		{"fgact", ch="紗希", act="うなづく", time=200, lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10044", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 686,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なぁ、じゃないでしょ！　校長！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 689,
+	},
+	block_00127 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0009", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10045", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だからさぁ。頭を下げるのは私だと言っているだろ？",
+					{"rt2"},
+					"大変申し訳ないのだけどさぁ。ここは私の顔を立てると思ってだね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 699,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「嫌ですよ。いくらなんでもただ働きとか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 702,
+	},
+	block_00129 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10046", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「でも聖ルーアンは女子校だぞ？　ぴちぴちのギャルばかりだぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 708,
+	},
+	block_00130 = {
+		{"select", label="label03", text="select"},
+		{"select", label="label04", text="select"},
+		{"select", mode="sys", name="03_03_1_2"},
+		{"text"},
+		select = {
+			ja = {
+				"それは少しそそられますけど。",
+				"校長……マジで怒りますよ？",
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 719,
+	},
+	block_00131 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それは少しそそられますけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 728,
+	},
+	block_00132 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10047", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だったら！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 734,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「少しですよ！　そんなもんで心は動きませんから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 737,
+	},
+	block_00134 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10048", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「う゛……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 742,
+	},
+	block_00135 = {
+		{"excall", label="join2"},
+		{"eval", exp="f.mak=f.mak+1"},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「校長……マジで怒りますよ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 756,
+	},
+	block_00136 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10049", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「す、すまん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 761,
+	},
+	block_00137 = {
+		{"excall", label="join2"},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0009", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10050", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私も困っているのだよ。なんでいきなり君を指名したのか、さらにあそこまで",
+					{"rt2"},
+					"頑ななのかまったく理解出来ない……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 776,
+	},
+	block_00138 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「頑ななのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 779,
+	},
+	block_00139 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10051", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「うむ、君を貸さなければ、東沢物産の社長が弓張学園の理事代理から降りると",
+					{"rt2"},
+					"言っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 787,
+	},
+	block_00140 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「理事代理を降りたら、元々の理事である大金持ちが弓張学園の理事になるんじゃないんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 790,
+	},
+	block_00141 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10052", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いや、東沢物産が理事から降りたら、資本もすべて弓張学園から引き上げると",
+					{"rt2"},
+					"言ってきている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 796,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「マジですか？　なんで俺程度にそんな大事な！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 799,
+	},
+	block_00143 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10053", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まぁ、東沢物産の社長からしたら、グループの副総裁が言ったことだから、その命令を守るために頑なになるのも分かるのだけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 804,
+	},
+	block_00144 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0007", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10054", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だが、何故、資本まで引き上げるとか言い出すのか理解出来ない。",
+					{"rt2"},
+					"さすがにその判断は東沢物産の社長の一存で出来るものではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 813,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「つまり、それほど頑ななのは南部グループの副総裁の意思であると」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 816,
+	},
+	block_00146 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0004", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10055", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「たぶん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 823,
+	},
+	block_00147 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10056", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「あの人が絡んでいるから、何か意味があっての事なのだろうけど――、",
+					{"rt2"},
+					"だが私にはその意図が掴めない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 830,
+	},
+	block_00148 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あの人って誰ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 841,
+	},
+	block_00149 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl02 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0005", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10057", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いや、南部グループの副総裁の事なのだが……。",
+					{"rt2"},
+					"いろいろ込み入っているのでな、君に説明しても仕方が無い事なんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 850,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 853,
+	},
+	block_00151 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+		{"fgact", ch="紗希", act="いいえ", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10058", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「しかし、分からん。本当に意図が見えない。うむむ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 860,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こんな校長はじめてみた。なんだこれ？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 863,
+	},
+	block_00153 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「もしかして校長、動揺してますか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 873,
+	},
+	block_00154 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0010", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10059", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、見ての通りにめちゃくちゃ動揺している」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 878,
+	},
+	block_00155 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「校長が動揺する事なんてあるのですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 881,
+	},
+	block_00156 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0005", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10060", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そりゃあるよ。だいたいこれは理不尽な要求だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 887,
+	},
+	block_00157 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0007", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10061", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そんな理不尽な要求だからこそお断りしたのだが、先方は烈火の如く怒りだした。",
+					{"rt2"},
+					"そんな反応がかえってきたら、私だって動揺する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 894,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 897,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たしかに、それを聞くと動揺するのも分かる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 900,
+	},
+	block_00160 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10062", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「弓張学園の理事から降りるとか言い出されると、もう私では手の施しようが",
+					{"rt2"},
+					"無い……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 906,
+	},
+	block_00161 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「本当に原因が分からないのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 909,
+	},
+	block_00162 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「キレ者の校長だったら分かりそうなもんですけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 912,
+	},
+	block_00163 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0009", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10063", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「うーん。もしかしたら、という可能性を考えると、キリが無くてねぇ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 918,
+	},
+	block_00164 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10064", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「可能性をノートに書き出していったら、原因の項目だけで三十以上になって、",
+					{"rt2"},
+					"さらにそこから考えられる可能性を考えると、数百にものぼってだなぁ……",
+					{"rt2"},
+					"考えるだけ無駄だと思って止めた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 926,
+	},
+	block_00165 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"切れ者の校長でもそんなアホみたいな事するんだ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 929,
+	},
+	block_00166 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10065", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「逆に聞きたいのだが、草薙先生はここのところで変わった事は無かったか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 934,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「変わった事ですか？",
+					{"rt2"},
+					"いや、別に……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 938,
+	},
+	block_00168 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0005", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10066", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「恩田放哉氏と接触は？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 943,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから、まったく会ったこともありませんよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 946,
+	},
+	block_00170 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10067", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ふむ、そうだろうなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 951,
+	},
+	block_00171 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10068", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「宮崎破戒と会ったとかは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 956,
+	},
+	block_00172 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あるわけないでしょ？　だいたいあの人ってロンドン在住でしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 959,
+	},
+	block_00173 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10069", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いや、ここ数年は生家の鎌倉に戻ってきているらしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 964,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 967,
+	},
+	block_00175 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10070", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私も噂程度でしか知らないが……宮崎絵画学校を復活させたとか噂がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 975,
+	},
+	block_00176 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「宮崎絵画学校を復活？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 978,
+	},
+	block_00177 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10071", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それも噂であって事実かどうか分からない。",
+					{"rt2"},
+					"伝説的な学校だからな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 985,
+	},
+	block_00178 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"宮崎絵画学校。",
+					{"rt2"},
+					"そもそも宮崎破戒が天才を育てるために作った学校だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 989,
+	},
+	block_00179 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"歴史的に見てもその実績は、日本屈指の実践的絵画学校と言える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 992,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ほんの一時期だが、俺の父親も在籍していた時代がある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 995,
+	},
+	block_00181 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その後、宮崎破戒の息子である恩田放哉が学校を引き継いだが、",
+					{"rt2"},
+					"かれこれ十数年ぐらい前に閉鎖されたと聞いている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 999,
+	},
+	block_00182 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なぜ今さら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 1002,
+	},
+	block_00183 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10072", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「分からん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 1008,
+	},
+	block_00184 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そういえば宮崎破戒の最後の弟子と言われる宮崎みすゞって、宮崎絵画学校の",
+					{"rt2"},
+					"門下生ではないのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 1012,
+	},
+	block_00185 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10073", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いいや、宮崎みすゞは直接ロンドンに呼び寄せて、宮崎破戒が自ら教えたらしい、だから宮崎絵画学校所属というわけではないらしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 1018,
+	},
+	block_00186 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10074", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だから、本当にごく最近まで閉鎖されていた事になる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 1023,
+	},
+	block_00187 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなんですか……ふーん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 1026,
+	},
+	block_00188 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0005", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10075", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「何故、再び開講されたのだろうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 1031,
+	},
+	block_00189 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「とは言っても、あくまでも噂なのでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 1034,
+	},
+	block_00190 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10076", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだな。はっきりした事は私にも分からん。あるいは、芸術界に身を置いていた君ならば分かる事もあるのではないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 1043,
+	},
+	block_00191 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いやいや、俺みたいな一介の美術教師が知ったこっちゃない話ですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 1046,
+	},
+	block_00192 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は一歩下がる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 1050,
+	},
+	block_00193 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そろそろ失礼してよろしいでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 1053,
+	},
+	block_00194 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0012", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10077", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「話は終わってないが？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 1060,
+	},
+	block_00195 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いいえ、もう終わりです。",
+					{"rt2"},
+					"一介の教師が関わる問題ではありませんので」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 1064,
+	},
+	block_00196 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0005", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は",
+					{"ruby", text="きびす"},
+					"踵",
+					{"/ruby"},
+					"を返そうとする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 1071,
+	},
+	block_00197 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10078", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なるほど、その態度。",
+					{"rt2"},
+					"つまり、乗り気ではないと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 1079,
+	},
+	block_00198 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「当たり前ですよ。",
+					{"rt2"},
+					"なんで知らないヤツに指名されて、知らない金持ちの思いつきで、知らない学校で教えなきゃいけないんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 1083,
+	},
+	block_00199 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「弓張学園ですら教師として慣れるのに時間かかったのに、女子校の先生なんて出来るわけありませんよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00198",
+		linknext = "block_00200",
+		line = 1088,
+	},
+	block_00200 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺は行きませんからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00199",
+		linknext = "block_00201",
+		line = 1091,
+	},
+	block_00201 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fgact", ch="紗希", act="うんうん", time="360,240,360,240", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10079", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだよなぁ。先生の言う事はもっともだよ。うんうん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00200",
+		linknext = "block_00202",
+		line = 1097,
+	},
+	block_00202 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"頷きながら校長は一枚の紙を机の上に広げる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00201",
+		linknext = "block_00203",
+		line = 1102,
+	},
+	block_00203 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10080", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それはそうと、草薙くんさぁ。これどう思う？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00202",
+		linknext = "block_00204",
+		line = 1108,
+	},
+	block_00204 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00203",
+		linknext = "block_00205",
+		line = 1111,
+	},
+	block_00205 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="zbg025e", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="紗希", size="z2", mode=3, resize=1, path=":fg/sak/z2/", file="sak_z2a0000", face="a0001", head="sak_z2a", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はその紙を手に取る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00204",
+		linknext = "block_00206",
+		line = 1124,
+	},
+	block_00206 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00205",
+		linknext = "block_00207",
+		line = 1127,
+	},
+	block_00207 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「な、内容証明！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00206",
+		linknext = "block_00208",
+		line = 1133,
+	},
+	block_00208 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あまり縁が無いものだが、たしか文章が送りつけられた事実を郵便会社だかが証人になるとか言うものだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00207",
+		linknext = "block_00209",
+		line = 1139,
+	},
+	block_00209 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"良くわからんが、裁判のはじまりなんかで登場するヤツだった気がする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00208",
+		linknext = "block_00210",
+		line = 1142,
+	},
+	block_00210 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2b0000", face="b0008", head="sak_z2b", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2b0000", face="b0001", head="sak_z2b", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10081", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「うむ、困った事になぁ。村山理事がまだ怒っていてだなぁ。",
+					{"rt2"},
+					"あの手、この手で、君の存在をこの学園から亡き者にしようとするのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00209",
+		linknext = "block_00211",
+		line = 1153,
+	},
+	block_00211 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あははは……、そ、そうなんですかぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00210",
+		linknext = "block_00212",
+		line = 1156,
+	},
+	block_00212 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2b0000", face="b0009", head="sak_z2b", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2b0000", face="b0002", head="sak_z2b", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10082", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「この文面なんて、単なる言いがかりでしかない内容証明なのだが、でもいちいち",
+					{"rt2"},
+					"こんなものを送りつけてくるぐらいご立腹なんだよねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00211",
+		linknext = "block_00213",
+		line = 1165,
+	},
+	block_00213 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0010", face="a0008", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0010", face="a0002", head="sak_z2a", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10083", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「事を荒立てたくないので、私もいろいろ頑張っているのだが、最悪、裁判とかに発展しかねないんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00212",
+		linknext = "block_00214",
+		line = 1174,
+	},
+	block_00214 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"村山理事とは弓張学園に複数人いる理事の一人で、主に土建関係の会社を",
+					{"rt2"},
+					"経営している。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00213",
+		linknext = "block_00215",
+		line = 1178,
+	},
+	block_00215 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"『櫻達の足跡』という作品に関して、いろいろとトラブった関係だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00214",
+		linknext = "block_00216",
+		line = 1181,
+	},
+	block_00216 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0010", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0001", head="sak_z2a", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10084", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まぁ、私の実力なら、なんとかこの件は穏便に済ませる事が出来るとは",
+					{"rt2"},
+					"思うのだよ。ただね。これに今回の東沢物産の件まで関わると、本当に",
+					{"rt2"},
+					"どうしようもなくなる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00215",
+		linknext = "block_00217",
+		line = 1192,
+	},
+	block_00217 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どうしようもなくなるとは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00216",
+		linknext = "block_00218",
+		line = 1195,
+	},
+	block_00218 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0003", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10085", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「簡単に言うと、君も私も職を失う感じかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00217",
+		linknext = "block_00219",
+		line = 1201,
+	},
+	block_00219 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「う゛………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00218",
+		linknext = "block_00220",
+		line = 1204,
+	},
+	block_00220 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg025e", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, resize=1, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10086", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「聖ルーアンの件だけでも、君が引き受けてくれたら、私も君も当分の間は安泰",
+					{"rt2"},
+					"だと思うんだよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00219",
+		linknext = "block_00221",
+		line = 1217,
+	},
+	block_00221 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「当分の間なのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00220",
+		linknext = "block_00222",
+		line = 1220,
+	},
+	block_00222 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", lv=4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10087", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そりゃそうだよ。私なんか何十年も綱渡りみたいな事やりながらこの弓張学園の校長をしているんだ。やせても枯れても弓張市の支配者であった中村家を敵に回している。いつクビが飛んでもおかしくは無い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00221",
+		linknext = "block_00223",
+		line = 1227,
+	},
+	block_00223 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00222",
+		linknext = "block_00224",
+		line = 1230,
+	},
+	block_00224 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"実際、校長に迷惑をかけたのは事実だし……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00223",
+		linknext = "block_00225",
+		line = 1233,
+	},
+	block_00225 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たぶん、この人の言ってることはブラフじゃなくてマジなんだろうなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00224",
+		linknext = "block_00226",
+		line = 1236,
+	},
+	block_00226 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この人がこんなに必死に俺を説得した事ないもの。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00225",
+		linknext = "block_00227",
+		line = 1239,
+	},
+	block_00227 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「分かりました……。",
+					{"rt2"},
+					"そのお話お受けします」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00226",
+		linknext = "block_00228",
+		line = 1243,
+	},
+	block_00228 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10088", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうか。助かるよ。草薙直哉先生！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00227",
+		linknext = "block_00229",
+		line = 1250,
+	},
+	block_00229 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ただし、なし崩し的に俺の所属を弓張から聖ルーアンに追い出すとか無しにして",
+					{"rt2"},
+					"くださいよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00228",
+		linknext = "block_00230",
+		line = 1254,
+	},
+	block_00230 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10089", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そんな悲しい事を言うなよ。この話はあちらの美術教員が復帰するまでだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00229",
+		linknext = "block_00231",
+		line = 1261,
+	},
+	block_00231 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お願いしますよ。俺はこの学校好きなんですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00230",
+		linknext = "block_00232",
+		line = 1264,
+	},
+	block_00232 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10090", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それを言ったら、私だって同じだよ。",
+					{"rt2"},
+					"同じ教員仲間ではないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00231",
+		linknext = "block_00233",
+		line = 1270,
+	},
+	block_00233 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"校長が笑顔で書類を差し出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00232",
+		linknext = "block_00234",
+		line = 1275,
+	},
+	block_00234 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ったく何が同じ教員仲間だよ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00233",
+		linknext = "block_00235",
+		line = 1278,
+	},
+	block_00235 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"思いっきり、上司と部下じゃねぇかよ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00234",
+		linknext = "block_00236",
+		line = 1281,
+	},
+	block_00236 = {
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"などと思いつつも。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00235",
+		linknext = "block_00237",
+		line = 1287,
+	},
+	block_00237 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とりあえず、それにサインをしておいた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00236",
+		linknext = "block_00238",
+		line = 1290,
+	},
+	block_00238 = {
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="03_03_2"},
+		{"text"},
+		linkback = "block_00237",
+		line = 1294,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+		label01 = { block="block_00019", label=1 },
+		label02 = { block="block_00022", label=2 },
+		join1 = { block="block_00028", label=2 },
+		label03 = { block="block_00131", label=1 },
+		label04 = { block="block_00135", label=2 },
+		join2 = { block="block_00137", label=2 },
+	},
+}

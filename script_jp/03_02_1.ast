@@ -1,0 +1,3368 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"msg", no=1},
+		{"bg", file="アイキャッチ03", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans"},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"bg", time=2000, file="ev_etc_01_01", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"肌寒い日が徐々に明け始めると、四月も末となっていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 25,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は授業をすべて終わらせて美術室のドアをあける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 28,
+	},
+	block_00002 = {
+		{"se", id=1, file="se0003"},
+		{"bg", file="ev_com_28_01", path=":ev/ev_com_28/", set="ev_com_28"},
+		{"bgm", file="bgm104"},
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"美術室ではルリヲ一人が巨大なキャンバスを広げ、一心不乱に絵を描いている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 41,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ドアを開けた音にも気がつかないのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 44,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"相当集中している。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 47,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その姿を２０分ほど見ていたが、まったく俺に気がつく様子はない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 50,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「素晴らしいな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 53,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この集中力は間違いなく才能だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 56,
+	},
+	block_00008 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", x=10, y=190, zoom=70, rule=139, vague=40, file="zev_com_28_01", path=":ev/ev_com_28/", set="ev_com_28", ax=1920, ay=1080, bx=-960, by=-540},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"さらに十数分ほど過ぎたところで、ルリヲは大きく伸びをした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 63,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"疲れで、少し集中が切れたらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 66,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そこではじめて声をかけた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 69,
+	},
+	block_00011 = {
+		{"bg", time=500, file="ev_com_28_06", path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんだ？　やけに大きなキャンバスだな。",
+					{"rt2"},
+					"そのサイズという事はどっかの公募でも出す気か？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 75,
+	},
+	block_00012 = {
+		{"quake", mode="mw"},
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10001", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「うぉ！　草薙ちゃん！　いたの！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 84,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、結構前からな。それにしてもでかいな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 87,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ルリヲが向かっているキャンバスは、ルリヲより、さらに言えば俺の身長よりも遙かに巨大だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 90,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"縦横で二メートル半と二メートルと言えばどれぐらいのサイズか理解出来るだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 93,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「200号のPサイズか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 96,
+	},
+	block_00017 = {
+		{"bg", sync=0, face=1, file="ev_com_28_03", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10002", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「おう！　それです！　今まで挑戦してきた中では一番大きいですよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 102,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前の年齢で、そんなサイズのキャンバスで絵を描けるヤツなんて",
+					{"rt2"},
+					"そうそういないよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 106,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"絵画はキャンバスの大きさが大きくなるにつれて難易度が上がっていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 109,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なので、一般的な公募なら20号から50号が応募作品の中心となる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 112,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"50号ならば一辺が一メートルを超えるので、これでも日曜画家ならば十分にもて",
+					{"rt2"},
+					"あます巨大なサイズだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 116,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大きく描くと、それだけでデッサンをとるのが難しくなるし、画面を埋めるのも",
+					{"rt2"},
+					"難しい、なんと言っても大きければ大きいほどあらが目立つ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 120,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"普通の学生が公募用に描く最大サイズが30号ぐらいだと考えれば良い（ちなみに",
+					{"rt2"},
+					"この年代の学生をターゲットにした公募では、最大サイズを30号として、それ以上大きな作品を受け付けないところもある）。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 124,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"当然、ルリヲが挑戦している200号サイズなどプロの画家ぐらいしか描かない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 127,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんで、そんな大作やってるんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 130,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10003", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「FIRST展狙いだからなのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 133,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ああ、なるほどね。と思った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 136,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「メジャーな公募狙うねぇ。",
+					{"rt2"},
+					"FIRST展、",
+					{"ruby", text="しんぽ"},
+					"新甫",
+					{"/ruby"},
+					"ジャパン保険国際美術賞か……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 141,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"新進気鋭作家が狙うものとしてはかなり巨大なものだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 144,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ルリヲがこれほどの大作に挑戦しているのも頷ける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 147,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あれって、締め切り九月だっけ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 150,
+	},
+	block_00032 = {
+		{"bg", sync=0, face=1, file="ev_com_28_05", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10004", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「八月十八日から九月二十二日です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 156,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そっかぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 159,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その締め切りならば、そろそろ作業を開始しても良い頃合いだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 162,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"200号の大作ともなれば一年かけて描く場合もある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 165,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そのサイズのキャンバスなら相当高かっただろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 168,
+	},
+	block_00037 = {
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10005", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「自分で組みました。それでも結構な値段ですけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 173,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"キャンバスの木枠を自分で作って、布を張っているのか。",
+					{"rt2"},
+					"学生というかセミプロだな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 177,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「たしかに200号はインパクトあるけど、100号ぐらいでも良かったんじゃないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 180,
+	},
+	block_00040 = {
+		{"bg", sync=0, face=1, file="ev_com_28_05", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10006", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「いいえ、これはムーア展の前哨戦ですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 185,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ムーア展の前哨戦か……。",
+					{"rt2"},
+					"つまりムーア展には200号で挑むのか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 189,
+	},
+	block_00042 = {
+		{"bg", sync=0, face=1, file="ev_com_28_03", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10007", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「その通り！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 194,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"すごい精神力だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 197,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一辺が二メートルを超える絵を立て続けに描くつもりらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 200,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それは相当骨が折れる作業だろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 203,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「前哨戦と言うが、FIRST展だって相当なもんだぞ。",
+					{"rt2"},
+					"日本中の若手画家が次世代をかけて最高賞を狙ってくる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 207,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10008", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「その一人が私ですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 210,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「FIRST展の最高賞の賞金なんて三百万円だよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 213,
+	},
+	block_00049 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10009", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「とは言っても、ムーア展の最高賞の百分の一以下なんですけどね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 218,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いやぁ、あれはだってさぁ。違うだろ。",
+					{"rt2"},
+					"一応世界最高峰の公募展だし、動く桁が違うよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 222,
+	},
+	block_00051 = {
+		{"bg", sync=0, face=1, file="ev_com_28_05", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ムーア展の最高賞は300万ドル。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 227,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今のレートで換算すれば三億を余裕で超える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 230,
+	},
+	block_00053 = {
+		{"msgoff"},
+		{"bg", file="ev_uta_05_01", path=":ev/ev_uta_05/", set="ev_uta_05", sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"最高賞プラティヌ・エポラールを受賞した『横たわる櫻』は、故に最低でも市場価格は三億以上する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 239,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ムーア財団側が保存しているため、本当の市場価値は分からないが、出回れば数億",
+					{"rt2"},
+					"単位で必ず取引され、ヘタをしたら数十億を超える事もあると言われる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 243,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大昔、俺は贋作として『横たわる櫻』をその一部とした『櫻七相図』という幻の作品をでっちあげ、そのうち未公開の『六相図』を作り上げた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 248,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この『六相図』は合計で六億円の価値を生んだ。一枚あたり一億円となる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 251,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"実は、草薙健一郎の作品であっても簡単に億単位になるのは難しい。",
+					{"rt2"},
+					"大半の作品が数千万円が良いところだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 255,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、『横たわる櫻』に関係する残り六部だとしたら、一枚一億円でも安い",
+					{"rt2"},
+					"可能性がある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 259,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"もし仮に、『横たわる櫻』が十億をこえる値段で売買されれば、それに関係する",
+					{"rt2"},
+					"『六相図』も一枚三億から四億、つまり合計で十八億から二十四億になる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 263,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"『横たわる櫻』がプラティヌ・エポラールの賞金三億の価値そのままだとしても、『六相図』が一枚一億は妥当な金額となる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 266,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だから、『六相図』という贋作にはそれほどの金が動いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 269,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"プラティヌ・エポラールの権威はすさまじく、絵画の金額に影響を与える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 272,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ムーア公募展で入賞するという事は、その絵が桁違いの価値を産む事と同義",
+					{"rt2"},
+					"なのである。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 276,
+	},
+	block_00064 = {
+		{"bg", file="ev_com_28_05", path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「百分の一つーても三百万円は大金だよ。相当な実力者じゃないと最高賞なんて取れない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 281,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10010", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「分かってますよ。私はあそこで奨励賞しかもらった事ないんですもん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 284,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「受賞経験ありなのか？",
+					{"rt2"},
+					"いや、それでもすごいだろ。",
+					{"rt2"},
+					"たしか十万円ぐらいもらえるんじゃなかったっけ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 289,
+	},
+	block_00067 = {
+		{"bg", sync=0, face=1, file="ev_com_28_03", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10011", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「ええ、もらいましたよ。だからこんな巨大なキャンバスで絵描けるんじゃない",
+					{"rt2"},
+					"ですか。絵の具代とキャンバス代だけでも年間十数万かかりますよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 295,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そりゃ、お前が絵描きすぎだよ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 298,
+	},
+	block_00069 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10012", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「草薙ちゃんはFIRST展の理念って知ってる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 303,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、世界に通用する新人発掘だろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 306,
+	},
+	block_00071 = {
+		{"bg", sync=0, face=1, file="ev_com_28_03", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10013", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「そうですよー。将来国際的にも通用する可能性を秘めた芸術家のための賞です。",
+					{"rt2"},
+					"つまり、あそこで最高賞取らないとムーア展なんてほど遠いんです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 312,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「まぁ、そうだけどなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 315,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"普通の学生からしたらFIRST展受賞だって相当ほど遠いぞ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 318,
+	},
+	block_00074 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10014", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「草薙ちゃんは出した事あるのですかー？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 325,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、一度だけあるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 328,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10015", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「何か取れました？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 331,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「うーん。優秀賞止まりだったなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 334,
+	},
+	block_00078 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10016", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「な！　それって最高賞手前じゃないですか！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 342,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だからさぁ。最高賞は取れなかったよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 345,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10017", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「でも八十万円じゃありませんか！　すごい金額ですよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 348,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「当時は優秀賞は五十万円だった。",
+					{"rt2"},
+					"それでもその金見た時は驚いたねぇ。",
+					{"rt2"},
+					"こんな絵、一万円ぐらいの価値しかねぇだろうって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 353,
+	},
+	block_00082 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10018", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「うわぁ……すごい嫌味」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 359,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「嫌味じゃないよ。そんな価値が俺の絵にあるわけないだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 362,
+	},
+	block_00084 = {
+		{"bg", sync=0, face=1, file="ev_com_28_05", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10019", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「いや、草薙ちゃんの絵って市場に出ると一千万円余裕で超えるって聞きますよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 368,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ああ、あの話か。",
+					{"rt2"},
+					"単位間違っているけどな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 372,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、それ一桁間違っている。",
+					{"rt2"},
+					"たしかに、百万円は超えたらしいけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 376,
+	},
+	block_00087 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg031a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="ルリヲ", size="z1", mode=3, resize=1, path=":fg/rur/z1/", file="rur_z1a0000", face="a0001", head="rur_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"bgm", stop=1, time=10000},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="ルリヲ", size="z1", mode=3, path=":fg/rur/z1/", file="rur_z1a0000", face="a0002", head="rur_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10020", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「えっとですね……。",
+					{"rt2"},
+					"この前、絵画の売買があった時のネット記事なのですけど……あ、これだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 392,
+	},
+	block_00088 = {
+		{"bgm", stop=1},
+		{"fgact", ch="ルリヲ", act="うんうん", lv=4, id=9},
+		{"fg", ch="ルリヲ", size="z1", mode=3, path=":fg/rur/z1/", file="rur_z1b0000", face="b0021", head="rur_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10021", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「ほらほら、この絵、先生が文展で最初に特賞を取った有名な日本画、『火水』の落札価格見てくださいよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 402,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ウェブニュースで、ジェームスクリスオークションの話が書かれていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 407,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ジェームスクリスオークションはザサビースオークションと並び、世界でもっとも知られたオークションである。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 410,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そこには、大昔に俺が描いた絵が載っており、「日本人によって二千万円で落札された」と書かれていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 413,
+	},
+	block_00092 = {
+		{"bgm", file="bgm137"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え！？　市役所に飾られている『櫻日狂想』だって百数十万円って聞いたけど？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 420,
+	},
+	block_00093 = {
+		{"bg", file="ev_com_28_05", path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"スマホを見せた後に再びルリヲは絵を描き始める。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 425,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10022", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「だから、それはかなり安い時期ですよ。",
+					{"rt2"},
+					"草薙ちゃんって、あれから『櫻達の足跡』で注目浴びたし、『蝶を夢む』で",
+					{"rt2"},
+					"ムーア展エントリーしてるじゃないですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 432,
+	},
+	block_00095 = {
+		{"bg", sync=0, face=1, file="ev_com_28_03", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10023", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「史上最高絵画の祭典ムーア展にエントリーしたんですよ。そりゃその作品が高値で売り買いされる理由にもなりますって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 437,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「でもただのエントリーだし、別に受賞してないし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 440,
+	},
+	block_00097 = {
+		{"bg", sync=0, face=1, file="ev_com_28_05", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10024", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「今だったら市役所に飾られている『櫻日狂想』も『火水』と同等かそれ以上の価格だと言われています。だいたい二千万から三千万ぐらいが妥当だって話ですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 445,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ねぇよ。実際、百二十万円だったし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 448,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10025", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「当時は草薙ちゃんの絵の価格がまだ安かっただけだって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 451,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いやいや、普通にそれでも高いからさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 454,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10026", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「ムーア展であの夏目圭と競った名画。『蝶を夢む』ならば四千万以上するんじゃないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 457,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんなわけないだろう。",
+					{"rt2"},
+					"そんな金額してたら、俺はこんなところで教員なんてしてないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 461,
+	},
+	block_00103 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10027", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「草薙ちゃんは、自分の価値を分かってないからここで教員してるんじゃ",
+					{"rt2"},
+					"ないですかー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 467,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんな事ないよ。ここの歴代の美術教師はすごい人多いよ。プロの画家とか普通にいたし、それこそ数百万円で取引されていた有名画家が先生してたりしたよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 470,
+	},
+	block_00105 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10028", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「だから草薙ちゃんだって同じじゃん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 475,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「同じだったら、もう少しお金持ちだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 478,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10029", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「草薙ちゃんが絵売らないからじゃないですかー。",
+					{"rt2"},
+					"個展とか開いて絵売れば大金持ちですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 484,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「個展とか気軽に開けるものじゃないの。ギャラリストさんの協力が必要だし、",
+					{"rt2"},
+					"その他にもいろいろな人のつながりが大事でね。俺はそういうのが苦手なの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 488,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10030", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「でも草薙ちゃんだったら、絶対ギャラリストさんからお声かかってますよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 491,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「まぁ、学生時代とかはねぇ。でも今はそんな話を持ってくる人なんかいないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 494,
+	},
+	block_00111 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10031", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「うう、嫌味だ。嫌味でしかない。私だってギャラリストがついて個展とか開きたいのに、美術館やキュレーターさん紹介してほしいのに、まったくそんなお声",
+					{"rt2"},
+					"などかからない……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 501,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「嫌味じゃないよ。芸術家で食っていくのは大変なんだよ。",
+					{"rt2"},
+					"俺なんかすぐメッキがはがれて十年もしないうちに食いっぱぐれる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 505,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺はあくまでも、若かりし頃に神童だっただけだよ。",
+					{"rt2"},
+					"ギャラリストにとっては、その時に金になればいいだけだから、そりゃ声はかけるけど、その後の面倒なんてみてくれないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 509,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10032", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「いいなぁ、さすが草薙直哉ともなると言うことのレベルが違う……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 512,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「買いかぶりすぎだ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 515,
+	},
+	block_00116 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10033", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「でも、そんな草薙ちゃんですらFIRST展で最高賞じゃなかったんですよねぇ。",
+					{"rt2"},
+					"うーん。さすがに私たちの年齢で最高賞取るとか不可能なのかなぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 522,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、そんな事ないぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 525,
+	},
+	block_00118 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10034", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「え？　そうなんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 532,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「過去、若くしてFIRST展の最高賞取った人間がいる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 535,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10035", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「誰ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 538,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「夏目圭だよ。あいつ普通に最高賞取ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 541,
+	},
+	block_00122 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10036", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「えー！！　最高賞って三百万円を取ったのですかー！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 546,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それだけじゃないよ。他も神奈川県国際アート展でも平面立体で最高賞だし、",
+					{"rt2"},
+					"海外のフリスク・リヤン賞でも最高賞取ってるし、The Roppongi Midtown Awardでも最高賞取ってるし……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 550,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10037", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「どれもめちゃくちゃ賞金が高いので有名な賞じゃないですか！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 553,
+	},
+	block_00125 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だって本人が公募展荒らしだって公言してたぐらいだもの。",
+					{"rt2"},
+					"めちゃくちゃ賞荒らしまくってたぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 557,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「一番の快挙といえば、日本でもっとも高額な賞金が出る、四年に一度行われる小松良二賞で新人賞も取っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 560,
+	},
+	block_00127 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10038", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「え？　まじで？　その高額な最高賞の賞金っていくらなんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 563,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「一千万円」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 566,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10039", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「まさかそれを取ったのですか！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 569,
+	},
+	block_00130 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから新人賞だって！　あそこは新人の登竜門とかじゃないもん。",
+					{"rt2"},
+					"それでも、新人賞で三百万円出るからなぁ。あの賞は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 575,
+	},
+	block_00131 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10040", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「ど、どんなやねん……。",
+					{"rt2"},
+					"三百万円とか家とか建つ値段じゃないですか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 581,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、三百万円で家は建たないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 584,
+	},
+	block_00133 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10041", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「だとしても、それだけ賞金稼いでたら夏目圭さんって、弓張時代は相当お金持ちだったんじゃないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 589,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺もそう思うんだけど、あんまり金なかったなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 592,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前ぐらいの年齢の時には、圭は絵画で家が建つくらいは稼いでたと思うよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 595,
+	},
+	block_00136 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10042", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「や、やっぱり家が建つんだ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 600,
+	},
+	block_00137 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「賞金だけじゃなくて個展とかも含めてだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 603,
+	},
+	block_00138 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あいつ担当のギャラリストがいたのだけど、その人はかなりのやり手で有名だったしなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 606,
+	},
+	block_00139 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"吉田とか言ったかな？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 609,
+	},
+	block_00140 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"今でも名前を聞いたりする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 612,
+	},
+	block_00141 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10043", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「わ、私ぐらいの年齢で、すでに有名ギャラリストがついてて、個展まで開いて、絵を売ってたって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 618,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、なんかあいつの弓張時代にはギャラリストはいなかったよ。",
+					{"rt2"},
+					"なんか一時期から、ピタリと賞荒らしをやめてたしな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 622,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから、弓張時代には個展もまったく開かなくなってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 625,
+	},
+	block_00144 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10044", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「何でですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 631,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「うーん。いろいろ事情があるんじゃないの？",
+					{"rt2"},
+					"弓張に入ってからはムーア展に目標をしぼってたよ。それと関係あるのかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 635,
+	},
+	block_00146 = {
+		{"quake", mode="mw"},
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10045", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「マジかよすごい！　弓張時代は世界最高峰のムーア展一本狙いかよ！",
+					{"rt2"},
+					"さすが夭折の天才画家夏目圭だ。逸話が半端ないです……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 643,
+	},
+	block_00147 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10046", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「でもでも、草薙ちゃんだって、その夏目圭のライバルだったわけでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 646,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いやいや、メディアは俺が草薙健一郎の息子って事で、やたら俺を取り上げてたけど、美術界では、夏目圭は超大型新進気鋭作家だったんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 649,
+	},
+	block_00149 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「将来はムーア展で最高賞を取る可能性があるって、美術雑誌なんかでも書かれてたし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 652,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「実際、最高賞じゃないにしても、ムーア公募展では新人賞にあたるエラン・オタリを史上最年少で取ったからなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 655,
+	},
+	block_00151 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10047", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「ちなみにお聞きしたいのですがー、もしかして夏目圭さんがFIRST展の最高賞を取ったのって私より若い時だったりします？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 658,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうだよ。お前より全然若いとき、ガキの頃だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 661,
+	},
+	block_00153 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10048", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「そ、そうなんだ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 666,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから、夏目圭とか御桜稟とかは別もんなんだって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 669,
+	},
+	block_00155 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10049", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「だとしても、草薙ちゃんなら！　草薙ちゃんならやってくれるハズ。",
+					{"rt2"},
+					"だって草薙ちゃんはその二人のライバルだし！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 675,
+	},
+	block_00156 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺の場合は、まさに『十で神童』で止まった人間だから、あの二人とは違うよ。",
+					{"rt2"},
+					"あの二人はその後も成長し続けた化物。俺とは別ものなの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 679,
+	},
+	block_00157 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10050", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「うー、すげぇなぁ。あの二人」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 684,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10051", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「ルリヲとかあの頃はまだ小っちゃかったんで、夏目圭さんがそんなすげぇ芸術家だとは思わなかったよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 687,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「まぁ、弓張時代はほとんど公募荒らしやめてたし、それ以前はインタビューとかもほとんど受けないヤツだったからなぁ。わりかし一般人に知られてなかったん",
+					{"rt2"},
+					"だよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 691,
+	},
+	block_00160 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「芸術マニアは知ってるけど、あまり表では知られていない感じかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 694,
+	},
+	block_00161 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あいつは結構気むずかしいヤツだったからなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 697,
+	},
+	block_00162 = {
+		{"bg", sync=0, face=1, file="ev_com_28_05", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10052", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「そうなん？　なんかそういう雰囲気な人に見えなかったけど？？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 702,
+	},
+	block_00163 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「弓張時代はな。だいぶ丸くなったというか、普通になってた。",
+					{"rt2"},
+					"というか普通より相当バカだったけれどもな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 706,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10053", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「明るくていい人だったイメージしかありませんけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 709,
+	},
+	block_00165 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いやいや、昔はかなり棘がある性格だったよ。",
+					{"rt2"},
+					"なんかいつ会ってもイライラしている感じでさ、けんか腰だった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 713,
+	},
+	block_00166 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10054", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「全然想像出来ないわー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 718,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんであんな変わったんだろうなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 721,
+	},
+	block_00168 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10055", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「何かあったのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 726,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「知らないけど。性格が丸くなったのはいいけど、本当にバカになってたなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 729,
+	},
+	block_00170 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10056", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「でも弓張学園に入学出来たんだよね。ここって結構偏差値高いじゃない？",
+					{"rt2"},
+					"ルリヲとかすんげぇ勉強したんですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 733,
+	},
+	block_00171 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あいつ、弓張の面接で特技をしりとりと言った男だぞ。",
+					{"rt2"},
+					"そして、さらにそのしりとりで先生に負けてたらしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 737,
+	},
+	block_00172 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10057", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「なんじゃそりゃ？？　私なんてめちゃくちゃ勉強してやっとこさ入れたのに」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 742,
+	},
+	block_00173 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「偏差値なんて関係ねぇよ。あいつの才能なら大抵は受かるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 745,
+	},
+	block_00174 = {
+		{"bg", sync=0, face=1, file="ev_com_28_05", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10058", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「そうですね。聞いた限りの受賞歴があるのなら推薦でどこでも確実に",
+					{"rt2"},
+					"入れそうだし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 751,
+	},
+	block_00175 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「まあ、あくまでも才能だけを見ればだけどな。あいつ性格がめちゃくちゃだから、そうなると受からない可能性も高い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 754,
+	},
+	block_00176 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10059", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「そうなん？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 759,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、その実技試験で、たぶん自分が気に入らない作品ができあがったらその場で破り捨てるぐらいするよ。あの男は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 762,
+	},
+	block_00178 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10060", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「そ、そうなんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 767,
+	},
+	block_00179 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10061", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「そんな気むずかしそうに見えなかったけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 770,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いやいや、気むずかしいとか言う問題じゃないよ。たぶん、実技の試験中にその絵が気に入らなかったら。“あ、駄目だこれ、失敗だな。もういいや。あははは”",
+					{"rt2"},
+					"とか言って破る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 774,
+	},
+	block_00181 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10062", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「な、なんというか……聞くに恐ろしいぐらいの天才だ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 779,
+	},
+	block_00182 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、単にバカなんだよ。そういう部分は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 782,
+	},
+	block_00183 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「普通の大学に、推薦で入れたとしても、絶対についていけない。あいつ弓張時代、英語の時間に、『The』を『てへ』って読んだ男だぞ。しかも五回ぐらい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 785,
+	},
+	block_00184 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10063", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「良く、弓張でついてこれましたねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 788,
+	},
+	block_00185 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「すごく芸術家に甘い学校だからさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 791,
+	},
+	block_00186 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「どっちにしろ、あいつの事だから、大学なんて受けなかったと思うよ。",
+					{"rt2"},
+					"あいつにとっては、美大の教授ですら自分のライバル程度にしか見てなかった",
+					{"rt2"},
+					"だろうし、実際それ以上の天才画家だったし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 796,
+	},
+	block_00187 = {
+		{"bg", sync=0, face=1, file="ev_com_28_05", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10064", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「そうですよねぇ。ムーア展取っている人間が生徒なんか、すでに教授より偉いですからね。完全に教授と生徒のレベルが逆になりますな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 801,
+	},
+	block_00188 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「かと言って、あいつが教える立場とかもあり得ないし……、そういう場所と無縁なヤツだったんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 804,
+	},
+	block_00189 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10065", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「なるほど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 807,
+	},
+	block_00190 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「芸術家の中の芸術家。そんなヤツに教育機関やら日本画壇なんて狭すぎる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 810,
+	},
+	block_00191 = {
+		{"bg", sync=0, face=1, file="ev_com_28_04", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10066", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「うう……格好いいなぁ。私もそんな風になりたかった……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 816,
+	},
+	block_00192 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「がんばればなれるさ！　なんて言わないが。",
+					{"rt2"},
+					"まぁ、ルリヲはルリヲで出来る範囲で頑張ればいいんじゃねぇの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 820,
+	},
+	block_00193 = {
+		{"bg", sync=0, face=1, file="ev_com_28_02", time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10067", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「なんか舐められてる感じしかしねぇ！　すげぇむかつく！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 825,
+	},
+	block_00194 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうそう、そういう感情も大事だから。",
+					{"rt2"},
+					"負の感情を絵画にぶつけなさい。君はまだまだなのですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 829,
+	},
+	block_00195 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ま、奨励賞なんて俺がすんげぇ幼い時に取ったFIRST展の賞よりも下なのだから、相当頑張らなきゃならんでしょうねぇ。ルリヲせんせい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 832,
+	},
+	block_00196 = {
+		{"quake", mode="mw"},
+		{"bg", file="ev_com_28_06", sync=0, face=1, time=400, path=":ev/ev_com_28/", set="ev_com_28"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rur_10068", ch="rur"},
+			},
+			ja = {
+				{
+					name = {"ルリヲ"},
+					"「ムキー。そんな事言ってられるのも今のうちだかんねーっッ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 838,
+	},
+	block_00197 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あははは、そうだといいねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 841,
+	},
+	block_00198 = {
+		{"bgm", stop=1, time=2000},
+		{"se", id=1, file="se0003"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"といいながら手を振って、美術室を離れる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 847,
+	},
+	block_00199 = {
+		{"msgoff"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="03_02_2"},
+		{"text"},
+		linkback = "block_00198",
+		line = 852,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

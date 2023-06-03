@@ -1,0 +1,4189 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅴ章"},
+		{"msg", no=1},
+		{"bg", file="black", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"時間感覚がなくなった先で、ノイズが走った。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 9,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"意識に対して身体が強制的に警告音を響かせる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 12,
+	},
+	block_00002 = {
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「んっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 21,
+	},
+	block_00003 = {
+		{"bg", rule="008b", time=2000, zoom=80, speed=180000, file="zev_etc_01_15", path=":ev/ev_etc_01/", x2=-576, y2=-324, x=-576, y=324, set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あれ？　ここは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 26,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"見上げる空の場所。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 31,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え？　これは夜空？？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 34,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10747", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍", "？？？"},
+					"「目が覚めたか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 38,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「この声は……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 41,
+	},
+	block_00008 = {
+		{"bg", file="ev_com_24_11", path=":ev/ev_com_24/", set="ev_com_24"},
+		{"bgm", file="bgm147", vol=50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10748", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「この場所も半年ぶりだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 50,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「これは……夢？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 53,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10749", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「違うよ。そう思うのも無理ないけどさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 56,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「でも、なんでこんな場所に？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 61,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10750", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「まずな。お前、やりすぎ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 64,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「やりすぎ？？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 67,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10751", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ああ、絵に熱中しすぎだよ。",
+					{"rt2"},
+					"あれじゃ、幼少の頃の圭よりひどいぐらいだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 71,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「もしかして……俺、気絶したのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 74,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10752", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ああ、そうだ。気絶した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 77,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10753", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「病院に緊急搬送しようと思ったのだけど、宮崎絵画学校のかかりつけの医者が",
+					{"rt2"},
+					"すぐにかけつけてくれてな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 81,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10754", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「極度の疲労だと言われた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 86,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな事があったなんて……まったく気が付かなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 89,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「身体をおいてけぼりにしてたか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 92,
+	},
+	block_00021 = {
+		{"bg", file="ev_com_24_12", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そっか、不甲斐ないな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 98,
+	},
+	block_00022 = {
+		{"bg", file="ev_com_24_28", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10755", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「そういう言い方は良く無いぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 104,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、不甲斐ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 107,
+	},
+	block_00024 = {
+		{"bg", file="ev_com_24_14", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10756", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「だからやめろ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 113,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"少し強い調子で藍が俺を叱る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 116,
+	},
+	block_00026 = {
+		{"bg", file="ev_com_24_27", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10757", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「本当は夏目家に帰りたかったのだが、報道陣がすごくてな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 122,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10758", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「たしかに宮崎絵画学校は安全だが、お前はあのキャンバスを前にすると、",
+					{"rt2"},
+					"また我を忘れて描き続けるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 128,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10759", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「まるで取り憑かれた様に……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 131,
+	},
+	block_00029 = {
+		{"bg", file="ev_com_24_13", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「校長の根回しか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 137,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10760", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ああ、学校に当分潜伏していろとの事だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 140,
+	},
+	block_00031 = {
+		{"bg", file="ev_com_24_27", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「夜ならいざしらず生徒の目もあるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 146,
+	},
+	block_00032 = {
+		{"bg", file="ev_com_24_16", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10761", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「それなら大丈夫だ。さっき見たけど豪勢な宿舎だった。セキュリティはかなりのものだぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 152,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんなもんあったか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 155,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10762", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「なんでも急ごしらえで改装したらしいぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 158,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「宿舎を？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 161,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10763", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ああ。改装ついでに、プールの掃除もしてもらった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 164,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10764", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「宿舎も、今後は使う事になるかもしれないらしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 167,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「弓張学園に？　セキュリティが高い宿舎が必要？？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 170,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「んなわけあるかよ。",
+					{"rt2"},
+					"なに考えてんだよ……あの校長は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 174,
+	},
+	block_00040 = {
+		{"bg", file="ev_com_24_21", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10765", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「別にお前のためじゃないって言ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 179,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だったらなんでそんなもん作ってるんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 182,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10766", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「計画通りだってさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 185,
+	},
+	block_00043 = {
+		{"bg", file="ev_com_24_12", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「アホらし……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 191,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10767", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「そうかな。あの校長のやる事だ。ちゃんと意味があるんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 194,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そうかもしれないが、それも含めてアホらしいとしか言えない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 197,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それで？　なんでその宿舎じゃなくて、俺はプールの底で寝込んでたんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 200,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10768", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「今日は天気がいいからさ。ほら見てよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 203,
+	},
+	block_00048 = {
+		{"bg", time=500, file="ev_com_24_17", path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10769", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ベテルギウスにプロキオン、そしてシリウス」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 209,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、そうか……もう冬なんだな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 212,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"藍が指差した強く光る三つの星。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 215,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それらを結んだものを冬の大三角という。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 218,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10770", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「冬の空は星空が明るいな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 221,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「冬の星座には一等星が七つも入っているからな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 224,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「冬か……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 227,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いつかここで見た星々の大曲線はまだ遠いな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 230,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10771", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「冬の大三角から大曲線へ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 233,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10772", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「それは長く伸びるブロンドの曲線の様だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 236,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10773", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「まるで天使の軌跡みたいだって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 239,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10774", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「直哉はあの時、そんな事を言っていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 242,
+	},
+	block_00060 = {
+		{"bg", file="ev_com_24_18", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は苦笑いする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 248,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そうする事しかできなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 251,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 254,
+	},
+	block_00063 = {
+		{"bg", file="ev_com_24_25", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あいつが死んだのも冬だった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 260,
+	},
+	block_00064 = {
+		{"bg", file="ev_com_24_19", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それから夜空を見上げるたびに思ったよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 265,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺は目がさめ、空を見上げていて、星の方へのぼってゆく白い翼の天使を認めた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 268,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「彼の長いブロンドの髪は、天空に、光の尾のようなものを残して消えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 271,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10775", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ゴーギャンの『死の帝国』だったな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 274,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「よく覚えてたな。一度っきりしか言ってないのに」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 277,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10776", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「それは特別な一度だったからな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 280,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「特別な一度か」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 283,
+	},
+	block_00071 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「藍にとってはそうだったかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 286,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「けどさ……俺にとって、春が来るというのはそういう事なんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 291,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あいつと共に追いかけていた夢が終わった季節」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 294,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「その季節が過ぎ去るという事……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 297,
+	},
+	block_00075 = {
+		{"bg", file="ev_com_24_13", time=500, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「桜の季節が来るたびにそう想ってしまう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 303,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10777", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「今もか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 306,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、正直、今年の桜は嫌いじゃなかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 309,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あの坂道を藍と共に下った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 312,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「弓張学園に通い続け、そして下り続けたあの坂道」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 315,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ふと見た弓張の街がやけに綺麗に見えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 318,
+	},
+	block_00081 = {
+		{"bg", file="ev_com_24_27", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そしたら、こう思えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 324,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺は立ち止まったわけじゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 327,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「歩かなかったわけじゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 330,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ここで、この場所で、俺は俺の人生を歩んできた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 333,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんな事を思いながら、空を見ていたら、",
+					{"rt2"},
+					"藍が“ちゃんと、私達は歩いているさ”と言った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 337,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから俺はさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 340,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「これから、二人で歩もう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 343,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ゆっくりでいいから、この先まで二人で歩もうと思った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 346,
+	},
+	block_00089 = {
+		{"bg", file="ev_com_24_15", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10778", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「私の夢の中で、白い翼をもった一人の天使が、微笑みながら、私のところにやってきた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 352,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10779", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「その傍らには、たいそう大きな砂時計を持った老人がいる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 355,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10780", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「わたしに訊ねても無駄だよ。",
+					{"rt2"},
+					"と天使は私に言った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 359,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10781", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「わたしには、お前の考えが分かっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 362,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10782", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「そのうち、無限が案内してくれるように、この老人に頼むがいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 365,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10783", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「そうすれば、神がお前をどうなさるおつもりかが分かり、現在のお前がことさらに未完であるという意味を知るだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 368,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10784", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「創造主の仕事が、ただ一日だけのものなら、それはどのようなものになるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 371,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10785", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「神は決して休息されないだろう……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 374,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10786", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「私は目がさめ、空を見上げていて、星の方へのぼってゆく白い翼の天使を認めた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 377,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10787", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「彼の長いブロンドの髪は、天空に、光の尾のようなものを残して消えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 380,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ゴーギャンは目覚め、そして空に天使の姿を認めた。",
+					{"rt2"},
+					"その事が語られて、その詩は終わる……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 384,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「暗記してたのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 387,
+	},
+	block_00101 = {
+		{"bg", file="ev_com_24_21", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10788", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ああ、お前が夏目家に持ってきてたからな。",
+					{"rt2"},
+					"何度も読ませてもらったよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 395,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「無限を告げた天使」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 398,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「その光はまるで尾のように天空に曲線を残した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 401,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それはたぶん、春の大曲線の様な巨大なものだったんだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 406,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10789", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「それはまるで圭が遠くに飛び立った軌跡の様に見える」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 409,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10790", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「だからお前は春が来ると憂鬱になったのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 414,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だと思ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 417,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「けど、どうなんだろうな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 420,
+	},
+	block_00109 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「天体の動きと、我々の運命になんら関係はないさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 423,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それでも、人は夜空に自分達の運命が刻み込まれていると思ってしまう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 426,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺が、春の大曲線を見るたびに、ゴーギャンの詞を思い出し……",
+					{"rt2"},
+					"圭の季節が終わりを告げた事を思い知らされる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 430,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「でも天体にとってはそんな事関係無い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 433,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「宇宙は、俺達の都合なんて関係無く、完全な調律で美しいテンポを奏でている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 436,
+	},
+	block_00114 = {
+		{"bg", file="ev_com_24_15", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「天体の美しさはそういうものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 441,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10791", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「そうかな。天体を美しく思うのも、天体に自分の運命を見てしまうのも、",
+					{"rt2"},
+					"人がそうするからではないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 445,
+	},
+	block_00116 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「美は発見されるから……、あるいは意味もまた発見されるから……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 448,
+	},
+	block_00117 = {
+		{"bg", file="ev_com_24_22", time=500, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10792", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ごめん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 455,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんだよ藪から棒に」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 458,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10793", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「今回だけは、今回だけはさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 461,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10794", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ちゃんと最後まで見届けようと思った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 464,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10795", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「どれだけ無茶をしても……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 467,
+	},
+	block_00122 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10796", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「それが、直哉にとっては命と引き換えてでも守らなきゃいけないものだと分かっていたからさ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 470,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10797", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「けどさ……やっぱり耐えられないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 473,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10798", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「あんなの過酷すぎる……、まるで命を、魂を削って、それを絵の具にしている様だった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 476,
+	},
+	block_00125 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10799", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「あの黒いキャンバスは、どこまでいっても漆黒のまま……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 479,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10800", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「まるで終わりが見えない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 482,
+	},
+	block_00127 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10801", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「あのキャンバスに塗り込まれた闇は、直哉の命が尽きるまで、お前を筆から離そうとしない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 485,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10802", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「完成が見える絵画ならば、まだ耐えられる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 488,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10803", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「けど、私には絵画の事は分からないけど、それでもあの絵画は恐ろしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 491,
+	},
+	block_00130 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10804", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ただ、直哉の命を枯らすために存在しているかの様だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 494,
+	},
+	block_00131 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「命を枯らす様な絵画か……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 497,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「藍は見た事あるのだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 500,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「やつれ果てても、筆を取っていた圭の姿を」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 503,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺はあの頃、すでに筆を折っていたし、圭と関わらない様にしていた。",
+					{"rt2"},
+					"だから、あの頃のヤツの事を知らない……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 507,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「けどさ、あいつの新作が発表されるたびに分かったよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 510,
+	},
+	block_00136 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、これは血で描かれている。魂を塗り込んで形にしている……そんな絵画だって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 513,
+	},
+	block_00137 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんな時に、圭が夏目の屋敷に来る事になった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 516,
+	},
+	block_00138 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10805", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「そうだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 519,
+	},
+	block_00139 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10806", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「懐かしい話だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 522,
+	},
+	block_00140 = {
+		{"msgoff"},
+		{"bg", file="ev_com_85_02", path=":ev/ev_com_85/", set="ev_com_85", sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10807", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「年齢よりも幼く見えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 533,
+	},
+	block_00141 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10808", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「たしかにやつれていたし、今にも倒れそうなぐらいフラフラだった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 536,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10809", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「けれども、そんな幼くか弱い姿を何故か私は大きく感じたよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 539,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10810", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「武道の達人を前にしている様な感じだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 542,
+	},
+	block_00144 = {
+		{"bg", file="ev_com_24_22", path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あの絵を描いている時の俺もそんな感じだったか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 548,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10811", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「いや、違うな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 551,
+	},
+	block_00146 = {
+		{"bg", file="ev_com_24_23", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あはは、ガキの頃の圭の集中力にも今の俺は劣っているのかよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 557,
+	},
+	block_00147 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10812", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「そうじゃないんだよ。達人が持つ様な……圭が帯びていた殺気に似た鋭い感じがまったくない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 560,
+	},
+	block_00148 = {
+		{"bg", file="ev_com_24_22", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10813", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「まるで直哉は何も考えずにただデタラメに筆を動かしているかの様に見える……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 566,
+	},
+	block_00149 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10814", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「なのに、確実にあの絵画は直哉の命を吸い取っていく……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 569,
+	},
+	block_00150 = {
+		{"bg", file="ev_com_24_23", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「やっぱりそうだよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 575,
+	},
+	block_00151 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10815", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「分かっているのなら、もうやめてくれ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 580,
+	},
+	block_00152 = {
+		{"bg", file="ev_com_24_22", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10816", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「お前だけは、約束を守ってくれるんじゃないのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 585,
+	},
+	block_00153 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10817", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「お前は私よりも長く生きる。ちゃんと私の最期を看取ってくれるんじゃないのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 588,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そのつもりだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 593,
+	},
+	block_00155 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10818", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「だったら、もうやめようよ……。",
+					{"rt2"},
+					"これ以上は見てられない……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 597,
+	},
+	block_00156 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺の腕を握りしめる手が強くなる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 600,
+	},
+	block_00157 = {
+		{"bg", file="ev_com_24_26", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10819", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「私は、私はもう嫌なんだ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 606,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10820", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「私から直哉を奪わないでくれ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 609,
+	},
+	block_00159 = {
+		{"bgm", stop=1, time=10000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10821", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「私が一番大切にしてきたもの、なによりも大切にしてきたものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 614,
+	},
+	block_00160 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10822", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「だから――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 617,
+	},
+	block_00161 = {
+		{"bgm", stop=1},
+		{"bg", file="ev_com_24_24", sync=0, face=1, time=400, path=":ev/ev_com_24/", set="ev_com_24"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 623,
+	},
+	block_00162 = {
+		{"msgoff"},
+		{"se", id=1, file="se0015"},
+		{"quake"},
+		{"bg", time=300, file="black", path=":bg/"},
+		{"ex", time=1000, func="wait"},
+		{"bg", file="ev_con_37_01", path=":ev/ev_con_37/", set="ev_con_37"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10823", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「へ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 644,
+	},
+	block_00163 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ふぅ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 647,
+	},
+	block_00164 = {
+		{"bgm", file="bgm152", time=5000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、良く寝た」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 652,
+	},
+	block_00165 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10824", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「は、はいぃ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 655,
+	},
+	block_00166 = {
+		{"bgm", file="bgm152"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「うーん、良く久しぶりに寝た。だからすごく元気になった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 660,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10825", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「な、直哉、どうした？　お前はそんな休んでないぞ。ほんの数時間程度だ、",
+					{"rt2"},
+					"まだ体力は回復してないと思うが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 664,
+	},
+	block_00168 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんな事はないさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 667,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10826", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「何を根拠に」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 670,
+	},
+	block_00170 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ほれ、ち○こ勃ってるし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 673,
+	},
+	block_00171 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10827", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「はわぁぁあ！　な、なに言ってるのぉ！！　直哉ぁ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 678,
+	},
+	block_00172 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「さて、藍よ。勃ったち○この意味が分かるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 681,
+	},
+	block_00173 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10828", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「わ、わかるわけないよ！　突然何を言い出しているんだよぉお前はぁ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 684,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「こんな話を聞いた事はないか？",
+					{"rt2"},
+					"オスという生き物はな、自分の命の危機を感じると性欲が高まるものらしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 688,
+	},
+	block_00175 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10829", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「え？　そ、それは聞いた事ある様な気がするけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 691,
+	},
+	block_00176 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「藍の言う通り、俺はついさっきまで生命の危機の中にいた！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 694,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10830", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「そんな事は分かってるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 697,
+	},
+	block_00178 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「分かってない。藍はこのまま俺を豪勢な宿舎で休ませる気だったのだろう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 700,
+	},
+	block_00179 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10831", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「当たり前だ、そのためにお前はここに運ばれたんだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 703,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、そういう問題ではない。俺の下半身は元気だ。この意味が分かるか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 706,
+	},
+	block_00181 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10832", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「分からないよ。そんな見せつけないでくれ、目のやり場に困るからっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 709,
+	},
+	block_00182 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「刮目して見よ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 712,
+	},
+	block_00183 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10833", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「はぁ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 715,
+	},
+	block_00184 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺のち○こはこんな熱く勃起している。",
+					{"rt2"},
+					"つまり、生命の危機を感じて、俺は今猛烈にセックスしたいという事だ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 719,
+	},
+	block_00185 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10834", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「え？　えぇぇぇ？？　それどういう事なのぉ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 722,
+	},
+	block_00186 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そのままの意味だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 725,
+	},
+	block_00187 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10835", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「えっと……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 728,
+	},
+	block_00188 = {
+		{"bgm", stop=1},
+		{"se", id=1, file="se0152"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ガサっ――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 734,
+	},
+	block_00189 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 739,
+	},
+	block_00190 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10836", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 744,
+	},
+	block_00191 = {
+		{"se", id=1, file="se0015"},
+		{"cgdel", id=-1},
+		{"bg", time=250, rule=280, file="black", path=":bg/", vague=40},
+		{"bg", file="bg065c", path=":bg/", sync=0},
+		{"bg", lv=8, id=8, file="line2", time=400, notone=1, path=":ani/", sync=0},
+		{"extrans", rule=280, time=250, vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は音がした方に一気に走り出した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 759,
+	},
+	block_00192 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"さすがに相手は虚を突かれた様で、逃げ出すタイミングを逸した様であった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 762,
+	},
+	block_00193 = {
+		{"msgoff"},
+		{"bg", x=-600, y=200, zoom=100, speed=250, time=250, file="zbg065c", path=":bg/", z2=80, y2=0, ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"bg", lv=8, id=8, file="line2", time=400, notone=1, path=":ani/", sync=0},
+		{"extrans", rule=105, time=250},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「捕まえたぞ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 771,
+	},
+	block_00194 = {
+		{"quake", mode="mw"},
+		{"cgdel", lv=8, id=8, time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10020", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石", "？？？"},
+					"「うわぁぁぁ！　なんじゃ、いきなりっ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 778,
+	},
+	block_00195 = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前は……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 783,
+	},
+	block_00196 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺が草むらから引き摺り出すとそれは。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 786,
+	},
+	block_00197 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg065c", path=":bg/", sync=0},
+		{"fg", ch="明石", size="z1", mode=3, resize=1, path=":fg/aka/z1/", file="aka_z1b0000", face="b0005", head="aka_z1b", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm008"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「明石……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 797,
+	},
+	block_00198 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10837", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「へ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 800,
+	},
+	block_00199 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「気配を感じていたが、よもやお前がこんな出歯亀みたいな事しているとはな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00198",
+		linknext = "block_00200",
+		line = 803,
+	},
+	block_00200 = {
+		{"fg", ch="明石", size="z1", mode=3, path=":fg/aka/z1/", file="aka_z1b0000", face="b0003", head="aka_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10021", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「気配？　ワシは物音一つたてなかったハズだが？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00199",
+		linknext = "block_00201",
+		line = 808,
+	},
+	block_00201 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「分かるんだよ。今の俺には視線みたいなものが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00200",
+		linknext = "block_00202",
+		line = 811,
+	},
+	block_00202 = {
+		{"fg", ch="明石", size="z1", mode=3, path=":fg/aka/z1/", file="aka_z1b0000", face="b0008", head="aka_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10022", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「どんだけ、お前の感覚は鋭くなってるんじゃい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00201",
+		linknext = "block_00203",
+		line = 816,
+	},
+	block_00203 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「知らねぇよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00202",
+		linknext = "block_00204",
+		line = 819,
+	},
+	block_00204 = {
+		{"fg", ch="明石", size="z1", mode=3, path=":fg/aka/z1/", file="aka_z1b0000", face="b0006", head="aka_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10023", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「いままでずっとこのぐらいの距離で撮影していたが、お前に気が付かれた事など",
+					{"rt2"},
+					"一度もなかったぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00203",
+		linknext = "block_00205",
+		line = 825,
+	},
+	block_00205 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そういえば、明石は俺をずっと盗撮しているんだよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00204",
+		linknext = "block_00206",
+		line = 828,
+	},
+	block_00206 = {
+		{"fg", ch="明石", size="z1", mode=3, path=":fg/aka/z1/", file="aka_z1b0000", face="b0003", head="aka_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10024", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「なるほど、今のはワシを動揺させるために、あんな事をいきなりはじめたのか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00205",
+		linknext = "block_00207",
+		line = 833,
+	},
+	block_00207 = {
+		{"bg", speed=500, time=500, sync=0, file="zbg065c", path=":bg/", x2=760, y2=-100, x=960, y=-100, ax=1920, ay=1080, bx=-960, by=-540},
+		{"fg", ch="藍", size="z2", speed=500, time=500, mode=3, resize=1, path=":fg/aix/z2/", file="aix_z2a1000", face="a0014", head="aix_z2a", x2=-200, x=0, lv=5, id=9},
+		{"quake"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10838", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「なにぃぃ！！！　今のはそういう事なのぉ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00206",
+		linknext = "block_00208",
+		line = 841,
+	},
+	block_00208 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"プールの底で藍が吼えた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00207",
+		linknext = "block_00209",
+		line = 844,
+	},
+	block_00209 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まぁ、そりゃそうだろうな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00208",
+		linknext = "block_00210",
+		line = 847,
+	},
+	block_00210 = {
+		{"bgm", stop=1, time=2000},
+		{"msgoff"},
+		{"bg", file="bg065c", path=":bg/", sync=0},
+		{"fg", ch="明石", size="z1", mode=3, path=":fg/aka/z1/", file="aka_z1b0000", face="b0003", head="aka_z1b", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「とりあえず、今日撮っていたものは消させてもらう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00209",
+		linknext = "block_00211",
+		line = 858,
+	},
+	block_00211 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、明石からカメラを奪う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00210",
+		linknext = "block_00212",
+		line = 861,
+	},
+	block_00212 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00211",
+		linknext = "block_00213",
+		line = 864,
+	},
+	block_00213 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんだこれ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00212",
+		linknext = "block_00214",
+		line = 867,
+	},
+	block_00214 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ビデオのデーターを確認したが、まったく録画データが存在しない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00213",
+		linknext = "block_00215",
+		line = 870,
+	},
+	block_00215 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「消したのか？　……いや、そもそも今のやりとりは撮ってなかったのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00214",
+		linknext = "block_00216",
+		line = 873,
+	},
+	block_00216 = {
+		{"msgoff"},
+		{"bg", file="zbg065c", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"fg", ch="明石", size="z2", mode=3, resize=1, path=":fg/aka/z2/", file="aka_z2b0000", face="b0003", head="aka_z2b", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm155", time=5000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10025", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「……逆に聞くが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00215",
+		linknext = "block_00217",
+		line = 886,
+	},
+	block_00217 = {
+		{"fg", ch="明石", size="z2", mode=3, path=":fg/aka/z2/", file="aka_z2b0000", face="b0005", head="aka_z2b", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10026", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「あんなもん撮れるかよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00216",
+		linknext = "block_00218",
+		line = 891,
+	},
+	block_00218 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前はずっと俺を盗撮してたんだろうが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00217",
+		linknext = "block_00219",
+		line = 894,
+	},
+	block_00219 = {
+		{"fg", ch="明石", size="z2", mode=3, path=":fg/aka/z2/", file="aka_z2b0000", face="b0003", head="aka_z2b", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10027", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「たしかに、ワシはお前のドキュメンタリー映画を撮っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00218",
+		linknext = "block_00220",
+		line = 899,
+	},
+	block_00220 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だが、今は撮ってなかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00219",
+		linknext = "block_00221",
+		line = 902,
+	},
+	block_00221 = {
+		{"bgm", file="bgm155"},
+		{"fg", ch="明石", size="z2", mode=3, path=":fg/aka/z2/", file="aka_z2b0000", face="b0003", head="aka_z2b", lv=5, id=9},
+		{"fgact", ch="明石", act="うなづく", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10028", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「ああ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00220",
+		linknext = "block_00222",
+		line = 910,
+	},
+	block_00222 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それでもお前はここで俺達の話を聞いていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00221",
+		linknext = "block_00223",
+		line = 913,
+	},
+	block_00223 = {
+		{"fg", ch="明石", size="z2", mode=3, path=":fg/aka/z2/", file="aka_z2b0000", face="b0003", head="aka_z2b", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10029", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「あんな話されたら手だって止まる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00222",
+		linknext = "block_00224",
+		line = 918,
+	},
+	block_00224 = {
+		{"fg", ch="明石", size="z2", mode=3, path=":fg/aka/z2/", file="aka_z2b0000", face="b0005", head="aka_z2b", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10030", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「足だって止まる……思考だって止まるっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00223",
+		linknext = "block_00225",
+		line = 923,
+	},
+	block_00225 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00224",
+		linknext = "block_00226",
+		line = 926,
+	},
+	block_00226 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"小さくだが明石の肩が震えていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00225",
+		linknext = "block_00227",
+		line = 929,
+	},
+	block_00227 = {
+		{"bg", zoom=80, speed=180000, time=500, file="zev_etc_01_15", path=":ev/ev_etc_01/", x2=-576, y2=-324, x=-576, y=324, set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は夜空を見上げる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00226",
+		linknext = "block_00228",
+		line = 934,
+	},
+	block_00228 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前、そんなキャラじゃねぇだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00227",
+		linknext = "block_00229",
+		line = 937,
+	},
+	block_00229 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10031", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「知らんわ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00228",
+		linknext = "block_00230",
+		line = 942,
+	},
+	block_00230 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ったく、盗撮もほどほどにしておけよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00229",
+		linknext = "block_00231",
+		line = 945,
+	},
+	block_00231 = {
+		{"msgoff"},
+		{"bg", file="bg065c", path=":bg/", sync=0},
+		{"fg", ch="明石", size="z1", mode=3, resize=1, path=":fg/aka/z1/", file="aka_z1b0000", face="b0003", head="aka_z1b", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10032", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「草薙、ここも完全に安全ではないぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00230",
+		linknext = "block_00232",
+		line = 954,
+	},
+	block_00232 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「分かっている。いつかはここだってマスコミに嗅ぎつけられるだろうな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00231",
+		linknext = "block_00233",
+		line = 957,
+	},
+	block_00233 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前が嗅ぎつけるぐらいだし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00232",
+		linknext = "block_00234",
+		line = 960,
+	},
+	block_00234 = {
+		{"fg", ch="明石", size="z1", mode=3, path=":fg/aka/z1/", file="aka_z1b0000", face="b0003", head="aka_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10033", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「ワシは校長から聞いたからすぐに来る事が出来ただけじゃ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00233",
+		linknext = "block_00235",
+		line = 965,
+	},
+	block_00235 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……あのババァ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00234",
+		linknext = "block_00236",
+		line = 968,
+	},
+	block_00236 = {
+		{"fg", ch="明石", size="z1", mode=3, path=":fg/aka/z1/", file="aka_z1b0000", face="b0003", head="aka_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10034", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「強力なバックがなければ、マスコミを出し抜いてワシだけが撮影など出来ん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00235",
+		linknext = "block_00237",
+		line = 973,
+	},
+	block_00237 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「強力なバック？　その言い方……協力者は校長だけじゃなさそうだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00236",
+		linknext = "block_00238",
+		line = 976,
+	},
+	block_00238 = {
+		{"fg", ch="明石", size="z1", mode=3, path=":fg/aka/z1/", file="aka_z1b0000", face="b0001", head="aka_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10035", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「そうじゃな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00237",
+		linknext = "block_00239",
+		line = 981,
+	},
+	block_00239 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はぁ、いろいろとメンドクセェ事やってるな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00238",
+		linknext = "block_00240",
+		line = 984,
+	},
+	block_00240 = {
+		{"fg", ch="明石", size="z1", mode=3, path=":fg/aka/z1/", file="aka_z1b0000", face="b0002", head="aka_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_aka_10036", ch="aka"},
+			},
+			ja = {
+				{
+					name = {"明石"},
+					"「とりあえずワシはもう帰る。だが注意するんじゃな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00239",
+		linknext = "block_00241",
+		line = 990,
+	},
+	block_00241 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「お前が言うな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00240",
+		linknext = "block_00242",
+		line = 993,
+	},
+	block_00242 = {
+		{"fg", ch="明石", mx=-40, mode=-1, lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"明石は再び暗闇に消えていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00241",
+		linknext = "block_00243",
+		line = 998,
+	},
+	block_00243 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんというか……撮影というか、特殊部隊みたいなヤツだ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00242",
+		linknext = "block_00244",
+		line = 1001,
+	},
+	block_00244 = {
+		{"fg", ch="藍", size="z1", mx=-40, mode=3, resize=1, path=":fg/aix/z1/", file="aix_z1a1000", face="a0008", head="aix_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10839", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「直哉！　とりあえず、もう宿舎の方にいかないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00243",
+		linknext = "block_00245",
+		line = 1006,
+	},
+	block_00245 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1a1000", face="a0011", head="aix_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10840", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「毛布無しじゃ肩も冷えるし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00244",
+		linknext = "block_00246",
+		line = 1011,
+	},
+	block_00246 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00245",
+		linknext = "block_00247",
+		line = 1014,
+	},
+	block_00247 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たしかに冷えてきたな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00246",
+		linknext = "block_00248",
+		line = 1017,
+	},
+	block_00248 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"excall", file="05_06_4"},
+		{"text"},
+		linkback = "block_00247",
+		line = 1022,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

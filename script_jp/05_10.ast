@@ -1,0 +1,7106 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅴ章"},
+		{"msg", no=1},
+		{"bg", file="アイキャッチ05", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans"},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", label="flagon", cond="g.countdown10==1"},
+		{"skipstop"},
+		{"autoplay", speed=500, wait=500, auto=500},
+		{"bg", file="カウントダウン10_1", id=1, lv=5, path=":cg/"},
+		{"ex", time=1500, func="wait"},
+		{"se", id=1, file="se0147"},
+		{"bg", file="カウントダウン10_2", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=500},
+		{"ex", time=3000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"autoplay", mode="stop"},
+		{"excall", label="join"},
+		{"bg", file="カウントダウン10_1", id=1, lv=5, path=":cg/"},
+		{"ex", time=1500, func="wait"},
+		{"se", id=1, file="se0147"},
+		{"bg", file="カウントダウン10_2", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=500},
+		{"ex", time=3000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"eval", exp="g.countdown10=1"},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg068e", path=":bg/", sync=0},
+		{"fg", ch="里奈", size="z1", mode=3, resize=1, path=":fg/rna/z1/", file="rna_z1a0100", face="a0008", head="rna_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=2000},
+		{"se", id=1, time=500, file="se0082"},
+		{"se", id=2, vol=30, time=500, loop=1, file="se0110"},
+		{"se", id=3, vol=10, time=500, loop=1, file="se0028"},
+		{"ex", time=1000, func="wait"},
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0008", head="rna_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=300},
+		{"se", stop=1, id=1, time=500},
+		{"fg", ch="優美", size="z1", mx=-40, mode=3, resize=1, path=":fg/yum/z1/", file="yum_z1a0110", face="a0005", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0009", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10408", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はぁはぁはぁ！　捕まえた！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 85,
+	},
+	block_00001 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0007", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0008", head="rna_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10082", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「え？　あ……優美」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 91,
+	},
+	block_00002 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0002", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0003", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10409", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はぁ、お帰りなさい。里奈ぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 97,
+	},
+	block_00003 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0001", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10083", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「え？　なんで？　なんで私がここにいる事が分かったの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 102,
+	},
+	block_00004 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0002", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まだ息が整わない優美は無言で空を指差す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 107,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"沢山の送電線に紛れて頭上にはカメラの様なものがあった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 110,
+	},
+	block_00006 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0003", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10410", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「この交差点はUtubeでライブ中継されているんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 116,
+	},
+	block_00007 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0002", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0003", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10411", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「私は東京中のライブカメラをずっと流しているんだけど……特に自分の住んでる街のカメラはディスプレイいっぱいのフルウインドウで映している」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 122,
+	},
+	block_00008 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0002", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10412", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「里奈、この数日は何度もここをうろうろしているよね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 127,
+	},
+	block_00009 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0008", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10084", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「え？　まぁ、そうだけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 132,
+	},
+	block_00010 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0009", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+			vl02 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0003", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10413", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「一昨日も昨日もダッシュで来たんだけど捕まらなかった……。",
+					{"rt2"},
+					"けど、今日はやっと捕まえられた……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 140,
+	},
+	block_00011 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0011", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10414", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「マンションから出て、スマホで確認しながら散策してたからね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 146,
+	},
+	block_00012 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0001", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10085", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そ、そうなんだ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 151,
+	},
+	block_00013 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0002", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10415", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「帰ってきたんだよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 156,
+	},
+	block_00014 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0008", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0007", head="rna_z1a", x=345, lv=4, id=6},
+				{"fgact", ch="里奈", act="びっくり", lv=4, id=6},
+				{"fg", ch="優美", size="z1", speed=300, mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0003", head="yum_z1a", x2=-345, x=-145, lv=4, id=5},
+				{"se", vol=70, id=1, file="se0015"},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10086", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あ、うん……そうだけど……あっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 165,
+	},
+	block_00015 = {
+		{"bg", file="ev_etc_01_03", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"優美は私の手を強く引いて歩き出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 170,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10416", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「さぁ、私達の愛の巣に帰ろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 173,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10087", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あ……はい……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 176,
+	},
+	block_00018 = {
+		{"se", stop=1, id=2, time=500},
+		{"se", stop=1, id=3, time=500},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="ev_etc_01_03", path=":ev/ev_etc_01/", set="ev_etc_01", sync=0},
+		{"extrans", rule=139, vague=40},
+		{"se", vol=50, id=1, file="se0011"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10417", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ただいまー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 195,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10418", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「さぁ、冷えたでしょ？　家入ろうよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 198,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10088", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「うん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 201,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10089", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「っ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 206,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あ、足が前に出ない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 209,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"思った以上に足が震えている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 212,
+	},
+	block_00024 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=600, file="zbg061a", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="優美", size="z2", mode=3, resize=1, path=":fg/yum/z2/", file="yum_z2a0110", face="a0003", head="yum_z2a", lv=5, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10419", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「にぱっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 222,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな私の手を笑顔で優美が強く握りしめてくれる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 225,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10090", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「私、優美、ごめん！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 228,
+	},
+	block_00027 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="zbg061a", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0002", head="yum_z2a", x=-395, lv=5, id=5, sync=0},
+		{"fg", ch="里奈", size="z2", mode=3, resize=1, path=":fg/rna/z2/", file="rna_z2a0100", face="a0007", head="rna_z2a", x=395, lv=5, id=6, sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm157", time=5000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10091", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 241,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そのまま優美が私を抱きしめる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 244,
+	},
+	block_00029 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10420", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「問題ないよ。女ってヤツは、港みたいなもんでさ、女という船が帰ってくるのを待つもんなんだよねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 253,
+	},
+	block_00030 = {
+		{"bgm", file="bgm157"},
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0008", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10092", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「優美……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 260,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"抱きしめられた事で分かる。",
+					{"rt2"},
+					"優美も震えていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 264,
+	},
+	block_00032 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10421", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「草薙にあの絵を見せたらさ。あの絵は私のために描かれたって言ってたんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 271,
+	},
+	block_00033 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0011", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10422", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「草薙の言う事なんて大半信じられないけどさ……",
+					{"rt2"},
+					"この言葉だけは、私信じてもいいのかな……って思ってさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 280,
+	},
+	block_00034 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0001", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10423", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「里奈、私全部許すし、そもそも私はあなたを勝手に待ってただけだしっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 287,
+	},
+	block_00035 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0008", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10424", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「だから、出て行くとか無しね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 294,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その瞬間に分かった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 297,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この娘はどこまで従順なんだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 300,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こんな私のために――。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 303,
+	},
+	block_00039 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0011", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10093", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「出て行けなら分かるけど、なんで私からここ出ていくとか言うの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 309,
+	},
+	block_00040 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0008", head="rna_z2a", x=395, lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10094", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そもそも、あれは私からの呪いだよ。",
+					{"rt2"},
+					"あなたを私につなぎ止めておくための」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 318,
+	},
+	block_00041 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0001", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10425", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「草薙もそれ言ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 323,
+	},
+	block_00042 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0002", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10095", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そうなんだ。",
+					{"rt2"},
+					"あの人は、絵画に関しては本当に鋭いよね……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 330,
+	},
+	block_00043 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10426", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「うん、だから少し安心出来た……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 336,
+	},
+	block_00044 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0002", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10096", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そっか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 341,
+	},
+	block_00045 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0009", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0008", head="rna_z2a", x=395, lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10097", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ごめん。優美をここにつなぎ止めておいてまで、私は絵画の世界に身を投じたのに……草薙さんどころか御桜さんにすら届かなかった……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 349,
+	},
+	block_00046 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0009", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10098", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「マークもしてなかった長山香奈さんにボロ負けして……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 354,
+	},
+	block_00047 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0005", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0004", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10427", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ボロ負けではないよ。あれは相手が狡猾すぎただけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 360,
+	},
+	block_00048 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10428", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「純粋な芸術家の里奈に、相性が悪かっただけだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 366,
+	},
+	block_00049 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0008", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0009", head="rna_z2a", x=395, lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10099", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「だけど、私は何年もあなたを待たせて、それなのに……なんの成果も残せなくて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 372,
+	},
+	block_00050 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0008", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10100", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「これじゃ、ただあなたをこの場所にずっと縛っていただけで……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 377,
+	},
+	block_00051 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0010", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0011", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10429", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「うん、ちょっとひどいなっとは思ったよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 383,
+	},
+	block_00052 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10430", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「けどさ、女ってヤツは、港みたいなもんでさ、女という船が帰ってくるのを待つもんなんだよねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 389,
+	},
+	block_00053 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10101", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「それ気に入ってるの？　そもそも女しか出てないじゃない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 394,
+	},
+	block_00054 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0013", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10431", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あ、私の世界に男とかいないんで」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 400,
+	},
+	block_00055 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0002", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10102", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「なに言ってるんだか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 405,
+	},
+	block_00056 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10432", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「私はそんななのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 410,
+	},
+	block_00057 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0011", head="rna_z2a", x=395, lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10103", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「それはそうとさ、なんで優美、私のパンツを触っているの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 416,
+	},
+	block_00058 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0001", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10433", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え？　なんか何やっても許される感じだったから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 422,
+	},
+	block_00059 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0009", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0013", head="rna_z2a", x=395, lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10104", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「はぁ……まぁいいけどさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 428,
+	},
+	block_00060 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0007", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10434", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え！？　いいの！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 433,
+	},
+	block_00061 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10105", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「でもこういうのって、普通、胸から触らない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 438,
+	},
+	block_00062 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0001", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10435", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「こんな近い距離だと胸よりパンツのラインをなぞった方が自然な気がして……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 445,
+	},
+	block_00063 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0013", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10106", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「優美の自然ってなんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 450,
+	},
+	block_00064 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10436", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「里奈のパンツをずっと弄びたい！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 455,
+	},
+	block_00065 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0010", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10107", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「まぁ、そうなんだろうね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 461,
+	},
+	block_00066 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0007", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10437", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「えぇえぇぇ！！　そこもスルーなの！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 466,
+	},
+	block_00067 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0013", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10108", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「どんな反応期待してたの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 471,
+	},
+	block_00068 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0008", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0009", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10438", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「いや、期待ではないけど、そろそろ殴られるかなぁって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 477,
+	},
+	block_00069 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10109", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「なぜ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 482,
+	},
+	block_00070 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10439", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「いや、だって、まだ触っているし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 487,
+	},
+	block_00071 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10110", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そうだね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 492,
+	},
+	block_00072 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0001", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10440", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「いやさ、でも、まだ冗談っぽい場所触ってるんだよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 497,
+	},
+	block_00073 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0010", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10111", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そうだねぇ。微妙に外れてる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 502,
+	},
+	block_00074 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10441", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 507,
+	},
+	block_00075 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0013", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10112", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「微妙に近づいてきた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 512,
+	},
+	block_00076 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0011", head="yum_z2a", x=-395, lv=5, id=5},
+		{"fgact", ch="優美", act="いいえ", lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0001", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10442", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「こ、ここまでならまだ冗談っぽいのかなぁ？　どう思う里奈？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 519,
+	},
+	block_00077 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0011", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10113", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「どうも何も、冗談でも女の子の股間に手は突っ込まないんじゃないかなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 524,
+	},
+	block_00078 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10443", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ずっと妄想していたので、少し野心を出してみました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 529,
+	},
+	block_00079 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0009", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10114", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「小規模な野心ですなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 534,
+	},
+	block_00080 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0010", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10444", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「いやだってさ、こんな場所とか一瞬さわさわしたらさ――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 540,
+	},
+	block_00081 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10115", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「さわさわしてるね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 545,
+	},
+	block_00082 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0001", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10445", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「してるね……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 550,
+	},
+	block_00083 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10116", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「その場所は冗談っぽいの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 555,
+	},
+	block_00084 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0008", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10446", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「どうだろう。なんかでも雰囲気的には、じゃれ合ってるみたいな感じだよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 562,
+	},
+	block_00085 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0010", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10117", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そりゃ、こうやって普通に喋ってますからねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 567,
+	},
+	block_00086 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0002", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10447", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あはは、それじゃこのあたりは？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 573,
+	},
+	block_00087 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0013", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10118", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「どこ触ってる感じ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 578,
+	},
+	block_00088 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0010", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0001", head="yum_z2a", x=-395, lv=5, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10448", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「なんつーか、やわらかいお肉のあいだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 584,
+	},
+	block_00089 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0001", head="rna_z2a", x=395, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10119", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「割れ目っぽい場所？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 589,
+	},
+	block_00090 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0003", head="yum_z2a", x=-395, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10449", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そ、そんな感じかなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 594,
+	},
+	block_00091 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg061a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="優美", size="z1", mode=3, resize=1, path=":fg/yum/z1/", file="yum_z1a0110", face="a0003", head="yum_z1a", x=-345, lv=4, id=5, sync=0},
+		{"fg", ch="里奈", size="z1", mode=3, resize=1, path=":fg/rna/z1/", file="rna_z1a0100", face="a0011", head="rna_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10120", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そういえば……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 605,
+	},
+	block_00092 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0001", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10121", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そもそも草薙さんはどこであの絵を見たの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 612,
+	},
+	block_00093 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0007", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10450", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え？　あ、うん……この部屋かなぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 619,
+	},
+	block_00094 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0011", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10122", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「へぇ、草薙さん来てたんだー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 624,
+	},
+	block_00095 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0011", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10451", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「うん、とは言っても2時間ぐらいだよ。長くても3時間」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 630,
+	},
+	block_00096 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0013", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10123", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ジト」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 635,
+	},
+	block_00097 = {
+		{"fg", ch="優美", size="z1", ex01="a0099", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0007", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10452", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「う゛……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 640,
+	},
+	block_00098 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0010", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10124", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「一度だけ聞きます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 645,
+	},
+	block_00099 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0009", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10453", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「は、はい……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 650,
+	},
+	block_00100 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0001", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10125", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「何かありましたか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 655,
+	},
+	block_00101 = {
+		{"fg", ch="優美", size="z1", ex01="a0099", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0007", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", ex01="a0099", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0003", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+			vl02 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0010", head="yum_z1a", x=-345, lv=4, id=5},
+				{"fgact", ch="優美", act="うなづく", lv=4, id=5},
+			},
+			vl03 = {
+				{"fgact", ch="優美", act="停止", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10454", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え？　た、ただ絵を見せただけだよ。うん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 664,
+	},
+	block_00102 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0011", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10126", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「それだけ？　他に本当に何もなかったのですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 669,
+	},
+	block_00103 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0007", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+				{"fgact", ch="優美", act="いいえ", lv=4, id=5},
+			},
+			vl02 = {
+				{"fgact", ch="優美", act="停止", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10455", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え、あの、その……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 677,
+	},
+	block_00104 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0007", head="rna_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="里奈", act="びっくり", lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0005", head="rna_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10127", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ちょ、なに、その反応！　なにかあったの！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 684,
+	},
+	block_00105 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0009", head="yum_z1a", x=-345, lv=4, id=5},
+				{"fgact", ch="優美", act="おじぎ", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10456", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「うん、その……ごめん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 691,
+	},
+	block_00106 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0001", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0007", head="rna_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10128", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ごめんって……もしかして」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 697,
+	},
+	block_00107 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10457", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あの……なんか私……すごく自暴自棄になってて……それで」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 703,
+	},
+	block_00108 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0001", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10129", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「それで？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 708,
+	},
+	block_00109 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10458", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あの……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 713,
+	},
+	block_00110 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0013", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10130", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ジトー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 718,
+	},
+	block_00111 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0009", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0005", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10459", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「里奈ごめん。でも最後まではないんだよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 724,
+	},
+	block_00112 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0013", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10131", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ジト」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 729,
+	},
+	block_00113 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10460", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あの……ただちょっとフェラのまねごとみたいな事をしてね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 734,
+	},
+	block_00114 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0009", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+			vl02 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0009", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10461", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ごめん！　里奈が好きな相手だと分かってて、でもそれが許せなくて、汚してやりたくて！　だから本当は最後までやろうと思ったんだけど、全然うまく出来なかったから……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 741,
+	},
+	block_00115 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0004", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10132", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「悔しい……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 746,
+	},
+	block_00116 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0008", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10462", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ごめん、好きな人を穢す様な事して！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 751,
+	},
+	block_00117 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0009", head="yum_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="優美", act="おじぎ", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10463", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ごめんなさい！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 757,
+	},
+	block_00118 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0006", head="rna_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="里奈", act="びっくり", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10133", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「分かってないぃ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 763,
+	},
+	block_00119 = {
+		{"fg", ch="里奈", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0006", head="rna_z1a", x2=345, x=195, lv=4, id=6},
+		{"fg", ch="優美", mode=3, path=":fg/yum/z1/", file="yum_z1a0100", face="a0009", head="yum_z1a", x2=-345, x=-195, lv=4, id=5},
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0012", head="yum_z1a", x=-195, lv=4, id=5},
+		{"fgact", ch="優美", act="quake", lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0006", head="yum_z1a", x=-195, lv=4, id=5},
+				{"fgact", ch="優美", act="いいえ", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10464", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「痛っっ、み、耳取れちゃうっっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 773,
+	},
+	block_00120 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0005", head="rna_z1a", x=195, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10134", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「草薙さんは恋愛対象なんかじゃありません！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 778,
+	},
+	block_00121 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0001", head="yum_z1a", x=-195, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0110", face="a0008", head="yum_z1a", x=-195, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10465", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え、でも稟先輩に負けないために、里奈も画家になったわけで」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 784,
+	},
+	block_00122 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0004", head="rna_z1a", lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10135", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あれは、草薙さんに救われた私の恩返しです！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 796,
+	},
+	block_00123 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0008", head="rna_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10136", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「草薙さんの最後の力を奪ったのは、私を救った、あの桜と糸杉の絵画だった",
+					{"rt2"},
+					"から……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 804,
+	},
+	block_00124 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0010", head="rna_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10137", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そして、たぶん御桜さんも同じ様にあの人に救われたのだと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 809,
+	},
+	block_00125 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0008", head="rna_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10138", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「その事で、草薙さんは昔の様に絵画が描けなくなった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 814,
+	},
+	block_00126 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0001", head="rna_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10139", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「私と御桜さんは、共に草薙さんに救われている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 819,
+	},
+	block_00127 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0005", head="rna_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10140", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「だから苛立ちを覚えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 824,
+	},
+	block_00128 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0001", head="rna_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10141", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「圭さんが死んですぐに、ムーア最高賞を取った。",
+					{"rt2"},
+					"あれは、御桜さんだけが自ら受けた救済を、草薙さんに返せるという意思表示に感じられた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 830,
+	},
+	block_00129 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0100", face="a0008", head="rna_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10142", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「けど、私だって、草薙さんからもらった絵画の力を返したかった。",
+					{"rt2"},
+					"彼が再び絵を描く、その力を――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 837,
+	},
+	block_00130 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0110", face="a0005", head="rna_z1a", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10143", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「だ　か　ら　！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 842,
+	},
+	block_00131 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="zbg061a", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="里奈", size="z2", mode=3, resize=1, path=":fg/rna/z2/", file="rna_z2a0110", face="a0005", head="rna_z2a", x=345, lv=5, id=6, sync=0},
+		{"fg", ch="優美", size="z2", mode=3, resize=1, path=":fg/yum/z2/", file="yum_z2a0110", face="a0012", head="yum_z2a", x=-345, lv=5, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10466", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「痛い、痛い、痛いっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 853,
+	},
+	block_00132 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0004", head="rna_z2a", x=345, lv=5, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0110", face="a0006", head="rna_z2a", x=345, lv=5, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10144", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「私が怒っているのは自暴自棄になって、自分の身体を汚そうとしたあなたです！！　川内野優美さん！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 859,
+	},
+	block_00133 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0008", head="yum_z2a", x=-345, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10467", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そ、そうなの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 864,
+	},
+	block_00134 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0004", head="rna_z2a", x=345, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10145", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「当たり前です！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 869,
+	},
+	block_00135 = {
+		{"bgm", stop=1, time=5000},
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0005", head="rna_z2a", x=345, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10146", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「舌を出しなさい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 876,
+	},
+	block_00136 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0100", face="a0011", head="yum_z2a", x=-345, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10468", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え？　なぜ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 881,
+	},
+	block_00137 = {
+		{"fg", ch="里奈", size="z2", mode=3, path=":fg/rna/z2/", file="rna_z2a0100", face="a0004", head="rna_z2a", x=345, lv=5, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10147", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「いいから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 886,
+	},
+	block_00138 = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"優美が舌を突き出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 893,
+	},
+	block_00139 = {
+		{"bg", file="ev_con_21_01", path=":ev/ev_con_21/", set="ev_con_21"},
+		{"bgm", file="bgm163"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10469", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「これへいい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 900,
+	},
+	block_00140 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10148", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「これで、舐めたの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 903,
+	},
+	block_00141 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10470", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「へ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 906,
+	},
+	block_00142 = {
+		{"bg", time=500, file="ev_con_21_02", path=":ev/ev_con_21/", set="ev_con_21"},
+		{"quake"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10471", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「痛ひぃ、痛ひぃよぉ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 914,
+	},
+	block_00143 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10149", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「悪い舌。引き抜いちゃおうかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 917,
+	},
+	block_00144 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10472", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「へ？　いややよぉ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 920,
+	},
+	block_00145 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10150", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「嫌だよねぇ。私も舌無くなった優美とか少し嫌だなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 923,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10151", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「でもさ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 926,
+	},
+	block_00147 = {
+		{"bg", time=500, file="ev_con_21_03", path=":ev/ev_con_21/", set="ev_con_21"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"優美の舌の中心をやさしく指で撫でる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 932,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10473", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ひゃぃっっ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 935,
+	},
+	block_00149 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10152", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「舌を二つにしちゃおうかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 938,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10474", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そんにゃの、りなの舐められなくなるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 941,
+	},
+	block_00151 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10153", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そんな事ないみたいだよ。舌を縦に切っちゃうともっと舐めるのうまくなるってさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 944,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10475", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そ、そうなの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 947,
+	},
+	block_00153 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10154", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「うん、縦に切れた二つの舌って別々に動くみたい。スプリットタンって言うんだけどね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 950,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10476", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「それへ、わたしをゆるしてくれる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 953,
+	},
+	block_00155 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10155", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そうだねぇ。どうしよう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 956,
+	},
+	block_00156 = {
+		{"bg", sync=0, face=1, file="ev_con_21_04", time=400, path=":ev/ev_con_21/", set="ev_con_21"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10477", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ひゃぃっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 961,
+	},
+	block_00157 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"舌の中心部を何度も指でなぞってみる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 966,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10156", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「なんて顔してるのかなぁ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 969,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10478", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「だってへ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 972,
+	},
+	block_00160 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10157", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「指でなぞっただけでそんなにゾクゾクしてたら、切る時大変だよぉ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 975,
+	},
+	block_00161 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10479", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「へ？　ますいわ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 978,
+	},
+	block_00162 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10158", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「麻酔なんてしないよー。だって舌を二つに裂くのは罰なんだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 981,
+	},
+	block_00163 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10480", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「痛いのいややよぉ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 984,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10159", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ほんとう？　でもこうやって指でなぞっていると気持ちよさそうだけど？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 987,
+	},
+	block_00165 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10481", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「それはぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 990,
+	},
+	block_00166 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10160", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「なんでそんなトロ顔になっちゃうかなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 993,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10482", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「らってぇ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 996,
+	},
+	block_00168 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何度も、何度も、ゆっくりと舌の中心をなぞる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 999,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10483", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「り、りなぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 1002,
+	},
+	block_00170 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10161", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「どうしようかなぁ……、そんな悪さする舌だったら切っちゃうのが一番だけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 1005,
+	},
+	block_00171 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10162", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「えい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 1008,
+	},
+	block_00172 = {
+		{"bg", time=500, file="ev_con_21_05", path=":ev/ev_con_21/", set="ev_con_21"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10484", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ふぇ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 1014,
+	},
+	block_00173 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私の歯がカチリと音を立てる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 1017,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10163", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「噛みきった方がいいかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 1020,
+	},
+	block_00175 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10485", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「りなぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 1023,
+	},
+	block_00176 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10164", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「なんでうれしそうかなぁ……ほんとうに噛みきっちゃうよ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 1026,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10486", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「りながしたいのなら」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 1029,
+	},
+	block_00178 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10165", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「なら、えい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 1032,
+	},
+	block_00179 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10487", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ひっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 1035,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10166", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「痛い？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 1038,
+	},
+	block_00181 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10488", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「舐めてくれてるじゃん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 1041,
+	},
+	block_00182 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10167", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「んじゃ、今度は噛むよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 1044,
+	},
+	block_00183 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10489", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「うん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 1047,
+	},
+	block_00184 = {
+		{"bg", time=500, file="black", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"里奈は優美の舌を噛む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 1053,
+	},
+	block_00185 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10490", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「んっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 1056,
+	},
+	block_00186 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10168", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「痛かった？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 1059,
+	},
+	block_00187 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10491", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「すこし……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 1062,
+	},
+	block_00188 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10169", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「血出てるかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 1065,
+	},
+	block_00189 = {
+		{"bg", time=500, file="ev_con_21_06", path=":ev/ev_con_21/", set="ev_con_21"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、私は優美の舌をなめてみる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 1071,
+	},
+	block_00190 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10170", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ぺろ、はむ、ちゅ、ちゅ、ちゅ、ぺろ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 1074,
+	},
+	block_00191 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10492", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「り、りなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 1077,
+	},
+	block_00192 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"舌を摘ままれている優美は動かす事が出来ない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 1080,
+	},
+	block_00193 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ただ一方的に優美の舌を私がなめ回す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 1083,
+	},
+	block_00194 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10171", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「はぁ、はぁ、はぁ……れろ……れろ……じゅるる……れろ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 1086,
+	},
+	block_00195 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10493", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「りなぁ、そんなのぉ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 1089,
+	},
+	block_00196 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10172", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「くすくす、くすぐったい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 1092,
+	},
+	block_00197 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10173", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「れろ、れろ……ん……ちゅむ……ん、れる……じゅるる……っ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 1095,
+	},
+	block_00198 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10494", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ひぁぃっ、ひ、ひがうよぉ……きもちいぃ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 1098,
+	},
+	block_00199 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10174", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「お仕置き中なのにきもちいいなんて悪い舌ですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00198",
+		linknext = "block_00200",
+		line = 1101,
+	},
+	block_00200 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10175", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「はむっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00199",
+		linknext = "block_00201",
+		line = 1104,
+	},
+	block_00201 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10495", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はうぅっ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00200",
+		linknext = "block_00202",
+		line = 1107,
+	},
+	block_00202 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10176", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「再び噛んでみました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00201",
+		linknext = "block_00203",
+		line = 1110,
+	},
+	block_00203 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"再び舌を優しく舐めてあげる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00202",
+		linknext = "block_00204",
+		line = 1113,
+	},
+	block_00204 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10177", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「これは罰なのだから、気持ち良くなんてなっちゃダメだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00203",
+		linknext = "block_00205",
+		line = 1116,
+	},
+	block_00205 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10496", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ふぁぃ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00204",
+		linknext = "block_00206",
+		line = 1119,
+	},
+	block_00206 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10178", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「本当に気持ち良くなってないの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00205",
+		linknext = "block_00207",
+		line = 1122,
+	},
+	block_00207 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10497", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00206",
+		linknext = "block_00208",
+		line = 1125,
+	},
+	block_00208 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="zbg061a", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0008h", head="yum_z2a", lv=5, id=5, sync=0},
+		{"extrans", rule=139, vague=40},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10498", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「本当にたしかめるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00207",
+		linknext = "block_00209",
+		line = 1141,
+	},
+	block_00209 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10179", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「当たり前だよ。さぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00208",
+		linknext = "block_00210",
+		line = 1144,
+	},
+	block_00210 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0110", face="a0008h", head="yum_z2a", lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10499", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「うん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00209",
+		linknext = "block_00211",
+		line = 1149,
+	},
+	block_00211 = {
+		{"msgoff"},
+		{"se", vol=20, id=1, file="se0044"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg061a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="優美", size="z1", mode=3, resize=1, path=":fg/yum/z1/", file="yum_z1a0910", face="a0008h", head="yum_z1a", lv=4, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"優美はスカートのホックを外すと、下着が姿をあらわす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00210",
+		linknext = "block_00212",
+		line = 1161,
+	},
+	block_00212 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10180", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「やっぱりすごい事になってる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00211",
+		linknext = "block_00213",
+		line = 1164,
+	},
+	block_00213 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0009h", head="yum_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10500", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「う゛っ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00212",
+		linknext = "block_00214",
+		line = 1169,
+	},
+	block_00214 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10181", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「お仕置きしてたのに、お漏らしみたいじゃない？　下着濡れすぎて透けて見えてるし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00213",
+		linknext = "block_00215",
+		line = 1172,
+	},
+	block_00215 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0008h", head="yum_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10501", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「だってぇ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00214",
+		linknext = "block_00216",
+		line = 1177,
+	},
+	block_00216 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10182", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「優美はなんでそんなになっているのですか？　ちゃんと答えてください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00215",
+		linknext = "block_00217",
+		line = 1180,
+	},
+	block_00217 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0003h", head="yum_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10502", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「里奈が優しくキスしてくれたから……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00216",
+		linknext = "block_00218",
+		line = 1185,
+	},
+	block_00218 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10183", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「キスじゃないよ。あれはお仕置きなの。",
+					{"rt2"},
+					"優美はそのお仕置きで感じちゃうヘンタイさんなんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00217",
+		linknext = "block_00219",
+		line = 1189,
+	},
+	block_00219 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0009h", head="yum_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10503", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そんなぁ。里奈にあんな事されたら、普通にこんななるよぉ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00218",
+		linknext = "block_00220",
+		line = 1194,
+	},
+	block_00220 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10184", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ヘンタイだって認めないのかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00219",
+		linknext = "block_00221",
+		line = 1197,
+	},
+	block_00221 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0007h", head="yum_z1a", lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0008h", head="yum_z1a", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10504", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え、あの……、それは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00220",
+		linknext = "block_00222",
+		line = 1203,
+	},
+	block_00222 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10185", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ご褒美いらないのかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00221",
+		linknext = "block_00223",
+		line = 1206,
+	},
+	block_00223 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0003h", head="yum_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10505", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「わ、私、いつも里奈に欲情するヘンタイですっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00222",
+		linknext = "block_00224",
+		line = 1211,
+	},
+	block_00224 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10186", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そ、良く出来ました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00223",
+		linknext = "block_00225",
+		line = 1214,
+	},
+	block_00225 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10187", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ご褒美、どうしたいのかしら？　一度やってあげたみたいに、またおま○こ",
+					{"rt2"},
+					"触ってあげようか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00224",
+		linknext = "block_00226",
+		line = 1218,
+	},
+	block_00226 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0001h", head="yum_z1a", lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0008h", head="yum_z1a", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10506", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あ、それはもちろんうれしいのだけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00225",
+		linknext = "block_00227",
+		line = 1224,
+	},
+	block_00227 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10188", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「なに？　なにか他にお願いがあるの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00226",
+		linknext = "block_00228",
+		line = 1227,
+	},
+	block_00228 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0910", face="a0003h", head="yum_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10507", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00227",
+		linknext = "block_00229",
+		line = 1232,
+	},
+	block_00229 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", rule=139, vague=40, file="ev_con_22_01", path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10189", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ひどいありさまだねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00228",
+		linknext = "block_00230",
+		line = 1242,
+	},
+	block_00230 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私の指先が優美の熱くぬめった場所を優しくゆっくりなぞる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00229",
+		linknext = "block_00231",
+		line = 1245,
+	},
+	block_00231 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10508", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はうんっ、はうっ、くっ、ちゅぱ、ちゅ、ちゅ、んっくちゅ……くちゅ……ちゅ……ちゅむ……れろ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00230",
+		linknext = "block_00232",
+		line = 1248,
+	},
+	block_00232 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その間も優美は一生懸命私の胸にしゃぶりついていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00231",
+		linknext = "block_00233",
+		line = 1251,
+	},
+	block_00233 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10190", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「こんな事したかったなんて……優美ヘンタイ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00232",
+		linknext = "block_00234",
+		line = 1254,
+	},
+	block_00234 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10509", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「だって、里奈の胸一度でいいから生で触ってみたかったし……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00233",
+		linknext = "block_00235",
+		line = 1257,
+	},
+	block_00235 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10191", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「触るというか、しゃぶりついているけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00234",
+		linknext = "block_00236",
+		line = 1260,
+	},
+	block_00236 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10510", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「だって、今日は許してくれるって言ったから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00235",
+		linknext = "block_00237",
+		line = 1263,
+	},
+	block_00237 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10192", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そうですねぇ。ヘンタイ赤ちゃん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00236",
+		linknext = "block_00238",
+		line = 1266,
+	},
+	block_00238 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私は熱い場所に再び指を忍ばせる。",
+					{"rt2"},
+					"私の指先が熱くなった場所をかき回すたびに、優美はまるで神経回路でもぐちゃぐちゃにかき混ぜられたみたいにビクんっビクんっッとはねる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00237",
+		linknext = "block_00239",
+		line = 1270,
+	},
+	block_00239 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10511", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あ゛っ！　あ゛っっ、はへぇえ？　はうっっ？？　きゃうぅ……あうっ……はうっっん………………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00238",
+		linknext = "block_00240",
+		line = 1273,
+	},
+	block_00240 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10193", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「すごいねぇ、指をうごかすたびに、まるで電気でも流されたみたいに痙攣するし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00239",
+		linknext = "block_00241",
+		line = 1276,
+	},
+	block_00241 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10512", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あん、あうぅっ、うん、だ、だってぇ、しょうがないよ……んくっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00240",
+		linknext = "block_00242",
+		line = 1279,
+	},
+	block_00242 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私の指に熱い液体が纏わり付く。",
+					{"rt2"},
+					"くちゅくちゅと大きな音を立ててこすってあげる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00241",
+		linknext = "block_00243",
+		line = 1283,
+	},
+	block_00243 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10513", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「すごい……ほんとうにあたま真っ白になる、あたまの中で電気がぐちゃぐちゃになってる……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00242",
+		linknext = "block_00244",
+		line = 1286,
+	},
+	block_00244 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10194", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ほら、口がお留守になっているよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00243",
+		linknext = "block_00245",
+		line = 1289,
+	},
+	block_00245 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だらしなくよだれがたれている口に胸を押しつける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00244",
+		linknext = "block_00246",
+		line = 1292,
+	},
+	block_00246 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10514", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ふむぅ！？　むっ、れろ……れろ、れろ、ちゅ、ちゅ……れろれろ……はむっっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00245",
+		linknext = "block_00247",
+		line = 1295,
+	},
+	block_00247 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10195", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「んっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00246",
+		linknext = "block_00248",
+		line = 1298,
+	},
+	block_00248 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"やっぱり、胸をこれだけ舐められると感じるな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00247",
+		linknext = "block_00249",
+		line = 1301,
+	},
+	block_00249 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あまり表情に出さない様にしないと、それらしくないから我慢しているけれども。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00248",
+		linknext = "block_00250",
+		line = 1304,
+	},
+	block_00250 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"本当は私も優美みたいに喘ぎ声を出したい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00249",
+		linknext = "block_00251",
+		line = 1307,
+	},
+	block_00251 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな鬱憤を優美に態度でぶつける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00250",
+		linknext = "block_00252",
+		line = 1310,
+	},
+	block_00252 = {
+		{"bg", sync=0, face=1, file="ev_con_22_02", time=400, path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10196", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ヘンタイさんの痙攣っておかしいねぇ。脚を開いたり閉じたり、なんかカエルみたいでおもしろい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00251",
+		linknext = "block_00253",
+		line = 1316,
+	},
+	block_00253 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10515", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そんな事いわないでぇ。だって、わかんない、わかんないよぉ、ただ",
+					{"rt2"},
+					"きもちいぃぃ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00252",
+		linknext = "block_00254",
+		line = 1320,
+	},
+	block_00254 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10516", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ほんと、ただきもちよくて、頭までつきぬけるみたいなきもちいいのが、ずっと、ずっとで……んぁぁあ゛っぅ、ひゃうっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00253",
+		linknext = "block_00255",
+		line = 1323,
+	},
+	block_00255 = {
+		{"bg", sync=0, face=1, file="ev_con_22_03", time=400, path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10197", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「優美はきもちいいんだねぇ。だったらそうやって腰をヘコヘコさせているといいよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00254",
+		linknext = "block_00256",
+		line = 1329,
+	},
+	block_00256 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10517", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「腰ヘコヘコなっちゃうの、里奈の、手が、気持ち良くて、それは……んきゃ、くうぅぅんっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00255",
+		linknext = "block_00257",
+		line = 1332,
+	},
+	block_00257 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"指が熱い、絡まる液体は全然冷めることなく、乾くことなく、それどころか次から次へと私の指の感覚をおかしくしていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00256",
+		linknext = "block_00258",
+		line = 1335,
+	},
+	block_00258 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10518", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あ゛、あ゛、すごい……里奈のおっぱいおおきい……乳首ころころしてて……うれしいぃ……で、でも、そんな事、考えられないぐらい……わたしきもちいいのであたまおかしくなっちゃう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00257",
+		linknext = "block_00259",
+		line = 1338,
+	},
+	block_00259 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10198", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「別に私の胸は愛撫しなくていいよ。きもちいいのに流されたらいいじゃない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00258",
+		linknext = "block_00260",
+		line = 1341,
+	},
+	block_00260 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10519", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「い、いや、ちゃんと里奈の感触味わいたい……んくっ、ひゃうっっっッッ――――あ゛ぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00259",
+		linknext = "block_00261",
+		line = 1344,
+	},
+	block_00261 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10199", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そんなに下半身ぱくぱくさせて……全身痙攣させて……いやらしい液をまき散らして……大丈夫？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00260",
+		linknext = "block_00262",
+		line = 1347,
+	},
+	block_00262 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私は手を速める。少し強めにしても、あまりに濡れすぎていてまったく抵抗を感じない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00261",
+		linknext = "block_00263",
+		line = 1350,
+	},
+	block_00263 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10520", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「へ？　はぇ！？　んきゃぁ！？　あっっッッ―――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00262",
+		linknext = "block_00264",
+		line = 1353,
+	},
+	block_00264 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10521", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「んぁぁあ゛っっっっッッ――――あ゛ぁ～～～～～～～ッ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00263",
+		linknext = "block_00265",
+		line = 1356,
+	},
+	block_00265 = {
+		{"bg", id=9, lv=9, sync=1, time=1000, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_con_22_04", sync=1, time=1000, vague=100, path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――ビクン！　ビクんっビクんっッびくびくびくンッッッッ！！？？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00264",
+		linknext = "block_00266",
+		line = 1362,
+	},
+	block_00266 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10200", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「おや？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00265",
+		linknext = "block_00267",
+		line = 1365,
+	},
+	block_00267 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――びくっっっッッッッッ……",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00266",
+		linknext = "block_00268",
+		line = 1367,
+	},
+	block_00268 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10522", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「んきゃぁっっッッ――――あ゛ぁっ、んくうぅっっっっ、んぁっ、くはぁ！　",
+					{"rt2"},
+					"くきゅゅぅぅぅっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00267",
+		linknext = "block_00269",
+		line = 1371,
+	},
+	block_00269 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"優美の身体が突然大きく痙攣し続ける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00268",
+		linknext = "block_00270",
+		line = 1374,
+	},
+	block_00270 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10201", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あれぇ？　優美？　もしかして、イっちゃったのかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00269",
+		linknext = "block_00271",
+		line = 1379,
+	},
+	block_00271 = {
+		{"bg", sync=0, face=1, file="ev_con_22_05", time=400, path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10523", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ふぇえ？　わ、わたしぃ、今、イった？　ただ、あたま、白くなって……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00270",
+		linknext = "block_00272",
+		line = 1384,
+	},
+	block_00272 = {
+		{"bg", sync=0, face=1, file="ev_con_22_06", time=400, path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10202", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「くすくす」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00271",
+		linknext = "block_00273",
+		line = 1390,
+	},
+	block_00273 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"再び、指を強く動かす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00272",
+		linknext = "block_00274",
+		line = 1393,
+	},
+	block_00274 = {
+		{"bg", sync=0, face=1, file="ev_con_22_07", time=400, path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10524", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はへぇ？　え？！　んきゃっ、きゃうっ、はへっ！？　っ、っっっっ、んっ、くぁ！　くんっ、んんんぁぁあっっっッッ――――あ゛ぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00273",
+		linknext = "block_00275",
+		line = 1398,
+	},
+	block_00275 = {
+		{"bg", id=9, lv=9, sync=1, time=1000, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_con_22_08", sync=1, time=1000, vague=100, path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――ビくン！　ビクん！　ビクびくビクんっッっっ！！",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00274",
+		linknext = "block_00276",
+		line = 1405,
+	},
+	block_00276 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"再び優美の全身が痙攣した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00275",
+		linknext = "block_00277",
+		line = 1408,
+	},
+	block_00277 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たぶん連続でイっているのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00276",
+		linknext = "block_00278",
+		line = 1411,
+	},
+	block_00278 = {
+		{"bg", sync=0, face=1, file="ev_con_22_09", time=400, path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10525", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「んきゃ！？　きゃうぅ！　んくっっっッッ――――あ゛ぁっっっっ、んっ、くぁ！　くんっ、んんんぁぁあっ、くぅぅん、はぁぁんんんっ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00277",
+		linknext = "block_00279",
+		line = 1417,
+	},
+	block_00279 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10203", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「今度は自覚出来た？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00278",
+		linknext = "block_00280",
+		line = 1420,
+	},
+	block_00280 = {
+		{"bg", sync=0, face=1, file="ev_con_22_10", time=400, path=":ev/ev_con_22/", set="ev_con_22"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10526", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はひぃ、イきました……たしかに……わたしイきました……ただ気持ちよすぎて……ぜんぜん、じかくなくて……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00279",
+		linknext = "block_00281",
+		line = 1425,
+	},
+	block_00281 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10204", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「なら満足出来たんだね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00280",
+		linknext = "block_00282",
+		line = 1431,
+	},
+	block_00282 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10527", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「でもぉ……、わたし、里奈にもきもちよくなってほしくて……これからだったのに……にかいも勝手にイっちゃって……んきゃっ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00281",
+		linknext = "block_00283",
+		line = 1434,
+	},
+	block_00283 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――ビクんっビクんっッぴくぴくンッッ……",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00282",
+		linknext = "block_00284",
+		line = 1437,
+	},
+	block_00284 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まだ痙攣が治まらない様だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00283",
+		linknext = "block_00285",
+		line = 1440,
+	},
+	block_00285 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10205", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あの絵ってモチーフは冬虫夏草だけど、あれはなにを連想させるか分かる？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00284",
+		linknext = "block_00286",
+		line = 1443,
+	},
+	block_00286 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10528", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「え？　あれってたぶん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00285",
+		linknext = "block_00287",
+		line = 1446,
+	},
+	block_00287 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10206", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「んじゃ、それしよっか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00286",
+		linknext = "block_00288",
+		line = 1449,
+	},
+	block_00288 = {
+		{"bg", file="black", path=":bg/"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10529", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「んっ……ちゅ……ちゅる……ちゅちゅ……ん……ちゅ……ちゅ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00287",
+		linknext = "block_00289",
+		line = 1455,
+	},
+	block_00289 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10207", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「じゅるっ……ちゅ……じゅるっん……ちゅちゅ……ん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00288",
+		linknext = "block_00290",
+		line = 1458,
+	},
+	block_00290 = {
+		{"bg", file="ev_con_20_01", path=":ev/ev_con_20/", set="ev_con_20"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"優美の口から漏れる熱い吐息が私の性器にかかっているのが分かる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00289",
+		linknext = "block_00291",
+		line = 1464,
+	},
+	block_00291 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たぶんそれは優美も同じだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00290",
+		linknext = "block_00292",
+		line = 1467,
+	},
+	block_00292 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10530", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「んっ……ちゅ……れろれろ……あむ……ちゅ、れろれろ……ちゅる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00291",
+		linknext = "block_00293",
+		line = 1470,
+	},
+	block_00293 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10208", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「んくっ、ちゅぱ……れろ……あむっ……んんっ、すごく濡れてる……優美のいやらしい部分…………このいやらしい味……好きだよ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00292",
+		linknext = "block_00294",
+		line = 1473,
+	},
+	block_00294 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10531", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「うれしぃ……こんなこと……ちゅちゅっ……できるなんて……んんっ、あむっ、れろ、んむっ、なって、れろ、れろ……里奈のいやらしいの、いやらしい味、こんな感じられるなんて……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00293",
+		linknext = "block_00295",
+		line = 1476,
+	},
+	block_00295 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10209", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「うん、私もだよ……優美のいやらしいの……れろ、れろ……ちゅちゅる、ちゅぱ……もっと、もっとわたしに舐めさせてほしいな……じゅるるるる……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00294",
+		linknext = "block_00296",
+		line = 1479,
+	},
+	block_00296 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10532", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「きゃうっ！？　んきゃぁっっッッ――――あ゛ぁっっッッ！　だ、ダメぇぇ、す、吸うのダメぇぇ……あっ、んんぅ、ンっ、はぁはぁ、あっ、ああん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00295",
+		linknext = "block_00297",
+		line = 1482,
+	},
+	block_00297 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"溢れ出る蜜を互いに優しく舐め取っていく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00296",
+		linknext = "block_00298",
+		line = 1485,
+	},
+	block_00298 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう、それはあの絵が暗示した二人の姿。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00297",
+		linknext = "block_00299",
+		line = 1488,
+	},
+	block_00299 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10533", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「じゅる、じゅるる、ちゅるン、ちゅぱ、ちゅぱ、ちゅン、んっ、んんっっ……んくっ……はひぃ……んぁっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00298",
+		linknext = "block_00300",
+		line = 1491,
+	},
+	block_00300 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10210", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「はぁ、はぁ、……きもちいいねぇ……はぁ、はぁ……んっ、、んんンッ、はぁはぁ……ふたりでいちばんえっちな場所をなめ合って……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00299",
+		linknext = "block_00301",
+		line = 1494,
+	},
+	block_00301 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10534", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「う、うん……くうぅぅ…はぁ、ん、ちゅぅぅぅ……こんなすごいこと……できるなんて……ちゅむ、ちゅむ……ちゅ、ちゅっぅ、れろれろ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00300",
+		linknext = "block_00302",
+		line = 1497,
+	},
+	block_00302 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10211", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「そうだね……けど……わたしは知ってたよ……あの絵は……",
+					{"rt2"},
+					"そんな暗示だから……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00301",
+		linknext = "block_00303",
+		line = 1501,
+	},
+	block_00303 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10535", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「暗示？　どういう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00302",
+		linknext = "block_00304",
+		line = 1504,
+	},
+	block_00304 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10212", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ある日……目覚めて……イメージが出来たの……、あなたとわたしで……こうやっている夢を……みて……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00303",
+		linknext = "block_00305",
+		line = 1507,
+	},
+	block_00305 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10213", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「だから、わたしはあの絵を完成させて、あなたの元から離れた……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00304",
+		linknext = "block_00306",
+		line = 1510,
+	},
+	block_00306 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10214", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あの夢は……あなたがけっして、わたしから逃れられない暗示だとおもえた",
+					{"rt2"},
+					"から……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00305",
+		linknext = "block_00307",
+		line = 1514,
+	},
+	block_00307 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10536", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ひゃんっっ、ら、らめぇっっッッ――――あ゛ぁ、そこ、そこ剥いちゃだめぇぇ、きゃうぅぅんっっ、そこ剥いて舐めちゃだめぇぇ……いやぁぁあんッッッッ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00306",
+		linknext = "block_00308",
+		line = 1517,
+	},
+	block_00308 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"真っ赤に充血するほど勃起したものの皮をめくって舌で転がす。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00307",
+		linknext = "block_00309",
+		line = 1520,
+	},
+	block_00309 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10537", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「んきゃ！？　はぁっっっッッ――――あ゛ぁ、ンはっ、あっあっ、んんんんっ、やっ、やっ、あんっ、そ、そこは敏感だからぁぁぁ――――あ゛ぁんンっ、きゃんっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00308",
+		linknext = "block_00310",
+		line = 1523,
+	},
+	block_00310 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10215", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「はむっっ、じゅるルるっ、じゅポ、じゅプぶっ……んぷ……はぶっ、んぶぶ……ん、れろっ、ん、んっ、じゅるる……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00309",
+		linknext = "block_00311",
+		line = 1526,
+	},
+	block_00311 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10538", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はひィィィ！？！？！　ら、らめぇぇ、噛むのらめぇぇぇぇ。それ、それはぁきもちよすぎるぅぅうう、きゃうぅぅううんっっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00310",
+		linknext = "block_00312",
+		line = 1529,
+	},
+	block_00312 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"優美のクリトリスを吸い上げる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00311",
+		linknext = "block_00313",
+		line = 1532,
+	},
+	block_00313 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10216", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ぢゅるるるッッッッッっっッッ――――ちゅる――ちゅるる…ちゅっ………ぢゅるるるっっっ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00312",
+		linknext = "block_00314",
+		line = 1535,
+	},
+	block_00314 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10539", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はひィィんんっ！？　きゃんっ！　そ、そんなぁ、そんなぁすったらぁぁあっ、あっ、らめぇぇぇえええ……らめだよぉぉ。剥いたらぁ、敏感で……きもちよすぎてぇ……ひぎぃぃ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00313",
+		linknext = "block_00315",
+		line = 1538,
+	},
+	block_00315 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10540", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「らめぇ、イく、イキましゅ、イク、いく、いっちゃうっっ……",
+					{"rt2"},
+					"んぁあ゛あ゛っっッッ――――あ゛ぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00314",
+		linknext = "block_00316",
+		line = 1542,
+	},
+	block_00316 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10541", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「きゃひぃぃんッッ…………きゃふぅぅぅぁぁぁあああああああああああああんんーーーーーーーーーーーッッッ！！！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00315",
+		linknext = "block_00317",
+		line = 1545,
+	},
+	block_00317 = {
+		{"bg", id=9, lv=9, sync=1, time=1000, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_con_20_02", sync=1, time=1000, vague=100, path=":ev/ev_con_20/", set="ev_con_20"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10542", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あ゛らめっ、らめっっ、イっちゃってるぅぅ、イっちゃってる……のとまらな、ひぃぃいぃぃ…………ッ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00316",
+		linknext = "block_00318",
+		line = 1552,
+	},
+	block_00318 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10543", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ひぅぅ…………ッッ…………んぐーーーーーッッ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00317",
+		linknext = "block_00319",
+		line = 1555,
+	},
+	block_00319 = {
+		{"bg", sync=0, face=1, file="ev_con_20_03", time=400, path=":ev/ev_con_20/", set="ev_con_20"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10544", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はぁ、はぁ……はぁ、はぁ……すごかった……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00318",
+		linknext = "block_00320",
+		line = 1561,
+	},
+	block_00320 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10217", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「すごかった……優美……潮吹いてたし……顔射された気分だよ…………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00319",
+		linknext = "block_00321",
+		line = 1564,
+	},
+	block_00321 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10545", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ごめん、すぐ綺麗にしよう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00320",
+		linknext = "block_00322",
+		line = 1567,
+	},
+	block_00322 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10218", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「バカか。それよりもっとやるべき事あるでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00321",
+		linknext = "block_00323",
+		line = 1570,
+	},
+	block_00323 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10219", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ちゃんとわたしをきもちよくさせなさい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00322",
+		linknext = "block_00324",
+		line = 1573,
+	},
+	block_00324 = {
+		{"bg", sync=0, face=1, file="ev_con_20_04", time=400, path=":ev/ev_con_20/", set="ev_con_20"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10546", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「あ、うん……れろれろ……ぢゅるるるるるッッッッッ……ちゅる…ちゅるる…",
+					{"rt2"},
+					"ちゅっ………」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00323",
+		linknext = "block_00325",
+		line = 1579,
+	},
+	block_00325 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10220", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「んぁ、いきなり……すごい……あ、あんっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00324",
+		linknext = "block_00326",
+		line = 1584,
+	},
+	block_00326 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10547", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ぢゅっ、ぢゅるるるるッッッ……そうなんだ。わたしの舌、きもちいいかな？　",
+					{"rt2"},
+					"れろれろ、れろ、れろ、じゅるっ、じゅるるルルッッッッ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00325",
+		linknext = "block_00327",
+		line = 1588,
+	},
+	block_00327 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10221", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あ、うん……すごく優美の舌、熱くて、やわらかくて、べちょべちょしてて……気持ちいぃ……優美にぺろぺろされるのぉ……きもちいいよぉ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00326",
+		linknext = "block_00328",
+		line = 1591,
+	},
+	block_00328 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10548", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「うん、じゅるっ、ぢゅるっっるるるっっ、ずちゅ、ちゅちゅ～～～～～っ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00327",
+		linknext = "block_00329",
+		line = 1594,
+	},
+	block_00329 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――びく、ビクんっビクんっッびくびくッッッッ",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00328",
+		linknext = "block_00330",
+		line = 1597,
+	},
+	block_00330 = {
+		{"bg", sync=0, face=1, file="ev_con_20_05", time=400, path=":ev/ev_con_20/", set="ev_con_20"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10222", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あ゛、あ、あ、だめかも、もうだめかも……ああ、んぁぁぁぁあ、ダメ、もうダメそう……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00329",
+		linknext = "block_00331",
+		line = 1603,
+	},
+	block_00331 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10549", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そのままイってほしい、れるっ、れるれるれる……んむっ、んぷぷ……んぷっ、はむ、れろれろれろ……ちゅ、ちゅ、んぷっ……ちゅぽ、ちゅぽ、ちゅぽ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00330",
+		linknext = "block_00332",
+		line = 1606,
+	},
+	block_00332 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10223", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「んきゃっッッ！？　あ、イくかも！？　ち、ちがうっ、これイク……ぃぃ……んあぁっ！？　だめぇっっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00331",
+		linknext = "block_00333",
+		line = 1609,
+	},
+	block_00333 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10224", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あっ、あっ、あんっ、た、たえられない……んきゃぁ、んくっ、これ、イク、イキそう、んんっ、イっちゃう、んっ、かもっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00332",
+		linknext = "block_00334",
+		line = 1612,
+	},
+	block_00334 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10550", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「れるれるれる……んむっ、んぷぷ……んぷっ、はむ、れろれろれろ……ぢゅるるるるるッッッッッ……、ちゅる…ちゅるる…ちゅっ………ぢゅるるるルルるっっッッ――――っ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00333",
+		linknext = "block_00335",
+		line = 1615,
+	},
+	block_00335 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"優美が私のクリトリスを強く吸い取る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00334",
+		linknext = "block_00336",
+		line = 1618,
+	},
+	block_00336 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10225", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「んきゃぁぁっっ……くきゃぁぁ！？　んあァ、んあァ！？　んあっっッッッ……！！？！？　んきゃぁっっッッ――――あ゛ぁっっッッ～～～～～～っ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00335",
+		linknext = "block_00337",
+		line = 1621,
+	},
+	block_00337 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10226", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あっ、あっ、らめぇ、らめぇ、すごい、優美の舌でイクぅ、優美のお口でイかされるぅぅ……、敏感なところぜんぶ出てるからぁぁ……もう、イ、イくぅ、イっちゃう！　またイっちゃう……だめ、イっちゃう！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00336",
+		linknext = "block_00338",
+		line = 1624,
+	},
+	block_00338 = {
+		{"bg", id=9, lv=9, sync=1, time=1000, file="white", path=":bg/"},
+		{"cgdel", id=9, lv=9},
+		{"bg", file="ev_con_20_06", sync=1, time=1000, vague=100, path=":ev/ev_con_20/", set="ev_con_20"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"――ビクんっビクんっッびくびくびくんびくんッッッッッ！！！！！",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00337",
+		linknext = "block_00339",
+		line = 1632,
+	},
+	block_00339 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私は優美をきつく抱きしめながら長い嬌声を上げた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00338",
+		linknext = "block_00340",
+		line = 1635,
+	},
+	block_00340 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10227", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「んはっ、んきゃぁっっッッ――――きゃうぅ、んくっ、はぁ、はぁぁっ…………はぁ、はぁ、あ、あ、あっ、んくぅっっぁぁ……ッ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00339",
+		linknext = "block_00341",
+		line = 1638,
+	},
+	block_00341 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"優美がクリトリスを吸うのをやめても痙攣が止まらない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00340",
+		linknext = "block_00342",
+		line = 1641,
+	},
+	block_00342 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10551", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「はぁ、はぁ……どうだったかな？　……すこしは、きもちよかった？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00341",
+		linknext = "block_00343",
+		line = 1644,
+	},
+	block_00343 = {
+		{"bg", sync=0, face=1, file="ev_con_20_07", time=400, path=":ev/ev_con_20/", set="ev_con_20"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10228", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ば。バカ！　はぁ、はぁ、はぁ、はぁ……、そんな事聞くなし！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00342",
+		linknext = "block_00344",
+		line = 1650,
+	},
+	block_00344 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10552", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「えへへへ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00343",
+		linknext = "block_00345",
+		line = 1653,
+	},
+	block_00345 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10229", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「笑うな！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00344",
+		linknext = "block_00346",
+		line = 1656,
+	},
+	block_00346 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10553", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「笑うよ。うれしいんだもん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00345",
+		linknext = "block_00347",
+		line = 1659,
+	},
+	block_00347 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10230", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「……ぷぅ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00346",
+		linknext = "block_00348",
+		line = 1662,
+	},
+	block_00348 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10231", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「それは私もだけど……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00347",
+		linknext = "block_00349",
+		line = 1665,
+	},
+	block_00349 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10232", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「優美とちゃんと最後まで出来たし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00348",
+		linknext = "block_00350",
+		line = 1668,
+	},
+	block_00350 = {
+		{"bg", sync=0, face=1, file="ev_con_20_08", time=400, path=":ev/ev_con_20/", set="ev_con_20"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10554", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「里奈ぁぁぁあ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00349",
+		linknext = "block_00351",
+		line = 1674,
+	},
+	block_00351 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10233", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「あー、ちょっとイったから、絡まないで、少しやすませろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00350",
+		linknext = "block_00352",
+		line = 1677,
+	},
+	block_00352 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10555", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「休んだら、もっとやっていい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00351",
+		linknext = "block_00353",
+		line = 1680,
+	},
+	block_00353 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10234", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「ダメ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00352",
+		linknext = "block_00354",
+		line = 1683,
+	},
+	block_00354 = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10556", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「なんで？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00353",
+		linknext = "block_00355",
+		line = 1688,
+	},
+	block_00355 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10235", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「休んだら、二人でご飯の食材買いに行くからです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00354",
+		linknext = "block_00356",
+		line = 1691,
+	},
+	block_00356 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10557", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「ご飯？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00355",
+		linknext = "block_00357",
+		line = 1694,
+	},
+	block_00357 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg061a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0210", face="a0001", head="yum_z1a", x=-345, lv=4, id=5, sync=0},
+		{"fg", ch="里奈", size="z1", mode=3, resize=1, path=":fg/rna/z1/", file="rna_z1a0200", face="a0013", head="rna_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm152"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0200", face="a0010", head="rna_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10236", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「優美はいつもジャンクフードでしょ？　ちゃんとしたものを食べるの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00356",
+		linknext = "block_00358",
+		line = 1712,
+	},
+	block_00358 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0200", face="a0002", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10237", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「食べたあとなら、なにやってもいいから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00357",
+		linknext = "block_00359",
+		line = 1717,
+	},
+	block_00359 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0210", face="a0003", head="yum_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="優美", act="びっくり", lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0210", face="a0002", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10558", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「本当に！？　だったら着替えよう！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00358",
+		linknext = "block_00360",
+		line = 1725,
+	},
+	block_00360 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0200", face="a0008", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10238", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「お風呂入らせてくれないかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00359",
+		linknext = "block_00361",
+		line = 1730,
+	},
+	block_00361 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0200", face="a0009", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10559", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「えー、なんで？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00360",
+		linknext = "block_00362",
+		line = 1736,
+	},
+	block_00362 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0200", face="a0011", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10239", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「風呂ぐらい入るでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00361",
+		linknext = "block_00363",
+		line = 1741,
+	},
+	block_00363 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0200", face="a0001", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0200", face="a0003", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10560", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「そう？　私はこのままでいいけど？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00362",
+		linknext = "block_00364",
+		line = 1747,
+	},
+	block_00364 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0210", face="a0005", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10240", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「体液まみれで外なんて出られるか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00363",
+		linknext = "block_00365",
+		line = 1752,
+	},
+	block_00365 = {
+		{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0200", face="a0002", head="yum_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="優美", size="z1", mode=3, path=":fg/yum/z1/", file="yum_z1a0200", face="a0003", head="yum_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10561", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「だって、これはマーキングのご褒美だし、みんなに匂いを自慢したい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00364",
+		linknext = "block_00366",
+		line = 1760,
+	},
+	block_00366 = {
+		{"fg", ch="里奈", size="z1", mode=3, path=":fg/rna/z1/", file="rna_z1a0210", face="a0001", head="rna_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ニコニコ笑う優美。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00365",
+		linknext = "block_00367",
+		line = 1765,
+	},
+	block_00367 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんだったら本気でそのまま外に出そうなぐらいだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00366",
+		linknext = "block_00368",
+		line = 1768,
+	},
+	block_00368 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="zbg061a", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="優美", size="z2", mode=3, resize=1, path=":fg/yum/z2/", file="yum_z2a0210", face="a0002", head="yum_z2a", x=-345, lv=5, id=5, sync=0},
+		{"fg", ch="里奈", size="z2", mode=3, resize=1, path=":fg/rna/z2/", file="rna_z2a0200", face="a0002", head="rna_z2a", x=345, lv=5, id=6, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rna_10241", ch="rna"},
+			},
+			ja = {
+				{
+					name = {"里奈"},
+					"「一緒に入るぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00367",
+		linknext = "block_00369",
+		line = 1779,
+	},
+	block_00369 = {
+		{"fg", ch="優美", size="z2", mode=3, path=":fg/yum/z2/", file="yum_z2a0210", face="a0003", head="yum_z2a", x=-345, lv=5, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_yum_10562", ch="yum"},
+			},
+			ja = {
+				{
+					name = {"優美"},
+					"「だったら入るー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00368",
+		linknext = "block_00370",
+		line = 1784,
+	},
+	block_00370 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一緒に入ると提案したら簡単に了承した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00369",
+		linknext = "block_00371",
+		line = 1787,
+	},
+	block_00371 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"チョロいな……。",
+					{"rt2"},
+					"優美は。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00370",
+		linknext = "block_00372",
+		line = 1791,
+	},
+	block_00372 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんなだから私に好きにされるのになぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00371",
+		linknext = "block_00373",
+		line = 1794,
+	},
+	block_00373 = {
+		{"scene", file="scene13"},
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"ex", time=500, func="wait"},
+		{"excall", file="05_11_1"},
+		{"text"},
+		linkback = "block_00372",
+		line = 1803,
+	},
+	label = {
+		flagon = { block="block_00000", label=33 },
+		join = { block="block_00000", label=47 },
+		scene = { block="block_00000", label=48 },
+		top = { block="block_00000", label=1 },
+	},
+}

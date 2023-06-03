@@ -1,0 +1,2382 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅱ章"},
+		{"msg", no=1},
+		{"bg", time=2000, file="black", path=":bg/"},
+		{"bgm", file="bgm158"},
+		{"bg", file="文字スチル02_1", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=1500},
+		{"ex", time=2000, func="wait"},
+		{"bg", file="文字スチル02_2", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=1500},
+		{"ex", time=5000, func="wait"},
+		{"bg", file="文字スチル02_3", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=1500},
+		{"ex", time=5000, func="wait"},
+		{"bg", file="文字スチル02_4", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=3000},
+		{"ex", time=3000, func="wait"},
+		{"bg", file="文字スチル02_1", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=1500},
+		{"ex", time=3000, func="wait"},
+		{"bg", file="文字スチル03_1", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=3000},
+		{"ex", time=2000, func="wait"},
+		{"bg", file="文字スチル03_2", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=3000},
+		{"ex", time=2000, func="wait"},
+		{"bg", file="文字スチル03_3", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=3000},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"ex", time=500, func="wait"},
+		{"bg", time=2000, file="ev_etc_01_01", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"bgm", file="bgm148"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"新任教師の朝は早い。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 90,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"誰よりもはやく学校に行き、雑用をすませておく。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 93,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"年齢が高めの職場には、雑用という名の若さが必要とされる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 96,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とは言っても、自分の場合、それが力仕事となれば、それほど苦でもない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 99,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"などと考えながら、一通りの雑用をすませて、校舎に帰る途中。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 102,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの場所で、ヤツと出会った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 105,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"壁画『櫻達の足跡』がある、あの教会だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 108,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「今話題の美人芸術家先生がこんな片田舎の学校に、早朝にご苦労な事だな。",
+					{"rt2"},
+					"お忍びか？　長山香奈先生」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 112,
+	},
+	block_00008 = {
+		{"user", mode="conf", ch="香奈"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00001", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「くだらない挑発ですね。草薙直哉先生」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 117,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"声をかけた俺の方に振り向きもせずに、彼女はそのまま言葉を続けた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 120,
+	},
+	block_00010 = {
+		{"bg", file="ev_com_16_01", path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00002", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「待っているのですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 128,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「待っている？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 131,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00003", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「そうですよ。待っているのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 134,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00004", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「設計したのは草薙さんじゃないですか。だったら分かるんじゃないですか？",
+					{"rt2"},
+					"この時期なら、いつごろに“重なる”か」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 138,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"“重なる”時間。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 141,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう、この壁画は“重なる”のだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 149,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"長山はあたかも俺が設計したと言わんばかりだが、一応、設計は俺ではなく草薙",
+					{"rt2"},
+					"健一郎という事になっているのだが。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 153,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「わからねぇよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 156,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00005", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「あてずっぽうで出来る様な作品ではないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 159,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だとしてもだ。",
+					{"rt2"},
+					"これは、あの時、のためだけに設計したもんだ。",
+					{"rt2"},
+					"他の時にどうなるかなんて分からん」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 164,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00006", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「そうかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 169,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まったく納得したそぶりなどなく、壁を見つめる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 172,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00007", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「草薙健一郎の遺作、『櫻達の足跡』」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 175,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00008", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「今からちょうど10年ぐらい前」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 178,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00009", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「世界的芸術家、草薙健一郎によって生前作られた設計図を基に、",
+					{"rt2"},
+					"彼の死後、弓張学園の美術部員によって、この教会の壁画は完成させられた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 182,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00010", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「その中心人物は、草薙健一郎の実の息子、草薙直哉」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 185,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00011", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「つまり、あなた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 188,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それは違うだろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 193,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「その事は他ならぬ、お前が指摘していた。",
+					{"rt2"},
+					"これは俺の作品などではない。と」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 197,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00012", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「そうね。たしかに、元々の作品、『櫻達の足跡』の中心人物はあなたじゃないわ。",
+					{"rt2"},
+					"あなたも手伝ったのかもしれないけど、実質的な作者はあなたではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 201,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00013", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「それは、見る人間が見れば分かる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 204,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00014", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「それでも、これは、あなたの作品という事になっているわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 207,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、『櫻達の足跡』の作者は俺という事になっているな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 210,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00015", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「大人の事情ってヤツかしらね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 213,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺達の真後ろのステンドグラスが光りはじめる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 216,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この壁画から見える病院。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 219,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その屋上には巨大なステンドグラスがある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 222,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そのガラスを太陽が通過すると、それは極彩色の光となり、",
+					{"rt2"},
+					"その光線はこの壁画に近づいてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 226,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00016", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「だから、私はこの作品を穢した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 231,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00017", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「こんなものが、草薙直哉作品だなんて認められないから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 234,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00018", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「私自身の手によって穢してやった……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 237,
+	},
+	block_00041 = {
+		{"bg", file="ev_etc_01_23", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんな事考えてあんな真似をしたのか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 245,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00019", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「良く覚えてない。",
+					{"rt2"},
+					"でも、だった様な気がするわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 249,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"草薙健一郎によって設計されたこの壁画は、",
+					{"rt2"},
+					"弓張時代の俺達によって作られた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 253,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"中心人物は、明石亘。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 256,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そいつが、弓張時代の三年間をすべて費やして、この作品を完成させた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 259,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、とある理由で、この作品の中心人物は、俺という事になった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 262,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"長山が言うとおり、大人の事情ってヤツだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 265,
+	},
+	block_00048 = {
+		{"bg", file="ev_etc_01_17", lv=9, time=2500, sync=0, id=1, path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"色彩を感じ始める。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 273,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺と長山は光に包まれた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 276,
+	},
+	block_00050 = {
+		{"msgoff"},
+		{"cgdel", id=-1, sync=0},
+		{"bg", file="ev_com_16_02", path=":ev/ev_com_16/", set="ev_com_16", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00020", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「色彩の移動か……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 287,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00021", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「なるほどね。ステンドグラスによって作られた、色彩の光。",
+					{"rt2"},
+					"それを壁画というキャンバスに落とし込む」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 291,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00022", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「これだったら、私達が穢した絵は、再び輝きを取り戻す」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 294,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「穢した、穢したって。",
+					{"rt2"},
+					"お前ら、一応、作品という事で『櫻達の足跡』に、新作『櫻達の灰色の足跡』",
+					{"rt2"},
+					"として筆を入れたんだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 299,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00023", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「そうね。そうだった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 302,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"『櫻達の足跡』はある日、上書きされていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 307,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"らくがきの様な上書き。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 310,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ただし、それは、価値のあるらくがきだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 313,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ブルバギ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 318,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この女が所属している芸術家集団だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 321,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その芸術家集団によって、『櫻達の足跡』は現代アート的なモチーフとして生まれ変わり、その作品は『櫻達の灰色の足跡』と名付けられた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 324,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00024", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「でもね。穢す事こそが、私の芸術だったのよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 327,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00025", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「この壁画は穢されなければならなかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 330,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんでだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 333,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00026", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「偽りの名がついた草薙直哉の作品なんていらないわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 336,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00027", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「反吐が出る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 339,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"色彩がさらに移動する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 344,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"我々の立っている場所よりさらに先へ……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 347,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"壁に向かって光が差し込む。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 350,
+	},
+	block_00069 = {
+		{"bgm", stop=1, time=3000},
+		{"bg", time=2000, file="white", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして——",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 357,
+	},
+	block_00070 = {
+		{"bgm", file="bgm038", time=1500},
+		{"msgoff"},
+		{"ex", time=1000, func="wait"},
+		{"bg", x=570, y=320, zoom=80, id=1, lv=5, time=1500, sync=1, file="zev_etc_01_19", path=":ev/ev_etc_01/", set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"ex", time=1000, func="wait"},
+		{"bg", x=570, y=320, zoom=80, id=2, lv=6, time=800, sync=1, file="zev_etc_01_20", path=":ev/ev_etc_01/", set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"ex", time=800, func="wait"},
+		{"bg", x=570, y=320, zoom=80, id=3, lv=7, time=800, sync=1, file="zev_etc_01_21", path=":ev/ev_etc_01/", set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"ex", time=100, func="wait"},
+		{"bg", x=570, y=320, zoom=80, id=4, lv=8, time=800, sync=1, file="zev_etc_01_22", path=":ev/ev_etc_01/", set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"ex", time=1500, func="wait"},
+		{"bg", x=0, y=0, zoom=50, speed=5000, id=5, lv=9, time=0, sync=1, file="zev_etc_01_22", path=":ev/ev_etc_01/", z2=80, x2=570, y2=320, set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"ex", time=5000, func="wait"},
+		{"bg", time=500, sync=1, file="ev_etc_01_22", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"ex", time=4000, func="wait"},
+		{"cgdel", id=-1, sync=0},
+		{"bg", file="ev_com_16_03", path=":ev/ev_com_16/", set="ev_com_16", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00028", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「綺麗ですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 398,
+	},
+	block_00071 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00029", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「穢された櫻が再び咲く」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 401,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00030", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「まるでこの櫻は、咲く",
+					{"ruby", text="とき"},
+					"刻",
+					{"/ruby"},
+					"を知っているかの様に」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 405,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00031", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「決まった周期で」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 408,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00032", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「みずからが咲く。",
+					{"ruby", text="さくら"},
+					"櫻",
+					{"/ruby"},
+					"ノ",
+					{"ruby", text="とき"},
+					"刻",
+					{"/ruby"},
+					"をきざむ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 414,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「これを見に来たのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 417,
+	},
+	block_00076 = {
+		{"bg", sync=0, face=1, file="ev_com_16_04", time=400, path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00033", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「それ以外に何があるのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 424,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「さぁな。ただ、いまさら、こんなもん見てもしゃあないんじゃないのか？",
+					{"rt2"},
+					"と思っただけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 428,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00034", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「見ても仕方がない？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 431,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、だってさ、お前は、この作品を踏み台にして、さらに上を目指すのだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 434,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「この光の作品は、芸術家集団ブルバギによって作り出された」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 437,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「草薙健一郎の作品を更新するために、『櫻達の足跡』は“灰色の足跡”により",
+					{"rt2"},
+					"穢され、そして光を得る事によって再び輝き出した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 441,
+	},
+	block_00082 = {
+		{"bg", sync=0, face=1, file="ev_com_16_05", time=400, path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00035", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 449,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"長山が笑う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 452,
+	},
+	block_00084 = {
+		{"bg", sync=0, face=1, file="ev_com_16_04", time=400, path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00036", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「そうですね。たしかにこの作品の名義は我々になっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 459,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00037", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「光の色彩作品」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 462,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00038", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「この作品にはすでに真の名などない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 465,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00039", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「たぶん、『櫻達の色彩の足跡』とでも名付ければしっくりくるのだと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 468,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00040", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「当たり前だけど、この光の作品は、私達が更新した『櫻達の灰色の足跡』などではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 471,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00041", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「完全な新作」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 474,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00042", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「にもかかわらず、この光の作品は我々ブルバギの手柄となっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 477,
+	},
+	block_00091 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00043", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「本当に刻まれるべき名は違うのに」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 480,
+	},
+	block_00092 = {
+		{"bg", sync=0, face=1, file="ev_com_16_06", time=400, path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00044", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「ぶざまなものね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 487,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00045", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「私達の芸術的な更新は、たった一晩で、もっと美しいものへと変えられていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 490,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00046", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「だから、これもまた偽りの美」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 493,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00047", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「なのだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 496,
+	},
+	block_00096 = {
+		{"bg", sync=0, face=1, file="ev_com_16_07", time=400, path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00048", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「偽りの美が、こんな美しかったら――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 503,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00049", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「――本物なんていらないかもしれませんね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 506,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんだ、それ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 509,
+	},
+	block_00099 = {
+		{"bg", sync=0, face=1, file="ev_com_16_05", time=400, path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00050", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「さぁて、良く分からないわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 516,
+	},
+	block_00100 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それと、この光の作品を設計したのは草薙健一郎だ。",
+					{"rt2"},
+					"完成させたのはお前らブルバギ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 520,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00051", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「そうでしたね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 523,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00052", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「まったく、どこにも真実なんてない事実羅列」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 526,
+	},
+	block_00103 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00053", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「それが、この作品です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 529,
+	},
+	block_00104 = {
+		{"bg", sync=0, face=1, file="ev_com_16_04", time=400, path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00054", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「イミテーションである事を恥じなかった自分が。",
+					{"rt2"},
+					"ひさしぶりに、自分が偽物である事を思い知らされた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 537,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00055", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「そんな絶対的な力を持つ偽物」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 540,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00056", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「けど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 543,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00057", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「それでも」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 546,
+	},
+	block_00108 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00058", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「私に分かる事は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 549,
+	},
+	block_00109 = {
+		{"bg", sync=0, face=1, file="ev_com_16_03", time=400, path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00059", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「私は美しいものが好き」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 556,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00060", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「それが偽りの名であっても、それが美しいのであれば、私は愛せる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 559,
+	},
+	block_00111 = {
+		{"bgm", stop=1, time=5000},
+		{"bg", time=2000, file="ev_com_16_01", path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ゆっくりと光が、壁画を通り超える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 565,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00061", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「さてと……帰ろうかなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 577,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「もう、帰るのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 580,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00062", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「当たり前です。私はこれでも結構忙しい身なので、すぐに東京に帰ります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 583,
+	},
+	block_00115 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「わざわざ東京からこんなもんを見に来たのかよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 586,
+	},
+	block_00116 = {
+		{"bg", sync=0, face=1, file="ev_com_16_08", time=400, path=":ev/ev_com_16/", set="ev_com_16"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_kan_00063", ch="kan"},
+			},
+			ja = {
+				{
+					name = {"香奈"},
+					"「そうよ。",
+					{"rt2"},
+					"だって、私は美しいものが好きだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 592,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 595,
+	},
+	block_00118 = {
+		{"bg", speed=300000, time=2000, file="zev_etc_01_18", path=":ev/ev_etc_01/", x2=0, y2=-980, x=0, y=1620, set="ev_etc_01", ax=1920, ay=2160, bx=-960, by=-1620},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"長山は笑いながら、その場から立ち去った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 605,
+	},
+	block_00119 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「美しいものが好きか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 608,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はふたたび壁画を見上げる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 611,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"色あせた、元の壁画に戻っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 614,
+	},
+	block_00122 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、彼女の言うとおり、明日になれば、またこの櫻は咲く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 617,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「櫻ノ刻をきざむ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 620,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"長山はなかなか詩的な事を言うのだな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 623,
+	},
+	block_00125 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"咲いた桜はいつか散る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 626,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、その桜はまた、いつしか同じ様に咲く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 629,
+	},
+	block_00127 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"桜が刻をきざむ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 632,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なるほどね。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 635,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"良い表現だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 638,
+	},
+	block_00130 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「長山、奇遇だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 641,
+	},
+	block_00131 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺も、美しいものは好きだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 644,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「今みたいな、うつくしい言葉もな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 647,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それにしても……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 650,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"長山、少し雰囲気変わったな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 653,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"つい最近あった時よりも、とげがないというか……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 656,
+	},
+	block_00136 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、雰囲気ではないのかもしれないな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 659,
+	},
+	block_00137 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"単に化粧の仕方一つでも女は変わるというし。",
+					{"rt2"},
+					"まぁ、そんな感じなんだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 663,
+	},
+	block_00138 = {
+		{"msgoff"},
+		{"ex", time=1500, func="wait"},
+		{"bgm", stop=1, time=10000},
+		{"bg", time=3000, file="white", path=":bg/"},
+		{"ex", time=2000, func="wait"},
+		{"bg", file="文字スチル03_1", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=1500},
+		{"ex", time=2000, func="wait"},
+		{"bg", file="文字スチル03_4", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=3000},
+		{"ex", time=1000, func="wait"},
+		{"bg", file="文字スチル03_5", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=3000},
+		{"ex", time=1000, func="wait"},
+		{"bg", time=6000, file="white", path=":bg/"},
+		{"ex", time=3000, func="wait"},
+		{"bgm", file="bgm043", time=18000, vol=30},
+		{"bg", time=8000, file="ev_etc_01_24", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"ex", time=7000, func="wait"},
+		{"bgm", stop=1, time=10000},
+		{"bgm", stop=1, time=8000},
+		{"se", stop=1, id=-1, time=8000},
+		{"vostop", stop=1, time=8000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=8000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"ex", time=2000, func="wait"},
+		{"excall", file="02_01_2"},
+		{"text"},
+		linkback = "block_00137",
+		line = 721,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}
