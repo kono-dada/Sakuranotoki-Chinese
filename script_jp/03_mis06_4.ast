@@ -1,0 +1,1515 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"msg", no=1},
+		{"bg", file="ev_etc_01_07", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"キマイラで静流さんの話を聞いた後、",
+					{"rt2"},
+					"俺達は夏目の屋敷に帰った。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 12,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"二人で夏目の門をくぐる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 15,
+	},
+	block_00002 = {
+		{"se", id=1, file="se0024"},
+		{"msgoff"},
+		{"bg", file="bg009c", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="藍", size="z1", mode=3, resize=1, path=":fg/aix/z1/", file="aix_z1a0100", face="a0005", head="aix_z1a", lv=4, id=9, sync=0},
+		{"extrans"},
+		{"bgm", file="bgm152"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"電話したのだが、少し遅くなったので、ちょっと不機嫌に藍が立っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 31,
+	},
+	block_00003 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0018", head="aix_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、俺達を見るなり、何も言わずに、扉を開けて茶の間に通された。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 36,
+	},
+	block_00004 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg011c", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺達は夏目の屋敷に帰ると、藍に茶の間に座ってもらった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 51,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺と心鈴くんは藍と向かい合って座った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 54,
+	},
+	block_00006 = {
+		{"bg", file="ev_com_41_01", path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10135", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「二人とも私に話があるのだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 60,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、そうだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 63,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「藍に言っておかなければならないことがある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 66,
+	},
+	block_00009 = {
+		{"bg", sync=0, face=1, file="ev_com_41_02", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10136", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「なるほど……、",
+					{"rt2"},
+					"ならば話してみろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 72,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は姿勢を正す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 77,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"結構緊張するものだと思った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 80,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、まず藍には言っておかなければならない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 83,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺は弓張学園の教師という立場であるが、",
+					{"rt2"},
+					"ここにいる本間心鈴くんを好きになった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 87,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11724", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私も同じく、草薙さんを好きになりました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 90,
+	},
+	block_00015 = {
+		{"bg", sync=0, face=1, file="ev_com_41_01", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10137", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ほう……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 96,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"藍は微動だにしなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 99,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まるでなんでもない事の様に言葉を続ける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 102,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10138", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「それで？　二人は付き合うのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 105,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、結婚を前提で俺は心鈴くんと――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 110,
+	},
+	block_00020 = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その言葉で俺は止まった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 115,
+	},
+	block_00021 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"何か忘れている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 118,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大事な何かを――。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 121,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"「結婚を前提で」？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 126,
+	},
+	block_00024 = {
+		{"msgoff"},
+		{"bg", file="ev_etc_01_36", path=":ev/ev_etc_01/", set="ev_etc_01", sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm131"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そ、そういえば、",
+					{"rt2"},
+					"俺はただ、心鈴くんに「愛している」と伝えただけだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 139,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たしかに、心鈴くんもそれに応えてくれた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 142,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんは「ずっとそばにいさせてください」とは言っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 145,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが考えてみれば、そこに「結婚」という言葉はない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 148,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"これって童貞特有の思い込みと、突っ走り精神なのではないか？？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 151,
+	},
+	block_00029 = {
+		{"bg", time=500, file="ev_com_41_01", path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たしかに俺の中では、「愛している」＝「結婚する」なのだが、それを心鈴くんに確認していない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 156,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まず、俺の中で「愛している」＝「結婚する」である事を、心鈴くんに確認をしてから、藍に報告するべきではなかったか？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 159,
+	},
+	block_00031 = {
+		{"bg", sync=0, face=1, file="ev_com_41_03", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10139", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「結婚を前提で心鈴くんと？　どうしたんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 165,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、いや、それは――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 168,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ど　う　て　い　す　ぎ　て　、　て　じ　ゅ　ん　を　間　違　え　た　。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 171,
+	},
+	block_00034 = {
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11725", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「結婚を前提で草薙直哉さんと付き合わせて頂きたいと思っております」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 176,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 179,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺の後を心鈴くんが続けた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 184,
+	},
+	block_00037 = {
+		{"bgm", file="bgm150", vol=70, time=1000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11726", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「あの日、朝の海で出会ってからずっと思ってました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 189,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11727", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私は生涯、草薙直哉さん以外好きにならないだろうなぁって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 192,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11728", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「だから、草薙さんと一緒になれないのならば、一生独り身なんだろうとも考えてました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 195,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、それこそ俺だって、君と結ばれないのならば一生独身でいいと考えていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 198,
+	},
+	block_00041 = {
+		{"bgm", file="bgm150", vol=70},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あの朝からというわけじゃないけど、ずっと一緒に過ごして、いろいろな事を二人で成し遂げていくうちに、君以外考えられなくなった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 203,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11729", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私だって草薙さん以外考えられません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 206,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺だって心鈴くん以外考えられない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 209,
+	},
+	block_00044 = {
+		{"quake"},
+		{"se", id=1, file="se0047"},
+		{"bg", sync=0, face=1, file="ev_com_41_04", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"地響きの様な音がした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 221,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"藍の方を向くと、藍の拳が畳に突き刺さっている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 224,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"というか？　マジで突き刺さってないか？　あれ？？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 227,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10140", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「ウ　ザ　イ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 230,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"藍のドスのきいた声がした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 235,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、いや、すまん。これからちゃんとすべてを説明する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 238,
+	},
+	block_00050 = {
+		{"bg", sync=0, face=1, file="ev_com_41_05", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10141", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「だから！　それがウザイと言っているんだ！",
+					{"rt2"},
+					"結婚前提だったら問題ないであろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 245,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10142", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「私は、事後報告はするなとは言ったが、目の前でイチャつけとは言ってない！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 248,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11730", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「い、イチャつく？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 251,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え？　どこが？　そんな風に見えた瞬間があったか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 254,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は思わず心鈴くんを見る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 257,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんもまったく分からないという顔だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 260,
+	},
+	block_00056 = {
+		{"bg", sync=0, face=1, file="ev_com_41_03", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10143", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「はぁー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 268,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"藍は大きなため息をついた後に――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 271,
+	},
+	block_00058 = {
+		{"bg", sync=0, face=1, file="ev_com_41_06", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10144", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「あー、もういいから、分かった。分かった。とりあえず、私の方は了解したから、後は本間くんの親御さんに了承をとる事だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 279,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10145", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「それが終われば、まったく問題ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 282,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11731", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「それは本間家という事で良いでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 285,
+	},
+	block_00061 = {
+		{"bg", sync=0, face=1, file="ev_com_41_03", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10146", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「君の親御さんは離縁されている様だ。",
+					{"rt2"},
+					"だったら、中村家は関係ないだろ。本間家に許可さえもらえればいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 291,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10147", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「直哉もいい歳だ。分別など自分でつけるだろうし、勝手にしろ。というのが本音だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 294,
+	},
+	block_00063 = {
+		{"bg", sync=0, face=1, file="ev_com_41_01", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10148", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「だから、これで今日の話は終わり。終了」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 300,
+	},
+	block_00064 = {
+		{"bg", sync=0, face=1, file="ev_com_41_02", time=400, path=":ev/ev_com_41/", set="ev_com_41"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10149", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「私は夕食も食ったし、風呂も入ったから、もう寝る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 306,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10150", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「それだけだ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 309,
+	},
+	block_00066 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg011c", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"extrans"},
+		{"fg", ch="藍", size="z1", my=40, mode=3, path=":fg/aix/z1/", file="aix_z1b0100", face="b0005", head="aix_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"スクリと立つ藍。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 322,
+	},
+	block_00067 = {
+		{"fg", ch="藍", size="z1", mode=3, path=":fg/aix/z1/", file="aix_z1c0100", face="c0001", head="aix_z1c", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして背を向けて。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 327,
+	},
+	block_00068 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="zbg011c", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="藍", size="z2", mode=3, resize=1, path=":fg/aix/z2/", file="aix_z2c0100", face="c0001", head="aix_z2c", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10151", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「一緒になるのならば、ちゃんと幸せになるのだぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 337,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「幸せにする」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 340,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11732", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私も草薙さんを幸せにします」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 343,
+	},
+	block_00071 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10152", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「だったら問題ないさ。",
+					{"rt2"},
+					"何か問題が起きたら相談しろ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 347,
+	},
+	block_00072 = {
+		{"bg", time=500, file="bg011c", path=":bg/", ax=960, ay=563, bx=0, by=-23},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言って、藍は茶の間から出て行った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 352,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ふぁー、き、緊張したぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 355,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11733", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 358,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺が正座をといても、心鈴くんはそのままの姿勢だった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 361,
+	},
+	block_00076 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=-100, file="zbg011c", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="心鈴", size="z2", mode=3, resize=1, path=":fg/mis/z2/", file="mis_z2a0810", face="a0010", head="mis_z2a", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"fgact", ch="心鈴", act="おじぎ", lv=5, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そしてその場で頭を下げた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 372,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"三つ指をついてお辞儀をする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 375,
+	},
+	block_00078 = {
+		{"fg", ch="心鈴", size="z2", mode=3, path=":fg/mis/z2/", file="mis_z2a0810", face="a0010", head="mis_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11734", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「ありがとうございます。夏目藍さん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 380,
+	},
+	block_00079 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg012g", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", lv=4, id=9, sync=0},
+		{"extrans", rule=139, vague=40},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11735", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「お父様に電話しました。明日の夕方に弓張に来るとの事です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 396,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「え？　明日？　早いな。君のお父さんって忙しい人なんだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 399,
+	},
+	block_00081 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0010", head="mis_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_11736", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「そうですね。忙しい人ですよ。でも、重要なタイミングはいつも外さないのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 406,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなんだ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 409,
+	},
+	block_00083 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"藍に言われた通りに、すぐに本間の人間に連絡を入れた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 412,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"心鈴くんが大事な話があるのと、会って欲しい人がいると伝えると、",
+					{"rt2"},
+					"父親である本間礼次郎さんは明日にこの弓張へ来るとの事だった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 416,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"緊張しないと言えば嘘となる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 419,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの鳥谷校長ですら恐れる人物が、彼女の父、本間礼次郎さんだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 422,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"可愛い娘さんに、こんなおっさんが手を出したとなれば、社会的に抹殺されても",
+					{"rt2"},
+					"おかしくはない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 426,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それでも、だんまりというわけにはいかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 429,
+	},
+	block_00089 = {
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その晩、俺は緊張の一晩を過ごした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 434,
+	},
+	block_00090 = {
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="03_mis07_1"},
+		{"text"},
+		linkback = "block_00089",
+		line = 440,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

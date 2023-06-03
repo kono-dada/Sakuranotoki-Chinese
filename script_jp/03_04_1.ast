@@ -1,0 +1,1692 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅲ章"},
+		{"msg", no=1},
+		{"bg", file="アイキャッチ03", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans"},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"bg", time=2000, file="ev_etc_01_01", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"bgm", file="bgm161"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"とある朝。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 27,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その日は１時限目に聖ルーアンの授業があったので、そちらに向かおうと電車に",
+					{"rt2"},
+					"乗っていると……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 31,
+	},
+	block_00002 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg054a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"extrans"},
+		{"fg", ch="鈴菜", size="z1", mx=-40, mode=3, resize=1, path=":fg/suz/z1/", file="suz_z1b0000", face="b0018", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10001", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「はぁはぁはぁ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 43,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"息を切らせて、桜ヶ原から鈴菜が電車に乗り込んできた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 46,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「鈴菜……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 49,
+	},
+	block_00005 = {
+		{"fg", mode=-2, sync=0},
+		{"bg", y=0, zoom=50, file="zbg054a", path=":bg/", ax=1920, ay=1126, bx=-960, by=-586, sync=0},
+		{"fg", ch="鈴菜", size="z2", mode=3, resize=1, path=":fg/suz/z2/", file="suz_z2a0000", face="a0017", head="suz_z2a", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"fgact", ch="鈴菜", act="うなづく", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl02 = {
+				{"fgact", ch="鈴菜", act="うなづく", time=170, size=20, lv=5, id=9},
+			},
+			vl03 = {
+				{"fgact", ch="鈴菜", act="うなづく", lv=5, id=9},
+			},
+			vl04 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0015", head="suz_z2a", lv=5, id=9},
+			},
+			vl01 = {
+				{"fg", ch="鈴菜", size="z2", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0005", head="suz_z2a", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10002", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「はぁはぁはぁ、草薙様、なぜ桜ヶ原でお降りにならないのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 66,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「えっと……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 69,
+	},
+	block_00007 = {
+		{"fg", ch="鈴菜", size="z2", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0005", head="suz_z2a", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", size="z2", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0004", head="suz_z2a", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10003", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「最近、午前中に草薙様を校内で見かけない事が多くなりました、一体今からどこに行かれる気なのでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 75,
+	},
+	block_00008 = {
+		{"fg", ch="鈴菜", size="z2", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0004", head="suz_z2a", lv=5, id=9},
+		{"se", vol=30, id=1, file="se0138"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"などと話しているとドアが閉まってしまう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 87,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「電車出発しちゃったぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 90,
+	},
+	block_00010 = {
+		{"se", stop=1, time=500, id=1},
+		{"fg", ch="鈴菜", size="z2", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0006", head="suz_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10004", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「今は草薙様とお話をしているのです！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 97,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「うむ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 100,
+	},
+	block_00012 = {
+		{"fg", ch="鈴菜", size="z2", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0005", head="suz_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"数日前弓張学園の最寄り駅である桜ヶ原で降りなかった姿を見られていたらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 105,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"通勤しなければいけないのに、そのまま駅を乗り過ごした俺の行動に対して鈴菜は不審に思っていたらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 108,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だから数日間、俺の通勤時間に張っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 111,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"不審に思われても仕方が無い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 114,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"実は聖ルーアン女学院に出向している事は、美術部員の誰にも言っていない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 117,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"担当授業のスケジュールとしては、放課後の部活に十分間に合う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 120,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なので、いらぬ心配をかけるのもどうかと思い、この事は話していない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 123,
+	},
+	block_00019 = {
+		{"fg", ch="鈴菜", size="z2", mode=3, path=":fg/suz/z2/", file="suz_z2b0000", face="b0005", head="suz_z2b", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10005", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「何故、桜ヶ原で降りないのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 128,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「出来たら、黙っていてほしいのだが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 131,
+	},
+	block_00021 = {
+		{"fg", ch="鈴菜", size="z2", mode=3, path=":fg/suz/z2/", file="suz_z2b0000", face="b0004", head="suz_z2b", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10006", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「確約は出来ません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 136,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、いらぬ誤解をされかねないし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 139,
+	},
+	block_00023 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0004", head="suz_z2a", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0008", head="suz_z2a", lv=5, id=9},
+			},
+			vl02 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0005", head="suz_z2a", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10007", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「いらぬ誤解を招くような行為とはどういう事でしょうか！？",
+					{"rt2"},
+					"もしかして、誰か意中の女性が出来たとか！！",
+					{"rt2"},
+					"それで、授業の合間を見て、その女性と会っていたとか！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 156,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それはいらぬ誤解どころか、普通に正規雇用の教員がやったらアウトなヤツだ。",
+					{"rt2"},
+					"学校さぼって女と密会とか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 160,
+	},
+	block_00025 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0008", head="suz_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10008", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「でしたら……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 166,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「あ、次の駅だ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 169,
+	},
+	block_00027 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z2/", file="suz_z2a0000", face="a0009", head="suz_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10009", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「次の駅って、たしか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 175,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"「次は聖ルーアン女学院前」と電光掲示板に出る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 178,
+	},
+	block_00029 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg045o", path=":bg/", sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10010", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「ここは……、聖ルーアン女学院」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 189,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"大した説明も出来ずに歩いていると、すぐに聖ルーアンの校門に着く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 192,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"桜ヶ原駅の弓張学園と違い、この駅はほぼ目の前に聖ルーアン女学院が建っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 195,
+	},
+	block_00032 = {
+		{"bg", file="bg045o", path=":bg/", sync=0},
+		{"fg", ch="鈴菜", size="z1", mode=3, resize=1, path=":fg/suz/z1/", file="suz_z1a0000", face="a0004", head="suz_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0006", head="suz_z1a", lv=4, id=9},
+			},
+			vl03 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0005", head="suz_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10011", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「先生の意中の人って！　聖ルーアンの生徒ですか！　教師ですか！　答えによっては私は黙ってませんわ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 211,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"聖ルーアンの校門前で大声をあげる鈴菜。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 214,
+	},
+	block_00034 = {
+		{"bg", time=500, file="bg045o", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"女学院の生徒達が一斉にこちらを向く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 219,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ここで俺が取り乱した行動をすれば、もっと事態が悪化しかねない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 222,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はできる限り落ち着いて対処する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 225,
+	},
+	block_00037 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0005", head="suz_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=300},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺はここで臨時で授業を受け持っているんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 234,
+	},
+	block_00038 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0016", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0009", head="suz_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10012", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「え？　臨時で授業！？",
+					{"rt2"},
+					"何故でしょうか？　草薙さまは弓張学園の教員ではありませんか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 242,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、そのとおりだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 245,
+	},
+	block_00040 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0004", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0005", head="suz_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10013", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「でしたらおかしいではありませんか。たしか正規雇用の教員は他の副業とか",
+					{"rt2"},
+					"出来ないハズです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 253,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうなるな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 256,
+	},
+	block_00042 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0006", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10014", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「でしたら！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 262,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「その副業を禁止している校長直々の命令でな。",
+					{"rt2"},
+					"俺はこの学校に出向している」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 266,
+	},
+	block_00044 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0004", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10015", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 272,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鈴菜は俺の顔を黙って見つめる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 275,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いろいろあるんだよ……。",
+					{"rt2"},
+					"教師と言ってもサラリーマンだからな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 279,
+	},
+	block_00047 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0008", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10016", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「いろいろですか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 285,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、いろいろだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 288,
+	},
+	block_00049 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0010", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0016", head="suz_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10017", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「分かりました。その様な言い方をされるのでしたら、これ以上は詮索致しません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 297,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、本当にやましい事はないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 300,
+	},
+	block_00051 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0006", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl03 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0013", head="suz_z1b", lv=4, id=9},
+			},
+			vl01 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0010", head="suz_z1b", lv=4, id=9},
+				{"fgact", ch="鈴菜", act="いいえ", lv=4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0015", head="suz_z1b", lv=4, id=9},
+			},
+			vl04 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0016", head="suz_z1b", lv=4, id=9},
+				{"fgact", ch="鈴菜", act="停止", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10018", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「それは分かって……、いいえ、信じております。",
+					{"rt2"},
+					"私が知る草薙さまならば、不義理などしませんから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 319,
+	},
+	block_00052 = {
+		{"bgm", stop=1, time=10000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんというか。",
+					{"rt2"},
+					"俺も良く分からない事ばかりだから、鈴菜に納得してもらえる様な説明は出来ないってだけだが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 325,
+	},
+	block_00053 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0008", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鈴菜は何かを言いかけたが、口を閉ざした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 334,
+	},
+	block_00054 = {
+		{"bgm", stop=1},
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0010", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そして静かに、しゃべり始める。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 340,
+	},
+	block_00055 = {
+		{"bgm", file="bgm153", vol=60, time=10000},
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0010", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0004", head="suz_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10019", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「ただ、これだけ言わせてください。",
+					{"rt2"},
+					"ルリヲさんは今度の公募に向けてかなり頑張っています」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 351,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、FIRST展だろ。かなり本気だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 354,
+	},
+	block_00057 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0005", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10020", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「ルリヲさんだけでなく、恩田さまもかなり本気です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 359,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それは分かっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 362,
+	},
+	block_00059 = {
+		{"bgm", file="bgm153", vol=60},
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0008", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10021", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「草薙様はあくまでも部活の顧問であって、二人の絵の師匠というわけでない事は、理解しているつもりです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 371,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 374,
+	},
+	block_00061 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0009", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0005", head="suz_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10022", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「それでも、ルリヲさんや恩田さまにとって草薙様は、一介の美術部の顧問でなく、やはり美を志す者にとって先達なのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 383,
+	},
+	block_00062 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0010", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10023", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「ルリヲさん、恩田さま、私はあれほどの情熱をもって何かに打ち込む姿を",
+					{"rt2"},
+					"他に知りません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 393,
+	},
+	block_00063 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0009", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0008", head="suz_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10024", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「そして、それはたぶんとても危ういバランスで成り立っていると考えます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 401,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうだな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 404,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"芸術作品というものは、真剣に対峙すれば対峙するほど、作家に大いなる負荷を",
+					{"rt2"},
+					"与える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 408,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"実際、あの年齢が渡るには危ういほどの情熱で、美の道を二人の少女は進んでいる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 411,
+	},
+	block_00067 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0009", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0008", head="suz_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10025", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「今回の事は、美術部のみんなには公言しません。",
+					{"rt2"},
+					"ですが――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 420,
+	},
+	block_00068 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0005", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0002", head="suz_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10026", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「ルリヲさんに限らずに、誰かが芸術の渦との対峙の中で、己を見失う様な事が",
+					{"rt2"},
+					"ある時、必ず教師として……いいえ、美の道を進む先輩として、その道を照ら",
+					{"rt2"},
+					"してあげてください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 434,
+	},
+	block_00069 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0009", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0008", head="suz_z1a", lv=4, id=9},
+			},
+			vl02 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0015", head="suz_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10027", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「ルリヲさんに関しては、まだ私が察知出来るかもしれません。ですが他の方……たとえば恩田さまに何かあったとしても私にはいかようにも出来ません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 441,
+	},
+	block_00070 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0008", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10028", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「だから――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 447,
+	},
+	block_00071 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「分かっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 450,
+	},
+	block_00072 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0009", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10029", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 455,
+	},
+	block_00073 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0002", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10030", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「でしたら、私は何もいいません。",
+					{"rt2"},
+					"今日見た事も黙っています……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 462,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 465,
+	},
+	block_00075 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0016", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10031", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「ただ、美術部のみんなを見守っていてください……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 471,
+	},
+	block_00076 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0017", head="suz_z1b", lv=4, id=9},
+		{"fgact", ch="鈴菜", act="うんうん", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鈴菜の頭をぽんぽんと軽く叩く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 478,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「鈴菜はなんやかんや言って、いろいろ考えてくれるのだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 481,
+	},
+	block_00078 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0005", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0017", head="suz_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10032", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「そんな言い方、好きではありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 488,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鈴菜は下を向き、拳をぎゅっと固めていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 491,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ちゃんと、今日の放課後も部活には出るから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 494,
+	},
+	block_00081 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0006", head="suz_z1b", lv=4, id=9},
+		{"quake", mode="mw"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0005", head="suz_z1b", lv=4, id=9},
+			},
+			vl03 = {
+				{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0004", head="suz_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10033", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「当たり前ですわ！　草薙様は弓張学園の美術教師であり、私達美術部の顧問",
+					{"rt2"},
+					"なのですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 507,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"すごい剣幕で言われたので、思わず苦笑いしてしまった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 510,
+	},
+	block_00083 = {
+		{"fg", ch="鈴菜", size="z1", mode=3, path=":fg/suz/z1/", file="suz_z1a0000", face="a0010", head="suz_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fgact", ch="鈴菜", act="おじぎ", time=400, lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_suz_10034", ch="suz"},
+			},
+			ja = {
+				{
+					name = {"鈴菜"},
+					"「それでは失礼いたします」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 524,
+	},
+	block_00084 = {
+		{"fg", ch="鈴菜", mode=3, path=":fg/suz/z1/", file="suz_z1b0000", face="b0010", head="suz_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			[100] = {
+				{"fg", ch="鈴菜", mx=40, mode=-1, lv=4, id=9},
+			},
+		},
+		text = {
+			ja = {
+				{
+					"深々と頭を下げたのちに、鈴菜は駅の方に向かった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 531,
+	},
+	block_00085 = {
+		{"msgoff"},
+		{"bg", file="ev_etc_01_03", path=":ev/ev_etc_01/", set="ev_etc_01", sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ふむ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 539,
+	},
+	block_00086 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"説明が出来たら良いのだが……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 542,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺自身分からない事だらけだからなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 545,
+	},
+	block_00088 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"良く分からんが、お偉いさん方の意向で、聖ルーアンの講師をやらされている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 548,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こんな説明で誰が納得するのか……、",
+					{"rt2"},
+					"いや、困ったもんだな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 552,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな事を考えながら、聖ルーアン女学院の校門をくぐった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 555,
+	},
+	block_00091 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"excall", file="03_04_2"},
+		{"text"},
+		linkback = "block_00090",
+		line = 560,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

@@ -1,0 +1,4748 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅰ章"},
+		{"msg", no=1},
+		{"bg", file="アイキャッチ01", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans"},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"週明けの月曜日。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 26,
+	},
+	block_00001 = {
+		{"se", id=1, file="se0003"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いつも通り、教室のドアをあけると、教室はやたら騒がしかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 35,
+	},
+	block_00002 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんだろ？　と思ったが、あまり気にも留めずに自分の席に向かうと。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 40,
+	},
+	block_00003 = {
+		{"bg", file="bg024a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"bg", alpha=255, lv=5, id=5, rule="cinema", file="cinema01", time=400, path=":sys/", vague=40, sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm025"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒A", "女子生徒"},
+					"「校長がクビになって、今の教頭先生が校長になるんだってさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 52,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00266", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 55,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"校長がクビ？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 58,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"校長も中村家の一族だったと思ったけど？",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 61,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒B", "女子生徒"},
+					"「だから、そういう問題じゃ無くて、経営者が変わったらしいよ。",
+					{"rt2"},
+					"なんか、理事長が追い出されて、新しい経営陣が入ったって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 67,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒C", "女子生徒"},
+					"「今までの理事って中村さんでしょ？　あの大地主の」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 72,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒A", "女子生徒"},
+					"「それが、実際そうでもないらしいよ。",
+					{"rt2"},
+					"借金が沢山あったとかで、あとなんか不祥事があったとか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 78,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒C", "女子生徒"},
+					"「不祥事って？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 83,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒B", "女子生徒"},
+					"「なんでも暴力団とか使っていろいろやってたとかで、警察が入ったんだって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 88,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"男子生徒A", "男子生徒"},
+					"「起訴されるかどうかまでは分からないけど、学園運営にはふさわしくないとか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 93,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒C", "女子生徒"},
+					"「なんか大事だけどどうなるんだろう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 98,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"男子生徒B", "男子生徒"},
+					"「父兄には後日説明があるらしいけど、俺達に説明とかってあるのかね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 103,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒B", "女子生徒"},
+					"「中村さんと言えば、一組に理事長の妹がいたじゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 108,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒A", "女子生徒"},
+					"「ああ、中村麗華さんでしょ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 113,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒B", "女子生徒"},
+					"「あの人どうなるんだろう？　私達はクラスが違うからそこまで接点無いけど、",
+					{"rt2"},
+					"この学校じゃ特別待遇だったって話じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 119,
+	},
+	block_00018 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒C", "女子生徒"},
+					"「うん、なんか怖そうな取り巻きの人多かったよね。でも、理事長がクビとか",
+					{"rt2"},
+					"だったら、今までみたいな態度は取れないんじゃないかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 125,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒A", "女子生徒"},
+					"「結構、恨んでいる人も多いって話聞いてるよ。",
+					{"rt2"},
+					"それこそ今までは誰も言えなかったけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 131,
+	},
+	block_00020 = {
+		{"bg", rule="083r", vague=40, file="bg035a", path=":bg/", ax=960, ay=563, bx=0, by=-23},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私はすぐに、麗華のクラスに行った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 137,
+	},
+	block_00021 = {
+		{"se", id=1, file="se0003"},
+		{"bg", file="bg024a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"教室の扉を開けると、そのクラスの連中が私を見つめる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 154,
+	},
+	block_00022 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この一組は特に、麗華の取り巻きが多く、中村の息のかかった人間が多かった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 157,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だから、私もここでは中村枠として見られる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 160,
+	},
+	block_00024 = {
+		{"se", stop=1, time=500, id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"麗華の席の方に向かう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 165,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私を見て、クラスからヒソヒソ声が聞こえる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 168,
+	},
+	block_00026 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"麗華の席には誰も居なかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 179,
+	},
+	block_00027 = {
+		{"fg", ch="静流", size="z1", mode=3, resize=1, path=":fg/shi/z1/", file="shi_z1b0000", face="b0009", head="shi_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00267", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「麗華……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 184,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「中村さんならいないわよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 189,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"女子生徒の一人が私に話しかけてくる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 193,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「鳥谷静流さんでしょ？　中村さんの親戚の」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 198,
+	},
+	block_00031 = {
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0008", head="shi_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00268", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ええ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 203,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「あ、いや、もう違うのか。",
+					{"rt2"},
+					"噂じゃ、教頭先生、理事長と離婚したらしいし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 209,
+	},
+	block_00033 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00269", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「え？　おばさんが離婚！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 214,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「親戚なのにまだ知らなかったんだ。",
+					{"rt2"},
+					"今回の事は、中村家をこの学園から追い出すために教頭先生がおこなった、",
+					{"rt2"},
+					"クーデターだったという話よ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 221,
+	},
+	block_00035 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0007", head="shi_z1a", lv=4, id=9},
+		{"fgact", ch="静流", act="びっくり", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00270", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「クーデター！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 227,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「中村家は債権を返済不可能と判断されて、学校の所有権を債権者達が持つという流れだけど、その発端となる不祥事をたれ込んだのは教頭だと言うし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 232,
+	},
+	block_00037 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00271", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そうなの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 237,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「本当に知らないの？",
+					{"rt2"},
+					"てっきり私は、今までは中村さんがこの学園のお姫様だったけど、",
+					{"rt2"},
+					"今日からはあなたがこの学園のお姫様になるんだと思ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 244,
+	},
+	block_00039 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0005", head="shi_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00272", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「私がお姫様？　バカバカしい、そんなわけないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 249,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「そうね。",
+					{"rt2"},
+					"私はあなたの事も結構見てきたけど、あの人みたいな感じはしなかったわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 255,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「あなたのおばさんにあたるのかしら？",
+					{"rt2"},
+					"でも、あの教頭、いいえ、鳥谷校長はどうかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 261,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「自分の夫を陥れて、権力の座に納まったのだから、ここみたいな教育機関の長にふさわしい人格者よね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 266,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「あなたもその一族なのだから、やはり私達からみれば恐ろしい存在だわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 271,
+	},
+	block_00044 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00273", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「私とおばは関係ないし……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 276,
+	},
+	block_00045 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「そうなのかもしれないけど、みんなはどう思うかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 281,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「どちらにしても、中村麗華はもう終わりよ。",
+					{"rt2"},
+					"普通に過ごしてきたのならまだしも、あんなにお姫様を気取ってたのだもの、",
+					{"rt2"},
+					"誰も今まで通りなんか接しないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 288,
+	},
+	block_00047 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00274", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「麗華は！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 293,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"女子生徒D", "女子生徒"},
+					"「さぁ、さすがに学校になんて来てないんじゃないの？",
+					{"rt2"},
+					"結構恨まれているし、このまま学校やめるんじゃないかしらねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 299,
+	},
+	block_00049 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00275", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 304,
+	},
+	block_00050 = {
+		{"bg", file="white", path=":bg/"},
+		{"bg", file="ev_com_03_04", path=":ev/ev_com_03/", set="ev_com_03", sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばと話したあの日から、",
+					{"rt2"},
+					"なんとなく、こんな日が来るのでは無いかと思っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 316,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そうでなければ、あの人が、藍などという異物をこの学園に入学させるわけがない。",
+					{"rt2"},
+					"彼女は絶対に三年間居続ける事など出来なかったのだから。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 320,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの人は、藍がこのままこの学園にいられると考えたからこそ、彼女を入学させた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 323,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの時、",
+					{"rt2"},
+					"藍よりむしろ私が心配だと言ったのは、私と麗華の関係の事を言っていたのだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 327,
+	},
+	block_00054 = {
+		{"bg", file="white", path=":bg/"},
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg024a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0008", head="shi_z1b", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00276", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「麗華……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 339,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私は彼女の名前を呟いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 342,
+	},
+	block_00056 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"当たり前だが返事はない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 345,
+	},
+	block_00057 = {
+		{"bg", speed=180000, file="zev_etc_01_02", path=":ev/ev_etc_01/", x2=0, y2=-540, x=0, y=540, set="ev_etc_01", ax=1920, ay=1080, bx=-960, by=-540},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この日、普通に授業がおこなわれた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 353,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"経営者が変更した事など、生徒には関係ない。",
+					{"rt2"},
+					"だから教師達はまったくこの事実にふれなかったのだろうか。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 357,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"いや、違うな。",
+					{"rt2"},
+					"たぶん、教師達はこの件にまだ触れたくなかったのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 361,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"麗華が弓張学園一年生だった時に、中村家に逆らった多くの教師が職を失った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 364,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"彼らにとっては、中村家は絶対であり、逆らう事など出来ない存在なのだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 367,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それを、こともあろうか、",
+					{"rt2"},
+					"理事長の妻であった、中村紗希教頭がクーデターによって、中村家を追い出し、",
+					{"rt2"},
+					"さらに弓張学園の校長のポストに収まった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 372,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あれほどの権力を持っていた中村を追い出し、さらに学園の頂点に立つなど、",
+					{"rt2"},
+					"常人が出来る仕業では無い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 376,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"教師などでは想像が出来ないぐらいの政治的な力学が働いたのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 379,
+	},
+	block_00065 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"中村紗希にはそれほどの力がある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 382,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それが教師達には恐ろしいのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 385,
+	},
+	block_00067 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"さらに、彼女はすでに離婚しており、姓は鳥谷になっているという。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 388,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"この鳥谷校長が何を考えているのか、現段階では誰も分からない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 391,
+	},
+	block_00069 = {
+		{"bg", file="ev_etc_01_02", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それに、中村家の反撃が今後無いとは言い切れない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 396,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"揺り返しの様に、また中村の支配がはじまるかもしれないし、",
+					{"rt2"},
+					"あるいは、鳥谷校長はそれに対抗するために今以上の権力を持ち、",
+					{"rt2"},
+					"中村章一よりもえげつない方法でこの学園を支配するかもしれない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 401,
+	},
+	block_00071 = {
+		{"bgm", stop=1, time=20000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"教師の年収というのは、一般で思われているよりも遙かに高いらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 406,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"特に、名門弓張の教師の年収はかなりの額であると聞く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 409,
+	},
+	block_00073 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんなものを簡単に誰も手放したくはないだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 412,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だから、教師達はこの話題には触れない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 415,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そういう人間だけが、この学園に残っているのだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 418,
+	},
+	block_00076 = {
+		{"bgm", stop=1},
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule=139, wait=500, file="black", path=":bg/", vague=40},
+		{"bg", rule=139, vague=40, file="bg023a", path=":bg/", ax=960, ay=563, bx=0, by=-23},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"昼休み。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 427,
+	},
+	block_00077 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私は美術室に向かう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 433,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"昨日から火を入れた、ガス釜の様子を見ておきたいと思ったからだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 436,
+	},
+	block_00079 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"bg", file="bg031e", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"extrans", rule="083r", vague=40},
+		{"bgm", file="bgm026"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、美術室は、そんな状況では無かった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 447,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"地面にばらまかれた破片。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 454,
+	},
+	block_00081 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ガス窯の火は止められ、中にあった陶器すら破壊されている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 457,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"しかもそれらはすべて私の作品だけだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 460,
+	},
+	block_00083 = {
+		{"bg", file="ev_com_02_03", path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00277", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「麗華……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 470,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"麗華は机の上に座っている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 473,
+	},
+	block_00085 = {
+		{"bg", sync=0, face=1, file="ev_com_02_04", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00091", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「これもかしら……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 478,
+	},
+	block_00086 = {
+		{"se", id=1, file="se0009"},
+		{"bg", sync=0, face=1, file="ev_com_02_05", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一枚の皿を手にすると、麗華はそれも壁にたたきつける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 490,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"響く破裂音をさせて皿は粉々になる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 493,
+	},
+	block_00088 = {
+		{"bg", sync=0, face=1, file="ev_com_02_03", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00092", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「本当に偽物ばかりね……静流」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 498,
+	},
+	block_00089 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"麗華は私の顔など見ずに、並べてある陶器から、再び私の作品を手にした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 501,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00278", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「何のつもり？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 504,
+	},
+	block_00091 = {
+		{"bg", sync=0, face=1, file="ev_com_02_06", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00093", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「それ、私に言える事なの？　静流？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 512,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ぎょろりと麗華の目が私の方を向く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 515,
+	},
+	block_00093 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こんな恐ろしい目をする少女だっただろうか？　と思った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 518,
+	},
+	block_00094 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00094", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「あなたがこの学園で焼き物をさせてもらえたのは、すべて私達のおかげ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 521,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00095", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「中村家が良くしてあげたから、あなたはこうやって作品をつくる事が出来た」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 524,
+	},
+	block_00096 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00096", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「でも所詮は、鳥谷。野蛮な恩知らずの血筋の人間でしかないわね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 527,
+	},
+	block_00097 = {
+		{"bg", sync=0, face=1, file="ev_com_02_04", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00097", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「どれも、これも、偽物。紛い物」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 532,
+	},
+	block_00098 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00098", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「汚れた血統に本物なんて作れないわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 535,
+	},
+	block_00099 = {
+		{"se", id=1, file="se0010"},
+		{"bg", sync=0, face=1, file="ev_com_02_05", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"手にした私の作品を壁にたたきつける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 546,
+	},
+	block_00100 = {
+		{"bg", sync=0, face=1, file="ev_com_02_03", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00099", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「お兄様もバカな人ね。あんな人間と結婚するなんて」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 551,
+	},
+	block_00101 = {
+		{"bg", sync=0, face=1, file="ev_com_02_06", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00100", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「冷血女、権力欲の固まり、私は昔から嫌いだったわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 558,
+	},
+	block_00102 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00101", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「鳥谷紗希」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 561,
+	},
+	block_00103 = {
+		{"bg", sync=0, face=1, file="ev_com_02_07", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00102", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「あれと同じ血があなたにも流れているのでしょう！　鳥谷静流！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 566,
+	},
+	block_00104 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私は何も言えない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 569,
+	},
+	block_00105 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00279", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ごめん……。って言えばいいのかな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 572,
+	},
+	block_00106 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00280", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「それとも、ありがとう。って言えばいいのかしら」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 575,
+	},
+	block_00107 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00281", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「麗華は私に良くしてくれたから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 578,
+	},
+	block_00108 = {
+		{"bg", sync=0, face=1, file="ev_com_02_07", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00103", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「礼には及ばないわ。",
+					{"rt2"},
+					"ただし、私達の力で作られた、あなたの作品はすべて壊していく。",
+					{"rt2"},
+					"穢らわしい過去と共に！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 587,
+	},
+	block_00109 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00104", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「ここであったすべてを壊していくわ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 596,
+	},
+	block_00110 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00282", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「麗華！　私はそれでも麗華の事――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 599,
+	},
+	block_00111 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私の言おうとした事を強い口調で麗華は遮る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 602,
+	},
+	block_00112 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00105", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「私はあなたの事が憎いわ！　殺してやりたいぐらい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 607,
+	},
+	block_00113 = {
+		{"bg", sync=0, face=1, file="ev_com_02_06", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00106", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「どいつもこいつも、恩を仇で返す様な真似をしていく……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 612,
+	},
+	block_00114 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00283", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「麗華とは小学校からずっと一緒で……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 615,
+	},
+	block_00115 = {
+		{"bg", sync=0, face=1, file="ev_com_02_07", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00107", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「そうやって時間をかけて、私達を油断させた！",
+					{"rt2"},
+					"寝首をかくために、長い時間をかけて待ち続けた！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 622,
+	},
+	block_00116 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00284", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ち、違うっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 625,
+	},
+	block_00117 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00108", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「違う？　何が違うの？",
+					{"rt2"},
+					"ねぇ、あなたたち鳥谷が私達に何をしたか分かっているの！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 629,
+	},
+	block_00118 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00285", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「麗華のお兄さんには申し訳無い事をしたと思ってる……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 632,
+	},
+	block_00119 = {
+		{"bg", sync=0, face=1, file="ev_com_02_06", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00109", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「そうやって、高みから見下ろして言う謝罪はさぞかし気持ちいいでしょうね！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 637,
+	},
+	block_00120 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00110", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「私達からこの学園を奪っておきながら、良くもまぁそんな事が言えるわ。",
+					{"rt2"},
+					"本当に恥知らず……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 641,
+	},
+	block_00121 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00286", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「私、おばさんに相談するから、",
+					{"rt2"},
+					"麗華がこの学園で今まで通り生活出来る様に頼んでみるから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 645,
+	},
+	block_00122 = {
+		{"bg", sync=0, face=1, file="ev_com_02_07", time=400, path=":ev/ev_com_02/", set="ev_com_02"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00111", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「何故、私が裏切り者の助けを必要としなければならない！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 650,
+	},
+	block_00123 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00112", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「鳥谷静流。あなたはどこまで私を愚弄すれば気が済むのかしら！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 653,
+	},
+	block_00124 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00287", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「麗華……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 656,
+	},
+	block_00125 = {
+		{"msgoff"},
+		{"bg", file="bg031e", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="麗華", size="z1", mode=3, resize=1, path=":fg/rei/z1/", file="rei_z1a0000", face="a0005", head="rei_z1a", lv=4, id=9, sync=0},
+		{"extrans"},
+		{"se", id=1, file="se0009"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"手にしていた私の皿を投げ、",
+					{"rt2"},
+					"麗華が机から降りる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 675,
+	},
+	block_00126 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ジャリと割れた破片が乾いた音を立てる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 681,
+	},
+	block_00127 = {
+		{"fg", ch="麗華", mode=3, path=":fg/rei/z1/", file="rei_z1a0000", face="a0004", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00113", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「せいぜいこの学園で、お姫様でも気取ればいいわ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 686,
+	},
+	block_00128 = {
+		{"fg", ch="麗華", mode=3, path=":fg/rei/z1/", file="rei_z1a0000", face="a0005", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00114", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「あの夏目藍とかいう",
+					{"ruby", text="こ"},
+					"娘",
+					{"/ruby"},
+					"でも取り巻きにしたらいいんじゃないかしら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 691,
+	},
+	block_00129 = {
+		{"fg", ch="麗華", mode=3, path=":fg/rei/z1/", file="rei_z1a0000", face="a0005", head="rei_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="麗華", mode=3, path=":fg/rei/z1/", file="rei_z1a0000", face="a0006", head="rei_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_rei_00115", ch="rei"},
+			},
+			ja = {
+				{
+					name = {"麗華"},
+					"「お似合いのコンビよね。詐欺師どもが！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 697,
+	},
+	block_00130 = {
+		{"fg", ch="麗華", mx=40, mode=-1, lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言い残して麗華は美術室を後にした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 702,
+	},
+	block_00131 = {
+		{"se", vol=40, id=1, file="se0016"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"遠くでチャイムの音が聞こえた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 707,
+	},
+	block_00132 = {
+		{"bgm", stop=1, time=2000},
+		{"se", stop=1, id=-1, time=2000},
+		{"vostop", stop=1, time=2000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=2000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"bg", time=2000, file="ev_etc_01_02", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それから数日も経たないうちに鳥谷の本家におばさん達は引っ越して来た。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 719,
+	},
+	block_00133 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"昨年祖父が亡くなり、大きな屋敷に祖母一人だったので、",
+					{"rt2"},
+					"祖母は孫が来てくれた事をそれなりに歓迎してくれた――、",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 723,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"となれば良かったのだが、実際、鳥谷家は中村家の援助で事業を続けられた部分があり、おばさんの行動に祖母は当惑していた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 726,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんなだから、",
+					{"rt2"},
+					"祖母は自らの孫に対してすら、どう接して良いのか分からない様であった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 730,
+	},
+	block_00136 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私は、引っ越しの初日に本家までその手伝いに出かけた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 733,
+	},
+	block_00137 = {
+		{"msgoff"},
+		{"bg", file="bg051a", path=":bg/", ax=960, ay=563, bx=0, by=-23, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, resize=1, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", x=-345, lv=4, id=5, sync=0},
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6, sync=0},
+		{"extrans"},
+		{"bgm", file="bgm149"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00035", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「静流すまない。手伝いなどさせてしまって」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 751,
+	},
+	block_00138 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00288", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「いいえ、別に私は暇なもんですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 756,
+	},
+	block_00139 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0013", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00036", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「何を言っている。来年は三年だ。そろそろ進学の事を考えておくべきだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 761,
+	},
+	block_00140 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0013", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00289", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「おばさんって私の成績知ってます？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 766,
+	},
+	block_00141 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00037", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「一応は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 771,
+	},
+	block_00142 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0009", head="shi_z1b", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="いいえ", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00290", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「あれじゃ進学なんて出来ないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 777,
+	},
+	block_00143 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0011", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00038", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まだ今年度は始まったばかりだ。お前の頭なら全然間に合うだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 782,
+	},
+	block_00144 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0009", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00291", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「買いかぶりすぎですよ。",
+					{"rt2"},
+					"私の頭の中は空っぽです。粘土でもつまってるんじゃないかと思うぐらい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 789,
+	},
+	block_00145 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんは苦笑する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 794,
+	},
+	block_00146 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00039", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だったら、私の母校を受ければいいじゃないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 799,
+	},
+	block_00147 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0009", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00292", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「藝大の工芸科って一次試験デッサンじゃないですか。",
+					{"rt2"},
+					"私、美大用のデッサンなんて勉強した事ないですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 806,
+	},
+	block_00148 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00040", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだな。なんだったら、かなり有名な絵画教室を紹介してやろうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 811,
+	},
+	block_00149 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00293", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「絵画教室？　普通は予備校とか行きません？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 816,
+	},
+	block_00150 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00041", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「普通ならな。だが、そんな場所よりも私が紹介する場所に行った方がいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 822,
+	},
+	block_00151 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00042", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「名門中の名門。紹介状がなければ入れない様な場所だ。",
+					{"rt2"},
+					"もしかしたら静流の才能ならば陶芸家として入門を許されるかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 831,
+	},
+	block_00152 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0009", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00294", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ハードルが高過ぎそうなのでやめておきます。",
+					{"rt2"},
+					"名門中の名門とか恐ろしすぎですよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 838,
+	},
+	block_00153 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だいたい入門を許される。とかどこの道場だよ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 841,
+	},
+	block_00154 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0010", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00043", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「残念だな。静流がそこに通ってくれたら、私もいろいろと助かるのだが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 846,
+	},
+	block_00155 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="びっくり", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00295", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「どういう意味ですか？　それ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 852,
+	},
+	block_00156 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00044", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「今そこに通っている人間がいてな。少し私も心配ではあるんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 858,
+	},
+	block_00157 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="うなづく", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00296", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「なるほど、偵察のために私をそこに入れたいと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 864,
+	},
+	block_00158 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00045", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「静流の進路が心配というのもあるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 869,
+	},
+	block_00159 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00297", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「だったらご心配なく、進路どころか卒業ですら危ういのですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 874,
+	},
+	block_00160 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0013", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00046", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だったら、もう少しまじめに授業も出てくれ、",
+					{"rt2"},
+					"結構、教師から文句を言われるのだぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 881,
+	},
+	block_00161 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00298", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「へぇ、おばさんに文句言う教師なんているんですか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 886,
+	},
+	block_00162 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00047", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「当たり前だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 891,
+	},
+	block_00163 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんなものか。",
+					{"rt2"},
+					"おばさんなんか恐ろしすぎて、みんな意見なんてしないと思ってた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 897,
+	},
+	block_00164 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00299", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「この段ボールもあけていいですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 902,
+	},
+	block_00165 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="いいえ", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00048", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いや、それはもういいよ。",
+					{"rt2"},
+					"ここはもういいから真琴の部屋を手伝ってやってくれないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 909,
+	},
+	block_00166 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00300", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「真琴の部屋は業者さんがほぼ終わらせたって聞いてますけど？　美術品は、",
+					{"rt2"},
+					"引っ越し業者任せに出来ないから、私が呼ばれたんだと思ってましたが？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 915,
+	},
+	block_00167 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="おじぎ", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00049", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「うん、それもあるのだが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 929,
+	},
+	block_00168 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00050", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「今回の事で、真琴がちょっとナーバスになっていてな。",
+					{"rt2"},
+					"話し相手になってあげてほしいんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 936,
+	},
+	block_00169 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0008", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00301", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「あの娘でもナーバスになるのですね。結構強い娘だと思ってましたが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 941,
+	},
+	block_00170 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00051", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「少しばかり厄介な問題がおきてだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 946,
+	},
+	block_00171 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00302", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「厄介な問題？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 950,
+	},
+	block_00172 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00052", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、それで真琴を少し慰めてやってほしい、あれは静流に懐いているだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 955,
+	},
+	block_00173 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00303", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「懐いているといいますか、ほんの数日前に会ったぐらいですけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 960,
+	},
+	block_00174 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00053", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだな。この家に越した直後だ。",
+					{"rt2"},
+					"だが、真琴がすぐにお前と打ち解けたじゃないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 967,
+	},
+	block_00175 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00054", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私と娘の間には、ここ数日でいろいろあってだな。",
+					{"rt2"},
+					"真琴に口も利いてもらえてないんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 973,
+	},
+	block_00176 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00304", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「え！？　そこまで離婚の事怒ってるのですか！？",
+					{"rt2"},
+					"あの娘ってそんなに父親の事好きでしたっけ？　",
+					{"rt2"},
+					"むしろ他人ぐらいな勢いだった様な気がしましたけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 981,
+	},
+	block_00177 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00055", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「中村の事は嫌いだよ。あの娘は物心ついた頃には、あの家を嫌っていたよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 987,
+	},
+	block_00178 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"良く分からないな。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 992,
+	},
+	block_00179 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なら、なんでそこまでおばさんに真琴は怒っているのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 995,
+	},
+	block_00180 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0013", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00305", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ふむ、なんか良く分かりませんが……。知りませんよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 1001,
+	},
+	block_00181 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0009", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00306", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「私は人を慰めるとかすごく苦手ですから、余計落ち込むかもしれません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 1006,
+	},
+	block_00182 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00056", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そんな事はないよ。静流はやさしいし、それに話し上手で聞き上手だ。",
+					{"rt2"},
+					"お前ほどの適任者はいないだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 1013,
+	},
+	block_00183 = {
+		{"bgm", stop=1, time=15000},
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0011", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00307", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「なんか微妙なおだてられ方だなぁ。",
+					{"rt2"},
+					"まぁ、いいです。真琴ともっとお話したいですし。",
+					{"rt2"},
+					"少し、様子を見に行ってきますよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 1023,
+	},
+	block_00184 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00057", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうしてくれると助かる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 1028,
+	},
+	block_00185 = {
+		{"bgm", stop=1},
+		{"bg", file="reco", id=9, lv=9, path=":sys/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"少しナーバスになっている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 1049,
+	},
+	block_00186 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その言葉通りに私はその事を捉えていた。",
+					{"rt2"},
+					"だから真琴を見るまでは、まさかそこまでこじれているとは思わなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 1053,
+	},
+	block_00187 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"正直、この件についておばさんではどうにもならなくなっていたのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 1056,
+	},
+	block_00188 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"実際、この確執はその後もずっと続いてしまうのだから。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 1059,
+	},
+	block_00189 = {
+		{"cgdel", id=-1},
+		{"bg", time=1000, rule="083r", wait=250, file="black", path=":bg/", vague=40},
+		{"bg", speed=180000, rule="083r", vague=40, file="zbg060a", path=":bg/", x2=960, y2=500, x=-960, y=500, ax=1920, ay=1440, bx=-960, by=-900},
+		{"bgm", file="bgm153"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私が部屋に入ると、彼女は部屋の片隅で泣いていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 1070,
+	},
+	block_00190 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00308", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 1075,
+	},
+	block_00191 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その姿を見つけた私はゆっくりと彼女に近づき、こう言った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 1078,
+	},
+	block_00192 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00309", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「お腹でも痛いの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 1081,
+	},
+	block_00193 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私は後ろから真琴の頭を撫でてやる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 1084,
+	},
+	block_00194 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"真琴は首を大きく横に振った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 1087,
+	},
+	block_00195 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00310", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「他に痛い場所があるのかい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 1090,
+	},
+	block_00196 = {
+		{"user", mode="conf", ch="真琴"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00001", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「痛くなんかない……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 1095,
+	},
+	block_00197 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00311", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「だったら、何故、泣いているの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 1098,
+	},
+	block_00198 = {
+		{"bg", file="ev_com_09_01", path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00002", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「圭が！　圭だけ置き去りにされたの！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 1106,
+	},
+	block_00199 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00312", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00198",
+		linknext = "block_00200",
+		line = 1109,
+	},
+	block_00200 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"圭。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00199",
+		linknext = "block_00201",
+		line = 1112,
+	},
+	block_00201 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"真琴と同い年の子で弟にあたる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00200",
+		linknext = "block_00202",
+		line = 1115,
+	},
+	block_00202 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"中村の家で、中村の子供として育てられていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00201",
+		linknext = "block_00203",
+		line = 1118,
+	},
+	block_00203 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00003", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「私はその事を聞いて無くて！　",
+					{"rt2"},
+					"圭もこの家に後から来られると思っていたから、私は言う事を聞いたのに！　",
+					{"rt2"},
+					"お母さんは嘘をついたの！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00202",
+		linknext = "block_00204",
+		line = 1123,
+	},
+	block_00204 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00004", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「お母さんは私に嘘をついてここに連れてきたの！",
+					{"rt2"},
+					"静流さん！　なんでお母さんはそんな事をしたの！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00203",
+		linknext = "block_00205",
+		line = 1127,
+	},
+	block_00205 = {
+		{"bg", sync=0, face=1, file="ev_com_09_02", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"厄介だな。と思った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00204",
+		linknext = "block_00206",
+		line = 1135,
+	},
+	block_00206 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たしかに圭は中村の子供であり、真琴の弟でもある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00205",
+		linknext = "block_00207",
+		line = 1138,
+	},
+	block_00207 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だけれども、圭はおばさんの子供ではない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00206",
+		linknext = "block_00208",
+		line = 1141,
+	},
+	block_00208 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの子は、父親と愛人の間に産まれた子供なのだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00207",
+		linknext = "block_00209",
+		line = 1144,
+	},
+	block_00209 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だから、鳥谷とは血がつながっていない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00208",
+		linknext = "block_00210",
+		line = 1147,
+	},
+	block_00210 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"圭と共にでないと出て行かないと頑なに拒否した真琴に、",
+					{"rt2"},
+					"おばさんは嘘をついてしまったのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00209",
+		linknext = "block_00211",
+		line = 1151,
+	},
+	block_00211 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"仕方が無いといえば仕方が無い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00210",
+		linknext = "block_00212",
+		line = 1154,
+	},
+	block_00212 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あの様なクーデターを仕掛けたのだ。",
+					{"rt2"},
+					"離婚とて円満にことが進むわけが無い。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00211",
+		linknext = "block_00213",
+		line = 1158,
+	},
+	block_00213 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"たぶん、あの家から逃げる様におばさんは、この鳥谷本家に引っ越してきたのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00212",
+		linknext = "block_00214",
+		line = 1161,
+	},
+	block_00214 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そこで真琴にだだをこねられたとしても、その願いを叶える事は出来ない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00213",
+		linknext = "block_00215",
+		line = 1164,
+	},
+	block_00215 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00005", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「あの家はひどい家なの。みんなして圭をいじめるんだよ！",
+					{"rt2"},
+					"お前は妾の子だ！　本来ならこの家で暮らせる身分じゃないんだって！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00214",
+		linknext = "block_00216",
+		line = 1170,
+	},
+	block_00216 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00006", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「だから、ずっと離れに閉じ込められていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00215",
+		linknext = "block_00217",
+		line = 1173,
+	},
+	block_00217 = {
+		{"bg", sync=0, face=1, file="ev_com_09_01", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00313", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「離れに？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00216",
+		linknext = "block_00218",
+		line = 1178,
+	},
+	block_00218 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな話を聞いた事があった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00217",
+		linknext = "block_00219",
+		line = 1181,
+	},
+	block_00219 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"中村の屋敷はかなり大きく、邸内にはいくつかの屋敷があったらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00218",
+		linknext = "block_00220",
+		line = 1184,
+	},
+	block_00220 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"圭という子は、その邸内で別々の屋敷に住んでいたらしい。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00219",
+		linknext = "block_00221",
+		line = 1187,
+	},
+	block_00221 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00007", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そんな家に圭だけ残して、私達だけこの家に逃げてくるなんて、ゆるせないっ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00220",
+		linknext = "block_00222",
+		line = 1190,
+	},
+	block_00222 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00008", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「だから、私は、圭を取り戻しに中村の家に帰ったの！　",
+					{"rt2"},
+					"でもお手伝いさん達は中にすら入れてくれなくて、私は何も出来なくて！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00221",
+		linknext = "block_00223",
+		line = 1194,
+	},
+	block_00223 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00009", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「お母さんにその事を問い詰めたら、黙り込んでしまうだけで……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00222",
+		linknext = "block_00224",
+		line = 1197,
+	},
+	block_00224 = {
+		{"bg", sync=0, face=1, file="ev_com_09_02", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00314", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「あ、うん……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00223",
+		linknext = "block_00225",
+		line = 1202,
+	},
+	block_00225 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんも気軽に、厄介な事を押しつけてくれるなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00224",
+		linknext = "block_00226",
+		line = 1205,
+	},
+	block_00226 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"こんなのどうやって慰めればいいのさ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00225",
+		linknext = "block_00227",
+		line = 1208,
+	},
+	block_00227 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00010", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「だから、私、お母さんと二度と口を利かない……。",
+					{"rt2"},
+					"圭をこの家に戻してくれるまで！　絶対に！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00226",
+		linknext = "block_00228",
+		line = 1212,
+	},
+	block_00228 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あー。",
+					{"rt2"},
+					"どうしたもんだろうなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00227",
+		linknext = "block_00229",
+		line = 1216,
+	},
+	block_00229 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あのおばさんにすら出来ない事を、私がどうにか出来るわけでもないし。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00228",
+		linknext = "block_00230",
+		line = 1219,
+	},
+	block_00230 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"かと言って、無駄な慰めなんて言ったところで真琴が納得するとも思えない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00229",
+		linknext = "block_00231",
+		line = 1222,
+	},
+	block_00231 = {
+		{"bg", sync=0, face=1, file="ev_com_09_03", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00315", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「一応さ。私は中村の麗華とは友達なんだよ。",
+					{"rt2"},
+					"麗華知ってるよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00230",
+		linknext = "block_00232",
+		line = 1231,
+	},
+	block_00232 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00011", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「うん。特にいじわるな人……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00231",
+		linknext = "block_00233",
+		line = 1234,
+	},
+	block_00233 = {
+		{"bg", sync=0, face=1, file="ev_com_09_04", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"麗華……。子供に嫌われるなよっ！",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00232",
+		linknext = "block_00234",
+		line = 1241,
+	},
+	block_00234 = {
+		{"bg", sync=0, face=1, file="ev_com_09_03", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00316", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「いや、あの娘もね。そんなに性格悪くはないんだよ。",
+					{"rt2"},
+					"少し、強情というか頑固というか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00233",
+		linknext = "block_00235",
+		line = 1250,
+	},
+	block_00235 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00012", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「でも、あの人が一番、圭の事を悪く言ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00234",
+		linknext = "block_00236",
+		line = 1253,
+	},
+	block_00236 = {
+		{"bg", sync=0, face=1, file="ev_com_09_02", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00317", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「うーん。そうなんだぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00235",
+		linknext = "block_00237",
+		line = 1261,
+	},
+	block_00237 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00013", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「雑種とかひどい事言ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00236",
+		linknext = "block_00238",
+		line = 1264,
+	},
+	block_00238 = {
+		{"bg", sync=0, face=1, file="ev_com_09_04", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんな事言うなよ。麗華ぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00237",
+		linknext = "block_00239",
+		line = 1272,
+	},
+	block_00239 = {
+		{"bg", sync=0, face=1, file="ev_com_09_03", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00318", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「でも、彼女は、真琴のお父さんの妹さんなんだよ。",
+					{"rt2"},
+					"彼女に頼めばどうにかなるかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00238",
+		linknext = "block_00240",
+		line = 1281,
+	},
+	block_00240 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00014", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「お父さんに頼むよりも絶望的だと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00239",
+		linknext = "block_00241",
+		line = 1284,
+	},
+	block_00241 = {
+		{"bg", sync=0, face=1, file="ev_com_09_05", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鋭いなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00240",
+		linknext = "block_00242",
+		line = 1292,
+	},
+	block_00242 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まぁ、たしかに、そうなんだけどさぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00241",
+		linknext = "block_00243",
+		line = 1295,
+	},
+	block_00243 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00015", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「お父さん、というかあの人も大概だけど、麗華おばさんは輪をかけてひどい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00242",
+		linknext = "block_00244",
+		line = 1298,
+	},
+	block_00244 = {
+		{"bg", sync=0, face=1, file="ev_com_09_03", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00319", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「でもさ、頼むだけならタダじゃない？　やってみる価値はあると思うよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00243",
+		linknext = "block_00245",
+		line = 1306,
+	},
+	block_00245 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00016", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「大丈夫なの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00244",
+		linknext = "block_00246",
+		line = 1309,
+	},
+	block_00246 = {
+		{"bg", sync=0, face=1, file="ev_com_09_02", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00320", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「何が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00245",
+		linknext = "block_00247",
+		line = 1314,
+	},
+	block_00247 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00017", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「麗華おばさんって、平気でひどい事言うから、",
+					{"rt2"},
+					"静流さんが行ったら、たぶんひどい事言われちゃうと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00246",
+		linknext = "block_00248",
+		line = 1318,
+	},
+	block_00248 = {
+		{"bg", sync=0, face=1, file="ev_com_09_03", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00321", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「大丈夫だよ。あれはあれでやさしい人なんだよ。麗華は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00247",
+		linknext = "block_00249",
+		line = 1323,
+	},
+	block_00249 = {
+		{"bg", sync=0, face=1, file="ev_com_09_05", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まぁ、すでに結構な事を言われているんですが。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00248",
+		linknext = "block_00250",
+		line = 1328,
+	},
+	block_00250 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00018", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「でもでも、あの人なら暴力とかふるうかもしれないよ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00249",
+		linknext = "block_00251",
+		line = 1331,
+	},
+	block_00251 = {
+		{"bg", sync=0, face=1, file="ev_com_09_03", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00322", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「いや、さすがにそれはないでしょ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00250",
+		linknext = "block_00252",
+		line = 1336,
+	},
+	block_00252 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00019", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そんな事あるよ！　圭は何度もあの人に叩かれたもの！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00251",
+		linknext = "block_00253",
+		line = 1339,
+	},
+	block_00253 = {
+		{"bg", sync=0, face=1, file="ev_com_09_01", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00323", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「え？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00252",
+		linknext = "block_00254",
+		line = 1347,
+	},
+	block_00254 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00020", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「家を出る事が決まった時も、無言で私の事をひっぱたいたし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00253",
+		linknext = "block_00255",
+		line = 1350,
+	},
+	block_00255 = {
+		{"bg", sync=0, face=1, file="ev_com_09_05", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00324", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そ、そうか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00254",
+		linknext = "block_00256",
+		line = 1358,
+	},
+	block_00256 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"麗華のやつ、家で子供に手をあげていたのか……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00255",
+		linknext = "block_00257",
+		line = 1361,
+	},
+	block_00257 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"それは、ちょっと擁護のしようがないなぁ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00256",
+		linknext = "block_00258",
+		line = 1364,
+	},
+	block_00258 = {
+		{"bg", sync=0, face=1, file="ev_com_09_03", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00325", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「でも、大丈夫。私は彼女より強いからね。あの娘はチビじゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00257",
+		linknext = "block_00259",
+		line = 1372,
+	},
+	block_00259 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00021", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「そう？",
+					{"rt2"},
+					"静流さんって身長はあの人より高いけど、運動神経あまり良く無いって聞いてるよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00258",
+		linknext = "block_00260",
+		line = 1376,
+	},
+	block_00260 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まぁ、その通りなのですけどね。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00259",
+		linknext = "block_00261",
+		line = 1379,
+	},
+	block_00261 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00022", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「私、静流さん好きだから、静流さんが危険な目にあうのは嫌」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00260",
+		linknext = "block_00262",
+		line = 1382,
+	},
+	block_00262 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00326", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「いや、大丈夫だよ。そんなひどい事にはならないからさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00261",
+		linknext = "block_00263",
+		line = 1385,
+	},
+	block_00263 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00023", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「あの家は怖いんだよ。使用人の人もおっかない人ばかりだし、あと黒い服着た",
+					{"rt2"},
+					"大きな男の人達も沢山いてね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00262",
+		linknext = "block_00264",
+		line = 1389,
+	},
+	block_00264 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"ああ、そういえば、ヤクザと関係があったんだよなぁ。",
+					{"rt2"},
+					"それが今回の騒動の原因なのに、そういう連中がまだ出入りしてるんだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00263",
+		linknext = "block_00265",
+		line = 1393,
+	},
+	block_00265 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00327", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「分かった。分かった。危険な真似なんかしないから、安心しなよ。",
+					{"rt2"},
+					"そもそも、私がそんな勇敢な人間にみえるか？",
+					{"rt2"},
+					"危なくなったらすぐ逃げるタイプでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00264",
+		linknext = "block_00266",
+		line = 1398,
+	},
+	block_00266 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mak_00024", ch="mak"},
+			},
+			ja = {
+				{
+					name = {"真琴"},
+					"「うん、まぁ、たしかに、静流さんってそういうところはあるかも……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00265",
+		linknext = "block_00267",
+		line = 1401,
+	},
+	block_00267 = {
+		{"bgm", stop=1, time=10000},
+		{"bg", sync=0, face=1, file="ev_com_09_05", time=400, path=":ev/ev_com_09/", set="ev_com_09"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんか、肯定されると、それはそれで嫌なもんだな。おい！",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00266",
+		linknext = "block_00268",
+		line = 1410,
+	},
+	block_00268 = {
+		{"bg", file="black", path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私は真琴を強く抱きしめた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00267",
+		linknext = "block_00269",
+		line = 1418,
+	},
+	block_00269 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"その後、私は聖ルーアン女学院に向かった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00268",
+		linknext = "block_00270",
+		line = 1425,
+	},
+	block_00270 = {
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="01_03_2"},
+		{"text"},
+		linkback = "block_00269",
+		line = 1429,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

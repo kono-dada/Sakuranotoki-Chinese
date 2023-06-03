@@ -1,0 +1,5532 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅰ章"},
+		{"msg", no=1},
+		{"bgm", file="bgm137"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg050a", path=":bg/", sync=0},
+		{"fg", ch="静流", size="z1", mode=3, resize=1, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, resize=1, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00503", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「あ、おばさん」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 19,
+	},
+	block_00001 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00173", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「こんな時間までいるところをみると、さすがのお前でも、どれが値打ちものか",
+					{"rt2"},
+					"分からないという事かい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 25,
+	},
+	block_00002 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00504", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「あ、それなら……えっと。",
+					{"rt2"},
+					"これが五十万円の壺ですよね。ただし売値でその価格なんで、デパートとか",
+					{"rt2"},
+					"ならばその二倍以上の価格で売られている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 34,
+	},
+	block_00003 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00505", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「こっちの皿は値切れば三万円ぐらいで買えます。",
+					{"rt2"},
+					"私がお礼で受け取るのなら、こっちの一万円ぐらいで買えそうな茶器とか",
+					{"rt2"},
+					"無難でしょうかねぇ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 44,
+	},
+	block_00004 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00174", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ほう、少し私も静流をあなどっていた様だな。",
+					{"rt2"},
+					"そこまで分かる様になっていたとはな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 50,
+	},
+	block_00005 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0003", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00506", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「作る専門だと思いましたか？　そりゃ私だって、いろいろな陶磁器を見てますよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 55,
+	},
+	block_00006 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00175", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ふむ、それを当てられてしまってはなぁ。少しお遊びがすぎたかな？",
+					{"rt2"},
+					"しかたがない、約束だ。その五十万円の壺をお前にやろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 63,
+	},
+	block_00007 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00507", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「いいえ、この壺はいりませんよ。",
+					{"rt2"},
+					"そっちよりも、この",
+					{"ruby", text="つづら"},
+					"葛籠",
+					{"/ruby"},
+					"がほしいです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 72,
+	},
+	block_00008 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"bgm", stop=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私はさっきまで読んでいた書物が入った葛籠を取り出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 83,
+	},
+	block_00009 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0007", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="びっくり", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00176", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そ、それは」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 89,
+	},
+	block_00010 = {
+		{"bgm", file="bgm016", time=2000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんか、おばさんの顔色が変わった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 95,
+	},
+	block_00011 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00508", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「どうしたんですか？　おばさんが",
+					{"ruby", text="うろた"},
+					"狼狽",
+					{"/ruby"},
+					"えるなんてめずらしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 100,
+	},
+	block_00012 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0009", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00177", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いや、狼狽えているわけじゃないのだが……、そんなものを見つけてくるとは……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 107,
+	},
+	block_00013 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00509", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ああ、隠していたのですか？",
+					{"rt2"},
+					"たしかに、この中身が本物ならば、世紀の大発見ですものね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 113,
+	},
+	block_00014 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00178", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、そうなるな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 118,
+	},
+	block_00015 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00510", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「にもかかわらず、世にあまり知られていない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 123,
+	},
+	block_00016 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00179", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 128,
+	},
+	block_00017 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00511", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「不思議ですね。まるで、この記事が世の中に出ていない様な……。",
+					{"rt2"},
+					"たとえば、校正段階で止められたとか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 143,
+	},
+	block_00018 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00180", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なるほど、その記事は雑誌の切り抜きではなく、記事になる前の校正だと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 149,
+	},
+	block_00019 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0013", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00512", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そうじゃなければおかしくありません？　",
+					{"rt2"},
+					"こんな世紀の大発見が世に知られる事もなく、その記事だけが残っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 155,
+	},
+	block_00020 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00181", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「その様だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 160,
+	},
+	block_00021 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00513", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「もしこれが校正なら、記事になる前にこれが贋作である事実が浮上したとか",
+					{"rt2"},
+					"ですかね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 166,
+	},
+	block_00022 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00182", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ありえるな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 171,
+	},
+	block_00023 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00514", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「記事では、モネ自らの手による花瓶かどうか、今後の研究が俟たれる。",
+					{"rt2"},
+					"とは書いてありますが、そもそもこのモネ第二のカササギの絵やそれの元に",
+					{"rt2"},
+					"なった狩山青鷺の浮世絵すら知られていないのは不自然です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 179,
+	},
+	block_00024 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00183", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「校正段階、さらにいえば展覧会の前に、すべてが贋作であった事が判明した。と」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 184,
+	},
+	block_00025 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00515", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「はい、そうでなければ、贋作騒動として、モネ第二のカササギの絵や狩山青鷺の",
+					{"rt2"},
+					"名前は残るはずです。お披露目になる前に贋作である事が発覚したのなら、その",
+					{"rt2"},
+					"名前すら知られてない理由も頷けます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 192,
+	},
+	block_00026 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00184", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なるほど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 198,
+	},
+	block_00027 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0013", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00516", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「でも、それも可能性の一つであって、他にもいろいろ考えられます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 203,
+	},
+	block_00028 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00185", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「たとえば？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 214,
+	},
+	block_00029 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0010", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00517", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「二つ目の仮説」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 219,
+	},
+	block_00030 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0004", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00518", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ここにあるものすべてが本物で、モネの第二のカカサギもその元ネタである狩山",
+					{"rt2"},
+					"青鷺のカササギも存在し、さらにカササギの花瓶と呼ばれるものも存在する」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 226,
+	},
+	block_00031 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00186", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「すべてが本物でありながら、それらは世に知られていない。そう言いたいのか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 231,
+	},
+	block_00032 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0010", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00519", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「何故、この大発見はその後表沙汰になってないのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 236,
+	},
+	block_00033 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00187", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「何故だと思う？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 241,
+	},
+	block_00034 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00520", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「その所有者が、公表するのを控えたと考えられます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 246,
+	},
+	block_00035 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="うんうん", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00188", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ふむふむ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 252,
+	},
+	block_00036 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0010", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00521", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「本来なら、世紀の発見というのは公な機関で調査して、それぞれのレベルの",
+					{"rt2"},
+					"文化遺産として登録されるべきものでしょう。都道府県・市町村指定などの",
+					{"rt2"},
+					"有形文化財、あるいは重要文化財や国宝」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 260,
+	},
+	block_00037 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00189", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうなるだろうな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 265,
+	},
+	block_00038 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00522", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「だが、それら調査も強制ではない。あくまでも所有者が望む限りにおいてです。",
+					{"rt2"},
+					"たとえそれが国宝級レベルの世紀の発見だとしても、所有者が調査を拒否すれば、それ以上の騒ぎにはなりません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 272,
+	},
+	block_00039 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00190", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「何故、所有者は拒否するのだろうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 277,
+	},
+	block_00040 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0009", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00523", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そりゃ、国宝級ともなれば相続税が半端ないからです。",
+					{"rt2"},
+					"個人蔵にあった国宝が、相続税が払えずに財団法人に所有先を変更する話は",
+					{"rt2"},
+					"聞いた事があります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 285,
+	},
+	block_00041 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00191", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だったら、財団法人を作れば良いではないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 290,
+	},
+	block_00042 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00524", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「コレクターというのはあくまでも個人所有にこだわります。",
+					{"rt2"},
+					"もし仮に、その品を本人が『本物』であると強く自負しているのであれば、",
+					{"rt2"},
+					"公的機関による調査など必要ないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 298,
+	},
+	block_00043 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00525", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「自分の真贋を見極める目が、公的機関の調査と同等かあるいはそれ以上だと",
+					{"rt2"},
+					"思っている人間にとっては、文化財指定は邪魔以外の何物でもありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 306,
+	},
+	block_00044 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00526", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そういった人間ならば、みずから文化財レベルのものを発見したとしても、",
+					{"rt2"},
+					"表だって発表する事はしないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 312,
+	},
+	block_00045 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00192", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なるほど、もっともな意見だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 318,
+	},
+	block_00046 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0010", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00527", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「このカササギに関わる一連の芸術品は実在する。",
+					{"rt2"},
+					"だけれども、文化財指定でいざこざになり、所有者がそれ以来、",
+					{"rt2"},
+					"一切表沙汰にしなかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 325,
+	},
+	block_00047 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0008", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00528", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「弓張市立博物館というのも、かなりローカルな話です。",
+					{"rt2"},
+					"もしかして全国区で知られる様になる前に、所有者が一切の取材を拒否したのかもしれません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 334,
+	},
+	block_00048 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00529", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「だとしたら、これほどの発見がされながら世に知られてなかった説明はつきます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 339,
+	},
+	block_00049 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00193", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「静流はそれが真相だと考えているわけか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 344,
+	},
+	block_00050 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="いいえ", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00530", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「いいえ、この仮説には大きな穴があります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 350,
+	},
+	block_00051 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00194", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「大きな穴？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 355,
+	},
+	block_00052 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00531", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「この仮説を成立させるには、どうしても辻褄が合わない箇所があるのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 361,
+	},
+	block_00053 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00195", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ほう……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 374,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんは、目を細くして私を見つめる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 377,
+	},
+	block_00055 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00532", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「この世紀の大発見を出来る人間など世界に一人しかいません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 382,
+	},
+	block_00056 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00196", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それは誰かな？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 387,
+	},
+	block_00057 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00533", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「鳥谷紗希。つまりおばさんです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 401,
+	},
+	block_00058 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00197", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「静流。何故、私が発見者だと考える？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 406,
+	},
+	block_00059 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6, sync=0},
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6, sync=0},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00534", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「簡単ですよ。そもそもこの世紀の発見は、鳥谷正昌という美術商の日記の発見が",
+					{"rt2"},
+					"無ければあり得ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 422,
+	},
+	block_00060 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00535", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「この一次文献を手に入れられるのは、鳥谷の蔵を自由に見る事が出来る人間で",
+					{"rt2"},
+					"なければならない、つまり鳥谷家の人間である」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 429,
+	},
+	block_00061 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00536", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そして、この鳥谷家において美術の素養があったのはおばさんだけです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 434,
+	},
+	block_00062 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="いいえ", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00198", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いやいや、お前の父親だって鳥谷の名を継ぐ貿易商だぞ。",
+					{"rt2"},
+					"可能性皆無ではないだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 441,
+	},
+	block_00063 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0013", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0009", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00537", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「皆無です。陶磁器に関しては私もそれなりの目利きである自負があります。",
+					{"rt2"},
+					"そんな私から見て親父の美術に関する鑑定能力は素人レベルです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 450,
+	},
+	block_00064 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0005", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00538", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「狩山青鷺の浮世絵とモネの第二のカササギ、この二つの真贋を見抜けるのは",
+					{"rt2"},
+					"おばさんだけです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 457,
+	},
+	block_00065 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00199", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なるほどねぇ。私がその世紀の発見をしたというわけか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 462,
+	},
+	block_00066 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00539", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「はい、この記事が本物であるとするならばです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 467,
+	},
+	block_00067 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00200", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「この記事が本物であるとするならば？　何故仮定なんだい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 472,
+	},
+	block_00068 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんの眉が少しだけ動く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 475,
+	},
+	block_00069 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="うなづく", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00540", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「はい、この記事や鳥谷正昌の日記そのものが偽物である可能性の方が遙かに",
+					{"rt2"},
+					"高いからです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 482,
+	},
+	block_00070 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00201", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「静流は先ほど、カササギに関わる一連の作品が贋作である事が分かり、記事は",
+					{"rt2"},
+					"校正段階で止まった可能性があると言ってたが。その可能性だってまだあるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 491,
+	},
+	block_00071 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0010", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00202", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「その場合、私が発見して有頂天になって発表したものの、",
+					{"rt2"},
+					"調べてみたら贋作であった事が分かった。という筋書きになるぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 497,
+	},
+	block_00072 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00541", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「その可能性もないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 502,
+	},
+	block_00073 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00203", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いいや大いにあり得る話だ。そもそも、その記事で書かれている展覧会がおこなわれているのは、私が藝大に入る前だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 507,
+	},
+	block_00074 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00204", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私がその和帳や第二のモネのカササギと狩山青鷺のカササギを発見し、",
+					{"rt2"},
+					"さらにその事実を自分自身でも確かめるためにも美大、特に日本屈指の専門家が",
+					{"rt2"},
+					"いる藝大の日本画科を専攻した。十分あり得る筋書きじゃないか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 515,
+	},
+	block_00075 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00542", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「この記事が書かれたのはたしかにおばさんが大学に入る前です。",
+					{"rt2"},
+					"だとしたら、この記事が校正段階で贋作だと分かり、差し止められているのも、",
+					{"rt2"},
+					"それ以前となります」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 522,
+	},
+	block_00076 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00543", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「それだと、そもそもおばさんが美大に行く意味がなくなります。",
+					{"rt2"},
+					"なにせ、偽物だという結果が出ているのですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 528,
+	},
+	block_00077 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00205", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「その結果を私が受け入れられなかったとしたら？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 533,
+	},
+	block_00078 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0011", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00544", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「偽物に固執している様な、そんな美的センスの欠片もない人間が、そもそも藝大には受かりますかね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 538,
+	},
+	block_00079 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00206", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「さぁ、どうだろうなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 543,
+	},
+	block_00080 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00545", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「私は絵の事は良く分かりません。",
+					{"rt2"},
+					"ただ、陶磁器で言えば、贋作は騙される事にこそ価値があると考えています」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 549,
+	},
+	block_00081 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00207", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「騙される事にこそ贋作の価値がある。か……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 554,
+	},
+	block_00082 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00546", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「贋作に騙されれば騙されるほど、本物が分かっていくものです。",
+					{"rt2"},
+					"だから贋作には価値があるとすら言える」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 567,
+	},
+	block_00083 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0010", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00547", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「真作にただ感動してればいいと考えるのは、真に美を愛する者ではありません。",
+					{"rt2"},
+					"時に贋作に魅了され、贋作を愛して、騙された事があるからこそ、",
+					{"rt2"},
+					"真贋の目はやどるのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 574,
+	},
+	block_00084 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00548", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「贋作である事を納得出来ずに、偽物にとらわれ続ける様な人間がまともな",
+					{"rt2"},
+					"美的センスを持つとは思えません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 580,
+	},
+	block_00085 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00208", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なるほどね。贋作の価値か……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 583,
+	},
+	block_00086 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", x=0, lv=4, id=9, sync=0},
+		{"extrans"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00209", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「贋作には贋作の真実が宿る。",
+					{"rt2"},
+					"その価値が時と場所によって大きく変わるのが真作との差なだけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 595,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00549", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「なんですか？　それ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 598,
+	},
+	block_00088 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=0, lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00210", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「昔、知り合いが言った言葉だ。",
+					{"rt2"},
+					"静流の言葉で少し思いだしてな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 605,
+	},
+	block_00089 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=0, lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00211", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まぁ、だいたい静流の説明は分かった。",
+					{"rt2"},
+					"だったら静流が考える真相というのを教えてもらえないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 611,
+	},
+	block_00090 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0004", head="shi_z1b", x=345, lv=4, id=6, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00550", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ここにあるすべて。",
+					{"rt2"},
+					"記事から古い和帳まで、すべては偽物。",
+					{"rt2"},
+					"おばさんが作ったものです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 624,
+	},
+	block_00091 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0001", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00551", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「相当手が込んでいますが、誰かを騙すために念入りに仕掛けた罠。",
+					{"rt2"},
+					"私にはその様に思えました」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 631,
+	},
+	block_00092 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00212", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「何故、そう思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 636,
+	},
+	block_00093 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0010", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0009", head="shi_z1b", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00552", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「まず、先ほど言った通り、おばさんが発見して発表したが、贋作であった。",
+					{"rt2"},
+					"この筋書きには無理がありすぎます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 645,
+	},
+	block_00094 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00553", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「それこそ中村家の人間みたいな性格ならまだしも、慎重な上に思慮深いを",
+					{"rt2"},
+					"通り越して狡猾ともいえるおばさんが、真贋の良く分からないものを発表して",
+					{"rt2"},
+					"展覧会まで許可するなど考えられません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 655,
+	},
+	block_00095 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0013", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00213", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「おばをつかまえて狡猾と来たか……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 660,
+	},
+	block_00096 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00554", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「次に、ここにあるもの全てが本物である場合。",
+					{"rt2"},
+					"ここにある記事も展覧会も、そしてカササギの一連の作品もすべてが",
+					{"rt2"},
+					"本物であった場合」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 668,
+	},
+	block_00097 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00555", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「一度は発表したけれども、文化財の登録を拒んだために、",
+					{"rt2"},
+					"世に知られなかった説です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 676,
+	},
+	block_00098 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00214", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「十分あり得るな。その後私は藝大に進学した。",
+					{"rt2"},
+					"私のみならず、数人の専門教授に見せて、真贋を問うた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 684,
+	},
+	block_00099 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00214_2", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そして、本物だと分かった場合、",
+					{"rt2"},
+					"公的機関による調査など邪魔以外の何物でもない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 690,
+	},
+	block_00100 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00215", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「本物である事は保証されているのだ。売る気がないのなら、無駄に資産価値を",
+					{"rt2"},
+					"あげても仕方が無い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 696,
+	},
+	block_00101 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0013", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="いいえ", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00556", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「それはあり得ませんね。",
+					{"rt2"},
+					"まずおばさんなら教授に相談すらしないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 703,
+	},
+	block_00102 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00216", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「先ほど、普通ならば教授に相談する。と言ったのは静流ではないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 708,
+	},
+	block_00103 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00557", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「普通ならばです。",
+					{"rt2"},
+					"でもおばさんならしないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 715,
+	},
+	block_00104 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00217", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なら私ならどうすると考える」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 720,
+	},
+	block_00105 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00558", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「自分が死ぬその瞬間まで、",
+					{"rt2"},
+					"それまで存分に、その美を一人で楽しむでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 726,
+	},
+	block_00106 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00559", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そして、死後、発表するなり遺書にしたためるでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 731,
+	},
+	block_00107 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00560", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「教授に相談していたとして、それが真作ならば、表沙汰にならない事そのものが",
+					{"rt2"},
+					"ありえない。かならず、全国紙レベルで報道されるでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 737,
+	},
+	block_00108 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00561", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そして、その程度の事ならおばさんは予想が出来る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 742,
+	},
+	block_00109 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00562", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「自分の目を信じてるおばさんなら、まずそんな事はしないでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 747,
+	},
+	block_00110 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00563", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「おばさんの場合、相続税の事なんてどうでも良く、ただひたすら、",
+					{"rt2"},
+					"自分が一人で楽しむためだけに作品を愛でるでしょうね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 753,
+	},
+	block_00111 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00218", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なるほど、だったら、その幻のカササギ二点はこの家に保管されている",
+					{"rt2"},
+					"可能性があるではないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 759,
+	},
+	block_00112 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00219", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「静流が言う通りに、私がじっくりと楽しむためだけに保管されている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 764,
+	},
+	block_00113 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00564", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「その可能性もついこの間までならあり得ました。",
+					{"rt2"},
+					"でも、今なら言えます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 770,
+	},
+	block_00114 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00565", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そんなものが存在する可能性は皆無だと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 775,
+	},
+	block_00115 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00220", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「皆無とは、それはまた断定的だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 780,
+	},
+	block_00116 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00566", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「それが事実だからです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 785,
+	},
+	block_00117 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00567", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「もし、おばさんがこの発見者であり、かつその国宝級の宝物を所有していたと",
+					{"rt2"},
+					"します」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 791,
+	},
+	block_00118 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00568", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「だったら何故、おばさんは、弓張学園クーデターの時にこれを使ってないの",
+					{"rt2"},
+					"ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 800,
+	},
+	block_00119 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00569", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「私も詳しくは知りませんが、今の弓張は多重オーナー制で、思われているほど校長権限は強くないと聞きます。それどころか、相当な無理をして中村を追い出したので、おばさんの立場もかなり危ういとも……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 806,
+	},
+	block_00120 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00221", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それは、まぁ、その通りだがな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 811,
+	},
+	block_00121 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00570", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「それほどの危ない橋を渡る時に、何故、おばさんは手札となる宝物を使わなかったのでしょうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 816,
+	},
+	block_00122 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00571", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「答えは簡単です。そもそもそんなものは存在しない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 824,
+	},
+	block_00123 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00572", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ここにある記事や和帳はおろか。",
+					{"rt2"},
+					"そこで示されている、モネ第二のカササギもカササギの花瓶も実在しない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 830,
+	},
+	block_00124 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="うなづく", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00573", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「当然、狩山青鷺も実在していない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 836,
+	},
+	block_00125 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00574", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「すべてはおばさんが誰かに向けて仕組んだ罠です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 841,
+	},
+	block_00126 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00575", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そもそも展覧会など開かれてもいない。それに関する記事も存在しない。",
+					{"rt2"},
+					"だから、ここに書かれたすべての作品は実在しない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 847,
+	},
+	block_00127 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00576", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「これが私が考える真相です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 852,
+	},
+	block_00128 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00222", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なるほど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 858,
+	},
+	block_00129 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんは小さく笑った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 863,
+	},
+	block_00130 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00223", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私は頭が良い娘は好きだ。",
+					{"rt2"},
+					"静流の事は昔からバカなのかアホなのかそれとも頭が良いのか",
+					{"rt2"},
+					"良く分からない姪という感じであったが」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 871,
+	},
+	block_00131 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0013", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんかさらりと酷い事言われたぞ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 876,
+	},
+	block_00132 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00224", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「たいしたものだ。アレ以外でも見破る人間がいるとはな……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 881,
+	},
+	block_00133 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00577", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「アレ？　それって、おばさんが騙そうとした誰かですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 886,
+	},
+	block_00134 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんは小さく頷く。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 892,
+	},
+	block_00135 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00225", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まぁ、意地悪をしても仕方が無いから答え合わせとしようか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 897,
+	},
+	block_00136 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00226", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ほぼ大筋において静流の正解だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 902,
+	},
+	block_00137 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00227", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ただ、一つだけ、見誤った部分もある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 907,
+	},
+	block_00138 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0005", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00578", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「全部正解ではないと」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 912,
+	},
+	block_00139 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00228", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いいや、ほぼほぼ正解だ。ただ100％ではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 917,
+	},
+	block_00140 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", x=-600, y=-500, file="zbg050a", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"bg", alpha=255, lv=5, id=5, rule="cinema", file="cinema01", time=400, path=":sys/", vague=40, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うとおばさんは立てかけてあった額が入ったいくつもの段ボールの一つに指をかける。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 930,
+	},
+	block_00141 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00229", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「これとこれを出すのを手伝ってくれるかい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 936,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00579", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「あ、はい……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 941,
+	},
+	block_00143 = {
+		{"msgoff"},
+		{"cgdel", lv=5, id=5, rule="cinema", time=400, sync=0},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg050a", path=":bg/", sync=0},
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"言われるまま、額が入った段ボールの中から二つ取り出した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 953,
+	},
+	block_00144 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんは段ボールの中からベールに包まれた額を二つ取り出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 956,
+	},
+	block_00145 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00580", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「なんですかそれ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 961,
+	},
+	block_00146 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00230", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「さてなんだろうねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 966,
+	},
+	block_00147 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00581", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「もしかして……とかないですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 971,
+	},
+	block_00148 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00231", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それは見てのお楽しみといったところかな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 976,
+	},
+	block_00149 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんは二枚のベールを剥がす。",
+					{"rt2"},
+					"すると――",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 983,
+	},
+	block_00150 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="quake", lv=4, id=6},
+		{"bgm", stop=1, time=2000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00582", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「こ、この絵！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 990,
+	},
+	block_00151 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00232", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「さて、なんだろうかね？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 995,
+	},
+	block_00152 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00583", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「じ、実在していたのですか！！　モネの第二のカササギと狩山青鷺の浮世絵って！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 1000,
+	},
+	block_00153 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00233", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そういう事だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 1006,
+	},
+	block_00154 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="びっくり", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00584", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「す、すごい！　これ普通に世界的発見じゃないですか！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 1012,
+	},
+	block_00155 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00234", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ふふふ、そうだろう。そうだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 1018,
+	},
+	block_00156 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00585", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「って事は、あの記事にあったカササギの花瓶も存在するという事ですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 1023,
+	},
+	block_00157 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00235", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「花瓶は残念ながらまだフランスにあるんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 1029,
+	},
+	block_00158 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="びっくり", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00586", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「すごい！　チョー見てみたいんですけど！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 1035,
+	},
+	block_00159 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00236", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだねぇ。見てみたいねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 1041,
+	},
+	block_00160 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00587", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「おばさんは見た事ないのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 1046,
+	},
+	block_00161 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00237", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、そりゃ無いさ。あるわけがない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 1051,
+	},
+	block_00162 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0005", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00588", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「なんでですか？　モネの秘蔵の絵画とその元ネタの浮世絵を持っているのなら、",
+					{"rt2"},
+					"簡単に見る事が出来るでしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 1058,
+	},
+	block_00163 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00238", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それが簡単でもないんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 1063,
+	},
+	block_00164 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00589", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「なんでですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 1068,
+	},
+	block_00165 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00239", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そんなものは存在していないからさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 1073,
+	},
+	block_00166 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00590", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「へ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 1078,
+	},
+	block_00167 = {
+		{"bgm", file="bgm131"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"良く見ると、おばさんの顔は今にも笑い出しそうだった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 1093,
+	},
+	block_00168 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0006", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="ジャンプ", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00591", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「あー！　もしかして、この絵！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 1100,
+	},
+	block_00169 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00240", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「静流も才能があるのだから、陶磁器にこだわらずにいろいろなものを",
+					{"rt2"},
+					"見た方がいいぞ。ここまで見事に騙されるなんて思わなかったよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 1106,
+	},
+	block_00170 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00592", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「これもおばさんが！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 1111,
+	},
+	block_00171 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00241", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そりゃ、そうだよ。",
+					{"rt2"},
+					"この贋作をいかにも真作の様に見せかけるために、あの記事は作ったんだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 1117,
+	},
+	block_00172 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00593", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「え？　そうなんですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 1122,
+	},
+	block_00173 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0013", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00242", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「当たり前だろうが。あの記事だけつくってどうするんだ。",
+					{"rt2"},
+					"この贋作ありきの偽記事だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 1129,
+	},
+	block_00174 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="おじぎ", lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0009", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00594", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そうなんだ～。うわ～。モネが作ったかもしれないカササギの花瓶とか、",
+					{"rt2"},
+					"瞬間にときめきましたよー」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 1137,
+	},
+	block_00175 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00243", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「静流は鋭いのか愚鈍なんだか分からないなぁ。",
+					{"rt2"},
+					"さきほどまで、あれほど冷静な推理をしていたのに、絵を目の前にして",
+					{"rt2"},
+					"一瞬で騙されるとはなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 1145,
+	},
+	block_00176 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0004", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00595", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「だって、絵とか分かりませんし。",
+					{"rt2"},
+					"それよりも、これがあるって事は幻の花瓶があるって事になるわけで……、",
+					{"rt2"},
+					"私みたいな人間からしたら冷静さも失いますよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 1153,
+	},
+	block_00177 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="うんうん", lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", ex02="a0098", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0012", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00596", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「リモージュ磁器の黄金時代！　その輝かしい歴史の中で埋もれていたモネ制作の",
+					{"rt2"},
+					"カササギの花瓶！　ときめきますよ！　なのにー！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 1162,
+	},
+	block_00178 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00244", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「あははは、よもや静流がそこまで見事に騙されるとはなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 1167,
+	},
+	block_00179 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00597", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「うーん。でも、私が絵画に疎いからというのもあるんですけど、これ贋作としてはかなりレベル高いじゃないですか。誰も見抜けないんじゃないですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 1173,
+	},
+	block_00180 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00245", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そういう自負で作ったのだがなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 1178,
+	},
+	block_00181 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00598", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「え？　もしかして、ここまでやって、目的の人間は騙されなかったとか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 1183,
+	},
+	block_00182 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00246", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「仕掛けもかなり凝ったんだけどねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00181",
+		linknext = "block_00183",
+		line = 1189,
+	},
+	block_00183 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00599", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「どんな感じで？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00182",
+		linknext = "block_00184",
+		line = 1194,
+	},
+	block_00184 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00247", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「大体どこにでも一人はいるだろうお喋りな子というのはね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00183",
+		linknext = "block_00185",
+		line = 1199,
+	},
+	block_00185 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00248", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そのおしゃべりな子の隣に座って、友人と会話をするんだよ。",
+					{"rt2"},
+					"大学の学食とかそういう場所で……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00184",
+		linknext = "block_00186",
+		line = 1205,
+	},
+	block_00186 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00249", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それほど大声で喋らなくてもいい。彼女がこちらの会話に耳を傾けていると",
+					{"rt2"},
+					"わかったなら、記事を取り出して話をはじめる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00185",
+		linknext = "block_00187",
+		line = 1211,
+	},
+	block_00187 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00250", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「あの展覧会が開催されたのは、私たちが大学生だった頃よりも",
+					{"rt2"},
+					"さらに数年前に設定しておいた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00186",
+		linknext = "block_00188",
+		line = 1217,
+	},
+	block_00188 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00251", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「記事の最後にあっただろう？",
+					{"rt2"},
+					"モネ自らの手による花瓶かどうか、今後の研究が俟たれるとね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00187",
+		linknext = "block_00189",
+		line = 1223,
+	},
+	block_00189 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00252", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「その研究結果が出た。どうやら本物らしいと、友人に話したのさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00188",
+		linknext = "block_00190",
+		line = 1228,
+	},
+	block_00190 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00600", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「だから、おばさんが大学に入る前の記事だったんですね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00189",
+		linknext = "block_00191",
+		line = 1233,
+	},
+	block_00191 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00253", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「結構な噂になってだね。結構な人間が興味を示した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00190",
+		linknext = "block_00192",
+		line = 1243,
+	},
+	block_00192 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00254", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私は、最初は渋り、最後にしかたがなく記事の切り抜きを見せた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00191",
+		linknext = "block_00193",
+		line = 1248,
+	},
+	block_00193 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00255", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「花瓶はまだフランスにある。だが、元になったモネの絵なら蔵にある。",
+					{"rt2"},
+					"詰め寄られて話さざるを得なくなった風を装って、そう答えたさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00192",
+		linknext = "block_00194",
+		line = 1255,
+	},
+	block_00194 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00256", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それから彼らを、油絵と浮世絵のある蔵へと連れていったのさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00193",
+		linknext = "block_00195",
+		line = 1260,
+	},
+	block_00195 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00257", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「薄暗い蔵の中では、真贋を見定めるのはますます難しくなる。",
+					{"rt2"},
+					"みんな綺麗に騙されたね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00194",
+		linknext = "block_00196",
+		line = 1266,
+	},
+	block_00196 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00601", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「でも、目的の人物は騙せなかった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00195",
+		linknext = "block_00197",
+		line = 1269,
+	},
+	block_00197 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=5},
+			},
+			vl02 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00258", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、ダメだったね。“でも、これはいい絵だ”なんて言われてねぇ。",
+					{"rt2"},
+					"がっかりだったよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00196",
+		linknext = "block_00198",
+		line = 1277,
+	},
+	block_00198 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00602", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ふーん。鋭い人もいるんですねぇ。",
+					{"rt2"},
+					"その人ってその後、学芸員にでもなったのですか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00197",
+		linknext = "block_00199",
+		line = 1281,
+	},
+	block_00199 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=5},
+		{"fgact", ch="紗希", act="いいえ", lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00259", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いいや、彼は今は画家をしているよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00198",
+		linknext = "block_00200",
+		line = 1287,
+	},
+	block_00200 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00603", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「画家かぁ。画家だと良く分からないんですよねぇ。",
+					{"rt2"},
+					"名前とか聞いても分からないでしょうねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00199",
+		linknext = "block_00201",
+		line = 1291,
+	},
+	block_00201 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0003", head="sak_z1a", lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00260", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうかもしれないな。",
+					{"rt2"},
+					"草薙健一郎なんて、静流は知らないだろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00200",
+		linknext = "block_00202",
+		line = 1298,
+	},
+	block_00202 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"またにっこりとおばさんが笑った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00201",
+		linknext = "block_00203",
+		line = 1301,
+	},
+	block_00203 = {
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg050a", path=":bg/", sync=0},
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0009", head="shi_z1a", x=345, lv=4, id=6, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0003", head="sak_z1a", x=-345, lv=4, id=5, sync=0},
+		{"extrans", time=500},
+		{"fgact", ch="静流", act="おじぎ", lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00604", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「くぅーぁぁああ。そうきましたかぁ。",
+					{"rt2"},
+					"草薙健一郎って、絵は超絶技巧的に上手いわ、真贋を見極める眼も持ってるわ、",
+					{"rt2"},
+					"本当にすごい人ですねぇ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00202",
+		linknext = "block_00204",
+		line = 1317,
+	},
+	block_00204 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00261", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まぁ、そういう事で、その記事にはなんの価値もないよ。",
+					{"rt2"},
+					"約束通り、好きな陶磁器を持っていくがいいさ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00203",
+		linknext = "block_00205",
+		line = 1323,
+	},
+	block_00205 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0010", head="shi_z1a", x=345, lv=4, id=6},
+		{"bgm", stop=1, time=3000},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00605", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00204",
+		linknext = "block_00206",
+		line = 1329,
+	},
+	block_00206 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00262", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「どうした？　考え込んで」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00205",
+		linknext = "block_00207",
+		line = 1334,
+	},
+	block_00207 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0005", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00606", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「やっぱり、この記事と和帳をください！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00206",
+		linknext = "block_00208",
+		line = 1339,
+	},
+	block_00208 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0006", head="sak_z1a", x=-345, lv=4, id=5},
+		{"bgm", file="bgm016", time=2000},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0004", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00263", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「はぁ！？　だからそれは偽記事でだな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00207",
+		linknext = "block_00209",
+		line = 1348,
+	},
+	block_00209 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00607", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「分かってますよ。ただ、今の私には必要なものなんです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00208",
+		linknext = "block_00210",
+		line = 1353,
+	},
+	block_00210 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00264", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ぬぅ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00209",
+		linknext = "block_00211",
+		line = 1358,
+	},
+	block_00211 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんが苦い顔をしている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00210",
+		linknext = "block_00212",
+		line = 1361,
+	},
+	block_00212 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00265", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「こんなものが必要なんて、あまり碌な事を考えて無いだろう。静流」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00211",
+		linknext = "block_00213",
+		line = 1366,
+	},
+	block_00213 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00608", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そうかもしれません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00212",
+		linknext = "block_00214",
+		line = 1371,
+	},
+	block_00214 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0005", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00266", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そんな事をするのを私が許すと思うか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00213",
+		linknext = "block_00215",
+		line = 1376,
+	},
+	block_00215 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0002", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00609", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「たぶん。おばさんなら許してくれると思ってます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00214",
+		linknext = "block_00216",
+		line = 1381,
+	},
+	block_00216 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00267", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いやいや、これを使うという事は、お前は誰かを騙そうとしているのだろう？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00215",
+		linknext = "block_00217",
+		line = 1386,
+	},
+	block_00217 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1b0000", face="b0008", head="shi_z1b", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00610", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00216",
+		linknext = "block_00218",
+		line = 1391,
+	},
+	block_00218 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0005", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00268", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だったら、ダメだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00217",
+		linknext = "block_00219",
+		line = 1396,
+	},
+	block_00219 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0005", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00611", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「この記事と和帳だけでいいんです。カササギの油絵も浮世絵もいりません。",
+					{"rt2"},
+					"これは、私自身がやってみたい事なんです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00218",
+		linknext = "block_00220",
+		line = 1402,
+	},
+	block_00220 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0005", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00269", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なんのために？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00219",
+		linknext = "block_00221",
+		line = 1407,
+	},
+	block_00221 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+			},
+			vl02 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00612", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「中村家と鳥谷家の関係の改善。とまではいいませんが、ですが、ある程度の和解をしたいのです」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00220",
+		linknext = "block_00222",
+		line = 1414,
+	},
+	block_00222 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00270", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00221",
+		linknext = "block_00223",
+		line = 1419,
+	},
+	block_00223 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんはポケットからたばこを取り出し、それをくわえる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00222",
+		linknext = "block_00224",
+		line = 1431,
+	},
+	block_00224 = {
+		{"msgoff"},
+		{"se", id=1, file="se0007"},
+		{"ex", time=2000, func="wait"},
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00271", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ふぅ……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00223",
+		linknext = "block_00225",
+		line = 1441,
+	},
+	block_00225 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00272", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「つまり、麗華との件か？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00224",
+		linknext = "block_00226",
+		line = 1446,
+	},
+	block_00226 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0005", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00613", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00225",
+		linknext = "block_00227",
+		line = 1451,
+	},
+	block_00227 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00273", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00226",
+		linknext = "block_00228",
+		line = 1456,
+	},
+	block_00228 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんは片手であたまをかきむしる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00227",
+		linknext = "block_00229",
+		line = 1459,
+	},
+	block_00229 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"あまり見た事がない光景だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00228",
+		linknext = "block_00230",
+		line = 1462,
+	},
+	block_00230 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0005", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00274", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私は反対だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00229",
+		linknext = "block_00231",
+		line = 1467,
+	},
+	block_00231 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00614", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00230",
+		linknext = "block_00232",
+		line = 1472,
+	},
+	block_00232 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0004", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00275", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「お前が何をしようとしているか、だいたい見当はつく。",
+					{"rt2"},
+					"もしそれがあたっているのなら、犯罪行為だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00231",
+		linknext = "block_00233",
+		line = 1478,
+	},
+	block_00233 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00615", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そうかもしれません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00232",
+		linknext = "block_00234",
+		line = 1483,
+	},
+	block_00234 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0005", head="sak_z1b", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00276", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だから私は反対だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00233",
+		linknext = "block_00235",
+		line = 1488,
+	},
+	block_00235 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0005", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00616", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「分かってます」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00234",
+		linknext = "block_00236",
+		line = 1494,
+	},
+	block_00236 = {
+		{"msgoff"},
+		{"bg", y=200, speed=130000, file="zbg050a", path=":bg/", x2=960, y2=200, x=-960, ax=1920, ay=1080, bx=-960, by=-540},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"おばさんは頭をかきむしりながら後ろを向いた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00235",
+		linknext = "block_00237",
+		line = 1507,
+	},
+	block_00237 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00277", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「……反対だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00236",
+		linknext = "block_00238",
+		line = 1510,
+	},
+	block_00238 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00278", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だが……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00237",
+		linknext = "block_00239",
+		line = 1513,
+	},
+	block_00239 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00279", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「お前を止める権利は私にはない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00238",
+		linknext = "block_00240",
+		line = 1516,
+	},
+	block_00240 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00280", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「こういう事態になったのは私の責任だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00239",
+		linknext = "block_00241",
+		line = 1519,
+	},
+	block_00241 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00281", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「静流と麗華の仲を引き裂いたのも私だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00240",
+		linknext = "block_00242",
+		line = 1522,
+	},
+	block_00242 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"本当は、麗華と仲直りしたいとかあんまり無いんだけどねぇ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00241",
+		linknext = "block_00243",
+		line = 1525,
+	},
+	block_00243 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"真琴と約束したなんて言えないよね。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00242",
+		linknext = "block_00244",
+		line = 1528,
+	},
+	block_00244 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"圭を取り戻すための布石だなんて……。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00243",
+		linknext = "block_00245",
+		line = 1531,
+	},
+	block_00245 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00617", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そう思うのならゆるしてください」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00244",
+		linknext = "block_00246",
+		line = 1534,
+	},
+	block_00246 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00282", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00245",
+		linknext = "block_00247",
+		line = 1537,
+	},
+	block_00247 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg050a", path=":bg/", sync=0},
+		{"fg", ch="静流", size="z1", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6, sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", x=-345, lv=4, id=5, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00283", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「何度も言う。私に止める権利はない。",
+					{"rt2"},
+					"欲しいのなら持っていくがいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00246",
+		linknext = "block_00248",
+		line = 1549,
+	},
+	block_00248 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0003", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00618", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「ありがとうございます。それと――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00247",
+		linknext = "block_00249",
+		line = 1555,
+	},
+	block_00249 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00284", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「休学届だろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00248",
+		linknext = "block_00250",
+		line = 1560,
+	},
+	block_00250 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00619", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「あ、はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00249",
+		linknext = "block_00251",
+		line = 1565,
+	},
+	block_00251 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0005", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00285", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それは出来ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00250",
+		linknext = "block_00252",
+		line = 1570,
+	},
+	block_00252 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00620", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「そりゃ困ります！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00251",
+		linknext = "block_00253",
+		line = 1575,
+	},
+	block_00253 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00286", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「もう少し待て、もう少し待てば夏休みになる。",
+					{"rt2"},
+					"その期間をつかえば良いではないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00252",
+		linknext = "block_00254",
+		line = 1582,
+	},
+	block_00254 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00621", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「夏休みですかぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00253",
+		linknext = "block_00255",
+		line = 1587,
+	},
+	block_00255 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"夏休みですべて終わらせる……結構難儀だなぁ。",
+					{"rt2"},
+					"うーん。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00254",
+		linknext = "block_00256",
+		line = 1591,
+	},
+	block_00256 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0009", head="shi_z1a", x=345, lv=4, id=6},
+		{"fgact", ch="静流", act="おじぎ", lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00622", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「少し長い夏休みになると思いますけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00255",
+		linknext = "block_00257",
+		line = 1597,
+	},
+	block_00257 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0004", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00287", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00256",
+		linknext = "block_00258",
+		line = 1602,
+	},
+	block_00258 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"私の言っていることがわかったのであろう。",
+					{"rt2"},
+					"おばさんはかなり渋い顔をする。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00257",
+		linknext = "block_00259",
+		line = 1606,
+	},
+	block_00259 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0005", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00288", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「中退はさせない。",
+					{"rt2"},
+					"夏休みがどれだけ長くなるか知らんが、必ず帰って来い」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00258",
+		linknext = "block_00260",
+		line = 1612,
+	},
+	block_00260 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0002", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00623", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「はい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00259",
+		linknext = "block_00261",
+		line = 1617,
+	},
+	block_00261 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00289", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そもそも、金はあるのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00260",
+		linknext = "block_00262",
+		line = 1622,
+	},
+	block_00262 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0010", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00624", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「えっと微妙に……バイトしたお金があるといえばある感じでしょうか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00261",
+		linknext = "block_00263",
+		line = 1627,
+	},
+	block_00263 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00290", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ほら、この壺……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00262",
+		linknext = "block_00264",
+		line = 1632,
+	},
+	block_00264 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0007", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うとおばさんは五十万円の壺を私に手渡す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00263",
+		linknext = "block_00265",
+		line = 1637,
+	},
+	block_00265 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00291", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「売り方次第では、値を上げられる。",
+					{"rt2"},
+					"そういうものも覚えておいて損はないだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00264",
+		linknext = "block_00266",
+		line = 1644,
+	},
+	block_00266 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0008", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_shi_00625", ch="shi"},
+			},
+			ja = {
+				{
+					name = {"静流"},
+					"「でも、これは」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00265",
+		linknext = "block_00267",
+		line = 1649,
+	},
+	block_00267 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00292", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「約束したであろう。お前はちゃんとその壺を選んだのだ。",
+					{"rt2"},
+					"受け取る権利がある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00266",
+		linknext = "block_00268",
+		line = 1655,
+	},
+	block_00268 = {
+		{"fg", ch="紗希", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", x=-345, lv=4, id=5},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_00293", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「それに、美術品の価値がどの様に創出されるのかを教えておきたい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00267",
+		linknext = "block_00269",
+		line = 1660,
+	},
+	block_00269 = {
+		{"fg", ch="静流", mode=3, path=":fg/shi/z1/", file="shi_z1a0000", face="a0001", head="shi_z1a", x=345, lv=4, id=6},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うと、少しだけうれしそうにおばさんが笑った。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00268",
+		linknext = "block_00270",
+		line = 1665,
+	},
+	block_00270 = {
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="01_03_5"},
+		{"text"},
+		linkback = "block_00269",
+		line = 1670,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

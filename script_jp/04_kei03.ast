@@ -1,0 +1,3519 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅳ章"},
+		{"msg", no=1},
+		{"bg", file="アイキャッチ04", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans"},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"bg", time=2000, file="black", path=":bg/"},
+		{"bgm", file="bgm136"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そんなとある日。",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 18,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"一枚の手紙を携えて、義母が離れにやってきた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 21,
+	},
+	block_00002 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg049c", path=":bg/", sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, resize=1, path=":fg/sak/z1/", file="sak_z1a0000", face="a0009", head="sak_z1a", lv=4, id=9, sync=0},
+		{"extrans"},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10716", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「親子なのに久しぶりというのも何だな。",
+					{"rt2"},
+					"この前、召使いに届けさせた雑誌は読んだか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 34,
+	},
+	block_00003 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10151", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ああ、読んだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 37,
+	},
+	block_00004 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10717", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「感想は？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 42,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10152", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「分からない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 45,
+	},
+	block_00006 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺の答えに、“当然か”と言わんばかりな態度で義母が答えた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 51,
+	},
+	block_00007 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10718", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「少々あいつの作品は難しすぎる部分があるからな。さすがの圭でもまだ分からないよな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 57,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10153", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そうじゃないんだ。",
+					{"rt2"},
+					"分からないってそういう事じゃない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 61,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10154", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あれからずっと考えているが、まったく分からないんだ。",
+					{"rt2"},
+					"どうやったらあんな作品を生み出せるのか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 67,
+	},
+	block_00010 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10155", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「次元が違う。それ以外に形容しようがない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 70,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10156", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「同じ絵画というものを描いている感覚がまったくないんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 73,
+	},
+	block_00012 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10157", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「何が足りないのか？",
+					{"rt2"},
+					"どのくらいの努力で埋められるものなのか？",
+					{"rt2"},
+					"それらすべてが分からない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 78,
+	},
+	block_00013 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10158", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「一生かけても分かる気がしないんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 81,
+	},
+	block_00014 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0011", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10719", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだろうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 86,
+	},
+	block_00015 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10159", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いや、それは直観的に分かる。",
+					{"rt2"},
+					"俺では、あの人の境地に到達出来ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 90,
+	},
+	block_00016 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0009", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0013", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10720", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ふぅ、何言っているんだか。お前は何歳だと思っているんだ？　まだまだ子供のくせに、何事にも背伸びしすぎなんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 97,
+	},
+	block_00017 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10160", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「年齢の問題じゃないんだ！",
+					{"rt2"},
+					"たぶん、魂の差なんだ。",
+					{"rt2"},
+					"そもそもが魂の濃度が違うから、決して届く事がない――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 102,
+	},
+	block_00018 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"義母はそんな俺を見て笑う。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 107,
+	},
+	block_00019 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はそれに腹を立てる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 110,
+	},
+	block_00020 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10161", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あんたに何が分かるんだ！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 113,
+	},
+	block_00021 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10721", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「さぁな。私は凡人だ。",
+					{"rt2"},
+					"草薙健一郎はもとより、圭よりも、もっともっと凡人だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 120,
+	},
+	block_00022 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10722", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そんな凡人が“何が分かるんだ！”と問われれば、素直に、私では分からないと言うよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 126,
+	},
+	block_00023 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10723", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だが、天才ならばどう答えるのだろうな？",
+					{"rt2"},
+					"圭の今の質問に対して？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 132,
+	},
+	block_00024 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10162", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「どういう意味だ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 135,
+	},
+	block_00025 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10724", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「草薙健一郎は圭の事をどう思っているだろうかという事だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 140,
+	},
+	block_00026 = {
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10163", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「っッッ！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 145,
+	},
+	block_00027 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は、あの天才に自分のつたない絵を見られた事を思い出し、恥ずかしくなった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 148,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"なんて薄っぺらなものを見せてしまったのだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 151,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"自分の技術を見せびらかすだけの様な幼稚な作品。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 154,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そこには、俺の自尊心だけが透けてみえる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 157,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だから、ただ恥ずかしかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 160,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10164", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「さぞかし滑稽だっただろうよ！　ちきしょう！！」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 163,
+	},
+	block_00033 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+		{"fgact", ch="紗希", act="おじぎ", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0007", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10725", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「はぁ、何を怒っているんだかなぁ。",
+					{"rt2"},
+					"圭は自己完結しすぎなんだよ。何でもかんでも思い込みが激しすぎる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 171,
+	},
+	block_00034 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は義母の言葉でさらに恥ずかしくなり、その場で癇癪をおこしそうになった。",
+					{"rt2"},
+					"その時に、義母は何も言わずに手紙を差し出した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 175,
+	},
+	block_00035 = {
+		{"fg", mode=-2, sync=0},
+		{"bg", y=0, zoom=50, time=150, file="zbg049c", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"fg", ch="紗希", size="z2", mode=3, resize=1, path=":fg/sak/z2/", file="sak_z2a0000", face="a0001", head="sak_z2a", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10165", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「手紙？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 185,
+	},
+	block_00036 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0002", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0003", head="sak_z2a", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10726", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、そうだ。お前が届かないと思った天才からの手紙だ。",
+					{"rt2"},
+					"さて、そこにはどんな事がかかれているだろうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 194,
+	},
+	block_00037 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0001", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"そう言うと義母は国際便で届いたばかりの封書を俺に手渡した。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 199,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10166", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「っ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 202,
+	},
+	block_00039 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg049c", path=":bg/", sync=0},
+		{"bg", lv=5, id=5, rule="cinema", file="cinema01", alpha=255, time=400, path=":sys/", vague=40, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺はその手紙を開くのが恐ろしかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 212,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、そんな俺を見て笑っている義母に対して、この手紙を開かない事は、さらに恥だと思えた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 215,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"手紙をただ広げるのにこんな勇気が必要なんて、",
+					{"rt2"},
+					"ただの手紙であるのに、",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 219,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"まるで崖から跳躍するかの様な恐怖だ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 222,
+	},
+	block_00043 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10167", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「くそっ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 225,
+	},
+	block_00044 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、そこには意外な文字が書かれていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 228,
+	},
+	block_00045 = {
+		{"bgm", vol=0, file="bgm136"},
+		{"quake", mode="mw"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10168", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「え！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 235,
+	},
+	block_00046 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10727", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「読み上げてくれないか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 238,
+	},
+	block_00047 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10169", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あ、ああ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 241,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は手紙を読み上げる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 244,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10170", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「俺の紹介状があれば門はくぐれる。",
+					{"rt2"},
+					"あとはあの頑固ジジィが認めるか、認めないか、だけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 248,
+	},
+	block_00050 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10171", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「恩田はいいやつだが、まだ幼い子を宮崎絵画学校に入れるかどうかの判断は出来ないだろう。かならず破戒先生が決める事になる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 251,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10172", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「破戒先生は俺の事を嫌ってはいるが、それでもその観察眼は確かだ。",
+					{"rt2"},
+					"間違いなく、あの人ならば俺と同じ結論に達すると思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 255,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10173", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「こいつは世界的な芸術家になる。",
+					{"rt2"},
+					"俺や破戒先生すら超えるかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 259,
+	},
+	block_00053 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10174", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「っッッ！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 262,
+	},
+	block_00054 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=0, zoom=50, file="zbg049c", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0003", head="sak_z2a", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺がその一行に驚いていると義母はニコニコと笑っていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 272,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10175", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「……百年に一人の天才かもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 275,
+	},
+	block_00056 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0001", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10176", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「いや、それは言い過ぎかもしれない。",
+					{"rt2"},
+					"俺もあの人も現役最強の天才だし」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 281,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10177", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ただ、そんな予感をさせる絵ではある。",
+					{"rt2"},
+					"天才の開花に早すぎるという事はない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 285,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10178", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「こいつと俺の息子ならば、あるいは、共に良きライバルになるかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 288,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10179", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「夢は多ければ、多いほどいい。",
+					{"rt2"},
+					"その種は多ければ、多いほどいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 292,
+	},
+	block_00060 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10180", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「その種を大地に蒔け」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 295,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10181", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「それはいつか、太陽の様な輝きをもって我々の前にあらわれるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 298,
+	},
+	block_00062 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10182", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そんなヤツに、俺の息子がどう挑むのか、今から楽しみでしょうがない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 301,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10183", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「これって――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 304,
+	},
+	block_00064 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10184", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「俺は認められたのか？",
+					{"rt2"},
+					"あの天才に？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00063",
+		linknext = "block_00065",
+		line = 310,
+	},
+	block_00065 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0003", head="sak_z2a", lv=5, id=9},
+		{"fgact", ch="紗希", act="うなづく", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10728", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああそうだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00064",
+		linknext = "block_00066",
+		line = 316,
+	},
+	block_00066 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10185", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「お、俺が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00065",
+		linknext = "block_00067",
+		line = 319,
+	},
+	block_00067 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg049c", path=":bg/", sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, resize=1, path=":fg/sak/z1/", file="sak_z1a0000", face="a0007", head="sak_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm120", vol=30, time=10000},
+		{"se", file="se0046", id=1},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は、その場で腰が砕けたようにへなへなと膝をついた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00066",
+		linknext = "block_00068",
+		line = 333,
+	},
+	block_00068 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0006", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10729", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ど、どうしたんだ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00067",
+		linknext = "block_00069",
+		line = 338,
+	},
+	block_00069 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10186", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あ、いや、ちょっと自分でも分からない……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00068",
+		linknext = "block_00070",
+		line = 341,
+	},
+	block_00070 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10187", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「なんか、驚きというか、なんというか――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00069",
+		linknext = "block_00071",
+		line = 346,
+	},
+	block_00071 = {
+		{"bgm", file="bgm120", vol=30},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10730", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「かもしれないな。あの宮崎絵画学校の門をくぐれるかもしれないのだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00070",
+		linknext = "block_00072",
+		line = 353,
+	},
+	block_00072 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10188", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「宮崎絵画学校って何？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00071",
+		linknext = "block_00073",
+		line = 356,
+	},
+	block_00073 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10731", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「宮崎破戒は知っているか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00072",
+		linknext = "block_00074",
+		line = 361,
+	},
+	block_00074 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10189", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そりゃもちろん、日本画壇の頂点に君臨する画家だ。",
+					{"rt2"},
+					"いくつか作品を見ているが、素晴らしい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00073",
+		linknext = "block_00075",
+		line = 365,
+	},
+	block_00075 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10190", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「俺はつい最近まで、日本ではこの人がダントツだと思っていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00074",
+		linknext = "block_00076",
+		line = 368,
+	},
+	block_00076 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10191", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「でも、世界は広いな。",
+					{"rt2"},
+					"ニューヨークで日本人がそれ以上の芸術作品を作り続けているのだから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00075",
+		linknext = "block_00077",
+		line = 372,
+	},
+	block_00077 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10732", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ほう、圭的には、宮崎破戒より草薙健一郎の方が上か？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00076",
+		linknext = "block_00078",
+		line = 377,
+	},
+	block_00078 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10192", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「宮崎破戒はたしかにすごいのだけど、草薙健一郎ほどには純粋な魂で芸術作品と向き合っているとは思えない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00077",
+		linknext = "block_00079",
+		line = 380,
+	},
+	block_00079 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10193", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「宮崎破戒の絵画は人々の目を喜ばせる事が出来るが、",
+					{"rt2"},
+					"草薙健一郎の絵画は人々の魂を喜ばせる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00078",
+		linknext = "block_00080",
+		line = 384,
+	},
+	block_00080 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10194", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「魂を喜ばせる作品なんて、もう絵画の世界ではとうに滅んでいると思ってた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00079",
+		linknext = "block_00081",
+		line = 387,
+	},
+	block_00081 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10733", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「破戒は目を、健一郎は魂をか。",
+					{"rt2"},
+					"そんな、大層な評価を草薙健一郎にしている人間など国内ではほとんどいないと思うけどな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00080",
+		linknext = "block_00082",
+		line = 393,
+	},
+	block_00082 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10195", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「たしかに、草薙健一郎の作品には、どこか胡散臭さがあるのもたしかだ。",
+					{"rt2"},
+					"だけど、この人は、この人だけは本物だと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00081",
+		linknext = "block_00083",
+		line = 397,
+	},
+	block_00083 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10734", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「その本物が、あの宮崎破戒が主催する宮崎絵画学校の推薦文を書いてくれたんだぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00082",
+		linknext = "block_00084",
+		line = 402,
+	},
+	block_00084 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10196", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「宮崎絵画学校って？　宮崎破戒の学校なのか！？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00083",
+		linknext = "block_00085",
+		line = 405,
+	},
+	block_00085 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=9},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10735", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、知る人ぞ知る名門中の名門だ。",
+					{"rt2"},
+					"世界に通用する、本物の天才だけ養成する機関。",
+					{"rt2"},
+					"破戒氏が、その理念によって作り上げた学校だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00084",
+		linknext = "block_00086",
+		line = 414,
+	},
+	block_00086 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10736", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「卒業生は名だたる芸術家ばかり。",
+					{"rt2"},
+					"逆に無名な人間をみつける方が難しい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00085",
+		linknext = "block_00087",
+		line = 420,
+	},
+	block_00087 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10197", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「この草薙健一郎も、もしかして在籍していたのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00086",
+		linknext = "block_00088",
+		line = 423,
+	},
+	block_00088 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10737", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、良く分かったね。",
+					{"rt2"},
+					"ちなみに、日本画壇の頂点である宮崎破戒先生と大げんかして破門された唯一の生徒だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00087",
+		linknext = "block_00089",
+		line = 430,
+	},
+	block_00089 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10738", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「後にも先にも、宮崎破戒と喧嘩した芸術家など彼ぐらいのものだろうね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00088",
+		linknext = "block_00090",
+		line = 435,
+	},
+	block_00090 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10198", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「にもかかわらず、推薦文を書いている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00089",
+		linknext = "block_00091",
+		line = 438,
+	},
+	block_00091 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10739", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうだな。そんなヤツの推薦文が、果たして役に立つのだろうか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00090",
+		linknext = "block_00092",
+		line = 445,
+	},
+	block_00092 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10199", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「でも、本人は自信ありげだけど？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00091",
+		linknext = "block_00093",
+		line = 448,
+	},
+	block_00093 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10740", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だって、芸術に関しては、あの男の言う事はだいたい実現するのだもの」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00092",
+		linknext = "block_00094",
+		line = 453,
+	},
+	block_00094 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10741", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「たぶん、ヤツの言う通りになるのだと思う。",
+					{"rt2"},
+					"昔から、あの男はそういうヤツだったからな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00093",
+		linknext = "block_00095",
+		line = 460,
+	},
+	block_00095 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10200", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「義母さんは、草薙健一郎と仲が良かったの？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00094",
+		linknext = "block_00096",
+		line = 463,
+	},
+	block_00096 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10742", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まぁまぁかな？　最後までよく分からんヤツだったけどな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00095",
+		linknext = "block_00097",
+		line = 469,
+	},
+	block_00097 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10201", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そうなんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00096",
+		linknext = "block_00098",
+		line = 472,
+	},
+	block_00098 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10743", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「あとは、圭が決めるだけだぞ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00097",
+		linknext = "block_00099",
+		line = 477,
+	},
+	block_00099 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10202", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「俺が？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00098",
+		linknext = "block_00100",
+		line = 480,
+	},
+	block_00100 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0005", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10744", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「中村の家の人間に文句は言わせない。",
+					{"rt2"},
+					"圭が決めればいい。この学校の門を叩くのか、叩かないのか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00099",
+		linknext = "block_00101",
+		line = 488,
+	},
+	block_00101 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10203", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「俺が――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00100",
+		linknext = "block_00102",
+		line = 491,
+	},
+	block_00102 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10745", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私は凡人だ。",
+					{"rt2"},
+					"その事を残念に思った事もあったが、今はそうでもない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00101",
+		linknext = "block_00103",
+		line = 498,
+	},
+	block_00103 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10746", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「天才は、天才故の苦悩を持つ。それは凡人には計り知れない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00102",
+		linknext = "block_00104",
+		line = 503,
+	},
+	block_00104 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10747", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「あの男は、どこまでもまっすぐで妥協のないヤツだ。",
+					{"rt2"},
+					"だから、どんな苦悩すらものとしない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00103",
+		linknext = "block_00105",
+		line = 510,
+	},
+	block_00105 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10748", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「学生時代にあいつは良く言っていたよ。",
+					{"rt2"},
+					"苦痛と快楽は同じものでしかない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00104",
+		linknext = "block_00106",
+		line = 516,
+	},
+	block_00106 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10749", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「苦悩も幸福も同じものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00105",
+		linknext = "block_00107",
+		line = 521,
+	},
+	block_00107 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0009", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10750", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ただ分量の差でしかない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00106",
+		linknext = "block_00108",
+		line = 526,
+	},
+	block_00108 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10751", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だから、芸術における苦悩とは、芸術における快楽と同等だと思え。",
+					{"rt2"},
+					"そうすれば、どんな苦痛も我慢できるだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00107",
+		linknext = "block_00109",
+		line = 532,
+	},
+	block_00109 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10752", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ただ、苦痛と快楽はただの差である事を、頭ではなく、身体で覚えるだけだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00108",
+		linknext = "block_00110",
+		line = 537,
+	},
+	block_00110 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10753", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうすれば、血によって絵画を描く事が出来る。",
+					{"rt2"},
+					"それが出来なければ、血によって絵画を描く事など出来ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00109",
+		linknext = "block_00111",
+		line = 543,
+	},
+	block_00111 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0008", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10754", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「まったく、こんな恐ろしげな事を、あいつは笑いながら言うのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00110",
+		linknext = "block_00112",
+		line = 548,
+	},
+	block_00112 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10755", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「血で絵画が描ければ、誰でもその道は開かれている。",
+					{"rt2"},
+					"ある意味で、明快で、簡単な事だ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00111",
+		linknext = "block_00113",
+		line = 555,
+	},
+	block_00113 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10756", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「お前もやってみればいい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00112",
+		linknext = "block_00114",
+		line = 560,
+	},
+	block_00114 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0008", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10757", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そんなもの、簡単に出来るヤツがいてたまるか――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00113",
+		linknext = "block_00115",
+		line = 565,
+	},
+	block_00115 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10758", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私は、あいつに呆れもしたが、また、あいつとは違う事も発見した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00114",
+		linknext = "block_00116",
+		line = 570,
+	},
+	block_00116 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0010", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10759", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私は、苦痛を快楽に変える事も出来ない。",
+					{"rt2"},
+					"苦悩を幸福に変える事も出来ない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00115",
+		linknext = "block_00117",
+		line = 576,
+	},
+	block_00117 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0010", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10760", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だが、できる限りの苦痛を取り去り、苦悩を和らげる事なら出来るかもしれない。",
+					{"rt2"},
+					"そう私は考えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00116",
+		linknext = "block_00118",
+		line = 582,
+	},
+	block_00118 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10761", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私の学科で早々に教師を目指す人間なんてあまりいないのだけどな。",
+					{"rt2"},
+					"私は自分の才能に見切りを付けて教師を目指した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00117",
+		linknext = "block_00119",
+		line = 589,
+	},
+	block_00119 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10762", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そして、今に至る」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00118",
+		linknext = "block_00120",
+		line = 594,
+	},
+	block_00120 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10763", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「私は、私の生き方に、今のところは後悔はしていない。",
+					{"rt2"},
+					"芸術家にならないという選択肢はかぎりなく正しいものだと思っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00119",
+		linknext = "block_00121",
+		line = 600,
+	},
+	block_00121 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", y=130, file="zbg049c", path=":bg/", ax=1920, ay=1080, bx=-960, by=-540, sync=0},
+		{"fg", ch="紗希", size="z2", mode=3, resize=1, path=":fg/sak/z2/", file="sak_z2a0000", face="a0001", head="sak_z2a", lv=5, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10764", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「だから、圭」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00120",
+		linknext = "block_00122",
+		line = 611,
+	},
+	block_00122 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0005", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10765", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「才能があるといっても、その先は、決して楽なものではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00121",
+		linknext = "block_00123",
+		line = 616,
+	},
+	block_00123 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0008", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10766", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「否。",
+					{"rt2"},
+					"才能故に、苦しみ、もがき、枯れていった人間を何人も見ている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00122",
+		linknext = "block_00124",
+		line = 622,
+	},
+	block_00124 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0010", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10767", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「芸術への道は過酷だ。",
+					{"rt2"},
+					"憧れるのは簡単だが、その道を進む事は苦悩の連続でしかない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00123",
+		linknext = "block_00125",
+		line = 628,
+	},
+	block_00125 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0005", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10768", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「宮崎絵画学校の門をくぐるという意味は、もしかしたら、お前にとって、とてつもない苦悩の道を進ませる事になるかもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00124",
+		linknext = "block_00126",
+		line = 633,
+	},
+	block_00126 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0010", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10769", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「芸術とはそういうものだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00125",
+		linknext = "block_00127",
+		line = 638,
+	},
+	block_00127 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10204", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「芸術への道か」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00126",
+		linknext = "block_00128",
+		line = 641,
+	},
+	block_00128 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10205", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「たしかに、その道は過酷かもしれない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00127",
+		linknext = "block_00129",
+		line = 646,
+	},
+	block_00129 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10206", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「けど、俺はさ。",
+					{"rt2"},
+					"ずっと思ってた事があった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00128",
+		linknext = "block_00130",
+		line = 650,
+	},
+	block_00130 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10207", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「俺は俺がどこから来たか知らない。",
+					{"rt2"},
+					"そして俺はどこに行くべきかも知らない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00129",
+		linknext = "block_00131",
+		line = 654,
+	},
+	block_00131 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10208", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「だとしたら――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00130",
+		linknext = "block_00132",
+		line = 657,
+	},
+	block_00132 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10209", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「Where does humanity come from？",
+					{"rt2"},
+					"Where is it going to？",
+					{"rt2"},
+					"How does humanity proceed？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00131",
+		linknext = "block_00133",
+		line = 662,
+	},
+	block_00133 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0002", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0001", head="sak_z2a", lv=5, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10770", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「圭は相変わらず賢いな。その年齢で英文とはな、弓張学園の日曜学校で習ったのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00132",
+		linknext = "block_00134",
+		line = 668,
+	},
+	block_00134 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10210", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ああ、俺はキリスト教というものに対して、あまり良い印象が無かったのだけど、実際に教理問答というヤツを聞くといろいろと考えさせられる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00133",
+		linknext = "block_00135",
+		line = 672,
+	},
+	block_00135 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10211", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「それに、これはあのゴーギャンの名画を生んだ言葉でもある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00134",
+		linknext = "block_00136",
+		line = 677,
+	},
+	block_00136 = {
+		{"fg", ch="紗希", size="z2", mode=3, path=":fg/sak/z2/", file="sak_z2a0000", face="a0002", head="sak_z2a", lv=5, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10771", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「さすがに英文では習わなかっただろ？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00135",
+		linknext = "block_00137",
+		line = 682,
+	},
+	block_00137 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10212", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ああ、もちろん日本語で教わったよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00136",
+		linknext = "block_00138",
+		line = 685,
+	},
+	block_00138 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10213", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「人はどこから来たのか？",
+					{"rt2"},
+					"どこへ行こうとするのか？",
+					{"rt2"},
+					"人間はどうやって進歩していくのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00137",
+		linknext = "block_00139",
+		line = 690,
+	},
+	block_00139 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10214", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「俺がどこへ行こうとするかは、どうやってその先を進むかによって決まる」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00138",
+		linknext = "block_00140",
+		line = 693,
+	},
+	block_00140 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10215", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「だから――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00139",
+		linknext = "block_00141",
+		line = 696,
+	},
+	block_00141 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg049c", path=":bg/", sync=0},
+		{"fg", ch="紗希", size="z1", mode=3, resize=1, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0002", head="sak_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10772", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、任せておけ。お母さんはな、こういう交渉ごとが得意なんだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00140",
+		linknext = "block_00142",
+		line = 708,
+	},
+	block_00142 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10216", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「交渉なんてしなくていいよ。",
+					{"rt2"},
+					"俺に才能がないのなら、それでいい。",
+					{"rt2"},
+					"ただ、草薙健一郎が“試せ”と言うのであれば、是非挑戦したい」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00141",
+		linknext = "block_00143",
+		line = 713,
+	},
+	block_00143 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0003", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10773", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なるほど、圭らしいな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00142",
+		linknext = "block_00144",
+		line = 718,
+	},
+	block_00144 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10217", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「あと、少し気になったのだけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00143",
+		linknext = "block_00145",
+		line = 721,
+	},
+	block_00145 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0001", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10774", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「なんだい？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00144",
+		linknext = "block_00146",
+		line = 726,
+	},
+	block_00146 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10218", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ここにある。“こいつと俺の息子ならば、あるいは、共に良きライバルになるかもしれない”って、草薙健一郎には息子がいるのか？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00145",
+		linknext = "block_00147",
+		line = 729,
+	},
+	block_00147 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1b0000", face="b0010", head="sak_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10775", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「いるみたいだが、私も詳しくは知らない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00146",
+		linknext = "block_00148",
+		line = 735,
+	},
+	block_00148 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10219", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「やはり、草薙健一郎の元で絵画を描いているのかな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00147",
+		linknext = "block_00149",
+		line = 738,
+	},
+	block_00149 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0001", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10776", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「そうかもしれないな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00148",
+		linknext = "block_00150",
+		line = 743,
+	},
+	block_00150 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10220", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「ニューヨークチェルシー、そこのガレージギャラリー。",
+					{"rt2"},
+					"鳴り響く、大音量の音楽」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00149",
+		linknext = "block_00151",
+		line = 747,
+	},
+	block_00151 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10221", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「その中で生み出される芸術達……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00150",
+		linknext = "block_00152",
+		line = 750,
+	},
+	block_00152 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10222", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「そんな環境で育ったヤツなら、結構才能があるヤツなのかもしれないな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00151",
+		linknext = "block_00153",
+		line = 753,
+	},
+	block_00153 = {
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0002", head="sak_z1a", lv=4, id=9},
+		{"fgact", ch="紗希", act="うなづく", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10777", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「ああ、圭のライバルとなるぐらいだからな。",
+					{"rt2"},
+					"相当な腕だと思うよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00152",
+		linknext = "block_00154",
+		line = 760,
+	},
+	block_00154 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10223", ch="kei"},
+			},
+			ja = {
+				{
+					name = {"圭"},
+					"「とは言っても、同世代で負ける気なんてしないけど」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00153",
+		linknext = "block_00155",
+		line = 763,
+	},
+	block_00155 = {
+		{"bgm", stop=1, time=4000},
+		{"fg", ch="紗希", size="z1", mode=3, path=":fg/sak/z1/", file="sak_z1a0000", face="a0003", head="sak_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_sak_10778", ch="sak"},
+			},
+			ja = {
+				{
+					name = {"紗希"},
+					"「たしかに、圭ほどの絵を描く子供なんて想像も出来ないからな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00154",
+		linknext = "block_00156",
+		line = 770,
+	},
+	block_00156 = {
+		{"bgm", stop=1},
+		{"bg", file="black", path=":bg/"},
+		{"ex", time=500, func="wait"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10224", ch="kei"},
+			},
+			ja = {
+				{
+					"――知らないとは幸せなものだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00155",
+		linknext = "block_00157",
+		line = 779,
+	},
+	block_00157 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10225", ch="kei"},
+			},
+			ja = {
+				{
+					"この頃、俺は「草薙健一郎には息子がいる」。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00156",
+		linknext = "block_00158",
+		line = 784,
+	},
+	block_00158 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10226", ch="kei"},
+			},
+			ja = {
+				{
+					"「父親に教わる、絵描き志望の子供」",
+					{"rt2"},
+					"ぐらいにしか考えてなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00157",
+		linknext = "block_00159",
+		line = 790,
+	},
+	block_00159 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10227", ch="kei"},
+			},
+			ja = {
+				{
+					"二年後、日本中を震撼させる名画『火水』を描き、一躍時代の寵児となる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00158",
+		linknext = "block_00160",
+		line = 795,
+	},
+	block_00160 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10228", ch="kei"},
+			},
+			ja = {
+				{
+					"草薙健一郎すらしのぐと言われるほどの、精密な筆捌きと、老成した技術と、圧倒的な色彩感覚を持ち、あらゆる人間の想像を超える作品を生み出す。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00159",
+		linknext = "block_00161",
+		line = 800,
+	},
+	block_00161 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10229", ch="kei"},
+			},
+			ja = {
+				{
+					"美が具現化したかの様な存在。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00160",
+		linknext = "block_00162",
+		line = 805,
+	},
+	block_00162 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10230", ch="kei"},
+			},
+			ja = {
+				{
+					"多くの芸術家達が、ヤツが目の前に立った時、化け物を見てしまったかの様に目をそらした。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00161",
+		linknext = "block_00163",
+		line = 810,
+	},
+	block_00163 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10231", ch="kei"},
+			},
+			ja = {
+				{
+					"ヤツの作品の前では、すべてを忘れる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00162",
+		linknext = "block_00164",
+		line = 815,
+	},
+	block_00164 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10232", ch="kei"},
+			},
+			ja = {
+				{
+					"技術も、色彩も、デッサンも。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00163",
+		linknext = "block_00165",
+		line = 820,
+	},
+	block_00165 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10233", ch="kei"},
+			},
+			ja = {
+				{
+					"そして魂だけが震える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00164",
+		linknext = "block_00166",
+		line = 825,
+	},
+	block_00166 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10234", ch="kei"},
+			},
+			ja = {
+				{
+					"魂が揺さぶられる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00165",
+		linknext = "block_00167",
+		line = 830,
+	},
+	block_00167 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10235", ch="kei"},
+			},
+			ja = {
+				{
+					"それは、恐れなのか、喜びなのか、さえ分からない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00166",
+		linknext = "block_00168",
+		line = 835,
+	},
+	block_00168 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10236", ch="kei"},
+			},
+			ja = {
+				{
+					"ヤツの作品を目にした多くの人間が、ただ最初は、当惑し、次に狼狽する。",
+					{"rt2"},
+					"そして、最後は感動という形で屈服させられる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00167",
+		linknext = "block_00169",
+		line = 841,
+	},
+	block_00169 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10237", ch="kei"},
+			},
+			ja = {
+				{
+					"だが、俺は屈服しなかった。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00168",
+		linknext = "block_00170",
+		line = 846,
+	},
+	block_00170 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10238", ch="kei"},
+			},
+			ja = {
+				{
+					"ヤツの作品に魂を揺さぶられ、倒されそうになったが、その場で踏ん張り続けた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00169",
+		linknext = "block_00171",
+		line = 851,
+	},
+	block_00171 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10239", ch="kei"},
+			},
+			ja = {
+				{
+					"なぜならば、俺はあいつに届きたかったから、",
+					{"rt2"},
+					"追いかけ続けたのだ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00170",
+		linknext = "block_00172",
+		line = 857,
+	},
+	block_00172 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10240", ch="kei"},
+			},
+			ja = {
+				{
+					"ただ、ひたすら、あいつの背中を俺は追いかけた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00171",
+		linknext = "block_00173",
+		line = 862,
+	},
+	block_00173 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10241", ch="kei"},
+			},
+			ja = {
+				{
+					"あいつが立っている地点から見える風景。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00172",
+		linknext = "block_00174",
+		line = 867,
+	},
+	block_00174 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10242", ch="kei"},
+			},
+			ja = {
+				{
+					"それを俺も見てみたかった、",
+					{"rt2"},
+					"だから俺は追いかけた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00173",
+		linknext = "block_00175",
+		line = 873,
+	},
+	block_00175 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10243", ch="kei"},
+			},
+			ja = {
+				{
+					"――だけれども、この頃はそんな事すら知らずに、まだのんきに「絵画」というものを考えていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00174",
+		linknext = "block_00176",
+		line = 878,
+	},
+	block_00176 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10244", ch="kei"},
+			},
+			ja = {
+				{
+					"草薙健一郎の言葉。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00175",
+		linknext = "block_00177",
+		line = 883,
+	},
+	block_00177 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10245", ch="kei"},
+			},
+			ja = {
+				{
+					"苦悩も幸福も同じもの。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00176",
+		linknext = "block_00178",
+		line = 888,
+	},
+	block_00178 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10246", ch="kei"},
+			},
+			ja = {
+				{
+					"ただ分量の差でしかない。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00177",
+		linknext = "block_00179",
+		line = 893,
+	},
+	block_00179 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10247", ch="kei"},
+			},
+			ja = {
+				{
+					"だから、芸術における苦悩とは、芸術における快楽と同等だと思え。",
+					{"rt2"},
+					"さすれば、精神はどんな苦痛すらも受け入れられるだろう。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00178",
+		linknext = "block_00180",
+		line = 899,
+	},
+	block_00180 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10248", ch="kei"},
+			},
+			ja = {
+				{
+					"その先に、血によって描かれた絵画は存在する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00179",
+		linknext = "block_00181",
+		line = 904,
+	},
+	block_00181 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_kei_10249", ch="kei"},
+			},
+			ja = {
+				{
+					"その事を痛いほど思い知る。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00180",
+		linknext = "block_00182",
+		line = 909,
+	},
+	block_00182 = {
+		{"bgm", stop=1, time=3000},
+		{"se", stop=1, id=-1, time=3000},
+		{"vostop", stop=1, time=3000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=3000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="04_kei04"},
+		{"text"},
+		linkback = "block_00181",
+		line = 913,
+	},
+	label = {
+		top = { block="block_00000", label=1 },
+	},
+}

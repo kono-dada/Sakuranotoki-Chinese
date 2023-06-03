@@ -1,0 +1,1158 @@
+astver = 2.0
+ast = {
+	block_00000 = {
+		{"savetitle", text="第Ⅴ章"},
+		{"msg", no=1},
+		{"bg", file="アイキャッチ05", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans"},
+		{"ex", time=5000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", label="flagon", cond="g.countdown6==1"},
+		{"skipstop"},
+		{"autoplay", speed=500, wait=500, auto=500},
+		{"bg", file="カウントダウン06_1", id=1, lv=5, path=":cg/"},
+		{"ex", time=1500, func="wait"},
+		{"se", id=1, file="se0147"},
+		{"bg", file="カウントダウン06_2", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=500},
+		{"ex", time=3000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"autoplay", mode="stop"},
+		{"excall", label="join"},
+		{"bg", file="カウントダウン06_1", id=1, lv=5, path=":cg/"},
+		{"ex", time=1500, func="wait"},
+		{"se", id=1, file="se0147"},
+		{"bg", file="カウントダウン06_2", id=1, lv=5, path=":cg/", sync=0},
+		{"extrans", time=500},
+		{"ex", time=3000, func="wait"},
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"eval", exp="g.countdown6=1"},
+		{"bg", file="black", path=":bg/"},
+		{"bgm", file="bgm149"},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13954", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「宮崎絵画学校に居を構えて正解でしたね」",
+					{"rt2"},
+				},
+			},
+		},
+		linknext = "block_00001",
+		line = 60,
+	},
+	block_00001 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、助かっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00000",
+		linknext = "block_00002",
+		line = 63,
+	},
+	block_00002 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10701", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「しかし……外はすごい事になっているなぁ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00001",
+		linknext = "block_00003",
+		line = 66,
+	},
+	block_00003 = {
+		{"bg", file="ev_etc_01_03", path=":ev/ev_etc_01/", set="ev_etc_01"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"上空からはヘリコプターの音が聞こえる。いつもならば、城壁の様に煉瓦で囲まれた恩田邸の屋敷はそのほとんどが外の世界と切り離された様な静寂の中にある。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00002",
+		linknext = "block_00004",
+		line = 72,
+	},
+	block_00004 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"だが、その様な庭園という空間すらも揺らす様に外の喧噪が屋敷まで聞こえる。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00003",
+		linknext = "block_00005",
+		line = 75,
+	},
+	block_00005 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"藍がテレビをつけると、画面からまさに俺達がいる恩田邸および宮崎絵画学校が",
+					{"rt2"},
+					"映し出されている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00004",
+		linknext = "block_00006",
+		line = 79,
+	},
+	block_00006 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_aix_10702", ch="aix"},
+			},
+			ja = {
+				{
+					name = {"藍"},
+					"「すごい数の報道陣だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00005",
+		linknext = "block_00007",
+		line = 82,
+	},
+	block_00007 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「ああ、あれだけ衝撃的な事があれば、報道陣も動くだろうな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00006",
+		linknext = "block_00008",
+		line = 87,
+	},
+	block_00008 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「アメリカ在住であると思われていたアリアが日本人で、さらに御桜稟と同じ学園に通っていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00007",
+		linknext = "block_00009",
+		line = 90,
+	},
+	block_00009 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「さらに四十を過ぎていると信じられていた宮崎破戒の弟子が、実は年端もいかない少女であった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00008",
+		linknext = "block_00010",
+		line = 93,
+	},
+	block_00010 = {
+		{"msgoff"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg020i", path=":bg/", sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, resize=1, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13955", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「その様なもの、些細な事でしょう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00009",
+		linknext = "block_00011",
+		line = 103,
+	},
+	block_00011 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうだな。実際、それより衝撃的だったのは御桜稟のプラティヌ・エポラール",
+					{"rt2"},
+					"返上」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00010",
+		linknext = "block_00012",
+		line = 107,
+	},
+	block_00012 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0010", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13956", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「その理由が、草薙直哉と勝負をするためなのですから」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00011",
+		linknext = "block_00013",
+		line = 112,
+	},
+	block_00013 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0001", head="mis_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13957", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「世間が驚くのも無理はありません」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00012",
+		linknext = "block_00014",
+		line = 117,
+	},
+	block_00014 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「無名な一般人相手だからな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00013",
+		linknext = "block_00015",
+		line = 120,
+	},
+	block_00015 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0010", head="mis_z1b", lv=4, id=9},
+		{"text"},
+		delay = {
+			vl01 = {
+				{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0014", head="mis_z1b", lv=4, id=9},
+			},
+		},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13958", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「本当に無名な一般人ならば、ここまで騒ぎは大きくならないでしょう。",
+					{"rt2"},
+					"むしろ――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00014",
+		linknext = "block_00016",
+		line = 127,
+	},
+	block_00016 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10959", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「君だからこそ、世間は騒ぐのだよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00015",
+		linknext = "block_00017",
+		line = 137,
+	},
+	block_00017 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="放哉", size="z1", mode=3, resize=1, path=":fg/hos/z1/", file="hos_z1a0000", face="a0002", head="hos_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=400},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"鉛色に光る扉の前に恩田放哉が立っていた。",
+					{"rt2"},
+					"本来なら重厚な音を出す扉の音すらも、外の騒音でその開閉音はかき消されていた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00016",
+		linknext = "block_00018",
+		line = 146,
+	},
+	block_00018 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0004", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10960", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「若き日の君の傍若無人さ。そしてその後を追い続けた夏目圭の蛮勇」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00017",
+		linknext = "block_00019",
+		line = 151,
+	},
+	block_00019 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0011", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10961", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「その先にあった、ムーア公募展での結末」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00018",
+		linknext = "block_00020",
+		line = 156,
+	},
+	block_00020 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0001", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10962", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「そして、草薙健一郎の息子にして麒麟児であった草薙直哉」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00019",
+		linknext = "block_00021",
+		line = 161,
+	},
+	block_00021 = {
+		{"fg", ch="放哉", size="z1", mode=3, path=":fg/hos/z1/", file="hos_z1a0000", face="a0005", head="hos_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="man_hos_10963", ch="hos"},
+			},
+			ja = {
+				{
+					name = {"放哉"},
+					"「夏目圭のみならず、御桜稟、そして氷川里奈、それら規格外の天才もすべて君という渦を中心にして回っている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00020",
+		linknext = "block_00022",
+		line = 166,
+	},
+	block_00022 = {
+		{"bgm", stop=1, time=7000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「なんで俺を中心に動くんだか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00021",
+		linknext = "block_00023",
+		line = 171,
+	},
+	block_00023 = {
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13959", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「筆が濁りますよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00022",
+		linknext = "block_00024",
+		line = 174,
+	},
+	block_00024 = {
+		{"bgm", stop=1},
+		{"fg", time=300, mode=-2},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00023",
+		linknext = "block_00025",
+		line = 181,
+	},
+	block_00025 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は筆を止めた。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00024",
+		linknext = "block_00026",
+		line = 184,
+	},
+	block_00026 = {
+		{"fg", mode=-2, sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", lv=4, id=9, sync=0},
+		{"extrans", time=400},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13960", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「本心では分かっているのですよね」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00025",
+		linknext = "block_00027",
+		line = 192,
+	},
+	block_00027 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0004", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13961", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「なのに、決して、それを言葉として認めない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00026",
+		linknext = "block_00028",
+		line = 197,
+	},
+	block_00028 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「本心では分かっている、か」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00027",
+		linknext = "block_00029",
+		line = 200,
+	},
+	block_00029 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺は天井を仰ぐ。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00028",
+		linknext = "block_00030",
+		line = 205,
+	},
+	block_00030 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"重苦しい天井が半円形アーチによって支えられている。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00029",
+		linknext = "block_00031",
+		line = 208,
+	},
+	block_00031 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「はっきり言えば分からないさ。",
+					{"rt2"},
+					"何故、俺に対してあいつらがあんな事をしているのか」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00030",
+		linknext = "block_00032",
+		line = 214,
+	},
+	block_00032 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「けど、やはり予感はあった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00031",
+		linknext = "block_00033",
+		line = 217,
+	},
+	block_00033 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「このキャンバスに最初の筆を入れた瞬間から、たぶんこういう運命なのだろうと思った」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00032",
+		linknext = "block_00034",
+		line = 220,
+	},
+	block_00034 = {
+		{"bg", file="white", path=":bg/"},
+		{"ex", time=500, func="wait"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="稟と直哉が寝転ぶ", id=8, lv=8, path=":cg/", sync=0},
+		{"bg", file="reco", id=9, lv=9, path=":sys/", sync=0},
+		{"extrans"},
+		{"bgm", file="bgm153", vol=50, time=10000},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺が最後に御桜稟とあった時――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00033",
+		linknext = "block_00035",
+		line = 234,
+	},
+	block_00035 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺達は櫻の森の底から無限を見つめていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00034",
+		linknext = "block_00036",
+		line = 237,
+	},
+	block_00036 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「櫻の渦は青空に消えていった」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00035",
+		linknext = "block_00037",
+		line = 240,
+	},
+	block_00037 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そんな場所で、俺と稟はそれぞれが信じる美について話した」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00036",
+		linknext = "block_00038",
+		line = 245,
+	},
+	block_00038 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺達は同じ花を見て。",
+					{"rt2"},
+					"同じ空を見て。",
+					{"rt2"},
+					"同じ様に美を探求し」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00037",
+		linknext = "block_00039",
+		line = 250,
+	},
+	block_00039 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そして違えた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00038",
+		linknext = "block_00040",
+		line = 253,
+	},
+	block_00040 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それが、あいつなりの俺に対する優しさであると思っていた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00039",
+		linknext = "block_00041",
+		line = 256,
+	},
+	block_00041 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「だから、たぶん、俺はそれを見ないようにしたのだと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00040",
+		linknext = "block_00042",
+		line = 259,
+	},
+	block_00042 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それは、氷川も同じなのだろう」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00041",
+		linknext = "block_00043",
+		line = 262,
+	},
+	block_00043 = {
+		{"bg", file="white", path=":bg/"},
+		{"ex", time=500, func="wait"},
+		{"fg", mode=-2, sync=0},
+		{"bg", file="bg020i", path=":bg/", sync=0},
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0010", head="mis_z1b", lv=4, id=9, sync=0},
+		{"extrans", time=500},
+		{"bgm", file="bgm153", vol=50},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13962", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「たしかに、二人は草薙直哉に再び筆を取らせるために、",
+					{"rt2"},
+					"芸術の頂点まで登り詰めた」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00042",
+		linknext = "block_00044",
+		line = 277,
+	},
+	block_00044 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1b0800", face="b0014", head="mis_z1b", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13963", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「ですが、私は違います」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00043",
+		linknext = "block_00045",
+		line = 282,
+	},
+	block_00045 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13964", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「私は、私の師の意思を受け継ぐ者です」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00044",
+		linknext = "block_00046",
+		line = 287,
+	},
+	block_00046 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0004", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13965", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「だからこそ、私は、あなたが筆を取るのならば、その前に立ちはだからなければならない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00045",
+		linknext = "block_00047",
+		line = 292,
+	},
+	block_00047 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0014", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13966", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「師の偉業は、あなたによって乗り越えられるものではない」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00046",
+		linknext = "block_00048",
+		line = 297,
+	},
+	block_00048 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「心鈴くんの師の偉業は誰も超えられないよ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00047",
+		linknext = "block_00049",
+		line = 300,
+	},
+	block_00049 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それでも、ぼんやりと、ぼんやりとだけど……やっと俺にも見えてきたんだ」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00048",
+		linknext = "block_00050",
+		line = 303,
+	},
+	block_00050 = {
+		{"fg", ch="心鈴", size="z1", mode=3, path=":fg/mis/z1/", file="mis_z1a0810", face="a0001", head="mis_z1a", lv=4, id=9},
+		{"text"},
+		text = {
+			vo = {
+				{"vo", file="fem_mis_13967", ch="mis"},
+			},
+			ja = {
+				{
+					name = {"心鈴"},
+					"「ぼんやりと見えてきた？」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00049",
+		linknext = "block_00051",
+		line = 308,
+	},
+	block_00051 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そうだよ。だからさ。本当は、稟だって氷川だって無理なんてしなくて良かったんだと思う……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00050",
+		linknext = "block_00052",
+		line = 311,
+	},
+	block_00052 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「いや、それも嘘だな」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00051",
+		linknext = "block_00053",
+		line = 320,
+	},
+	block_00053 = {
+		{"bgm", stop=1, time=30000},
+		{"bg", file="black", time=1000, id=9, lv=9, alpha=60, path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺の筆のブレは少しずつ無くなっていっている」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00052",
+		linknext = "block_00054",
+		line = 327,
+	},
+	block_00054 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「筆は正しくテンポを刻む」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00053",
+		linknext = "block_00055",
+		line = 330,
+	},
+	block_00055 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「奉仕の気持がなくなった先は」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00054",
+		linknext = "block_00056",
+		line = 333,
+	},
+	block_00056 = {
+		{"bg", file="black", time=1000, id=9, lv=9, alpha=100, path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「喜び過ぎず悲しみ過ぎず――",
+					{"rt2"},
+					"ただ自らに欠けているものを心得」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00055",
+		linknext = "block_00057",
+		line = 339,
+	},
+	block_00057 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「心からではなく、ただ実直なだけの響きを肌で捉える」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00056",
+		linknext = "block_00058",
+		line = 342,
+	},
+	block_00058 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「そういう筆が宿りつつある」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00057",
+		linknext = "block_00059",
+		line = 345,
+	},
+	block_00059 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「それはたぶん、あいつらの実直さと、奉仕と、そして正しい音拍のためだと思う」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00058",
+		linknext = "block_00060",
+		line = 348,
+	},
+	block_00060 = {
+		{"bg", file="black", time=1000, id=9, lv=9, alpha=120, path=":bg/"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「俺の筆はしょせん――いややはり――、だからこそ――」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00059",
+		linknext = "block_00061",
+		line = 353,
+	},
+	block_00061 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					name = {"直哉"},
+					"「……」",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00060",
+		linknext = "block_00062",
+		line = 356,
+	},
+	block_00062 = {
+		{"bgm", stop=1},
+		{"msgoff"},
+		{"bg", file="black", path=":bg/"},
+		{"ex", time=1000, func="wait"},
+		{"se", vol=10, time=5000, loop=1, id=1, file="se0136"},
+		{"text"},
+		text = {
+			ja = {
+				{
+					"俺の耳から喧噪が消える。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00061",
+		linknext = "block_00063",
+		line = 367,
+	},
+	block_00063 = {
+		{"text"},
+		text = {
+			ja = {
+				{
+					"筆が奏でる音拍だけが、鼓動と連弾する。",
+					{"rt2"},
+				},
+			},
+		},
+		linkback = "block_00062",
+		linknext = "block_00064",
+		line = 370,
+	},
+	block_00064 = {
+		{"bgm", stop=1, time=1000},
+		{"se", stop=1, id=-1, time=1000},
+		{"vostop", stop=1, time=1000},
+		{"ntclear"},
+		{"cgdel", id=-1},
+		{"bg", time=1000, file="black", path=":bg/"},
+		{"cacheclear"},
+		{"ex", time=1000, func="wait"},
+		{"excall", file="05_06_2"},
+		{"text"},
+		linkback = "block_00063",
+		line = 374,
+	},
+	label = {
+		flagon = { block="block_00000", label=33 },
+		join = { block="block_00000", label=47 },
+		top = { block="block_00000", label=1 },
+	},
+}
