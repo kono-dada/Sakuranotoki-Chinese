@@ -9,17 +9,19 @@
 
 点击右上方绿色“`code`”按钮，之后会出现“`download zip`”，点击即可下载压缩包。
 
+也可以直接下载release中的`script.zip`。
+
 ## 使用方法
 
-下载`script`文件夹后放置在游戏文件夹下。然后开始游戏即可。
+把`script`文件夹后放置在游戏文件夹下。然后开始游戏即可。
 
 ## 翻译方法
 
-使用GPT4网页版，在同一个session内发送15句一段的翻译请求，能有效保持上下文连贯性。
+使用GPT4网页版，在同一个session内发送15句一段的翻译请求，能有效保持上下文连贯性。翻译脚本已经开源到[VN-ChatGPT-Translator](https://github.com/kono-dada/VN-ChatGPT-Translator)
 
 ## 致谢
 
-感谢一位b站上认识的网友[蝉时月夜](https://space.bilibili.com/13732795)提供了3个GPT plus账号，使翻译速度提升**3倍**。这太舒服了。
+感谢一位b站上认识的网友[蝉时月夜](https://space.bilibili.com/13732795)提供了3个GPT plus账号，使翻译速度提升**3倍**。
 
 ## **如果你想对此翻译贡献自己的修改**：
 
