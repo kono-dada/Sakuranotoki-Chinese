@@ -8,7 +8,6 @@ new_script_folder = 'translated_local'
 # list all the files in the folder
 files = os.listdir(folder)
 
-
 names = {
     '美術教師': '美术教师', 
     '麗華': '丽华', 
@@ -37,6 +36,10 @@ names = {
     '優美': '优美',
     'トーマス': '托马斯',
     '司会者': '司会者',
+    '麗华': '丽华',
+    '鳥谷': '鸟谷',
+    '弓張': '弓张',
+
 }
 
 for file in files:
