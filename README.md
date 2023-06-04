@@ -13,9 +13,11 @@
 
 下载`script`文件夹后放置在游戏文件夹下。然后开始游戏即可。
 
+也可以下载release中的`script.zip`解压到游戏文件夹下，然后运行游戏。
+
 ## 翻译方法
 
-使用GPT4网页版，在同一个session内发送15句一段的翻译请求，能有效保持上下文连贯性。
+使用GPT4网页版，在同一个session内发送15句一段的翻译请求，能有效保持上下文连贯性。翻译脚本已经开源到[VN-ChatGPT-Translator](https://github.com/kono-dada/VN-ChatGPT-Translator)
 
 ## 致谢
 
