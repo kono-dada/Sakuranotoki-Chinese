@@ -56,7 +56,7 @@ for file in files:
             ripe = list(data[i].values())[0]
             for original_name, new_name in names.items():
                 ripe = ripe.replace(original_name, new_name)
-            origin_data[i]['message'] = ripe
+            origin_data[i]['message'] = ripe.replace('\r\n', '')
             if 'name' in origin_data[i].keys():
                 if origin_data[i]['name'] in names.keys():
                     origin_data[i]['name'] = names[origin_data[i]['name']]
