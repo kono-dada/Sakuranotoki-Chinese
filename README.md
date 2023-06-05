@@ -17,7 +17,7 @@
 
 也可以下载release中的`script.zip`解压到游戏文件夹下，然后运行游戏。
 
-code中的`script`文件夹永远是最新的，而release可能不是。
+由于翻译问题可能需要频繁的修改，因此code中的`script`文件夹永远是最新的，而release可能不是。所以建议还是下载code比较好。
 
 ## 翻译方法
 
