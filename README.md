@@ -35,7 +35,7 @@
 - `translated`文件夹以json格式储存了GPT4翻译后对话
 - `untranslated`文件夹以json格式储存了原文
 
-你可以通过运行`find_a_sentence.py`来查找某句话在哪个文件的哪一行。修改完成后，运行`.\to_ast.bat`即可生成新的ast脚本。然后直接pull request即可。
+你可以通过运行`find_a_sentence.py`来查找某句话在哪个文件的哪一行。**修改过后，请确保原文和译文有相同的行数。**修改完成后，运行`.\to_ast.bat`即可生成新的ast脚本。然后直接pull request即可。
 
 最后。希望全樱之刻玩家共同维护和完善这份汉化。
 
