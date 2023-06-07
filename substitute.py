@@ -3,7 +3,7 @@ import os
 
 
 translated_dir = 'translated'
-keywords = '卢利欧'
+keywords = '路里汝'
 substitution = '露莉莴'
 
 for file in os.listdir(translated_dir):
