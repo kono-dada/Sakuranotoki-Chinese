@@ -3,8 +3,8 @@ import os
 
 
 translated_dir = 'translated'
-keywords = '师傅'
-substitution = '师父'
+keywords = '卢利欧'
+substitution = '露莉莴'
 
 for file in os.listdir(translated_dir):
     with open(os.path.join(translated_dir, file), 'r', encoding='utf8') as f:
