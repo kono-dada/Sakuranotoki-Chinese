@@ -3,7 +3,7 @@ import os
 
 
 translated_dir = 'translated'
-keywords = '宫崎莫忆'
+keywords = '宮崎'
 nkeywords = []
 
 for file in os.listdir(translated_dir):
