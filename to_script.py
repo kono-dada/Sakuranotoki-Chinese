@@ -47,6 +47,7 @@ names = {
 
 }
 
+# chatgpt翻译时可能会出现繁体字，这里将繁体字转换为简体字。所以翻译后文本中的人名也需要替换。
 for file in files:
     file_path = folder + '\\' + file
     try:
