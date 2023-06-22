@@ -16,7 +16,7 @@
 
 ## 下载方法
 
-前往https://github.com/tsukishima1321/Sakuranotoki-Chinese/releases下载最新release
+前往 https://github.com/tsukishima1321/Sakuranotoki-Chinese/releases 下载最新release
 
 或者点击右上方绿色“`code`”按钮，之后会出现“`download zip`”，点击即可下载压缩包。
 
