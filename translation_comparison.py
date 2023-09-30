@@ -6,8 +6,8 @@ untranslated_folder = "untranslated"
 translated_file_list = os.listdir(translated_folder)
 untranslated_file_list = os.listdir(untranslated_folder)
 
-key_words = "贋作"
-except_words = '赝作'
+key_words = "線画での原版案"
+except_words = ''
 
 for i in untranslated_file_list:
     u_file_path = untranslated_folder + '\\' + i
