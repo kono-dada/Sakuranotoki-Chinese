@@ -6,7 +6,7 @@ untranslated_folder = "untranslated"
 translated_file_list = os.listdir(translated_folder)
 untranslated_file_list = os.listdir(untranslated_folder)
 
-key_words = "線画での原版案"
+key_words = "期間工"
 except_words = ''
 
 for i in untranslated_file_list:
@@ -18,7 +18,7 @@ for i in untranslated_file_list:
         translated_data = json.load(file)
     for j in range(len(untranslated_data)):
         line = list(translated_data[j].values())[0]
-        if(line.find(except_words) != -1):
+        if(line.find(except_words) != -1 and except_words != ''):
             continue
         line = list(untranslated_data[j].values())[0]
         if(line.find(key_words) != -1):
