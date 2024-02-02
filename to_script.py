@@ -84,9 +84,9 @@ unique_names = set()
 # chatgpt翻译时可能会出现繁体字，这里将繁体字转换为简体字。所以翻译后文本中的人名也需要替换。
 for file in translated_folder.iterdir():
     basename = file.name
-    file_path = translated_folder / file.name
+
     try:
-        with open(file_path, "r", encoding="utf-8") as f:
+        with open(file, "r", encoding="utf-8") as f:
             translated_datas = json.load(f)
 
         origin_file_path = origin_script_folder / basename
