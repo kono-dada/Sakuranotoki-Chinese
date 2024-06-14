@@ -40,13 +40,9 @@
 
 ## 使用方法
 
-把`script`文件夹后放置在游戏文件夹下（**推荐**）。然后开始游戏即可。
+把`script`和`sakuranotoki_l10n_cg`文件夹放置在游戏文件夹下，然后开始游戏即可。
 
-也可以下载release中的`script.zip`解压到游戏文件夹下，然后运行游戏。
-
-由于翻译问题可能需要频繁的修改，因此code中的`script`文件夹永远是最新的，而release可能不是。所以建议还是下载code比较好。
-
-## 翻译方法
+## 翻译说明
 
 使用GPT4网页版，在同一个session内发送15句一段的翻译请求，能有效保持上下文连贯性。翻译脚本已经开源到[VN-ChatGPT-Translator](https://github.com/kono-dada/VN-ChatGPT-Translator)
 
@@ -60,10 +56,12 @@
 
 有两个文件夹和一个文件需要关注：
 
-- `translated`文件夹以json格式储存了GPT4翻译后对话
-- `untranslated`文件夹以json格式储存了原文
-- `05_11_2_format.ast`文件保存了经过手动调整的格式，因为这一节在游戏内有特殊的演出效果。如果你修改了此小节，请手动修改05_11_2_format.ast并将里面的内容复制到`script/05_11_2.ast`。
+- `translated`文件夹以json格式储存了GPT4翻译后的对话。需要手动修改的部分基本全都在这个文件夹内。
+- `untranslated`文件夹以json格式储存了原文作为参照。
+- `05_11_2_format.ast`文件保存了经过手动调整的格式，因为这一节在游戏内有特殊的演出效果。如果你修改了此小节，请手动修改`05_11_2_format.ast`并将里面的内容复制到`script/05_11_2.ast`。
 
-你可以通过运行`find_a_sentence.py`来查找某句话在哪个文件的哪一行。 **修改过后，请确保原文和译文有相同的行数**。修改完成后，运行`.\to_ast.bat`即可生成新的ast脚本。然后直接pull request即可。
+修改完成后，运行`.\to_ast.bat`生成新的ast脚本，然后直接pull request即可。
+
+如果你找不到错误语句的位置，你可以通过运行`find_a_sentence.py`来查找某句话在哪个文件的哪一行。 **修改过后，请确保原文和译文有相同的行数**。
 
 最后。希望全樱之刻玩家共同维护和完善这份汉化。
