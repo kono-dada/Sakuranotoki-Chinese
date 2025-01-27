@@ -66,4 +66,4 @@
 
 最后。希望全樱之刻玩家共同维护和完善这份汉化。
 
-![点个星星吧](https://star-history.com/#kono-dada/Sakuranotoki-Chinese&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=kono-dada/Sakuranotoki-Chinese&type=Date)](https://star-history.com/#kono-dada/Sakuranotoki-Chinese&Date)
