@@ -65,3 +65,5 @@
 如果你找不到错误语句的位置，你可以通过运行`find_a_sentence.py`来查找某句话在哪个文件的哪一行。 **修改过后，请确保原文和译文有相同的行数**。
 
 最后。希望全樱之刻玩家共同维护和完善这份汉化。
+
+![点个星星吧](https://star-history.com/#kono-dada/Sakuranotoki-Chinese&Date)
